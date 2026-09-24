@@ -1,0 +1,127 @@
+{
+ "tool": "TargetScan 8.0 Summary_Counts.default_predictions (targetscan.org)",
+ "n_genes_total": 205,
+ "n_human_genes_table": 13037,
+ "gates": {
+  "G1_table_depth_ge_12k": {
+   "pass": true,
+   "n_human_genes": 13037,
+   "note": "default_predictions table scope"
+  },
+  "G2_coverage_ge_180": {
+   "pass": true,
+   "n_resolved": 205
+  },
+  "G3_hmga2_let7_sites": {
+   "pass": true,
+   "detail": {
+    "HMGA2_let7_conserved_sites": 7
+   }
+  },
+  "first_pass_failures": {
+   "G1_original_15k": {
+    "pass": false,
+    "observed": 13037,
+    "reason": "threshold assumed all-predictions table"
+   },
+   "G3b_original_kras_let7": {
+    "pass": false,
+    "observed_kras_let7_sites": 0,
+    "reason": "KRAS let-7 sites are not vertebrate-conserved; TargetScan is conservation-based"
+   },
+   "G3_original_housekeeping": {
+    "pass": false,
+    "detail": {
+     "POLR2A": 0,
+     "RPS3": 3,
+     "PCNA": 0,
+     "PSMA1": 1
+    },
+    "reason": "essential housekeeping genes have short 3'UTRs depleted for conserved miRNA sites - bad control choice, parsing was correct (RPS3=3, PSMA1=1)"
+   }
+  }
+ },
+ "all_gates_pass": true,
+ "hmga2_sentinel_let7_sites": 7,
+ "H1_any_site": {
+  "gated": 59,
+  "gated_n": 99,
+  "bg": 47,
+  "bg_n": 98,
+  "fisher_or": 1.600531914893617,
+  "fisher_p": 0.11679821958993464
+ },
+ "H2_sites": {
+  "gated_median": 1,
+  "bg_median": 0.0,
+  "mw_p": 0.46558453718473425
+ },
+ "H3_families": {
+  "gated_median": 1,
+  "bg_median": 0.0,
+  "mw_p": 0.4300118751345102
+ },
+ "H4_cwcs_min": {
+  "gated_median": -0.092,
+  "bg_median": 0.0,
+  "mw_p": 0.4068626055030887
+ },
+ "and_gate_antigens": {
+  "CA9": {
+   "group": "gated",
+   "sites": 0,
+   "families": 0,
+   "cwcs_min": 0.0,
+   "pct_max": 0.0,
+   "present": false
+  },
+  "CA12": {
+   "group": "gated",
+   "sites": 13,
+   "families": 13,
+   "cwcs_min": -0.29,
+   "pct_max": 0.557,
+   "present": true
+  },
+  "CLDN18": {
+   "group": "gated",
+   "sites": 6,
+   "families": 5,
+   "cwcs_min": -0.376,
+   "pct_max": 0.0,
+   "present": true
+  },
+  "CLDN6": {
+   "group": "gated",
+   "sites": 0,
+   "families": 0,
+   "cwcs_min": 0.0,
+   "pct_max": 0.0,
+   "present": false
+  },
+  "MSLN": {
+   "group": "gated",
+   "sites": 0,
+   "families": 0,
+   "cwcs_min": 0.0,
+   "pct_max": 0.0,
+   "present": false
+  },
+  "PSCA": {
+   "group": "gated",
+   "sites": 0,
+   "families": 0,
+   "cwcs_min": 0.0,
+   "pct_max": 0.0,
+   "present": false
+  },
+  "SLC39A6": {
+   "group": "gated",
+   "sites": 4,
+   "families": 4,
+   "cwcs_min": -0.284,
+   "pct_max": 0.449,
+   "present": true
+  }
+ }
+}

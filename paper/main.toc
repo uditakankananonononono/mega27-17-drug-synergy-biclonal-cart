@@ -61,12 +61,16 @@
 \contentsline {paragraph}{Calibration gate.}{24}{}%
 \contentsline {paragraph}{Any-trait and cancer-trait carriage.}{24}{}%
 \contentsline {paragraph}{AND-gate antigens.}{24}{}%
-\contentsline {section}{\numberline {8}Shipped tool}{24}{}%
-\contentsline {section}{\numberline {9}Falsification paths}{25}{}%
-\contentsline {section}{\numberline {10}Mathematical derivations}{26}{}%
-\contentsline {subsection}{\numberline {10.1}Bliss independence and the ALMANAC synergy score}{26}{}%
-\contentsline {subsection}{\numberline {10.2}Embedding model and why pair-held-out is the honest split}{26}{}%
-\contentsline {subsection}{\numberline {10.3}AUROC as a Mann--Whitney probability}{26}{}%
-\contentsline {subsection}{\numberline {10.4}FANM: estimator, sampling error, and interval}{27}{}%
-\contentsline {subsection}{\numberline {10.5}Streaming percentiles as order statistics}{27}{}%
-\contentsline {subsection}{\numberline {10.6}AND-gate gain is bounded by the weaker single}{27}{}%
+\contentsline {subsection}{\numberline {7.8}TargetScan: post-transcriptional repression burden of antigen 3'UTRs}{24}{}%
+\contentsline {paragraph}{Calibration gate.}{24}{}%
+\contentsline {paragraph}{Burden gated versus background.}{25}{}%
+\contentsline {paragraph}{AND-gate antigens.}{25}{}%
+\contentsline {section}{\numberline {8}Shipped tool}{25}{}%
+\contentsline {section}{\numberline {9}Falsification paths}{26}{}%
+\contentsline {section}{\numberline {10}Mathematical derivations}{27}{}%
+\contentsline {subsection}{\numberline {10.1}Bliss independence and the ALMANAC synergy score}{27}{}%
+\contentsline {subsection}{\numberline {10.2}Embedding model and why pair-held-out is the honest split}{27}{}%
+\contentsline {subsection}{\numberline {10.3}AUROC as a Mann--Whitney probability}{27}{}%
+\contentsline {subsection}{\numberline {10.4}FANM: estimator, sampling error, and interval}{28}{}%
+\contentsline {subsection}{\numberline {10.5}Streaming percentiles as order statistics}{28}{}%
+\contentsline {subsection}{\numberline {10.6}AND-gate gain is bounded by the weaker single}{28}{}%
