@@ -140,9 +140,13 @@ applied as a separate filter on the ranked pair list. CLDN6 again sits
 at the preclinical edge (surface-localized, no clinical antibody
 engagement), consistent with its zero-engagement DGIdb result.
 
+\subsection{Protein-network proximity of drug targets: STRING (null)}
+The GDSC analysis found that same-pathway pairs synergize less. We asked whether the same holds at the protein-interaction level: do pairs whose top ChEMBL targets directly interact in STRING~\cite{string} synergize less? Targets are each drug's top-5 ChEMBL targets with max pChEMBL $\geq 6$. Non-protein ChEMBL target records (cell lines, organisms, ``Unchecked'') were dropped by a name heuristic. We inspected every STRING best hit and corrected three wrong text matches by hand (smoothened$\to$SMO, dihydrofolate reductase$\to$DHFR, alpha-1A adrenergic receptor$\to$ADRA1A; \texttt{scripts\_string\_proximity.py}, \texttt{results/string\_proximity.json}). 80 target names gave 65 STRING proteins and 288 medium-confidence edges (score $\geq 400$), covering 39 drugs and 718 drug pairs. A pair is labelled synergistic if its max \texttt{MAXSCORE} over cell lines is $\geq 50$, which is why the base rate here is about 30\% (single-test maxima; the same caveat as elsewhere). Pairs with interacting targets synergized at 32.7\% (102/312) vs 29.6\% (120/406) for non-interacting pairs (Fisher odds 1.16, $p=0.37$). Excluding shared-target pairs gave 32.4\% vs 29.6\% ($p=0.45$). \emph{Verdict:} null, with a direction opposite to the hypothesis. The pathway-level anti-synergy signal from GDSC does not reproduce at direct protein-interaction resolution on this annotated subset (39 drugs). We keep it as a negative.
+
 \section{Falsification paths}
 Synergy: published MatchMaker/DeepSynergy numbers verified (see Results) --- splits differ, no SOTA claim made; a same-split rerun on DrugComb is the remaining path to a direct comparison. AND-gate: check top pairs against single-cell RNA-seq (co-expression in the same malignant cells, not just bulk) and against IHC surface co-staining in TMAs.
 \begin{thebibliography}{9}
+\bibitem[Szklarczyk et al.(2023)]{string} Szklarczyk D, et al. The STRING database in 2023. \emph{Nucleic Acids Res} 2023.
 \bibitem[Ochoa et al.(2023)]{opentargets} Ochoa D, et al. The Open Targets Platform. \emph{Nucleic Acids Res} 2023.
 \bibitem[Iorio et al.(2016)]{gdsc} Iorio F, et al. A landscape of pharmacogenomic interactions in cancer (GDSC). \emph{Cell} 2016; release 8.5 compound annotation, Sanger/GDSC.
 \bibitem[Cannon et al.(2024)]{dgidb} Cannon D, et al. DGIdb 5.0. \emph{Nucleic Acids Res} 2024.

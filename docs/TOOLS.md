@@ -13,7 +13,8 @@
 16. DGIdb v5 GraphQL API - druggability annotation of gated targets (193 ERBB2 control interactions; CLDN6 zero-engagement finding)
 17. GDSC release 8.5 screened-compounds list (Sanger cancerrxgene) - pathway annotation; cross-pathway pairs dominate synergy (2.53% vs 6.64%, p=2.1e-35; results/gdsc_pathway.json)
 18. Open Targets Platform GraphQL API - AB/SM tractability audit of the 99 gated antigens, a 100-gene random surfaceome background, and CAR-T references (CD19/BCMA/ERBB2/FOLR1 all read clinical, validating the query); NULL enrichment finding 20/99 vs 19/98, p=0.51 (results/ot_tractability.json)
-Count: 18. Planned honest additions: DepMap, DrugBank, COSMIC, TCGA per-cancer RNA.
+19. STRING API (string-db.org; get_string_ids + network, score>=400) - target-interaction proximity vs synergy; NULL p=0.37 (results/string_proximity.json)
+Count: 19. Planned honest additions: DepMap, DrugBank, COSMIC, TCGA per-cancer RNA.
 ## Datasets (accession-level)
 1. NCI-ALMANAC combination screen (1 dataset, 311,466 conditions)
 2. HPA rna_tissue_consensus.tsv
