@@ -127,6 +127,11 @@ def run_pair_heldout(data="data/almanac_synergy.tsv", epochs=6,
            "rmse_global_mean": round(rmse_naive, 2),
            "auroc_synergy_score50": round(auc, 3),
            "synergy_prevalence_test": round(float(lab.mean()), 4)}
+    from scipy.stats import pearsonr, spearmanr
+    pn, yn = p.numpy().ravel(), yt.numpy().ravel()
+    res["pearson"] = round(float(pearsonr(pn, yn)[0]), 4)
+    res["spearman"] = round(float(spearmanr(pn, yn)[0]), 4)
+    res["n_test_rows"] = int(len(yn))
     print(json.dumps(res, indent=2))
     import pathlib; pathlib.Path("results").mkdir(exist_ok=True)
     json.dump(res, open(out, "w"), indent=2)
