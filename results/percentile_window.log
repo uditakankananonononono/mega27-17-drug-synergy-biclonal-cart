@@ -1,0 +1,62 @@
+surface genes: 5385
+lines 1 genes done 0
+lines 156760116 surface genes with data 5352
+saved results/tumor_percentiles.json
+{
+ "ERBB2": {
+  "mean_window": -0.19,
+  "p75_window": -0.84,
+  "p50": 34.9,
+  "p75": 55.1,
+  "p90": 136.1,
+  "mean": 87.2,
+  "n_samples": 1075
+ },
+ "MSLN": {
+  "mean_window": 2.29,
+  "p75_window": 2.71,
+  "p50": 290.9,
+  "p75": 460.5,
+  "p90": 636.6,
+  "mean": 343.4,
+  "n_samples": 373
+ },
+ "GPC3": {
+  "mean_window": 1.17,
+  "p75_window": 1.72,
+  "p50": 104.4,
+  "p75": 395.7,
+  "p90": 812.8,
+  "mean": 269.1,
+  "n_samples": 365
+ },
+ "EGFR": {
+  "mean_window": 1.99,
+  "p75_window": 2.33,
+  "p50": 57.0,
+  "p75": 172.3,
+  "p90": 384.8,
+  "mean": 136.1,
+  "n_samples": 153
+ },
+ "FOLR1": {
+  "mean_window": 0.47,
+  "p75_window": 0.87,
+  "p50": 172.6,
+  "p75": 344.0,
+  "p90": 523.7,
+  "mean": 259.5,
+  "n_samples": 373
+ }
+}
+PAAD [('SPP1', 'IGHA2', 4.23, 5.2), ('IGHG2', 'TACSTD2', 3.94, 2.39), ('IGHA2', 'TACSTD2', 3.88, 4.85)]
+BRCA [('IGHG2', 'TACSTD2', 3.7, 2.42), ('SLC39A6', 'IGHG2', 3.65, 0.47), ('HLA-DRA', 'SLC39A6', 3.58, 0.4)]
+GBM [('GAP43', 'EGFR', 3.75, 1.42), ('ATP1B2', 'EGFR', 3.75, 1.42), ('SLC1A3', 'EGFR', 3.75, 1.42)]
+LIHC [('APOC3', 'OR2I1P', 6.48, 0.38), ('ADH1C', 'OR2I1P', 6.48, 0.38), ('TM4SF4', 'OR2I1P', 6.48, 0.38)]
+OV [('KLK7', 'CLDN6', 5.85, 0.23), ('CLDN3', 'CLDN6', 5.69, 0.07), ('IGKC', 'CLDN6', 5.69, 0.07)]
+LUAD [('IGHA2', 'IGHV1-18', 6.97, 5.97), ('IGHA2', 'IGHV5-51', 6.87, 2.46), ('IGHA2', 'IGHV3-21', 6.53, 3.14)]
+COAD [('DPEP1', 'NOX1', 5.5, 4.43), ('CEACAM6', 'IGHA2', 4.66, 3.41), ('CEACAM5', 'IGHG2', 3.94, 2.2)]
+SKCM [('IGHG2', 'DCT', 6.96, 1.0), ('PRAME', 'DCT', 6.86, 0.89), ('IGKC', 'DCT', 6.49, 0.53)]
+STAD [('IGHA2', 'IGHV1-18', 6.2, 5.97), ('IGHA2', 'IGHV3-21', 6.15, 3.14), ('CEACAM5', 'IGHV3-21', 6.08, 3.06)]
+KIRC [('CA9', 'SLC17A3', 5.56, 6.18), ('IGHG2', 'SLC17A3', 4.53, 3.84), ('CA9', 'CA12', 3.8, 4.46)]
+saved results/rna_window_percentile.json
