@@ -1,0 +1,772 @@
+{
+ "source": "FireBrowse (Broad Firehose) REST API, /Samples/mRNASeq, RSEM log2, TP+NT",
+ "genes": {
+  "targets": [
+   "CLDN18",
+   "MSLN",
+   "CA9",
+   "CA12",
+   "CLDN6",
+   "PSCA",
+   "SLC39A6"
+  ],
+  "references": [
+   "MS4A1",
+   "TNFRSF17",
+   "ERBB2"
+  ],
+  "housekeeping": [
+   "GAPDH",
+   "ACTB",
+   "RPLP0",
+   "TBP"
+  ]
+ },
+ "cohorts": [
+  "PAAD",
+  "COAD",
+  "LUAD",
+  "GBM",
+  "BRCA"
+ ],
+ "n_value_records": 34979,
+ "n_sample_records": 2617,
+ "per_gene": {
+  "CLDN18": {
+   "n_cohorts": 5,
+   "cohorts_delta_ge1": 1,
+   "cohorts_delta_ge1_sig": 1,
+   "median_delta": -0.024,
+   "min_nt_median": 0.125,
+   "cells": {
+    "PAAD": {
+     "n_tp": 175,
+     "n_nt": 4,
+     "median_tp": 12.049,
+     "median_nt": 5.391,
+     "delta": 6.658,
+     "mw_p_greater": 0.01634528681518401,
+     "delta_adj": 6.622
+    },
+    "COAD": {
+     "n_tp": 599,
+     "n_nt": 60,
+     "median_tp": 1.783,
+     "median_nt": 0.708,
+     "delta": 1.075,
+     "mw_p_greater": 1.7974247613494566e-05,
+     "delta_adj": 0.662
+    },
+    "LUAD": {
+     "n_tp": 917,
+     "n_nt": 114,
+     "median_tp": 8.136,
+     "median_nt": 14.462,
+     "delta": -6.325,
+     "mw_p_greater": 1.0,
+     "delta_adj": -6.64
+    },
+    "GBM": {
+     "n_tp": 127,
+     "n_nt": 4,
+     "median_tp": 0.932,
+     "median_nt": 0.125,
+     "delta": 0.807,
+     "mw_p_greater": 0.20890349110325143,
+     "delta_adj": -0.024
+    },
+    "BRCA": {
+     "n_tp": 1208,
+     "n_nt": 115,
+     "median_tp": 0.498,
+     "median_nt": 1.867,
+     "delta": -1.369,
+     "mw_p_greater": 1.0,
+     "delta_adj": -1.56
+    }
+   }
+  },
+  "MSLN": {
+   "n_cohorts": 5,
+   "cohorts_delta_ge1": 2,
+   "cohorts_delta_ge1_sig": 2,
+   "median_delta": -0.444,
+   "min_nt_median": 2.688,
+   "cells": {
+    "PAAD": {
+     "n_tp": 177,
+     "n_nt": 4,
+     "median_tp": 12.274,
+     "median_nt": 5.383,
+     "delta": 6.891,
+     "mw_p_greater": 0.009328095736991001,
+     "delta_adj": 6.855
+    },
+    "COAD": {
+     "n_tp": 232,
+     "n_nt": 17,
+     "median_tp": 9.315,
+     "median_nt": 7.367,
+     "delta": 1.948,
+     "mw_p_greater": 0.000660763226939283,
+     "delta_adj": 1.535
+    },
+    "LUAD": {
+     "n_tp": 262,
+     "n_nt": 25,
+     "median_tp": 11.578,
+     "median_nt": 12.045,
+     "delta": -0.467,
+     "mw_p_greater": 0.6525436213939204,
+     "delta_adj": -0.782
+    },
+    "GBM": {
+     "n_tp": 144,
+     "n_nt": 5,
+     "median_tp": 4.208,
+     "median_nt": 4.728,
+     "delta": -0.52,
+     "mw_p_greater": 0.7360059726792803,
+     "delta_adj": -1.351
+    },
+    "BRCA": {
+     "n_tp": 514,
+     "n_nt": 50,
+     "median_tp": 2.435,
+     "median_nt": 2.688,
+     "delta": -0.253,
+     "mw_p_greater": 0.6346088148449965,
+     "delta_adj": -0.444
+    }
+   }
+  },
+  "CA9": {
+   "n_cohorts": 4,
+   "cohorts_delta_ge1": 4,
+   "cohorts_delta_ge1_sig": 4,
+   "median_delta": 5.146,
+   "min_nt_median": -0.024,
+   "cells": {
+    "COAD": {
+     "n_tp": 686,
+     "n_nt": 61,
+     "median_tp": 8.678,
+     "median_nt": 2.715,
+     "delta": 5.963,
+     "mw_p_greater": 4.68711006447442e-33,
+     "delta_adj": 5.55
+    },
+    "LUAD": {
+     "n_tp": 897,
+     "n_nt": 86,
+     "median_tp": 6.683,
+     "median_nt": 0.948,
+     "delta": 5.735,
+     "mw_p_greater": 2.4870674744709106e-34,
+     "delta_adj": 5.42
+    },
+    "GBM": {
+     "n_tp": 153,
+     "n_nt": 5,
+     "median_tp": 7.645,
+     "median_nt": 1.943,
+     "delta": 5.702,
+     "mw_p_greater": 3.710271517487773e-05,
+     "delta_adj": 4.871
+    },
+    "BRCA": {
+     "n_tp": 1800,
+     "n_nt": 175,
+     "median_tp": 3.023,
+     "median_nt": -0.024,
+     "delta": 3.047,
+     "mw_p_greater": 1.0141550924072149e-30,
+     "delta_adj": 2.856
+    }
+   }
+  },
+  "CA12": {
+   "n_cohorts": 5,
+   "cohorts_delta_ge1": 2,
+   "cohorts_delta_ge1_sig": 2,
+   "median_delta": 0.449,
+   "min_nt_median": 7.217,
+   "cells": {
+    "PAAD": {
+     "n_tp": 178,
+     "n_nt": 4,
+     "median_tp": 9.583,
+     "median_nt": 9.098,
+     "delta": 0.485,
+     "mw_p_greater": 0.2505552844020081,
+     "delta_adj": 0.449
+    },
+    "COAD": {
+     "n_tp": 690,
+     "n_nt": 63,
+     "median_tp": 10.877,
+     "median_nt": 13.569,
+     "delta": -2.692,
+     "mw_p_greater": 1.0,
+     "delta_adj": -3.105
+    },
+    "LUAD": {
+     "n_tp": 944,
+     "n_nt": 94,
+     "median_tp": 8.215,
+     "median_nt": 8.145,
+     "delta": 0.07,
+     "mw_p_greater": 0.3267223840066087,
+     "delta_adj": -0.245
+    },
+    "GBM": {
+     "n_tp": 153,
+     "n_nt": 5,
+     "median_tp": 10.059,
+     "median_nt": 7.217,
+     "delta": 2.842,
+     "mw_p_greater": 2.457924968867951e-06,
+     "delta_adj": 2.011
+    },
+    "BRCA": {
+     "n_tp": 2506,
+     "n_nt": 295,
+     "median_tp": 12.876,
+     "median_nt": 11.584,
+     "delta": 1.293,
+     "mw_p_greater": 6.636805112955828e-40,
+     "delta_adj": 1.102
+    }
+   }
+  },
+  "CLDN6": {
+   "n_cohorts": 4,
+   "cohorts_delta_ge1": 1,
+   "cohorts_delta_ge1_sig": 1,
+   "median_delta": 0.39,
+   "min_nt_median": -0.418,
+   "cells": {
+    "COAD": {
+     "n_tp": 441,
+     "n_nt": 21,
+     "median_tp": 0.343,
+     "median_nt": -0.418,
+     "delta": 0.76,
+     "mw_p_greater": 8.759328713746588e-05,
+     "delta_adj": 0.347
+    },
+    "LUAD": {
+     "n_tp": 607,
+     "n_nt": 66,
+     "median_tp": 3.229,
+     "median_nt": 1.325,
+     "delta": 1.904,
+     "mw_p_greater": 2.0615072278965913e-08,
+     "delta_adj": 1.589
+    },
+    "GBM": {
+     "n_tp": 130,
+     "n_nt": 5,
+     "median_tp": 0.916,
+     "median_nt": 2.565,
+     "delta": -1.649,
+     "mw_p_greater": 0.9990486193406035,
+     "delta_adj": -2.48
+    },
+    "BRCA": {
+     "n_tp": 903,
+     "n_nt": 51,
+     "median_tp": 0.308,
+     "median_nt": -0.317,
+     "delta": 0.625,
+     "mw_p_greater": 0.000809737283082088,
+     "delta_adj": 0.434
+    }
+   }
+  },
+  "PSCA": {
+   "n_cohorts": 4,
+   "cohorts_delta_ge1": 0,
+   "cohorts_delta_ge1_sig": 0,
+   "median_delta": -0.501,
+   "min_nt_median": 2.007,
+   "cells": {
+    "COAD": {
+     "n_tp": 408,
+     "n_nt": 39,
+     "median_tp": 2.575,
+     "median_nt": 2.937,
+     "delta": -0.362,
+     "mw_p_greater": 0.9410995446277148,
+     "delta_adj": -0.775
+    },
+    "LUAD": {
+     "n_tp": 244,
+     "n_nt": 37,
+     "median_tp": 4.314,
+     "median_nt": 4.226,
+     "delta": 0.088,
+     "mw_p_greater": 0.35684386105695054,
+     "delta_adj": -0.227
+    },
+    "GBM": {
+     "n_tp": 135,
+     "n_nt": 5,
+     "median_tp": 1.006,
+     "median_nt": 2.007,
+     "delta": -1.001,
+     "mw_p_greater": 0.9241640378482319,
+     "delta_adj": -1.832
+    },
+    "BRCA": {
+     "n_tp": 534,
+     "n_nt": 53,
+     "median_tp": 4.884,
+     "median_nt": 4.149,
+     "delta": 0.735,
+     "mw_p_greater": 0.02118157032719802,
+     "delta_adj": 0.544
+    }
+   }
+  },
+  "SLC39A6": {
+   "n_cohorts": 5,
+   "cohorts_delta_ge1": 0,
+   "cohorts_delta_ge1_sig": 0,
+   "median_delta": 0.286,
+   "min_nt_median": 8.902,
+   "cells": {
+    "PAAD": {
+     "n_tp": 178,
+     "n_nt": 4,
+     "median_tp": 10.24,
+     "median_nt": 10.434,
+     "delta": -0.195,
+     "mw_p_greater": 0.6898976102346577,
+     "delta_adj": -0.231
+    },
+    "COAD": {
+     "n_tp": 457,
+     "n_nt": 41,
+     "median_tp": 9.647,
+     "median_nt": 8.902,
+     "delta": 0.746,
+     "mw_p_greater": 1.4802204875315622e-14,
+     "delta_adj": 0.333
+    },
+    "LUAD": {
+     "n_tp": 251,
+     "n_nt": 36,
+     "median_tp": 10.667,
+     "median_nt": 10.066,
+     "delta": 0.601,
+     "mw_p_greater": 2.7756674147570537e-10,
+     "delta_adj": 0.286
+    },
+    "GBM": {
+     "n_tp": 153,
+     "n_nt": 5,
+     "median_tp": 10.961,
+     "median_nt": 10.276,
+     "delta": 0.685,
+     "mw_p_greater": 0.022880014186747986,
+     "delta_adj": -0.146
+    },
+    "BRCA": {
+     "n_tp": 571,
+     "n_nt": 56,
+     "median_tp": 13.753,
+     "median_nt": 12.835,
+     "delta": 0.918,
+     "mw_p_greater": 3.4314019873941456e-06,
+     "delta_adj": 0.727
+    }
+   }
+  },
+  "MS4A1": {
+   "n_cohorts": 5,
+   "cohorts_delta_ge1": 1,
+   "cohorts_delta_ge1_sig": 1,
+   "median_delta": -0.538,
+   "min_nt_median": 0.485,
+   "cells": {
+    "PAAD": {
+     "n_tp": 174,
+     "n_nt": 4,
+     "median_tp": 5.259,
+     "median_nt": 6.73,
+     "delta": -1.471,
+     "mw_p_greater": 0.8679294234617031,
+     "delta_adj": -1.507
+    },
+    "COAD": {
+     "n_tp": 215,
+     "n_nt": 17,
+     "median_tp": 4.231,
+     "median_nt": 7.451,
+     "delta": -3.22,
+     "mw_p_greater": 0.9999999230311539,
+     "delta_adj": -3.633
+    },
+    "LUAD": {
+     "n_tp": 256,
+     "n_nt": 25,
+     "median_tp": 6.966,
+     "median_nt": 5.268,
+     "delta": 1.698,
+     "mw_p_greater": 0.002272009794241512,
+     "delta_adj": 1.383
+    },
+    "GBM": {
+     "n_tp": 123,
+     "n_nt": 5,
+     "median_tp": 0.778,
+     "median_nt": 0.485,
+     "delta": 0.293,
+     "mw_p_greater": 0.38731468924247364,
+     "delta_adj": -0.538
+    },
+    "BRCA": {
+     "n_tp": 523,
+     "n_nt": 61,
+     "median_tp": 5.012,
+     "median_nt": 4.495,
+     "delta": 0.517,
+     "mw_p_greater": 0.2195268954604127,
+     "delta_adj": 0.326
+    }
+   }
+  },
+  "TNFRSF17": {
+   "n_cohorts": 4,
+   "cohorts_delta_ge1": 1,
+   "cohorts_delta_ge1_sig": 1,
+   "median_delta": -0.626,
+   "min_nt_median": 3.268,
+   "cells": {
+    "PAAD": {
+     "n_tp": 167,
+     "n_nt": 4,
+     "median_tp": 3.683,
+     "median_nt": 3.268,
+     "delta": 0.415,
+     "mw_p_greater": 0.5020385288855187,
+     "delta_adj": 0.379
+    },
+    "COAD": {
+     "n_tp": 428,
+     "n_nt": 41,
+     "median_tp": 4.126,
+     "median_nt": 8.185,
+     "delta": -4.059,
+     "mw_p_greater": 1.0,
+     "delta_adj": -4.472
+    },
+    "LUAD": {
+     "n_tp": 387,
+     "n_nt": 51,
+     "median_tp": 5.791,
+     "median_nt": 3.814,
+     "delta": 1.978,
+     "mw_p_greater": 3.7847467259888217e-10,
+     "delta_adj": 1.663
+    },
+    "BRCA": {
+     "n_tp": 1032,
+     "n_nt": 109,
+     "median_tp": 3.724,
+     "median_nt": 5.165,
+     "delta": -1.441,
+     "mw_p_greater": 0.9999999951668261,
+     "delta_adj": -1.632
+    }
+   }
+  },
+  "ERBB2": {
+   "n_cohorts": 5,
+   "cohorts_delta_ge1": 0,
+   "cohorts_delta_ge1_sig": 0,
+   "median_delta": 0.455,
+   "min_nt_median": 8.799,
+   "cells": {
+    "PAAD": {
+     "n_tp": 178,
+     "n_nt": 4,
+     "median_tp": 12.287,
+     "median_nt": 11.844,
+     "delta": 0.443,
+     "mw_p_greater": 0.05969209242767068,
+     "delta_adj": 0.407
+    },
+    "COAD": {
+     "n_tp": 237,
+     "n_nt": 16,
+     "median_tp": 12.25,
+     "median_nt": 13.186,
+     "delta": -0.936,
+     "mw_p_greater": 0.9999999839246397,
+     "delta_adj": -1.349
+    },
+    "LUAD": {
+     "n_tp": 530,
+     "n_nt": 44,
+     "median_tp": 12.544,
+     "median_nt": 11.676,
+     "delta": 0.868,
+     "mw_p_greater": 8.974529881256977e-14,
+     "delta_adj": 0.553
+    },
+    "GBM": {
+     "n_tp": 153,
+     "n_nt": 5,
+     "median_tp": 10.179,
+     "median_nt": 8.799,
+     "delta": 1.38,
+     "mw_p_greater": 0.000943847085389324,
+     "delta_adj": 0.549
+    },
+    "BRCA": {
+     "n_tp": 1058,
+     "n_nt": 124,
+     "median_tp": 12.762,
+     "median_nt": 12.116,
+     "delta": 0.646,
+     "mw_p_greater": 6.31715301268357e-15,
+     "delta_adj": 0.455
+    }
+   }
+  },
+  "GAPDH": {
+   "n_cohorts": 5,
+   "cohorts_delta_ge1": 1,
+   "cohorts_delta_ge1_sig": 1,
+   "median_delta": 0.583,
+   "min_nt_median": 13.949,
+   "cells": {
+    "PAAD": {
+     "n_tp": 178,
+     "n_nt": 4,
+     "median_tp": 15.526,
+     "median_nt": 14.863,
+     "delta": 0.662,
+     "mw_p_greater": 0.02066671663881454,
+     "delta_adj": 0.626
+    },
+    "COAD": {
+     "n_tp": 233,
+     "n_nt": 16,
+     "median_tp": 16.266,
+     "median_nt": 15.62,
+     "delta": 0.646,
+     "mw_p_greater": 3.9944671558861007e-07,
+     "delta_adj": 0.233
+    },
+    "LUAD": {
+     "n_tp": 322,
+     "n_nt": 30,
+     "median_tp": 15.507,
+     "median_nt": 13.949,
+     "delta": 1.558,
+     "mw_p_greater": 1.397373075371192e-16,
+     "delta_adj": 1.243
+    },
+    "GBM": {
+     "n_tp": 153,
+     "n_nt": 5,
+     "median_tp": 16.433,
+     "median_nt": 15.817,
+     "delta": 0.616,
+     "mw_p_greater": 0.0013202746568503553,
+     "delta_adj": -0.215
+    },
+    "BRCA": {
+     "n_tp": 555,
+     "n_nt": 48,
+     "median_tp": 15.41,
+     "median_nt": 14.636,
+     "delta": 0.774,
+     "mw_p_greater": 4.875170690309777e-15,
+     "delta_adj": 0.583
+    }
+   }
+  },
+  "ACTB": {
+   "n_cohorts": 5,
+   "cohorts_delta_ge1": 0,
+   "cohorts_delta_ge1_sig": 0,
+   "median_delta": -0.379,
+   "min_nt_median": 15.939,
+   "cells": {
+    "PAAD": {
+     "n_tp": 178,
+     "n_nt": 4,
+     "median_tp": 16.872,
+     "median_nt": 17.216,
+     "delta": -0.343,
+     "mw_p_greater": 0.9314196261879832,
+     "delta_adj": -0.379
+    },
+    "COAD": {
+     "n_tp": 457,
+     "n_nt": 41,
+     "median_tp": 16.817,
+     "median_nt": 16.969,
+     "delta": -0.152,
+     "mw_p_greater": 0.9940105439451564,
+     "delta_adj": -0.565
+    },
+    "LUAD": {
+     "n_tp": 515,
+     "n_nt": 59,
+     "median_tp": 16.781,
+     "median_nt": 16.895,
+     "delta": -0.114,
+     "mw_p_greater": 0.9710328977824758,
+     "delta_adj": -0.429
+    },
+    "GBM": {
+     "n_tp": 153,
+     "n_nt": 5,
+     "median_tp": 16.986,
+     "median_nt": 15.939,
+     "delta": 1.047,
+     "mw_p_greater": 1.461504011615457e-06,
+     "delta_adj": 0.216
+    },
+    "BRCA": {
+     "n_tp": 1093,
+     "n_nt": 112,
+     "median_tp": 16.484,
+     "median_nt": 16.128,
+     "delta": 0.355,
+     "mw_p_greater": 5.669830564762354e-12,
+     "delta_adj": 0.164
+    }
+   }
+  },
+  "RPLP0": {
+   "n_cohorts": 5,
+   "cohorts_delta_ge1": 1,
+   "cohorts_delta_ge1_sig": 1,
+   "median_delta": 0.3,
+   "min_nt_median": 11.631,
+   "cells": {
+    "PAAD": {
+     "n_tp": 178,
+     "n_nt": 4,
+     "median_tp": 14.466,
+     "median_nt": 14.32,
+     "delta": 0.146,
+     "mw_p_greater": 0.15762411606110488,
+     "delta_adj": 0.11
+    },
+    "COAD": {
+     "n_tp": 457,
+     "n_nt": 41,
+     "median_tp": 15.478,
+     "median_nt": 14.765,
+     "delta": 0.713,
+     "mw_p_greater": 7.536986456627303e-13,
+     "delta_adj": 0.3
+    },
+    "LUAD": {
+     "n_tp": 515,
+     "n_nt": 59,
+     "median_tp": 14.358,
+     "median_nt": 13.655,
+     "delta": 0.703,
+     "mw_p_greater": 1.3057047464191984e-12,
+     "delta_adj": 0.388
+    },
+    "GBM": {
+     "n_tp": 153,
+     "n_nt": 5,
+     "median_tp": 14.065,
+     "median_nt": 11.631,
+     "delta": 2.433,
+     "mw_p_greater": 1.2991146769915175e-09,
+     "delta_adj": 1.602
+    },
+    "BRCA": {
+     "n_tp": 1093,
+     "n_nt": 112,
+     "median_tp": 14.399,
+     "median_nt": 14.372,
+     "delta": 0.027,
+     "mw_p_greater": 0.7384201527264935,
+     "delta_adj": -0.164
+    }
+   }
+  },
+  "TBP": {
+   "n_cohorts": 5,
+   "cohorts_delta_ge1": 0,
+   "cohorts_delta_ge1_sig": 0,
+   "median_delta": -0.301,
+   "min_nt_median": 7.961,
+   "cells": {
+    "PAAD": {
+     "n_tp": 178,
+     "n_nt": 4,
+     "median_tp": 7.891,
+     "median_nt": 7.964,
+     "delta": -0.073,
+     "mw_p_greater": 0.8558919706177337,
+     "delta_adj": -0.109
+    },
+    "COAD": {
+     "n_tp": 457,
+     "n_nt": 41,
+     "median_tp": 8.202,
+     "median_nt": 8.021,
+     "delta": 0.181,
+     "mw_p_greater": 2.0661662301488372e-05,
+     "delta_adj": -0.232
+    },
+    "LUAD": {
+     "n_tp": 515,
+     "n_nt": 59,
+     "median_tp": 7.888,
+     "median_nt": 7.961,
+     "delta": -0.073,
+     "mw_p_greater": 0.8977485473891155,
+     "delta_adj": -0.388
+    },
+    "GBM": {
+     "n_tp": 153,
+     "n_nt": 5,
+     "median_tp": 8.289,
+     "median_nt": 8.095,
+     "delta": 0.194,
+     "mw_p_greater": 0.10527808390188197,
+     "delta_adj": -0.637
+    },
+    "BRCA": {
+     "n_tp": 1093,
+     "n_nt": 112,
+     "median_tp": 8.024,
+     "median_nt": 8.134,
+     "delta": -0.11,
+     "mw_p_greater": 0.9995370976258248,
+     "delta_adj": -0.301
+    }
+   }
+  }
+ },
+ "housekeeping_offset_per_cohort": {
+  "PAAD": 0.036,
+  "COAD": 0.413,
+  "LUAD": 0.315,
+  "GBM": 0.831,
+  "BRCA": 0.191
+ },
+ "controls": {
+  "hk_raw_delta_range": [
+   -0.343,
+   2.433
+  ],
+  "hk_adj_max_abs_delta": 1.602,
+  "erbb2_brca_delta_adj": 0.455,
+  "ca9_median_delta_adj": 5.146
+ }
+}

@@ -256,6 +256,39 @@ antigens vs random surfaceome background ($p=9.6e-04$). Right: RNA-protein
 concordance in PAAD ($\rho=0.59$).}
 \label{fig:cptac}\end{figure}
 
+\subsection{Tumor-versus-adjacent window within the organ (FireBrowse/TCGA): only CA9 clears the noise floor}
+\label{sec:window}
+GTEx and HPA answer whether antigens are absent from \emph{other} organs; the
+hardest background for a locoregional CAR is the organ the tumor grew in. We
+fetched per-participant RSEM (log$_2$) for the 7 AND-gate targets, 3
+references and 4 housekeeping genes in the five CPTAC-matched TCGA cohorts
+via the FireBrowse REST API (2,617 sample records;
+\texttt{results/firebrowse\_window\_rows.csv}) and compared primary-tumor
+versus solid-tissue-normal medians per cohort (PAAD and GBM normals are only
+$n=4$--$5$; reported, not hidden). Housekeeping genes are \emph{not} flat
+across the tumor/normal boundary: their raw deltas run $-0.34$ to $2.43$ log$_2$
+(a compositional shift, not noise), so every window is reported after
+subtracting the per-cohort 4-gene housekeeping offset, and the residual
+housekeeping spread ($\pm1.6$ log$_2$) is treated as the normalization noise
+floor. Against that floor the single-antigen within-organ window collapses to
+one gene: CA9 holds a $+5.1$ log$_2$ median adjusted window, significant and
+$\ge2\times$ in all 4 evaluable cohorts (hypoxia biology, as expected). No
+other target clears it: median adjusted windows for CLDN18, MSLN, CA12,
+CLDN6, PSCA and SLC39A6 all lie between $-0.50$ and $+0.45$ log$_2$
+(Figure~\ref{fig:window}). The design consequence is direct: within-organ
+selectivity for this panel cannot come from any single antigen's
+tumor-versus-adjacent expression gap; it must come from the AND-gate
+combinatorics itself -- which is exactly the job the biclonal architecture is
+built to do.
+\begin{figure}[h]\centering
+\includegraphics[width=0.9\linewidth]{figs/fig_firebrowse_window.pdf}
+\caption{Tumor minus adjacent-normal expression (log$_2$ RSEM,
+housekeeping-adjusted) per antigen, median across cohorts with min--max
+whiskers. Grey band: the normalization noise floor (residual housekeeping
+spread, $\pm1.6$ log$_2$). Only CA9 clears it.}
+\label{fig:window}\end{figure}
+
+
 \section{Shipped tool}
 \texttt{pip install .} provides the \texttt{cart-target-rank} command-line tool
 (\texttt{src/cart}, pure NumPy/pandas), which ranks candidate CAR-T antigens for

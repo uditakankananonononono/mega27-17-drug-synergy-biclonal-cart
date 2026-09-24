@@ -10,11 +10,21 @@
 \contentsline {subsection}{\numberline {4.4}AND-gate biclonal discovery}{5}{}%
 \contentsline {subsection}{\numberline {4.5}Mechanism annotation via ChEMBL assay accessions}{5}{}%
 \contentsline {section}{\numberline {5}Documented negatives and data findings}{6}{}%
-\contentsline {section}{\numberline {6}Falsification paths}{6}{}%
-\contentsline {section}{\numberline {7}Mathematical derivations}{6}{}%
-\contentsline {subsection}{\numberline {7.1}Bliss independence and the ALMANAC synergy score}{6}{}%
-\contentsline {subsection}{\numberline {7.2}Embedding model and why pair-held-out is the honest split}{7}{}%
-\contentsline {subsection}{\numberline {7.3}AUROC as a Mann--Whitney probability}{7}{}%
-\contentsline {subsection}{\numberline {7.4}FANM: estimator, sampling error, and interval}{7}{}%
-\contentsline {subsection}{\numberline {7.5}Streaming percentiles as order statistics}{7}{}%
-\contentsline {subsection}{\numberline {7.6}AND-gate gain is bounded by the weaker single}{8}{}%
+\contentsline {subsection}{\numberline {5.1}Off-tumor safety check: GTEx normal-tissue expression}{6}{}%
+\contentsline {subsection}{\numberline {5.2}Druggability annotation: DGIdb v5}{6}{}%
+\contentsline {subsection}{\numberline {5.3}Pathway-level synergy structure: GDSC release 8.5}{7}{}%
+\contentsline {subsection}{\numberline {5.4}Tractability audit: Open Targets Platform}{7}{}%
+\contentsline {subsection}{\numberline {5.5}Protein-network proximity of drug targets: STRING (null)}{7}{}%
+\contentsline {subsection}{\numberline {5.6}Chemical-structure similarity vs synergy: RDKit (confounded, null after control)}{8}{}%
+\contentsline {subsection}{\numberline {5.7}CRISPR dependency audit: DepMap 24Q4 (null for essentiality; escape risk confirmed)}{8}{}%
+\contentsline {subsection}{\numberline {5.8}Protein-level audit: CPTAC via cBioPortal (gate holds at protein, with five RNA-only exceptions)}{9}{}%
+\contentsline {subsection}{\numberline {5.9}Tumor-versus-adjacent window within the organ (FireBrowse/TCGA): only CA9 clears the noise floor}{10}{}%
+\contentsline {section}{\numberline {6}Shipped tool}{11}{}%
+\contentsline {section}{\numberline {7}Falsification paths}{11}{}%
+\contentsline {section}{\numberline {8}Mathematical derivations}{12}{}%
+\contentsline {subsection}{\numberline {8.1}Bliss independence and the ALMANAC synergy score}{12}{}%
+\contentsline {subsection}{\numberline {8.2}Embedding model and why pair-held-out is the honest split}{13}{}%
+\contentsline {subsection}{\numberline {8.3}AUROC as a Mann--Whitney probability}{13}{}%
+\contentsline {subsection}{\numberline {8.4}FANM: estimator, sampling error, and interval}{13}{}%
+\contentsline {subsection}{\numberline {8.5}Streaming percentiles as order statistics}{13}{}%
+\contentsline {subsection}{\numberline {8.6}AND-gate gain is bounded by the weaker single}{14}{}%

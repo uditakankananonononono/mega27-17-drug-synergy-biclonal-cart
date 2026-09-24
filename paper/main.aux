@@ -14,17 +14,46 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}AND-gate biclonal discovery}{5}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Top AND-gated pairs by gain over the best single antigen.}}{5}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Mechanism annotation via ChEMBL assay accessions}{5}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Top AND-gated biclonal pair per cancer after the immunoglobulin-locus filter (145 genes removed), from \texttt  {results/andgate\_p75\_igfiltered.json}. Gated window: fraction of tumors co-expressing both antigens above the p75 window vs normal ceiling; gain: improvement over the best single antigen in that cancer. Established antigens surface after filtering: PSCA/SPP1 in PAAD, CLDN18 pairs in STAD, MSLN pairs in OV/PAAD/LUAD, CA9/CA12 in KIRC, CLDN6 in OV.}}{6}{}\protected@file@percent }
+\newlabel{tab:andgate}{{1}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Documented negatives and data findings}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Off-tumor safety check: GTEx normal-tissue expression}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Druggability annotation: DGIdb v5}{6}{}\protected@file@percent }
+\citation{string}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Pathway-level synergy structure: GDSC release 8.5}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Tractability audit: Open Targets Platform}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Protein-network proximity of drug targets: STRING (null)}{7}{}\protected@file@percent }
+\citation{rdkit}
+\citation{statsmodels}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Chemical-structure similarity vs synergy: RDKit (confounded, null after control)}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7}CRISPR dependency audit: DepMap 24Q4 (null for essentiality; escape risk confirmed)}{8}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Left: distribution of per-gene median Chronos effect for gated antigens vs surfaceome background (no difference, $p=0.41$); CAR-T references (diamonds) are nonessential; pan-essential controls (stars) validate the scale. Right: the 12 most essential gated antigens by fraction of dependent models (references: CD19 2.3\%, FOLR1 0.08\%, BCMA 0\%, ERBB2 15.0\%).}}{9}{}\protected@file@percent }
+\newlabel{fig:depmap}{{3}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.8}Protein-level audit: CPTAC via cBioPortal (gate holds at protein, with five RNA-only exceptions)}{9}{}\protected@file@percent }
+\newlabel{sec:cptac}{{5.8}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Left: pooled CPTAC protein detection-rate distributions for gated antigens vs random surfaceome background ($p=9.6e-04$). Right: RNA-protein concordance in PAAD ($\rho =0.59$).}}{10}{}\protected@file@percent }
+\newlabel{fig:cptac}{{4}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.9}Tumor-versus-adjacent window within the organ (FireBrowse/TCGA): only CA9 clears the noise floor}{10}{}\protected@file@percent }
+\newlabel{sec:window}{{5.9}{10}}
+\bibcite{rdkit}{Landrum(2026)}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Tumor minus adjacent-normal expression (log$_2$ RSEM, housekeeping-adjusted) per antigen, median across cohorts with min--max whiskers. Grey band: the normalization noise floor (residual housekeeping spread, $\pm 1.6$ log$_2$). Only CA9 clears it.}}{11}{}\protected@file@percent }
+\newlabel{fig:window}{{5}{11}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Shipped tool}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Falsification paths}{11}{}\protected@file@percent }
+\bibcite{statsmodels}{Seabold and Perktold(2010)}
+\bibcite{string}{Szklarczyk et al.(2023)}
+\bibcite{opentargets}{Ochoa et al.(2023)}
+\bibcite{gdsc}{Iorio et al.(2016)}
+\bibcite{dgidb}{Cannon et al.(2024)}
 \bibcite{a}{Holbeck et al.(2017)}
 \bibcite{h}{Uhl\'en et al.(2015)}
 \bibcite{her2}{ACS/Slamon}
 \bibcite{m}{Kuruoglu et al.(2021)}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Documented negatives and data findings}{6}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Falsification paths}{6}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7}Mathematical derivations}{6}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Bliss independence and the ALMANAC synergy score}{6}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Embedding model and why pair-held-out is the honest split}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}AUROC as a Mann--Whitney probability}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}FANM: estimator, sampling error, and interval}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}Streaming percentiles as order statistics}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.6}AND-gate gain is bounded by the weaker single}{8}{}\protected@file@percent }
-\gdef \@abspage@last{8}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Mathematical derivations}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Bliss independence and the ALMANAC synergy score}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Embedding model and why pair-held-out is the honest split}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}AUROC as a Mann--Whitney probability}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}FANM: estimator, sampling error, and interval}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.5}Streaming percentiles as order statistics}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.6}AND-gate gain is bounded by the weaker single}{14}{}\protected@file@percent }
+\gdef \@abspage@last{14}
