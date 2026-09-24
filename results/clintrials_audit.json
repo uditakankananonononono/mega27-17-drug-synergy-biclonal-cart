@@ -1,0 +1,217 @@
+{
+ "question": "how much verified target-directed oncology development exists for the gated surfaceome and AND-gate antigens?",
+ "source": "ClinicalTrials.gov API v2; strict_onc (intervention-name token + oncology condition) primary, curated by title inspection; broad + alias tiers as sensitivity/depth",
+ "n_genes": 205,
+ "classes": {
+  "positive_control": 4,
+  "reference": 4,
+  "gated": 99,
+  "background": 98
+ },
+ "calibration": {
+  "cd19_verified": 407,
+  "cd19_gate": true,
+  "noise_controls_verified_sum": 0,
+  "noise_controls": {
+   "POLR2A": 0,
+   "RPS3": 0,
+   "PCNA": 2,
+   "PSMA1": 0
+  },
+  "noise_gate": true,
+  "passed": true
+ },
+ "stats": {
+  "verified_mw": {
+   "p": 0.07124954898525593,
+   "gated_median": 0,
+   "bg_median": 0.0,
+   "gated_mean": 2.7777777777777777,
+   "bg_mean": 0.5612244897959183
+  },
+  "verified_fisher": {
+   "p": 0.12600144134314464,
+   "gated_any": "12/99",
+   "bg_any": "5/98"
+  },
+  "verified_active_mw": {
+   "p": 0.09900282589256879,
+   "gated_median": 0,
+   "bg_median": 0.0,
+   "gated_mean": 1.0101010101010102,
+   "bg_mean": 0.2857142857142857
+  },
+  "strict_onc_raw_mw": {
+   "p": 0.0016487355179406926,
+   "gated_median": 0,
+   "bg_median": 0.0,
+   "gated_mean": 3.242424242424242,
+   "bg_mean": 0.9081632653061225
+  },
+  "strict_raw_mw": {
+   "p": 0.0004036173610252741,
+   "gated_median": 0,
+   "bg_median": 0.0,
+   "gated_mean": 5.494949494949495,
+   "bg_mean": 1.6020408163265305
+  },
+  "broad_mw": {
+   "p": 3.30846649797635e-08,
+   "gated_median": 1,
+   "bg_median": 0.0,
+   "gated_mean": 42.323232323232325,
+   "bg_mean": 11.10204081632653
+  }
+ },
+ "alias_table": [
+  {
+   "gene": "CD19",
+   "class": "reference",
+   "total": 1000,
+   "active": 510,
+   "capped": true,
+   "verified_strict": 407
+  },
+  {
+   "gene": "ERBB2",
+   "class": "reference",
+   "total": 1000,
+   "active": 355,
+   "capped": true,
+   "verified_strict": 145
+  },
+  {
+   "gene": "TNFRSF17",
+   "class": "reference",
+   "total": 566,
+   "active": 389,
+   "capped": false,
+   "verified_strict": 0
+  },
+  {
+   "gene": "MSLN",
+   "class": "and_gate",
+   "total": 131,
+   "active": 55,
+   "capped": false,
+   "verified_strict": 41
+  },
+  {
+   "gene": "CLDN18",
+   "class": "and_gate",
+   "total": 108,
+   "active": 69,
+   "capped": false,
+   "verified_strict": 0
+  },
+  {
+   "gene": "FOLR1",
+   "class": "reference",
+   "total": 74,
+   "active": 32,
+   "capped": false,
+   "verified_strict": 10
+  },
+  {
+   "gene": "CA9",
+   "class": "and_gate",
+   "total": 23,
+   "active": 9,
+   "capped": false,
+   "verified_strict": 7
+  },
+  {
+   "gene": "CLDN6",
+   "class": "and_gate",
+   "total": 17,
+   "active": 12,
+   "capped": false,
+   "verified_strict": 3
+  },
+  {
+   "gene": "PSCA",
+   "class": "and_gate",
+   "total": 13,
+   "active": 8,
+   "capped": false,
+   "verified_strict": 5
+  },
+  {
+   "gene": "SLC39A6",
+   "class": "and_gate",
+   "total": 4,
+   "active": 2,
+   "capped": false,
+   "verified_strict": 0
+  },
+  {
+   "gene": "CA12",
+   "class": "and_gate",
+   "total": 1,
+   "active": 1,
+   "capped": false,
+   "verified_strict": 0
+  }
+ ],
+ "curation": {
+  "n_inspected": 43,
+  "n_collision_or_biomarker": 22,
+  "n_genuine": 20,
+  "n_mixed": 1,
+  "genuine_gated": [
+   "CA9",
+   "CD24",
+   "CDH17",
+   "CEACAM5",
+   "CLDN6",
+   "EGFR",
+   "EPCAM",
+   "HLA-A",
+   "MSLN",
+   "PRAME",
+   "PSCA",
+   "TACSTD2"
+  ],
+  "genuine_background": [
+   "ALK",
+   "CT83",
+   "KRAS",
+   "MICA",
+   "TLR4"
+  ]
+ },
+ "and_gate_summary": {
+  "n": 7,
+  "verified_strict": {
+   "CA12": 0,
+   "CA9": 7,
+   "CLDN18": 0,
+   "CLDN6": 3,
+   "MSLN": 41,
+   "PSCA": 5,
+   "SLC39A6": 0
+  },
+  "alias_total": {
+   "CA12": 1,
+   "CA9": 23,
+   "CLDN18": 108,
+   "CLDN6": 17,
+   "MSLN": 131,
+   "PSCA": 13,
+   "SLC39A6": 4
+  },
+  "alias_active": {
+   "CA12": 1,
+   "CA9": 9,
+   "CLDN18": 69,
+   "CLDN6": 12,
+   "MSLN": 55,
+   "PSCA": 8,
+   "SLC39A6": 2
+  }
+ },
+ "datasets": {
+  "unique_nct_globally": 7118,
+  "per_gene_union_sum": 8662
+ }
+}

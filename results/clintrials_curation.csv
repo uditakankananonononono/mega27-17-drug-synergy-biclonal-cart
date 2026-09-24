@@ -1,0 +1,44 @@
+gene,class,strict_onc_raw,verdict,verified_count,reason
+AFM,gated,2,collision,0,AFM13 bispecific drug-code token + hCG study; not afamin-targeted
+AKR1B10,gated,1,biomarker,0,serum biomarker early-warning study; no targeted intervention
+ALK,background,16,genuine,16,ALK TKI trials (resistance/neoadjuvant/combination)
+ANPEP,gated,1,collision,0,cosmetic emollient study; not CD13-targeted
+AQP4,gated,1,collision,0,AIRE autoimmunity study; not AQP4-targeted
+ATP7A,background,3,collision,0,CD19 CAR-T trials with ATP7A in intervention text; not ATP7A-targeted
+B2M,gated,1,biomarker,0,renal biomarker estimation; not B2M-targeted
+CA9,gated,7,genuine,7,girentuximab/G250(CAIX) + CD70/CAIX CAR-NK era trials
+CD19,reference,407,genuine,407,canonical CAR-T target (positive control)
+CD24,gated,4,genuine,4,CD24Fc (efprezimod) CD24-Siglec axis modulator trials
+CD74,gated,2,biomarker,0,expression-outcome correlation studies only
+CDH17,gated,5,genuine,5,anti-CDH17 CAR-T trials
+CEACAM5,gated,7,genuine,7,CEA-targeted vaccine/immunotherapy trials
+CLDN6,gated,3,genuine,3,CLDN6 CAR-NK/CAR-T trials
+CT83,background,2,genuine,2,KK-LC-1 (CT83) TCR-T trials
+CTTN,background,1,biomarker,0,cortactin expression prognostic study only
+CYP2C9,gated,2,collision,0,drug-drug-interaction pharmacogenetic studies; not CYP2C9-targeted
+DCT,gated,1,collision,0,imaging scatter-correction study; not dopachrome-tautomerase-targeted
+EGFR,gated,148,genuine,148,EGFR TKI/antibody development
+EPCAM,gated,10,genuine,10,EpCAM CAR-T and targeted-agent trials
+ERBB2,reference,145,genuine,145,HER2 vaccines/targeted agents (reference)
+FOLR1,reference,10,genuine,10,FR-alpha vaccines/CAR-T (reference)
+GP2,gated,2,collision,0,GP2 is a HER2-derived peptide name; trials target HER2 not glycoprotein-2
+HLA-A,gated,25,genuine,25,HLA-A-restricted peptide vaccines/TCR therapies
+HLA-B,gated,2,collision,0,OSE-279 (not HLA-B-directed) + spinal-cord study
+HLA-C,gated,3,collision,0,HLA-matching transplant studies; not HLA-C-targeted
+KRAS,background,34,genuine,34,KRAS G12x inhibitors and vaccines
+LAT,background,7,collision,0,local ablative treatment acronym; not LAT-linker-targeted
+MAL,background,19,collision,0,methyl aminolevulinate photodynamic therapy; not MAL-gene-targeted
+MC1R,background,4,biomarker,0,genotype risk-behavior studies; no targeted intervention
+MICA,background,1,genuine,1,MICA/B RNA tumor vaccine
+MSLN,gated,41,genuine,41,mesothelin CAR-T/ADC/vaccine programs
+NMB,gated,15,collision,0,neuromuscular blockade anesthesia studies; not neuromedin-B-targeted
+OLFM4,gated,1,biomarker,0,breast-cancer risk-marker study only
+PCNA,positive_control,11,mixed,2,AOH1996 PCNA-inhibitor trials genuine (2); rest IHC biomarker studies
+PRAME,gated,4,genuine,4,PRAME ImmTAC (brenetafusp)/vaccine trials
+PSCA,gated,5,genuine,5,PSCA CAR-T/minibody trials
+PSMA1,positive_control,3,collision,0,PSMA (FOLH1) radioligand trials; not proteasomal PSMA1
+S100A9,gated,7,biomarker,0,calprotectin diagnostic studies; no targeted intervention
+SPP1,gated,2,biomarker,0,osteopontin serum-biomarker studies only
+TACSTD2,gated,16,genuine,16,TROP2 ADC (sacituzumab era)/CAR-NK trials
+TLR4,background,2,genuine,2,TLR4 agonist (GLA-SE) immuno-oncology trials
+VIM,gated,3,biomarker,0,vimentin biomarker/response studies; no targeted intervention

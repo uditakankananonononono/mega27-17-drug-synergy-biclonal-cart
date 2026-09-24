@@ -50,12 +50,23 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces A: experimental ectodomain coverage per gene (bars = medians). B: antibody co-structures for the AND-gate antigens. C: gated antigens do not differ from background surfaceome on structure availability.}}{14}{}\protected@file@percent }
 \newlabel{fig:epitope}{{8}{14}}
 \@writefile{toc}{\contentsline {section}{\numberline {7}Antigen-escape constraint audit (gnomAD v4, HGNC, Reactome)}{14}{}\protected@file@percent }
+\newlabel{sec:constraint}{{7}{14}}
 \@writefile{toc}{\contentsline {paragraph}{Calibration gate passes.}{14}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Gate-wide null on all three escape-cost axes.}{14}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Germline LoF tolerance (gnomAD v4 LOEUF, x axis; right of the dashed line at 0.6 = LoF-tolerant) against DepMap 24Q4 dependent-line fraction (y axis; below the dotted line at 0.1 = non-essential). The lower-right quadrant is free antigen loss. Essential controls (green) sit at the opposite corner, validating the axes.}}{15}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Every measurable AND-gate antigen is free to lose.}{15}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Negative results preserved.}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Clinical-development landscape: curation-corrected trial mining of the gated surfaceome}{16}{}\protected@file@percent }
+\newlabel{sec:clintrials}{{7.1}{16}}
+\@writefile{toc}{\contentsline {paragraph}{Calibration.}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Acronym noise is half the raw signal.}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{What development the gated set does carry.}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{The AND-gate antigens.}{16}{}\protected@file@percent }
 \bibcite{rdkit}{Landrum(2026)}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces ClinicalTrials.gov landscape for the seven AND-gate antigens and four clinical references. Alias tier uses curated aliases; active = recruiting / active-not-recruiting / enrolling / not-yet-recruiting; verified strict = symbol-token intervention-name hits surviving acronym-collision curation; $\geq $ marks queries truncated at the 1000-record page cap.}}{17}{}\protected@file@percent }
+\newlabel{tab:clintrials}{{3}{17}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Shipped tool}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {9}Falsification paths}{17}{}\protected@file@percent }
 \bibcite{statsmodels}{Seabold and Perktold(2010)}
 \bibcite{string}{Szklarczyk et al.(2023)}
 \bibcite{opentargets}{Ochoa et al.(2023)}
@@ -64,14 +75,14 @@
 \bibcite{a}{Holbeck et al.(2017)}
 \bibcite{h}{Uhl\'en et al.(2015)}
 \bibcite{her2}{ACS/Slamon}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Shipped tool}{16}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {9}Falsification paths}{16}{}\protected@file@percent }
 \bibcite{m}{Kuruoglu et al.(2021)}
-\@writefile{toc}{\contentsline {section}{\numberline {10}Mathematical derivations}{17}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.1}Bliss independence and the ALMANAC synergy score}{17}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.2}Embedding model and why pair-held-out is the honest split}{17}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.3}AUROC as a Mann--Whitney probability}{17}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.4}FANM: estimator, sampling error, and interval}{18}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.5}Streaming percentiles as order statistics}{18}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.6}AND-gate gain is bounded by the weaker single}{18}{}\protected@file@percent }
-\gdef \@abspage@last{18}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \textbf  {a} Alias-tier trial counts for the AND-gate antigens (red) and clinical references (blue); hatched segments are active/recruiting; $\geq $ marks capped queries. \textbf  {b} Curated strict-tier counts across the 99-gene gated surfaceome vs the 98-gene background (median bars; Mann--Whitney $p = 0.071$): after acronym-collision curation the gated set shows only a non-significant excess of verified target-directed development.}}{18}{}\protected@file@percent }
+\newlabel{fig:clintrials}{{10}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {10}Mathematical derivations}{18}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.1}Bliss independence and the ALMANAC synergy score}{19}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.2}Embedding model and why pair-held-out is the honest split}{19}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.3}AUROC as a Mann--Whitney probability}{19}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.4}FANM: estimator, sampling error, and interval}{19}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.5}Streaming percentiles as order statistics}{20}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.6}AND-gate gain is bounded by the weaker single}{20}{}\protected@file@percent }
+\gdef \@abspage@last{20}
