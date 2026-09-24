@@ -29,4 +29,4 @@ Count: 21 (22 raw entries minus pytest infrastructure). Planned honest additions
 7. Open Targets Platform tractability records: 201 Ensembl-ID-backed target records individually queried and used (99 gated + 98 background + 4 references; cache data/opentargets/)
 8. DepMap 24Q4 CRISPRGeneEffect.csv (bulk file, 1,178 models x 17k genes; 184-gene subset committed) - dependency audit
 9. DepMap 24Q4 Model.csv (bulk file, model lineage metadata)
-Count: 12,668 accession-level (7 study-level + 12,459 assay accessions + 201 Open Targets target records). Bar cleared honestly; study-level manifest kept here for transparency.
+Count: 12,668 accession-level (9 study-level + 12,459 assay accessions + 201 Open Targets target records). Bar cleared honestly; study-level manifest kept here for transparency.
