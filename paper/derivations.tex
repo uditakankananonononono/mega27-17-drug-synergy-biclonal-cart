@@ -1,0 +1,81 @@
+\section{Mathematical derivations}
+All quantities below are computed in the committed pipelines; notation matches
+\texttt{src/cart/rna\_window.py} and \texttt{src/synergy/embed\_model.py}.
+
+\subsection{Bliss independence and the ALMANAC synergy score}
+Two drugs act independently when the surviving fraction under the combination
+is the product of the single-agent surviving fractions. Writing fractional
+growth effects $E_a=1-S_a$, $E_b=1-S_b$ (with $S$ the surviving fraction),
+\begin{equation}
+S_{ab}=S_aS_b \;\Longrightarrow\; E_{\mathrm{Bliss}} = 1-(1-E_a)(1-E_b)=E_a+E_b-E_aE_b .
+\end{equation}
+Derivation: independence of kill mechanisms gives $P(\text{survive both})=P(\text{survive }a)\,P(\text{survive }b)$; substituting $S=1-E$ and expanding yields the sum-minus-product form. The ALMANAC combo file carries
+EXPECTEDGROWTH (the Bliss-style expectation at each concentration pair) and a
+SCORE aggregating excess kill; our labels threshold
+\begin{equation}
+y_{abc}=\mathbf 1\big[\mathrm{SCORE}(a,b,c)\ge 50\big],\qquad
+\mathrm{SCORE}=\textstyle\sum_{(d_a,d_b)}\max\big(0,\ E_{\mathrm{Bliss}}(d_a,d_b)-G(d_a,d_b)\big),
+\end{equation}
+so synergy is cumulative observed shortfall of growth below the independence expectation.
+
+\subsection{Embedding model and why pair-held-out is the honest split}
+The model scores pair $(a,b)$ in cell line $c$ through learned embeddings:
+\begin{equation}
+\hat s = w^\top\big[\,e_a\odot e_b \;\Vert\; e_a+e_b \;\Vert\; \gamma_c\,\big],\qquad
+\nabla_{e_a}\mathcal L = -\tfrac{2}{N}\textstyle\sum_i (s_i-\hat s_i)\,w\odot e_b^{(i)} .
+\end{equation}
+Under a row-level split, pair $(a,b)$ appears in training on cell line $c_1$
+and in test on $c_2$; since $e_a,e_b$ are memorizable, test loss partly
+measures embedding recall. Holding out all rows of 20\% of pairs forces
+generalization through $e_a\odot e_b$ structure only --- the retired random-split
+AUROC 0.90 vs pair-held-out 0.846 quantifies exactly that leakage.
+
+\subsection{AUROC as a Mann--Whitney probability}
+For scores $\hat s$ and binary labels $y$,
+\begin{equation}
+\mathrm{AUROC}=P(\hat s^+>\hat s^-)+\tfrac12 P(\hat s^+=\hat s^-)=\frac{U}{n_+n_-},\qquad
+U=\textstyle\sum_{i:y_i=1}\sum_{j:y_j=0}\big(\mathbf 1[\hat s_i>\hat s_j]+\tfrac12\mathbf 1[\hat s_i=\hat s_j]\big),
+\end{equation}
+a rank statistic, so AUROC is invariant to any monotone recalibration of the model output --- which is why we report it alongside, never instead of, Pearson/Spearman calibration metrics.
+
+\subsection{FANM: estimator, sampling error, and interval}
+For subtype-restricted targets the estimand is a population fraction, and its
+uncertainty is binomial. With $k$ of $n_K$ samples above the normal maximum,
+\begin{equation}
+\widehat{\mathrm{FANM}}=\frac{k}{n_K},\qquad
+\mathrm{SE}=\sqrt{\frac{\hat p(1-\hat p)}{n_K}} .
+\end{equation}
+For ERBB2/BRCA: $\hat p=0.110$, $n_K=1075$, SE $=0.0095$. Because $\hat p$ is
+far from $\tfrac12$ we report the Wilson interval
+\begin{equation}
+\frac{\hat p+\frac{z^2}{2n}\pm z\sqrt{\frac{\hat p(1-\hat p)}{n}+\frac{z^2}{4n^2}}}{1+\frac{z^2}{n}}
+\;\Big|_{z=1.96}
+=[0.092,\,0.131],
+\end{equation}
+which excludes both the broad-target regime ($\sim$1) and noise ($\sim$0): the subtype call is statistically supported, not a point-estimate artifact.
+
+\subsection{Streaming percentiles as order statistics}
+The per-sample tumor file holds 156.8M rows; percentiles are computed
+gene-by-gene in $O(n_g)$ memory. For samples $x_{(1)}\le\cdots\le x_{(n)}$ the
+empirical quantile is
+\begin{equation}
+\hat Q(\tau)=x_{(\lceil \tau n\rceil)},\qquad
+\hat Q(\tau)\xrightarrow{p}F^{-1}(\tau)=\inf\{x:F(x)\ge\tau\},
+\end{equation}
+consistent by Glivenko--Cantelli. The p75 window replaces the mean in
+$W(g,K)$; the ERBB2 falsification ($-0.19\to-0.84$) is the direct observation
+that for right-skewed $F$, $Q(0.75)<\mathbb E[X]$ whenever the skew is driven
+by a high-expressing minority --- mean-based windows can look \emph{better}
+than the typical tumor cell's reality.
+
+\subsection{AND-gate gain is bounded by the weaker single}
+For the gated window,
+\begin{equation}
+W_\wedge(a,b,K)\le \min\big(W(a,K),W(b,K)\big)\ \text{a.s.},
+\end{equation}
+because $\min(T_a,T_b)\le T_a$ and $\max_t\min(N_a,N_b)\le\max_t N_a$ (the min
+cannot exceed either argument and monotone maps preserve the inequality), so
+the numerator shrinks and the denominator shrinks no faster than either
+single's. Hence positive gain is never automatic: it requires the normal-tissue
+\emph{co-expression} pattern (different toxic tissues for $a$ and $b$) to do
+the work, which is the discovery criterion used in the pair search.
