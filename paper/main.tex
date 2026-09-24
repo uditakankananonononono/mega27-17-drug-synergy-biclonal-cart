@@ -154,6 +154,31 @@ where $\hat\pi_{a}^{(-ab)}$ is drug $a$'s smoothed synergy rate leaving pair $(a
 A permutation null that shuffles fingerprints across drugs (200 draws) gives a null coefficient of $0.019\pm0.243$ and permutation $p=0.60$.
 \emph{Verdict:} null. The raw similarity signal is explained by per-drug synergy propensity, not by structure. We keep it as a negative. Any future pair-level feature needs the same propensity control.
 
+\section{Shipped tool}
+\texttt{pip install .} provides the \texttt{cart-target-rank} command-line tool
+(\texttt{src/cart}, pure NumPy/pandas), which ranks candidate CAR-T antigens for
+a TCGA cancer code by the tumor-vs-normal expression window used throughout
+this paper:
+\begin{quote}\texttt{cart-target-rank ERBB2 MSLN GPC3 --cancer BRCA --json out.json}\end{quote}
+For each gene the tool reports, from per-sample data: tumor sample count, mean,
+p75/p95/max expression, the FANM fraction (samples above the normal-tissue
+maximum) and the stricter FANM-$2\times$ fraction, the GTEx normal-tissue
+ceiling in nTPM (vital organs by default; \texttt{--all-tissues} widens), and a
+surface-localization flag from the HPA/UniProt union described above. Eleven
+hermetic pytest tests cover the window math, the CLI, and the
+structural-similarity module.
+\textbf{End-to-end validation on committed outputs}
+(\texttt{results/cli\_validate\_erbb2.json}): on BRCA (1{,}075 tumor samples)
+the tool recovers ERBB2 with FANM $=11.0\%$ and FANM-$2\times=8.4\%$ against a
+GTEx ceiling of $99.5$ nTPM --- the same subtype-restricted window validated
+against the $15$--$20\%$ clinical HER2-positive prevalence in the percentile
+section, computed here by the shipped code path rather than the analysis
+scripts. MSLN on the same cohort scores FANM $=4.2\%$ (p95 $48.2$, max
+$1{,}461.7$; ceiling $69.5$ nTPM), consistent with its established
+solid-tumor-antigen profile: high-ceiling outliers against low typical
+expression. The tool therefore reproduces the paper's two reference antigens
+through its own code path, which is the sense in which the shipped artifact is
+validated rather than merely present.
 \section{Falsification paths}
 Synergy: published MatchMaker/DeepSynergy numbers verified (see Results) --- splits differ, no SOTA claim made; a same-split rerun on DrugComb is the remaining path to a direct comparison. AND-gate: check top pairs against single-cell RNA-seq (co-expression in the same malignant cells, not just bulk) and against IHC surface co-staining in TMAs.
 \begin{thebibliography}{9}
