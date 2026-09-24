@@ -1,0 +1,59 @@
+{
+ "n_drugs_chembl": 90,
+ "n_drugs_fingerprinted": 89,
+ "n_pairs": 3815,
+ "synergy_base_rate": 0.3877,
+ "tanimoto_quartile_cuts": [
+  0.0652,
+  0.0915,
+  0.1139
+ ],
+ "synergy_rate_by_quartile": {
+  "1": 0.3092,
+  "2": 0.3753,
+  "3": 0.4334,
+  "4": 0.4329
+ },
+ "median_tanimoto_syn": 0.0968,
+ "median_tanimoto_nonsyn": 0.0874,
+ "mannwhitney_p": 2.087702075677221e-10,
+ "spearman_tanimoto_vs_maxscore": {
+  "rho": 0.0978,
+  "p": 1.3971932693130415e-09
+ },
+ "high_similarity_ge_0.4": {
+  "n": 101,
+  "syn_rate": 0.5545,
+  "low_syn_rate": 0.3831,
+  "fisher_or": 2.003529319903178,
+  "fisher_p": 0.0006037321175566203
+ },
+ "adjusted_logit": {
+  "covariates": [
+   "prop_a_lpo",
+   "prop_b_lpo",
+   "log_tests",
+   "log_atoms_min"
+  ],
+  "coef": {
+   "const": 0.1439,
+   "tanimoto": 0.1451,
+   "prop_a": 1.0168,
+   "prop_b": 1.0169,
+   "log_tests": -0.1407,
+   "log_atoms_min": 0.3886
+  },
+  "p": {
+   "const": 0.9278964145571617,
+   "tanimoto": 0.5788914423568221,
+   "prop_a": 1.3767870028130518e-61,
+   "prop_b": 7.937040125909092e-75,
+   "log_tests": 0.5836934265799647,
+   "log_atoms_min": 0.0007288901821655447
+  },
+  "tanimoto_coef_perm_null_mean": 0.0194,
+  "tanimoto_coef_perm_null_sd": 0.2432,
+  "perm_p_two_sided": 0.6049751243781094,
+  "n_perm": 200
+ }
+}
