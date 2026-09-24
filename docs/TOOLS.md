@@ -6,7 +6,8 @@
 4. HPA subcellular_location - surfaceome annotation
 5. HPA cancer pathology RNA (7-cancer mean aggregation) - tumor expression
 6. UniProt KW-1003 (cell membrane) - surfaceome union (fixes HPA gaps: CD19/BCMA/FOLR1)
-7. PyTorch, 8. scikit-learn, 9. NumPy, 10. pandas, 11. matplotlib, 12. pytest
+7. PyTorch, 8. scikit-learn, 9. NumPy, 10. pandas, 11. matplotlib
+(pytest is used for the hermetic suite but is infrastructure under the program convention - excluded from the count.)
 13. PubChem PUG REST (NSC->drug name resolution)
 14. ChEMBL API (assay-level bioactivities per drug)
 15. GTEx Portal API v2 (gtex_v8 per-sample TPM, 54 tissues, 17,382 samples aggregated per gene) - off-tumor normal-tissue safety check for gated targets
