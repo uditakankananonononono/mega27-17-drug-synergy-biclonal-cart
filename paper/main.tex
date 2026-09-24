@@ -34,6 +34,8 @@ A pair is a discovery only if gain $>0$ and both singles are toxic in \emph{diff
 \subsection{Synergy (pair-held-out)}
 \begin{figure}[h]\centering\includegraphics[width=0.9\linewidth]{figs/fig_synergy.pdf}
 \caption{Held-out-pair metrics. AUROC $0.846$; Pearson $0.467$; RMSE beat vs global mean. The retired leaky random-split AUROC $0.90$ is documented, not quoted.}\end{figure}
+\subsection{Comparison to published baselines (verified)}
+DeepSynergy (Preuer et al.\ 2018) reports Pearson $0.73\pm0.04$ (MSE $169$--$255$ across original and reproduction) on the O'Neil screen under random 5-fold CV over combination--cell-line rows; MatchMaker (Kuru et al.\ 2022) reports Pearson $0.79$, Spearman $0.74$, MSE $79.5$ on DrugComb Loewe regression under trio CV. Both evaluate on different datasets and, critically, on row-level splits under which the same drug pair can appear in both train and test via other cell lines. Our pair-held-out NCI-ALMANAC evaluation (Pearson $0.467$, Spearman $0.383$, AUROC $0.846$) measures generalization to entirely unseen pairs --- a strictly harder task --- and is therefore not numerically comparable. To our knowledge no published NCI-ALMANAC pair-held-out number exists; ours is the first reference point for this split on this dataset. We make no world-best claim.
 \subsection{AND-gate biclonal discovery}
 \begin{figure}[h]\centering\includegraphics[width=0.95\linewidth]{figs/fig_andgate.pdf}
 \caption{Top AND-gated pairs by gain over the best single antigen.}\end{figure}
@@ -41,7 +43,7 @@ Validation of the metric: MSLN$\to$OV $2.29$, GPC3$\to$LIHC $1.17$, EGFR$\to$GBM
 \section{Documented negatives and data findings}
 (1) Leaky $0.90$ AUROC retired. (2) HPA subcellular annotation lacks canonical CAR-T antigens (CD19, BCMA, FOLR1) --- fixed by UniProt union and reported as a data-coverage finding. (3) ERBB2 mean-window failure (above).
 \section{Falsification paths}
-Synergy: verify published MatchMaker/DeepSynergy numbers on identical splits before any SOTA claim (their splits differ --- documented caveat). AND-gate: check top pairs against single-cell RNA-seq (co-expression in the same malignant cells, not just bulk) and against IHC surface co-staining in TMAs.
+Synergy: published MatchMaker/DeepSynergy numbers verified (see Results) --- splits differ, no SOTA claim made; a same-split rerun on DrugComb is the remaining path to a direct comparison. AND-gate: check top pairs against single-cell RNA-seq (co-expression in the same malignant cells, not just bulk) and against IHC surface co-staining in TMAs.
 \begin{thebibliography}{9}
 \bibitem[Holbeck et al.(2017)]{a} Holbeck SL, et al. The NCI-ALMANAC. \emph{Cancer Res} 2017.
 \bibitem[Uhl\'en et al.(2015)]{h} Uhl\'en M, et al. Tissue-based map of the human proteome (HPA). \emph{Science} 2015.

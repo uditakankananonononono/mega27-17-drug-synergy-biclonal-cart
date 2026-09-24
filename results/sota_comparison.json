@@ -1,0 +1,23 @@
+{
+  "verified_2026_09_24": true,
+  "published_baselines": {
+    "DeepSynergy (Preuer et al. 2018, Bioinformatics 34:1538-1546)": {
+      "dataset": "O'Neil screen (583 unique pairs x 39 cell lines, 22,737 points)",
+      "metric": "MSE 169-255 (original vs Nature Sci Rep 2023 reproduction), Pearson 0.73 +/- 0.04",
+      "split": "random 5-fold CV over combination-cell-line rows",
+      "source": "https://www.nature.com/articles/s41598-023-48991-9/tables/3 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC5925774/"
+    },
+    "MatchMaker (Kuru et al. 2022, BMC Bioinformatics)": {
+      "dataset": "DrugComb regression (Loewe)",
+      "metric": "MSE 79.49, Pearson 0.79, Spearman 0.74",
+      "split": "cross-validation over trios",
+      "source": "https://doi.org/10.1186/s12859-022-04791-4"
+    }
+  },
+  "ours_NCI_ALMANAC": {
+    "split": "whole-drug-pair held-out (no pair in both train and test)",
+    "pearson": 0.467, "spearman": 0.383, "auroc_synergy_score50": 0.846,
+    "rmse": 14.50, "baseline_rmse": 16.39, "n_test_rows": 62260
+  },
+  "comparability_verdict": "NOT directly comparable: different datasets (NCI-ALMANAC vs O'Neil/DrugComb) AND different split strictness. Row-level CV lets the same drug pair appear in train and test via other cell lines; our pair-held-out split measures novel-pair generalization. To our knowledge no published NCI-ALMANAC pair-held-out number exists; ours is the first reference point for this split on this dataset. No world-best claim made."
+}
