@@ -1,0 +1,2336 @@
+{
+ "source": {
+  "name": "DrugCentral drug.target.interaction snapshot 2021_09_01",
+  "url": "https://unmtid-dbs.net/download/DrugCentral/2021_09_01/drug.target.interaction.tsv.gz",
+  "rows_total": 19378,
+  "rows_human": 14301,
+  "human_genes": 1704,
+  "human_drugs": 2339,
+  "note": "bulk snapshot file; curated quantitative activities, small-molecule-heavy"
+ },
+ "per_gene": {
+  "ADH1A": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "ADH1B": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "ADH1C": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "AFM": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "AKR1B10": {
+   "group": "gated",
+   "n_rows": 6,
+   "n_drugs": 6,
+   "tdl": [
+    "Tchem"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "diclofenac",
+    "enoxolone",
+    "epalrestat",
+    "flufenamic acid",
+    "mefenamic acid",
+    "tolrestat"
+   ]
+  },
+  "ANPEP": {
+   "group": "gated",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [
+    "Tchem"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "ubenimex"
+   ]
+  },
+  "APOC3": {
+   "group": "gated",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 1,
+   "drugs": [
+    "volanesorsen"
+   ]
+  },
+  "APOD": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "AQP1": {
+   "group": "gated",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [
+    "Tbio"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "acetazolamide"
+   ]
+  },
+  "AQP4": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "ASGR2": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "ATP1B2": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "ATP6V1B1": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "B2M": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CA12": {
+   "group": "gated",
+   "n_rows": 45,
+   "n_drugs": 45,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 3,
+   "drugs": [
+    "acetazolamide",
+    "benzylsulfamide",
+    "bortezomib",
+    "brinzolamide",
+    "celecoxib",
+    "chlortalidone",
+    "cianidanol",
+    "coumarin",
+    "dichlorphenamide",
+    "ditiocarb",
+    "dobutamine",
+    "dorzolamide",
+    "ethoxzolamide",
+    "ethyl hydroxybenzoate",
+    "famotidine"
+   ]
+  },
+  "CA9": {
+   "group": "gated",
+   "n_rows": 45,
+   "n_drugs": 45,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 1,
+   "drugs": [
+    "acetazolamide",
+    "benzylsulfamide",
+    "bortezomib",
+    "brinzolamide",
+    "celecoxib",
+    "chlortalidone",
+    "cianidanol",
+    "coumarin",
+    "dichlorphenamide",
+    "ditiocarb",
+    "dobutamine",
+    "dorzolamide",
+    "ethoxzolamide",
+    "ethyl hydroxybenzoate",
+    "famotidine"
+   ]
+  },
+  "CD24": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CD63": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CD74": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CDC42EP1": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CDH17": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CEACAM5": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CEACAM6": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CKB": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CLDN18": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CLDN2": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CLDN3": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CLDN4": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CLDN6": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CLTRN": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CYP2C9": {
+   "group": "gated",
+   "n_rows": 58,
+   "n_drugs": 58,
+   "tdl": [
+    "Tchem"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "alpha-Ergocryptine",
+    "amiodarone",
+    "atazanavir",
+    "benzbromarone",
+    "bisacodyl",
+    "candesartan cilexetil",
+    "cilostazol",
+    "clotrimazole",
+    "danazol",
+    "dichlorphenamide",
+    "dicoumarol",
+    "dihydroergocristine",
+    "dotinurad",
+    "econazole",
+    "felodipine"
+   ]
+  },
+  "DCT": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "DNER": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "DPEP1": {
+   "group": "gated",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 1,
+   "drugs": [
+    "cilastatin"
+   ]
+  },
+  "EEF1A1": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "EEF2": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "EGFR": {
+   "group": "gated",
+   "n_rows": 65,
+   "n_drugs": 65,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 13,
+   "drugs": [
+    "afatinib",
+    "astemizole",
+    "axitinib",
+    "bacitracin",
+    "bithionol",
+    "bosutinib",
+    "brigatinib",
+    "cabozantinib",
+    "candesartan cilexetil",
+    "ceritinib",
+    "cetuximab",
+    "chlorpromazine",
+    "chromic chloride",
+    "cisplatin",
+    "clomifene"
+   ]
+  },
+  "ENPP3": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "EPCAM": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "FABP3": {
+   "group": "gated",
+   "n_rows": 2,
+   "n_drugs": 2,
+   "tdl": [
+    "Tchem"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "linoleic acid",
+    "linolenic acid"
+   ]
+  },
+  "GAP43": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "GAPDH": {
+   "group": "gated",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [
+    "Tchem"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "adenosine"
+   ]
+  },
+  "GJB1": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "GP2": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "GPM6A": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "GPM6B": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "HJV": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "HLA-A": {
+   "group": "gated",
+   "n_rows": 5,
+   "n_drugs": 5,
+   "tdl": [
+    "Tbio"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "astemizole",
+    "doxazosin",
+    "raloxifene",
+    "spiperone",
+    "trazodone"
+   ]
+  },
+  "HLA-B": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "HLA-C": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "HLA-DRA": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "HLA-DRB1": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "HLA-DRB5": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "HMOX1": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "HSP90AB1": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "HSPB1": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "IFITM3": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "JUP": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "KLK7": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "KRT1": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "LGALS4": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "LPCAT1": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "LY6E": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "MISP": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "MLC1": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "MSLN": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "MUC13": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "NMB": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "NOX1": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "OLFM4": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "OR2I1P": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PDPN": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PERP": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PI3": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PIGR": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PLA2G2A": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PLP1": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PRAME": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PSCA": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PTPRZ1": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "S100A6": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "S100A9": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "S100P": {
+   "group": "gated",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [
+    "Tbio"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "cromoglicic acid"
+   ]
+  },
+  "SCNN1A": {
+   "group": "gated",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 0,
+   "drugs": [
+    "amiloride"
+   ]
+  },
+  "SLC17A3": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "SLC1A3": {
+   "group": "gated",
+   "n_rows": 2,
+   "n_drugs": 2,
+   "tdl": [
+    "Tchem"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "aspartic acid",
+    "glutamic acid"
+   ]
+  },
+  "SLC2A2": {
+   "group": "gated",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [
+    "Tchem"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "quercetin"
+   ]
+  },
+  "SLC34A2": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "SLC39A6": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "SPINT1": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "SPP1": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "TACSTD2": {
+   "group": "gated",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [
+    "Tbio"
+   ],
+   "tclin": false,
+   "moa": 1,
+   "drugs": [
+    "sacituzumab govitecan"
+   ]
+  },
+  "THBS2": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "TM4SF4": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "TM4SF5": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "TSPAN8": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "UBE2C": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "VCAM1": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "VIM": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "ABCB5": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "AIF1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "ALK": {
+   "group": "background",
+   "n_rows": 21,
+   "n_drugs": 19,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 6,
+   "drugs": [
+    "alectinib",
+    "bosutinib",
+    "brigatinib",
+    "ceritinib",
+    "crizotinib",
+    "entrectinib",
+    "erlotinib",
+    "fedratinib",
+    "gilteritinib",
+    "infigratinib",
+    "lorlatinib",
+    "midostaurin",
+    "nintedanib",
+    "osimertinib",
+    "pazopanib"
+   ]
+  },
+  "ATP7A": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "BOC": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "C1QBP": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CDC50A": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CDC50B": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CDH12": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CHIC1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CLCNKB": {
+   "group": "background",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [
+    "Tbio"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "niflumic acid"
+   ]
+  },
+  "CLSTN1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CLSTN3": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CNNM2": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CT83": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CTTN": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CX3CR1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CYS1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "DCHS1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "DLGAP1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "DOCK4": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "EMCN": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "ERRFI1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "ERVMER34-1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "FFAR1": {
+   "group": "background",
+   "n_rows": 7,
+   "n_drugs": 7,
+   "tdl": [
+    "Tchem"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "doconexent",
+    "dodecanoic acid",
+    "gamolenic acid",
+    "linoleic acid",
+    "linolenic acid",
+    "oleic acid",
+    "rosiglitazone"
+   ]
+  },
+  "FRMPD2": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "GJA5": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "GJB2": {
+   "group": "background",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [
+    "Tbio"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "kanamycin"
+   ]
+  },
+  "GNA11": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "GP6": {
+   "group": "background",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [
+    "Tbio"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "losartan"
+   ]
+  },
+  "GPC4": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "GPR15": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "HTR2B": {
+   "group": "background",
+   "n_rows": 156,
+   "n_drugs": 156,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 4,
+   "drugs": [
+    "aclarubicin",
+    "agomelatine",
+    "alosetron",
+    "alpha-Ergocryptine",
+    "amiodarone",
+    "amisulpride",
+    "amitriptyline",
+    "amoxapine",
+    "amoxicillin",
+    "apomorphine",
+    "aripiprazole",
+    "asenapine",
+    "astemizole",
+    "azelastine",
+    "benzatropine"
+   ]
+  },
+  "IGKV1-12": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "IGKV2-28": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "IGKV6D-41": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "IGLV1-40": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "IGLV11-55": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "ITM2C": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "JAML": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "KIR2DL1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "KLRG1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "KRAS": {
+   "group": "background",
+   "n_rows": 5,
+   "n_drugs": 4,
+   "tdl": [
+    "Tchem"
+   ],
+   "tclin": false,
+   "moa": 1,
+   "drugs": [
+    "dabrafenib",
+    "lonafarnib",
+    "sotorasib",
+    "vemurafenib"
+   ]
+  },
+  "LAT": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "LGR5": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "MAL": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "MC1R": {
+   "group": "background",
+   "n_rows": 5,
+   "n_drugs": 4,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 1,
+   "drugs": [
+    "afamelanotide",
+    "bremelanotide",
+    "corticotropin",
+    "setmelanotide"
+   ]
+  },
+  "MICA": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "MINPP1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "MMP16": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "MYMK": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "NLGN3": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "NOD1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "NOS3": {
+   "group": "background",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [
+    "Tchem"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "chlorzoxazone"
+   ]
+  },
+  "OR10G7": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "OR12D2": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "OR13C2": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "OR2A14": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "OR2T11": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "OR3A1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "OR4A47": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "OR52E4": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "OR52P1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "OR5P2": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "OR8B12": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "OR8D4": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "P2RY14": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PACSIN2": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PCDHA10": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PCDHB15": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PCDHB18P": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PCDHB5": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PCDHGB1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PRICKLE3": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PRSS21": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PRX": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "RAPSN": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "S1PR3": {
+   "group": "background",
+   "n_rows": 4,
+   "n_drugs": 4,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 1,
+   "drugs": [
+    "fingolimod",
+    "ozanimod",
+    "ponesimod",
+    "siponimod"
+   ]
+  },
+  "S1PR5": {
+   "group": "background",
+   "n_rows": 4,
+   "n_drugs": 4,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 3,
+   "drugs": [
+    "fingolimod",
+    "ozanimod",
+    "ponesimod",
+    "siponimod"
+   ]
+  },
+  "SEPTIN2": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "SLC15A1": {
+   "group": "background",
+   "n_rows": 2,
+   "n_drugs": 2,
+   "tdl": [
+    "Tchem"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "cefadroxil",
+    "cefamandole"
+   ]
+  },
+  "SLC22A8": {
+   "group": "background",
+   "n_rows": 5,
+   "n_drugs": 5,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 1,
+   "drugs": [
+    "betamipron",
+    "cefalotin",
+    "dotinurad",
+    "probenecid",
+    "tafamidis"
+   ]
+  },
+  "SLC5A9": {
+   "group": "background",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [
+    "Tdark"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "empagliflozin"
+   ]
+  },
+  "SLC6A19": {
+   "group": "background",
+   "n_rows": 2,
+   "n_drugs": 2,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "benzatropine",
+    "cinromide"
+   ]
+  },
+  "SLCO2B1": {
+   "group": "background",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "erlotinib"
+   ]
+  },
+  "SSTR3": {
+   "group": "background",
+   "n_rows": 4,
+   "n_drugs": 4,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 3,
+   "drugs": [
+    "lanreotide",
+    "octreotide",
+    "pasireotide",
+    "somatostatin"
+   ]
+  },
+  "TAS2R16": {
+   "group": "background",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [
+    "Tbio"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "isoprenaline"
+   ]
+  },
+  "TBC1D3L": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "TGM1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "TLR4": {
+   "group": "background",
+   "n_rows": 2,
+   "n_drugs": 2,
+   "tdl": [
+    "Tchem"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "carvedilol",
+    "eritoran"
+   ]
+  },
+  "TRBV12-4": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "TRBV7-1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "TRBV7-4": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "TTYH2": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "TULP3": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "UNC93A": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "VLDLR": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "VNN1": {
+   "group": "background",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CD19": {
+   "group": "reference",
+   "n_rows": 4,
+   "n_drugs": 4,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 4,
+   "drugs": [
+    "blinatumomab",
+    "inebilizumab",
+    "loncastuximab tesirine",
+    "tafasitamab"
+   ]
+  },
+  "ERBB2": {
+   "group": "reference",
+   "n_rows": 38,
+   "n_drugs": 36,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 9,
+   "drugs": [
+    "acalabrutinib",
+    "afatinib",
+    "amiodarone",
+    "astemizole",
+    "benzethonium",
+    "bithionol",
+    "bosutinib",
+    "candesartan cilexetil",
+    "chlorpromazine",
+    "clomifene",
+    "clotrimazole",
+    "colistin",
+    "dacomitinib",
+    "dasatinib",
+    "diiodohydroxyquinoline"
+   ]
+  },
+  "FOLR1": {
+   "group": "reference",
+   "n_rows": 4,
+   "n_drugs": 4,
+   "tdl": [
+    "Tchem"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "methotrexate",
+    "pemetrexed",
+    "pralatrexate",
+    "raltitrexed"
+   ]
+  },
+  "TNFRSF17": {
+   "group": "reference",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [
+    "Tbio"
+   ],
+   "tclin": false,
+   "moa": 1,
+   "drugs": [
+    "belantamab mafodotin"
+   ]
+  }
+ },
+ "summary": {
+  "gated": {
+   "n": 99,
+   "any": 17,
+   "tclin": 6,
+   "moa": 6
+  },
+  "background": {
+   "n": 98,
+   "any": 19,
+   "tclin": 7,
+   "moa": 8
+  }
+ },
+ "tests": {
+  "any": {
+   "gated_yes": 17,
+   "gated_no": 82,
+   "bg_yes": 19,
+   "bg_no": 79,
+   "odds": 0.862,
+   "p": 0.715766919677253
+  },
+  "tclin": {
+   "gated_yes": 6,
+   "gated_no": 93,
+   "bg_yes": 7,
+   "bg_no": 91,
+   "odds": 0.839,
+   "p": 0.7827252285946411
+  },
+  "moa": {
+   "gated_yes": 6,
+   "gated_no": 93,
+   "bg_yes": 8,
+   "bg_no": 90,
+   "odds": 0.726,
+   "p": 0.5926098036149519
+  }
+ },
+ "and_gate": {
+  "CLDN18": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "MSLN": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "CA9": {
+   "group": "gated",
+   "n_rows": 45,
+   "n_drugs": 45,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 1,
+   "drugs": [
+    "acetazolamide",
+    "benzylsulfamide",
+    "bortezomib",
+    "brinzolamide",
+    "celecoxib",
+    "chlortalidone",
+    "cianidanol",
+    "coumarin",
+    "dichlorphenamide",
+    "ditiocarb",
+    "dobutamine",
+    "dorzolamide",
+    "ethoxzolamide",
+    "ethyl hydroxybenzoate",
+    "famotidine"
+   ]
+  },
+  "CA12": {
+   "group": "gated",
+   "n_rows": 45,
+   "n_drugs": 45,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 3,
+   "drugs": [
+    "acetazolamide",
+    "benzylsulfamide",
+    "bortezomib",
+    "brinzolamide",
+    "celecoxib",
+    "chlortalidone",
+    "cianidanol",
+    "coumarin",
+    "dichlorphenamide",
+    "ditiocarb",
+    "dobutamine",
+    "dorzolamide",
+    "ethoxzolamide",
+    "ethyl hydroxybenzoate",
+    "famotidine"
+   ]
+  },
+  "CLDN6": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "PSCA": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  },
+  "SLC39A6": {
+   "group": "gated",
+   "n_rows": 0,
+   "n_drugs": 0,
+   "tdl": [],
+   "tclin": false,
+   "moa": 0,
+   "drugs": []
+  }
+ },
+ "references": {
+  "CD19": {
+   "group": "reference",
+   "n_rows": 4,
+   "n_drugs": 4,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 4,
+   "drugs": [
+    "blinatumomab",
+    "inebilizumab",
+    "loncastuximab tesirine",
+    "tafasitamab"
+   ]
+  },
+  "ERBB2": {
+   "group": "reference",
+   "n_rows": 38,
+   "n_drugs": 36,
+   "tdl": [
+    "Tclin"
+   ],
+   "tclin": true,
+   "moa": 9,
+   "drugs": [
+    "acalabrutinib",
+    "afatinib",
+    "amiodarone",
+    "astemizole",
+    "benzethonium",
+    "bithionol",
+    "bosutinib",
+    "candesartan cilexetil",
+    "chlorpromazine",
+    "clomifene",
+    "clotrimazole",
+    "colistin",
+    "dacomitinib",
+    "dasatinib",
+    "diiodohydroxyquinoline"
+   ]
+  },
+  "FOLR1": {
+   "group": "reference",
+   "n_rows": 4,
+   "n_drugs": 4,
+   "tdl": [
+    "Tchem"
+   ],
+   "tclin": false,
+   "moa": 0,
+   "drugs": [
+    "methotrexate",
+    "pemetrexed",
+    "pralatrexate",
+    "raltitrexed"
+   ]
+  },
+  "TNFRSF17": {
+   "group": "reference",
+   "n_rows": 1,
+   "n_drugs": 1,
+   "tdl": [
+    "Tbio"
+   ],
+   "tclin": false,
+   "moa": 1,
+   "drugs": [
+    "belantamab mafodotin"
+   ]
+  }
+ }
+}
