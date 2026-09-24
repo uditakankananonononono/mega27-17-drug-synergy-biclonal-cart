@@ -1,0 +1,450 @@
+{
+ "n_drugs_with_targets": 70,
+ "n_unique_assay_accessions": 12459,
+ "pairs_both_annotated": 2319,
+ "frac_synergistic_sharing_target": 0.1858,
+ "frac_nonsynergistic_sharing_target": 0.1646,
+ "drug_top_targets": {
+  "VISMODEGIB": {
+   "Protein smoothened": 9.4,
+   "Unchecked": 8.7,
+   "Molecular identity unknown": 8.64,
+   "Sonic hedgehog protein": 8.52,
+   "NON-PROTEIN TARGET": 8.4
+  },
+  "LENALIDOMIDE": {
+   "MM1.S": 7.3,
+   "Zinc finger protein Aiolos": 7.3,
+   "Unchecked": 7.28,
+   "Protein cereblon": 7.24,
+   "Cereblon/Ikaros": 7.17
+  },
+  "DACTINOMYCIN": {
+   "C8166": 10.1,
+   "P388": 9.7,
+   "A549": 9.7,
+   "PC-3": 9.56,
+   "HeLa": 9.4
+  },
+  "VINBLASTINE SULFATE": {
+   "Plasmodium falciparum": 9.49,
+   "K562": 9.0,
+   "Unchecked": 9.0,
+   "HCT-116": 9.0,
+   "CWR22R": 9.0
+  },
+  "VORINOSTAT": {
+   "HepG2": 9.22,
+   "Protein deacetylase HDAC6": 9.0,
+   "Histone deacetylase 1": 8.89,
+   "Histone deacetylase 2": 8.8,
+   "Histone deacetylase 3/Nuclear receptor corepressor 2 (HDAC3/NCoR2)": 8.7
+  },
+  "AXITINIB": {
+   "Vascular endothelial growth factor receptor 2": 10.7,
+   "EOL1": 10.29,
+   "Vascular endothelial growth factor receptor 1": 10.0,
+   "Vascular endothelial growth factor receptor 3": 10.0,
+   "Tyrosine-protein kinase ABL1": 9.7
+  },
+  "VINCRISTINE SULFATE": {
+   "NON-PROTEIN TARGET": 9.0,
+   "LNCaP": 8.54,
+   "OVCAR-3": 8.0,
+   "IGROV-1": 8.0,
+   "MCF7": 8.0
+  },
+  "TOPOTECAN": {
+   "Bel-7402": 8.92,
+   "HCT-8": 8.82,
+   "MCF7": 8.74,
+   "A549": 8.49,
+   "SW-620": 8.49
+  },
+  "VINORELBINE TARTRATE": {
+   "Unchecked": 8.26,
+   "A549": 8.05,
+   "HeLa": 8.05
+  },
+  "DOXORUBICIN HYDROCHLORIDE": {
+   "ECa-109 cell line": 9.7,
+   "Bel-7402": 9.43,
+   "HepG2": 9.35,
+   "K562": 9.0,
+   "MCF7": 8.92
+  },
+  "DASATINIB": {
+   "EOL1": 10.88,
+   "Proto-oncogene tyrosine-protein kinase Src": 10.8,
+   "Tyrosine-protein kinase ABL1": 10.8,
+   "Bcr/Abl fusion protein": 10.8,
+   "Unchecked": 10.52
+  },
+  "MECHLORETHAMINE HYDROCHLORIDE": {
+   "Unchecked": 6.86
+  },
+  "PENTOSTATIN": {
+   "Adenosine deaminase": 11.0,
+   "L1210": 6.6,
+   "Adenosine receptor A1": 6.39
+  },
+  "DOCETAXEL": {
+   "NON-PROTEIN TARGET": 10.94,
+   "KB": 10.0,
+   "HSC-3": 9.88,
+   "Growth hormone-releasing hormone receptor": 9.85,
+   "5637": 9.84
+  },
+  "SORAFENIB": {
+   "Vascular endothelial growth factor receptor 2": 10.68,
+   "HUVEC": 9.23,
+   "MV4-11": 9.06,
+   "RAF proto-oncogene serine/threonine-protein kinase": 9.0,
+   "Serine/threonine-protein kinase B-raf": 9.0
+  },
+  "RALOXIFENE": {
+   "Estrogen receptor": 10.52,
+   "Ishikawa": 10.4,
+   "MCF7": 9.7,
+   "Estrogen receptor beta": 9.1,
+   "Aldehyde oxidase": 9.06
+  },
+  "ETOPOSIDE": {
+   "CCRF-CEM": 8.7,
+   "A549": 8.59,
+   "KB": 8.34,
+   "P388": 8.0,
+   "A253 cell line": 7.73
+  },
+  "ROMIDEPSIN": {
+   "Histone deacetylase 2": 10.42,
+   "Histone deacetylase 3": 9.82,
+   "Histone deacetylase 8": 9.82,
+   "Histone deacetylase 3/NCoR1": 9.82,
+   "Histone deacetylase 1": 9.7
+  },
+  "PRALATREXATE": {
+   "Dihydrofolate reductase": 10.87,
+   "Bifunctional dihydrofolate reductase-thymidylate synthase": 10.87,
+   "KB": 9.33,
+   "NON-PROTEIN TARGET": 9.16,
+   "Reduced folate transporter": 9.16
+  },
+  "CELECOXIB": {
+   "Prostaglandin G/H synthase 2": 9.33,
+   "Prostaglandin G/H synthase 1": 9.15,
+   "Unchecked": 8.94,
+   "Carbonate dehydratase": 8.16,
+   "Carbonic anhydrase 9": 7.83
+  },
+  "IMATINIB": {
+   "Receptor tyrosine-protein kinase erbB-2": 10.22,
+   "Epidermal growth factor receptor": 9.96,
+   "K562": 9.82,
+   "EOL1": 9.7,
+   "Epithelial discoidin domain-containing receptor 1": 9.15
+  },
+  "ZOLEDRONIC ACID": {
+   "Farnesyl pyrophosphate synthase": 10.15,
+   "Mus musculus": 8.7,
+   "Unchecked": 7.42,
+   "Carbonic anhydrase 2": 7.21,
+   "Carbonic anhydrase 14": 7.04
+  },
+  "CAPECITABINE": {
+   "NON-PROTEIN TARGET": 8.36
+  },
+  "DAUNORUBICIN HYDROCHLORIDE": {
+   "MOLT-4": 9.0,
+   "P388": 8.52,
+   "K562": 7.82,
+   "L1210 (1565)": 7.8,
+   "HL-60": 7.01
+  },
+  "GEFITINIB": {
+   "Epidermal growth factor receptor": 10.0,
+   "NON-PROTEIN TARGET": 8.82,
+   "EOL1": 8.29,
+   "Cyclin-G-associated kinase": 8.15,
+   "HN5": 8.0
+  },
+  "FLOXURIDINE": {
+   "Thymidylate synthase": 9.4,
+   "L1210": 9.3,
+   "L5178Y": 9.12,
+   "Unchecked": 9.05,
+   "CCRF-CEM": 8.7
+  },
+  "DECITABINE": {
+   "DNA (cytosine-5)-methyltransferase 1": 7.52,
+   "Unchecked": 7.3,
+   "L1210": 6.41
+  },
+  "BORTEZOMIB": {
+   "Unchecked": 9.79,
+   "SK-UT-1": 9.79,
+   "SH-4": 9.76,
+   "TE-9": 9.74,
+   "A253 cell line": 9.68
+  },
+  "7-ETHYL-10-HYDROXYCAMPTOTHECIN": {
+   "MCF7": 10.0,
+   "PC-6": 9.37,
+   "HCT-116": 9.26,
+   "COLO 205": 9.12,
+   "A549": 8.79
+  },
+  "MITOXANTRONE": {
+   "HL-60": 10.62,
+   "A549": 10.44,
+   "L1210": 10.4,
+   "SGC-7901": 9.53,
+   "MDA-MB-435": 9.46
+  },
+  "BUSULFAN": {
+   "Prelamin-A/C": 6.1
+  },
+  "METHOXSALEN": {
+   "Cytochrome P450 1A2": 7.8,
+   "Cytochrome P450 2A13": 7.4,
+   "Cytochrome P450 2A6": 7.05,
+   "PAM212": 7.0,
+   "LoVo": 6.4
+  },
+  "ERLOTINIB HYDROCHLORIDE": {
+   "Epidermal growth factor receptor": 8.7,
+   "DiFi": 7.7,
+   "Serine/threonine-protein kinase B-raf": 7.4
+  },
+  "CABAZITAXEL": {
+   "NCI-H524": 9.59,
+   "A549": 8.83,
+   "MES-SA/Dx5": 7.82,
+   "KB": 7.7,
+   "HCT-116": 7.54
+  },
+  "CLADRIBINE": {
+   "CCRF-CEM": 9.3,
+   "BV-173": 9.1,
+   "Purine nucleoside phosphorylase": 8.64,
+   "Raji": 8.05,
+   "HEp-2": 7.52
+  },
+  "BLEOMYCIN": {
+   "COLO-668": 10.66,
+   "CAL-51": 10.0,
+   "A-427": 9.93,
+   "RMG-I": 9.88,
+   "HuTu80": 9.87
+  },
+  "IXABEPILONE": {
+   "HCT-116": 8.59,
+   "CCRF-CEM": 8.52,
+   "1A9": 8.18,
+   "KB": 8.1,
+   "SK-N-FI": 8.0
+  },
+  "ALLOPURINOL": {
+   "Xanthine dehydrogenase/oxidase": 9.27,
+   "NON-PROTEIN TARGET": 6.64,
+   "RecQ-like DNA helicase BLM": 6.4,
+   "Unchecked": 6.14,
+   "Ras-related protein Rab-9A": 6.0
+  },
+  "NILOTINIB": {
+   "EOL1": 9.84,
+   "Bcr/Abl fusion protein": 9.48,
+   "Tyrosine-protein kinase ABL1": 9.06,
+   "Epithelial discoidin domain-containing receptor 1": 8.96,
+   "NON-PROTEIN TARGET": 8.81
+  },
+  "VANDETANIB": {
+   "Vascular endothelial growth factor receptor 3": 9.96,
+   "Proto-oncogene tyrosine-protein kinase receptor Ret": 9.89,
+   "Proto-oncogene tyrosine-protein kinase Src": 9.1,
+   "Vascular endothelial growth factor receptor 2": 8.4,
+   "Receptor-interacting serine/threonine-protein kinase 2": 8.34
+  },
+  "THIOTEPA": {
+   "Sodium-dependent serotonin transporter": 8.15,
+   "Sodium-dependent noradrenaline transporter": 7.75,
+   "Alpha-1A adrenergic receptor": 7.36,
+   "Histamine H1 receptor": 7.2,
+   "Muscarinic acetylcholine receptor M1": 6.41
+  },
+  "DACARBAZINE": {
+   "Matrix metalloproteinase-9": 6.25
+  },
+  "IFOSFAMIDE": {
+   "Prelamin-A/C": 7.25
+  },
+  "IMIQUIMOD": {
+   "Toll-like receptor 7": 6.7,
+   "Oxidized purine nucleoside triphosphate hydrolase": 6.19,
+   "Hepatitis C virus": 6.0
+  },
+  "TAMOXIFEN CITRATE": {
+   "Estrogen receptor beta": 8.3,
+   "RecQ-like DNA helicase BLM": 6.5,
+   "MCF7": 6.1
+  },
+  "MITOTANE": {
+   "RecQ-like DNA helicase BLM": 7.65,
+   "Progesterone receptor": 6.35,
+   "5-hydroxytryptamine receptor 6": 6.19,
+   "Sodium-dependent dopamine transporter": 6.1,
+   "Sodium-dependent noradrenaline transporter": 6.09
+  },
+  "IDARUBICIN HYDROCHLORIDE": {
+   "Unchecked": 7.96,
+   "BJ": 6.55,
+   "MUS81-ECE1": 6.21
+  },
+  "ABIRATERONE": {
+   "Steroid 17-alpha-hydroxylase/17,20 lyase": 8.7,
+   "Steroid 21-hydroxylase": 7.49,
+   "Cytochrome P450 3A4": 6.64
+  },
+  "CHLORAMBUCIL": {
+   "MCF7": 7.58,
+   "CHO-AA8": 7.44,
+   "A549": 7.07,
+   "Unchecked": 6.7,
+   "MDA-MB-231": 6.28
+  },
+  "PLICAMYCIN": {
+   "Plasmodium falciparum": 7.9,
+   "HT-29": 7.48,
+   "P388": 7.3,
+   "A549": 7.22,
+   "Nuclear receptor subfamily 1 group I member 2": 6.5
+  },
+  "METHOTREXATE": {
+   "Dihydrofolate reductase": 10.68,
+   "Lacticaseibacillus casei": 10.52,
+   "Plasmodium falciparum": 10.4,
+   "Bifunctional dihydrofolate reductase-thymidylate synthase": 9.89,
+   "Enterococcus faecium": 9.52
+  },
+  "AMIFOSTINE": {
+   "Muscarinic acetylcholine receptor M1": 7.95,
+   "D(3) dopamine receptor": 6.18
+  },
+  "LETROZOLE": {
+   "Aromatase": 10.7,
+   "MCF7": 8.15
+  },
+  "ERIBULIN MESYLATE": {
+   "NON-PROTEIN TARGET": 8.78,
+   "U-251": 8.23,
+   "SF-295": 7.55
+  },
+  "ANASTROZOLE": {
+   "Aromatase": 9.89
+  },
+  "TENIPOSIDE": {
+   "MCF7": 7.8,
+   "PC-3": 7.8,
+   "A549": 7.8,
+   "CWR22R": 7.09,
+   "RPMI 8402": 6.66
+  },
+  "CARMUSTINE": {
+   "RecQ-like DNA helicase BLM": 7.85
+  },
+  "EXEMESTANE": {
+   "Aromatase": 9.02,
+   "NON-PROTEIN TARGET": 8.25
+  },
+  "FLUDARABINE": {
+   "Adenosine receptor A1": 8.23,
+   "Adenosine receptor A2a": 7.55,
+   "K562": 6.82,
+   "NON-PROTEIN TARGET": 6.8,
+   "SNU-398": 6.7
+  },
+  "PACLITAXEL": {
+   "SW626": 11.0,
+   "NON-PROTEIN TARGET": 10.8,
+   "MES-SA/Dx5": 10.4,
+   "Plasmodium falciparum": 10.15,
+   "L1210": 10.05
+  },
+  "LAPATINIB": {
+   "Epidermal growth factor receptor": 10.22,
+   "Receptor tyrosine-protein kinase erbB-2": 8.8,
+   "SK-BR-3": 8.7,
+   "SK-OV-3": 8.52,
+   "CAL-27": 8.15
+  },
+  "GEMCITABINE HYDROCHLORIDE": {
+   "NCI-H460": 8.67,
+   "C2G cell line": 8.43,
+   "TRAMP-C2H": 8.33,
+   "TRAMP-C1A": 8.05,
+   "C2D cell line": 7.92
+  },
+  "NELARABINE": {
+   "CCRF-HSB-2": 7.17,
+   "Jurkat": 7.17,
+   "Unchecked": 7.17,
+   "SARS-CoV-2": 6.19
+  },
+  "FULVESTRANT": {
+   "Estrogen receptor": 10.22,
+   "MCF7": 10.0,
+   "Progesterone receptor": 9.68,
+   "Estrogen receptor beta": 9.52,
+   "Unchecked": 9.22
+  },
+  "MELPHALAN": {
+   "P388": 6.66,
+   "MCF7S": 6.52,
+   "MOLT-3": 6.52,
+   "5637": 6.51,
+   "HL-60(TB)": 6.42
+  },
+  "CLOFARABINE": {
+   "Unchecked": 9.0,
+   "K562": 8.52,
+   "HEp-2": 7.92,
+   "Granta": 7.77,
+   "HL-60": 7.4
+  },
+  "SUNITINIB": {
+   "Platelet-derived growth factor receptor beta": 10.12,
+   "Vascular endothelial growth factor receptor 2": 9.7,
+   "Mast/stem cell growth factor receptor Kit": 9.68,
+   "Receptor-type tyrosine-protein kinase FLT3": 9.66,
+   "Platelet-derived growth factor receptor alpha": 9.1
+  },
+  "VEMURAFENIB": {
+   "Serine/threonine-protein kinase A-Raf": 8.68,
+   "Serine/threonine-protein kinase B-raf": 8.49,
+   "Mitogen-activated protein kinase kinase kinase 20": 8.4,
+   "Proto-oncogene tyrosine-protein kinase receptor Ret": 8.32,
+   "Dual specificity mitogen-activated protein kinase kinase 4": 8.09
+  },
+  "EPIRUBICIN": {
+   "DNA topoisomerase 2-alpha": 8.52,
+   "NCI-H460": 7.7,
+   "Unchecked": 7.62,
+   "HepG2": 7.0,
+   "MCF-10A": 7.0
+  },
+  "EVEROLIMUS": {
+   "mTORC1": 10.3,
+   "Cortical neurone": 9.82,
+   "Serine/threonine-protein kinase mTOR": 8.8
+  }
+ },
+ "note": "target sharing uses max-pChEMBL>=6 (<=1 uM) top-5 targets per drug from ChEMBL assays (each assay CHEMBL ID = 1 accession-level dataset)",
+ "target_sharing_chi2_p": 0.2113,
+ "target_sharing_table": {
+  "shared_nonsyn": 240,
+  "shared_syn": 160,
+  "unshared_nonsyn": 1218,
+  "unshared_syn": 701
+ },
+ "verdict": "synergistic pairs share top targets slightly MORE often (18.6% vs 16.5%) but chi2 p=0.21: no detectable relationship at this annotation depth - complementary-mechanism hypothesis NOT supported; kept as documented negative"
+}
