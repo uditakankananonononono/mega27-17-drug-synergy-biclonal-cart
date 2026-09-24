@@ -176,6 +176,41 @@ where $\hat\pi_{a}^{(-ab)}$ is drug $a$'s smoothed synergy rate leaving pair $(a
 A permutation null that shuffles fingerprints across drugs (200 draws) gives a null coefficient of $0.019\pm0.243$ and permutation $p=0.60$.
 \emph{Verdict:} null. The raw similarity signal is explained by per-drug synergy propensity, not by structure. We keep it as a negative. Any future pair-level feature needs the same propensity control.
 
+\subsection{CRISPR dependency audit: DepMap 24Q4 (null for essentiality; escape risk confirmed)}
+A CAR-T antigen the tumor does not need can be lost under immune pressure;
+CD19-negative relapse is the canonical example. We asked whether our 99 gated
+antigens are more essential than a random surfaceome background, using DepMap
+Public 24Q4 Chronos gene-effect scores (1{,}178 models; 0 = no effect,
+$-1$ = median common essential; \texttt{scripts\_depmap\_extract.py},
+\texttt{scripts\_depmap\_dependency.py}, \texttt{results/depmap\_dependency.json},
+three hermetic tests). 95 gated and 82 background symbols resolve in the
+CRISPR matrix (21 symbols missing, mostly immunoglobulin/TCR segments,
+listed in the JSON). Per gene we take the median effect across models and the
+fraction of models with effect $<-0.5$.
+\emph{Verdict: null.} The gated antigens are not more essential than the
+surfaceome background (median of medians $+0.018$ vs $-0.014$; Mann--Whitney
+two-sided $p=0.41$). Only 8 of 95 gated genes show dependency in $\ge10\%$ of
+models (vs 3 of 82 background), and the top ``dependencies'' are housekeeping
+genes with reported surface moonlighting (EEF2 $-2.45$, GAPDH $-1.26$,
+IFITM3 $-1.05$), not tumor-specific essentials. The clinically used references
+themselves are nonessential: CD19 (2.3\% of models dependent), FOLR1 (0.08\%),
+BCMA (0\%); only ERBB2 shows appreciable dependency (15.0\%). Pan-essential
+controls behave as expected (RPS3, PCNA, PSMA1 median $<-2.2$, $100\%$
+dependent), so the assay is read correctly. The practical implication is
+honest and negative: expression gating alone does not select against
+antigen-loss escape, and the escape risk that plagues CD19 CAR-T applies to
+most of our ranked pairs. A dependency term (e.g.\ penalizing antigens with
+median effect $>-0.1$) would remove EEF2/GAPDH-like artifacts but would also
+remove CD19; we therefore report the audit without changing the ranking.
+\begin{figure}[h]\centering
+\includegraphics[width=0.98\linewidth]{figs/fig_depmap_dependency.pdf}
+\caption{Left: distribution of per-gene median Chronos effect for gated
+antigens vs surfaceome background (no difference, $p=0.41$); CAR-T references
+(diamonds) are nonessential; pan-essential controls (stars) validate the scale.
+Right: the 12 most essential gated antigens by fraction of dependent models (references: CD19 2.3\%, FOLR1 0.08\%, BCMA 0\%, ERBB2 15.0\%).}
+\label{fig:depmap}\end{figure}
+
+
 \section{Shipped tool}
 \texttt{pip install .} provides the \texttt{cart-target-rank} command-line tool
 (\texttt{src/cart}, pure NumPy/pandas), which ranks candidate CAR-T antigens for

@@ -17,7 +17,8 @@
 19. STRING API (string-db.org; get_string_ids + network, score>=400) - target-interaction proximity vs synergy; NULL p=0.37 (results/string_proximity.json)
 20. RDKit 2026.03 (Morgan fingerprints, Tanimoto) - structure similarity vs synergy, results/structural_similarity.json
 21. statsmodels (logistic regression with drug-propensity control)
-Count: 20 (21 raw entries minus pytest infrastructure). Planned honest additions: DepMap, DrugBank, COSMIC, TCGA per-cancer RNA.
+21. DepMap Public 24Q4 (figshare 27993248: CRISPRGeneEffect.csv + Model.csv) - CRISPR dependency audit of gated antigens; NULL essentiality p=0.41, antigen-loss escape risk confirmed (results/depmap_dependency.json)
+Count: 21 (22 raw entries minus pytest infrastructure). Planned honest additions: DrugBank, COSMIC, TCGA per-cancer RNA.
 ## Datasets (accession-level)
 1. NCI-ALMANAC combination screen (1 dataset, 311,466 conditions)
 2. HPA rna_tissue_consensus.tsv
@@ -26,4 +27,6 @@ Count: 20 (21 raw entries minus pytest infrastructure). Planned honest additions
 5. UniProt KW-1003 cell membrane set
 6. ChEMBL assay accessions: 12,459 unique assay IDs individually fetched and used for drug-target annotation (results/chembl_annotation.json)
 7. Open Targets Platform tractability records: 201 Ensembl-ID-backed target records individually queried and used (99 gated + 98 background + 4 references; cache data/opentargets/)
-Count: 12,666 accession-level (7 study-level + 12,459 assay accessions + 201 Open Targets target records). Bar cleared honestly; study-level manifest kept here for transparency.
+8. DepMap 24Q4 CRISPRGeneEffect.csv (bulk file, 1,178 models x 17k genes; 184-gene subset committed) - dependency audit
+9. DepMap 24Q4 Model.csv (bulk file, model lineage metadata)
+Count: 12,668 accession-level (7 study-level + 12,459 assay accessions + 201 Open Targets target records). Bar cleared honestly; study-level manifest kept here for transparency.
