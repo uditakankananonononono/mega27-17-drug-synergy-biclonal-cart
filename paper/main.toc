@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{}%
+\contentsline {section}{\numberline {2}Data}{2}{}%
+\contentsline {section}{\numberline {3}Methods}{2}{}%
+\contentsline {subsection}{\numberline {3.1}Synergy model}{2}{}%
+\contentsline {subsection}{\numberline {3.2}RNA window and AND gate}{2}{}%
+\contentsline {section}{\numberline {4}Results}{2}{}%
+\contentsline {subsection}{\numberline {4.1}Synergy (pair-held-out)}{2}{}%
+\contentsline {subsection}{\numberline {4.2}AND-gate biclonal discovery}{2}{}%
+\contentsline {section}{\numberline {5}Documented negatives and data findings}{3}{}%
+\contentsline {section}{\numberline {6}Falsification paths}{3}{}%

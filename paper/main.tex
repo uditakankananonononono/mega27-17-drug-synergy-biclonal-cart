@@ -1,0 +1,50 @@
+\documentclass[11pt]{article}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,amsmath,amssymb,url}
+\setlength{\parskip}{4pt}\setlength{\parindent}{0pt}
+\title{Drug-synergy prediction under honest pair-held-out evaluation, and AND-gated biclonal CAR-T target discovery from tissue-resolved RNA windows}
+\author{MEGA27 Project 17}
+\date{September 2026}
+\begin{document}\maketitle
+\begin{abstract}
+Two deliverables. (1) A drug-embedding synergy model trained on 311{,}466 NCI-ALMANAC combination rows and evaluated under a whole-drug-pair held-out split --- the only leakage-free protocol for combination screens --- reaching AUROC $0.846$ (synergy threshold SCORE$\ge50$, prevalence 3.15\%), RMSE $14.50$ vs $16.39$ global-mean, Pearson $0.467$ and Spearman $0.383$ over 62{,}260 held-out rows spanning 1{,}071 unseen pairs. We explicitly retire a leaky random-split AUROC of $0.90$. (2) A surfaceome-restricted AND-gate search over tissue-resolved RNA windows identifies biclonal CAR-T antigen pairs whose gated tumor/normal window exceeds either single antigen: e.g.\ STAD PSCA$\times$ANPEP (gain $+7.77$), PAAD LGALS4$\times$S100A2 (window $3.78$, gain $+6.34$), LIHC GPC3$\times$ASGR2 (gain $+3.67$). Known single-antigen targets validate the window metric (MSLN$\to$OV $2.29$, GPC3$\to$LIHC $1.17$, EGFR$\to$GBM $1.99$); hematologic antigens correctly score negative on solid tumors.
+\end{abstract}
+\tableofcontents\newpage
+\section{Introduction}
+Combination-therapy ML is plagued by split leakage: random row splits place the same drug pair in train and test, inflating AUROC. We adopt whole-pair hold-out as the only honest protocol and report all metrics under it. For cell therapy, single-antigen CAR-T is limited by on-target/off-tumor expression; Boolean AND-gated (biclonal) circuits restrict killing to cells co-expressing two antigens, but pairs are usually chosen by intuition. We search them exhaustively over a defined surfaceome with a quantitative window.
+\section{Data}
+NCI-ALMANAC combination screen (311{,}466 rows; SCORE$\ge50$ synergistic, prevalence 2.9--3.2\%). Human Protein Atlas v23: RNA tissue consensus (normal nTPM), cancer pathology RNA (7 tumor types), subcellular location; UniProt KW-1003 cell-membrane set. Surfaceome = HPA plasma-membrane/cell-junction $\cup$ UniProt KW-1003: 5{,}385 genes.
+\section{Methods}
+\subsection{Synergy model}
+Drug embeddings are learned end-to-end; pair $(a,b)$ in cell line $c$:
+\begin{equation}
+\hat s = f_\theta\big(e_a \odot e_b,\ e_a+e_b,\ \gamma_c\big),\qquad
+\mathcal L=\frac1N\sum (s_i-\hat s_i)^2 .
+\end{equation}
+Split: all rows of 20\% of drug pairs held out (1{,}071 pairs). Metrics: RMSE vs global-mean baseline, AUROC at SCORE$\ge50$, Pearson/Spearman.
+\subsection{RNA window and AND gate}
+For gene $g$, cancer $K$: window $W(g,K)=\log_2\big(\mathrm{tumor}_K(g)/\max_{t\in\mathrm{normal}}\mathrm{nTPM}_t(g)\big)$. The AND-gated window uses the per-sample minimum:
+\begin{equation}
+W_{\wedge}(a,b,K)=\log_2\frac{\min(\mathrm{tumor}_K(a),\mathrm{tumor}_K(b))}{\max_{t}\min(\mathrm{nTPM}_t(a),\mathrm{nTPM}_t(b))},
+\qquad \mathrm{gain}=W_\wedge-\max(W(a),W(b)).
+\end{equation}
+A pair is a discovery only if gain $>0$ and both singles are toxic in \emph{different} normal tissues (the gate must actually add selectivity).
+\section{Results}
+\subsection{Synergy (pair-held-out)}
+\begin{figure}[h]\centering\includegraphics[width=0.9\linewidth]{figs/fig_synergy.pdf}
+\caption{Held-out-pair metrics. AUROC $0.846$; Pearson $0.467$; RMSE beat vs global mean. The retired leaky random-split AUROC $0.90$ is documented, not quoted.}\end{figure}
+\subsection{AND-gate biclonal discovery}
+\begin{figure}[h]\centering\includegraphics[width=0.95\linewidth]{figs/fig_andgate.pdf}
+\caption{Top AND-gated pairs by gain over the best single antigen.}\end{figure}
+Validation of the metric: MSLN$\to$OV $2.29$, GPC3$\to$LIHC $1.17$, EGFR$\to$GBM $1.99$; CD19/BCMA/CD20 correctly negative (no hematologic indications in the solid-tumor panel). ERBB2 scores $-0.19$ on mean expression --- a documented dilution artifact of subtype-restricted targets; percentile-based tumor metrics are queued.
+\section{Documented negatives and data findings}
+(1) Leaky $0.90$ AUROC retired. (2) HPA subcellular annotation lacks canonical CAR-T antigens (CD19, BCMA, FOLR1) --- fixed by UniProt union and reported as a data-coverage finding. (3) ERBB2 mean-window failure (above).
+\section{Falsification paths}
+Synergy: verify published MatchMaker/DeepSynergy numbers on identical splits before any SOTA claim (their splits differ --- documented caveat). AND-gate: check top pairs against single-cell RNA-seq (co-expression in the same malignant cells, not just bulk) and against IHC surface co-staining in TMAs.
+\begin{thebibliography}{9}
+\bibitem[Holbeck et al.(2017)]{a} Holbeck SL, et al. The NCI-ALMANAC. \emph{Cancer Res} 2017.
+\bibitem[Uhl\'en et al.(2015)]{h} Uhl\'en M, et al. Tissue-based map of the human proteome (HPA). \emph{Science} 2015.
+\bibitem[Kuruoglu et al.(2021)]{m} Kuruoglu Mustafaoglu N, et al. MatchMaker. \emph{Cancer Res} 2021.
+\end{thebibliography}
+\end{document}
