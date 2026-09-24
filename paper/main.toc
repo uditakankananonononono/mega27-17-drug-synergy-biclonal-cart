@@ -1,10 +1,20 @@
-\contentsline {section}{\numberline {1}Introduction}{2}{}%
-\contentsline {section}{\numberline {2}Data}{2}{}%
-\contentsline {section}{\numberline {3}Methods}{2}{}%
-\contentsline {subsection}{\numberline {3.1}Synergy model}{2}{}%
-\contentsline {subsection}{\numberline {3.2}RNA window and AND gate}{2}{}%
-\contentsline {section}{\numberline {4}Results}{2}{}%
-\contentsline {subsection}{\numberline {4.1}Synergy (pair-held-out)}{2}{}%
-\contentsline {subsection}{\numberline {4.2}AND-gate biclonal discovery}{2}{}%
-\contentsline {section}{\numberline {5}Documented negatives and data findings}{3}{}%
-\contentsline {section}{\numberline {6}Falsification paths}{3}{}%
+\contentsline {section}{\numberline {1}Introduction}{3}{}%
+\contentsline {section}{\numberline {2}Data}{3}{}%
+\contentsline {section}{\numberline {3}Methods}{3}{}%
+\contentsline {subsection}{\numberline {3.1}Synergy model}{3}{}%
+\contentsline {subsection}{\numberline {3.2}RNA window and AND gate}{3}{}%
+\contentsline {section}{\numberline {4}Results}{3}{}%
+\contentsline {subsection}{\numberline {4.1}Synergy (pair-held-out)}{3}{}%
+\contentsline {subsection}{\numberline {4.2}Comparison to published baselines (verified)}{3}{}%
+\contentsline {subsection}{\numberline {4.3}Percentile and subtype metrics (p75 fix falsified, fraction metric validated)}{4}{}%
+\contentsline {subsection}{\numberline {4.4}AND-gate biclonal discovery}{5}{}%
+\contentsline {subsection}{\numberline {4.5}Mechanism annotation via ChEMBL assay accessions}{5}{}%
+\contentsline {section}{\numberline {5}Documented negatives and data findings}{5}{}%
+\contentsline {section}{\numberline {6}Falsification paths}{6}{}%
+\contentsline {section}{\numberline {7}Mathematical derivations}{6}{}%
+\contentsline {subsection}{\numberline {7.1}Bliss independence and the ALMANAC synergy score}{6}{}%
+\contentsline {subsection}{\numberline {7.2}Embedding model and why pair-held-out is the honest split}{7}{}%
+\contentsline {subsection}{\numberline {7.3}AUROC as a Mann--Whitney probability}{7}{}%
+\contentsline {subsection}{\numberline {7.4}FANM: estimator, sampling error, and interval}{7}{}%
+\contentsline {subsection}{\numberline {7.5}Streaming percentiles as order statistics}{7}{}%
+\contentsline {subsection}{\numberline {7.6}AND-gate gain is bounded by the weaker single}{8}{}%
