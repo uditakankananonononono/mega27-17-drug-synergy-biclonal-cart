@@ -1,0 +1,206 @@
+gene,group,status,predicted_membrane,predicted_intracellular,if_has_data,if_plasma_membrane,if_main_location,secreted,reliability_if
+ABCB5,background,ok,1,1,0,0,,0,
+ADH1A,gated,ok,0,1,1,1,"Plasma membrane, Cytosol",0,Approved
+ADH1B,gated,ok,0,1,1,1,"Plasma membrane, Cytosol",0,Approved
+ADH1C,gated,ok,0,1,1,1,"Plasma membrane, Cytosol",0,Approved
+AFM,gated,ok,0,0,1,1,Plasma membrane,1,Uncertain
+AIF1,background,ok,0,1,1,0,Cytosol,0,Uncertain
+AKR1B10,gated,ok,0,1,1,1,Cytosol,1,Supported
+ALK,background,ok,1,1,1,1,Plasma membrane,0,Supported
+ANPEP,gated,ok,1,0,1,1,Plasma membrane,0,Supported
+APOC3,gated,ok,0,0,1,0,Nucleoplasm,1,Approved
+APOD,gated,ok,0,0,1,1,Plasma membrane,1,Approved
+AQP1,gated,ok,1,0,1,1,Plasma membrane,0,Supported
+AQP4,gated,ok,1,0,1,1,Plasma membrane,0,Supported
+ASGR2,gated,ok,1,1,1,1,"Endoplasmic reticulum, Plasma membrane",0,Supported
+ATP1B2,gated,ok,1,1,0,0,,0,
+ATP6V1B1,gated,ok,0,1,1,0,"Nucleoplasm, Nuclear membrane",0,Approved
+ATP7A,background,ok,1,1,1,0,Golgi apparatus,0,Supported
+B2M,gated,ok,0,0,1,1,"Golgi apparatus, Plasma membrane",1,Enhanced
+BOC,background,ok,1,1,1,1,"Nuclear bodies, Plasma membrane",1,Supported
+C1QBP,background,ok,0,1,1,1,Plasma membrane,1,Supported
+CA12,gated,ok,1,0,0,0,,0,
+CA9,gated,ok,1,0,1,1,Plasma membrane,0,Supported
+CD19,references,ok,1,0,0,0,,0,
+CD24,gated,ok,0,1,1,0,Vesicles,1,Approved
+CD63,gated,ok,1,0,1,0,Vesicles,1,Supported
+CD74,gated,ok,1,0,1,0,Golgi apparatus,1,Supported
+CDC42EP1,gated,ok,0,1,1,1,Plasma membrane,0,Supported
+CDC50A,background,ok,1,1,0,0,,0,
+CDC50B,background,ok,1,0,0,0,,0,
+CDH12,background,ok,1,0,1,0,Vesicles,0,Uncertain
+CDH17,gated,ok,1,1,1,0,Cell Junctions,0,Supported
+CEACAM5,gated,ok,1,1,1,1,Plasma membrane,0,Supported
+CEACAM6,gated,ok,1,1,0,0,,0,
+CHIC1,background,ok,1,0,1,0,"Nuclear speckles, Vesicles",0,Approved
+CKB,gated,ok,0,1,1,0,Cytosol,0,Supported
+CLCNKB,background,ok,1,1,0,0,,0,
+CLDN18,gated,ok,1,0,1,0,Cell Junctions,0,Approved
+CLDN2,gated,ok,1,0,1,1,"Plasma membrane, Cell Junctions",0,Supported
+CLDN3,gated,ok,1,0,1,0,Cell Junctions,0,Supported
+CLDN4,gated,ok,1,0,1,1,Plasma membrane,0,Supported
+CLDN6,gated,ok,1,1,0,0,,0,
+CLSTN1,background,ok,1,0,0,0,,0,
+CLSTN3,background,ok,1,1,0,0,,0,
+CLTRN,gated,ok,1,0,1,0,"Endoplasmic reticulum, Vesicles",0,Approved
+CNNM2,background,ok,1,0,1,0,Vesicles,0,Approved
+CT83,background,ok,0,1,0,0,,0,
+CTTN,background,ok,0,1,1,1,"Vesicles, Plasma membrane",0,Supported
+CX3CR1,background,ok,1,0,1,1,Plasma membrane,0,Supported
+CYP2C9,gated,ok,0,1,1,1,Vesicles,1,Uncertain
+CYS1,background,ok,0,1,0,0,,0,
+DCHS1,background,ok,1,0,1,1,Plasma membrane,0,Approved
+DCT,gated,ok,1,0,1,1,Plasma membrane,0,Supported
+DLGAP1,background,ok,0,1,1,0,Cytosol,0,Approved
+DNER,gated,ok,1,0,0,0,,0,
+DOCK4,background,ok,0,1,1,1,"Nucleoli, Plasma membrane",0,Approved
+DPEP1,gated,ok,0,1,1,0,"Nucleoplasm, Cell Junctions",1,Approved
+EEF1A1,gated,ok,0,1,1,0,Cytosol,0,Supported
+EEF2,gated,ok,0,1,1,1,"Plasma membrane, Cytosol",0,Approved
+EGFR,gated,ok,1,0,1,1,"Golgi apparatus, Plasma membrane",1,Supported
+EMCN,background,ok,1,1,0,0,,1,
+ENPP3,gated,ok,0,1,0,0,,1,
+EPCAM,gated,ok,1,1,1,1,Plasma membrane,0,Supported
+ERBB2,references,ok,1,1,1,1,Plasma membrane,0,Enhanced
+ERRFI1,background,ok,0,1,1,0,Cytosol,0,Enhanced
+ERVMER34-1,background,ok,1,0,1,0,Nucleoplasm,1,Approved
+FABP3,gated,ok,0,1,1,1,Focal adhesion sites,0,Uncertain
+FFAR1,background,ok,1,0,1,1,Plasma membrane,0,Supported
+FOLR1,references,ok,1,0,0,0,,1,
+FRMPD2,background,ok,0,1,1,0,"Golgi apparatus, Vesicles",0,Uncertain
+GAP43,gated,ok,0,1,1,1,Plasma membrane,0,Enhanced
+GAPDH,gated,ok,0,1,1,1,"Plasma membrane, Cytosol",0,Enhanced
+GJA5,background,ok,1,0,0,0,,0,
+GJB1,gated,ok,1,0,0,0,,0,
+GJB2,background,ok,1,0,1,0,Mitochondria,0,Approved
+GNA11,background,ok,0,1,0,0,,0,
+GP2,gated,ok,1,1,0,0,,1,
+GP6,background,ok,1,1,1,1,Plasma membrane,1,Supported
+GPC4,background,ok,1,0,1,1,Plasma membrane,1,Approved
+GPM6A,gated,ok,1,1,0,0,,0,
+GPM6B,gated,ok,1,0,0,0,,0,
+GPR15,background,ok,1,0,0,0,,0,
+HJV,gated,ok,1,1,0,0,,0,
+HLA-A,gated,ok,1,1,1,1,Plasma membrane,0,Supported
+HLA-B,gated,ok,1,1,0,0,,0,
+HLA-C,gated,ok,1,1,0,0,,1,
+HLA-DRA,gated,ok,1,0,0,0,,0,
+HLA-DRB1,gated,ok,1,0,0,0,,0,
+HLA-DRB5,gated,ok,1,0,0,0,,0,
+HMOX1,gated,ok,1,1,1,1,"Golgi apparatus, Plasma membrane",0,Uncertain
+HSP90AB1,gated,ok,0,1,1,1,Plasma membrane,1,Supported
+HSPB1,gated,ok,0,1,1,1,"Plasma membrane, Cytosol",0,Enhanced
+HTR2B,background,ok,1,0,1,0,Nucleoplasm,0,Supported
+IFITM3,gated,ok,1,1,0,0,,0,
+IGKV1-12,background,ok,0,0,0,0,,1,
+IGKV2-28,background,ok,0,0,0,0,,1,
+IGKV6D-41,background,ok,0,0,0,0,,1,
+IGLV1-40,background,ok,0,0,0,0,,1,
+IGLV11-55,background,ok,0,0,0,0,,1,
+ITM2C,background,ok,1,1,0,0,,0,
+JAML,background,ok,1,1,1,1,Plasma membrane,0,Supported
+JUP,gated,ok,0,1,1,1,"Plasma membrane, Cell Junctions",0,Supported
+KIR2DL1,background,ok,1,0,0,0,,0,
+KLK7,gated,ok,0,1,1,1,Plasma membrane,1,Supported
+KLRG1,background,ok,1,1,1,0,Vesicles,0,Enhanced
+KRAS,background,ok,0,1,1,0,Cytosol,0,Supported
+KRT1,gated,ok,0,1,0,0,,0,
+LAT,background,ok,1,1,1,1,Plasma membrane,0,Supported
+LGALS4,gated,ok,0,1,1,1,Plasma membrane,0,Uncertain
+LGR5,background,ok,1,0,1,0,"Nucleoplasm, Vesicles, Primary cilium transition zone",0,Approved
+LPCAT1,gated,ok,1,0,1,0,Endoplasmic reticulum,0,Supported
+LY6E,gated,ok,1,1,0,0,,1,
+MAL,background,ok,1,0,1,0,Golgi apparatus,0,Approved
+MC1R,background,ok,1,0,0,0,,0,
+MICA,background,ok,1,1,0,0,,0,
+MINPP1,background,ok,0,1,0,0,,1,
+MISP,gated,ok,0,1,1,1,"Plasma membrane, Focal adhesion sites",0,Enhanced
+MLC1,gated,ok,1,0,1,0,Cytosol,0,Supported
+MMP16,background,ok,1,1,1,0,Cytosol,1,Approved
+MSLN,gated,ok,1,1,1,1,"Vesicles, Plasma membrane",1,Supported
+MUC13,gated,ok,1,0,0,0,,1,
+MYMK,background,ok,1,0,0,0,,0,
+NLGN3,background,ok,1,1,1,0,"Golgi apparatus, Cell Junctions",1,Supported
+NMB,gated,ok,0,0,1,1,Golgi apparatus,1,Approved
+NOD1,background,ok,0,1,1,0,Mitochondria,0,Approved
+NOS3,background,ok,0,1,0,0,,0,
+NOX1,gated,ok,1,1,0,0,,0,
+OLFM4,gated,ok,0,0,1,1,"Nucleoplasm, Plasma membrane",1,Supported
+OR10G7,background,ok,1,0,0,0,,0,
+OR12D2,background,ok,1,0,0,0,,0,
+OR13C2,background,ok,1,0,1,1,Plasma membrane,0,Supported
+OR2A14,background,ok,1,0,0,0,,0,
+OR2I1P,gated,no_hpa_record,,,,,,,
+OR2T11,background,ok,1,0,0,0,,0,
+OR3A1,background,ok,1,0,0,0,,0,
+OR4A47,background,ok,1,0,0,0,,0,
+OR52E4,background,ok,1,0,0,0,,0,
+OR52P1,background,ok,1,0,0,0,,0,
+OR5P2,background,ok,1,0,0,0,,0,
+OR8B12,background,ok,1,0,0,0,,0,
+OR8D4,background,ok,1,0,0,0,,0,
+P2RY14,background,ok,1,0,0,0,,0,
+PACSIN2,background,ok,0,1,1,1,"Nuclear speckles, Plasma membrane",0,Approved
+PCDHA10,background,ok,1,1,0,0,,1,
+PCDHB15,background,ok,1,1,1,0,"Centrosome, Basal body",0,Uncertain
+PCDHB18P,background,no_hpa_record,,,,,,,
+PCDHB5,background,ok,1,1,1,1,Plasma membrane,0,Approved
+PCDHGB1,background,ok,1,0,1,1,"Vesicles, Plasma membrane",0,Approved
+PCNA,positive_controls,ok,0,1,1,0,Nucleoplasm,0,Enhanced
+PDPN,gated,ok,1,0,1,1,Plasma membrane,0,Supported
+PERP,gated,ok,1,0,0,0,,0,
+PI3,gated,ok,0,0,1,1,Plasma membrane,1,Approved
+PIGR,gated,ok,1,0,0,0,,1,
+PLA2G2A,gated,ok,0,1,0,0,,1,
+PLP1,gated,ok,1,0,0,0,,0,
+POLR2A,positive_controls,ok,0,1,1,0,Nucleoplasm,0,Enhanced
+PRAME,gated,ok,0,1,1,1,Nucleoplasm,0,Approved
+PRICKLE3,background,ok,0,1,0,0,,0,
+PRSS21,background,ok,0,1,1,0,"Cytosol, Mid piece, Principal piece",1,Approved
+PRX,background,ok,0,1,1,1,"Golgi apparatus, Vesicles, Plasma membrane",0,Approved
+PSCA,gated,ok,1,1,1,1,Plasma membrane,0,Supported
+PSMA1,positive_controls,ok,0,1,1,0,Nucleoplasm,0,Supported
+PTPRZ1,gated,ok,1,0,1,0,Cytosol,1,Approved
+RAPSN,background,ok,0,1,1,1,"Plasma membrane, Centrosome, Cytosol",0,Approved
+RPS3,positive_controls,ok,0,1,1,0,"Endoplasmic reticulum, Cytosol",0,Supported
+S100A6,gated,ok,0,1,1,1,"Plasma membrane, Cytosol",0,Enhanced
+S100A9,gated,ok,0,1,1,1,"Plasma membrane, Intermediate filaments, Cytosol",1,Supported
+S100P,gated,ok,0,1,1,0,Nucleoplasm,0,Supported
+S1PR3,background,ok,1,0,0,0,,0,
+S1PR5,background,ok,1,1,0,0,,0,
+SCNN1A,gated,ok,1,0,1,0,"Vesicles, Annulus",0,Uncertain
+SEPTIN2,background,ok,0,1,1,1,Actin filaments,0,Supported
+SLC15A1,background,ok,1,0,1,0,"Nucleoplasm, Cytosol",0,Approved
+SLC17A3,gated,ok,1,0,0,0,,0,
+SLC1A3,gated,ok,1,1,1,0,"Nucleoli, Vesicles",0,Approved
+SLC22A8,background,ok,1,0,0,0,,0,
+SLC2A2,gated,ok,1,0,1,1,"Plasma membrane, Mid piece, Principal piece",0,Supported
+SLC34A2,gated,ok,1,0,1,1,Plasma membrane,0,Supported
+SLC39A6,gated,ok,1,0,1,1,Cytosol,0,Uncertain
+SLC5A9,background,ok,1,0,1,0,Actin filaments,0,Approved
+SLC6A19,background,ok,1,0,0,0,,0,
+SLCO2B1,background,ok,1,1,0,0,,0,
+SPINT1,gated,ok,1,1,1,1,"Plasma membrane, Cytosol",1,Supported
+SPP1,gated,ok,0,0,1,0,Golgi apparatus,1,Enhanced
+SSTR3,background,ok,1,0,1,1,"Plasma membrane, Actin filaments, Primary cilium",0,Approved
+TACSTD2,gated,ok,1,0,1,1,Plasma membrane,0,Supported
+TAS2R16,background,ok,1,0,0,0,,0,
+TBC1D3L,background,ok,1,0,1,0,Vesicles,0,Uncertain
+TGM1,background,ok,0,1,1,1,"Vesicles, Plasma membrane",0,Approved
+THBS2,gated,ok,0,0,1,1,Plasma membrane,1,Approved
+TLR4,background,ok,1,1,1,1,"Golgi apparatus, Plasma membrane",1,Approved
+TM4SF4,gated,ok,1,0,1,1,Plasma membrane,0,Approved
+TM4SF5,gated,ok,1,0,1,1,"Plasma membrane, Cell Junctions",0,Uncertain
+TNFRSF17,references,ok,1,1,1,0,Golgi apparatus,0,Approved
+TRBV12-4,background,ok,0,1,0,0,,0,
+TRBV7-1,background,ok,0,1,0,0,,0,
+TRBV7-4,background,ok,0,1,0,0,,0,
+TSPAN8,gated,ok,1,0,1,0,Vesicles,0,Approved
+TTYH2,background,ok,1,0,0,0,,0,
+TULP3,background,ok,0,1,1,1,"Nucleoplasm, Primary cilium",1,Supported
+UBE2C,gated,ok,0,1,1,1,"Plasma membrane, Cytosol",0,Supported
+UNC93A,background,ok,1,0,0,0,,0,
+VCAM1,gated,ok,1,0,1,0,Cell Junctions,1,Approved
+VIM,gated,ok,0,1,1,0,Intermediate filaments,0,Supported
+VLDLR,background,ok,1,1,1,0,Vesicles,0,Uncertain
+VNN1,background,ok,0,1,1,0,Vesicles,1,Approved
