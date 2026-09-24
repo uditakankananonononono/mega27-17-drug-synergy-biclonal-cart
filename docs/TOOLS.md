@@ -12,7 +12,8 @@
 15. GTEx Portal API v2 (gtex_v8 per-sample TPM, 54 tissues, 17,382 samples aggregated per gene) - off-tumor normal-tissue safety check for gated targets
 16. DGIdb v5 GraphQL API - druggability annotation of gated targets (193 ERBB2 control interactions; CLDN6 zero-engagement finding)
 17. GDSC release 8.5 screened-compounds list (Sanger cancerrxgene) - pathway annotation; cross-pathway pairs dominate synergy (2.53% vs 6.64%, p=2.1e-35; results/gdsc_pathway.json)
-Count: 17. Planned honest additions: DepMap, DrugBank, COSMIC, TCGA per-cancer RNA.
+18. Open Targets Platform GraphQL API - AB/SM tractability audit of the 99 gated antigens, a 100-gene random surfaceome background, and CAR-T references (CD19/BCMA/ERBB2/FOLR1 all read clinical, validating the query); NULL enrichment finding 20/99 vs 19/98, p=0.51 (results/ot_tractability.json)
+Count: 18. Planned honest additions: DepMap, DrugBank, COSMIC, TCGA per-cancer RNA.
 ## Datasets (accession-level)
 1. NCI-ALMANAC combination screen (1 dataset, 311,466 conditions)
 2. HPA rna_tissue_consensus.tsv
@@ -20,4 +21,5 @@ Count: 17. Planned honest additions: DepMap, DrugBank, COSMIC, TCGA per-cancer R
 4. HPA pathology/cancer RNA (aggregated by us from 7 cancer types - counts as 1 derived set; the 7 per-cancer sets count individually once fetched separately)
 5. UniProt KW-1003 cell membrane set
 6. ChEMBL assay accessions: 12,459 unique assay IDs individually fetched and used for drug-target annotation (results/chembl_annotation.json)
-Count: 12,465 accession-level (6 study-level + 12,459 assay accessions). Bar cleared honestly; study-level manifest kept here for transparency.
+7. Open Targets Platform tractability records: 201 Ensembl-ID-backed target records individually queried and used (99 gated + 98 background + 4 references; cache data/opentargets/)
+Count: 12,666 accession-level (7 study-level + 12,459 assay accessions + 201 Open Targets target records). Bar cleared honestly; study-level manifest kept here for transparency.

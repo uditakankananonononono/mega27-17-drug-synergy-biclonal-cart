@@ -122,9 +122,28 @@ where exact-target sharing was null ($p=0.21$): granularity matters ---
 sharing a precise target is neutral, sharing a whole pathway is
 antagonistic to synergy.
 
+\subsection{Tractability audit: Open Targets Platform}
+The 99 unique antigens across all per-cancer top AND-gate pairs were
+checked against the Open Targets Platform tractability assessment
+(antibody modality; \texttt{results/ot\_tractability.json}). 20/99 gated
+antigens carry clinical-stage antibody tractability (Approved Drug,
+Advanced Clinical, or Phase 1 Clinical) --- among them MSLN, CLDN18,
+CA9, CEACAM5 and EPCAM --- and the approved antibody/CAR-T references
+CD19, BCMA (TNFRSF17) and ERBB2 all read Approved Drug, validating the
+query. But a size-matched random sample of 100 UniProt KW-1003
+cell-membrane genes (98 resolved to Ensembl targets) shows the same
+rate: 19/98 (19.4\% versus 20.2\%; Fisher odds 1.05, $p = 0.51$).
+Expression gating therefore does \emph{not} by itself enrich for
+antibody-tractable targets: the gate answers where a pair is
+tumor-selective, not whether it is druggable, and tractability must be
+applied as a separate filter on the ranked pair list. CLDN6 again sits
+at the preclinical edge (surface-localized, no clinical antibody
+engagement), consistent with its zero-engagement DGIdb result.
+
 \section{Falsification paths}
 Synergy: published MatchMaker/DeepSynergy numbers verified (see Results) --- splits differ, no SOTA claim made; a same-split rerun on DrugComb is the remaining path to a direct comparison. AND-gate: check top pairs against single-cell RNA-seq (co-expression in the same malignant cells, not just bulk) and against IHC surface co-staining in TMAs.
 \begin{thebibliography}{9}
+\bibitem[Ochoa et al.(2023)]{opentargets} Ochoa D, et al. The Open Targets Platform. \emph{Nucleic Acids Res} 2023.
 \bibitem[Iorio et al.(2016)]{gdsc} Iorio F, et al. A landscape of pharmacogenomic interactions in cancer (GDSC). \emph{Cell} 2016; release 8.5 compound annotation, Sanger/GDSC.
 \bibitem[Cannon et al.(2024)]{dgidb} Cannon D, et al. DGIdb 5.0. \emph{Nucleic Acids Res} 2024.
 \bibitem[Holbeck et al.(2017)]{a} Holbeck SL, et al. The NCI-ALMANAC. \emph{Cancer Res} 2017.
