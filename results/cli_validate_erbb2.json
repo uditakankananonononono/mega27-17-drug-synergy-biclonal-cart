@@ -1,0 +1,30 @@
+{
+ "tool": "cart-target-rank",
+ "cancer": "BRCA",
+ "genes": {
+  "ERBB2": {
+   "n_samples": 1075,
+   "mean": 87.2,
+   "p75": 55.1,
+   "p95": 560.4,
+   "max": 1668.4,
+   "normal_max_nTPM": 99.5,
+   "fanm": 0.1098,
+   "fanm_2x": 0.0837,
+   "gene_id": "ENSG00000141736",
+   "surface": true
+  },
+  "MSLN": {
+   "n_samples": 1075,
+   "mean": 11.0,
+   "p75": 0.7,
+   "p95": 48.2,
+   "max": 1461.7,
+   "normal_max_nTPM": 69.5,
+   "fanm": 0.0419,
+   "fanm_2x": 0.027,
+   "gene_id": "ENSG00000102854",
+   "surface": true
+  }
+ }
+}
