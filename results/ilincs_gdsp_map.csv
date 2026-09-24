@@ -1,0 +1,1375 @@
+drug,signatureid,cellline,moa,compound
+A-443654,LINCSCP_2353,A375,AKT inhibitor,A-443654
+A-443654,LINCSCP_6609,A549,AKT inhibitor,A-443654
+A-443654,LINCSCP_16643,HA1E,AKT inhibitor,A-443654
+A-443654,LINCSCP_20446,HCC515,AKT inhibitor,A-443654
+A-443654,LINCSCP_22542,HEPG2,AKT inhibitor,A-443654
+A-443654,LINCSCP_26642,HT29,AKT inhibitor,A-443654
+A-443654,LINCSCP_36633,MCF7,AKT inhibitor,A-443654
+A-443654,LINCSCP_46967,PC3,AKT inhibitor,A-443654
+ABT737,LINCSCP_743,A375,BCL inhibitor,ABT737
+ABT737,LINCSCP_4554,A549,BCL inhibitor,ABT737
+ABT737,LINCSCP_15350,HA1E,BCL inhibitor,ABT737
+ABT737,LINCSCP_19356,HCC515,BCL inhibitor,ABT737
+ABT737,LINCSCP_25555,HT29,BCL inhibitor,ABT737
+ABT737,LINCSCP_30577,MCF7,BCL inhibitor,ABT737
+ABT737,LINCSCP_44965,PC3,BCL inhibitor,ABT737
+ABT737,LINCSCP_56893,VCAP,BCL inhibitor,ABT737
+AKT inhibitor VIII,LINCSCP_916,A375,AKT inhibitor,AKT Inhibitor VIII
+AKT inhibitor VIII,LINCSCP_4698,A549,AKT inhibitor,AKT Inhibitor VIII
+AKT inhibitor VIII,LINCSCP_15530,HA1E,AKT inhibitor,AKT Inhibitor VIII
+AKT inhibitor VIII,LINCSCP_19489,HCC515,AKT inhibitor,AKT Inhibitor VIII
+AKT inhibitor VIII,LINCSCP_21633,HEPG2,AKT inhibitor,AKT Inhibitor VIII
+AKT inhibitor VIII,LINCSCP_25709,HT29,AKT inhibitor,AKT Inhibitor VIII
+AKT inhibitor VIII,LINCSCP_30741,MCF7,AKT inhibitor,AKT Inhibitor VIII
+AKT inhibitor VIII,LINCSCP_45117,PC3,AKT inhibitor,AKT Inhibitor VIII
+AKT inhibitor VIII,LINCSCP_57054,VCAP,AKT inhibitor,AKT Inhibitor VIII
+AS601245,LINCSCP_2271,A375,JNK inhibitor,AS601245
+AS601245,LINCSCP_6555,A549,JNK inhibitor,AS601245
+AS601245,LINCSCP_16592,HA1E,JNK inhibitor,AS601245
+AS601245,LINCSCP_20377,HCC515,JNK inhibitor,AS601245
+AS601245,LINCSCP_22481,HEPG2,JNK inhibitor,AS601245
+AS601245,LINCSCP_26575,HT29,JNK inhibitor,AS601245
+AS601245,LINCSCP_32622,MCF7,JNK inhibitor,AS601245
+AS601245,LINCSCP_46910,PC3,JNK inhibitor,AS601245
+AS601245,LINCSCP_59004,VCAP,JNK inhibitor,AS601245
+AS605240,LINCSCP_717,A375,PI3K inhibitor,AS-605240
+AS605240,LINCSCP_4537,A549,PI3K inhibitor,AS-605240
+AS605240,LINCSCP_15324,HA1E,PI3K inhibitor,AS-605240
+AS605240,LINCSCP_19341,HCC515,PI3K inhibitor,AS-605240
+AS605240,LINCSCP_25535,HT29,PI3K inhibitor,AS-605240
+AS605240,LINCSCP_30551,MCF7,PI3K inhibitor,AS-605240
+AS605240,LINCSCP_44945,PC3,PI3K inhibitor,AS-605240
+AS605240,LINCSCP_56876,VCAP,PI3K inhibitor,AS-605240
+AT-7519,LINCSCP_2129,A375,CDK inhibitor|Cell cycle inhibitor,AT-7519
+AT-7519,LINCSCP_6240,A549,CDK inhibitor|Cell cycle inhibitor,AT-7519
+AT-7519,LINCSCP_16438,HA1E,CDK inhibitor|Cell cycle inhibitor,AT-7519
+AT-7519,LINCSCP_20222,HCC515,CDK inhibitor|Cell cycle inhibitor,AT-7519
+AT-7519,LINCSCP_22318,HEPG2,CDK inhibitor|Cell cycle inhibitor,AT-7519
+AT-7519,LINCSCP_26472,HT29,CDK inhibitor|Cell cycle inhibitor,AT-7519
+AT-7519,LINCSCP_32305,MCF7,CDK inhibitor|Cell cycle inhibitor,AT-7519
+AT-7519,LINCSCP_46562,PC3,CDK inhibitor|Cell cycle inhibitor,AT-7519
+AT-7519,LINCSCP_58701,VCAP,CDK inhibitor|Cell cycle inhibitor,AT-7519
+AT7867,LINCSCP_36775,MCF7,,AT 7867
+AZ628,LINCSCP_2297,A375,RAF inhibitor,AZ628
+AZ628,LINCSCP_6572,A549,RAF inhibitor,AZ628
+AZ628,LINCSCP_16610,HA1E,RAF inhibitor,AZ628
+AZ628,LINCSCP_20401,HCC515,RAF inhibitor,AZ628
+AZ628,LINCSCP_22502,HEPG2,RAF inhibitor,AZ628
+AZ628,LINCSCP_26597,HT29,RAF inhibitor,AZ628
+AZ628,LINCSCP_32645,MCF7,RAF inhibitor,AZ628
+AZ628,LINCSCP_46933,PC3,RAF inhibitor,AZ628
+AZ628,LINCSCP_59022,VCAP,RAF inhibitor,AZ628
+AZD6482,LINCSCP_2389,A375,PI3K inhibitor,AZD-6482
+AZD6482,LINCSCP_16672,HA1E,PI3K inhibitor,AZD-6482
+AZD6482,LINCSCP_22568,HEPG2,PI3K inhibitor,AZD-6482
+AZD6482,LINCSCP_226458,HT29,PI3K inhibitor,AZD-6482
+AZD6482,LINCSCP_32714,MCF7,PI3K inhibitor,AZD-6482
+AZD6482,LINCSCP_46990,PC3,PI3K inhibitor,AZD-6482
+AZD6482,LINCSCP_295426,VCAP,PI3K inhibitor,AZD-6482
+AZD7762,LINCSCP_2165,A375,CHK inhibitor,SCHEMBL1564574
+AZD7762,LINCSCP_6259,A549,CHK inhibitor,SCHEMBL1564574
+AZD7762,LINCSCP_16483,HA1E,CHK inhibitor,SCHEMBL1564574
+AZD7762,LINCSCP_20269,HCC515,CHK inhibitor,SCHEMBL1564574
+AZD7762,LINCSCP_22363,HEPG2,CHK inhibitor,SCHEMBL1564574
+AZD7762,LINCSCP_26497,HT29,CHK inhibitor,SCHEMBL1564574
+AZD7762,LINCSCP_240113,MCF7,CHK inhibitor,SCHEMBL1564574
+AZD7762,LINCSCP_46595,PC3,CHK inhibitor,SCHEMBL1564574
+AZD7762,LINCSCP_58730,VCAP,CHK inhibitor,SCHEMBL1564574
+AZD8055,LINCSCP_788,A375,MTOR inhibitor,AZD-8055
+AZD8055,LINCSCP_4587,A549,MTOR inhibitor,AZD-8055
+AZD8055,LINCSCP_15395,HA1E,MTOR inhibitor,AZD-8055
+AZD8055,LINCSCP_19387,HCC515,MTOR inhibitor,AZD-8055
+AZD8055,LINCSCP_25592,HT29,MTOR inhibitor,AZD-8055
+AZD8055,LINCSCP_30615,MCF7,MTOR inhibitor,AZD-8055
+AZD8055,LINCSCP_45002,PC3,MTOR inhibitor,AZD-8055
+AZD8055,LINCSCP_56927,VCAP,MTOR inhibitor,AZD-8055
+Afatinib,LINCSCP_2196,A375,EGFR inhibitor,Afatinib
+Afatinib,LINCSCP_6274,A549,EGFR inhibitor,Afatinib
+Afatinib,LINCSCP_16520,HA1E,EGFR inhibitor,Afatinib
+Afatinib,LINCSCP_20305,HCC515,EGFR inhibitor,Afatinib
+Afatinib,LINCSCP_22399,HEPG2,EGFR inhibitor,Afatinib
+Afatinib,LINCSCP_26513,HT29,EGFR inhibitor,Afatinib
+Afatinib,LINCSCP_251680,MCF7,EGFR inhibitor,C24H25CLFN5O3
+Afatinib,LINCSCP_32362,MCF7,EGFR inhibitor,Afatinib
+Afatinib,LINCSCP_46627,PC3,EGFR inhibitor,Afatinib
+Afatinib,LINCSCP_58754,VCAP,EGFR inhibitor,Afatinib
+Alisertib,LINCSCP_4043,A375,Aurora kinase inhibitor,Alisertib
+Alisertib,LINCSCP_10130,A549,Aurora kinase inhibitor,Alisertib
+Alisertib,LINCSCP_17503,HA1E,Aurora kinase inhibitor,Alisertib
+Alisertib,LINCSCP_21018,HCC515,Aurora kinase inhibitor,Alisertib
+Alisertib,LINCSCP_24071,HEPG2,Aurora kinase inhibitor,Alisertib
+Alisertib,LINCSCP_28655,HT29,Aurora kinase inhibitor,Alisertib
+Alisertib,LINCSCP_38745,MCF7,Aurora kinase inhibitor,Alisertib
+Alisertib,LINCSCP_49690,PC3,Aurora kinase inhibitor,Alisertib
+Amuvatinib,LINCSCP_36961,MCF7,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RAD51 inhibitor|RET tyrosine kinase inhibitor,Amuvatinib
+Axitinib,LINCSCP_191236,A549,PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Axitinib
+Axitinib,LINCSCP_16469,HA1E,PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Axitinib
+Axitinib,LINCSCP_20250,HCC515,PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Axitinib
+Axitinib,LINCSCP_32327,MCF7,PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Axitinib
+Axitinib,LINCSCP_58723,VCAP,PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Axitinib
+BAY-61-3606,LINCSCP_2792,A375,SYK inhibitor,SYK Inhibitor
+BAY-61-3606,LINCSCP_13904,HA1E,SYK inhibitor,SYK Inhibitor
+BAY-61-3606,LINCSCP_18112,HCC515,SYK inhibitor,SYK Inhibitor
+BAY-61-3606,LINCSCP_22925,HEPG2,SYK inhibitor,SYK Inhibitor
+BAY-61-3606,LINCSCP_44133,PC3,SYK inhibitor,SYK Inhibitor
+BI-2536,LINCSCP_770,A375,PLK inhibitor,BI-2536
+BI-2536,LINCSCP_4574,A549,PLK inhibitor,BI-2536
+BI-2536,LINCSCP_15377,HA1E,PLK inhibitor,BI-2536
+BI-2536,LINCSCP_19373,HCC515,PLK inhibitor,BI-2536
+BI-2536,LINCSCP_25575,HT29,PLK inhibitor,BI-2536
+BI-2536,LINCSCP_30600,MCF7,PLK inhibitor,BI-2536
+BI-2536,LINCSCP_38219,MCF7,PLK inhibitor,BI-2536
+BI-2536,LINCSCP_44987,PC3,PLK inhibitor,BI-2536
+BI-2536,LINCSCP_56912,VCAP,PLK inhibitor,BI-2536
+BMS-345541,LINCSCP_2312,A375,IKK inhibitor,BMS-345541
+BMS-345541,LINCSCP_6581,A549,IKK inhibitor,BMS-345541
+BMS-345541,LINCSCP_16620,HA1E,IKK inhibitor,BMS-345541
+BMS-345541,LINCSCP_20413,HCC515,IKK inhibitor,BMS-345541
+BMS-345541,LINCSCP_22512,HEPG2,IKK inhibitor,BMS-345541
+BMS-345541,LINCSCP_26608,HT29,IKK inhibitor,BMS-345541
+BMS-345541,LINCSCP_36610,MCF7,IKK inhibitor,BMS-345541
+BMS-345541,LINCSCP_46944,PC3,IKK inhibitor,BMS-345541
+BMS-345541,LINCSCP_59033,VCAP,IKK inhibitor,BMS-345541
+BMS-509744,LINCSCP_2258,A375,ITK inhibitor,ITK Inhibitor
+BMS-509744,LINCSCP_6545,A549,ITK inhibitor,ITK Inhibitor
+BMS-509744,LINCSCP_16584,HA1E,ITK inhibitor,ITK Inhibitor
+BMS-509744,LINCSCP_20363,HCC515,ITK inhibitor,ITK Inhibitor
+BMS-509744,LINCSCP_22467,HEPG2,ITK inhibitor,ITK Inhibitor
+BMS-509744,LINCSCP_26564,HT29,ITK inhibitor,ITK Inhibitor
+BMS-509744,LINCSCP_240379,MCF7,ITK inhibitor,ITK Inhibitor
+BMS-509744,LINCSCP_36889,MCF7,ITK inhibitor,CHEMBL214378
+BMS-509744,LINCSCP_46898,PC3,ITK inhibitor,ITK Inhibitor
+BMS-509744,LINCSCP_295334,VCAP,ITK inhibitor,ITK Inhibitor
+BMS-536924,LINCSCP_704,A375,IGF-1 inhibitor,BMS-536924
+BMS-536924,LINCSCP_4527,A549,IGF-1 inhibitor,BMS-536924
+BMS-536924,LINCSCP_15309,HA1E,IGF-1 inhibitor,BMS-536924
+BMS-536924,LINCSCP_19331,HCC515,IGF-1 inhibitor,BMS-536924
+BMS-536924,LINCSCP_25523,HT29,IGF-1 inhibitor,BMS-536924
+BMS-536924,LINCSCP_30538,MCF7,IGF-1 inhibitor,BMS-536924
+BMS-536924,LINCSCP_44936,PC3,IGF-1 inhibitor,BMS-536924
+BMS-536924,LINCSCP_56869,VCAP,IGF-1 inhibitor,BMS-536924
+BMS-754807,LINCSCP_661,A375,IGF-1 inhibitor,BMS-754807
+BMS-754807,LINCSCP_4491,A549,IGF-1 inhibitor,BMS-754807
+BMS-754807,LINCSCP_15264,HA1E,IGF-1 inhibitor,BMS-754807
+BMS-754807,LINCSCP_19298,HCC515,IGF-1 inhibitor,BMS-754807
+BMS-754807,LINCSCP_25481,HT29,IGF-1 inhibitor,BMS-754807
+BMS-754807,LINCSCP_30496,MCF7,IGF-1 inhibitor,BMS-754807
+BMS-754807,LINCSCP_44902,PC3,IGF-1 inhibitor,BMS-754807
+BMS-754807,LINCSCP_56836,VCAP,IGF-1 inhibitor,BMS-754807
+BX-912,LINCSCP_2368,A375,Pyruvate dehydrogenase kinase inhibitor,BX 912
+BX-912,LINCSCP_6621,A549,Pyruvate dehydrogenase kinase inhibitor,BX 912
+BX-912,LINCSCP_16655,HA1E,Pyruvate dehydrogenase kinase inhibitor,BX 912
+BX-912,LINCSCP_20458,HCC515,Pyruvate dehydrogenase kinase inhibitor,BX 912
+BX-912,LINCSCP_22553,HEPG2,Pyruvate dehydrogenase kinase inhibitor,BX 912
+BX-912,LINCSCP_26655,HT29,Pyruvate dehydrogenase kinase inhibitor,BX 912
+BX-912,LINCSCP_32696,MCF7,Pyruvate dehydrogenase kinase inhibitor,BX 912
+BX-912,LINCSCP_46974,PC3,Pyruvate dehydrogenase kinase inhibitor,BX 912
+BX-912,LINCSCP_59071,VCAP,Pyruvate dehydrogenase kinase inhibitor,BX 912
+BX-912,LINCSCP_64923,VCAP,Pyruvate dehydrogenase kinase inhibitor,BX 912
+BX795,LINCSCP_721,A375,IKK inhibitor,BX-795
+BX795,LINCSCP_4541,A549,IKK inhibitor,BX-795
+BX795,LINCSCP_15328,HA1E,IKK inhibitor,BX-795
+BX795,LINCSCP_19345,HCC515,IKK inhibitor,BX-795
+BX795,LINCSCP_25539,HT29,IKK inhibitor,BX-795
+BX795,LINCSCP_30557,MCF7,IKK inhibitor,BX-795
+BX795,LINCSCP_44950,PC3,IKK inhibitor,BX-795
+BX795,LINCSCP_56879,VCAP,IKK inhibitor,BX-795
+Belinostat,LINCSCP_2137,A375,HDAC inhibitor,Belinostat
+Belinostat,LINCSCP_6245,A549,HDAC inhibitor,Belinostat
+Belinostat,LINCSCP_16449,HA1E,HDAC inhibitor,Belinostat
+Belinostat,LINCSCP_20233,HCC515,HDAC inhibitor,Belinostat
+Belinostat,LINCSCP_22329,HEPG2,HDAC inhibitor,Belinostat
+Belinostat,LINCSCP_26478,HT29,HDAC inhibitor,Belinostat
+Belinostat,LINCSCP_32311,MCF7,HDAC inhibitor,Belinostat
+Belinostat,LINCSCP_38162,MCF7,HDAC inhibitor,Belinostat
+Belinostat,LINCSCP_46571,PC3,HDAC inhibitor,Belinostat
+Belinostat,LINCSCP_58711,VCAP,HDAC inhibitor,Belinostat
+Bicalutamide,LINCSCP_214431,HCC515,Androgen receptor antagonist,Bicalutamide
+Bicalutamide,LINCSCP_244704,MCF7,Androgen receptor antagonist,Bicalutamide
+Bicalutamide,LINCSCP_47828,PC3,Androgen receptor antagonist,Bicalutamide
+Bicalutamide,LINCSCP_293995,VCAP,Androgen receptor antagonist,Bicalutamide
+Bicalutamide,LINCSCP_310897,VCAP,Androgen receptor antagonist,Bicalutamide
+Bortezomib,LINCSCP_10234,A549,NFkB pathway inhibitor|Proteasome inhibitor,179324-69-7
+Bortezomib,LINCSCP_21087,HCC515,NFkB pathway inhibitor|Proteasome inhibitor,179324-69-7
+Bortezomib,LINCSCP_38101,MCF7,NFkB pathway inhibitor|Proteasome inhibitor,179324-69-7
+Bortezomib,LINCSCP_38868,MCF7,NFkB pathway inhibitor|Proteasome inhibitor,179324-69-7
+Bortezomib,LINCSCP_49796,PC3,NFkB pathway inhibitor|Proteasome inhibitor,179324-69-7
+Bosutinib,LINCSCP_2483,A375,Abl kinase inhibitor|Bcr-Abl kinase inhibitor|Src inhibitor,Bosutinib
+Bosutinib,LINCSCP_6713,A549,Abl kinase inhibitor|Bcr-Abl kinase inhibitor|Src inhibitor,Bosutinib
+Bosutinib,LINCSCP_16744,HA1E,Abl kinase inhibitor|Bcr-Abl kinase inhibitor|Src inhibitor,Bosutinib
+Bosutinib,LINCSCP_20541,HCC515,Abl kinase inhibitor|Bcr-Abl kinase inhibitor|Src inhibitor,Bosutinib
+Bosutinib,LINCSCP_22633,HEPG2,Abl kinase inhibitor|Bcr-Abl kinase inhibitor|Src inhibitor,Bosutinib
+Bosutinib,LINCSCP_26747,HT29,Abl kinase inhibitor|Bcr-Abl kinase inhibitor|Src inhibitor,Bosutinib
+Bosutinib,LINCSCP_32782,MCF7,Abl kinase inhibitor|Bcr-Abl kinase inhibitor|Src inhibitor,Bosutinib
+Bosutinib,LINCSCP_47051,PC3,Abl kinase inhibitor|Bcr-Abl kinase inhibitor|Src inhibitor,Bosutinib
+Bosutinib,LINCSCP_59137,VCAP,Abl kinase inhibitor|Bcr-Abl kinase inhibitor|Src inhibitor,Bosutinib
+Buparlisib,LINCSCP_36796,MCF7,PI3K inhibitor,Buparlisib
+CAY10603,LINCSCP_787,A375,HDAC inhibitor,CAY10603
+CAY10603,LINCSCP_4586,A549,HDAC inhibitor,CAY10603
+CAY10603,LINCSCP_15394,HA1E,HDAC inhibitor,CAY10603
+CAY10603,LINCSCP_19386,HCC515,HDAC inhibitor,CAY10603
+CAY10603,LINCSCP_25591,HT29,HDAC inhibitor,CAY10603
+CAY10603,LINCSCP_30614,MCF7,HDAC inhibitor,CAY10603
+CAY10603,LINCSCP_45001,PC3,HDAC inhibitor,CAY10603
+CAY10603,LINCSCP_56926,VCAP,HDAC inhibitor,CAY10603
+CCT-018159,LINCSCP_2906,A375,HSP inhibitor,CCT 018159
+CCT-018159,LINCSCP_7724,A549,HSP inhibitor,CCT 018159
+CCT-018159,LINCSCP_14583,HA1E,HSP inhibitor,CCT 018159
+CCT-018159,LINCSCP_18719,HCC515,HSP inhibitor,CCT 018159
+CCT-018159,LINCSCP_23086,HEPG2,HSP inhibitor,CCT 018159
+CCT-018159,LINCSCP_33780,MCF7,HSP inhibitor,CCT 018159
+CGP-60474,LINCSCP_2213,A375,CDK inhibitor,CGP 60474
+CGP-60474,LINCSCP_6284,A549,CDK inhibitor,CGP 60474
+CGP-60474,LINCSCP_16541,HA1E,CDK inhibitor,CGP 60474
+CGP-60474,LINCSCP_22421,HEPG2,CDK inhibitor,CGP 60474
+CGP-60474,LINCSCP_26530,HT29,CDK inhibitor,CGP 60474
+CGP-60474,LINCSCP_32378,MCF7,CDK inhibitor,CGP 60474
+CGP-60474,LINCSCP_46648,PC3,CDK inhibitor,CGP 60474
+CGP-60474,LINCSCP_58766,VCAP,CDK inhibitor,CGP 60474
+CHIR-99021,LINCSCP_36890,MCF7,Glycogen synthase kinase inhibitor,CHIR-99021
+CI-1040,LINCSCP_2295,A375,MEK inhibitor,CI-1040
+CI-1040,LINCSCP_6571,A549,MEK inhibitor,CI-1040
+CI-1040,LINCSCP_211550,HA1E,MEK inhibitor,CI-1040
+CI-1040,LINCSCP_20398,HCC515,MEK inhibitor,CI-1040
+CI-1040,LINCSCP_22299,HEPG2,MEK inhibitor,CI-1040
+CI-1040,LINCSCP_26596,HT29,MEK inhibitor,CI-1040
+CI-1040,LINCSCP_251506,MCF7,MEK inhibitor,CI-1040
+CI-1040,LINCSCP_46550,PC3,MEK inhibitor,CI-1040
+CP466722,LINCSCP_2132,A375,ATM kinase inhibitor,CP466722
+CP466722,LINCSCP_6242,A549,ATM kinase inhibitor,CP466722
+CP466722,LINCSCP_16443,HA1E,ATM kinase inhibitor,CP466722
+CP466722,LINCSCP_20227,HCC515,ATM kinase inhibitor,CP466722
+CP466722,LINCSCP_22321,HEPG2,ATM kinase inhibitor,CP466722
+CP466722,LINCSCP_26473,HT29,ATM kinase inhibitor,CP466722
+CP466722,LINCSCP_36613,MCF7,ATM kinase inhibitor,CP466722
+CP466722,LINCSCP_46564,PC3,ATM kinase inhibitor,CP466722
+CP724714,LINCSCP_2209,A375,EGFR inhibitor|Tyrosine kinase inhibitor,CP-724714
+CP724714,LINCSCP_191359,A549,EGFR inhibitor|Tyrosine kinase inhibitor,CP-724714
+CP724714,LINCSCP_16537,HA1E,EGFR inhibitor|Tyrosine kinase inhibitor,CP-724714
+CP724714,LINCSCP_216963,HCC515,EGFR inhibitor|Tyrosine kinase inhibitor,CP-724714
+CP724714,LINCSCP_22418,HEPG2,EGFR inhibitor|Tyrosine kinase inhibitor,CP-724714
+CP724714,LINCSCP_251602,MCF7,EGFR inhibitor|Tyrosine kinase inhibitor,CP-724714
+CP724714,LINCSCP_46645,PC3,EGFR inhibitor|Tyrosine kinase inhibitor,CP-724714
+CP724714,LINCSCP_295150,VCAP,EGFR inhibitor|Tyrosine kinase inhibitor,CP-724714
+Camptothecin,LINCSCP_2670,A375,Topoisomerase inhibitor,(+)-Camptothecin
+Camptothecin,LINCSCP_10221,A549,Topoisomerase inhibitor,Camptothecin
+Camptothecin,LINCSCP_7119,A549,Topoisomerase inhibitor,(+)-Camptothecin
+Camptothecin,LINCSCP_14185,HA1E,Topoisomerase inhibitor,(+)-Camptothecin
+Camptothecin,LINCSCP_18359,HCC515,Topoisomerase inhibitor,(+)-Camptothecin
+Camptothecin,LINCSCP_21080,HCC515,Topoisomerase inhibitor,Camptothecin
+Camptothecin,LINCSCP_22713,HEPG2,Topoisomerase inhibitor,(+)-Camptothecin
+Camptothecin,LINCSCP_26881,HT29,Topoisomerase inhibitor,(+)-Camptothecin
+Camptothecin,LINCSCP_33167,MCF7,Topoisomerase inhibitor,(+)-Camptothecin
+Camptothecin,LINCSCP_37689,MCF7,Topoisomerase inhibitor,Camptothecin
+Camptothecin,LINCSCP_44279,PC3,Topoisomerase inhibitor,(+)-Camptothecin
+Camptothecin,LINCSCP_47514,PC3,Topoisomerase inhibitor,Camptothecin
+Camptothecin,LINCSCP_56102,VCAP,Topoisomerase inhibitor,(+)-Camptothecin
+Camptothecin,LINCSCP_64904,VCAP,Topoisomerase inhibitor,Camptothecin
+Cediranib,LINCSCP_2457,A375,KIT inhibitor|VEGFR inhibitor,Cediranib
+Cediranib,LINCSCP_6694,A549,KIT inhibitor|VEGFR inhibitor,Cediranib
+Cediranib,LINCSCP_16724,HA1E,KIT inhibitor|VEGFR inhibitor,Cediranib
+Cediranib,LINCSCP_20525,HCC515,KIT inhibitor|VEGFR inhibitor,Cediranib
+Cediranib,LINCSCP_22614,HEPG2,KIT inhibitor|VEGFR inhibitor,Cediranib
+Cediranib,LINCSCP_26730,HT29,KIT inhibitor|VEGFR inhibitor,Cediranib
+Cediranib,LINCSCP_32764,MCF7,KIT inhibitor|VEGFR inhibitor,Cediranib
+Cediranib,LINCSCP_47040,PC3,KIT inhibitor|VEGFR inhibitor,Cediranib
+Cediranib,LINCSCP_59127,VCAP,KIT inhibitor|VEGFR inhibitor,Cediranib
+Cisplatin,LINCSCP_10186,A549,DNA alkylating agent|DNA synthesis inhibitor,Cis-Platin
+Cisplatin,LINCSCP_38845,MCF7,DNA alkylating agent|DNA synthesis inhibitor,Cis-Platin
+Cisplatin,LINCSCP_49775,PC3,DNA alkylating agent|DNA synthesis inhibitor,Cis-Platin
+Crizotinib,LINCSCP_2435,A375,ALK tyrosine kinase receptor inhibitor,Crizotinib
+Crizotinib,LINCSCP_6674,A549,ALK tyrosine kinase receptor inhibitor,Crizotinib
+Crizotinib,LINCSCP_16707,HA1E,ALK tyrosine kinase receptor inhibitor,Crizotinib
+Crizotinib,LINCSCP_20508,HCC515,ALK tyrosine kinase receptor inhibitor,Crizotinib
+Crizotinib,LINCSCP_22598,HEPG2,ALK tyrosine kinase receptor inhibitor,Crizotinib
+Crizotinib,LINCSCP_26711,HT29,ALK tyrosine kinase receptor inhibitor,Crizotinib
+Crizotinib,LINCSCP_32749,MCF7,ALK tyrosine kinase receptor inhibitor,Crizotinib
+Crizotinib,LINCSCP_47023,PC3,ALK tyrosine kinase receptor inhibitor,Crizotinib
+Crizotinib,LINCSCP_59114,VCAP,ALK tyrosine kinase receptor inhibitor,Crizotinib
+Cyclopamine,LINCSCP_2095,A375,Smoothened receptor antagonist,4449-51-8
+Cyclopamine,LINCSCP_16400,HA1E,Smoothened receptor antagonist,4449-51-8
+Cyclopamine,LINCSCP_20186,HCC515,Smoothened receptor antagonist,4449-51-8
+Cyclopamine,LINCSCP_22274,HEPG2,Smoothened receptor antagonist,4449-51-8
+Cyclopamine,LINCSCP_32279,MCF7,Smoothened receptor antagonist,4449-51-8
+Cyclopamine,LINCSCP_46535,PC3,Smoothened receptor antagonist,4449-51-8
+Cyclopamine,LINCSCP_58677,VCAP,Smoothened receptor antagonist,4449-51-8
+Cyclophosphamide,LINCSCP_212064,HA1E,DNA alkylating agent,Cyclophosphamide
+Cyclophosphamide,LINCSCP_212334,HA1E,DNA alkylating agent,Cyclophosphamide
+Cyclophosphamide,LINCSCP_27273,HT29,DNA alkylating agent,Cyclophosphamide
+Cyclophosphamide,LINCSCP_244684,MCF7,DNA alkylating agent,Cyclophosphamide
+Cyclophosphamide,LINCSCP_47808,PC3,DNA alkylating agent,Cyclophosphamide
+Cyclophosphamide,LINCSCP_296172,VCAP,DNA alkylating agent,Cyclophosphamide
+Cytarabine,LINCSCP_1898,A375,Ribonucleotide reductase inhibitor,Cytarabine
+Cytarabine,LINCSCP_5850,A549,Ribonucleotide reductase inhibitor,Cytarabine
+Cytarabine,LINCSCP_16191,HA1E,Ribonucleotide reductase inhibitor,Cytarabine
+Cytarabine,LINCSCP_17186,HA1E,Ribonucleotide reductase inhibitor,"CYTARABINE, Cytarabine (Cytosine 1-b-D-arabinofuranoside), CYTIDINE 63878"
+Cytarabine,LINCSCP_34588,MCF7,Ribonucleotide reductase inhibitor,Cytarabine
+Cytarabine,LINCSCP_47726,PC3,Ribonucleotide reductase inhibitor,Cytarabine
+Dabrafenib,LINCSCP_7,A375,RAF inhibitor,Dabrafenib
+Dacarbazine,LINCSCP_47634,PC3,DNA alkylating agent,Dacarbazine
+Dacinostat,LINCSCP_2386,A375,HDAC inhibitor,Dacinostat
+Dacinostat,LINCSCP_6637,A549,HDAC inhibitor,Dacinostat
+Dacinostat,LINCSCP_16671,HA1E,HDAC inhibitor,Dacinostat
+Dacinostat,LINCSCP_20474,HCC515,HDAC inhibitor,Dacinostat
+Dacinostat,LINCSCP_22567,HEPG2,HDAC inhibitor,Dacinostat
+Dacinostat,LINCSCP_26674,HT29,HDAC inhibitor,Dacinostat
+Dacinostat,LINCSCP_32711,MCF7,HDAC inhibitor,Dacinostat
+Dacinostat,LINCSCP_46988,PC3,HDAC inhibitor,Dacinostat
+Dacinostat,LINCSCP_59085,VCAP,HDAC inhibitor,Dacinostat
+Dactinomycin,LINCSCP_2568,A375,RNA polymerase inhibitor,dactinomycin
+Dactinomycin,LINCSCP_6953,A549,RNA polymerase inhibitor,dactinomycin
+Dactinomycin,LINCSCP_14531,HA1E,RNA polymerase inhibitor,dactinomycin
+Dactinomycin,LINCSCP_18666,HCC515,RNA polymerase inhibitor,dactinomycin
+Dactinomycin,LINCSCP_22674,HEPG2,RNA polymerase inhibitor,dactinomycin
+Dactinomycin,LINCSCP_26801,HT29,RNA polymerase inhibitor,dactinomycin
+Dactinomycin,LINCSCP_32982,MCF7,RNA polymerase inhibitor,dactinomycin
+Dactinomycin,LINCSCP_44434,PC3,RNA polymerase inhibitor,dactinomycin
+Dactinomycin,LINCSCP_290269,VCAP,RNA polymerase inhibitor,dactinomycin
+Dactinomycin,LINCSCP_65059,VCAP,RNA polymerase inhibitor,Meractinomycin
+Dactolisib,LINCSCP_9428,A549,MTOR inhibitor|PI3K inhibitor,Dactolisib
+Dactolisib,LINCSCP_35914,MCF7,MTOR inhibitor|PI3K inhibitor,Dactolisib
+Dasatinib,LINCSCP_2169,A375,Bcr-Abl kinase inhibitor|Ephrin inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|Src inhibitor|Tyrosine kinase inhibitor,Dasatinib
+Dasatinib,LINCSCP_16489,HA1E,Bcr-Abl kinase inhibitor|Ephrin inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|Src inhibitor|Tyrosine kinase inhibitor,Dasatinib
+Dasatinib,LINCSCP_20276,HCC515,Bcr-Abl kinase inhibitor|Ephrin inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|Src inhibitor|Tyrosine kinase inhibitor,Dasatinib
+Dasatinib,LINCSCP_22369,HEPG2,Bcr-Abl kinase inhibitor|Ephrin inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|Src inhibitor|Tyrosine kinase inhibitor,Dasatinib
+Dasatinib,LINCSCP_26500,HT29,Bcr-Abl kinase inhibitor|Ephrin inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|Src inhibitor|Tyrosine kinase inhibitor,Dasatinib
+Dasatinib,LINCSCP_240123,MCF7,Bcr-Abl kinase inhibitor|Ephrin inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|Src inhibitor|Tyrosine kinase inhibitor,Dasatinib
+Dasatinib,LINCSCP_46602,PC3,Bcr-Abl kinase inhibitor|Ephrin inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|Src inhibitor|Tyrosine kinase inhibitor,Dasatinib
+Dasatinib,LINCSCP_58734,VCAP,Bcr-Abl kinase inhibitor|Ephrin inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|Src inhibitor|Tyrosine kinase inhibitor,Dasatinib
+Docetaxel,LINCSCP_1920,A375,Tubulin inhibitor,Docetaxel Intermediate
+Docetaxel,LINCSCP_5884,A549,Tubulin inhibitor,Docetaxel Intermediate
+Docetaxel,LINCSCP_34660,MCF7,Tubulin inhibitor,BRD-K30618791-001-01-9
+Docetaxel,LINCSCP_47942,PC3,Tubulin inhibitor,BRD-K30618791-001-01-9
+Docetaxel,LINCSCP_58273,VCAP,Tubulin inhibitor,Docetaxel Intermediate
+Doramapimod,LINCSCP_36976,MCF7,P38 MAPK inhibitor,Doramapimod
+Doxorubicin,LINCSCP_2650,A375,DNA topoisomerase II alpha inhibitor,Doxorubicin
+Doxorubicin,LINCSCP_5909,A549,DNA topoisomerase II alpha inhibitor,Doxorubicin
+Doxorubicin,LINCSCP_14603,HA1E,DNA topoisomerase II alpha inhibitor,Doxorubicin
+Doxorubicin,LINCSCP_17040,HA1E,Topoisomerase inhibitor,NSC169534
+Doxorubicin,LINCSCP_18741,HCC515,DNA topoisomerase II alpha inhibitor,Doxorubicin
+Doxorubicin,LINCSCP_22701,HEPG2,DNA topoisomerase II alpha inhibitor,Doxorubicin
+Doxorubicin,LINCSCP_26867,HT29,DNA topoisomerase II alpha inhibitor,Doxorubicin
+Doxorubicin,LINCSCP_36185,MCF7,DNA topoisomerase II alpha inhibitor,Doxorubicin
+Doxorubicin,LINCSCP_47766,PC3,DNA topoisomerase II alpha inhibitor,Doxorubicin
+Doxorubicin,LINCSCP_58292,VCAP,DNA topoisomerase II alpha inhibitor,Doxorubicin
+Elesclomol,LINCSCP_823,A375,Oxidative stress inducer,Elesclomol
+Elesclomol,LINCSCP_4610,A549,Oxidative stress inducer,Elesclomol
+Elesclomol,LINCSCP_15427,HA1E,Oxidative stress inducer,Elesclomol
+Elesclomol,LINCSCP_19411,HCC515,Oxidative stress inducer,Elesclomol
+Elesclomol,LINCSCP_25622,HT29,Oxidative stress inducer,Elesclomol
+Elesclomol,LINCSCP_30642,MCF7,Oxidative stress inducer,Elesclomol
+Elesclomol,LINCSCP_45031,PC3,Oxidative stress inducer,Elesclomol
+Embelin,LINCSCP_14311,HA1E,HCV inhibitor|XIAP inhibitor,BRD-K86727142-001-06-6
+Embelin,LINCSCP_18446,HCC515,HCV inhibitor|XIAP inhibitor,BRD-K86727142-001-06-6
+Embelin,LINCSCP_226994,HT29,HCV inhibitor|XIAP inhibitor,BRD-K86727142-001-06-6
+Embelin,LINCSCP_265505,PC3,HCV inhibitor|XIAP inhibitor,BRD-K86727142-001-06-6
+Entinostat,LINCSCP_4050,A375,HDAC inhibitor,Entinostat
+Entinostat,LINCSCP_10138,A549,HDAC inhibitor,Entinostat
+Entinostat,LINCSCP_17121,HA1E,HDAC inhibitor,Entinostat
+Entinostat,LINCSCP_21025,HCC515,HDAC inhibitor,Entinostat
+Entinostat,LINCSCP_24081,HEPG2,HDAC inhibitor,Entinostat
+Entinostat,LINCSCP_28662,HT29,HDAC inhibitor,Entinostat
+Entinostat,LINCSCP_35526,MCF7,HDAC inhibitor,Entinostat
+Entinostat,LINCSCP_49699,PC3,HDAC inhibitor,Entinostat
+Entinostat,LINCSCP_58646,VCAP,HDAC inhibitor,Entinostat
+Enzastaurin,LINCSCP_2437,A375,PKC inhibitor,Enzastaurin
+Enzastaurin,LINCSCP_6675,A549,PKC inhibitor,Enzastaurin
+Enzastaurin,LINCSCP_211824,HA1E,PKC inhibitor,Enzastaurin
+Enzastaurin,LINCSCP_20509,HCC515,PKC inhibitor,Enzastaurin
+Enzastaurin,LINCSCP_22599,HEPG2,PKC inhibitor,Enzastaurin
+Enzastaurin,LINCSCP_26713,HT29,PKC inhibitor,Enzastaurin
+Enzastaurin,LINCSCP_240494,MCF7,PKC inhibitor,Enzastaurin
+Enzastaurin,LINCSCP_47025,PC3,PKC inhibitor,Enzastaurin
+Enzastaurin,LINCSCP_59116,VCAP,PKC inhibitor,Enzastaurin
+Epirubicin,LINCSCP_2582,A375,Topoisomerase inhibitor,Epirubicin
+Epirubicin,LINCSCP_5827,A549,Topoisomerase inhibitor,Epirubicin
+Epirubicin,LINCSCP_14866,HA1E,Topoisomerase inhibitor,Epirubicin
+Epirubicin,LINCSCP_19059,HCC515,Topoisomerase inhibitor,Epirubicin
+Epirubicin,LINCSCP_21498,HEPG2,Topoisomerase inhibitor,Epirubicin
+Epirubicin,LINCSCP_26809,HT29,Topoisomerase inhibitor,Epirubicin
+Epirubicin,LINCSCP_32991,MCF7,Topoisomerase inhibitor,Epirubicin
+Epirubicin,LINCSCP_44630,PC3,Topoisomerase inhibitor,Epirubicin
+Epirubicin,LINCSCP_56532,VCAP,Topoisomerase inhibitor,Epirubicin
+Epothilone B,LINCSCP_2032,A375,Microtubule inhibitor,Patupilone
+Epothilone B,LINCSCP_16317,HA1E,Microtubule inhibitor,Patupilone
+Epothilone B,LINCSCP_32051,MCF7,Microtubule inhibitor,Patupilone
+Epothilone B,LINCSCP_46353,PC3,Microtubule inhibitor,Patupilone
+Erlotinib,LINCSCP_2415,A375,EGFR inhibitor,Erlotinib
+Erlotinib,LINCSCP_6660,A549,EGFR inhibitor,Erlotinib
+Erlotinib,LINCSCP_16693,HA1E,EGFR inhibitor,Erlotinib
+Erlotinib,LINCSCP_20492,HCC515,EGFR inhibitor,Erlotinib
+Erlotinib,LINCSCP_22581,HEPG2,EGFR inhibitor,Erlotinib
+Erlotinib,LINCSCP_252061,MCF7,EGFR inhibitor,Erlotinib
+Erlotinib,LINCSCP_47006,PC3,EGFR inhibitor,Erlotinib
+Etoposide,LINCSCP_1904,A375,DNA topoisomerase II inhibitor,Etoposide
+Etoposide,LINCSCP_5855,A549,DNA topoisomerase II inhibitor,Etoposide
+Etoposide,LINCSCP_16193,HA1E,DNA topoisomerase II inhibitor,Etoposide
+Etoposide,LINCSCP_17069,HA1E,DNA topoisomerase II inhibitor,etoposide
+Etoposide,LINCSCP_243482,MCF7,Topoisomerase inhibitor,BRD-K46503544-001-01-5
+Etoposide,LINCSCP_31804,MCF7,DNA topoisomerase II inhibitor,Etoposide
+Etoposide,LINCSCP_46155,PC3,DNA topoisomerase II inhibitor,Etoposide
+Etoposide,LINCSCP_47524,PC3,Topoisomerase inhibitor,BRD-K46503544-001-01-5
+Etoposide,LINCSCP_58259,VCAP,DNA topoisomerase II inhibitor,Etoposide
+Etoposide,LINCSCP_64917,VCAP,Topoisomerase inhibitor,BRD-K46503544-001-01-5
+FMK,LINCSCP_2332,A375,Protein kinase inhibitor,CHEMBL2132289
+FMK,LINCSCP_26622,HT29,Protein kinase inhibitor,CHEMBL2132289
+FMK,LINCSCP_36624,MCF7,Protein kinase inhibitor,CHEMBL2132289
+FR-180204,LINCSCP_5542,A549,MAP kinase inhibitor,FR-180204
+FR-180204,LINCSCP_19921,HCC515,MAP kinase inhibitor,FR-180204
+FR-180204,LINCSCP_22084,HEPG2,MAP kinase inhibitor,FR-180204
+FR-180204,LINCSCP_31506,MCF7,MAP kinase inhibitor,FR-180204
+Fedratinib,LINCSCP_931,A375,FLT3 inhibitor|JAK inhibitor,Fedratinib
+Fedratinib,LINCSCP_4715,A549,FLT3 inhibitor|JAK inhibitor,Fedratinib
+Fedratinib,LINCSCP_15549,HA1E,FLT3 inhibitor|JAK inhibitor,Fedratinib
+Fedratinib,LINCSCP_19502,HCC515,FLT3 inhibitor|JAK inhibitor,Fedratinib
+Fedratinib,LINCSCP_21650,HEPG2,FLT3 inhibitor|JAK inhibitor,Fedratinib
+Fedratinib,LINCSCP_25725,HT29,FLT3 inhibitor|JAK inhibitor,Fedratinib
+Fedratinib,LINCSCP_30758,MCF7,FLT3 inhibitor|JAK inhibitor,Fedratinib
+Fedratinib,LINCSCP_37994,MCF7,FLT3 inhibitor|JAK inhibitor,Fedratinib
+Fedratinib,LINCSCP_45132,PC3,FLT3 inhibitor|JAK inhibitor,Fedratinib
+Fedratinib,LINCSCP_57074,VCAP,FLT3 inhibitor|JAK inhibitor,Fedratinib
+Fludarabine,LINCSCP_3104,A375,DNA synthesis inhibitor,Fludarabine
+Fludarabine,LINCSCP_194169,A549,DNA synthesis inhibitor,Fludarabine
+Fludarabine,LINCSCP_16991,HA1E,DNA synthesis inhibitor,Fludarabine
+Fludarabine,LINCSCP_20745,HCC515,DNA synthesis inhibitor,Fludarabine
+Fludarabine,LINCSCP_227986,HT29,DNA synthesis inhibitor,Fludarabine
+Fludarabine,LINCSCP_244906,MCF7,DNA synthesis inhibitor,Fludarabine
+Fludarabine,LINCSCP_273529,PC3,DNA synthesis inhibitor,Fludarabine
+Fludarabine,LINCSCP_296332,VCAP,DNA synthesis inhibitor,Fludarabine
+Foretinib,LINCSCP_36767,MCF7,VEGFR inhibitor,Foretinib
+Fulvestrant,LINCSCP_3808,A375,Estrogen receptor antagonist,"ICI182, 780"
+Fulvestrant,LINCSCP_66467,A375,Estrogen receptor antagonist,"13-Methyl-7-[9-(4,4,5,5,5-pentafluoropentylsulfinyl)nonyl]-6,7,8,9,11,12,14,15,16,17-decahydrocyclopenta[a]phenanthrene-3,17-diol"
+Fulvestrant,LINCSCP_200872,A549,Estrogen receptor antagonist,"13-Methyl-7-[9-(4,4,5,5,5-pentafluoropentylsulfinyl)nonyl]-6,7,8,9,11,12,14,15,16,17-decahydrocyclopenta[a]phenanthrene-3,17-diol"
+Fulvestrant,LINCSCP_9943,A549,Estrogen receptor antagonist,"ICI182, 780"
+Fulvestrant,LINCSCP_17294,HA1E,Estrogen receptor antagonist,"ICI182, 780"
+Fulvestrant,LINCSCP_20805,HCC515,Estrogen receptor antagonist,"ICI182, 780"
+Fulvestrant,LINCSCP_23829,HEPG2,Estrogen receptor antagonist,"ICI182, 780"
+Fulvestrant,LINCSCP_67197,HT29,Estrogen receptor antagonist,"13-Methyl-7-[9-(4,4,5,5,5-pentafluoropentylsulfinyl)nonyl]-6,7,8,9,11,12,14,15,16,17-decahydrocyclopenta[a]phenanthrene-3,17-diol"
+Fulvestrant,LINCSCP_34241,MCF7,Estrogen receptor antagonist,BRD-A17828570-001-01-0
+Fulvestrant,LINCSCP_38456,MCF7,Estrogen receptor antagonist,"ICI182, 780"
+Fulvestrant,LINCSCP_67525,MCF7,Estrogen receptor antagonist,"13-Methyl-7-[9-(4,4,5,5,5-pentafluoropentylsulfinyl)nonyl]-6,7,8,9,11,12,14,15,16,17-decahydrocyclopenta[a]phenanthrene-3,17-diol"
+Fulvestrant,LINCSCP_279390,PC3,Estrogen receptor antagonist,"13-Methyl-7-[9-(4,4,5,5,5-pentafluoropentylsulfinyl)nonyl]-6,7,8,9,11,12,14,15,16,17-decahydrocyclopenta[a]phenanthrene-3,17-diol"
+Fulvestrant,LINCSCP_49466,PC3,Estrogen receptor antagonist,"ICI182, 780"
+GNF-2,LINCSCP_16567,HA1E,Bcr-Abl kinase inhibitor,HY-11007
+GNF-2,LINCSCP_22449,HEPG2,Bcr-Abl kinase inhibitor,HY-11007
+GNF-2,LINCSCP_32397,MCF7,Bcr-Abl kinase inhibitor,HY-11007
+GNF-2,LINCSCP_295186,VCAP,Bcr-Abl kinase inhibitor,HY-11007
+GSK1070916,LINCSCP_179363,A375,Aurora kinase inhibitor,GSK-1070916
+GSK1070916,LINCSCP_187509,A375,Aurora kinase inhibitor,GSK-1070916
+GSK1070916,LINCSCP_6608,A549,Aurora kinase inhibitor,GSK-1070916
+GSK1070916,LINCSCP_16641,HA1E,Aurora kinase inhibitor,GSK-1070916
+GSK1070916,LINCSCP_20443,HCC515,Aurora kinase inhibitor,GSK-1070916
+GSK1070916,LINCSCP_22539,HEPG2,Aurora kinase inhibitor,GSK-1070916
+GSK1070916,LINCSCP_26640,HT29,Aurora kinase inhibitor,GSK-1070916
+GSK1070916,LINCSCP_255163,MCF7,Aurora kinase inhibitor,GSK-1070916
+GSK1070916,LINCSCP_36629,MCF7,Aurora kinase inhibitor,GSK-1070916
+GSK1070916,LINCSCP_46965,PC3,Aurora kinase inhibitor,GSK-1070916
+GSK1070916,LINCSCP_49751,PC3,Aurora kinase inhibitor,GSK-1070916
+GSK1070916,LINCSCP_59056,VCAP,Aurora kinase inhibitor,GSK-1070916
+GSK1904529A,LINCSCP_16423,HA1E,IGF-1 inhibitor|Insulin growth factor receptor inhibitor|Insulin receptor ligand,GSK-1904529A
+GSK1904529A,LINCSCP_20209,HCC515,IGF-1 inhibitor|Insulin growth factor receptor inhibitor|Insulin receptor ligand,GSK-1904529A
+GSK1904529A,LINCSCP_26464,HT29,IGF-1 inhibitor|Insulin growth factor receptor inhibitor|Insulin receptor ligand,GSK-1904529A
+GSK1904529A,LINCSCP_46549,PC3,IGF-1 inhibitor|Insulin growth factor receptor inhibitor|Insulin receptor ligand,GSK-1904529A
+GSK429286A,LINCSCP_179112,A375,Rho associated kinase inhibitor,GSK429286A
+GSK429286A,LINCSCP_6228,A549,Rho associated kinase inhibitor,GSK429286A
+GSK429286A,LINCSCP_216810,HCC515,Rho associated kinase inhibitor,GSK429286A
+GSK429286A,LINCSCP_219995,HEPG2,Rho associated kinase inhibitor,GSK429286A
+GSK429286A,LINCSCP_36568,MCF7,Rho associated kinase inhibitor,GSK429286A
+GSK429286A,LINCSCP_58680,VCAP,Rho associated kinase inhibitor,GSK429286A
+GSK690693,LINCSCP_36759,MCF7,AKT inhibitor,C21H27N7O3
+GW843682X,LINCSCP_843,A375,PLK inhibitor,GW843682X
+GW843682X,LINCSCP_188075,A549,PLK inhibitor,GW843682X
+GW843682X,LINCSCP_15446,HA1E,PLK inhibitor,GW843682X
+GW843682X,LINCSCP_18332,HCC515,PLK inhibitor,GW843682X
+GW843682X,LINCSCP_25640,HT29,PLK inhibitor,GW843682X
+GW843682X,LINCSCP_30660,MCF7,PLK inhibitor,GW843682X
+GW843682X,LINCSCP_38252,MCF7,PLK inhibitor,GW843682X
+GW843682X,LINCSCP_45049,PC3,PLK inhibitor,GW843682X
+GW843682X,LINCSCP_56068,VCAP,PLK inhibitor,GW843682X
+Gefitinib,LINCSCP_10251,A549,EGFR inhibitor,Gefitinib
+Gefitinib,LINCSCP_6646,A549,EGFR inhibitor,Gefitinib
+Gefitinib,LINCSCP_16680,HA1E,EGFR inhibitor,Gefitinib
+Gefitinib,LINCSCP_20479,HCC515,EGFR inhibitor,Gefitinib
+Gefitinib,LINCSCP_21101,HCC515,EGFR inhibitor,Gefitinib
+Gefitinib,LINCSCP_22571,HEPG2,EGFR inhibitor,Gefitinib
+Gefitinib,LINCSCP_26683,HT29,EGFR inhibitor,Gefitinib
+Gefitinib,LINCSCP_36953,MCF7,EGFR inhibitor,Gefitinib
+Gefitinib,LINCSCP_38875,MCF7,EGFR inhibitor,Gefitinib
+Gefitinib,LINCSCP_271335,PC3,EGFR inhibitor,Gefitinib
+Gefitinib,LINCSCP_49801,PC3,EGFR inhibitor,Gefitinib
+Gefitinib,LINCSCP_295437,VCAP,EGFR inhibitor,Gefitinib
+Gemcitabine,LINCSCP_10197,A549,Ribonucleotide reductase inhibitor,Gemcitabine
+Gemcitabine,LINCSCP_9440,A549,Ribonucleotide reductase inhibitor,Gemcitabine
+Gemcitabine,LINCSCP_21062,HCC515,Ribonucleotide reductase inhibitor,Gemcitabine
+Gemcitabine,LINCSCP_35926,MCF7,Ribonucleotide reductase inhibitor,Gemcitabine
+Gemcitabine,LINCSCP_38847,MCF7,Ribonucleotide reductase inhibitor,Gemcitabine
+Gemcitabine,LINCSCP_49782,PC3,Ribonucleotide reductase inhibitor,Gemcitabine
+HG-5-113-01,LINCSCP_2243,A375,Protein kinase inhibitor,HG-5-113-01
+HG-5-113-01,LINCSCP_6297,A549,Protein kinase inhibitor,HG-5-113-01
+HG-5-113-01,LINCSCP_16573,HA1E,Protein kinase inhibitor,HG-5-113-01
+HG-5-113-01,LINCSCP_20351,HCC515,Protein kinase inhibitor,HG-5-113-01
+HG-5-113-01,LINCSCP_22454,HEPG2,Protein kinase inhibitor,HG-5-113-01
+HG-5-113-01,LINCSCP_26553,HT29,Protein kinase inhibitor,HG-5-113-01
+HG-5-113-01,LINCSCP_32403,MCF7,Protein kinase inhibitor,HG-5-113-01
+HG-5-113-01,LINCSCP_36734,MCF7,Protein kinase inhibitor,SCHEMBL3954849
+HG-5-113-01,LINCSCP_46672,PC3,Protein kinase inhibitor,HG-5-113-01
+HG-5-113-01,LINCSCP_58788,VCAP,Protein kinase inhibitor,HG-5-113-01
+HG-5-88-01,LINCSCP_2241,A375,Protein kinase inhibitor,HG-5-88-01
+HG-5-88-01,LINCSCP_6296,A549,Protein kinase inhibitor,HG-5-88-01
+HG-5-88-01,LINCSCP_16572,HA1E,Protein kinase inhibitor,HG-5-88-01
+HG-5-88-01,LINCSCP_20349,HCC515,Protein kinase inhibitor,HG-5-88-01
+HG-5-88-01,LINCSCP_22453,HEPG2,Protein kinase inhibitor,HG-5-88-01
+HG-5-88-01,LINCSCP_26551,HT29,Protein kinase inhibitor,HG-5-88-01
+HG-5-88-01,LINCSCP_32401,MCF7,Protein kinase inhibitor,HG-5-88-01
+HG-5-88-01,LINCSCP_36596,MCF7,Protein kinase inhibitor,SCHEMBL3958507
+HG-5-88-01,LINCSCP_46670,PC3,Protein kinase inhibitor,HG-5-88-01
+HG-5-88-01,LINCSCP_58786,VCAP,Protein kinase inhibitor,HG-5-88-01
+HG6-64-1,LINCSCP_36744,MCF7,RAF inhibitor,HG6-64-1
+IMD-0354,LINCSCP_801,A375,IKK inhibitor|NFkB pathway inhibitor,IMD-0354
+IMD-0354,LINCSCP_4598,A549,IKK inhibitor|NFkB pathway inhibitor,IMD-0354
+IMD-0354,LINCSCP_13773,HA1E,IKK inhibitor|NFkB pathway inhibitor,IMD-0354
+IMD-0354,LINCSCP_18013,HCC515,IKK inhibitor|NFkB pathway inhibitor,IMD-0354
+IMD-0354,LINCSCP_23493,HEPG2,IKK inhibitor|NFkB pathway inhibitor,IMD-0354
+IMD-0354,LINCSCP_25604,HT29,IKK inhibitor|NFkB pathway inhibitor,IMD-0354
+IMD-0354,LINCSCP_30628,MCF7,IKK inhibitor|NFkB pathway inhibitor,IMD-0354
+IMD-0354,LINCSCP_45013,PC3,IKK inhibitor|NFkB pathway inhibitor,IMD-0354
+IMD-0354,LINCSCP_55687,VCAP,IKK inhibitor|NFkB pathway inhibitor,IMD-0354
+Ibrutinib,LINCSCP_36754,MCF7,BTK inhibitor,PCI-32765
+Idelalisib,LINCSCP_65047,VCAP,PI3K inhibitor,Idelalisib
+Imatinib,LINCSCP_179309,A375,Bcr-Abl kinase inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor,Imatinib
+Imatinib,LINCSCP_16560,HA1E,Bcr-Abl kinase inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor,Imatinib
+Imatinib,LINCSCP_216985,HCC515,Bcr-Abl kinase inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor,Imatinib
+Imatinib,LINCSCP_22441,HEPG2,Bcr-Abl kinase inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor,Imatinib
+Imatinib,LINCSCP_26358,HT29,Bcr-Abl kinase inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor,Imatinib
+Imatinib,LINCSCP_239336,MCF7,Bcr-Abl kinase inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor,Imatinib
+Imatinib,LINCSCP_270118,PC3,Bcr-Abl kinase inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor,Imatinib
+Irinotecan,LINCSCP_2689,A375,DNA topoisomerase I inhibitor,Irinotecan
+Irinotecan,LINCSCP_7149,A549,DNA topoisomerase I inhibitor,Irinotecan
+Irinotecan,LINCSCP_16186,HA1E,DNA topoisomerase I inhibitor,Irinotecan
+Irinotecan,LINCSCP_18384,HCC515,DNA topoisomerase I inhibitor,Irinotecan
+Irinotecan,LINCSCP_22731,HEPG2,DNA topoisomerase I inhibitor,Irinotecan
+Irinotecan,LINCSCP_26329,HT29,DNA topoisomerase I inhibitor,Irinotecan
+Irinotecan,LINCSCP_31793,MCF7,DNA topoisomerase I inhibitor,Irinotecan
+Irinotecan,LINCSCP_46147,PC3,DNA topoisomerase I inhibitor,Irinotecan
+Irinotecan,LINCSCP_58238,VCAP,DNA topoisomerase I inhibitor,Irinotecan
+JNK-9L,LINCSCP_2322,A375,JNK inhibitor,CHEMBL585951
+JNK-9L,LINCSCP_6588,A549,JNK inhibitor,CHEMBL585951
+JNK-9L,LINCSCP_16625,HA1E,JNK inhibitor,CHEMBL585951
+JNK-9L,LINCSCP_20419,HCC515,JNK inhibitor,CHEMBL585951
+JNK-9L,LINCSCP_22519,HEPG2,JNK inhibitor,CHEMBL585951
+JNK-9L,LINCSCP_26616,HT29,JNK inhibitor,CHEMBL585951
+JNK-9L,LINCSCP_32662,MCF7,JNK inhibitor,CHEMBL585951
+JNK-9L,LINCSCP_46949,PC3,JNK inhibitor,CHEMBL585951
+JNK-9L,LINCSCP_59039,VCAP,JNK inhibitor,CHEMBL585951
+JW-7-24-1,LINCSCP_2242,A375,LCK Inhibitor,JW-7-24-1
+JW-7-24-1,LINCSCP_20350,HCC515,LCK Inhibitor,JW-7-24-1
+JW-7-24-1,LINCSCP_26552,HT29,LCK Inhibitor,JW-7-24-1
+JW-7-24-1,LINCSCP_32402,MCF7,LCK Inhibitor,JW-7-24-1
+JW-7-24-1,LINCSCP_36515,MCF7,LCK Inhibitor,SCHEMBL6874948
+JW-7-24-1,LINCSCP_46671,PC3,LCK Inhibitor,JW-7-24-1
+JW-7-24-1,LINCSCP_58787,VCAP,LCK Inhibitor,JW-7-24-1
+KIN001-244,LINCSCP_2303,A375,Phosphoinositide dependent kinase inhibitor,PDK1 Inhibitor
+KIN001-244,LINCSCP_20405,HCC515,Phosphoinositide dependent kinase inhibitor,PDK1 Inhibitor
+KIN001-244,LINCSCP_26603,HT29,Phosphoinositide dependent kinase inhibitor,PDK1 Inhibitor
+KIN001-244,LINCSCP_32648,MCF7,Phosphoinositide dependent kinase inhibitor,PDK1 Inhibitor
+KIN001-244,LINCSCP_295367,VCAP,Phosphoinositide dependent kinase inhibitor,PDK1 Inhibitor
+KIN001-266,LINCSCP_36930,MCF7,MAP kinase inhibitor|TNF production inhibitor,COT Inhibitor-2
+KU-55933,LINCSCP_179354,A375,ATM kinase inhibitor,KU-55933
+KU-55933,LINCSCP_6596,A549,ATM kinase inhibitor,KU-55933
+KU-55933,LINCSCP_211754,HA1E,ATM kinase inhibitor,KU-55933
+KU-55933,LINCSCP_22527,HEPG2,ATM kinase inhibitor,KU-55933
+KU-55933,LINCSCP_26623,HT29,ATM kinase inhibitor,KU-55933
+KU-55933,LINCSCP_32672,MCF7,ATM kinase inhibitor,KU-55933
+KU-55933,LINCSCP_46955,PC3,ATM kinase inhibitor,KU-55933
+KU-55933,LINCSCP_295386,VCAP,ATM kinase inhibitor,KU-55933
+KU-60019,LINCSCP_251686,MCF7,ATM kinase inhibitor,C30H33N3O5S
+LDN-193189,LINCSCP_19276,HCC515,Serine/threonine kinase inhibitor,LDN 193189
+LDN-193189,LINCSCP_25458,HT29,Serine/threonine kinase inhibitor,LDN 193189
+LDN-193189,LINCSCP_30471,MCF7,Serine/threonine kinase inhibitor,LDN 193189
+LDN-193189,LINCSCP_44878,PC3,Serine/threonine kinase inhibitor,LDN 193189
+LDN-193189,LINCSCP_56816,VCAP,Serine/threonine kinase inhibitor,LDN 193189
+LFM-A13,LINCSCP_18360,HCC515,BTK inhibitor,"THR1 Inhibitor, 2"
+LFM-A13,LINCSCP_44280,PC3,BTK inhibitor,"THR1 Inhibitor, 2"
+Lapatinib,LINCSCP_2094,A375,EGFR inhibitor|ErbB2 inhibitor,lapatinib
+Lapatinib,LINCSCP_6129,A549,EGFR inhibitor|ErbB2 inhibitor,lapatinib
+Lapatinib,LINCSCP_20185,HCC515,EGFR inhibitor|ErbB2 inhibitor,lapatinib
+Lapatinib,LINCSCP_58518,VCAP,EGFR inhibitor|ErbB2 inhibitor,lapatinib
+Leflunomide,LINCSCP_34618,MCF7,Dihydroorotate dehydrogenase inhibitor|PDGFR tyrosine kinase receptor inhibitor,Leflunomide
+Leflunomide,LINCSCP_47757,PC3,Dihydroorotate dehydrogenase inhibitor|PDGFR tyrosine kinase receptor inhibitor,Leflunomide
+Leflunomide,LINCSCP_289526,VCAP,Dihydroorotate dehydrogenase inhibitor|PDGFR tyrosine kinase receptor inhibitor,Leflunomide
+Lenalidomide,LINCSCP_2120,A375,Anticancer agent,SCHEMBL18825
+Lenalidomide,LINCSCP_216855,HCC515,Anticancer agent,SCHEMBL18825
+Lenalidomide,LINCSCP_22303,HEPG2,Anticancer agent,SCHEMBL18825
+Lenalidomide,LINCSCP_46552,PC3,Anticancer agent,SCHEMBL18825
+Lestaurtinib,LINCSCP_2328,A375,FLT3 inhibitor|Growth factor receptor inhibitor|JAK inhibitor,Lestaurtinib
+Lestaurtinib,LINCSCP_6595,A549,FLT3 inhibitor|Growth factor receptor inhibitor|JAK inhibitor,Lestaurtinib
+Lestaurtinib,LINCSCP_16629,HA1E,FLT3 inhibitor|Growth factor receptor inhibitor|JAK inhibitor,Lestaurtinib
+Lestaurtinib,LINCSCP_20426,HCC515,FLT3 inhibitor|Growth factor receptor inhibitor|JAK inhibitor,Lestaurtinib
+Lestaurtinib,LINCSCP_22524,HEPG2,FLT3 inhibitor|Growth factor receptor inhibitor|JAK inhibitor,Lestaurtinib
+Lestaurtinib,LINCSCP_26620,HT29,FLT3 inhibitor|Growth factor receptor inhibitor|JAK inhibitor,Lestaurtinib
+Lestaurtinib,LINCSCP_32667,MCF7,FLT3 inhibitor|Growth factor receptor inhibitor|JAK inhibitor,Lestaurtinib
+Lestaurtinib,LINCSCP_37541,MCF7,FLT3 inhibitor|Growth factor receptor inhibitor|JAK inhibitor,Lestaurtinib
+Lestaurtinib,LINCSCP_46953,PC3,FLT3 inhibitor|Growth factor receptor inhibitor|JAK inhibitor,Lestaurtinib
+Lestaurtinib,LINCSCP_59045,VCAP,FLT3 inhibitor|Growth factor receptor inhibitor|JAK inhibitor,Lestaurtinib
+Linifanib,LINCSCP_2482,A375,PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Linifanib
+Linifanib,LINCSCP_6712,A549,PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Linifanib
+Linifanib,LINCSCP_16743,HA1E,PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Linifanib
+Linifanib,LINCSCP_20540,HCC515,PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Linifanib
+Linifanib,LINCSCP_22632,HEPG2,PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Linifanib
+Linifanib,LINCSCP_26746,HT29,PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Linifanib
+Linifanib,LINCSCP_240518,MCF7,PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Linifanib
+Linifanib,LINCSCP_47050,PC3,PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Linifanib
+Linifanib,LINCSCP_59136,VCAP,PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Linifanib
+Linsitinib,LINCSCP_649,A375,IGF-1 inhibitor,CHEMBL3186197
+Linsitinib,LINCSCP_4482,A549,IGF-1 inhibitor,CHEMBL3186197
+Linsitinib,LINCSCP_15252,HA1E,IGF-1 inhibitor,CHEMBL3186197
+Linsitinib,LINCSCP_19286,HCC515,IGF-1 inhibitor,CHEMBL3186197
+Linsitinib,LINCSCP_25471,HT29,IGF-1 inhibitor,CHEMBL3186197
+Linsitinib,LINCSCP_30485,MCF7,IGF-1 inhibitor,CHEMBL3186197
+Linsitinib,LINCSCP_36880,MCF7,IGF-1 inhibitor,Linsitinib
+Linsitinib,LINCSCP_44888,PC3,IGF-1 inhibitor,CHEMBL3186197
+Linsitinib,LINCSCP_56826,VCAP,IGF-1 inhibitor,CHEMBL3186197
+Luminespib,LINCSCP_716,A375,HSP inhibitor,NVP-AUY922
+Luminespib,LINCSCP_9484,A549,HSP inhibitor,NVP-AUY922
+Luminespib,LINCSCP_15323,HA1E,HSP inhibitor,NVP-AUY922
+Luminespib,LINCSCP_19340,HCC515,HSP inhibitor,NVP-AUY922
+Luminespib,LINCSCP_25534,HT29,HSP inhibitor,NVP-AUY922
+Luminespib,LINCSCP_30550,MCF7,HSP inhibitor,NVP-AUY922
+Luminespib,LINCSCP_44944,PC3,HSP inhibitor,NVP-AUY922
+Luminespib,LINCSCP_56875,VCAP,HSP inhibitor,NVP-AUY922
+MG-132,LINCSCP_2805,A375,Proteasome inhibitor,MG-132
+MG-132,LINCSCP_7492,A549,Proteasome inhibitor,MG-132
+MG-132,LINCSCP_14285,HA1E,Proteasome inhibitor,MG-132
+MG-132,LINCSCP_18428,HCC515,Proteasome inhibitor,MG-132
+MG-132,LINCSCP_22953,HEPG2,Proteasome inhibitor,MG-132
+MG-132,LINCSCP_27014,HT29,Proteasome inhibitor,MG-132
+MG-132,LINCSCP_33511,MCF7,Proteasome inhibitor,MG-132
+MG-132,LINCSCP_37350,MCF7,Proteasome inhibitor,MG-132
+MG-132,LINCSCP_44318,PC3,Proteasome inhibitor,MG-132
+MG-132,LINCSCP_56172,VCAP,Proteasome inhibitor,MG-132
+MK-1775,LINCSCP_740,A375,WEE1 kinase inhibitor,AZD-1775
+MK-1775,LINCSCP_4551,A549,WEE1 kinase inhibitor,AZD-1775
+MK-1775,LINCSCP_15347,HA1E,WEE1 kinase inhibitor,AZD-1775
+MK-1775,LINCSCP_19354,HCC515,WEE1 kinase inhibitor,AZD-1775
+MK-1775,LINCSCP_25553,HT29,WEE1 kinase inhibitor,AZD-1775
+MK-1775,LINCSCP_30575,MCF7,WEE1 kinase inhibitor,AZD-1775
+MK-1775,LINCSCP_44963,PC3,WEE1 kinase inhibitor,AZD-1775
+MK-1775,LINCSCP_56892,VCAP,WEE1 kinase inhibitor,AZD-1775
+MK-2206,LINCSCP_778,A375,AKT inhibitor,MK-2206
+MK-2206,LINCSCP_4581,A549,AKT inhibitor,MK-2206
+MK-2206,LINCSCP_15386,HA1E,AKT inhibitor,MK-2206
+MK-2206,LINCSCP_19380,HCC515,AKT inhibitor,MK-2206
+MK-2206,LINCSCP_25583,HT29,AKT inhibitor,MK-2206
+MK-2206,LINCSCP_30607,MCF7,AKT inhibitor,MK-2206
+MK-2206,LINCSCP_44994,PC3,AKT inhibitor,MK-2206
+MK-2206,LINCSCP_56920,VCAP,AKT inhibitor,MK-2206
+Masitinib,LINCSCP_20495,HCC515,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|Src inhibitor,Masitinib
+Masitinib,LINCSCP_22583,HEPG2,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|Src inhibitor,Masitinib
+Masitinib,LINCSCP_26699,HT29,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|Src inhibitor,Masitinib
+Masitinib,LINCSCP_32735,MCF7,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|Src inhibitor,Masitinib
+Masitinib,LINCSCP_47010,PC3,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|Src inhibitor,Masitinib
+Methotrexate,LINCSCP_17037,HA1E,Dihydrofolate reductase inhibitor,Amethopterin
+Methotrexate,LINCSCP_211232,HA1E,Dihydrofolate reductase inhibitor,Methotrexate
+Methotrexate,LINCSCP_243376,MCF7,Dihydrofolate reductase inhibitor,Amethopterin
+Methotrexate,LINCSCP_243784,MCF7,Dihydrofolate reductase inhibitor,Methotrexate
+Methotrexate,LINCSCP_47463,PC3,Dihydrofolate reductase inhibitor,Amethopterin
+Methotrexate,LINCSCP_58271,VCAP,Dihydrofolate reductase inhibitor,Methotrexate
+Midostaurin,LINCSCP_2780,A375,FLT3 inhibitor|KIT inhibitor|PKC inhibitor,Midostaurin
+Midostaurin,LINCSCP_7433,A549,FLT3 inhibitor|KIT inhibitor|PKC inhibitor,Midostaurin
+Midostaurin,LINCSCP_14218,HA1E,FLT3 inhibitor|KIT inhibitor|PKC inhibitor,Midostaurin
+Midostaurin,LINCSCP_18387,HCC515,FLT3 inhibitor|KIT inhibitor|PKC inhibitor,Midostaurin
+Midostaurin,LINCSCP_22904,HEPG2,FLT3 inhibitor|KIT inhibitor|PKC inhibitor,Midostaurin
+Midostaurin,LINCSCP_26985,HT29,FLT3 inhibitor|KIT inhibitor|PKC inhibitor,Midostaurin
+Midostaurin,LINCSCP_33477,MCF7,FLT3 inhibitor|KIT inhibitor|PKC inhibitor,Midostaurin
+Midostaurin,LINCSCP_44292,PC3,FLT3 inhibitor|KIT inhibitor|PKC inhibitor,Midostaurin
+Midostaurin,LINCSCP_56128,VCAP,FLT3 inhibitor|KIT inhibitor|PKC inhibitor,Midostaurin
+Mirin,LINCSCP_2383,A375,MRE11A exonuclease inhibitor,Mirin
+Mirin,LINCSCP_6635,A549,MRE11A exonuclease inhibitor,Mirin
+Mirin,LINCSCP_16668,HA1E,MRE11A exonuclease inhibitor,Mirin
+Mirin,LINCSCP_20470,HCC515,MRE11A exonuclease inhibitor,Mirin
+Mirin,LINCSCP_22565,HEPG2,MRE11A exonuclease inhibitor,Mirin
+Mirin,LINCSCP_26670,HT29,MRE11A exonuclease inhibitor,Mirin
+Mirin,LINCSCP_32709,MCF7,MRE11A exonuclease inhibitor,Mirin
+Mirin,LINCSCP_46985,PC3,MRE11A exonuclease inhibitor,Mirin
+Mirin,LINCSCP_59082,VCAP,MRE11A exonuclease inhibitor,Mirin
+Mitomycin-C,LINCSCP_2544,A375,DNA alkylating agent|DNA alkylating drug|DNA inhibitor|DNA synthesis inhibitor,SPECTRUM2_000920
+Mitomycin-C,LINCSCP_6941,A549,DNA alkylating agent|DNA alkylating drug|DNA inhibitor|DNA synthesis inhibitor,SPECTRUM2_000920
+Mitomycin-C,LINCSCP_14831,HA1E,DNA alkylating agent|DNA alkylating drug|DNA inhibitor|DNA synthesis inhibitor,SPECTRUM2_000920
+Mitomycin-C,LINCSCP_19023,HCC515,DNA alkylating agent|DNA alkylating drug|DNA inhibitor|DNA synthesis inhibitor,SPECTRUM2_000920
+Mitomycin-C,LINCSCP_21469,HEPG2,DNA alkylating agent|DNA alkylating drug|DNA inhibitor|DNA synthesis inhibitor,SPECTRUM2_000920
+Mitomycin-C,LINCSCP_26783,HT29,DNA alkylating agent|DNA alkylating drug|DNA inhibitor|DNA synthesis inhibitor,SPECTRUM2_000920
+Mitomycin-C,LINCSCP_32972,MCF7,DNA alkylating agent|DNA alkylating drug|DNA inhibitor|DNA synthesis inhibitor,SPECTRUM2_000920
+Mitomycin-C,LINCSCP_44613,PC3,DNA alkylating agent|DNA alkylating drug|DNA inhibitor|DNA synthesis inhibitor,SPECTRUM2_000920
+Mitomycin-C,LINCSCP_56493,VCAP,DNA alkylating agent|DNA alkylating drug|DNA inhibitor|DNA synthesis inhibitor,SPECTRUM2_000920
+Mitoxantrone,LINCSCP_292,A375,DNA topoisomerase II alpha inhibitor,Mitoxantrone
+Mitoxantrone,LINCSCP_9459,A549,DNA topoisomerase II alpha inhibitor,Mitoxantrone
+Mitoxantrone,LINCSCP_15036,HA1E,DNA topoisomerase II alpha inhibitor,Mitoxantrone
+Mitoxantrone,LINCSCP_23366,HEPG2,DNA topoisomerase II alpha inhibitor,Mitoxantrone
+Mitoxantrone,LINCSCP_25265,HT29,DNA topoisomerase II alpha inhibitor,Mitoxantrone
+Mitoxantrone,LINCSCP_243439,MCF7,DNA topoisomerase II alpha inhibitor,Mitoxantrone
+Mitoxantrone,LINCSCP_43917,PC3,DNA topoisomerase II alpha inhibitor,Mitoxantrone
+Mitoxantrone,LINCSCP_47499,PC3,DNA topoisomerase II alpha inhibitor,Mitoxantrone
+Mitoxantrone,LINCSCP_64582,VCAP,DNA topoisomerase II alpha inhibitor,Mitoxantrone
+Motesanib,LINCSCP_179406,A375,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Motesanib
+Motesanib,LINCSCP_6711,A549,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Motesanib
+Motesanib,LINCSCP_211690,HA1E,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Motesanib
+Motesanib,LINCSCP_220318,HEPG2,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Motesanib
+Motesanib,LINCSCP_26745,HT29,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Motesanib
+Motesanib,LINCSCP_32781,MCF7,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Motesanib
+Motesanib,LINCSCP_58785,VCAP,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Motesanib
+Mycophenolic acid,LINCSCP_23468,HEPG2,Inosine-5'-monophosphate dehydrogenase (IMPDH) inhibitor (Inosine-5'-monophosphate dehydrogenase,Mycophenolic acid
+NPK76-II-72-1,LINCSCP_2274,A375,,SCHEMBL618594
+NPK76-II-72-1,LINCSCP_6328,A549,,SCHEMBL618594
+NPK76-II-72-1,LINCSCP_16595,HA1E,,SCHEMBL618594
+NPK76-II-72-1,LINCSCP_26578,HT29,,SCHEMBL618594
+NPK76-II-72-1,LINCSCP_240240,MCF7,,SCHEMBL618594
+NPK76-II-72-1,LINCSCP_46696,PC3,,SCHEMBL618594
+NPK76-II-72-1,LINCSCP_58809,VCAP,,SCHEMBL618594
+NVP-TAE684,LINCSCP_2371,A375,ALK tyrosine kinase receptor inhibitor,TAE-684
+NVP-TAE684,LINCSCP_6624,A549,ALK tyrosine kinase receptor inhibitor,TAE-684
+NVP-TAE684,LINCSCP_16657,HA1E,ALK tyrosine kinase receptor inhibitor,TAE-684
+NVP-TAE684,LINCSCP_20460,HCC515,ALK tyrosine kinase receptor inhibitor,TAE-684
+NVP-TAE684,LINCSCP_22555,HEPG2,ALK tyrosine kinase receptor inhibitor,TAE-684
+NVP-TAE684,LINCSCP_26658,HT29,ALK tyrosine kinase receptor inhibitor,TAE-684
+NVP-TAE684,LINCSCP_32699,MCF7,ALK tyrosine kinase receptor inhibitor,TAE-684
+NVP-TAE684,LINCSCP_46975,PC3,ALK tyrosine kinase receptor inhibitor,TAE-684
+NVP-TAE684,LINCSCP_295418,VCAP,ALK tyrosine kinase receptor inhibitor,TAE-684
+Navitoclax,LINCSCP_824,A375,BCL inhibitor,Navitoclax
+Navitoclax,LINCSCP_15428,HA1E,BCL inhibitor,Navitoclax
+Navitoclax,LINCSCP_19412,HCC515,BCL inhibitor,Navitoclax
+Navitoclax,LINCSCP_224051,HT29,BCL inhibitor,Navitoclax
+Navitoclax,LINCSCP_30643,MCF7,BCL inhibitor,Navitoclax
+Navitoclax,LINCSCP_56947,VCAP,BCL inhibitor,Navitoclax
+Nilotinib,LINCSCP_4056,A375,Abl kinase inhibitor|Bcr-Abl kinase inhibitor,Nilotinib
+Nilotinib,LINCSCP_10150,A549,Abl kinase inhibitor|Bcr-Abl kinase inhibitor,Nilotinib
+Nilotinib,LINCSCP_17523,HA1E,Abl kinase inhibitor|Bcr-Abl kinase inhibitor,Nilotinib
+Nilotinib,LINCSCP_21034,HCC515,Abl kinase inhibitor|Bcr-Abl kinase inhibitor,Nilotinib
+Nilotinib,LINCSCP_24093,HEPG2,Abl kinase inhibitor|Bcr-Abl kinase inhibitor,Nilotinib
+Nilotinib,LINCSCP_28674,HT29,Abl kinase inhibitor|Bcr-Abl kinase inhibitor,Nilotinib
+Nilotinib,LINCSCP_38764,MCF7,Abl kinase inhibitor|Bcr-Abl kinase inhibitor,Nilotinib
+Nilotinib,LINCSCP_46834,PC3,Abl kinase inhibitor|Bcr-Abl kinase inhibitor,Nilotinib
+Nilotinib,LINCSCP_295300,VCAP,Abl kinase inhibitor|Bcr-Abl kinase inhibitor,Nilotinib
+Nilotinib,LINCSCP_311115,VCAP,Abl kinase inhibitor|Bcr-Abl kinase inhibitor,Nilotinib
+OSI-027,LINCSCP_2470,A375,MTOR inhibitor,OSI-027
+OSI-027,LINCSCP_6702,A549,MTOR inhibitor,OSI-027
+OSI-027,LINCSCP_16734,HA1E,MTOR inhibitor,OSI-027
+OSI-027,LINCSCP_20534,HCC515,MTOR inhibitor,OSI-027
+OSI-027,LINCSCP_22623,HEPG2,MTOR inhibitor,OSI-027
+OSI-027,LINCSCP_26736,HT29,MTOR inhibitor,OSI-027
+OSI-027,LINCSCP_36739,MCF7,MTOR inhibitor,OSI-027
+OSI-027,LINCSCP_47044,PC3,MTOR inhibitor,OSI-027
+OSI-027,LINCSCP_59132,VCAP,MTOR inhibitor,OSI-027
+OSI-930,LINCSCP_36898,MCF7,KIT inhibitor|VEGFR inhibitor,OSI-930
+Obatoclax Mesylate,LINCSCP_2133,A375,BCL inhibitor,Obatoclax
+Obatoclax Mesylate,LINCSCP_6243,A549,BCL inhibitor,Obatoclax
+Obatoclax Mesylate,LINCSCP_16444,HA1E,BCL inhibitor,Obatoclax
+Obatoclax Mesylate,LINCSCP_20228,HCC515,BCL inhibitor,Obatoclax
+Obatoclax Mesylate,LINCSCP_22322,HEPG2,BCL inhibitor,Obatoclax
+Obatoclax Mesylate,LINCSCP_26474,HT29,BCL inhibitor,Obatoclax
+Obatoclax Mesylate,LINCSCP_32308,MCF7,BCL inhibitor,Obatoclax
+Obatoclax Mesylate,LINCSCP_46565,PC3,BCL inhibitor,Obatoclax
+Obatoclax Mesylate,LINCSCP_58706,VCAP,BCL inhibitor,Obatoclax
+Olaparib,LINCSCP_251693,MCF7,PARP inhibitor,Olaparib
+Olaparib,LINCSCP_68456,VCAP,PARP inhibitor,Olaparib
+Omipalisib,LINCSCP_36916,MCF7,MTOR inhibitor|PI3K inhibitor,EX-8678
+PAC-1,LINCSCP_851,A375,Caspase activator,PAC-1
+PAC-1,LINCSCP_4628,A549,Caspase activator,PAC-1
+PAC-1,LINCSCP_15455,HA1E,Caspase activator,PAC-1
+PAC-1,LINCSCP_19434,HCC515,Caspase activator,PAC-1
+PAC-1,LINCSCP_25648,HT29,Caspase activator,PAC-1
+PAC-1,LINCSCP_30669,MCF7,Caspase activator,PAC-1
+PAC-1,LINCSCP_45057,PC3,Caspase activator,PAC-1
+PAC-1,LINCSCP_56969,VCAP,Caspase activator,PAC-1
+PCI-34051,LINCSCP_3908,A375,HDAC inhibitor,PCI-34051
+PCI-34051,LINCSCP_7928,A549,HDAC inhibitor,PCI-34051
+PCI-34051,LINCSCP_17125,HA1E,HDAC inhibitor,PCI-34051
+PCI-34051,LINCSCP_20874,HCC515,HDAC inhibitor,PCI-34051
+PCI-34051,LINCSCP_23925,HEPG2,HDAC inhibitor,PCI-34051
+PCI-34051,LINCSCP_35425,MCF7,HDAC inhibitor,PCI-34051
+PCI-34051,LINCSCP_35540,MCF7,HDAC inhibitor,PCI-34051
+PCI-34051,LINCSCP_49260,PC3,HDAC inhibitor,PCI-34051
+PCI-34051,LINCSCP_49544,PC3,HDAC inhibitor,PCI-34051
+PCI-34051,LINCSCP_59284,VCAP,HDAC inhibitor,PCI-34051
+PD0325901,LINCSCP_2171,A375,MAP kinase inhibitor|MEK inhibitor|Protein kinase inhibitor,PD-0325901
+PD0325901,LINCSCP_6262,A549,MAP kinase inhibitor|MEK inhibitor|Protein kinase inhibitor,PD-0325901
+PD0325901,LINCSCP_16656,HA1E,MAP kinase inhibitor|MEK inhibitor|Protein kinase inhibitor,PD-0325901
+PD0325901,LINCSCP_20459,HCC515,MAP kinase inhibitor|MEK inhibitor|Protein kinase inhibitor,PD-0325901
+PD0325901,LINCSCP_22554,HEPG2,MAP kinase inhibitor|MEK inhibitor|Protein kinase inhibitor,PD-0325901
+PD0325901,LINCSCP_26657,HT29,MAP kinase inhibitor|MEK inhibitor|Protein kinase inhibitor,PD-0325901
+PD0325901,LINCSCP_36933,MCF7,MAP kinase inhibitor|MEK inhibitor|Protein kinase inhibitor,PD-0325901
+PD0325901,LINCSCP_46605,PC3,MAP kinase inhibitor|MEK inhibitor|Protein kinase inhibitor,PD-0325901
+PD0325901,LINCSCP_295417,VCAP,MAP kinase inhibitor|MEK inhibitor|Protein kinase inhibitor,PD-0325901
+PD173074,LINCSCP_2473,A375,FGFR inhibitor|VEGFR inhibitor,PD-173074
+PD173074,LINCSCP_6705,A549,FGFR inhibitor|VEGFR inhibitor,PD-173074
+PD173074,LINCSCP_211840,HA1E,FGFR inhibitor|VEGFR inhibitor,PD-173074
+PD173074,LINCSCP_217130,HCC515,FGFR inhibitor|VEGFR inhibitor,PD-173074
+PD173074,LINCSCP_22450,HEPG2,FGFR inhibitor|VEGFR inhibitor,PD-173074
+PD173074,LINCSCP_226507,HT29,FGFR inhibitor|VEGFR inhibitor,PD-173074
+PD173074,LINCSCP_240221,MCF7,FGFR inhibitor|VEGFR inhibitor,PD-173074
+PD173074,LINCSCP_271084,PC3,FGFR inhibitor|VEGFR inhibitor,PD-173074
+PD173074,LINCSCP_295187,VCAP,FGFR inhibitor|VEGFR inhibitor,PD-173074
+PF-562271,LINCSCP_2481,A375,Focal adhesion kinase inhibitor,PF-562271
+PF-562271,LINCSCP_6710,A549,Focal adhesion kinase inhibitor,PF-562271
+PF-562271,LINCSCP_16742,HA1E,Focal adhesion kinase inhibitor,PF-562271
+PF-562271,LINCSCP_20539,HCC515,Focal adhesion kinase inhibitor,PF-562271
+PF-562271,LINCSCP_22631,HEPG2,Focal adhesion kinase inhibitor,PF-562271
+PF-562271,LINCSCP_26744,HT29,Focal adhesion kinase inhibitor,PF-562271
+PF-562271,LINCSCP_32780,MCF7,Focal adhesion kinase inhibitor,PF-562271
+PF-562271,LINCSCP_47049,PC3,Focal adhesion kinase inhibitor,PF-562271
+PHA-665752,LINCSCP_2654,A375,C-Met inhibitor,PHA-665752
+PHA-665752,LINCSCP_6989,A549,C-Met inhibitor,PHA-665752
+PHA-665752,LINCSCP_22702,HEPG2,C-Met inhibitor,PHA-665752
+PHA-665752,LINCSCP_26869,HT29,C-Met inhibitor,PHA-665752
+PHA-665752,LINCSCP_241001,MCF7,C-Met inhibitor,PHA-665752
+PHA-793887,LINCSCP_2399,A375,CDK inhibitor,PHA-793887
+PHA-793887,LINCSCP_6648,A549,CDK inhibitor,PHA-793887
+PHA-793887,LINCSCP_16682,HA1E,CDK inhibitor,PHA-793887
+PHA-793887,LINCSCP_20481,HCC515,CDK inhibitor,PHA-793887
+PHA-793887,LINCSCP_22572,HEPG2,CDK inhibitor,PHA-793887
+PHA-793887,LINCSCP_26685,HT29,CDK inhibitor,PHA-793887
+PHA-793887,LINCSCP_32724,MCF7,CDK inhibitor,PHA-793887
+PHA-793887,LINCSCP_46996,PC3,CDK inhibitor,PHA-793887
+PHA-793887,LINCSCP_59091,VCAP,CDK inhibitor,PHA-793887
+PI-103,LINCSCP_777,A375,MTOR inhibitor|PI3K inhibitor,PI-103
+PI-103,LINCSCP_4580,A549,MTOR inhibitor|PI3K inhibitor,PI-103
+PI-103,LINCSCP_15385,HA1E,MTOR inhibitor|PI3K inhibitor,PI-103
+PI-103,LINCSCP_19379,HCC515,MTOR inhibitor|PI3K inhibitor,PI-103
+PI-103,LINCSCP_251843,MCF7,MTOR inhibitor|PI3K inhibitor,PI-103
+PI-103,LINCSCP_44993,PC3,MTOR inhibitor|PI3K inhibitor,PI-103
+PI-103,LINCSCP_56919,VCAP,MTOR inhibitor|PI3K inhibitor,PI-103
+PLX-4720,LINCSCP_38,A375,RAF inhibitor,PLX-4720
+PLX-4720,LINCSCP_191211,A549,RAF inhibitor,PLX-4720
+PLX-4720,LINCSCP_211566,HA1E,RAF inhibitor,PLX-4720
+PLX-4720,LINCSCP_216869,HCC515,RAF inhibitor,PLX-4720
+PLX-4720,LINCSCP_22325,HEPG2,RAF inhibitor,PLX-4720
+PLX-4720,LINCSCP_26612,HT29,RAF inhibitor,PLX-4720
+PLX-4720,LINCSCP_32660,MCF7,RAF inhibitor,PLX-4720
+PLX-4720,LINCSCP_270942,PC3,RAF inhibitor,PLX-4720
+PLX-4720,LINCSCP_295021,VCAP,RAF inhibitor,PLX-4720
+Paclitaxel,LINCSCP_2525,A375,Tubulin inhibitor,BRD-A28746609
+Paclitaxel,LINCSCP_10179,A549,Tubulin inhibitor,ChEBI91594
+Paclitaxel,LINCSCP_191872,A549,Tubulin inhibitor,BRD-A28746609
+Paclitaxel,LINCSCP_21046,HCC515,Tubulin inhibitor,ChEBI91594
+Paclitaxel,LINCSCP_220366,HEPG2,Tubulin inhibitor,BRD-A28746609
+Paclitaxel,LINCSCP_25148,HT29,Tubulin inhibitor,BRD-A28746609
+Paclitaxel,LINCSCP_30163,MCF7,Tubulin inhibitor,BRD-A28746609
+Paclitaxel,LINCSCP_34319,MCF7,Tubulin inhibitor,BRD-K86858124-001-01-2
+Paclitaxel,LINCSCP_38840,MCF7,Tubulin inhibitor,ChEBI91594
+Paclitaxel,LINCSCP_47570,PC3,Tubulin inhibitor,BRD-K86858124-001-01-2
+Paclitaxel,LINCSCP_56480,VCAP,Tubulin inhibitor,BRD-A28746609
+Palbociclib,LINCSCP_2376,A375,CDK inhibitor,Palbociclib
+Palbociclib,LINCSCP_6628,A549,CDK inhibitor,Palbociclib
+Palbociclib,LINCSCP_20464,HCC515,CDK inhibitor,Palbociclib
+Palbociclib,LINCSCP_22559,HEPG2,CDK inhibitor,Palbociclib
+Palbociclib,LINCSCP_26663,HT29,CDK inhibitor,Palbociclib
+Palbociclib,LINCSCP_32701,MCF7,CDK inhibitor,Palbociclib
+Palbociclib,LINCSCP_46978,PC3,CDK inhibitor,Palbociclib
+Palbociclib,LINCSCP_59075,VCAP,CDK inhibitor,Palbociclib
+Panobinostat,LINCSCP_3820,A375,HDAC inhibitor,Panobinostat
+Panobinostat,LINCSCP_9950,A549,HDAC inhibitor,Panobinostat
+Panobinostat,LINCSCP_17306,HA1E,HDAC inhibitor,Panobinostat
+Panobinostat,LINCSCP_20818,HCC515,HDAC inhibitor,Panobinostat
+Panobinostat,LINCSCP_23845,HEPG2,HDAC inhibitor,Panobinostat
+Panobinostat,LINCSCP_28494,HT29,HDAC inhibitor,Panobinostat
+Panobinostat,LINCSCP_31857,MCF7,HDAC inhibitor,Panobinostat
+Panobinostat,LINCSCP_35438,MCF7,HDAC inhibitor,Panobinostat
+Panobinostat,LINCSCP_49213,PC3,HDAC inhibitor,Panobinostat
+Panobinostat,LINCSCP_49481,PC3,HDAC inhibitor,Panobinostat
+Panobinostat,LINCSCP_58322,VCAP,HDAC inhibitor,Panobinostat
+Parthenolide,LINCSCP_861,A375,NFkB pathway inhibitor,Parthenolide
+Parthenolide,LINCSCP_7626,A549,NFkB pathway inhibitor,Parthenolide
+Parthenolide,LINCSCP_15466,HA1E,NFkB pathway inhibitor,Parthenolide
+Parthenolide,LINCSCP_17196,HA1E,NFkB pathway inhibitor,"(1Ar,7as,10as,10br)-1a,5-Dimethyl-8-methylidene-2,3,6,7,7a,8,10a,10b-octahydrooxireno[9,10]cyclodeca[1,2-b]furan-9(1ah)-one"
+Parthenolide,LINCSCP_213974,HCC515,NFkB pathway inhibitor,Parthenolide
+Parthenolide,LINCSCP_25656,HT29,NFkB pathway inhibitor,Parthenolide
+Parthenolide,LINCSCP_242165,MCF7,NFkB pathway inhibitor,Parthenolide
+Parthenolide,LINCSCP_252799,MCF7,NFkB pathway inhibitor,Parthenolide
+Parthenolide,LINCSCP_34463,MCF7,NFkB pathway inhibitor,Parthenolide
+Parthenolide,LINCSCP_44275,PC3,NFkB pathway inhibitor,Parthenolide
+Parthenolide,LINCSCP_47610,PC3,NFkB pathway inhibitor,Parthenolide
+Parthenolide,LINCSCP_56092,VCAP,NFkB pathway inhibitor,Parthenolide
+Pazopanib,LINCSCP_2424,A375,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Pazopanib
+Pazopanib,LINCSCP_6667,A549,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Pazopanib
+Pazopanib,LINCSCP_16699,HA1E,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Pazopanib
+Pazopanib,LINCSCP_20500,HCC515,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Pazopanib
+Pazopanib,LINCSCP_22589,HEPG2,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Pazopanib
+Pazopanib,LINCSCP_26704,HT29,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Pazopanib
+Pazopanib,LINCSCP_32739,MCF7,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Pazopanib
+Pazopanib,LINCSCP_47013,PC3,KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|VEGFR inhibitor,Pazopanib
+Pelitinib,LINCSCP_36773,MCF7,EGFR inhibitor,Pelitinib
+Pevonedistat,LINCSCP_776,A375,Nedd activating enzyme inhibitor,Pevonedistat
+Pevonedistat,LINCSCP_4579,A549,Nedd activating enzyme inhibitor,Pevonedistat
+Pevonedistat,LINCSCP_15384,HA1E,Nedd activating enzyme inhibitor,Pevonedistat
+Pevonedistat,LINCSCP_19378,HCC515,Nedd activating enzyme inhibitor,Pevonedistat
+Pevonedistat,LINCSCP_25582,HT29,Nedd activating enzyme inhibitor,Pevonedistat
+Pevonedistat,LINCSCP_30606,MCF7,Nedd activating enzyme inhibitor,Pevonedistat
+Pevonedistat,LINCSCP_37254,MCF7,Nedd activating enzyme inhibitor,Pevonedistat
+Pevonedistat,LINCSCP_44992,PC3,Nedd activating enzyme inhibitor,Pevonedistat
+Pevonedistat,LINCSCP_56918,VCAP,Nedd activating enzyme inhibitor,Pevonedistat
+Phenformin,LINCSCP_7150,A549,AMPK activator,Phenformin
+Phenformin,LINCSCP_18685,HCC515,AMPK activator,Phenformin
+Phenformin,LINCSCP_22734,HEPG2,AMPK activator,Phenformin
+Phenformin,LINCSCP_309980,VCAP,AMPK activator,Phenformin
+Pictilisib,LINCSCP_2379,A375,PI3K inhibitor,Pictilisib
+Pictilisib,LINCSCP_6631,A549,PI3K inhibitor,Pictilisib
+Pictilisib,LINCSCP_16663,HA1E,PI3K inhibitor,Pictilisib
+Pictilisib,LINCSCP_20467,HCC515,PI3K inhibitor,Pictilisib
+Pictilisib,LINCSCP_22561,HEPG2,PI3K inhibitor,Pictilisib
+Pictilisib,LINCSCP_26666,HT29,PI3K inhibitor,Pictilisib
+Pictilisib,LINCSCP_32704,MCF7,PI3K inhibitor,Pictilisib
+Pictilisib,LINCSCP_46981,PC3,PI3K inhibitor,Pictilisib
+Pictilisib,LINCSCP_59077,VCAP,PI3K inhibitor,Pictilisib
+Pilaralisib,LINCSCP_2472,A375,PI3K inhibitor,Pilaralisib
+Pilaralisib,LINCSCP_6704,A549,PI3K inhibitor,Pilaralisib
+Pilaralisib,LINCSCP_16735,HA1E,PI3K inhibitor,Pilaralisib
+Pilaralisib,LINCSCP_20535,HCC515,PI3K inhibitor,Pilaralisib
+Pilaralisib,LINCSCP_22624,HEPG2,PI3K inhibitor,Pilaralisib
+Pilaralisib,LINCSCP_26738,HT29,PI3K inhibitor,Pilaralisib
+Pilaralisib,LINCSCP_32773,MCF7,PI3K inhibitor,Pilaralisib
+Pilaralisib,LINCSCP_47045,PC3,PI3K inhibitor,Pilaralisib
+Pilaralisib,LINCSCP_295488,VCAP,PI3K inhibitor,Pilaralisib
+Piperlongumine,LINCSCP_685,A375,Glutathione transferase inhibitor,Piplartine
+Piperlongumine,LINCSCP_192718,A549,Glutathione transferase inhibitor,Piplartine
+Piperlongumine,LINCSCP_15288,HA1E,Glutathione transferase inhibitor,Piplartine
+Piperlongumine,LINCSCP_214717,HCC515,Glutathione transferase inhibitor,Piplartine
+Piperlongumine,LINCSCP_25502,HT29,Glutathione transferase inhibitor,Piplartine
+Piperlongumine,LINCSCP_236557,MCF7,Glutathione transferase inhibitor,Piplartine
+Piperlongumine,LINCSCP_38009,MCF7,Glutathione transferase inhibitor,Piplartine
+Piperlongumine,LINCSCP_267289,PC3,Glutathione transferase inhibitor,Piplartine
+Piperlongumine,LINCSCP_291600,VCAP,Glutathione transferase inhibitor,Piplartine
+Ponatinib,LINCSCP_36922,MCF7,Bcr-Abl kinase inhibitor|FLT3 inhibitor|PDGFR tyrosine kinase receptor inhibitor,Ponatinib
+Pyrimethamine,LINCSCP_180888,A375,Dihydrofolate reductase inhibitor,Pyrimethamine
+Pyrimethamine,LINCSCP_8071,A549,Dihydrofolate reductase inhibitor,Pyrimethamine
+Pyrimethamine,LINCSCP_14600,HA1E,Dihydrofolate reductase inhibitor,Pyrimethamine
+Pyrimethamine,LINCSCP_20757,HCC515,Dihydrofolate reductase inhibitor,Pyrimethamine
+Pyrimethamine,LINCSCP_26865,HT29,Dihydrofolate reductase inhibitor,Pyrimethamine
+Pyrimethamine,LINCSCP_47346,PC3,Dihydrofolate reductase inhibitor,Pyrimethamine
+Pyrimethamine,LINCSCP_290500,VCAP,Dihydrofolate reductase inhibitor,Pyrimethamine
+QL-X-138,LINCSCP_2494,A375,MTOR inhibitor,QL-X-138
+QL-X-138,LINCSCP_6724,A549,MTOR inhibitor,QL-X-138
+QL-X-138,LINCSCP_16756,HA1E,MTOR inhibitor,QL-X-138
+QL-X-138,LINCSCP_20551,HCC515,MTOR inhibitor,QL-X-138
+QL-X-138,LINCSCP_22645,HEPG2,MTOR inhibitor,QL-X-138
+QL-X-138,LINCSCP_26756,HT29,MTOR inhibitor,QL-X-138
+QL-X-138,LINCSCP_32793,MCF7,MTOR inhibitor,QL-X-138
+QL-X-138,LINCSCP_36537,MCF7,MTOR inhibitor,SCHEMBL17052537
+QL-X-138,LINCSCP_47060,PC3,MTOR inhibitor,QL-X-138
+QL-X-138,LINCSCP_59145,VCAP,MTOR inhibitor,QL-X-138
+QL-XI-92,LINCSCP_2499,A375,DDR1 inhibitor,QL-XI-92
+QL-XI-92,LINCSCP_6730,A549,DDR1 inhibitor,QL-XI-92
+QL-XI-92,LINCSCP_16761,HA1E,DDR1 inhibitor,QL-XI-92
+QL-XI-92,LINCSCP_22650,HEPG2,DDR1 inhibitor,QL-XI-92
+QL-XI-92,LINCSCP_26761,HT29,DDR1 inhibitor,QL-XI-92
+QL-XI-92,LINCSCP_47065,PC3,DDR1 inhibitor,QL-XI-92
+QL-XI-92,LINCSCP_59148,VCAP,DDR1 inhibitor,QL-XI-92
+QL-XII-47,LINCSCP_2501,A375,BTK inhibitor|Cytoplasmic tyrosine protein kinase BMX inhibitor,QL-XII-47
+QL-XII-47,LINCSCP_6732,A549,BTK inhibitor|Cytoplasmic tyrosine protein kinase BMX inhibitor,QL-XII-47
+QL-XII-47,LINCSCP_16763,HA1E,BTK inhibitor|Cytoplasmic tyrosine protein kinase BMX inhibitor,QL-XII-47
+QL-XII-47,LINCSCP_20557,HCC515,BTK inhibitor|Cytoplasmic tyrosine protein kinase BMX inhibitor,QL-XII-47
+QL-XII-47,LINCSCP_22652,HEPG2,BTK inhibitor|Cytoplasmic tyrosine protein kinase BMX inhibitor,QL-XII-47
+QL-XII-47,LINCSCP_26763,HT29,BTK inhibitor|Cytoplasmic tyrosine protein kinase BMX inhibitor,QL-XII-47
+QL-XII-47,LINCSCP_32799,MCF7,BTK inhibitor|Cytoplasmic tyrosine protein kinase BMX inhibitor,QL-XII-47
+QL-XII-47,LINCSCP_36562,MCF7,BTK inhibitor|Cytoplasmic tyrosine protein kinase BMX inhibitor,QL47
+QL-XII-47,LINCSCP_47067,PC3,BTK inhibitor|Cytoplasmic tyrosine protein kinase BMX inhibitor,QL-XII-47
+QL-XII-47,LINCSCP_59150,VCAP,BTK inhibitor|Cytoplasmic tyrosine protein kinase BMX inhibitor,QL-XII-47
+Quizartinib,LINCSCP_2468,A375,FLT3 inhibitor,Quizartinib
+Quizartinib,LINCSCP_6701,A549,FLT3 inhibitor,Quizartinib
+Quizartinib,LINCSCP_16733,HA1E,FLT3 inhibitor,Quizartinib
+Quizartinib,LINCSCP_20532,HCC515,FLT3 inhibitor,Quizartinib
+Quizartinib,LINCSCP_26734,HT29,FLT3 inhibitor,Quizartinib
+Quizartinib,LINCSCP_32770,MCF7,FLT3 inhibitor,Quizartinib
+Quizartinib,LINCSCP_47043,PC3,FLT3 inhibitor,Quizartinib
+RO-3306,LINCSCP_3117,A375,CDK inhibitor,RO-3306
+RO-3306,LINCSCP_8065,A549,CDK inhibitor,RO-3306
+RO-3306,LINCSCP_17005,HA1E,CDK inhibitor,RO-3306
+RO-3306,LINCSCP_20751,HCC515,CDK inhibitor,RO-3306
+RO-3306,LINCSCP_27334,HT29,CDK inhibitor,RO-3306
+RO-3306,LINCSCP_34229,MCF7,CDK inhibitor,RO-3306
+RO-3306,LINCSCP_47428,PC3,CDK inhibitor,RO-3306
+RO-3306,LINCSCP_59606,VCAP,CDK inhibitor,RO-3306
+Rapamycin,LINCSCP_2085,A375,FK506-binding protein 1A inhibitor,Sirolimus
+Rapamycin,LINCSCP_10270,A549,FK506-binding protein 1A inhibitor,Sirolimus
+Rapamycin,LINCSCP_6116,A549,FK506-binding protein 1A inhibitor,Sirolimus
+Rapamycin,LINCSCP_16384,HA1E,FK506-binding protein 1A inhibitor,Sirolimus
+Rapamycin,LINCSCP_20170,HCC515,FK506-binding protein 1A inhibitor,Sirolimus
+Rapamycin,LINCSCP_21113,HCC515,FK506-binding protein 1A inhibitor,Sirolimus
+Rapamycin,LINCSCP_26446,HT29,FK506-binding protein 1A inhibitor,Sirolimus
+Rapamycin,LINCSCP_32084,MCF7,FK506-binding protein 1A inhibitor,Sirolimus
+Rapamycin,LINCSCP_38884,MCF7,FK506-binding protein 1A inhibitor,Sirolimus
+Rapamycin,LINCSCP_43912,PC3,MTOR inhibitor,Sirolimus
+Rapamycin,LINCSCP_46390,PC3,FK506-binding protein 1A inhibitor,Sirolimus
+Rapamycin,LINCSCP_49807,PC3,FK506-binding protein 1A inhibitor,Sirolimus
+Rapamycin,LINCSCP_68729,VCAP,MTOR inhibitor,Sirolimus
+Rucaparib,LINCSCP_838,A375,PARP inhibitor,Rucaparib
+Rucaparib,LINCSCP_4618,A549,PARP inhibitor,Rucaparib
+Rucaparib,LINCSCP_15441,HA1E,PARP inhibitor,Rucaparib
+Rucaparib,LINCSCP_25636,HT29,PARP inhibitor,Rucaparib
+Rucaparib,LINCSCP_30655,MCF7,PARP inhibitor,Rucaparib
+Rucaparib,LINCSCP_45044,PC3,PARP inhibitor,Rucaparib
+Rucaparib,LINCSCP_56957,VCAP,PARP inhibitor,Rucaparib
+Ruxolitinib,LINCSCP_179375,A375,JAK inhibitor,Ruxolitinib
+Ruxolitinib,LINCSCP_6634,A549,JAK inhibitor,Ruxolitinib
+Ruxolitinib,LINCSCP_16666,HA1E,JAK inhibitor,Ruxolitinib
+Ruxolitinib,LINCSCP_20468,HCC515,JAK inhibitor,Ruxolitinib
+Ruxolitinib,LINCSCP_22563,HEPG2,JAK inhibitor,Ruxolitinib
+Ruxolitinib,LINCSCP_26669,HT29,JAK inhibitor,Ruxolitinib
+Ruxolitinib,LINCSCP_32708,MCF7,JAK inhibitor,Ruxolitinib
+Ruxolitinib,LINCSCP_46984,PC3,JAK inhibitor,Ruxolitinib
+Ruxolitinib,LINCSCP_59081,VCAP,JAK inhibitor,Ruxolitinib
+SB216763,LINCSCP_752,A375,Glycogen synthase kinase inhibitor,SB-216763
+SB216763,LINCSCP_4561,A549,Glycogen synthase kinase inhibitor,SB-216763
+SB216763,LINCSCP_15360,HA1E,Glycogen synthase kinase inhibitor,SB-216763
+SB216763,LINCSCP_19361,HCC515,Glycogen synthase kinase inhibitor,SB-216763
+SB216763,LINCSCP_25562,HT29,Glycogen synthase kinase inhibitor,SB-216763
+SB216763,LINCSCP_236567,MCF7,Glycogen synthase kinase inhibitor,SB-216763
+SB216763,LINCSCP_44973,PC3,Glycogen synthase kinase inhibitor,SB-216763
+SB216763,LINCSCP_56899,VCAP,Glycogen synthase kinase inhibitor,SB-216763
+SB590885,LINCSCP_2287,A375,RAF inhibitor,SB590885
+SB590885,LINCSCP_16605,HA1E,RAF inhibitor,SB590885
+SB590885,LINCSCP_20393,HCC515,RAF inhibitor,SB590885
+SB590885,LINCSCP_22494,HEPG2,RAF inhibitor,SB590885
+SB590885,LINCSCP_26590,HT29,RAF inhibitor,SB590885
+SB590885,LINCSCP_240402,MCF7,RAF inhibitor,SB590885
+SB590885,LINCSCP_46925,PC3,RAF inhibitor,SB590885
+SB590885,LINCSCP_59015,VCAP,RAF inhibitor,SB590885
+SN-38,LINCSCP_9142,A549,Topoisomerase inhibitor,"4,11-Diethyl-4,9-dihydroxy-1H-pyrano[3',4':6,7]indolizino[1,2-b]quinoline-3,14(4H,12H)-dione"
+SN-38,LINCSCP_35635,MCF7,Topoisomerase inhibitor,"4,11-Diethyl-4,9-dihydroxy-1H-pyrano[3',4':6,7]indolizino[1,2-b]quinoline-3,14(4H,12H)-dione"
+Salubrinal,LINCSCP_249,A375,Eukaryotic translation initiation factor inhibitor,AC1MD3YP
+Salubrinal,LINCSCP_15012,HA1E,Eukaryotic translation initiation factor inhibitor,AC1MD3YP
+Salubrinal,LINCSCP_25245,HT29,Eukaryotic translation initiation factor inhibitor,AC1MD3YP
+Salubrinal,LINCSCP_30251,MCF7,Eukaryotic translation initiation factor inhibitor,AC1MD3YP
+Salubrinal,LINCSCP_44696,PC3,Eukaryotic translation initiation factor inhibitor,AC1MD3YP
+Saracatinib,LINCSCP_2324,A375,Src inhibitor,Saracatinib
+Saracatinib,LINCSCP_6590,A549,Src inhibitor,Saracatinib
+Saracatinib,LINCSCP_16456,HA1E,Src inhibitor,Saracatinib
+Saracatinib,LINCSCP_20421,HCC515,Src inhibitor,Saracatinib
+Saracatinib,LINCSCP_22521,HEPG2,Src inhibitor,Saracatinib
+Saracatinib,LINCSCP_26482,HT29,Src inhibitor,Saracatinib
+Saracatinib,LINCSCP_32315,MCF7,Src inhibitor,Saracatinib
+Saracatinib,LINCSCP_46576,PC3,Src inhibitor,Saracatinib
+Saracatinib,LINCSCP_295027,VCAP,Src inhibitor,Saracatinib
+Seliciclib,LINCSCP_7417,A549,CDK inhibitor,Seliciclib
+Seliciclib,LINCSCP_14211,HA1E,CDK inhibitor,Seliciclib
+Seliciclib,LINCSCP_18382,HCC515,CDK inhibitor,Seliciclib
+Seliciclib,LINCSCP_22886,HEPG2,CDK inhibitor,Seliciclib
+Seliciclib,LINCSCP_26973,HT29,CDK inhibitor,Seliciclib
+Seliciclib,LINCSCP_33467,MCF7,CDK inhibitor,Seliciclib
+Seliciclib,LINCSCP_44288,PC3,CDK inhibitor,Seliciclib
+Seliciclib,LINCSCP_56123,VCAP,CDK inhibitor,Seliciclib
+Selumetinib,LINCSCP_10240,A549,MEK inhibitor,Selumetinib
+Selumetinib,LINCSCP_21090,HCC515,MEK inhibitor,Selumetinib
+Selumetinib,LINCSCP_36513,MCF7,MEK inhibitor,Selumetinib
+Selumetinib,LINCSCP_38872,MCF7,MEK inhibitor,Selumetinib
+Selumetinib,LINCSCP_280990,PC3,MEK inhibitor,Selumetinib
+Selumetinib,LINCSCP_64933,VCAP,MEK inhibitor,Selumetinib
+Sepantronium bromide,LINCSCP_2144,A375,Survivin inhibitor,Sepantronium
+Sepantronium bromide,LINCSCP_6254,A549,Survivin inhibitor,Sepantronium
+Sepantronium bromide,LINCSCP_16462,HA1E,Survivin inhibitor,Sepantronium
+Sepantronium bromide,LINCSCP_20243,HCC515,Survivin inhibitor,Sepantronium
+Sepantronium bromide,LINCSCP_22338,HEPG2,Survivin inhibitor,Sepantronium
+Sepantronium bromide,LINCSCP_26486,HT29,Survivin inhibitor,Sepantronium
+Sepantronium bromide,LINCSCP_32322,MCF7,Survivin inhibitor,Sepantronium
+Sepantronium bromide,LINCSCP_46582,PC3,Survivin inhibitor,Sepantronium
+Sepantronium bromide,LINCSCP_58717,VCAP,Survivin inhibitor,Sepantronium
+Serdemetan,LINCSCP_756,A375,MDM inhibitor,ZINC77024257
+Serdemetan,LINCSCP_4563,A549,MDM inhibitor,ZINC77024257
+Serdemetan,LINCSCP_15363,HA1E,MDM inhibitor,ZINC77024257
+Serdemetan,LINCSCP_19363,HCC515,MDM inhibitor,ZINC77024257
+Serdemetan,LINCSCP_25564,HT29,MDM inhibitor,ZINC77024257
+Serdemetan,LINCSCP_30587,MCF7,MDM inhibitor,ZINC77024257
+Serdemetan,LINCSCP_44976,PC3,MDM inhibitor,ZINC77024257
+Serdemetan,LINCSCP_56901,VCAP,MDM inhibitor,ZINC77024257
+Sorafenib,LINCSCP_2170,A375,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RAF inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sorafenib
+Sorafenib,LINCSCP_6261,A549,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RAF inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sorafenib
+Sorafenib,LINCSCP_16490,HA1E,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RAF inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sorafenib
+Sorafenib,LINCSCP_20277,HCC515,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RAF inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sorafenib
+Sorafenib,LINCSCP_22370,HEPG2,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RAF inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sorafenib
+Sorafenib,LINCSCP_26501,HT29,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RAF inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sorafenib
+Sorafenib,LINCSCP_32337,MCF7,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RAF inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sorafenib
+Sorafenib,LINCSCP_46603,PC3,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RAF inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sorafenib
+Sorafenib,LINCSCP_58735,VCAP,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RAF inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sorafenib
+Sphingosine Kinase 1 Inhibitor II,LINCSCP_10145,A549,Sphingosine kinase inhibitor,PF 543
+Sphingosine Kinase 1 Inhibitor II,LINCSCP_17518,HA1E,Sphingosine kinase inhibitor,PF 543
+Sphingosine Kinase 1 Inhibitor II,LINCSCP_21030,HCC515,Sphingosine kinase inhibitor,PF 543
+Sphingosine Kinase 1 Inhibitor II,LINCSCP_24088,HEPG2,Sphingosine kinase inhibitor,PF 543
+Sphingosine Kinase 1 Inhibitor II,LINCSCP_28671,HT29,Sphingosine kinase inhibitor,PF 543
+Staurosporine,LINCSCP_2949,A375,PKC inhibitor,Staurosporine
+Staurosporine,LINCSCP_7959,A549,PKC inhibitor,Staurosporine
+Staurosporine,LINCSCP_16790,HA1E,PKC inhibitor,Staurosporine
+Staurosporine,LINCSCP_20584,HCC515,PKC inhibitor,Staurosporine
+Staurosporine,LINCSCP_23149,HEPG2,PKC inhibitor,Staurosporine
+Staurosporine,LINCSCP_27186,HT29,PKC inhibitor,Staurosporine
+Staurosporine,LINCSCP_33985,MCF7,PKC inhibitor,Staurosporine
+Staurosporine,LINCSCP_47194,PC3,PKC inhibitor,Staurosporine
+Sunitinib,LINCSCP_2486,A375,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sunitinib
+Sunitinib,LINCSCP_6716,A549,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sunitinib
+Sunitinib,LINCSCP_16747,HA1E,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sunitinib
+Sunitinib,LINCSCP_20543,HCC515,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sunitinib
+Sunitinib,LINCSCP_22636,HEPG2,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sunitinib
+Sunitinib,LINCSCP_26750,HT29,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sunitinib
+Sunitinib,LINCSCP_32785,MCF7,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sunitinib
+Sunitinib,LINCSCP_47053,PC3,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sunitinib
+Sunitinib,LINCSCP_59139,VCAP,FLT3 inhibitor|KIT inhibitor|PDGFR tyrosine kinase receptor inhibitor|RET tyrosine kinase inhibitor|VEGFR inhibitor,sunitinib
+TAK-715,LINCSCP_2378,A375,P38 MAPK inhibitor,TAK-715
+TAK-715,LINCSCP_6629,A549,P38 MAPK inhibitor,TAK-715
+TAK-715,LINCSCP_16661,HA1E,P38 MAPK inhibitor,TAK-715
+TAK-715,LINCSCP_226456,HT29,P38 MAPK inhibitor,TAK-715
+TAK-715,LINCSCP_32703,MCF7,P38 MAPK inhibitor,TAK-715
+TGX221,LINCSCP_2264,A375,PI3K inhibitor,TGX 221
+TGX221,LINCSCP_16586,HA1E,PI3K inhibitor,TGX 221
+TGX221,LINCSCP_46903,PC3,PI3K inhibitor,TGX 221
+TGX221,LINCSCP_58997,VCAP,PI3K inhibitor,TGX 221
+THZ-2-98-01,LINCSCP_2500,A375,IRAK1 inhibitor,THZ-2-98-01
+THZ-2-98-01,LINCSCP_6731,A549,IRAK1 inhibitor,THZ-2-98-01
+THZ-2-98-01,LINCSCP_16762,HA1E,IRAK1 inhibitor,THZ-2-98-01
+THZ-2-98-01,LINCSCP_20556,HCC515,IRAK1 inhibitor,THZ-2-98-01
+THZ-2-98-01,LINCSCP_22651,HEPG2,IRAK1 inhibitor,THZ-2-98-01
+THZ-2-98-01,LINCSCP_26762,HT29,IRAK1 inhibitor,THZ-2-98-01
+THZ-2-98-01,LINCSCP_32798,MCF7,IRAK1 inhibitor,THZ-2-98-01
+THZ-2-98-01,LINCSCP_36493,MCF7,IRAK1 inhibitor,THZ-2-98-01
+THZ-2-98-01,LINCSCP_47066,PC3,IRAK1 inhibitor,THZ-2-98-01
+THZ-2-98-01,LINCSCP_58986,VCAP,IRAK1 inhibitor,THZ-2-98-01
+TPCA-1,LINCSCP_729,A375,IKK inhibitor,TPCA-1
+TPCA-1,LINCSCP_4545,A549,IKK inhibitor,TPCA-1
+TPCA-1,LINCSCP_15336,HA1E,IKK inhibitor,TPCA-1
+TPCA-1,LINCSCP_19349,HCC515,IKK inhibitor,TPCA-1
+TPCA-1,LINCSCP_25544,HT29,IKK inhibitor,TPCA-1
+TPCA-1,LINCSCP_30565,MCF7,IKK inhibitor,TPCA-1
+TPCA-1,LINCSCP_44954,PC3,IKK inhibitor,TPCA-1
+TPCA-1,LINCSCP_56883,VCAP,IKK inhibitor,TPCA-1
+TW 37,LINCSCP_691,A375,BCL inhibitor,TW 37
+TW 37,LINCSCP_4518,A549,BCL inhibitor,TW 37
+TW 37,LINCSCP_15295,HA1E,BCL inhibitor,TW 37
+TW 37,LINCSCP_19319,HCC515,BCL inhibitor,TW 37
+TW 37,LINCSCP_25510,HT29,BCL inhibitor,TW 37
+TW 37,LINCSCP_30525,MCF7,BCL inhibitor,TW 37
+TW 37,LINCSCP_44924,PC3,BCL inhibitor,TW 37
+TW 37,LINCSCP_56860,VCAP,BCL inhibitor,TW 37
+Tamoxifen,LINCSCP_276,A375,Estrogen receptor antagonist|Selective estrogen receptor modulator (SERM),4-Hydroxytamoxifen
+Tamoxifen,LINCSCP_4187,A549,Estrogen receptor antagonist|Selective estrogen receptor modulator (SERM),4-Hydroxytamoxifen
+Tamoxifen,LINCSCP_15025,HA1E,Estrogen receptor antagonist|Selective estrogen receptor modulator (SERM),4-Hydroxytamoxifen
+Tamoxifen,LINCSCP_25254,HT29,Estrogen receptor antagonist|Selective estrogen receptor modulator (SERM),4-Hydroxytamoxifen
+Tamoxifen,LINCSCP_30258,MCF7,Estrogen receptor antagonist|Selective estrogen receptor modulator (SERM),4-Hydroxytamoxifen
+Tamoxifen,LINCSCP_34165,MCF7,Estrogen receptor alpha modulator,Tamoxifen
+Tamoxifen,LINCSCP_43890,PC3,Estrogen receptor alpha modulator,Tamoxifen
+Tamoxifen,LINCSCP_44704,PC3,Estrogen receptor antagonist|Selective estrogen receptor modulator (SERM),4-Hydroxytamoxifen
+Tanespimycin,LINCSCP_9163,A549,HSP inhibitor,SCHEMBL16226502
+Tanespimycin,LINCSCP_35869,MCF7,HSP inhibitor,SCHEMBL16226502
+Tanespimycin,LINCSCP_43907,PC3,HSP inhibitor,SCHEMBL16226502
+Tanespimycin,LINCSCP_64522,VCAP,HSP inhibitor,SCHEMBL16226502
+Telomerase Inhibitor IX,LINCSCP_676,A375,Telomerase inhibitor,MST-312
+Telomerase Inhibitor IX,LINCSCP_4504,A549,Telomerase inhibitor,MST-312
+Telomerase Inhibitor IX,LINCSCP_15279,HA1E,Telomerase inhibitor,MST-312
+Telomerase Inhibitor IX,LINCSCP_19308,HCC515,Telomerase inhibitor,MST-312
+Telomerase Inhibitor IX,LINCSCP_25495,HT29,Telomerase inhibitor,MST-312
+Telomerase Inhibitor IX,LINCSCP_30512,MCF7,Telomerase inhibitor,MST-312
+Telomerase Inhibitor IX,LINCSCP_44912,PC3,Telomerase inhibitor,MST-312
+Telomerase Inhibitor IX,LINCSCP_56848,VCAP,Telomerase inhibitor,MST-312
+Temozolomide,LINCSCP_698,A375,DNA alkylating drug,Temozolomide
+Temozolomide,LINCSCP_202756,A549,DNA alkylating drug,Temozolomide
+Temozolomide,LINCSCP_4524,A549,DNA alkylating drug,Temozolomide
+Temozolomide,LINCSCP_15302,HA1E,DNA alkylating drug,Temozolomide
+Temozolomide,LINCSCP_21073,HCC515,DNA alkylating drug,Temozolomide
+Temozolomide,LINCSCP_25517,HT29,DNA alkylating drug,Temozolomide
+Temozolomide,LINCSCP_30532,MCF7,DNA alkylating drug,Temozolomide
+Temozolomide,LINCSCP_38855,MCF7,DNA alkylating drug,Temozolomide
+Temozolomide,LINCSCP_49785,PC3,DNA alkylating drug,Temozolomide
+Temsirolimus,LINCSCP_591,A375,MTOR inhibitor,SCHEMBL6851809
+Temsirolimus,LINCSCP_4448,A549,MTOR inhibitor,SCHEMBL6851809
+Temsirolimus,LINCSCP_15195,HA1E,MTOR inhibitor,SCHEMBL6851809
+Temsirolimus,LINCSCP_19234,HCC515,MTOR inhibitor,SCHEMBL6851809
+Temsirolimus,LINCSCP_25417,HT29,MTOR inhibitor,SCHEMBL6851809
+Temsirolimus,LINCSCP_30433,MCF7,MTOR inhibitor,SCHEMBL6851809
+Temsirolimus,LINCSCP_44841,PC3,MTOR inhibitor,SCHEMBL6851809
+Temsirolimus,LINCSCP_56787,VCAP,MTOR inhibitor,SCHEMBL6851809
+Teniposide,LINCSCP_70,A375,Topoisomerase inhibitor,Teniposide
+Teniposide,LINCSCP_9521,A549,Topoisomerase inhibitor,Teniposide
+Teniposide,LINCSCP_14821,HA1E,Topoisomerase inhibitor,Teniposide
+Teniposide,LINCSCP_19016,HCC515,Topoisomerase inhibitor,Teniposide
+Teniposide,LINCSCP_22716,HEPG2,Topoisomerase inhibitor,Teniposide
+Teniposide,LINCSCP_26882,HT29,Topoisomerase inhibitor,Teniposide
+Teniposide,LINCSCP_36045,MCF7,Topoisomerase inhibitor,Teniposide
+Teniposide,LINCSCP_44609,PC3,Topoisomerase inhibitor,Teniposide
+Teniposide,LINCSCP_56485,VCAP,Topoisomerase inhibitor,Teniposide
+Thapsigargin,LINCSCP_593,A375,ATPase inhibitor,AC1NS4S0
+Thapsigargin,LINCSCP_4450,A549,ATPase inhibitor,AC1NS4S0
+Thapsigargin,LINCSCP_15197,HA1E,ATPase inhibitor,AC1NS4S0
+Thapsigargin,LINCSCP_19236,HCC515,ATPase inhibitor,AC1NS4S0
+Thapsigargin,LINCSCP_25419,HT29,ATPase inhibitor,AC1NS4S0
+Thapsigargin,LINCSCP_64948,VCAP,ATPase inhibitor,Thapsigargin
+Tipifarnib,LINCSCP_765,A375,Farnesyltransferase inhibitor,Tipifarnib
+Tipifarnib,LINCSCP_766,A375,Farnesyltransferase inhibitor,(S)-Tipifarnib
+Tipifarnib,LINCSCP_4571,A549,Farnesyltransferase inhibitor,Tipifarnib
+Tipifarnib,LINCSCP_15372,HA1E,Farnesyltransferase inhibitor,Tipifarnib
+Tipifarnib,LINCSCP_15373,HA1E,Farnesyltransferase inhibitor,(S)-Tipifarnib
+Tipifarnib,LINCSCP_19369,HCC515,Farnesyltransferase inhibitor,Tipifarnib
+Tipifarnib,LINCSCP_19370,HCC515,Farnesyltransferase inhibitor,(S)-Tipifarnib
+Tipifarnib,LINCSCP_25571,HT29,Farnesyltransferase inhibitor,Tipifarnib
+Tipifarnib,LINCSCP_25572,HT29,Farnesyltransferase inhibitor,(S)-Tipifarnib
+Tipifarnib,LINCSCP_30595,MCF7,Farnesyltransferase inhibitor,Tipifarnib
+Tipifarnib,LINCSCP_30596,MCF7,Farnesyltransferase inhibitor,(S)-Tipifarnib
+Tipifarnib,LINCSCP_44983,PC3,Farnesyltransferase inhibitor,(S)-Tipifarnib
+Tipifarnib,LINCSCP_56907,VCAP,Farnesyltransferase inhibitor,Tipifarnib
+Tipifarnib,LINCSCP_56908,VCAP,Farnesyltransferase inhibitor,(S)-Tipifarnib
+Tivozanib,LINCSCP_734,A375,VEGFR inhibitor,Tivozanib
+Tivozanib,LINCSCP_4548,A549,VEGFR inhibitor,Tivozanib
+Tivozanib,LINCSCP_15341,HA1E,VEGFR inhibitor,Tivozanib
+Tivozanib,LINCSCP_25548,HT29,VEGFR inhibitor,Tivozanib
+Tivozanib,LINCSCP_30569,MCF7,VEGFR inhibitor,Tivozanib
+Tivozanib,LINCSCP_44959,PC3,VEGFR inhibitor,Tivozanib
+Tivozanib,LINCSCP_56887,VCAP,VEGFR inhibitor,Tivozanib
+Topotecan,LINCSCP_1969,A375,Topoisomerase inhibitor,C23H24CLN3O5
+Topotecan,LINCSCP_6003,A549,Topoisomerase inhibitor,C23H24CLN3O5
+Topotecan,LINCSCP_16231,HA1E,Topoisomerase inhibitor,C23H24CLN3O5
+Topotecan,LINCSCP_20054,HCC515,Topoisomerase inhibitor,C23H24CLN3O5
+Topotecan,LINCSCP_26368,HT29,Topoisomerase inhibitor,C23H24CLN3O5
+Topotecan,LINCSCP_32013,MCF7,Topoisomerase inhibitor,C23H24CLN3O5
+Topotecan,LINCSCP_46302,PC3,Topoisomerase inhibitor,C23H24CLN3O5
+Tozasertib,LINCSCP_3867,A375,Aurora kinase inhibitor|Bcr-Abl kinase inhibitor|FLT3 inhibitor|JAK inhibitor,Tozasertib
+Tozasertib,LINCSCP_4081,A375,Aurora kinase inhibitor|Bcr-Abl kinase inhibitor|FLT3 inhibitor|JAK inhibitor,Tozasertib
+Tozasertib,LINCSCP_201155,A549,Aurora kinase inhibitor|Bcr-Abl kinase inhibitor|FLT3 inhibitor|JAK inhibitor,Tozasertib
+Tozasertib,LINCSCP_17338,HA1E,Aurora kinase inhibitor|Bcr-Abl kinase inhibitor|FLT3 inhibitor|JAK inhibitor,Tozasertib
+Tozasertib,LINCSCP_20841,HCC515,Aurora kinase inhibitor|Bcr-Abl kinase inhibitor|FLT3 inhibitor|JAK inhibitor,Tozasertib
+Tozasertib,LINCSCP_23881,HEPG2,Aurora kinase inhibitor|Bcr-Abl kinase inhibitor|FLT3 inhibitor|JAK inhibitor,Tozasertib
+Tozasertib,LINCSCP_28510,HT29,Aurora kinase inhibitor|Bcr-Abl kinase inhibitor|FLT3 inhibitor|JAK inhibitor,Tozasertib
+Tozasertib,LINCSCP_31629,MCF7,Aurora kinase inhibitor|Bcr-Abl kinase inhibitor|FLT3 inhibitor|JAK inhibitor,Tozasertib
+Tozasertib,LINCSCP_38807,MCF7,Aurora kinase inhibitor|Bcr-Abl kinase inhibitor|FLT3 inhibitor|JAK inhibitor,Tozasertib
+Tozasertib,LINCSCP_49509,PC3,Aurora kinase inhibitor|Bcr-Abl kinase inhibitor|FLT3 inhibitor|JAK inhibitor,Tozasertib
+Tozasertib,LINCSCP_49757,PC3,Aurora kinase inhibitor|Bcr-Abl kinase inhibitor|FLT3 inhibitor|JAK inhibitor,Tozasertib
+Tozasertib,LINCSCP_57972,VCAP,Aurora kinase inhibitor|Bcr-Abl kinase inhibitor|FLT3 inhibitor|JAK inhibitor,Tozasertib
+Trametinib,LINCSCP_36776,MCF7,MEK inhibitor,Trametinib
+Tretinoin,LINCSCP_179674,A375,Retinoid receptor agonist|Retinoid receptor ligand,Vitinoin
+Tretinoin,LINCSCP_7147,A549,Retinoid receptor agonist|Retinoid receptor ligand,Vitinoin
+Tretinoin,LINCSCP_26894,HT29,Retinoid receptor agonist|Retinoid receptor ligand,Vitinoin
+Tretinoin,LINCSCP_243680,MCF7,Retinoid receptor agonist|Retinoid receptor ligand,Vitinoin
+Tretinoin,LINCSCP_253636,MCF7,Retinoid receptor agonist|Retinoid receptor ligand,Vitinoin
+Tretinoin,LINCSCP_37164,MCF7,Retinoid receptor agonist|Retinoid receptor ligand,9-Cis retinol
+Tretinoin,LINCSCP_264381,PC3,Retinoic acid receptor agonist,Tretinoin
+Tretinoin,LINCSCP_64539,VCAP,Retinoic acid receptor agonist,Tretinoin
+Tubastatin A,LINCSCP_3809,A375,HDAC inhibitor,Tubastatin A
+Tubastatin A,LINCSCP_7762,A549,HDAC inhibitor,Tubastatin A
+Tubastatin A,LINCSCP_17296,HA1E,HDAC inhibitor,Tubastatin A
+Tubastatin A,LINCSCP_20808,HCC515,HDAC inhibitor,Tubastatin A
+Tubastatin A,LINCSCP_23832,HEPG2,HDAC inhibitor,Tubastatin A
+Tubastatin A,LINCSCP_28487,HT29,HDAC inhibitor,Tubastatin A
+Tubastatin A,LINCSCP_35389,MCF7,HDAC inhibitor,Tubastatin A
+Tubastatin A,LINCSCP_38459,MCF7,HDAC inhibitor,Tubastatin A
+Tubastatin A,LINCSCP_49208,PC3,HDAC inhibitor,Tubastatin A
+Tubastatin A,LINCSCP_49468,PC3,HDAC inhibitor,Tubastatin A
+Tubastatin A,LINCSCP_59163,VCAP,HDAC inhibitor,Tubastatin A
+VX-702,LINCSCP_6577,A549,P38 MAPK inhibitor,VX-702
+VX-702,LINCSCP_20403,HCC515,P38 MAPK inhibitor,VX-702
+VX-702,LINCSCP_26601,HT29,P38 MAPK inhibitor,VX-702
+VX-702,LINCSCP_46937,PC3,P38 MAPK inhibitor,VX-702
+VX-702,LINCSCP_59026,VCAP,P38 MAPK inhibitor,VX-702
+Veliparib,LINCSCP_201813,A549,PARP inhibitor,Veliparib
+Veliparib,LINCSCP_15437,HA1E,PARP inhibitor,Veliparib
+Veliparib,LINCSCP_25632,HT29,PARP inhibitor,Veliparib
+Veliparib,LINCSCP_45041,PC3,PARP inhibitor,Veliparib
+Vinblastine,LINCSCP_2554,A375,Microtubule inhibitor|Tubulin inhibitor,Vinblastine
+Vinblastine,LINCSCP_6946,A549,Microtubule inhibitor|Tubulin inhibitor,Vinblastine
+Vinblastine,LINCSCP_14527,HA1E,Microtubule inhibitor|Tubulin inhibitor,Vinblastine
+Vinblastine,LINCSCP_17079,HA1E,Microtubule inhibitor|Tubulin inhibitor,Vincaleukoblastine
+Vinblastine,LINCSCP_18662,HCC515,Microtubule inhibitor|Tubulin inhibitor,Vinblastine
+Vinblastine,LINCSCP_22669,HEPG2,Microtubule inhibitor|Tubulin inhibitor,Vinblastine
+Vinblastine,LINCSCP_23333,HEPG2,Microtubule inhibitor|Tubulin inhibitor,Vinblastine
+Vinblastine,LINCSCP_26789,HT29,Microtubule inhibitor|Tubulin inhibitor,Vinblastine
+Vinblastine,LINCSCP_240810,MCF7,Microtubule inhibitor|Tubulin inhibitor,Vinblastine
+Vinblastine,LINCSCP_38130,MCF7,Microtubule inhibitor|Tubulin inhibitor,Vinblastine
+Vinorelbine,LINCSCP_2485,A375,Tubulin inhibitor,vinorelbine
+Vinorelbine,LINCSCP_6715,A549,Tubulin inhibitor,vinorelbine
+Vinorelbine,LINCSCP_16746,HA1E,Tubulin inhibitor,vinorelbine
+Vinorelbine,LINCSCP_22635,HEPG2,Tubulin inhibitor,vinorelbine
+Vinorelbine,LINCSCP_26749,HT29,Tubulin inhibitor,vinorelbine
+Vinorelbine,LINCSCP_32784,MCF7,Tubulin inhibitor,vinorelbine
+Vinorelbine,LINCSCP_59138,VCAP,Tubulin inhibitor,vinorelbine
+Vorinostat,LINCSCP_66348,A375,Histone deacetylase 1 inhibitor|Histone deacetylase 3 inhibitor|Histone deacetylase 6 inhibitor|Histone deacetylase 2 inhibitor,Vorinostat
+Vorinostat,LINCSCP_66709,A549,Histone deacetylase 1 inhibitor|Histone deacetylase 3 inhibitor|Histone deacetylase 6 inhibitor|Histone deacetylase 2 inhibitor,Vorinostat
+Vorinostat,LINCSCP_9242,A549,Histone deacetylase 1 inhibitor|Histone deacetylase 3 inhibitor|Histone deacetylase 6 inhibitor|Histone deacetylase 2 inhibitor,Vorinostat
+Vorinostat,LINCSCP_66766,HA1E,Histone deacetylase 1 inhibitor|Histone deacetylase 3 inhibitor|Histone deacetylase 6 inhibitor|Histone deacetylase 2 inhibitor,Vorinostat
+Vorinostat,LINCSCP_66856,HA1E,Histone deacetylase 1 inhibitor|Histone deacetylase 3 inhibitor|Histone deacetylase 6 inhibitor|Histone deacetylase 2 inhibitor,Vorinostat
+Vorinostat,LINCSCP_21109,HCC515,Histone deacetylase 1 inhibitor|Histone deacetylase 3 inhibitor|Histone deacetylase 6 inhibitor|Histone deacetylase 2 inhibitor,Vorinostat
+Vorinostat,LINCSCP_66902,HCC515,Histone deacetylase 1 inhibitor|Histone deacetylase 3 inhibitor|Histone deacetylase 6 inhibitor|Histone deacetylase 2 inhibitor,Vorinostat
+Vorinostat,LINCSCP_23910,HEPG2,Histone deacetylase 1 inhibitor|Histone deacetylase 3 inhibitor|Histone deacetylase 6 inhibitor|Histone deacetylase 2 inhibitor,Vorinostat
+Vorinostat,LINCSCP_67026,HEPG2,Histone deacetylase 1 inhibitor|Histone deacetylase 3 inhibitor|Histone deacetylase 6 inhibitor|Histone deacetylase 2 inhibitor,Vorinostat
+Vorinostat,LINCSCP_25619,HT29,Histone deacetylase 1 inhibitor|Histone deacetylase 3 inhibitor|Histone deacetylase 6 inhibitor|Histone deacetylase 2 inhibitor,Vorinostat
+Vorinostat,LINCSCP_254005,MCF7,Histone deacetylase 1 inhibitor|Histone deacetylase 3 inhibitor|Histone deacetylase 6 inhibitor|Histone deacetylase 2 inhibitor,Vorinostat
+Vorinostat,LINCSCP_67542,MCF7,Histone deacetylase 1 inhibitor|Histone deacetylase 3 inhibitor|Histone deacetylase 6 inhibitor|Histone deacetylase 2 inhibitor,Vorinostat
+Vorinostat,LINCSCP_277409,PC3,Histone deacetylase 1 inhibitor|Histone deacetylase 3 inhibitor|Histone deacetylase 6 inhibitor|Histone deacetylase 2 inhibitor,Vorinostat
+Vorinostat,LINCSCP_67837,PC3,Histone deacetylase 1 inhibitor|Histone deacetylase 3 inhibitor|Histone deacetylase 6 inhibitor|Histone deacetylase 2 inhibitor,Vorinostat
+Vorinostat,LINCSCP_68278,VCAP,Histone deacetylase 1 inhibitor|Histone deacetylase 3 inhibitor|Histone deacetylase 6 inhibitor|Histone deacetylase 2 inhibitor,Vorinostat
+Voxtalisib,LINCSCP_36979,MCF7,PI3K inhibitor,SAR245409
+WH-4-023,LINCSCP_36659,MCF7,Src inhibitor,WH-4-023
+WHI-P97,LINCSCP_2412,A375,EGFR inhibitor|JAK inhibitor|Leukotriene inhibitor|Mediator release inhibitor,WHI-P97
+WHI-P97,LINCSCP_6657,A549,EGFR inhibitor|JAK inhibitor|Leukotriene inhibitor|Mediator release inhibitor,WHI-P97
+WHI-P97,LINCSCP_20490,HCC515,EGFR inhibitor|JAK inhibitor|Leukotriene inhibitor|Mediator release inhibitor,WHI-P97
+WHI-P97,LINCSCP_26694,HT29,EGFR inhibitor|JAK inhibitor|Leukotriene inhibitor|Mediator release inhibitor,WHI-P97
+WHI-P97,LINCSCP_240481,MCF7,EGFR inhibitor|JAK inhibitor|Leukotriene inhibitor|Mediator release inhibitor,WHI-P97
+WYE-125132,LINCSCP_2265,A375,MTOR inhibitor,WYE 125132
+WYE-125132,LINCSCP_6549,A549,MTOR inhibitor,WYE 125132
+WYE-125132,LINCSCP_16587,HA1E,MTOR inhibitor,WYE 125132
+WYE-125132,LINCSCP_20369,HCC515,MTOR inhibitor,WYE 125132
+WYE-125132,LINCSCP_22473,HEPG2,MTOR inhibitor,WYE 125132
+WYE-125132,LINCSCP_26569,HT29,MTOR inhibitor,WYE 125132
+WYE-125132,LINCSCP_36573,MCF7,MTOR inhibitor,WYE 125132
+WYE-125132,LINCSCP_46904,PC3,MTOR inhibitor,WYE 125132
+WYE-125132,LINCSCP_58998,VCAP,MTOR inhibitor,WYE 125132
+WZ3105,LINCSCP_36730,MCF7,CLK2 inihibitor,WZ3105
+XAV939,LINCSCP_659,A375,Tankyrase inhibitor,XAV 939
+XAV939,LINCSCP_201417,A549,Tankyrase inhibitor,XAV 939
+XAV939,LINCSCP_15262,HA1E,Tankyrase inhibitor,XAV 939
+XAV939,LINCSCP_19296,HCC515,Tankyrase inhibitor,XAV 939
+XAV939,LINCSCP_25479,HT29,Tankyrase inhibitor,XAV 939
+XAV939,LINCSCP_250763,MCF7,Tankyrase inhibitor,XAV 939
+XAV939,LINCSCP_44900,PC3,Tankyrase inhibitor,XAV 939
+XAV939,LINCSCP_56834,VCAP,Tankyrase inhibitor,XAV 939
+XMD15-27,LINCSCP_36809,MCF7,,XMD15-27
+XMD8-92,LINCSCP_2374,A375,MAP kinase inhibitor,XMD 8-92
+XMD8-92,LINCSCP_6626,A549,MAP kinase inhibitor,XMD 8-92
+XMD8-92,LINCSCP_16660,HA1E,MAP kinase inhibitor,XMD 8-92
+XMD8-92,LINCSCP_20463,HCC515,MAP kinase inhibitor,XMD 8-92
+XMD8-92,LINCSCP_22558,HEPG2,MAP kinase inhibitor,XMD 8-92
+XMD8-92,LINCSCP_26661,HT29,MAP kinase inhibitor,XMD 8-92
+XMD8-92,LINCSCP_32700,MCF7,MAP kinase inhibitor,XMD 8-92
+XMD8-92,LINCSCP_46977,PC3,MAP kinase inhibitor,XMD 8-92
+XMD8-92,LINCSCP_59073,VCAP,MAP kinase inhibitor,XMD 8-92
+Y-39983,LINCSCP_36947,MCF7,Rho associated kinase inhibitor,Y-39983
+YK-4-279,LINCSCP_592,A375,Apoptosis stimulant|Binding of RNA helicase A to the transcription factor EWS-FLI1 inhibitor,YK 4-279
+YK-4-279,LINCSCP_4449,A549,Apoptosis stimulant|Binding of RNA helicase A to the transcription factor EWS-FLI1 inhibitor,YK 4-279
+YK-4-279,LINCSCP_15196,HA1E,Apoptosis stimulant|Binding of RNA helicase A to the transcription factor EWS-FLI1 inhibitor,YK 4-279
+YK-4-279,LINCSCP_19235,HCC515,Apoptosis stimulant|Binding of RNA helicase A to the transcription factor EWS-FLI1 inhibitor,YK 4-279
+YK-4-279,LINCSCP_25418,HT29,Apoptosis stimulant|Binding of RNA helicase A to the transcription factor EWS-FLI1 inhibitor,YK 4-279
+YK-4-279,LINCSCP_30434,MCF7,Apoptosis stimulant|Binding of RNA helicase A to the transcription factor EWS-FLI1 inhibitor,YK 4-279
+YK-4-279,LINCSCP_44842,PC3,Apoptosis stimulant|Binding of RNA helicase A to the transcription factor EWS-FLI1 inhibitor,YK 4-279
+YK-4-279,LINCSCP_291559,VCAP,Apoptosis stimulant|Binding of RNA helicase A to the transcription factor EWS-FLI1 inhibitor,YK 4-279
+YM201636,LINCSCP_36927,MCF7,PI3K inhibitor,YM 201636
+ZG-10,LINCSCP_2497,A375,JNK inhibitor,ZG-10
+ZG-10,LINCSCP_6727,A549,JNK inhibitor,ZG-10
+ZG-10,LINCSCP_16759,HA1E,JNK inhibitor,ZG-10
+ZG-10,LINCSCP_20554,HCC515,JNK inhibitor,ZG-10
+ZG-10,LINCSCP_22648,HEPG2,JNK inhibitor,ZG-10
+ZG-10,LINCSCP_26758,HT29,JNK inhibitor,ZG-10
+ZG-10,LINCSCP_32796,MCF7,JNK inhibitor,ZG-10
+ZG-10,LINCSCP_36951,MCF7,JNK inhibitor,JNK-IN-2
+ZG-10,LINCSCP_47062,PC3,JNK inhibitor,ZG-10
+ZG-10,LINCSCP_59146,VCAP,JNK inhibitor,ZG-10
+ZM447439,LINCSCP_3891,A375,Aurora kinase inhibitor,331771-20-1
+ZM447439,LINCSCP_191069,A549,Aurora kinase inhibitor,331771-20-1
+ZM447439,LINCSCP_17354,HA1E,Aurora kinase inhibitor,331771-20-1
+ZM447439,LINCSCP_20857,HCC515,Aurora kinase inhibitor,331771-20-1
+ZM447439,LINCSCP_23905,HEPG2,Aurora kinase inhibitor,331771-20-1
+ZM447439,LINCSCP_28518,HT29,Aurora kinase inhibitor,331771-20-1
+ZM447439,LINCSCP_38539,MCF7,Aurora kinase inhibitor,331771-20-1
+ZM447439,LINCSCP_49527,PC3,Aurora kinase inhibitor,331771-20-1
+ZSTK474,LINCSCP_179252,A375,PI3K inhibitor,ZSTK 474
+ZSTK474,LINCSCP_6271,A549,PI3K inhibitor,ZSTK 474
+ZSTK474,LINCSCP_16515,HA1E,PI3K inhibitor,ZSTK 474
+ZSTK474,LINCSCP_216933,HCC515,PI3K inhibitor,ZSTK 474
+ZSTK474,LINCSCP_22391,HEPG2,PI3K inhibitor,ZSTK 474
+ZSTK474,LINCSCP_226302,HT29,PI3K inhibitor,ZSTK 474
+ZSTK474,LINCSCP_36682,MCF7,PI3K inhibitor,ZSTK 474
+ZSTK474,LINCSCP_271020,PC3,PI3K inhibitor,ZSTK 474
+ZSTK474,LINCSCP_58750,VCAP,PI3K inhibitor,ZSTK 474
+Zibotentan,LINCSCP_20253,HCC515,Endothelin receptor antagonist,Zibotentan
+Zibotentan,LINCSCP_22347,HEPG2,Endothelin receptor antagonist,Zibotentan

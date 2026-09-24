@@ -1,0 +1,199 @@
+drug,n_sigs,pathway,target,CA12,SLC39A6,ERBB2
+A-443654,8,"PI3K/MTOR signaling","AKT1, AKT2, AKT3",0.0275,0.2578,-0.0319
+ABT737,8,"Apoptosis regulation","BCL2, BCL-XL,  BCL-W, BCL-B, BFL1",-0.0188,0.0917,0.0445
+AKT inhibitor VIII,9,"PI3K/MTOR signaling","AKT1, AKT2, AKT3",0.0108,0.2792,0.0259
+AS601245,9,"JNK and p38 signaling","JNK1, JNK2, JNK2",0.0128,0.2390,-0.0101
+AS605240,8,"PI3K/MTOR signaling","PI3Kgamma",-0.0134,0.0808,0.0594
+AT-7519,9,"Cell cycle","CDK1, CDK2, CDK4, CDK6, CDK9",0.0331,0.1941,-0.0799
+AT7867,1,"PI3K/MTOR signaling","AKT",0.0050,0.4820,0.1844
+AZ628,9,"ERK MAPK signaling","BRAF",0.0456,0.1819,0.0469
+AZD6482,7,"PI3K/MTOR signaling","PI3Kbeta",0.0520,0.0954,0.0816
+AZD7762,9,"Cell cycle","CHEK1, CHEK2",0.1346,0.1945,0.0814
+AZD8055,8,"PI3K/MTOR signaling","MTORC1, MTORC2",-0.0449,0.2126,0.1204
+Afatinib,10,"EGFR signaling","EGFR, ERBB2",0.0653,0.2132,0.0409
+Alisertib,8,"Mitosis","AURKA",-0.0083,0.0923,0.0701
+Amuvatinib,1,"RTK signaling","KIT, PDGFRA, FLT3",-0.0728,-0.1770,0.1097
+Axitinib,5,"RTK signaling","PDGFR, KIT, VEGFR",0.0022,-0.2851,-0.0557
+BAY-61-3606,5,"Other, kinases","SYK",0.0046,-0.1467,-0.0300
+BI-2536,9,"Cell cycle","PLK1, PLK2, PLK3",0.0888,0.1761,0.1511
+BMS-345541,9,"Other","IKK-1, IKK-2",0.0096,0.1250,-0.0905
+BMS-509744,10,"Other, kinases","ITK",0.0386,0.1085,0.0923
+BMS-536924,8,"IGF1R signaling","IGF1R, IR",-0.0396,0.3385,0.0894
+BMS-754807,8,"IGF1R signaling","IGF1R, IR",-0.0302,0.2771,0.1218
+BX-912,10,"Metabolism","PDK1 (PDPK1)",-0.0004,0.1572,0.1253
+BX795,8,"Other, kinases","TBK1, PDK1 (PDPK1), IKK, AURKB, AURKC",-0.0478,0.1324,0.0927
+Belinostat,10,"Chromatin histone acetylation","HDAC1",-0.0356,0.2211,0.0601
+Bicalutamide,5,"Hormone-related","AR",0.0600,0.4384,0.1688
+Bortezomib,5,"Protein stability and degradation","Proteasome",0.0338,0.1796,0.1279
+Bosutinib,9,"Other, kinases","SRC, ABL, TEC",0.0422,0.1753,0.0353
+Buparlisib,1,"PI3K/MTOR signaling","PI3Kalpha, PI3Kdelta, PI3Kbeta, PI3Kgamma",0.0238,0.2053,0.1624
+CAY10603,8,"Chromatin histone acetylation","HDAC1, HDAC6",-0.0751,0.1883,0.0924
+CCT-018159,6,"Protein stability and degradation","HSP90",0.0092,0.1778,0.0630
+CGP-60474,8,"Cell cycle","CDK1,CDK2,CDK5,CDK7,CDK9, PKC",0.0188,0.2671,-0.0480
+CHIR-99021,1,"WNT signaling","GSK3A, GSK3B",0.0480,0.2609,0.1697
+CI-1040,8,"ERK MAPK signaling","MEK1, MEK2",0.0272,0.2115,0.0367
+CP466722,8,"Genome integrity","ATM",0.0797,0.3425,0.1085
+CP724714,8,"EGFR signaling","ERBB2",-0.0009,-0.0601,0.0136
+Camptothecin,14,"DNA replication","TOP1",0.0449,0.3605,0.0007
+Cediranib,9,"RTK signaling","VEGFR, FLT1, FLT2, FLT3, FLT4, KIT, PDGFRB",0.0669,0.0385,0.0429
+Cisplatin,3,"DNA replication","DNA crosslinker",0.0378,0.3657,0.0737
+Crizotinib,9,"RTK signaling","MET, ALK, ROS1",0.0255,0.0743,0.1143
+Cyclopamine,7,"Other","SMO",0.0398,0.2535,-0.0428
+Cyclophosphamide,6,"DNA replication","Alkylating agent",0.0460,0.1634,0.1090
+Cytarabine,6,"Other","Antimetabolite",0.0008,0.0616,-0.0196
+Dabrafenib,1,"ERK MAPK signaling","BRAF",-0.0484,0.3425,-0.0112
+Dacarbazine,1,"Other","CP11A",0.0473,0.1254,-0.0612
+Dacinostat,9,"Chromatin histone acetylation","HDAC1",-0.0379,0.1076,0.0048
+Dactinomycin,10,"Other","RNA polymerase",0.0131,0.2628,-0.0626
+Dactolisib,2,"PI3K/MTOR signaling","PI3K (class 1), MTORC1, MTORC2",-0.0342,0.3013,0.1449
+Dasatinib,8,"Other, kinases","ABL, SRC, Ephrins, PDGFR, KIT",0.0662,0.0772,0.0883
+Docetaxel,5,"Mitosis","Microtubule stabiliser",-0.0048,0.2933,0.0853
+Doramapimod,1,"JNK and p38 signaling","p38, JNK2",0.0843,0.3761,0.0922
+Doxorubicin,10,"DNA replication","Anthracycline",0.0429,0.2809,-0.0020
+Elesclomol,7,"Protein stability and degradation","HSP90",0.0106,-0.0365,0.0351
+Embelin,4,"Apoptosis regulation","XIAP",-0.0193,-0.2246,0.0346
+Entinostat,9,"Chromatin histone acetylation","HDAC1, HDAC3",-0.0357,0.2399,0.1083
+Enzastaurin,9,"Other, kinases","PKCB",0.0474,0.0638,0.0378
+Epirubicin,9,"DNA replication","Anthracycline",0.0379,0.3095,-0.0604
+Epothilone B,4,"Mitosis","Microtubule stabiliser",0.0746,0.2161,0.1378
+Erlotinib,7,"EGFR signaling","EGFR",0.0139,0.2032,0.0430
+Etoposide,10,"DNA replication","TOP2",-0.0061,0.2891,0.0479
+FMK,3,"Other, kinases","RSK",0.0797,0.3080,0.0402
+FR-180204,4,"ERK MAPK signaling","ERK1, ERK2",0.0092,0.1566,0.0014
+Fedratinib,10,"Other, kinases","JAK2",0.0556,0.1268,0.0099
+Fludarabine,8,"DNA replication","Antimetabolite",0.0586,0.1860,0.0345
+Foretinib,1,"RTK signaling","MET, KDR, TIE2, VEGFR3/FLT4, RON, PDGFR, FGFR1, EGFR",0.0222,0.4271,0.1545
+Fulvestrant,13,"Hormone-related","ESR",-0.0091,0.0960,0.1310
+GNF-2,4,"ABL signaling","BCR-ABL",-0.0446,-0.0039,0.0419
+GSK1070916,12,"Mitosis","AURKA, AURKC",0.1050,0.1071,0.0250
+GSK1904529A,4,"IGF1R signaling","IGF1R, IR",-0.0530,-0.2990,-0.0242
+GSK429286A,6,"Cytoskeleton","ROCK1, ROCK2",0.0080,-0.1389,-0.0166
+GSK690693,1,"PI3K/MTOR signaling","AKT1, AKT2, AKT3",-0.0919,-0.2604,0.0291
+GW843682X,9,"Cell cycle","PLK1",-0.0167,0.0015,0.1195
+Gefitinib,12,"EGFR signaling","EGFR",0.0193,0.0333,-0.0002
+Gemcitabine,6,"DNA replication","Pyrimidine antimetabolite",-0.0147,0.2749,0.0557
+HG-5-113-01,10,"Mitosis","AURKA",0.0430,0.1248,0.0019
+HG-5-88-01,10,"Other, kinases","TAK1, M4K2",-0.0194,-0.0285,0.1020
+HG6-64-1,1,"ERK MAPK signaling","BRAF",-0.0269,-0.2487,0.0152
+IMD-0354,9,"Other, kinases","IKKb",-0.0379,0.2443,0.1367
+Ibrutinib,1,"Other, kinases","BTK",0.0769,0.5002,0.1685
+Idelalisib,1,"PI3K/MTOR signaling","PI3Kdelta",0.0157,-0.2520,-0.0456
+Imatinib,7,"Other, kinases","ABL, KIT, PDGFR",0.0513,0.3727,0.0698
+Irinotecan,9,"DNA replication","TOP1",0.0194,0.0772,-0.0120
+JNK-9L,9,"JNK and p38 signaling","JNK2, JNK3",-0.0082,0.2328,-0.0766
+JW-7-24-1,7,"Other, kinases","LCK",0.0456,0.2694,0.1751
+KIN001-244,5,"Other, kinases","PDK1",0.0103,0.0679,0.1112
+KIN001-266,1,"DNA replication","CDC7",-0.0692,-0.3037,0.0518
+KU-55933,8,"Genome integrity","ATM",0.0157,0.1771,0.0344
+KU-60019,1,"Genome integrity","ATM",-0.0608,-0.1257,0.0905
+LDN-193189,5,"Other","BMP",0.0270,0.1839,0.2141
+LFM-A13,2,"Other, kinases","BTK",-0.0275,-0.1719,-0.0385
+Lapatinib,4,"EGFR signaling","EGFR, ERBB2",-0.0285,-0.2116,0.0359
+Leflunomide,3,"DNA replication","Pyrimidine synthesis inhibitor",0.0538,0.3975,0.0896
+Lenalidomide,4,"Protein stability and degradation","CRBN",-0.0344,-0.3217,0.0181
+Lestaurtinib,10,"Other, kinases","FLT3, JAK2, NTRK1, NTRK2, NTRK3",0.0296,0.2428,-0.0008
+Linifanib,9,"RTK signaling","VEGFR1, VEGFR2, VEGFR3, CSF1R, FLT3, KIT",0.0664,0.1873,-0.0295
+Linsitinib,9,"IGF1R signaling","IGF1R",0.0257,0.0506,0.0268
+Luminespib,8,"Protein stability and degradation","HSP90",-0.0048,0.1647,0.0790
+MG-132,10,"Protein stability and degradation","Proteasome, CAPN1",0.0102,0.0964,0.1833
+MK-1775,8,"Cell cycle","WEE1, PLK1",0.0237,0.2680,0.1047
+MK-2206,8,"PI3K/MTOR signaling","AKT1, AKT2",0.0322,0.2187,0.0952
+Masitinib,5,"RTK signaling","KIT, PDGFRA, PDGFRB",0.0139,0.0279,0.0151
+Methotrexate,6,"DNA replication","Antimetabolite",0.0047,0.2657,0.0686
+Midostaurin,9,"Other","PKC, PPK, FLT1, c-FGR, others",0.0426,0.1471,0.0338
+Mirin,9,"Genome integrity","MRE11",-0.0193,0.0005,0.0703
+Mitomycin-C,9,"DNA replication","DNA crosslinker",0.0090,-0.0153,-0.0419
+Mitoxantrone,9,"DNA replication","TOP2",0.0552,0.3834,0.0097
+Motesanib,7,"RTK signaling","VEGFR, RET, KIT, PDGFR",0.0038,0.1158,0.0966
+Mycophenolic acid,1,"Unclassified","",-0.0088,0.3901,0.0810
+NPK76-II-72-1,7,"Cell cycle","PLK3",-0.0057,-0.1008,0.0624
+NVP-TAE684,9,"RTK signaling","ALK",0.0230,0.2683,0.0738
+Navitoclax,6,"Apoptosis regulation","BCL2, BCL-XL, BCL-W",0.0538,-0.1219,-0.0126
+Nilotinib,10,"ABL signaling","ABL",-0.0193,0.2476,0.0884
+OSI-027,9,"PI3K/MTOR signaling","MTORC1, MTORC2",0.0465,0.1360,0.0870
+OSI-930,1,"RTK signaling","KIT, VEGFR2",0.0530,0.3889,0.0733
+Obatoclax Mesylate,9,"Apoptosis regulation","BCL2, BCL-XL, BCL-W, MCL1",-0.0183,0.0911,0.0909
+Olaparib,2,"Genome integrity","PARP1, PARP2",0.0689,-0.1484,-0.0214
+Omipalisib,1,"PI3K/MTOR signaling","PI3K (class 1), MTORC1, MTORC2",0.0218,0.3819,0.1817
+PAC-1,8,"Apoptosis regulation","Procaspase-3, Procaspase-7",-0.0188,0.1259,0.1828
+PCI-34051,10,"Chromatin histone acetylation","HDAC8, HDAC6, HDAC1",-0.0068,0.0027,0.0488
+PD0325901,9,"ERK MAPK signaling","MEK1, MEK2",0.0401,-0.0890,-0.0057
+PD173074,9,"RTK signaling","FGFR1, FGFR2, FGFR3",-0.0149,-0.0194,0.0294
+PF-562271,8,"Cytoskeleton","FAK, FAK2",0.0037,0.2022,-0.0983
+PHA-665752,5,"RTK signaling","MET",0.0276,0.2000,0.0845
+PHA-793887,9,"Cell cycle","CDK2, CDK7, CDK5",0.0102,0.2348,-0.0653
+PI-103,7,"Other, kinases","PI3Kalpha, DAPK3, CLK4, PIM3, HIPK2",-0.0014,0.2640,0.1033
+PLX-4720,9,"ERK MAPK signaling","BRAF",0.0215,0.2020,0.0459
+Paclitaxel,11,"Mitosis","Microtubule stabiliser",0.0003,-0.2462,0.0571
+Palbociclib,8,"Cell cycle","CDK4, CDK6",-0.0159,0.2224,0.1736
+Panobinostat,11,"Chromatin histone acetylation","HDAC",-0.0016,0.2229,0.0826
+Parthenolide,12,"Chromatin histone acetylation","HDAC1",-0.0402,0.0995,0.1288
+Pazopanib,8,"RTK signaling","CSF1R, KIT,  PDGFRA, PDGFRB",0.0358,0.0077,0.0343
+Pelitinib,1,"EGFR signaling","EGFR",0.0041,-0.3589,0.0220
+Pevonedistat,9,"Other","NAE",-0.0392,0.1090,0.1336
+Phenformin,4,"Other","Biguanide agent",0.0315,-0.2127,-0.0506
+Pictilisib,9,"PI3K/MTOR signaling","PI3K (class 1)",0.0314,0.1210,0.0501
+Pilaralisib,9,"PI3K/MTOR signaling","PI3K",0.0200,0.2433,0.0729
+Piperlongumine,9,"Other","Induces reactive oxygen species",0.0191,0.2687,0.1895
+Ponatinib,1,"Other, kinases","ABL, PDGFRA, VEGFR2, FGFR1, SRC, TIE2, FLT3",0.0353,0.3273,0.0793
+Pyrimethamine,7,"Other","Dihydrofolate reductase (DHFR)",-0.0047,-0.1881,0.0457
+QL-X-138,10,"Other, kinases","BTK",0.0770,0.1901,0.1493
+QL-XI-92,7,"Cytoskeleton","DDR1",-0.0223,0.0398,0.0152
+QL-XII-47,10,"Other, kinases","IRAK1",0.0489,0.1712,0.1630
+Quizartinib,7,"RTK signaling","FLT3",0.0202,0.2473,0.0158
+RO-3306,8,"Cell cycle","CDK1",0.0312,0.1089,0.0846
+Rapamycin,13,"PI3K/MTOR signaling","MTORC1",-0.0009,0.1017,0.0299
+Rucaparib,7,"Genome integrity","PARP1, PARP2",0.0568,-0.0896,-0.0129
+Ruxolitinib,9,"Other, kinases","JAK1, JAK2",0.1005,0.1080,0.0730
+SB216763,8,"WNT signaling","GSK3A, GSK3B",0.0412,-0.1007,0.0549
+SB590885,8,"ERK MAPK signaling","BRAF",0.0582,0.1386,0.0456
+SN-38,2,"DNA replication","TOP1",-0.0311,0.2926,0.1199
+Salubrinal,5,"Other","EIF2A",-0.0092,-0.0276,0.0815
+Saracatinib,9,"Other, kinases","ABL, SRC",0.0305,0.1016,0.0647
+Seliciclib,8,"Cell cycle","CDK2, CDK7, CDK9",0.0213,0.0963,0.0102
+Selumetinib,6,"ERK MAPK signaling","MEK1, MEK2",-0.0155,-0.1976,-0.0023
+Sepantronium bromide,9,"Apoptosis regulation","BIRC5",0.0189,0.3384,0.1453
+Serdemetan,8,"p53 pathway","MDM2",0.0466,0.1385,0.0198
+Sorafenib,9,"Other, kinases","PDGFR, KIT, VEGFR, RAF",0.0427,0.2197,0.1130
+Sphingosine Kinase 1 Inhibitor II,5,"Other, kinases","Sphingosine Kinase",0.0276,0.1306,0.0443
+Staurosporine,8,"RTK signaling","Broad spectrum kinase inhibitor",0.0591,0.4059,-0.0294
+Sunitinib,9,"RTK signaling","PDGFR, KIT, VEGFR, FLT3, RET, CSF1R",0.0584,0.1739,-0.0132
+TAK-715,5,"JNK and p38 signaling","p38alpha, p38beta",0.0206,0.2565,0.1170
+TGX221,4,"PI3K/MTOR signaling","PI3Kbeta",0.0524,0.0230,-0.0063
+THZ-2-98-01,10,"Unclassified","IRAK1",0.0652,0.1717,0.0435
+TPCA-1,8,"Other, kinases","IKK2",-0.0308,0.2010,0.0396
+TW 37,8,"Apoptosis regulation","BCL2, BCL-XL, MCL1",-0.0261,0.1766,0.1712
+Tamoxifen,8,"Hormone-related","ESR1",-0.0305,0.1572,0.0604
+Tanespimycin,4,"Protein stability and degradation","HSP90",-0.0325,0.1096,0.1489
+Telomerase Inhibitor IX,8,"Genome integrity","Telomerase",-0.0510,0.1168,0.1285
+Temozolomide,9,"DNA replication","DNA alkylating agent",0.0527,-0.1466,0.0267
+Temsirolimus,8,"PI3K/MTOR signaling","MTOR",0.0257,0.1905,0.0413
+Teniposide,9,"DNA replication","",-0.0040,0.1328,-0.0101
+Thapsigargin,6,"Other","SERCA",-0.0624,0.2050,0.0645
+Tipifarnib,14,"Other","Farnesyl-transferase (FNTA)",-0.0136,0.0305,0.0287
+Tivozanib,7,"RTK signaling","VEGFR1, VEGFR2, VEGFR3, PDGFR, KIT",0.0288,0.2884,0.0201
+Topotecan,7,"DNA replication","TOP1",0.0447,0.2908,-0.0365
+Tozasertib,12,"Mitosis","AURKA, AURKB, AURKC, others",0.0399,0.2208,0.1281
+Trametinib,1,"ERK MAPK signaling","MEK1, MEK2",0.0127,0.3743,0.1386
+Tretinoin,8,"Other","Retinoic acid",0.0238,-0.0013,0.1042
+Tubastatin A,11,"Chromatin histone acetylation","HDAC1, HDAC6, HDAC8",-0.0868,0.1070,0.1025
+VX-702,5,"JNK and p38 signaling","p38",0.0662,0.1798,0.0594
+Veliparib,4,"Genome integrity","PARP1, PARP2",0.1047,0.1515,-0.0438
+Vinblastine,10,"Mitosis","Microtubule destabiliser",-0.0495,0.1329,0.0619
+Vinorelbine,7,"Mitosis","Microtubule destabiliser",-0.0226,0.0302,0.0958
+Vorinostat,15,"Chromatin histone acetylation","HDAC inhibitor Class I, IIa, IIb, IV",-0.0422,0.2238,0.0783
+Voxtalisib,1,"PI3K/MTOR signaling","PI3K (class 1), DNAPK, MTOR",-0.0755,-0.2171,0.0927
+WH-4-023,1,"Other, kinases","SRC, LCK",-0.0274,-0.2584,-0.0099
+WHI-P97,5,"Other, kinases","JAK3",0.0352,0.0171,0.0967
+WYE-125132,9,"PI3K/MTOR signaling","mTOR",0.0523,0.1755,0.1280
+WZ3105,1,"Other","SRC, ROCK2, NTRK2, FLT3, IRAK1, others",-0.0041,0.1727,-0.0776
+XAV939,8,"WNT signaling","TNKS1, TNKS2",-0.0022,0.0785,0.0517
+XMD15-27,1,"Other, kinases","CAMK2",0.0076,0.4513,0.1326
+XMD8-92,9,"ERK MAPK signaling","ERK5",0.0497,0.0911,0.0906
+Y-39983,1,"Cytoskeleton","ROCK",0.1171,0.3375,0.0809
+YK-4-279,8,"Other","RNA helicase A",0.0140,0.1072,0.1181
+YM201636,1,"PI3K/MTOR signaling","PIKFYVE",-0.0116,-0.3119,0.0517
+ZG-10,10,"JNK and p38 signaling","JNK1",0.0040,0.2117,-0.0639
+ZM447439,8,"Mitosis","AURKA, AURKB",-0.0123,0.1178,0.0615
+ZSTK474,9,"PI3K/MTOR signaling","PI3K (class 1)",0.0810,0.2986,0.1151
+Zibotentan,2,"Other","Endothelin-1 receptor (EDNRA)",0.0798,0.3754,0.0258

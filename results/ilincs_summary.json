@@ -1,0 +1,755 @@
+{
+ "landmark": {
+  "gated": [
+   7,
+   99
+  ],
+  "background": [
+   5,
+   98
+  ],
+  "fisher_p": 0.7672697857982299,
+  "odds": 1.4152173913043478,
+  "antigens_visible": {
+   "CLDN18": false,
+   "MSLN": false,
+   "CA9": false,
+   "CA12": false,
+   "CLDN6": false,
+   "PSCA": false,
+   "SLC39A6": false
+  },
+  "refs_visible": {
+   "CD19": false,
+   "ERBB2": true,
+   "FOLR1": false,
+   "TNFRSF17": false
+  }
+ },
+ "cgs": {
+  "gated": [
+   30,
+   99
+  ],
+  "background": [
+   17,
+   98
+  ],
+  "fisher_p": 0.04434069442403743,
+  "odds": 2.071611253196931,
+  "antigen_counts": {
+   "CA12": 12,
+   "CA9": 0,
+   "CLDN18": 0,
+   "CLDN6": 0,
+   "MSLN": 0,
+   "PSCA": 0,
+   "SLC39A6": 7
+  }
+ },
+ "kd_qc": {
+  "n_within": 153,
+  "n_between": 312,
+  "within_median_rho": 0.1747564287283356,
+  "between_median_rho": 0.058394727786252265,
+  "mw_p": 7.938446877168762e-14,
+  "erbb2_kd_vs_oe_median_rho": 0.0024881254469350917
+ },
+ "control": {
+  "n_egfr_top20": 1,
+  "n_egfr_all": 16,
+  "n_drugs": 198,
+  "fisher_p": 1.0,
+  "top20": [
+   [
+    "LDN-193189",
+    0.214
+   ],
+   [
+    "Piperlongumine",
+    0.189
+   ],
+   [
+    "AT7867",
+    0.184
+   ],
+   [
+    "MG-132",
+    0.183
+   ],
+   [
+    "PAC-1",
+    0.183
+   ],
+   [
+    "Omipalisib",
+    0.182
+   ],
+   [
+    "JW-7-24-1",
+    0.175
+   ],
+   [
+    "Palbociclib",
+    0.174
+   ],
+   [
+    "TW 37",
+    0.171
+   ],
+   [
+    "CHIR-99021",
+    0.17
+   ],
+   [
+    "Bicalutamide",
+    0.169
+   ],
+   [
+    "Ibrutinib",
+    0.168
+   ],
+   [
+    "QL-XII-47",
+    0.163
+   ],
+   [
+    "Buparlisib",
+    0.162
+   ],
+   [
+    "Foretinib",
+    0.154
+   ],
+   [
+    "BI-2536",
+    0.151
+   ],
+   [
+    "QL-X-138",
+    0.149
+   ],
+   [
+    "Tanespimycin",
+    0.149
+   ],
+   [
+    "Sepantronium bromide",
+    0.145
+   ],
+   [
+    "Dactolisib",
+    0.145
+   ]
+  ]
+ },
+ "connectivity": {
+  "per_gene": {
+   "CA12": {
+    "median": 0.014838992682036693,
+    "q01": -0.07588308474641897,
+    "q99": 0.10539866112592541
+   },
+   "SLC39A6": {
+    "median": 0.16030208130859447,
+    "q01": -0.31220317751647525,
+    "q99": 0.4521967264621233
+   },
+   "ERBB2": {
+    "median": 0.058218571181748044,
+    "q01": -0.08023968214996033,
+    "q99": 0.18459760057052108
+   }
+  },
+  "pathway_enrichment": {
+   "CA12": [
+    {
+     "pathway": "Genome integrity",
+     "n_top30": 4,
+     "odds": 6.3076923076923075,
+     "p": 0.01963361124173215,
+     "p_bh": 0.2945041686259823
+    },
+    {
+     "pathway": "PI3K/MTOR signaling",
+     "n_top30": 1,
+     "odds": 0.2413793103448276,
+     "p": 0.2090421475993261,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "JNK and p38 signaling",
+     "n_top30": 2,
+     "odds": 2.9285714285714284,
+     "p": 0.2255834687903564,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "Unclassified",
+     "n_top30": 1,
+     "odds": 5.758620689655173,
+     "p": 0.2807260421473619,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "RTK signaling",
+     "n_top30": 4,
+     "odds": 1.834319526627219,
+     "p": 0.297840767699221,
+     "p_bh": 0.893522303097663
+    },
+    {
+     "pathway": "Other",
+     "n_top30": 1,
+     "odds": 0.30628803245436104,
+     "p": 0.3194869119530134,
+     "p_bh": 0.7987172798825335
+    },
+    {
+     "pathway": "Other, kinases",
+     "n_top30": 6,
+     "odds": 1.6590909090909092,
+     "p": 0.3907643607656801,
+     "p_bh": 0.8373522016407431
+    },
+    {
+     "pathway": "Hormone-related",
+     "n_top30": 1,
+     "odds": 2.8620689655172415,
+     "p": 0.3908189948799086,
+     "p_bh": 0.7327856153998287
+    },
+    {
+     "pathway": "Cytoskeleton",
+     "n_top30": 1,
+     "odds": 1.896551724137931,
+     "p": 0.48453914951376875,
+     "p_bh": 0.8075652491896146
+    },
+    {
+     "pathway": "Mitosis",
+     "n_top30": 2,
+     "odds": 1.4285714285714286,
+     "p": 0.6501352191845065,
+     "p_bh": 0.9752028287767598
+    },
+    {
+     "pathway": "Cell cycle",
+     "n_top30": 2,
+     "odds": 1.2619047619047619,
+     "p": 0.6745140948689902,
+     "p_bh": 0.919791947548623
+    },
+    {
+     "pathway": "Apoptosis regulation",
+     "n_top30": 1,
+     "odds": 0.9310344827586207,
+     "p": 1.0,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "DNA replication",
+     "n_top30": 2,
+     "odds": 0.6785714285714286,
+     "p": 1.0,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "EGFR signaling",
+     "n_top30": 1,
+     "odds": 1.1241379310344828,
+     "p": 1.0,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "ERK MAPK signaling",
+     "n_top30": 1,
+     "odds": 0.5448275862068965,
+     "p": 1.0,
+     "p_bh": 1.0
+    }
+   ],
+   "SLC39A6": [
+    {
+     "pathway": "DNA replication",
+     "n_top30": 7,
+     "odds": 4.3438735177865615,
+     "p": 0.008804170827560775,
+     "p_bh": 0.12325839158585085
+    },
+    {
+     "pathway": "Unclassified",
+     "n_top30": 1,
+     "odds": 5.758620689655173,
+     "p": 0.2807260421473619,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "Other",
+     "n_top30": 1,
+     "odds": 0.30628803245436104,
+     "p": 0.3194869119530134,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "Hormone-related",
+     "n_top30": 1,
+     "odds": 2.8620689655172415,
+     "p": 0.3908189948799086,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "Cytoskeleton",
+     "n_top30": 1,
+     "odds": 1.896551724137931,
+     "p": 0.48453914951376875,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "IGF1R signaling",
+     "n_top30": 1,
+     "odds": 1.896551724137931,
+     "p": 0.48453914951376875,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "ERK MAPK signaling",
+     "n_top30": 2,
+     "odds": 1.2619047619047619,
+     "p": 0.6745140948689902,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "RTK signaling",
+     "n_top30": 3,
+     "odds": 1.2222222222222223,
+     "p": 0.7266345750066228,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "PI3K/MTOR signaling",
+     "n_top30": 4,
+     "odds": 1.2820512820512822,
+     "p": 0.7515212384350639,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "Other, kinases",
+     "n_top30": 5,
+     "odds": 1.2608695652173914,
+     "p": 0.7755230365348726,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "Apoptosis regulation",
+     "n_top30": 1,
+     "odds": 0.9310344827586207,
+     "p": 1.0,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "Genome integrity",
+     "n_top30": 1,
+     "odds": 0.7931034482758621,
+     "p": 1.0,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "JNK and p38 signaling",
+     "n_top30": 1,
+     "odds": 1.1241379310344828,
+     "p": 1.0,
+     "p_bh": 1.0
+    },
+    {
+     "pathway": "Mitosis",
+     "n_top30": 1,
+     "odds": 0.6091954022988506,
+     "p": 1.0,
+     "p_bh": 1.0
+    }
+   ]
+  },
+  "top": {
+   "CA12": {
+    "mimics": [
+     [
+      "AZD7762",
+      0.135
+     ],
+     [
+      "Y-39983",
+      0.117
+     ],
+     [
+      "GSK1070916",
+      0.105
+     ],
+     [
+      "Veliparib",
+      0.105
+     ],
+     [
+      "Ruxolitinib",
+      0.1
+     ],
+     [
+      "BI-2536",
+      0.089
+     ],
+     [
+      "Doramapimod",
+      0.084
+     ],
+     [
+      "ZSTK474",
+      0.081
+     ],
+     [
+      "Zibotentan",
+      0.08
+     ],
+     [
+      "CP466722",
+      0.08
+     ],
+     [
+      "FMK",
+      0.08
+     ],
+     [
+      "QL-X-138",
+      0.077
+     ],
+     [
+      "Ibrutinib",
+      0.077
+     ],
+     [
+      "Epothilone B",
+      0.075
+     ],
+     [
+      "Olaparib",
+      0.069
+     ]
+    ],
+    "reversers": [
+     [
+      "GSK690693",
+      -0.092
+     ],
+     [
+      "Tubastatin A",
+      -0.087
+     ],
+     [
+      "Voxtalisib",
+      -0.076
+     ],
+     [
+      "CAY10603",
+      -0.075
+     ],
+     [
+      "Amuvatinib",
+      -0.073
+     ],
+     [
+      "KIN001-266",
+      -0.069
+     ],
+     [
+      "Thapsigargin",
+      -0.062
+     ],
+     [
+      "KU-60019",
+      -0.061
+     ],
+     [
+      "GSK1904529A",
+      -0.053
+     ],
+     [
+      "Telomerase Inhibitor IX",
+      -0.051
+     ],
+     [
+      "Vinblastine",
+      -0.049
+     ],
+     [
+      "Dabrafenib",
+      -0.048
+     ],
+     [
+      "BX795",
+      -0.048
+     ],
+     [
+      "AZD8055",
+      -0.045
+     ],
+     [
+      "GNF-2",
+      -0.045
+     ]
+    ]
+   },
+   "SLC39A6": {
+    "mimics": [
+     [
+      "Ibrutinib",
+      0.5
+     ],
+     [
+      "AT7867",
+      0.482
+     ],
+     [
+      "XMD15-27",
+      0.451
+     ],
+     [
+      "Bicalutamide",
+      0.438
+     ],
+     [
+      "Foretinib",
+      0.427
+     ],
+     [
+      "Staurosporine",
+      0.406
+     ],
+     [
+      "Leflunomide",
+      0.397
+     ],
+     [
+      "Mycophenolic acid",
+      0.39
+     ],
+     [
+      "OSI-930",
+      0.389
+     ],
+     [
+      "Mitoxantrone",
+      0.383
+     ],
+     [
+      "Omipalisib",
+      0.382
+     ],
+     [
+      "Doramapimod",
+      0.376
+     ],
+     [
+      "Zibotentan",
+      0.375
+     ],
+     [
+      "Trametinib",
+      0.374
+     ],
+     [
+      "Imatinib",
+      0.373
+     ]
+    ],
+    "reversers": [
+     [
+      "Pelitinib",
+      -0.359
+     ],
+     [
+      "Lenalidomide",
+      -0.322
+     ],
+     [
+      "YM201636",
+      -0.312
+     ],
+     [
+      "KIN001-266",
+      -0.304
+     ],
+     [
+      "GSK1904529A",
+      -0.299
+     ],
+     [
+      "Axitinib",
+      -0.285
+     ],
+     [
+      "GSK690693",
+      -0.26
+     ],
+     [
+      "WH-4-023",
+      -0.258
+     ],
+     [
+      "Idelalisib",
+      -0.252
+     ],
+     [
+      "HG6-64-1",
+      -0.249
+     ],
+     [
+      "Paclitaxel",
+      -0.246
+     ],
+     [
+      "Embelin",
+      -0.225
+     ],
+     [
+      "Voxtalisib",
+      -0.217
+     ],
+     [
+      "Phenformin",
+      -0.213
+     ],
+     [
+      "Lapatinib",
+      -0.212
+     ]
+    ]
+   },
+   "ERBB2": {
+    "mimics": [
+     [
+      "LDN-193189",
+      0.214
+     ],
+     [
+      "Piperlongumine",
+      0.189
+     ],
+     [
+      "AT7867",
+      0.184
+     ],
+     [
+      "MG-132",
+      0.183
+     ],
+     [
+      "PAC-1",
+      0.183
+     ],
+     [
+      "Omipalisib",
+      0.182
+     ],
+     [
+      "JW-7-24-1",
+      0.175
+     ],
+     [
+      "Palbociclib",
+      0.174
+     ],
+     [
+      "TW 37",
+      0.171
+     ],
+     [
+      "CHIR-99021",
+      0.17
+     ],
+     [
+      "Bicalutamide",
+      0.169
+     ],
+     [
+      "Ibrutinib",
+      0.168
+     ],
+     [
+      "QL-XII-47",
+      0.163
+     ],
+     [
+      "Buparlisib",
+      0.162
+     ],
+     [
+      "Foretinib",
+      0.154
+     ]
+    ],
+    "reversers": [
+     [
+      "PF-562271",
+      -0.098
+     ],
+     [
+      "BMS-345541",
+      -0.09
+     ],
+     [
+      "AT-7519",
+      -0.08
+     ],
+     [
+      "WZ3105",
+      -0.078
+     ],
+     [
+      "JNK-9L",
+      -0.077
+     ],
+     [
+      "PHA-793887",
+      -0.065
+     ],
+     [
+      "ZG-10",
+      -0.064
+     ],
+     [
+      "Dactinomycin",
+      -0.063
+     ],
+     [
+      "Dacarbazine",
+      -0.061
+     ],
+     [
+      "Epirubicin",
+      -0.06
+     ],
+     [
+      "Axitinib",
+      -0.056
+     ],
+     [
+      "Phenformin",
+      -0.051
+     ],
+     [
+      "CGP-60474",
+      -0.048
+     ],
+     [
+      "Idelalisib",
+      -0.046
+     ],
+     [
+      "Veliparib",
+      -0.044
+     ]
+    ]
+   }
+  },
+  "n_compound_signatures_used": 1374
+ }
+}
