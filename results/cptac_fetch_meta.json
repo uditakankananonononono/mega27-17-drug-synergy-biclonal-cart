@@ -1,0 +1,30 @@
+{
+ "studies": [
+  "brca_cptac_2020",
+  "coad_cptac_2019",
+  "gbm_cptac_2021",
+  "luad_cptac_2020",
+  "lusc_cptac_2021",
+  "paad_cptac_2021",
+  "ucec_cptac_2020"
+ ],
+ "sample_counts": {
+  "brca_cptac_2020": 122,
+  "coad_cptac_2019": 97,
+  "gbm_cptac_2021": 99,
+  "luad_cptac_2020": 110,
+  "lusc_cptac_2021": 108,
+  "paad_cptac_2021": 140,
+  "ucec_cptac_2020": 95
+ },
+ "symbols_queried": 201,
+ "symbols_mapped": 198,
+ "missing_symbols": [
+  "CDC50A",
+  "CDC50B",
+  "OR2I1P"
+ ],
+ "n_rows": 67148,
+ "source": "cBioPortal API /api/molecular-profiles/{study}_protein_quantification/molecular-data/fetch",
+ "fetched": "2026-09-25"
+}

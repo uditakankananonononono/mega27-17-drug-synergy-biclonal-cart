@@ -211,6 +211,51 @@ Right: the 12 most essential gated antigens by fraction of dependent models (ref
 \label{fig:depmap}\end{figure}
 
 
+\subsection{Protein-level audit: CPTAC via cBioPortal (gate holds at protein, with five RNA-only exceptions)}
+\label{sec:cptac}
+The antigen gate runs on RNA, but CAR-T binds surface protein, and RNA-protein
+concordance for membrane proteins is imperfect. We therefore audited all 201
+audit-set genes (99 gated, 98 background, 4 references) against CPTAC
+quantitative proteomics fetched through the cBioPortal API: seven curated
+pan-cancer cohorts (\texttt{*\_protein\_quantification}, LOG2-VALUE),
+771 samples, 67,148 quantified gene-sample values
+(results/cptac\_protein\_rows.csv). Detection is interpreted as
+mass-spectrometry quantification above the cohort's detection floor;
+missingness correlates with low abundance.
+
+Gated antigens are quantified at the protein level far more reliably than the
+random surfaceome background: pooled detection rate median 0.862 vs
+0.368 (mean 0.676 vs 0.470), Mann-Whitney $p=9.6e-04$;
+92 of 99 gated antigens have direct protein evidence. Median abundance
+is also higher (0.094 vs 0.029 log2 units) but not significantly
+($p=0.249$), so the gate selects for \emph{detectability} more than for
+abundance. RNA-protein concordance (HPA RNA tumor mean vs CPTAC protein
+median, Spearman across genes) is cancer-dependent: strong in PAAD
+($\rho=0.590$, $p=1.7e-12$, $n=119$) and COAD
+($\rho=0.420$, $p=7.0e-05$), marginal in LUAD ($\rho=0.196$,
+$p=0.054$), and absent in GBM ($\rho=0.042$, n.s.) and BRCA
+($\rho=-0.113$, n.s.). The gate's RNA signal thus transfers to protein
+well in exactly the cancer (pancreatic) where the AND-gate ranking is
+strongest, and poorly in two others---a caveat that qualifies every non-PAAD
+pair.
+
+Five gated antigens have no CPTAC protein evidence anywhere (ASGR2, CLDN6, CYP2C9, PERP, TM4SF5) and are
+flagged in the ranking as RNA-only candidates; CLDN6 is notable because it is
+an active clinical CAR-T target, so its absence here likely reflects CPTAC
+detection-floor sensitivity for a low-abundance tight-junction protein, not
+true absence; we keep the pair and mark it. Reference behaviour is as
+predicted: ERBB2 is quantified in $>97.9\%$ of samples in every cohort;
+CD19 and BCMA (TNFRSF17) appear mainly where B-cell/plasma infiltrate is
+expected (CD19: LUSC 0.546, PAAD 0.043; BCMA: BRCA 0.426,
+LUSC 0.407 of samples), consistent with the Ig-locus plasma-cell
+exclusion already applied to the gate.
+\begin{figure}[h]\centering
+\includegraphics[width=0.98\linewidth]{figs/fig_cptac_protein.pdf}
+\caption{Left: pooled CPTAC protein detection-rate distributions for gated
+antigens vs random surfaceome background ($p=9.6e-04$). Right: RNA-protein
+concordance in PAAD ($\rho=0.59$).}
+\label{fig:cptac}\end{figure}
+
 \section{Shipped tool}
 \texttt{pip install .} provides the \texttt{cart-target-rank} command-line tool
 (\texttt{src/cart}, pure NumPy/pandas), which ranks candidate CAR-T antigens for

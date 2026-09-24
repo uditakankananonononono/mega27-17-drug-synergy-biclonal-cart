@@ -1,0 +1,123 @@
+{
+ "studies": [
+  "brca_cptac_2020",
+  "coad_cptac_2019",
+  "gbm_cptac_2021",
+  "luad_cptac_2020",
+  "lusc_cptac_2021",
+  "paad_cptac_2021",
+  "ucec_cptac_2020"
+ ],
+ "sample_counts": {
+  "brca_cptac_2020": 122,
+  "coad_cptac_2019": 97,
+  "gbm_cptac_2021": 99,
+  "luad_cptac_2020": 110,
+  "lusc_cptac_2021": 108,
+  "paad_cptac_2021": 140,
+  "ucec_cptac_2020": 95
+ },
+ "n_samples_total": 771,
+ "n_rows": 67148,
+ "symbols_queried": 201,
+ "symbols_mapped": 198,
+ "missing_symbols": [
+  "CDC50A",
+  "CDC50B",
+  "OR2I1P"
+ ],
+ "n_gated_with_protein": 92,
+ "n_background_with_protein": 49,
+ "gated_detection": {
+  "median_rate": 0.8618677042801557,
+  "mean_rate": 0.6762533130321999
+ },
+ "background_detection": {
+  "median_rate": 0.36835278858625164,
+  "mean_rate": 0.47028772598533575
+ },
+ "mw_detection_gated_vs_bg": {
+  "U": 3014.0,
+  "p": 0.0009619025389926438
+ },
+ "gated_abundance_median": 0.09409999999999999,
+ "background_abundance_median": 0.0292,
+ "mw_abundance_gated_vs_bg": {
+  "U": 2521.0,
+  "p": 0.24855758514061888
+ },
+ "rna_protein_spearman": {
+  "BRCA": {
+   "rho": -0.11280487804878048,
+   "p": 0.31602061889984767,
+   "n": 81
+  },
+  "COAD": {
+   "rho": 0.4199980763346128,
+   "p": 6.971986472474767e-05,
+   "n": 84
+  },
+  "GBM": {
+   "rho": 0.04165296866940409,
+   "p": 0.6854099476483999,
+   "n": 97
+  },
+  "LUAD": {
+   "rho": 0.1960209341468546,
+   "p": 0.05432109901269063,
+   "n": 97
+  },
+  "PAAD": {
+   "rho": 0.5895527702606467,
+   "p": 1.7375250536641726e-12,
+   "n": 119
+  }
+ },
+ "gated_protein_fail": [
+  "ASGR2",
+  "CLDN6",
+  "CYP2C9",
+  "PERP",
+  "TM4SF5"
+ ],
+ "n_gated_protein_fail": 5,
+ "reference_protein": {
+  "CD19": {
+   "det_rate": 0.08430609597924774,
+   "per_study": {
+    "lusc_cptac_2021": 0.546,
+    "paad_cptac_2021": 0.043
+   }
+  },
+  "ERBB2": {
+   "det_rate": 0.9974059662775616,
+   "per_study": {
+    "brca_cptac_2020": 1.0,
+    "coad_cptac_2019": 0.979,
+    "gbm_cptac_2021": 1.0,
+    "luad_cptac_2020": 1.0,
+    "lusc_cptac_2021": 1.0,
+    "paad_cptac_2021": 1.0,
+    "ucec_cptac_2020": 1.0
+   }
+  },
+  "FOLR1": {
+   "det_rate": 0.6264591439688716,
+   "per_study": {
+    "gbm_cptac_2021": 0.909,
+    "luad_cptac_2020": 1.0,
+    "lusc_cptac_2021": 1.0,
+    "paad_cptac_2021": 0.571,
+    "ucec_cptac_2020": 1.0
+   }
+  },
+  "TNFRSF17": {
+   "det_rate": 0.1245136186770428,
+   "per_study": {
+    "brca_cptac_2020": 0.426,
+    "lusc_cptac_2021": 0.407
+   }
+  }
+ },
+ "source": "cBioPortal API; CPTAC pan-cancer publications; profiles *_protein_quantification (LOG2-VALUE)"
+}
