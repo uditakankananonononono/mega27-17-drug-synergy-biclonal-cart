@@ -24,12 +24,17 @@
 \contentsline {section}{\numberline {6}Epitope-structure audit: three AND-gate antigens have no experimental structure (AlphaFold DB + RCSB PDB)}{13}{}%
 \contentsline {paragraph}{Positive control (3 of 4 pass).}{13}{}%
 \contentsline {paragraph}{Result.}{13}{}%
-\contentsline {section}{\numberline {7}Shipped tool}{14}{}%
-\contentsline {section}{\numberline {8}Falsification paths}{15}{}%
-\contentsline {section}{\numberline {9}Mathematical derivations}{15}{}%
-\contentsline {subsection}{\numberline {9.1}Bliss independence and the ALMANAC synergy score}{15}{}%
-\contentsline {subsection}{\numberline {9.2}Embedding model and why pair-held-out is the honest split}{16}{}%
-\contentsline {subsection}{\numberline {9.3}AUROC as a Mann--Whitney probability}{16}{}%
-\contentsline {subsection}{\numberline {9.4}FANM: estimator, sampling error, and interval}{16}{}%
-\contentsline {subsection}{\numberline {9.5}Streaming percentiles as order statistics}{17}{}%
-\contentsline {subsection}{\numberline {9.6}AND-gate gain is bounded by the weaker single}{17}{}%
+\contentsline {section}{\numberline {7}Antigen-escape constraint audit (gnomAD v4, HGNC, Reactome)}{14}{}%
+\contentsline {paragraph}{Calibration gate passes.}{14}{}%
+\contentsline {paragraph}{Gate-wide null on all three escape-cost axes.}{14}{}%
+\contentsline {paragraph}{Every measurable AND-gate antigen is free to lose.}{15}{}%
+\contentsline {paragraph}{Negative results preserved.}{15}{}%
+\contentsline {section}{\numberline {8}Shipped tool}{16}{}%
+\contentsline {section}{\numberline {9}Falsification paths}{16}{}%
+\contentsline {section}{\numberline {10}Mathematical derivations}{17}{}%
+\contentsline {subsection}{\numberline {10.1}Bliss independence and the ALMANAC synergy score}{17}{}%
+\contentsline {subsection}{\numberline {10.2}Embedding model and why pair-held-out is the honest split}{17}{}%
+\contentsline {subsection}{\numberline {10.3}AUROC as a Mann--Whitney probability}{17}{}%
+\contentsline {subsection}{\numberline {10.4}FANM: estimator, sampling error, and interval}{18}{}%
+\contentsline {subsection}{\numberline {10.5}Streaming percentiles as order statistics}{18}{}%
+\contentsline {subsection}{\numberline {10.6}AND-gate gain is bounded by the weaker single}{18}{}%

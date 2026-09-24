@@ -1,0 +1,277 @@
+{
+ "design": "Antigen-escape constraint audit (item 17).",
+ "loeuf_cut": 0.6,
+ "sources": {
+  "gnomad": "gnomAD v4 GraphQL gene.gnomad_constraint (GRCh38)",
+  "hgnc": "HGNC REST fetch/symbol + search/gene_group_id",
+  "reactome": "Reactome ContentService data/mapping/UniProt/<acc>/pathways?species=9606"
+ },
+ "calibration": {
+  "controls": {
+   "PCNA": 0.32961405994652354,
+   "POLR2A": 0.18847409786685937,
+   "PSMA1": 0.20212623366936489,
+   "RPS3": 0.24365350425891977
+  },
+  "n_constrained": 4,
+  "passed": true
+ },
+ "loeuf": {
+  "n_gated": 97,
+  "n_background": 72,
+  "gated_median": 1.0155466953599186,
+  "background_median": 0.9549590496532876,
+  "mw_p": 0.4598113477584004,
+  "gated_constrained": 18,
+  "background_constrained": 16,
+  "fisher_p": 0.566715673624608
+ },
+ "paralog_groups": {
+  "gated_median_group_size": 18.0,
+  "background_median_group_size": 29.0,
+  "mw_p": 0.072575754924823,
+  "gated_in_multigene_group": 83,
+  "background_in_multigene_group": 89,
+  "n_gated": 99,
+  "n_background": 98,
+  "fisher_p": 0.19853545642386902
+ },
+ "reactome": {
+  "gated_median": 2.0,
+  "background_median": 1.0,
+  "mw_p": 0.0004944140429846118,
+  "gated_pathway_dark": 13,
+  "background_pathway_dark": 30,
+  "n_gated": 99,
+  "n_background": 98,
+  "fisher_p": 0.003360248128603875
+ },
+ "loeuf_vs_depmap": {
+  "n": 163,
+  "spearman_rho": 0.07241979372758964,
+  "p": 0.3582601332758517
+ },
+ "quadrants": {
+  "gated": {
+   "free_loss": 72,
+   "unknown": 5,
+   "germline_constrained": 14,
+   "doubly_constrained": 4,
+   "tumour_dependent": 4
+  },
+  "background": {
+   "free_loss": 51,
+   "germline_constrained": 15,
+   "tumour_dependent": 2,
+   "unknown": 29,
+   "doubly_constrained": 1
+  }
+ },
+ "free_loss": {
+  "gated": 72,
+  "gated_n": 94,
+  "background": 51,
+  "background_n": 69,
+  "fisher_p": 0.7157490041455248
+ },
+ "protein_coding_control": {
+  "n_gated": 98,
+  "n_background": 73,
+  "reactome_gated_median": 2.0,
+  "reactome_background_median": 1.0,
+  "reactome_mw_p": 0.009621132134099422,
+  "gated_pathway_dark": 13,
+  "background_pathway_dark": 19,
+  "reactome_dark_fisher_p": 0.04680414357208329,
+  "loeuf_gated_median": 1.0155466953599186,
+  "loeuf_background_median": 0.9370449839344466,
+  "loeuf_mw_p": 0.221656596446144,
+  "n_loeuf_gated": 97,
+  "n_loeuf_background": 66
+ },
+ "and_gate_summary": {
+  "n": 7,
+  "free_loss": 6,
+  "unknown": [
+   "CLDN6"
+  ],
+  "min_loeuf": 1.0136466914677786,
+  "max_frac_dep": 0.031409168081494056
+ },
+ "reference_summary": {
+  "CD19": "free_loss",
+  "ERBB2": "doubly_constrained",
+  "FOLR1": "free_loss",
+  "TNFRSF17": "free_loss"
+ },
+ "references": [
+  {
+   "gene": "CD19",
+   "loeuf": 0.6153932736468157,
+   "pli": 0.006294789093513418,
+   "mis_z": 1.5062201357471376,
+   "obs_lof": 32,
+   "exp_lof": 69.8455045923752,
+   "gene_groups": "CD molecules;Immunoglobulin like domain containing;Minor histocompatibility antigens",
+   "max_group_size": 394,
+   "n_reactome": 6,
+   "depmap_median": -0.09380327741935945,
+   "depmap_frac_dep": 0.022920203735144314,
+   "escape_quadrant": "free_loss"
+  },
+  {
+   "gene": "ERBB2",
+   "loeuf": 0.5065434293783412,
+   "pli": 0.24524237761987883,
+   "mis_z": 4.718088493435104,
+   "obs_lof": 61,
+   "exp_lof": 149.03897796168002,
+   "gene_groups": "CD molecules;Minor histocompatibility antigens;Erb-b2 receptor tyrosine kinases;MicroRNA protein coding host genes",
+   "max_group_size": 850,
+   "n_reactome": 33,
+   "depmap_median": -0.2512566919421705,
+   "depmap_frac_dep": 0.1502546689303905,
+   "escape_quadrant": "doubly_constrained"
+  },
+  {
+   "gene": "FOLR1",
+   "loeuf": 0.7979620515034965,
+   "pli": 0.05847585758086927,
+   "mis_z": 1.12625198021962,
+   "obs_lof": 11,
+   "exp_lof": 22.817518974238926,
+   "gene_groups": "Folate receptors",
+   "max_group_size": 3,
+   "n_reactome": 3,
+   "depmap_median": -0.0316958138546308,
+   "depmap_frac_dep": 0.0008488964346349745,
+   "escape_quadrant": "free_loss"
+  },
+  {
+   "gene": "TNFRSF17",
+   "loeuf": 2.0777415820022638,
+   "pli": 3.7677236164119825e-06,
+   "mis_z": -2.2486881204383797,
+   "obs_lof": 13,
+   "exp_lof": 9.947612953770674,
+   "gene_groups": "CD molecules;Tumor necrosis factor receptor superfamily",
+   "max_group_size": 394,
+   "n_reactome": 1,
+   "depmap_median": -0.04105806104167365,
+   "depmap_frac_dep": 0.0,
+   "escape_quadrant": "free_loss"
+  }
+ ],
+ "and_gate": [
+  {
+   "gene": "CA12",
+   "loeuf": 1.0155466953599186,
+   "pli": 4.4256144018159507e-10,
+   "mis_z": 0.3083492885910601,
+   "obs_lof": 36,
+   "exp_lof": 46.812946713171854,
+   "gene_groups": "Carbonic anhydrases",
+   "max_group_size": 18,
+   "n_reactome": 1,
+   "depmap_median": -0.08038173166913265,
+   "depmap_frac_dep": 0.0008488964346349745,
+   "escape_quadrant": "free_loss"
+  },
+  {
+   "gene": "CA9",
+   "loeuf": 1.0701773365992724,
+   "pli": 8.928886978650569e-13,
+   "mis_z": 0.13013122340216113,
+   "obs_lof": 43,
+   "exp_lof": 51.812909426342245,
+   "gene_groups": "Carbonic anhydrases",
+   "max_group_size": 18,
+   "n_reactome": 2,
+   "depmap_median": -0.02291359938343095,
+   "depmap_frac_dep": 0.001697792869269949,
+   "escape_quadrant": "free_loss"
+  },
+  {
+   "gene": "CLDN18",
+   "loeuf": 1.1615209448793278,
+   "pli": 2.5643099076988778e-06,
+   "mis_z": 1.11184577216613,
+   "obs_lof": 20,
+   "exp_lof": 25.020658446631213,
+   "gene_groups": "Claudins",
+   "max_group_size": 23,
+   "n_reactome": 1,
+   "depmap_median": 0.08614616037726035,
+   "depmap_frac_dep": 0.0008488964346349745,
+   "escape_quadrant": "free_loss"
+  },
+  {
+   "gene": "CLDN6",
+   "loeuf": null,
+   "pli": null,
+   "mis_z": 0.12902700077057452,
+   "obs_lof": null,
+   "exp_lof": null,
+   "gene_groups": "Claudins",
+   "max_group_size": 23,
+   "n_reactome": 1,
+   "depmap_median": -0.2010062031586711,
+   "depmap_frac_dep": 0.031409168081494056,
+   "escape_quadrant": "unknown"
+  },
+  {
+   "gene": "MSLN",
+   "loeuf": 1.357193551143625,
+   "pli": 1.5716044761885418e-31,
+   "mis_z": -2.3007243151876455,
+   "obs_lof": 82,
+   "exp_lof": 72.5997798075694,
+   "gene_groups": "",
+   "max_group_size": 0,
+   "n_reactome": 3,
+   "depmap_median": 0.06944234988610334,
+   "depmap_frac_dep": 0.0,
+   "escape_quadrant": "free_loss"
+  },
+  {
+   "gene": "PSCA",
+   "loeuf": 1.673197793790682,
+   "pli": 0.003727855000354184,
+   "mis_z": -0.10734982227323965,
+   "obs_lof": 7,
+   "exp_lof": 7.858075029279506,
+   "gene_groups": "LY6/PLAUR domain containing",
+   "max_group_size": 36,
+   "n_reactome": 1,
+   "depmap_median": 0.06766924094718199,
+   "depmap_frac_dep": 0.0,
+   "escape_quadrant": "free_loss"
+  },
+  {
+   "gene": "SLC39A6",
+   "loeuf": 1.0136466914677786,
+   "pli": 1.8454916926106652e-14,
+   "mis_z": 1.7199537525696535,
+   "obs_lof": 51,
+   "exp_lof": 63.53491261373692,
+   "gene_groups": "Solute carrier family 39 ",
+   "max_group_size": 14,
+   "n_reactome": 1,
+   "depmap_median": 0.12166603511661625,
+   "depmap_frac_dep": 0.008488964346349746,
+   "escape_quadrant": "free_loss"
+  }
+ ],
+ "n_genes": 205,
+ "n_with_loeuf": 177,
+ "n_with_hgnc": 204,
+ "n_with_reactome_mapping": 205,
+ "n_hgnc_groups_fetched": 155,
+ "dataset_records": {
+  "gnomad_gene_constraint": 204,
+  "hgnc_symbol": 204,
+  "hgnc_gene_group": 155,
+  "reactome_mapping": 162,
+  "total": 725
+ }
+}
