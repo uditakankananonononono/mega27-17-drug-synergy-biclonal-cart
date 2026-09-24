@@ -83,9 +83,27 @@ windows remains tumor-restricted even where either single antigen is
 not. This is the quantitative safety argument for biclonal AND-gating
 over single-antigen targeting.
 
+\subsection{Druggability annotation: DGIdb v5}
+The gated targets were annotated against DGIdb v5 (GraphQL API,
+\texttt{results/dgidb\_interactions.json}) to quantify existing
+therapeutic engagement. ERBB2, included as a positive control, returns
+193 interactions across 174 unique drugs and 18 source databases
+(approved antibodies and kinase inhibitors headed by ado-trastuzumab
+emtansine and trastuzumab deruxtecan). Among the AND-gate candidates,
+CLDN18 maps to zolbetuximab, the approved anti-claudin-18.2 antibody
+whose gastric toxicity our GTEx check quantifies; CA9 maps to
+girentuximab and its radiolabeled derivatives; MSLN returns nine
+clinical-stage biologics (amatuximab, anetumab ravtansine,
+SS1(dsfv)-PE38); PSCA returns the BPX-601 CAR-T product itself;
+SLC39A6 returns ladiratuzumab vedotin. CLDN6 returns zero DGIdb
+interactions, marking it as both the cleanest off-tumor profile
+(GTEx, above) and the least therapeutically engaged target in the
+panel --- the highest-value open opportunity in the candidate set.
+
 \section{Falsification paths}
 Synergy: published MatchMaker/DeepSynergy numbers verified (see Results) --- splits differ, no SOTA claim made; a same-split rerun on DrugComb is the remaining path to a direct comparison. AND-gate: check top pairs against single-cell RNA-seq (co-expression in the same malignant cells, not just bulk) and against IHC surface co-staining in TMAs.
 \begin{thebibliography}{9}
+\bibitem[Cannon et al.(2024)]{dgidb} Cannon D, et al. DGIdb 5.0. \emph{Nucleic Acids Res} 2024.
 \bibitem[Holbeck et al.(2017)]{a} Holbeck SL, et al. The NCI-ALMANAC. \emph{Cancer Res} 2017.
 \bibitem[Uhl\'en et al.(2015)]{h} Uhl\'en M, et al. Tissue-based map of the human proteome (HPA). \emph{Science} 2015.
 \bibitem[ACS/Slamon]{her2} American Cancer Society, Breast Cancer HER2 Status (15--20\% HER2-positive); Slamon et al., \emph{NEJM} 2001; Nahta, \emph{Nat Rev Clin Oncol} 2024 (15--20\% of invasive breast cancers).

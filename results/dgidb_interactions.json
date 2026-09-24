@@ -1,0 +1,345 @@
+{
+  "source": "DGIdb v5 GraphQL API (https://dgidb.org/api/graphql)",
+  "date": "2026-09-24",
+  "genes": {
+    "CLDN18": {
+      "n_interactions": 4,
+      "n_unique_drugs": 2,
+      "n_sources": 5,
+      "sources": [
+        "CIViC",
+        "ChEMBL",
+        "GuideToPharmacology",
+        "PharmGKB",
+        "TTD"
+      ],
+      "typed_counts": {
+        "inhibitor": 0,
+        "antibody": 2,
+        "agonist": 0,
+        "other": 2
+      },
+      "top_drugs_by_score": [
+        {
+          "drug": "ZOLBETUXIMAB",
+          "score": 33.0825
+        },
+        {
+          "drug": "ZWB67",
+          "score": 6.6165
+        }
+      ]
+    },
+    "MSLN": {
+      "n_interactions": 12,
+      "n_unique_drugs": 9,
+      "n_sources": 3,
+      "sources": [
+        "ChEMBL",
+        "TTD",
+        "TdgClinicalTrial"
+      ],
+      "typed_counts": {
+        "inhibitor": 1,
+        "antibody": 0,
+        "agonist": 0,
+        "other": 11
+      },
+      "top_drugs_by_score": [
+        {
+          "drug": "AMATUXIMAB",
+          "score": 8.822
+        },
+        {
+          "drug": "CRS-207",
+          "score": 4.411
+        },
+        {
+          "drug": "SS1(DSFV)-PE38",
+          "score": 4.411
+        },
+        {
+          "drug": "ANETUMAB RAVTANSINE",
+          "score": 4.411
+        },
+        {
+          "drug": "ANTI-MUC16/MMAE ANTIBODY-DRUG CONJUGATE DMUC4064A",
+          "score": 4.411
+        },
+        {
+          "drug": "AUTOLOGOUS MESOTHELIN-SPECIFIC CAR-T CELLS",
+          "score": 4.411
+        },
+        {
+          "drug": "ANTI-MESOTHELIN CAR T CELLS PREPARATION",
+          "score": 4.411
+        },
+        {
+          "drug": "LMB-100",
+          "score": 2.2055
+        },
+        {
+          "drug": "RG-7600",
+          "score": 0.2757
+        }
+      ]
+    },
+    "CA9": {
+      "n_interactions": 13,
+      "n_unique_drugs": 13,
+      "n_sources": 4,
+      "sources": [
+        "CGI",
+        "ChEMBL",
+        "GuideToPharmacology",
+        "PharmGKB"
+      ],
+      "typed_counts": {
+        "inhibitor": 7,
+        "antibody": 0,
+        "agonist": 0,
+        "other": 6
+      },
+      "top_drugs_by_score": [
+        {
+          "drug": "GAMMA-VALEROLACTONE",
+          "score": 4.0717
+        },
+        {
+          "drug": "CG250 177LU",
+          "score": 4.0717
+        },
+        {
+          "drug": "GIRENTUXIMAB",
+          "score": 4.0717
+        },
+        {
+          "drug": "IODINE I 124 GIRENTUXIMAB",
+          "score": 4.0717
+        },
+        {
+          "drug": "CG250 111IN",
+          "score": 4.0717
+        },
+        {
+          "drug": "SLC-0111",
+          "score": 2.0358
+        },
+        {
+          "drug": "COMPOUND 5A [PMID: 31287314]",
+          "score": 1.0179
+        },
+        {
+          "drug": "COMPOUND 5B  [PMID: 31287314]",
+          "score": 1.0179
+        },
+        {
+          "drug": "COMPOUND 11 [PMID: 41150938]",
+          "score": 0.8143
+        },
+        {
+          "drug": "SULTHIAME",
+          "score": 0.3393
+        }
+      ]
+    },
+    "CA12": {
+      "n_interactions": 14,
+      "n_unique_drugs": 14,
+      "n_sources": 6,
+      "sources": [
+        "ChEMBL",
+        "DTC",
+        "PharmGKB",
+        "TEND",
+        "TTD",
+        "TdgClinicalTrial"
+      ],
+      "typed_counts": {
+        "inhibitor": 5,
+        "antibody": 0,
+        "agonist": 0,
+        "other": 9
+      },
+      "top_drugs_by_score": [
+        {
+          "drug": "TRIFLUOROMETHANESULFONAMIDE",
+          "score": 7.5617
+        },
+        {
+          "drug": "DICHLORPHENAMIDE",
+          "score": 0.9452
+        },
+        {
+          "drug": "PHENOL",
+          "score": 0.9452
+        },
+        {
+          "drug": "ACETAZOLAMIDE SODIUM",
+          "score": 0.9452
+        },
+        {
+          "drug": "PARABEN",
+          "score": 0.9452
+        },
+        {
+          "drug": "FERULIC ACID",
+          "score": 0.9452
+        },
+        {
+          "drug": "MAFENIDE",
+          "score": 0.9452
+        },
+        {
+          "drug": "ACETAZOLAMIDE",
+          "score": 0.8725
+        },
+        {
+          "drug": "ETHOXZOLAMIDE",
+          "score": 0.8725
+        },
+        {
+          "drug": "ZONISAMIDE",
+          "score": 0.3151
+        }
+      ]
+    },
+    "CLDN6": {
+      "n_interactions": 0,
+      "n_unique_drugs": 0,
+      "n_sources": 0,
+      "sources": [],
+      "typed_counts": {
+        "inhibitor": 0,
+        "antibody": 0,
+        "agonist": 0,
+        "other": 0
+      },
+      "top_drugs_by_score": []
+    },
+    "PSCA": {
+      "n_interactions": 3,
+      "n_unique_drugs": 3,
+      "n_sources": 3,
+      "sources": [
+        "ChEMBL",
+        "TTD",
+        "TdgClinicalTrial"
+      ],
+      "typed_counts": {
+        "inhibitor": 1,
+        "antibody": 0,
+        "agonist": 0,
+        "other": 2
+      },
+      "top_drugs_by_score": [
+        {
+          "drug": "MK-4721",
+          "score": 35.288
+        },
+        {
+          "drug": "AUTOLOGOUS PROSTATE STEM CELL ANTIGEN-SPECIFIC CAR T CELLS BPX-601",
+          "score": 17.644
+        },
+        {
+          "drug": "ANTI-PSCA MONOCLONAL ANTIBODY AGS-1C4D4",
+          "score": 17.644
+        }
+      ]
+    },
+    "SLC39A6": {
+      "n_interactions": 1,
+      "n_unique_drugs": 1,
+      "n_sources": 1,
+      "sources": [
+        "ChEMBL"
+      ],
+      "typed_counts": {
+        "inhibitor": 0,
+        "antibody": 0,
+        "agonist": 0,
+        "other": 1
+      },
+      "top_drugs_by_score": [
+        {
+          "drug": "LADIRATUZUMAB VEDOTIN",
+          "score": 3.3082
+        }
+      ]
+    },
+    "ERBB2": {
+      "n_interactions": 193,
+      "n_unique_drugs": 174,
+      "n_sources": 18,
+      "sources": [
+        "CGI",
+        "CIViC",
+        "ChEMBL",
+        "ClearityFoundationBiomarkers",
+        "ClearityFoundationClinicalTrial",
+        "DTC",
+        "DoCM",
+        "FDA",
+        "GuideToPharmacology",
+        "MyCancerGenome",
+        "MyCancerGenomeClinicalTrial",
+        "NCI",
+        "OncoKB",
+        "PharmGKB",
+        "TALC",
+        "TEND",
+        "TTD",
+        "TdgClinicalTrial"
+      ],
+      "typed_counts": {
+        "inhibitor": 62,
+        "antibody": 8,
+        "agonist": 0,
+        "other": 123
+      },
+      "top_drugs_by_score": [
+        {
+          "drug": "ADO-TRASTUZUMAB EMTANSINE",
+          "score": 1.6456
+        },
+        {
+          "drug": "FAM-TRASTUZUMAB DERUXTECAN-NXKI",
+          "score": 0.8228
+        },
+        {
+          "drug": "MUBRITINIB",
+          "score": 0.8228
+        },
+        {
+          "drug": "ZONGERTINIB",
+          "score": 0.8228
+        },
+        {
+          "drug": "NERATINIB",
+          "score": 0.7384
+        },
+        {
+          "drug": "PERTUZUMAB",
+          "score": 0.7052
+        },
+        {
+          "drug": "TRASTUZUMAB",
+          "score": 0.6954
+        },
+        {
+          "drug": "DACOMITINIB ANHYDROUS",
+          "score": 0.6856
+        },
+        {
+          "drug": "TYRPHOSTIN AG 879",
+          "score": 0.5485
+        },
+        {
+          "drug": "NAKIJIQUINONE I",
+          "score": 0.5485
+        }
+      ]
+    }
+  },
+  "note": "interactionScore = DGIdb normalized score (publications x sources). Typed counts classify by interaction type with antibody > inhibitor > agonist precedence."
+}

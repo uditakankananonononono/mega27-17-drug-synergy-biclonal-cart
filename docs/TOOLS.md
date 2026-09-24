@@ -10,7 +10,8 @@
 13. PubChem PUG REST (NSC->drug name resolution)
 14. ChEMBL API (assay-level bioactivities per drug)
 15. GTEx Portal API v2 (gtex_v8 per-sample TPM, 54 tissues, 17,382 samples aggregated per gene) - off-tumor normal-tissue safety check for gated targets
-Count: 15. Planned honest additions: DepMap, GDSC, DrugBank, COSMIC, TCGA per-cancer RNA.
+16. DGIdb v5 GraphQL API - druggability annotation of gated targets (193 ERBB2 control interactions; CLDN6 zero-engagement finding)
+Count: 16. Planned honest additions: DepMap, GDSC, DrugBank, COSMIC, TCGA per-cancer RNA.
 ## Datasets (accession-level)
 1. NCI-ALMANAC combination screen (1 dataset, 311,466 conditions)
 2. HPA rna_tissue_consensus.tsv
