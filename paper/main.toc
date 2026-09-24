@@ -52,12 +52,17 @@
 \contentsline {paragraph}{Illumination of gated versus background.}{22}{}%
 \contentsline {paragraph}{Cross-source Tclin concordance.}{22}{}%
 \contentsline {paragraph}{AND-gate antigens.}{22}{}%
-\contentsline {section}{\numberline {8}Shipped tool}{22}{}%
-\contentsline {section}{\numberline {9}Falsification paths}{23}{}%
-\contentsline {section}{\numberline {10}Mathematical derivations}{24}{}%
-\contentsline {subsection}{\numberline {10.1}Bliss independence and the ALMANAC synergy score}{24}{}%
-\contentsline {subsection}{\numberline {10.2}Embedding model and why pair-held-out is the honest split}{24}{}%
-\contentsline {subsection}{\numberline {10.3}AUROC as a Mann--Whitney probability}{24}{}%
-\contentsline {subsection}{\numberline {10.4}FANM: estimator, sampling error, and interval}{24}{}%
-\contentsline {subsection}{\numberline {10.5}Streaming percentiles as order statistics}{25}{}%
-\contentsline {subsection}{\numberline {10.6}AND-gate gain is bounded by the weaker single}{25}{}%
+\contentsline {subsection}{\numberline {7.6}BioPlex systematic AP-MS: co-complex check against the IntAct null}{22}{}%
+\contentsline {paragraph}{Calibration gate.}{23}{}%
+\contentsline {paragraph}{Antigen-pair co-complex test.}{23}{}%
+\contentsline {paragraph}{Detection and degree bias.}{23}{}%
+\contentsline {paragraph}{Cross-resource concordance.}{23}{}%
+\contentsline {section}{\numberline {8}Shipped tool}{24}{}%
+\contentsline {section}{\numberline {9}Falsification paths}{24}{}%
+\contentsline {section}{\numberline {10}Mathematical derivations}{25}{}%
+\contentsline {subsection}{\numberline {10.1}Bliss independence and the ALMANAC synergy score}{25}{}%
+\contentsline {subsection}{\numberline {10.2}Embedding model and why pair-held-out is the honest split}{25}{}%
+\contentsline {subsection}{\numberline {10.3}AUROC as a Mann--Whitney probability}{25}{}%
+\contentsline {subsection}{\numberline {10.4}FANM: estimator, sampling error, and interval}{26}{}%
+\contentsline {subsection}{\numberline {10.5}Streaming percentiles as order statistics}{26}{}%
+\contentsline {subsection}{\numberline {10.6}AND-gate gain is bounded by the weaker single}{26}{}%

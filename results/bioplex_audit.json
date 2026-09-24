@@ -1,0 +1,128 @@
+{
+ "tool": "BioPlex AP-MS networks (bioplex.hms.harvard.edu; HEK293T 10K + HCT116 5.5K, Dec 2019)",
+ "n_genes_total": 205,
+ "gates": {
+  "G1_psma1_proteasome_both_networks": {
+   "pass": true,
+   "detail": {
+    "293T": [
+     "PSMB1",
+     "PSMB2",
+     "PSMB3",
+     "PSMB4",
+     "PSMB5",
+     "PSMB7",
+     "PSMB8",
+     "PSMB9"
+    ],
+    "HCT116": [
+     "PSMB1",
+     "PSMB10",
+     "PSMB2",
+     "PSMB3",
+     "PSMB4",
+     "PSMB5",
+     "PSMB6",
+     "PSMB7",
+     "PSMB9"
+    ]
+   }
+  },
+  "G2_polr2a_polII_partner_293T": {
+   "pass": true,
+   "detail": [
+    "POLR2D",
+    "POLR2E",
+    "POLR2F",
+    "POLR2G",
+    "POLR2J",
+    "POLR2L"
+   ]
+  },
+  "G3_references_present_293T": {
+   "pass": true,
+   "detail": {
+    "CD19": true,
+    "ERBB2": true,
+    "FOLR1": true,
+    "TNFRSF17": true
+   }
+  }
+ },
+ "all_gates_pass": true,
+ "H1_per_network": {
+  "293T": {
+   "nodes": 13957,
+   "edges": 118162,
+   "testable_antigen_pairs": 10,
+   "antigen_pair_edges": 0,
+   "edges_detail": [],
+   "gated_present": 72,
+   "gated_n": 99,
+   "bg_present": 43,
+   "bg_n": 98,
+   "presence_fisher_or": 3.4108527131782944,
+   "presence_fisher_p": 4.855435595448728e-05,
+   "gated_degree_median": 9.5,
+   "bg_degree_median": 10,
+   "degree_mw_p": 0.45701789535717485
+  },
+  "HCT116": {
+   "nodes": 10115,
+   "edges": 70966,
+   "testable_antigen_pairs": 6,
+   "antigen_pair_edges": 0,
+   "edges_detail": [],
+   "gated_present": 58,
+   "gated_n": 99,
+   "bg_present": 28,
+   "bg_n": 98,
+   "presence_fisher_or": 3.5365853658536586,
+   "presence_fisher_p": 2.7958524932068268e-05,
+   "gated_degree_median": 13.0,
+   "bg_degree_median": 8.5,
+   "degree_mw_p": 0.6280892053263285
+  }
+ },
+ "H3_reproducibility_concordance": {
+  "edges_293T_universe": 20,
+  "edges_HCT116_universe": 24,
+  "edges_both": 6,
+  "edges_either": 38,
+  "cross_network_jaccard": 0.15789473684210525,
+  "intact_universe_edges": 154,
+  "bioplex_and_intact": 38,
+  "bioplex_only": 0,
+  "intact_only": 116
+ },
+ "and_gate_presence": {
+  "CA9": {
+   "293T": false,
+   "HCT116": false
+  },
+  "CA12": {
+   "293T": true,
+   "HCT116": true
+  },
+  "CLDN18": {
+   "293T": true,
+   "HCT116": false
+  },
+  "CLDN6": {
+   "293T": false,
+   "HCT116": false
+  },
+  "MSLN": {
+   "293T": true,
+   "HCT116": true
+  },
+  "PSCA": {
+   "293T": true,
+   "HCT116": true
+  },
+  "SLC39A6": {
+   "293T": true,
+   "HCT116": true
+  }
+ }
+}
