@@ -1,0 +1,171 @@
+{
+ "tool": "IntAct (EBI PSICQUIC REST, mitab tab25 + count)",
+ "n_genes_with_accession": 205,
+ "n_genes_total": 205,
+ "physical_mi_types": [
+  "MI:0407",
+  "MI:0914",
+  "MI:0915",
+  "MI:2364"
+ ],
+ "type_distribution_raw_rows": {
+  "MI:0914": 11774,
+  "MI:0915": 7771,
+  "MI:0407": 2734,
+  "MI:2364": 1876,
+  "MI:0403": 81,
+  "MI:0203": 28,
+  "MI:0217": 27,
+  "MI:0220": 5,
+  "MI:0570": 2
+ },
+ "gates": {
+  "G1_erbb2_canonical_partners": {
+   "pass": true,
+   "egfr": true,
+   "erbb3": true,
+   "detail": "ERBB2 partners include EGFR+ERBB3"
+  },
+  "G2_count_mitab_consistency": {
+   "pass": true,
+   "per_gene": {
+    "CA9": {
+     "count": 15,
+     "mitab_rows": 15,
+     "consistent": true
+    },
+    "CA12": {
+     "count": 12,
+     "mitab_rows": 12,
+     "consistent": true
+    },
+    "CLDN18": {
+     "count": 109,
+     "mitab_rows": 109,
+     "consistent": true
+    },
+    "CLDN6": {
+     "count": 20,
+     "mitab_rows": 20,
+     "consistent": true
+    },
+    "MSLN": {
+     "count": 27,
+     "mitab_rows": 27,
+     "consistent": true
+    },
+    "PSCA": {
+     "count": 103,
+     "mitab_rows": 103,
+     "consistent": true
+    },
+    "SLC39A6": {
+     "count": 50,
+     "mitab_rows": 50,
+     "consistent": true
+    },
+    "CD19": {
+     "count": 13,
+     "mitab_rows": 13,
+     "consistent": true
+    },
+    "ERBB2": {
+     "count": 1052,
+     "mitab_rows": 1052,
+     "consistent": true
+    },
+    "FOLR1": {
+     "count": 18,
+     "mitab_rows": 18,
+     "consistent": true
+    },
+    "TNFRSF17": {
+     "count": 34,
+     "mitab_rows": 34,
+     "consistent": true
+    },
+    "POLR2A": {
+     "count": 228,
+     "mitab_rows": 228,
+     "consistent": true
+    },
+    "RPS3": {
+     "count": 838,
+     "mitab_rows": 838,
+     "consistent": true
+    },
+    "PCNA": {
+     "count": 306,
+     "mitab_rows": 306,
+     "consistent": true
+    },
+    "PSMA1": {
+     "count": 905,
+     "mitab_rows": 905,
+     "consistent": true
+    }
+   }
+  },
+  "G3_controls_nonzero": {
+   "pass": true,
+   "counts": {
+    "POLR2A": 228,
+    "RPS3": 838,
+    "PCNA": 306,
+    "PSMA1": 905
+   }
+  }
+ },
+ "all_gates_pass": true,
+ "H1_pairwise_antigen_complex": {
+  "antigen_pairs_total": 21,
+  "antigen_pairs_with_edge": [],
+  "antigen_pair_fraction": 0.0,
+  "edges_detail": {},
+  "perm_uniform_p": 1.0,
+  "perm_degmatched_p": 1.0,
+  "perm_n_matched": 20000
+ },
+ "H2_degree": {
+  "median_gated": 51,
+  "median_bg": 15,
+  "mean_gated": 165.52,
+  "mean_bg": 65.68,
+  "mw_p": 2e-06,
+  "coverage_gated": "96/99",
+  "coverage_bg": "73/98",
+  "coverage_fisher_or": 10.959,
+  "coverage_fisher_p": 3e-06,
+  "stratified": {
+   "single-pass": {
+    "n_gated": 25,
+    "n_bg": 22,
+    "med_gated": 48,
+    "med_bg": 25,
+    "p": 0.086
+   },
+   "multi-pass": {
+    "n_gated": 21,
+    "n_bg": 36,
+    "med_gated": 63,
+    "med_bg": 5,
+    "p": 0.0003
+   },
+   "GPI": {
+    "n_gated": 8,
+    "n_bg": 3,
+    "med_gated": 27,
+    "med_bg": 16,
+    "p": 0.7758
+   },
+   "unannotated": {
+    "n_gated": 45,
+    "n_bg": 37,
+    "med_gated": 51,
+    "med_bg": 34,
+    "p": 0.0387
+   }
+  }
+ },
+ "n_universe_edges": 154
+}

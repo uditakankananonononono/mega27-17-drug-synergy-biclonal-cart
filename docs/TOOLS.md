@@ -31,7 +31,8 @@
 32. ClinicalTrials.gov API v2 (clinicaltrials.gov/api/v2/studies; AREA[InterventionName] token + oncology-condition strict tier, broad full-text tier, curated alias tier) - clinical-development landscape audit of all 205 genes with per-gene acronym-collision curation (43 inspected, 22 collision/biomarker; results/clintrials_audit.json)
 33. GlyGen API (api.glygen.org/protein/detail; glycosylation site records: reported N/O-linked, O-GlcNAcylation subtype, GlyTouCan structures) - glycan-shielding audit of all 205 genes with O-GlcNAc exclusion calibrated on intracellular controls (results/glygen_audit.json)
 34. Human Protein Atlas per-gene TSV API (proteinatlas.org/<ENSG>.tsv; protein-class membrane prediction, IF subcellular main/additional location, secretome, reliability tiers) - surface-exposure audit of all 205 genes with two-tier calibration gate and topology-stratified control (results/hpa_audit.json)
-Count: 34 (35 raw entries minus pytest infrastructure). Planned honest additions: DrugBank, COSMIC.
+35. IntAct via EBI PSICQUIC REST (ebi.ac.uk/Tools/webservices/psicquic/intact; format=count + paginated MITAB tab25, human physical PSI-MI types MI:0407/0914/0915/2364) - curated physical-interaction audit of all 205 genes: 0/21 AND-gate antigen pairs co-complexed (permutation null), degree study-bias toward gated set (results/intact_audit.json)
+Count: 35 (36 raw entries minus pytest infrastructure). Planned honest additions: DrugBank, COSMIC.
 ## Datasets (accession-level)
 1. NCI-ALMANAC combination screen (1 dataset, 311,466 conditions)
 2. HPA rna_tissue_consensus.tsv
@@ -58,4 +59,5 @@ Count: 34 (35 raw entries minus pytest infrastructure). Planned honest additions
 23. ClinicalTrials.gov study records: 7,118 unique NCT-number-backed trial records individually fetched and used across the strict/oncology/broad/alias tiers (8,662 per-gene records before global dedup; data/clintrials/, results/clintrials_per_gene.csv)
 24. GlyGen protein-detail records: 178 accession-backed curated records individually fetched and used for shield-site/structure annotation, plus 4 UniProtKB reviewed control accessions newly fetched for the intracellular calibration controls (data/glygen/, results/glygen_per_gene.csv)
 25. Human Protein Atlas per-gene records: 203 accession-level records (one per Ensembl gene, resolved via HGNC symbol lookup) individually fetched and used for membrane/topology annotation (data/hpa/tsv/, results/hpa_per_gene.csv); OR2I1P has no Ensembl gene id and PCDHB18P has no HPA record (both pseudogenes, recorded as no-record)
-Count: 27,501 accession-level (27,298 prior + 203 HPA records); study-level 25 (manifest above). Bar cleared honestly; study-level manifest kept here for transparency.
+26. IntAct curated interaction records: 205 accession-level records (one per UniProt accession: PSICQUIC count + full paginated MITAB per gene) individually fetched and used for the co-complex and degree audit (data/intact/, results/intact_per_gene.csv, results/intact_edges.csv)
+Count: 27,706 accession-level (27,501 prior + 205 IntAct records); study-level 26 (manifest above). Bar cleared honestly; study-level manifest kept here for transparency.
