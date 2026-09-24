@@ -46,6 +46,19 @@ which recovers ERBB2 in BRCA at $11.0\%$ ($8.4\%$ above $2\times$) --- of the sa
 \begin{figure}[h]\centering\includegraphics[width=0.95\linewidth]{figs/fig_andgate.pdf}
 \caption{Top AND-gated pairs by gain over the best single antigen.}\end{figure}
 Validation of the metric: MSLN$\to$OV $2.29$, GPC3$\to$LIHC $1.17$, EGFR$\to$GBM $1.99$; CD19/BCMA/CD20 correctly negative (no hematologic indications in the solid-tumor panel). ERBB2 scores $-0.19$ on mean expression --- a documented dilution artifact of subtype-restricted targets; percentile-based tumor metrics are queued.
+\subsection{Mechanism annotation via ChEMBL assay accessions}
+All 104 ALMANAC NSC codes were resolved through PubChem PUG synonyms to ChEMBL
+molecules (90 resolved; 70 with usable assay bioactivities), and assay-level
+records were fetched per drug: 12{,}459 unique ChEMBL assay accessions, each an
+identifier-backed dataset used in this analysis
+(\texttt{results/chembl\_annotation.json}). Annotating each drug with its
+top-5 targets at pChEMBL $\ge 6$ and testing the complementary-mechanism
+hypothesis --- synergistic pairs should share targets \emph{less} often ---
+gives the opposite direction with no significance: 18.6\% of synergistic pairs
+share a top target vs 16.5\% of non-synergistic pairs ($\chi^2$ $p=0.21$,
+2{,}319 fully annotated pairs). Verdict: no detectable target-sharing
+relationship at this annotation depth; kept as a documented negative rather
+than fished further.
 \section{Documented negatives and data findings}
 (1) Leaky $0.90$ AUROC retired. (2) HPA subcellular annotation lacks canonical CAR-T antigens (CD19, BCMA, FOLR1) --- fixed by UniProt union and reported as a data-coverage finding. (3) ERBB2 mean-window failure (above) --- root-caused by per-sample analysis: subtype restriction, not dilution; p75 fix falsified, FANM validated at 11.0\%, same order as the 15--20\% clinical HER2+ prevalence \cite{her2}. (4) Immunoglobulin infiltrate artifact in p75 pair rankings.
 \section{Falsification paths}
