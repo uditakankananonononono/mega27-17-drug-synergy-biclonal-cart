@@ -1,0 +1,13 @@
+{
+ "gene": "ERBB2",
+ "cancer": "BRCA",
+ "normal_max_nTPM": 99.5,
+ "n_samples": 1075,
+ "frac_above_normal_max": 0.1098,
+ "frac_above_2x_normal_max": 0.0837,
+ "p50": 34.9025,
+ "p75": 55.120400000000004,
+ "p90": 136.0891600000001,
+ "p95": 560.4401199999998,
+ "max": 1668.3526
+}
