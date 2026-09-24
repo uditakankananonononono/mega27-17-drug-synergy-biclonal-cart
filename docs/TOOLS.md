@@ -11,7 +11,8 @@
 14. ChEMBL API (assay-level bioactivities per drug)
 15. GTEx Portal API v2 (gtex_v8 per-sample TPM, 54 tissues, 17,382 samples aggregated per gene) - off-tumor normal-tissue safety check for gated targets
 16. DGIdb v5 GraphQL API - druggability annotation of gated targets (193 ERBB2 control interactions; CLDN6 zero-engagement finding)
-Count: 16. Planned honest additions: DepMap, GDSC, DrugBank, COSMIC, TCGA per-cancer RNA.
+17. GDSC release 8.5 screened-compounds list (Sanger cancerrxgene) - pathway annotation; cross-pathway pairs dominate synergy (2.53% vs 6.64%, p=2.1e-35; results/gdsc_pathway.json)
+Count: 17. Planned honest additions: DepMap, DrugBank, COSMIC, TCGA per-cancer RNA.
 ## Datasets (accession-level)
 1. NCI-ALMANAC combination screen (1 dataset, 311,466 conditions)
 2. HPA rna_tissue_consensus.tsv

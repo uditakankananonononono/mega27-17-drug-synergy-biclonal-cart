@@ -100,9 +100,32 @@ interactions, marking it as both the cleanest off-tumor profile
 (GTEx, above) and the least therapeutically engaged target in the
 panel --- the highest-value open opportunity in the candidate set.
 
+
+\subsection{Pathway-level synergy structure: GDSC release 8.5}
+ALMANAC drugs were mapped to the Genomics of Drug Sensitivity in Cancer
+(GDSC) screened-compounds list (release 8.5, 621 compounds with curated
+TARGET and TARGET\_PATHWAY fields) by case-insensitive name/synonym match
+against the committed PubChem synonym cache: 36 of 90 named ALMANAC drugs
+matched, giving 36{,}641 both-matched pairs
+(\texttt{results/gdsc\_pathway.json}). Synergy (MAXSCORE $\ge 50$) is
+markedly \emph{less} frequent when both drugs share a GDSC pathway:
+126/4{,}976 same-pathway pairs (2.53\%) versus 2{,}101/31{,}665
+cross-pathway pairs (6.64\%); Fisher odds 0.366, $p = 2.1\times10^{-35}$.
+Cross-pathway targeting therefore dominates the synergy signal at pathway
+granularity --- a drug-repositioning prior for the biclonal design
+(drug--CAR combinations should span pathways). Two honest caveats: the
+matched set is biased toward annotated oncology drugs, and synergy calls
+rest on MAXSCORE (MEANSCORE $\ge 50$ is nearly empty in both classes:
+0 vs 20 pairs, $p=0.099$), so single-test maxima drive the effect. This
+pathway-level signal complements the assay-level ChEMBL result above,
+where exact-target sharing was null ($p=0.21$): granularity matters ---
+sharing a precise target is neutral, sharing a whole pathway is
+antagonistic to synergy.
+
 \section{Falsification paths}
 Synergy: published MatchMaker/DeepSynergy numbers verified (see Results) --- splits differ, no SOTA claim made; a same-split rerun on DrugComb is the remaining path to a direct comparison. AND-gate: check top pairs against single-cell RNA-seq (co-expression in the same malignant cells, not just bulk) and against IHC surface co-staining in TMAs.
 \begin{thebibliography}{9}
+\bibitem[Iorio et al.(2016)]{gdsc} Iorio F, et al. A landscape of pharmacogenomic interactions in cancer (GDSC). \emph{Cell} 2016; release 8.5 compound annotation, Sanger/GDSC.
 \bibitem[Cannon et al.(2024)]{dgidb} Cannon D, et al. DGIdb 5.0. \emph{Nucleic Acids Res} 2024.
 \bibitem[Holbeck et al.(2017)]{a} Holbeck SL, et al. The NCI-ALMANAC. \emph{Cancer Res} 2017.
 \bibitem[Uhl\'en et al.(2015)]{h} Uhl\'en M, et al. Tissue-based map of the human proteome (HPA). \emph{Science} 2015.

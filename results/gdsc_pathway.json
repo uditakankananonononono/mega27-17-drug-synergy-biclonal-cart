@@ -1,0 +1,148 @@
+{
+ "source": "GDSC release 8.5 screened_compounds_rel_8.5.csv (cog.sanger.ac.uk/cancerrxgene)",
+ "n_gdsc_compounds": 621,
+ "n_almanac_drugs_with_names": 90,
+ "n_almanac_drugs_matched": 36,
+ "matched_nscs": [
+  "740",
+  "3053",
+  "45388",
+  "102816",
+  "118218",
+  "122758",
+  "122819",
+  "125066",
+  "125973",
+  "141540",
+  "180973",
+  "226080",
+  "256942",
+  "279836",
+  "362856",
+  "608210",
+  "609699",
+  "628503",
+  "673596",
+  "681239",
+  "686673",
+  "701852",
+  "715055",
+  "718781",
+  "719276",
+  "721517",
+  "732517",
+  "743414",
+  "745750",
+  "747599",
+  "747971",
+  "747972",
+  "750690",
+  "754143",
+  "755986",
+  "757441"
+ ],
+ "n_pairs_both_matched": 36641,
+ "tests": [
+  {
+   "threshold": 50,
+   "score": "MAXSCORE",
+   "same_pathway": {
+    "n": 4976,
+    "synergistic": 126,
+    "rate": 0.0253
+   },
+   "diff_pathway": {
+    "n": 31665,
+    "synergistic": 2101,
+    "rate": 0.0664
+   },
+   "fisher_odds": 0.3656,
+   "p": 2.06e-35
+  },
+  {
+   "threshold": 50,
+   "score": "MEANSCORE",
+   "same_pathway": {
+    "n": 4976,
+    "synergistic": 0,
+    "rate": 0.0
+   },
+   "diff_pathway": {
+    "n": 31665,
+    "synergistic": 20,
+    "rate": 0.0006
+   },
+   "fisher_odds": 0.0,
+   "p": 0.0985
+  }
+ ],
+ "pairs_sharing_exact_target": 460,
+ "per_pathway": [
+  {
+   "pathway": "DNA replication",
+   "n_drug_sides": 22230,
+   "synergistic_sides": 508,
+   "rate": 0.0229
+  },
+  {
+   "pathway": "Other",
+   "n_drug_sides": 12327,
+   "synergistic_sides": 794,
+   "rate": 0.0644
+  },
+  {
+   "pathway": "RTK signaling",
+   "n_drug_sides": 10295,
+   "synergistic_sides": 516,
+   "rate": 0.0501
+  },
+  {
+   "pathway": "Mitosis",
+   "n_drug_sides": 6005,
+   "synergistic_sides": 1073,
+   "rate": 0.1787
+  },
+  {
+   "pathway": "Hormone-related",
+   "n_drug_sides": 4222,
+   "synergistic_sides": 358,
+   "rate": 0.0848
+  },
+  {
+   "pathway": "EGFR signaling",
+   "n_drug_sides": 4126,
+   "synergistic_sides": 259,
+   "rate": 0.0628
+  },
+  {
+   "pathway": "Protein stability and degradation",
+   "n_drug_sides": 3989,
+   "synergistic_sides": 170,
+   "rate": 0.0426
+  },
+  {
+   "pathway": "Chromatin histone acetylation",
+   "n_drug_sides": 3986,
+   "synergistic_sides": 255,
+   "rate": 0.064
+  },
+  {
+   "pathway": "PI3K/MTOR signaling",
+   "n_drug_sides": 2078,
+   "synergistic_sides": 154,
+   "rate": 0.0741
+  },
+  {
+   "pathway": "Other, kinases",
+   "n_drug_sides": 2015,
+   "synergistic_sides": 214,
+   "rate": 0.1062
+  },
+  {
+   "pathway": "ABL signaling",
+   "n_drug_sides": 2009,
+   "synergistic_sides": 153,
+   "rate": 0.0762
+  }
+ ]
+}
