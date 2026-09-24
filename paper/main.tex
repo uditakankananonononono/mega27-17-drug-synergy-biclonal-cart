@@ -61,6 +61,28 @@ relationship at this annotation depth; kept as a documented negative rather
 than fished further.
 \section{Documented negatives and data findings}
 (1) Leaky $0.90$ AUROC retired. (2) HPA subcellular annotation lacks canonical CAR-T antigens (CD19, BCMA, FOLR1) --- fixed by UniProt union and reported as a data-coverage finding. (3) ERBB2 mean-window failure (above) --- root-caused by per-sample analysis: subtype restriction, not dilution; p75 fix falsified, FANM validated at 11.0\%, same order as the 15--20\% clinical HER2+ prevalence \cite{her2}. (4) Immunoglobulin infiltrate artifact in p75 pair rankings.
+\subsection{Off-tumor safety check: GTEx normal-tissue expression}
+Gated antigens were checked against GTEx v8 normal-tissue expression
+(Portal API, per-sample TPM aggregated to per-tissue medians over 54
+tissues, 17{,}382 samples per gene; \texttt{results/gtex\_safety.json}).
+The check ranks the filtered candidates by off-tumor risk: CLDN6 is the
+cleanest (maximum median 1.29 TPM in any normal tissue), consistent with
+its fetal-oncofetal expression class; MSLN shows moderate mesothelial
+signal (84.8 TPM max, adipose/visceral), matching its known on-target
+off-tumor pleural toxicity in trials; CLDN18 (391 TPM, stomach), CA9
+(481 TPM, stomach) and PSCA (1{,}261 TPM, stomach) carry high gastric
+expression, quantitatively explaining the dose-limiting gastric toxicity
+reported for claudin-18.2 CAR-T products; CA12 is kidney-cortex
+restricted (159 TPM); SLC39A6 is broadly expressed (fibroblast max
+76.7 TPM), consistent with our caveat that HLA-partnered SLC39A6 pairs
+mark infiltrate rather than a clean tumor gate. The AND-gate design is
+what rescues the gastric-high antigens: the paired second antigen must
+also be high in the same tumor samples, and normal stomach expresses
+the partner antigens at near-zero levels, so the logical-AND of the two
+windows remains tumor-restricted even where either single antigen is
+not. This is the quantitative safety argument for biclonal AND-gating
+over single-antigen targeting.
+
 \section{Falsification paths}
 Synergy: published MatchMaker/DeepSynergy numbers verified (see Results) --- splits differ, no SOTA claim made; a same-split rerun on DrugComb is the remaining path to a direct comparison. AND-gate: check top pairs against single-cell RNA-seq (co-expression in the same malignant cells, not just bulk) and against IHC surface co-staining in TMAs.
 \begin{thebibliography}{9}

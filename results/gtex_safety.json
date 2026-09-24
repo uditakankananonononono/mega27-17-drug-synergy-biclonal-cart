@@ -1,0 +1,233 @@
+{
+ "CLDN18": {
+  "gencode": "ENSG00000066405.12",
+  "n_tissues": 54,
+  "n_samples": 17382,
+  "max_median_tpm": 391.2,
+  "top_tissues": [
+   [
+    "Stomach",
+    391.2
+   ],
+   [
+    "Lung",
+    140.5
+   ],
+   [
+    "Testis",
+    2.296
+   ],
+   [
+    "Ovary",
+    1.065
+   ],
+   [
+    "Uterus",
+    1.0465
+   ],
+   [
+    "Cervix_Ectocervix",
+    1.041
+   ]
+  ],
+  "global_median": 0.4059
+ },
+ "MSLN": {
+  "gencode": "ENSG00000102854.15",
+  "n_tissues": 54,
+  "n_samples": 17382,
+  "max_median_tpm": 84.78,
+  "top_tissues": [
+   [
+    "Adipose_Visceral_Omentum",
+    84.78
+   ],
+   [
+    "Lung",
+    78.275
+   ],
+   [
+    "Fallopian_Tube",
+    39.32
+   ],
+   [
+    "Minor_Salivary_Gland",
+    25.72
+   ],
+   [
+    "Uterus",
+    7.657
+   ],
+   [
+    "Kidney_Cortex",
+    2.984
+   ]
+  ],
+  "global_median": 0.4318
+ },
+ "CA9": {
+  "gencode": "ENSG00000107159.12",
+  "n_tissues": 54,
+  "n_samples": 17382,
+  "max_median_tpm": 481.0,
+  "top_tissues": [
+   [
+    "Stomach",
+    481.0
+   ],
+   [
+    "Testis",
+    56.33
+   ],
+   [
+    "Brain_Cerebellar_Hemisphere",
+    43.3
+   ],
+   [
+    "Brain_Cerebellum",
+    41.44
+   ],
+   [
+    "Skin_Not_Sun_Exposed_Suprapubic",
+    11.665
+   ],
+   [
+    "Skin_Sun_Exposed_Lower_leg",
+    7.298
+   ]
+  ],
+  "global_median": 0.8702
+ },
+ "CA12": {
+  "gencode": "ENSG00000074410.13",
+  "n_tissues": 54,
+  "n_samples": 17382,
+  "max_median_tpm": 158.7,
+  "top_tissues": [
+   [
+    "Kidney_Cortex",
+    158.7
+   ],
+   [
+    "Skin_Not_Sun_Exposed_Suprapubic",
+    156.6
+   ],
+   [
+    "Skin_Sun_Exposed_Lower_leg",
+    123.4
+   ],
+   [
+    "Kidney_Medulla",
+    105.50999999999999
+   ],
+   [
+    "Esophagus_Mucosa",
+    90.37
+   ],
+   [
+    "Vagina",
+    75.755
+   ]
+  ],
+  "global_median": 4.534
+ },
+ "CLDN6": {
+  "gencode": "ENSG00000184697.6",
+  "n_tissues": 54,
+  "n_samples": 17382,
+  "max_median_tpm": 1.294,
+  "top_tissues": [
+   [
+    "Brain_Cerebellum",
+    1.294
+   ],
+   [
+    "Brain_Cerebellar_Hemisphere",
+    1.245
+   ],
+   [
+    "Testis",
+    1.136
+   ],
+   [
+    "Brain_Putamen_basal_ganglia",
+    0.7545
+   ],
+   [
+    "Brain_Caudate_basal_ganglia",
+    0.65875
+   ],
+   [
+    "Pituitary",
+    0.4426
+   ]
+  ],
+  "global_median": 0.043840000000000004
+ },
+ "PSCA": {
+  "gencode": "ENSG00000167653.4",
+  "n_tissues": 54,
+  "n_samples": 17382,
+  "max_median_tpm": 1261.0,
+  "top_tissues": [
+   [
+    "Stomach",
+    1261.0
+   ],
+   [
+    "Esophagus_Mucosa",
+    165.1
+   ],
+   [
+    "Bladder",
+    124.2
+   ],
+   [
+    "Vagina",
+    74.965
+   ],
+   [
+    "Prostate",
+    63.09
+   ],
+   [
+    "Skin_Sun_Exposed_Lower_leg",
+    9.666
+   ]
+  ],
+  "global_median": 0.4706
+ },
+ "SLC39A6": {
+  "gencode": "ENSG00000141424.12",
+  "n_tissues": 54,
+  "n_samples": 17382,
+  "max_median_tpm": 76.72999999999999,
+  "top_tissues": [
+   [
+    "Cells_Cultured_fibroblasts",
+    76.72999999999999
+   ],
+   [
+    "Prostate",
+    63.54
+   ],
+   [
+    "Skin_Not_Sun_Exposed_Suprapubic",
+    59.775000000000006
+   ],
+   [
+    "Ovary",
+    59.644999999999996
+   ],
+   [
+    "Skin_Sun_Exposed_Lower_leg",
+    58.69
+   ],
+   [
+    "Fallopian_Tube",
+    52.81
+   ]
+  ],
+  "global_median": 24.5
+ }
+}
