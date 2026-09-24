@@ -29,7 +29,8 @@
 30. HGNC REST API (rest.genenames.org; fetch/symbol + search/gene_group_id) - locus types + gene-group (paralog) redundancy for the same audit
 31. Reactome ContentService (reactome.org/ContentService data/mapping/UniProt) - lowest-level pathway membership per gene for the same audit
 32. ClinicalTrials.gov API v2 (clinicaltrials.gov/api/v2/studies; AREA[InterventionName] token + oncology-condition strict tier, broad full-text tier, curated alias tier) - clinical-development landscape audit of all 205 genes with per-gene acronym-collision curation (43 inspected, 22 collision/biomarker; results/clintrials_audit.json)
-Count: 32 (33 raw entries minus pytest infrastructure). Planned honest additions: DrugBank, COSMIC.
+33. GlyGen API (api.glygen.org/protein/detail; glycosylation site records: reported N/O-linked, O-GlcNAcylation subtype, GlyTouCan structures) - glycan-shielding audit of all 205 genes with O-GlcNAc exclusion calibrated on intracellular controls (results/glygen_audit.json)
+Count: 33 (34 raw entries minus pytest infrastructure). Planned honest additions: DrugBank, COSMIC.
 ## Datasets (accession-level)
 1. NCI-ALMANAC combination screen (1 dataset, 311,466 conditions)
 2. HPA rna_tissue_consensus.tsv
@@ -54,4 +55,5 @@ Count: 32 (33 raw entries minus pytest infrastructure). Planned honest additions
 21. HGNC gene-group records: 155 group-ID-backed records individually fetched and used for paralog-group sizes (data/constraint/hgncgroup_*.json)
 22. Reactome UniProt-pathway mapping records: 162 accession-backed lowest-level pathway mappings individually fetched and used (592 unique R-HSA pathways; data/constraint/reactome_*.json)
 23. ClinicalTrials.gov study records: 7,118 unique NCT-number-backed trial records individually fetched and used across the strict/oncology/broad/alias tiers (8,662 per-gene records before global dedup; data/clintrials/, results/clintrials_per_gene.csv)
-Count: 27,116 accession-level (19,998 prior + 7,118 unique ClinicalTrials.gov NCT records); study-level 23 (manifest above). Bar cleared honestly; study-level manifest kept here for transparency.
+24. GlyGen protein-detail records: 178 accession-backed curated records individually fetched and used for shield-site/structure annotation, plus 4 UniProtKB reviewed control accessions newly fetched for the intracellular calibration controls (data/glygen/, results/glygen_per_gene.csv)
+Count: 27,298 accession-level (27,116 prior + 178 GlyGen records + 4 UniProtKB control accessions); study-level 24 (manifest above). Bar cleared honestly; study-level manifest kept here for transparency.

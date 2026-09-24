@@ -1,0 +1,272 @@
+{
+ "n_genes": 205,
+ "n_record_present": 178,
+ "genes_without_record": [
+  "AIF1",
+  "ATP6V1B1",
+  "CHIC1",
+  "CLDN2",
+  "CLDN3",
+  "CLDN4",
+  "CX3CR1",
+  "CYS1",
+  "ERRFI1",
+  "FABP3",
+  "GJA5",
+  "GJB1",
+  "GJB2",
+  "GPR15",
+  "IGKV1-12",
+  "IGLV1-40",
+  "IGLV11-55",
+  "MAL",
+  "MLC1",
+  "PERP",
+  "PI3",
+  "PRAME",
+  "PRICKLE3",
+  "RAPSN",
+  "TBC1D3L",
+  "TRBV7-1",
+  "TULP3"
+ ],
+ "surface_stratum": {
+  "n_gated": 54,
+  "n_background": 61,
+  "gated_with_shield": 40,
+  "background_with_shield": 31,
+  "fisher_odds": 2.765,
+  "fisher_p": 0.012757791494959723,
+  "mw_U": 2338.0,
+  "mw_p": 6.814114728731498e-05,
+  "gated_median_density": 0.554,
+  "background_median_density": 0.067
+ },
+ "topology_strata": {
+  "single-pass": {
+   "n_gated": 25,
+   "gated_with": 24,
+   "n_background": 22,
+   "background_with": 18,
+   "fisher_p": 0.17102309805018326
+  },
+  "multi-pass": {
+   "n_gated": 21,
+   "gated_with": 11,
+   "n_background": 36,
+   "background_with": 10,
+   "fisher_p": 0.08913039088175191
+  },
+  "GPI": {
+   "n_gated": 8,
+   "gated_with": 5,
+   "n_background": 3,
+   "background_with": 3,
+   "fisher_p": 0.49090909090909096
+  }
+ },
+ "ectodomain_density": {
+  "n_gated": 53,
+  "n_background": 62,
+  "gated_median": 0.8771929824561403,
+  "background_median": 0.15174506828528073,
+  "mw_U": 2235.0,
+  "mw_p": 0.0006821544035495248
+ },
+ "calibration": {
+  "positive_with_2plus_shield": 3,
+  "of": 3,
+  "negative_with_oglcnac": 4,
+  "neg_of": 4,
+  "neg_max_density": 0.383,
+  "pos_min_density": 0.54,
+  "density_ordering": true,
+  "gate_pass": true
+ },
+ "and_gate": [
+  {
+   "gene": "CA12",
+   "group": "gated",
+   "topology": "single-pass",
+   "record_present": true,
+   "seq_len": 354,
+   "n_shield_sites": 2,
+   "n_shield_structures": 1,
+   "n_oglcnac_sites": 0,
+   "n_predicted_sites": 1,
+   "shield_per_100aa": 0.565
+  },
+  {
+   "gene": "CA9",
+   "group": "gated",
+   "topology": "single-pass",
+   "record_present": true,
+   "seq_len": 459,
+   "n_shield_sites": 2,
+   "n_shield_structures": 3,
+   "n_oglcnac_sites": 1,
+   "n_predicted_sites": 0,
+   "shield_per_100aa": 0.436
+  },
+  {
+   "gene": "CLDN18",
+   "group": "gated",
+   "topology": "multi-pass",
+   "record_present": true,
+   "seq_len": 261,
+   "n_shield_sites": 1,
+   "n_shield_structures": 2,
+   "n_oglcnac_sites": 0,
+   "n_predicted_sites": 0,
+   "shield_per_100aa": 0.383
+  },
+  {
+   "gene": "CLDN6",
+   "group": "gated",
+   "topology": "multi-pass",
+   "record_present": true,
+   "seq_len": 220,
+   "n_shield_sites": 4,
+   "n_shield_structures": 1,
+   "n_oglcnac_sites": 0,
+   "n_predicted_sites": 0,
+   "shield_per_100aa": 1.818
+  },
+  {
+   "gene": "MSLN",
+   "group": "gated",
+   "topology": "GPI",
+   "record_present": true,
+   "seq_len": 622,
+   "n_shield_sites": 4,
+   "n_shield_structures": 30,
+   "n_oglcnac_sites": 0,
+   "n_predicted_sites": 1,
+   "shield_per_100aa": 0.643
+  },
+  {
+   "gene": "PSCA",
+   "group": "gated",
+   "topology": "GPI",
+   "record_present": true,
+   "seq_len": 114,
+   "n_shield_sites": 0,
+   "n_shield_structures": 0,
+   "n_oglcnac_sites": 0,
+   "n_predicted_sites": 1,
+   "shield_per_100aa": 0.0
+  },
+  {
+   "gene": "SLC39A6",
+   "group": "gated",
+   "topology": "multi-pass",
+   "record_present": true,
+   "seq_len": 755,
+   "n_shield_sites": 22,
+   "n_shield_structures": 18,
+   "n_oglcnac_sites": 1,
+   "n_predicted_sites": 1,
+   "shield_per_100aa": 2.914
+  }
+ ],
+ "references": [
+  {
+   "gene": "CD19",
+   "group": "references",
+   "topology": "single-pass",
+   "record_present": true,
+   "seq_len": 556,
+   "n_shield_sites": 3,
+   "n_shield_structures": 0,
+   "n_oglcnac_sites": 0,
+   "n_predicted_sites": 3,
+   "shield_per_100aa": 0.54
+  },
+  {
+   "gene": "ERBB2",
+   "group": "references",
+   "topology": "single-pass",
+   "record_present": true,
+   "seq_len": 1255,
+   "n_shield_sites": 9,
+   "n_shield_structures": 27,
+   "n_oglcnac_sites": 0,
+   "n_predicted_sites": 1,
+   "shield_per_100aa": 0.717
+  },
+  {
+   "gene": "FOLR1",
+   "group": "references",
+   "topology": "GPI",
+   "record_present": true,
+   "seq_len": 257,
+   "n_shield_sites": 3,
+   "n_shield_structures": 67,
+   "n_oglcnac_sites": 0,
+   "n_predicted_sites": 1,
+   "shield_per_100aa": 1.167
+  },
+  {
+   "gene": "TNFRSF17",
+   "group": "references",
+   "topology": "single-pass",
+   "record_present": true,
+   "seq_len": 184,
+   "n_shield_sites": 1,
+   "n_shield_structures": 13,
+   "n_oglcnac_sites": 0,
+   "n_predicted_sites": 0,
+   "shield_per_100aa": 0.543
+  }
+ ],
+ "intracellular_controls": [
+  {
+   "gene": "POLR2A",
+   "group": "positive_controls",
+   "topology": "unannotated",
+   "record_present": true,
+   "seq_len": 1970,
+   "n_shield_sites": 1,
+   "n_shield_structures": 1,
+   "n_oglcnac_sites": 9,
+   "n_predicted_sites": 4,
+   "shield_per_100aa": 0.051
+  },
+  {
+   "gene": "RPS3",
+   "group": "positive_controls",
+   "topology": "unannotated",
+   "record_present": true,
+   "seq_len": 243,
+   "n_shield_sites": 0,
+   "n_shield_structures": 0,
+   "n_oglcnac_sites": 2,
+   "n_predicted_sites": 0,
+   "shield_per_100aa": 0.0
+  },
+  {
+   "gene": "PCNA",
+   "group": "positive_controls",
+   "topology": "unannotated",
+   "record_present": true,
+   "seq_len": 261,
+   "n_shield_sites": 1,
+   "n_shield_structures": 1,
+   "n_oglcnac_sites": 1,
+   "n_predicted_sites": 0,
+   "shield_per_100aa": 0.383
+  },
+  {
+   "gene": "PSMA1",
+   "group": "positive_controls",
+   "topology": "unannotated",
+   "record_present": true,
+   "seq_len": 263,
+   "n_shield_sites": 1,
+   "n_shield_structures": 1,
+   "n_oglcnac_sites": 1,
+   "n_predicted_sites": 0,
+   "shield_per_100aa": 0.38
+  }
+ ]
+}
