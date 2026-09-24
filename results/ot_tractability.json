@@ -1,0 +1,1371 @@
+{
+ "gated": {
+  "n": 99,
+  "clinical_ab": 20,
+  "rows": {
+   "ENSG00000007952": {
+    "symbol": "NOX1",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000015413": {
+    "symbol": "DPEP1",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000019582": {
+    "symbol": "CD74",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Advanced Clinical",
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000026025": {
+    "symbol": "VIM",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Advanced Clinical",
+     "GO CC med conf",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000046653": {
+    "symbol": "GPM6B",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC med conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000066405": {
+    "symbol": "CLDN18",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Advanced Clinical",
+     "GO CC med conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000074410": {
+    "symbol": "CA12",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000079112": {
+    "symbol": "CDH17",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000079215": {
+    "symbol": "SLC1A3",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000079557": {
+    "symbol": "AFM",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000080166": {
+    "symbol": "DCT",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM"
+    ]
+   },
+   "ENSG00000086548": {
+    "symbol": "CEACAM6",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000096384": {
+    "symbol": "HSP90AB1",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000099812": {
+    "symbol": "MISP",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc"
+    ]
+   },
+   "ENSG00000100292": {
+    "symbol": "HMOX1",
+    "clinical_ab": false,
+    "ab_labels": [
+     "UniProt SigP or TMHMM"
+    ]
+   },
+   "ENSG00000100427": {
+    "symbol": "MLC1",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000102837": {
+    "symbol": "OLFM4",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000102854": {
+    "symbol": "MSLN",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Advanced Clinical",
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000105388": {
+    "symbol": "CEACAM5",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Approved Drug",
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000106211": {
+    "symbol": "HSPB1",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC med conf",
+     "Human Protein Atlas loc"
+    ]
+   },
+   "ENSG00000106278": {
+    "symbol": "PTPRZ1",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000107159": {
+    "symbol": "CA9",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Advanced Clinical",
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000110245": {
+    "symbol": "APOC3",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000111319": {
+    "symbol": "SCNN1A",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000111640": {
+    "symbol": "GAPDH",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc"
+    ]
+   },
+   "ENSG00000112378": {
+    "symbol": "PERP",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000116039": {
+    "symbol": "ATP6V1B1",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000118785": {
+    "symbol": "SPP1",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Advanced Clinical",
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000119888": {
+    "symbol": "EPCAM",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Advanced Clinical",
+     "GO CC med conf",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000121769": {
+    "symbol": "FABP3",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC med conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000123560": {
+    "symbol": "PLP1",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Advanced Clinical",
+     "GO CC med conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000124102": {
+    "symbol": "PI3",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000124564": {
+    "symbol": "SLC17A3",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000127324": {
+    "symbol": "TSPAN8",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000128283": {
+    "symbol": "CDC42EP1",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000129244": {
+    "symbol": "ATP1B2",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM"
+    ]
+   },
+   "ENSG00000135404": {
+    "symbol": "CD63",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000138109": {
+    "symbol": "CYP2C9",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000141424": {
+    "symbol": "SLC39A6",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc"
+    ]
+   },
+   "ENSG00000142089": {
+    "symbol": "IFITM3",
+    "clinical_ab": false,
+    "ab_labels": [
+     "UniProt SigP or TMHMM"
+    ]
+   },
+   "ENSG00000142484": {
+    "symbol": "TM4SF5",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000146648": {
+    "symbol": "EGFR",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000147003": {
+    "symbol": "CLTRN",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Advanced Clinical",
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000150625": {
+    "symbol": "GPM6A",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Approved Drug",
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000153395": {
+    "symbol": "LPCAT1",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC med conf",
+     "Human Protein Atlas loc"
+    ]
+   },
+   "ENSG00000154269": {
+    "symbol": "ENPP3",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000156508": {
+    "symbol": "EEF1A1",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Advanced Clinical",
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000157765": {
+    "symbol": "SLC34A2",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000160932": {
+    "symbol": "LY6E",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000161944": {
+    "symbol": "ASGR2",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc"
+    ]
+   },
+   "ENSG00000162493": {
+    "symbol": "PDPN",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000162692": {
+    "symbol": "VCAM1",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000162896": {
+    "symbol": "PIGR",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Advanced Clinical",
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000163220": {
+    "symbol": "S100A9",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Advanced Clinical",
+     "GO CC med conf",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000163581": {
+    "symbol": "SLC2A2",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC med conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000163993": {
+    "symbol": "S100P",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Advanced Clinical",
+     "GO CC med conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000165215": {
+    "symbol": "CLDN3",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000165376": {
+    "symbol": "CLDN2",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000166145": {
+    "symbol": "SPINT1",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000166165": {
+    "symbol": "CKB",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000166710": {
+    "symbol": "B2M",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM"
+    ]
+   },
+   "ENSG00000166825": {
+    "symbol": "ANPEP",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000167653": {
+    "symbol": "PSCA",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000167658": {
+    "symbol": "EEF2",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc"
+    ]
+   },
+   "ENSG00000167768": {
+    "symbol": "KRT1",
+    "clinical_ab": false,
+    "ab_labels": [
+     "UniProt SigP or TMHMM"
+    ]
+   },
+   "ENSG00000168509": {
+    "symbol": "HJV",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000169035": {
+    "symbol": "KLK7",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000169347": {
+    "symbol": "GP2",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Advanced Clinical",
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000169562": {
+    "symbol": "GJB1",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Approved Drug",
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000169903": {
+    "symbol": "TM4SF4",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC med conf",
+     "Human Protein Atlas loc"
+    ]
+   },
+   "ENSG00000171747": {
+    "symbol": "LGALS4",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000171885": {
+    "symbol": "AQP4",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Advanced Clinical",
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000172020": {
+    "symbol": "GAP43",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000173702": {
+    "symbol": "MUC13",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000173801": {
+    "symbol": "JUP",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc"
+    ]
+   },
+   "ENSG00000175063": {
+    "symbol": "UBE2C",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc"
+    ]
+   },
+   "ENSG00000184292": {
+    "symbol": "TACSTD2",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC med conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM"
+    ]
+   },
+   "ENSG00000184697": {
+    "symbol": "CLDN6",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000185686": {
+    "symbol": "PRAME",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000186340": {
+    "symbol": "THBS2",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM"
+    ]
+   },
+   "ENSG00000187758": {
+    "symbol": "ADH1A",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf"
+    ]
+   },
+   "ENSG00000187957": {
+    "symbol": "DNER",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000188257": {
+    "symbol": "PLA2G2A",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000189058": {
+    "symbol": "APOD",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000189143": {
+    "symbol": "CLDN4",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000196126": {
+    "symbol": "HLA-DRB1",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Advanced Clinical",
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000196616": {
+    "symbol": "ADH1B",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf"
+    ]
+   },
+   "ENSG00000197696": {
+    "symbol": "NMB",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000197956": {
+    "symbol": "S100A6",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt loc med conf"
+    ]
+   },
+   "ENSG00000198074": {
+    "symbol": "AKR1B10",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000198502": {
+    "symbol": "HLA-DRB5",
+    "clinical_ab": true,
+    "ab_labels": [
+     "Advanced Clinical",
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000204287": {
+    "symbol": "HLA-DRA",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000204525": {
+    "symbol": "HLA-C",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000206503": {
+    "symbol": "HLA-A",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000234745": {
+    "symbol": "HLA-B",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000237988": {
+    "symbol": "OR2I1P",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC med conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000240583": {
+    "symbol": "AQP1",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf",
+     "Human Protein Atlas loc",
+     "UniProt SigP or TMHMM",
+     "UniProt loc high conf"
+    ]
+   },
+   "ENSG00000248144": {
+    "symbol": "ADH1C",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC high conf"
+    ]
+   },
+   "ENSG00000272398": {
+    "symbol": "CD24",
+    "clinical_ab": false,
+    "ab_labels": [
+     "GO CC med conf",
+     "UniProt SigP or TMHMM",
+     "UniProt loc med conf"
+    ]
+   }
+  }
+ },
+ "background": {
+  "n": 98,
+  "clinical_ab": 19,
+  "unresolved_symbols": [
+   "OR9G9",
+   "TRBV6-9"
+  ],
+  "rows": {
+   "S1PR5": {
+    "ensembl": "ENSG00000180739",
+    "clinical_ab": false
+   },
+   "SLC6A19": {
+    "ensembl": "ENSG00000174358",
+    "clinical_ab": false
+   },
+   "C1QBP": {
+    "ensembl": "ENSG00000108561",
+    "clinical_ab": true
+   },
+   "NLGN3": {
+    "ensembl": "ENSG00000196338",
+    "clinical_ab": true
+   },
+   "TTYH2": {
+    "ensembl": "ENSG00000141540",
+    "clinical_ab": false
+   },
+   "SLC22A8": {
+    "ensembl": "ENSG00000149452",
+    "clinical_ab": true
+   },
+   "OR52P1": {
+    "ensembl": "ENSG00000181109",
+    "clinical_ab": false
+   },
+   "TRBV7-1": {
+    "ensembl": "ENSG00000211707",
+    "clinical_ab": false
+   },
+   "PRX": {
+    "ensembl": "ENSG00000105227",
+    "clinical_ab": false
+   },
+   "KLRG1": {
+    "ensembl": "ENSG00000139187",
+    "clinical_ab": false
+   },
+   "GJA5": {
+    "ensembl": "ENSG00000265107",
+    "clinical_ab": false
+   },
+   "OR2A14": {
+    "ensembl": "ENSG00000221938",
+    "clinical_ab": false
+   },
+   "GJB2": {
+    "ensembl": "ENSG00000165474",
+    "clinical_ab": false
+   },
+   "DCHS1": {
+    "ensembl": "ENSG00000166341",
+    "clinical_ab": false
+   },
+   "MYMK": {
+    "ensembl": "ENSG00000187616",
+    "clinical_ab": false
+   },
+   "GPC4": {
+    "ensembl": "ENSG00000076716",
+    "clinical_ab": false
+   },
+   "OR5P2": {
+    "ensembl": "ENSG00000183303",
+    "clinical_ab": false
+   },
+   "DLGAP1": {
+    "ensembl": "ENSG00000170579",
+    "clinical_ab": true
+   },
+   "CLCNKB": {
+    "ensembl": "ENSG00000184908",
+    "clinical_ab": true
+   },
+   "PCDHA10": {
+    "ensembl": "ENSG00000250120",
+    "clinical_ab": false
+   },
+   "TRBV12-4": {
+    "ensembl": "ENSG00000276953",
+    "clinical_ab": false
+   },
+   "DOCK4": {
+    "ensembl": "ENSG00000128512",
+    "clinical_ab": true
+   },
+   "PRICKLE3": {
+    "ensembl": "ENSG00000012211",
+    "clinical_ab": false
+   },
+   "SSTR3": {
+    "ensembl": "ENSG00000278195",
+    "clinical_ab": false
+   },
+   "OR8B12": {
+    "ensembl": "ENSG00000170953",
+    "clinical_ab": false
+   },
+   "JAML": {
+    "ensembl": "ENSG00000160593",
+    "clinical_ab": false
+   },
+   "TRBV7-4": {
+    "ensembl": "ENSG00000253409",
+    "clinical_ab": false
+   },
+   "TAS2R16": {
+    "ensembl": "ENSG00000128519",
+    "clinical_ab": true
+   },
+   "NOS3": {
+    "ensembl": "ENSG00000164867",
+    "clinical_ab": true
+   },
+   "CDC50B": {
+    "ensembl": "ENSG00000182107",
+    "clinical_ab": false
+   },
+   "AIF1": {
+    "ensembl": "ENSG00000204472",
+    "clinical_ab": true
+   },
+   "CYS1": {
+    "ensembl": "ENSG00000205795",
+    "clinical_ab": false
+   },
+   "SLC15A1": {
+    "ensembl": "ENSG00000088386",
+    "clinical_ab": false
+   },
+   "ABCB5": {
+    "ensembl": "ENSG00000004846",
+    "clinical_ab": false
+   },
+   "VNN1": {
+    "ensembl": "ENSG00000112299",
+    "clinical_ab": false
+   },
+   "PCDHB5": {
+    "ensembl": "ENSG00000113209",
+    "clinical_ab": false
+   },
+   "MMP16": {
+    "ensembl": "ENSG00000156103",
+    "clinical_ab": false
+   },
+   "PACSIN2": {
+    "ensembl": "ENSG00000100266",
+    "clinical_ab": false
+   },
+   "CDH12": {
+    "ensembl": "ENSG00000154162",
+    "clinical_ab": false
+   },
+   "IGLV11-55": {
+    "ensembl": "ENSG00000211641",
+    "clinical_ab": false
+   },
+   "LGR5": {
+    "ensembl": "ENSG00000139292",
+    "clinical_ab": false
+   },
+   "MC1R": {
+    "ensembl": "ENSG00000258839",
+    "clinical_ab": false
+   },
+   "GNA11": {
+    "ensembl": "ENSG00000088256",
+    "clinical_ab": true
+   },
+   "TGM1": {
+    "ensembl": "ENSG00000092295",
+    "clinical_ab": true
+   },
+   "CTTN": {
+    "ensembl": "ENSG00000085733",
+    "clinical_ab": false
+   },
+   "CLSTN3": {
+    "ensembl": "ENSG00000139182",
+    "clinical_ab": false
+   },
+   "UNC93A": {
+    "ensembl": "ENSG00000112494",
+    "clinical_ab": true
+   },
+   "EMCN": {
+    "ensembl": "ENSG00000164035",
+    "clinical_ab": false
+   },
+   "OR52E4": {
+    "ensembl": "ENSG00000180974",
+    "clinical_ab": false
+   },
+   "OR4A47": {
+    "ensembl": "ENSG00000237388",
+    "clinical_ab": false
+   },
+   "FFAR1": {
+    "ensembl": "ENSG00000126266",
+    "clinical_ab": false
+   },
+   "PCDHB18P": {
+    "ensembl": "ENSG00000146001",
+    "clinical_ab": false
+   },
+   "ITM2C": {
+    "ensembl": "ENSG00000135916",
+    "clinical_ab": true
+   },
+   "OR2T11": {
+    "ensembl": "ENSG00000279301",
+    "clinical_ab": true
+   },
+   "TBC1D3L": {
+    "ensembl": "ENSG00000274512",
+    "clinical_ab": false
+   },
+   "CX3CR1": {
+    "ensembl": "ENSG00000168329",
+    "clinical_ab": true
+   },
+   "S1PR3": {
+    "ensembl": "ENSG00000213694",
+    "clinical_ab": false
+   },
+   "OR8D4": {
+    "ensembl": "ENSG00000181518",
+    "clinical_ab": false
+   },
+   "MICA": {
+    "ensembl": "ENSG00000204520",
+    "clinical_ab": false
+   },
+   "OR3A1": {
+    "ensembl": "ENSG00000180090",
+    "clinical_ab": false
+   },
+   "IGKV1-12": {
+    "ensembl": "ENSG00000243290",
+    "clinical_ab": false
+   },
+   "IGKV6D-41": {
+    "ensembl": "ENSG00000211626",
+    "clinical_ab": false
+   },
+   "IGKV2-28": {
+    "ensembl": "ENSG00000244116",
+    "clinical_ab": false
+   },
+   "ATP7A": {
+    "ensembl": "ENSG00000165240",
+    "clinical_ab": false
+   },
+   "NOD1": {
+    "ensembl": "ENSG00000106100",
+    "clinical_ab": false
+   },
+   "CHIC1": {
+    "ensembl": "ENSG00000204116",
+    "clinical_ab": false
+   },
+   "CT83": {
+    "ensembl": "ENSG00000204019",
+    "clinical_ab": false
+   },
+   "FRMPD2": {
+    "ensembl": "ENSG00000170324",
+    "clinical_ab": true
+   },
+   "GPR15": {
+    "ensembl": "ENSG00000154165",
+    "clinical_ab": true
+   },
+   "BOC": {
+    "ensembl": "ENSG00000144857",
+    "clinical_ab": false
+   },
+   "CLSTN1": {
+    "ensembl": "ENSG00000171603",
+    "clinical_ab": false
+   },
+   "SEPTIN2": {
+    "ensembl": "ENSG00000168385",
+    "clinical_ab": true
+   },
+   "OR13C2": {
+    "ensembl": "ENSG00000276119",
+    "clinical_ab": false
+   },
+   "MAL": {
+    "ensembl": "ENSG00000172005",
+    "clinical_ab": false
+   },
+   "KIR2DL1": {
+    "ensembl": "ENSG00000125498",
+    "clinical_ab": false
+   },
+   "SLC5A9": {
+    "ensembl": "ENSG00000117834",
+    "clinical_ab": false
+   },
+   "OR12D2": {
+    "ensembl": "ENSG00000280236",
+    "clinical_ab": false
+   },
+   "TLR4": {
+    "ensembl": "ENSG00000136869",
+    "clinical_ab": false
+   },
+   "VLDLR": {
+    "ensembl": "ENSG00000147852",
+    "clinical_ab": false
+   },
+   "PRSS21": {
+    "ensembl": "ENSG00000007038",
+    "clinical_ab": false
+   },
+   "CNNM2": {
+    "ensembl": "ENSG00000148842",
+    "clinical_ab": false
+   },
+   "P2RY14": {
+    "ensembl": "ENSG00000174944",
+    "clinical_ab": false
+   },
+   "ERRFI1": {
+    "ensembl": "ENSG00000116285",
+    "clinical_ab": false
+   },
+   "TULP3": {
+    "ensembl": "ENSG00000078246",
+    "clinical_ab": false
+   },
+   "PCDHGB1": {
+    "ensembl": "ENSG00000254221",
+    "clinical_ab": false
+   },
+   "IGLV1-40": {
+    "ensembl": "ENSG00000211653",
+    "clinical_ab": false
+   },
+   "MINPP1": {
+    "ensembl": "ENSG00000107789",
+    "clinical_ab": false
+   },
+   "ALK": {
+    "ensembl": "ENSG00000171094",
+    "clinical_ab": false
+   },
+   "OR10G7": {
+    "ensembl": "ENSG00000182634",
+    "clinical_ab": false
+   },
+   "ERVMER34-1": {
+    "ensembl": "ENSG00000226887",
+    "clinical_ab": false
+   },
+   "LAT": {
+    "ensembl": "ENSG00000213658",
+    "clinical_ab": false
+   },
+   "RAPSN": {
+    "ensembl": "ENSG00000165917",
+    "clinical_ab": false
+   },
+   "HTR2B": {
+    "ensembl": "ENSG00000135914",
+    "clinical_ab": false
+   },
+   "PCDHB15": {
+    "ensembl": "ENSG00000113248",
+    "clinical_ab": false
+   },
+   "SLCO2B1": {
+    "ensembl": "ENSG00000137491",
+    "clinical_ab": false
+   },
+   "CDC50A": {
+    "ensembl": "ENSG00000112697",
+    "clinical_ab": false
+   },
+   "GP6": {
+    "ensembl": "ENSG00000088053",
+    "clinical_ab": true
+   },
+   "KRAS": {
+    "ensembl": "ENSG00000133703",
+    "clinical_ab": false
+   }
+  }
+ },
+ "references": {
+  "CD19": {
+   "clinical_ab": true,
+   "ab_labels": [
+    "Approved Drug",
+    "GO CC high conf",
+    "UniProt SigP or TMHMM",
+    "UniProt loc high conf"
+   ]
+  },
+  "TNFRSF17": {
+   "clinical_ab": true,
+   "ab_labels": [
+    "Approved Drug",
+    "GO CC high conf",
+    "UniProt SigP or TMHMM",
+    "UniProt loc med conf"
+   ]
+  },
+  "ERBB2": {
+   "clinical_ab": true,
+   "ab_labels": [
+    "Approved Drug",
+    "GO CC high conf",
+    "Human Protein Atlas loc",
+    "UniProt SigP or TMHMM",
+    "UniProt loc high conf"
+   ]
+  },
+  "FOLR1": {
+   "clinical_ab": true,
+   "ab_labels": [
+    "Advanced Clinical",
+    "GO CC med conf",
+    "UniProt SigP or TMHMM",
+    "UniProt loc high conf"
+   ]
+  }
+ },
+ "fisher": {
+  "table": [
+   [
+    20,
+    79
+   ],
+   [
+    19,
+    79
+   ]
+  ],
+  "odds": 1.053,
+  "p_one_sided": 0.5141718335862956
+ }
+}
