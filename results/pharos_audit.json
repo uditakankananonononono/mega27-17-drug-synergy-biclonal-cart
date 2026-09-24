@@ -1,0 +1,176 @@
+{
+ "tool": "Pharos GraphQL API (pharos-api.ncats.io; TCRD/IDG illumination)",
+ "n_genes_total": 205,
+ "n_records_ok": 202,
+ "gates": {
+  "G1_references_tclin": {
+   "pass": true,
+   "detail": {
+    "CD19": "Tclin",
+    "ERBB2": "Tclin",
+    "FOLR1": "Tclin",
+    "TNFRSF17": "Tclin"
+   }
+  },
+  "G2_coverage_ge_200_of_205": {
+   "pass": true,
+   "n_ok": 202
+  },
+  "G3_controls_not_tclin": {
+   "pass": true,
+   "detail": {
+    "POLR2A": "Tbio",
+    "RPS3": "Tbio",
+    "PCNA": "Tchem",
+    "PSMA1": "Tclin"
+   }
+  },
+  "G4_egfr_tclin_both_sources": {
+   "pass": true,
+   "pharos": "Tclin",
+   "drugcentral": true
+  }
+ },
+ "all_gates_pass": true,
+ "H1_tclin": {
+  "gated_tclin": 11,
+  "gated_n": 99,
+  "bg_tclin": 8,
+  "bg_n": 95,
+  "fisher_or": 1.359375,
+  "fisher_p": 0.6316135569936929,
+  "tdl_mix_gated": {
+   "Tclin": 11,
+   "Tbio": 60,
+   "Tchem": 24,
+   "Tdark": 4
+  },
+  "tdl_mix_background": {
+   "Tbio": 43,
+   "Tclin": 8,
+   "Tdark": 28,
+   "Tchem": 16
+  }
+ },
+ "H2_novelty": {
+  "gated_median": 0.00314857,
+  "bg_median": 0.01537879,
+  "mw_p": 8.081161454455711e-08
+ },
+ "H3_counts": {
+  "gated_drugs_median": 0,
+  "bg_drugs_median": 0,
+  "drugs_mw_p": 0.775726020332024,
+  "gated_ligands_median": 0,
+  "bg_ligands_median": 0,
+  "ligands_mw_p": 0.22966678227657356
+ },
+ "H4_concordance": {
+  "n": 198,
+  "both_tclin": 15,
+  "pharos_only": 8,
+  "drugcentral_only": 0,
+  "neither": 175,
+  "agreement": 0.9595959595959596,
+  "cohens_kappa": 0.7682177348551359,
+  "discordant_genes": [
+   "ADH1A",
+   "ADH1B",
+   "ADH1C",
+   "ATP1B2",
+   "FOLR1",
+   "KRAS",
+   "TACSTD2",
+   "TNFRSF17"
+  ]
+ },
+ "and_gate_antigens": {
+  "CA9": {
+   "group": "gated",
+   "status": "ok",
+   "tdl": "Tclin",
+   "novelty": 0.00071546,
+   "n_drugs": 20,
+   "n_ligands": 4185,
+   "publication_count": 355,
+   "generif_count": 326,
+   "gwas_total": 1,
+   "ppi_total": 230
+  },
+  "CA12": {
+   "group": "gated",
+   "status": "ok",
+   "tdl": "Tclin",
+   "novelty": 0.0034387,
+   "n_drugs": 20,
+   "n_ligands": 3453,
+   "publication_count": 61,
+   "generif_count": 40,
+   "gwas_total": 1,
+   "ppi_total": 91
+  },
+  "CLDN18": {
+   "group": "gated",
+   "status": "ok",
+   "tdl": "Tbio",
+   "novelty": 0.01299528,
+   "n_drugs": 0,
+   "n_ligands": 0,
+   "publication_count": 61,
+   "generif_count": 48,
+   "gwas_total": 2,
+   "ppi_total": 123
+  },
+  "CLDN6": {
+   "group": "gated",
+   "status": "ok",
+   "tdl": "Tbio",
+   "novelty": 0.01814018,
+   "n_drugs": 0,
+   "n_ligands": 0,
+   "publication_count": 83,
+   "generif_count": 54,
+   "gwas_total": 0,
+   "ppi_total": 100
+  },
+  "MSLN": {
+   "group": "gated",
+   "status": "ok",
+   "tdl": "Tbio",
+   "novelty": 0.00191245,
+   "n_drugs": 0,
+   "n_ligands": 0,
+   "publication_count": 165,
+   "generif_count": 147,
+   "gwas_total": 3,
+   "ppi_total": 469
+  },
+  "PSCA": {
+   "group": "gated",
+   "status": "ok",
+   "tdl": "Tbio",
+   "novelty": 0.00323778,
+   "n_drugs": 0,
+   "n_ligands": 0,
+   "publication_count": 136,
+   "generif_count": 112,
+   "gwas_total": 9,
+   "ppi_total": 378
+  },
+  "SLC39A6": {
+   "group": "gated",
+   "status": "ok",
+   "tdl": "Tbio",
+   "novelty": 0.0144314,
+   "n_drugs": 0,
+   "n_ligands": 0,
+   "publication_count": 46,
+   "generif_count": 36,
+   "gwas_total": 1,
+   "ppi_total": 104
+  }
+ },
+ "egfr_sentinel": {
+  "pharos_tdl": "Tclin"
+ }
+}
