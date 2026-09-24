@@ -1,0 +1,18 @@
+epoch 0 train MSE 0.9080
+epoch 1 train MSE 0.7794
+epoch 2 train MSE 0.7002
+epoch 3 train MSE 0.6525
+epoch 4 train MSE 0.6295
+epoch 5 train MSE 0.6154
+{
+  "split": "whole drug pairs held out (20%)",
+  "n_combos": 311466,
+  "n_test_pairs": 1071,
+  "rmse_model": 14.5,
+  "rmse_global_mean": 16.39,
+  "auroc_synergy_score50": 0.846,
+  "synergy_prevalence_test": 0.0315,
+  "pearson": 0.467,
+  "spearman": 0.3831,
+  "n_test_rows": 62260
+}

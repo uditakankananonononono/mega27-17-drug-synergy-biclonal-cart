@@ -1,0 +1,9 @@
+{
+  "n_combos": 311466,
+  "n_drugs": 105,
+  "n_cell_lines": 60,
+  "rmse_model": 12.28,
+  "rmse_global_mean": 15.73,
+  "auroc_synergy_score50": 0.9,
+  "synergy_prevalence": 0.0292
+}

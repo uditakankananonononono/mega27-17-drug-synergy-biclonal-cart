@@ -1,0 +1,12 @@
+{
+  "split": "whole drug pairs held out (20%)",
+  "n_combos": 311466,
+  "n_test_pairs": 1071,
+  "rmse_model": 14.5,
+  "rmse_global_mean": 16.39,
+  "auroc_synergy_score50": 0.846,
+  "synergy_prevalence_test": 0.0315,
+  "pearson": 0.467,
+  "spearman": 0.3831,
+  "n_test_rows": 62260
+}

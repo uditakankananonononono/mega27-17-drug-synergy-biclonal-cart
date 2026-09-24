@@ -1,0 +1,1726 @@
+{
+ "validation": {
+  "MS4A1": {
+   "ensg": "ENSG00000156738",
+   "top_cancers": {
+    "STAD": -5.39,
+    "PAAD": -5.42,
+    "TGCT": -5.66,
+    "LUAD": -5.84
+   },
+   "indication": "B-cell malignancies (CD20)"
+  },
+  "ERBB2": {
+   "ensg": "ENSG00000141736",
+   "top_cancers": {
+    "BRCA": -0.19,
+    "STAD": -0.4,
+    "BLCA": -0.63,
+    "CESC": -0.75
+   },
+   "indication": "HER2+ solid tumours"
+  },
+  "MSLN": {
+   "ensg": "ENSG00000102854",
+   "top_cancers": {
+    "OV": 2.29,
+    "LUAD": 1.51,
+    "PAAD": 0.85,
+    "CESC": 0.44
+   },
+   "indication": "mesothelioma/pancreatic/ovarian"
+  },
+  "GPC3": {
+   "ensg": "ENSG00000147257",
+   "top_cancers": {
+    "LIHC": 1.17,
+    "TGCT": -0.94,
+    "LUSC": -1.06,
+    "KICH": -1.89
+   },
+   "indication": "hepatocellular carcinoma"
+  },
+  "EGFR": {
+   "ensg": "ENSG00000146648",
+   "top_cancers": {
+    "GBM": 1.99,
+    "HNSC": 0.24,
+    "LUSC": -0.08,
+    "KIRC": -0.23
+   },
+   "indication": "solid tumours"
+  }
+ },
+ "and_gate_pairs": {
+  "PAAD": [
+   {
+    "a": "ENSG00000171747",
+    "b": "ENSG00000196754",
+    "cancer": "PAAD",
+    "gated_window": 3.7754486006074046,
+    "gain": 6.342290995325302,
+    "tumor_min_fpk": 60.622,
+    "normal_max_nTPM": 3.5,
+    "a_name": "LGALS4",
+    "b_name": "S100A2"
+   },
+   {
+    "a": "ENSG00000169903",
+    "b": "ENSG00000196754",
+    "cancer": "PAAD",
+    "gated_window": 3.7754486006074046,
+    "gain": 6.152101460148816,
+    "tumor_min_fpk": 60.622,
+    "normal_max_nTPM": 3.5,
+    "a_name": "TM4SF4",
+    "b_name": "S100A2"
+   },
+   {
+    "a": "ENSG00000196754",
+    "b": "ENSG00000107159",
+    "cancer": "PAAD",
+    "gated_window": 3.744902589004968,
+    "gain": 5.9711603171200185,
+    "tumor_min_fpk": 59.331,
+    "normal_max_nTPM": 3.5,
+    "a_name": "S100A2",
+    "b_name": "CA9"
+   },
+   {
+    "a": "ENSG00000169903",
+    "b": "ENSG00000186340",
+    "cancer": "PAAD",
+    "gated_window": 3.299288623858384,
+    "gain": 2.1276332797258743,
+    "tumor_min_fpk": 97.443,
+    "normal_max_nTPM": 9.0,
+    "a_name": "TM4SF4",
+    "b_name": "THBS2"
+   },
+   {
+    "a": "ENSG00000102837",
+    "b": "ENSG00000102854",
+    "cancer": "PAAD",
+    "gated_window": 3.214907580920007,
+    "gain": 2.3634473643256295,
+    "tumor_min_fpk": 126.205,
+    "normal_max_nTPM": 12.7,
+    "a_name": "OLFM4",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000171747",
+    "b": "ENSG00000102854",
+    "cancer": "PAAD",
+    "gated_window": 3.214907580920007,
+    "gain": 2.3634473643256295,
+    "tumor_min_fpk": 126.205,
+    "normal_max_nTPM": 12.7,
+    "a_name": "LGALS4",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000169903",
+    "b": "ENSG00000102854",
+    "cancer": "PAAD",
+    "gated_window": 3.214907580920007,
+    "gain": 2.3634473643256295,
+    "tumor_min_fpk": 126.205,
+    "normal_max_nTPM": 12.7,
+    "a_name": "TM4SF4",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000167653",
+    "b": "ENSG00000102854",
+    "cancer": "PAAD",
+    "gated_window": 3.214907580920007,
+    "gain": 2.3634473643256295,
+    "tumor_min_fpk": 126.205,
+    "normal_max_nTPM": 12.7,
+    "a_name": "PSCA",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000167653",
+    "b": "ENSG00000186340",
+    "cancer": "PAAD",
+    "gated_window": 2.965864890133192,
+    "gain": 1.7942095460006824,
+    "tumor_min_fpk": 97.443,
+    "normal_max_nTPM": 11.6,
+    "a_name": "PSCA",
+    "b_name": "THBS2"
+   },
+   {
+    "a": "ENSG00000102837",
+    "b": "ENSG00000167653",
+    "cancer": "PAAD",
+    "gated_window": 2.9636301066649793,
+    "gain": 4.044486252979208,
+    "tumor_min_fpk": 128.494,
+    "normal_max_nTPM": 15.6,
+    "a_name": "OLFM4",
+    "b_name": "PSCA"
+   },
+   {
+    "a": "ENSG00000171747",
+    "b": "ENSG00000117394",
+    "cancer": "PAAD",
+    "gated_window": 2.8330660760426047,
+    "gain": 2.54252723440076,
+    "tumor_min_fpk": 64.558,
+    "normal_max_nTPM": 8.2,
+    "a_name": "LGALS4",
+    "b_name": "SLC2A1"
+   },
+   {
+    "a": "ENSG00000169903",
+    "b": "ENSG00000117394",
+    "cancer": "PAAD",
+    "gated_window": 2.8330660760426047,
+    "gain": 2.54252723440076,
+    "tumor_min_fpk": 64.558,
+    "normal_max_nTPM": 8.2,
+    "a_name": "TM4SF4",
+    "b_name": "SLC2A1"
+   },
+   {
+    "a": "ENSG00000102854",
+    "b": "ENSG00000117394",
+    "cancer": "PAAD",
+    "gated_window": 2.8330660760426047,
+    "gain": 1.9816058594482273,
+    "tumor_min_fpk": 64.558,
+    "normal_max_nTPM": 8.2,
+    "a_name": "MSLN",
+    "b_name": "SLC2A1"
+   },
+   {
+    "a": "ENSG00000102837",
+    "b": "ENSG00000066405",
+    "cancer": "PAAD",
+    "gated_window": 2.7886102446688996,
+    "gain": 3.8694663909831286,
+    "tumor_min_fpk": 113.7,
+    "normal_max_nTPM": 15.6,
+    "a_name": "OLFM4",
+    "b_name": "CLDN18"
+   },
+   {
+    "a": "ENSG00000066405",
+    "b": "ENSG00000117394",
+    "cancer": "PAAD",
+    "gated_window": 2.670127504916399,
+    "gain": 2.379588663274554,
+    "tumor_min_fpk": 64.558,
+    "normal_max_nTPM": 9.3,
+    "a_name": "CLDN18",
+    "b_name": "SLC2A1"
+   }
+  ],
+  "BRCA": [
+   {
+    "a": "ENSG00000178372",
+    "b": "ENSG00000134258",
+    "cancer": "BRCA",
+    "gated_window": 4.7574296967259215,
+    "gain": 3.841302253980942,
+    "tumor_min_fpk": 55.8,
+    "normal_max_nTPM": 1.1,
+    "a_name": "CALML5",
+    "b_name": "VTCN1"
+   },
+   {
+    "a": "ENSG00000178372",
+    "b": "ENSG00000165215",
+    "cancer": "BRCA",
+    "gated_window": 4.668963753343872,
+    "gain": 4.101962152904766,
+    "tumor_min_fpk": 67.685,
+    "normal_max_nTPM": 1.7,
+    "a_name": "CALML5",
+    "b_name": "CLDN3"
+   },
+   {
+    "a": "ENSG00000178372",
+    "b": "ENSG00000116299",
+    "cancer": "BRCA",
+    "gated_window": 4.311764660159092,
+    "gain": 3.7447630597199852,
+    "tumor_min_fpk": 48.649,
+    "normal_max_nTPM": 1.5,
+    "a_name": "CALML5",
+    "b_name": "ELAPOR1"
+   },
+   {
+    "a": "ENSG00000197956",
+    "b": "ENSG00000141424",
+    "cancer": "BRCA",
+    "gated_window": 3.2746175069975267,
+    "gain": 0.40344952500363274,
+    "tumor_min_fpk": 361.902,
+    "normal_max_nTPM": 36.5,
+    "a_name": "S100A6",
+    "b_name": "SLC39A6"
+   },
+   {
+    "a": "ENSG00000141424",
+    "b": "ENSG00000106211",
+    "cancer": "BRCA",
+    "gated_window": 3.251022189698472,
+    "gain": 0.3798542077045779,
+    "tumor_min_fpk": 356.015,
+    "normal_max_nTPM": 36.5,
+    "a_name": "SLC39A6",
+    "b_name": "HSPB1"
+   },
+   {
+    "a": "ENSG00000141424",
+    "b": "ENSG00000206503",
+    "cancer": "BRCA",
+    "gated_window": 3.2322718929583703,
+    "gain": 0.36110391096447625,
+    "tumor_min_fpk": 351.405,
+    "normal_max_nTPM": 36.5,
+    "a_name": "SLC39A6",
+    "b_name": "HLA-A"
+   },
+   {
+    "a": "ENSG00000141424",
+    "b": "ENSG00000163220",
+    "cancer": "BRCA",
+    "gated_window": 3.1372149558840094,
+    "gain": 0.26604697389011545,
+    "tumor_min_fpk": 328.934,
+    "normal_max_nTPM": 36.5,
+    "a_name": "SLC39A6",
+    "b_name": "S100A9"
+   },
+   {
+    "a": "ENSG00000119888",
+    "b": "ENSG00000178372",
+    "cancer": "BRCA",
+    "gated_window": 3.1008899165659933,
+    "gain": 2.5338883161268866,
+    "tumor_min_fpk": 97.664,
+    "normal_max_nTPM": 10.5,
+    "a_name": "EPCAM",
+    "b_name": "CALML5"
+   },
+   {
+    "a": "ENSG00000141424",
+    "b": "ENSG00000239951",
+    "cancer": "BRCA",
+    "gated_window": 3.1003110603448105,
+    "gain": 0.22914307835091652,
+    "tumor_min_fpk": 280.294,
+    "normal_max_nTPM": 31.8,
+    "a_name": "SLC39A6",
+    "b_name": "IGKV3-20"
+   },
+   {
+    "a": "ENSG00000111640",
+    "b": "ENSG00000141424",
+    "cancer": "BRCA",
+    "gated_window": 2.871167981993894,
+    "gain": 0.0,
+    "tumor_min_fpk": 361.902,
+    "normal_max_nTPM": 48.6,
+    "a_name": "GAPDH",
+    "b_name": "SLC39A6"
+   },
+   {
+    "a": "ENSG00000166710",
+    "b": "ENSG00000141424",
+    "cancer": "BRCA",
+    "gated_window": 2.871167981993894,
+    "gain": 0.0,
+    "tumor_min_fpk": 361.902,
+    "normal_max_nTPM": 48.6,
+    "a_name": "B2M",
+    "b_name": "SLC39A6"
+   },
+   {
+    "a": "ENSG00000167658",
+    "b": "ENSG00000141424",
+    "cancer": "BRCA",
+    "gated_window": 2.871167981993894,
+    "gain": 0.0,
+    "tumor_min_fpk": 361.902,
+    "normal_max_nTPM": 48.6,
+    "a_name": "EEF2",
+    "b_name": "SLC39A6"
+   },
+   {
+    "a": "ENSG00000186340",
+    "b": "ENSG00000134258",
+    "cancer": "BRCA",
+    "gated_window": 2.6578940231750074,
+    "gain": 1.7417665804300277,
+    "tumor_min_fpk": 55.8,
+    "normal_max_nTPM": 8.0,
+    "a_name": "THBS2",
+    "b_name": "VTCN1"
+   },
+   {
+    "a": "ENSG00000141424",
+    "b": "ENSG00000189058",
+    "cancer": "BRCA",
+    "gated_window": 2.6191030737355083,
+    "gain": -0.2520649082583857,
+    "tumor_min_fpk": 229.388,
+    "normal_max_nTPM": 36.5,
+    "a_name": "SLC39A6",
+    "b_name": "APOD"
+   },
+   {
+    "a": "ENSG00000244437",
+    "b": "ENSG00000134258",
+    "cancer": "BRCA",
+    "gated_window": 2.5058909297299574,
+    "gain": 1.5897634869849777,
+    "tumor_min_fpk": 55.8,
+    "normal_max_nTPM": 9.0,
+    "a_name": "IGKV3-15",
+    "b_name": "VTCN1"
+   }
+  ],
+  "GBM": [
+   {
+    "a": "ENSG00000172020",
+    "b": "ENSG00000146648",
+    "cancer": "GBM",
+    "gated_window": 3.409690890789482,
+    "gain": 1.4150374992788435,
+    "tumor_min_fpk": 136.091,
+    "normal_max_nTPM": 11.9,
+    "a_name": "GAP43",
+    "b_name": "EGFR"
+   },
+   {
+    "a": "ENSG00000171885",
+    "b": "ENSG00000146648",
+    "cancer": "GBM",
+    "gated_window": 3.154131605517835,
+    "gain": 1.1594782140071964,
+    "tumor_min_fpk": 136.091,
+    "normal_max_nTPM": 14.4,
+    "a_name": "AQP4",
+    "b_name": "EGFR"
+   },
+   {
+    "a": "ENSG00000172020",
+    "b": "ENSG00000162493",
+    "cancer": "GBM",
+    "gated_window": 2.7768229732287417,
+    "gain": 1.475338009546658,
+    "tumor_min_fpk": 83.297,
+    "normal_max_nTPM": 11.3,
+    "a_name": "GAP43",
+    "b_name": "PDPN"
+   },
+   {
+    "a": "ENSG00000197696",
+    "b": "ENSG00000162493",
+    "cancer": "GBM",
+    "gated_window": 2.7768229732287417,
+    "gain": 1.475338009546658,
+    "tumor_min_fpk": 83.297,
+    "normal_max_nTPM": 11.3,
+    "a_name": "NMB",
+    "b_name": "PDPN"
+   },
+   {
+    "a": "ENSG00000240583",
+    "b": "ENSG00000146648",
+    "cancer": "GBM",
+    "gated_window": 2.581714358115792,
+    "gain": 0.5870609666051534,
+    "tumor_min_fpk": 136.091,
+    "normal_max_nTPM": 21.9,
+    "a_name": "AQP1",
+    "b_name": "EGFR"
+   },
+   {
+    "a": "ENSG00000152661",
+    "b": "ENSG00000146648",
+    "cancer": "GBM",
+    "gated_window": 2.581714358115792,
+    "gain": 0.5870609666051534,
+    "tumor_min_fpk": 136.091,
+    "normal_max_nTPM": 21.9,
+    "a_name": "GJA1",
+    "b_name": "EGFR"
+   },
+   {
+    "a": "ENSG00000162493",
+    "b": "ENSG00000167614",
+    "cancer": "GBM",
+    "gated_window": 2.401537233524001,
+    "gain": 1.100052269841917,
+    "tumor_min_fpk": 63.989,
+    "normal_max_nTPM": 11.3,
+    "a_name": "PDPN",
+    "b_name": "TTYH1"
+   },
+   {
+    "a": "ENSG00000146648",
+    "b": "ENSG00000197696",
+    "cancer": "GBM",
+    "gated_window": 2.3901751331753855,
+    "gain": 0.39552174166474696,
+    "tumor_min_fpk": 93.884,
+    "normal_max_nTPM": 17.1,
+    "a_name": "EGFR",
+    "b_name": "NMB"
+   },
+   {
+    "a": "ENSG00000277443",
+    "b": "ENSG00000146648",
+    "cancer": "GBM",
+    "gated_window": 2.376524026854283,
+    "gain": 0.3818706353436445,
+    "tumor_min_fpk": 136.091,
+    "normal_max_nTPM": 25.4,
+    "a_name": "MARCKS",
+    "b_name": "EGFR"
+   },
+   {
+    "a": "ENSG00000146648",
+    "b": "ENSG00000162493",
+    "cancer": "GBM",
+    "gated_window": 2.3617854739498982,
+    "gain": 0.36713208243925965,
+    "tumor_min_fpk": 83.297,
+    "normal_max_nTPM": 15.4,
+    "a_name": "EGFR",
+    "b_name": "PDPN"
+   },
+   {
+    "a": "ENSG00000146648",
+    "b": "ENSG00000075618",
+    "cancer": "GBM",
+    "gated_window": 2.236088159898846,
+    "gain": 0.2414347683882072,
+    "tumor_min_fpk": 106.886,
+    "normal_max_nTPM": 21.9,
+    "a_name": "EGFR",
+    "b_name": "FSCN1"
+   },
+   {
+    "a": "ENSG00000172020",
+    "b": "ENSG00000142173",
+    "cancer": "GBM",
+    "gated_window": 2.1942096535657396,
+    "gain": 2.991481504949784,
+    "tumor_min_fpk": 64.9,
+    "normal_max_nTPM": 13.4,
+    "a_name": "GAP43",
+    "b_name": "COL6A2"
+   },
+   {
+    "a": "ENSG00000205927",
+    "b": "ENSG00000006327",
+    "cancer": "GBM",
+    "gated_window": 2.18695414056894,
+    "gain": 2.34478170320604,
+    "tumor_min_fpk": 45.445,
+    "normal_max_nTPM": 9.2,
+    "a_name": "OLIG2",
+    "b_name": "TNFRSF12A"
+   },
+   {
+    "a": "ENSG00000146648",
+    "b": "ENSG00000189058",
+    "cancer": "GBM",
+    "gated_window": 2.1745655142168916,
+    "gain": 0.179912122706253,
+    "tumor_min_fpk": 102.382,
+    "normal_max_nTPM": 21.9,
+    "a_name": "EGFR",
+    "b_name": "APOD"
+   },
+   {
+    "a": "ENSG00000146648",
+    "b": "ENSG00000204580",
+    "cancer": "GBM",
+    "gated_window": 2.156082855430528,
+    "gain": 0.16142946391988922,
+    "tumor_min_fpk": 101.066,
+    "normal_max_nTPM": 21.9,
+    "a_name": "EGFR",
+    "b_name": "DDR1"
+   }
+  ],
+  "LIHC": [
+   {
+    "a": "ENSG00000147257",
+    "b": "ENSG00000161944",
+    "cancer": "LIHC",
+    "gated_window": 4.842978831788325,
+    "gain": 3.673769415816154,
+    "tumor_min_fpk": 214.25,
+    "normal_max_nTPM": 6.5,
+    "a_name": "GPC3",
+    "b_name": "ASGR2"
+   },
+   {
+    "a": "ENSG00000147257",
+    "b": "ENSG00000187758",
+    "cancer": "LIHC",
+    "gated_window": 4.47643353551394,
+    "gain": 3.307224119541769,
+    "tumor_min_fpk": 165.956,
+    "normal_max_nTPM": 6.5,
+    "a_name": "GPC3",
+    "b_name": "ADH1A"
+   },
+   {
+    "a": "ENSG00000198074",
+    "b": "ENSG00000147257",
+    "cancer": "LIHC",
+    "gated_window": 4.219320761662869,
+    "gain": 3.0501113456906985,
+    "tumor_min_fpk": 269.091,
+    "normal_max_nTPM": 13.5,
+    "a_name": "AKR1B10",
+    "b_name": "GPC3"
+   },
+   {
+    "a": "ENSG00000147257",
+    "b": "ENSG00000141505",
+    "cancer": "LIHC",
+    "gated_window": 4.144666399388561,
+    "gain": 2.9754569834163904,
+    "tumor_min_fpk": 131.657,
+    "normal_max_nTPM": 6.5,
+    "a_name": "GPC3",
+    "b_name": "ASGR1"
+   },
+   {
+    "a": "ENSG00000187758",
+    "b": "ENSG00000108602",
+    "cancer": "LIHC",
+    "gated_window": 3.9878853619635843,
+    "gain": 7.380423744197508,
+    "tumor_min_fpk": 45.012,
+    "normal_max_nTPM": 1.9,
+    "a_name": "ADH1A",
+    "b_name": "ALDH3A1"
+   },
+   {
+    "a": "ENSG00000160282",
+    "b": "ENSG00000108602",
+    "cancer": "LIHC",
+    "gated_window": 3.9878853619635843,
+    "gain": 7.365673305825927,
+    "tumor_min_fpk": 45.012,
+    "normal_max_nTPM": 1.9,
+    "a_name": "FTCD",
+    "b_name": "ALDH3A1"
+   },
+   {
+    "a": "ENSG00000079557",
+    "b": "ENSG00000108602",
+    "cancer": "LIHC",
+    "gated_window": 3.9878853619635843,
+    "gain": 7.380423744197508,
+    "tumor_min_fpk": 45.012,
+    "normal_max_nTPM": 1.9,
+    "a_name": "AFM",
+    "b_name": "ALDH3A1"
+   },
+   {
+    "a": "ENSG00000134538",
+    "b": "ENSG00000108602",
+    "cancer": "LIHC",
+    "gated_window": 3.9878853619635843,
+    "gain": 7.270688512075306,
+    "tumor_min_fpk": 45.012,
+    "normal_max_nTPM": 1.9,
+    "a_name": "SLCO1B1",
+    "b_name": "ALDH3A1"
+   },
+   {
+    "a": "ENSG00000147257",
+    "b": "ENSG00000142484",
+    "cancer": "LIHC",
+    "gated_window": 3.9279291393670035,
+    "gain": 2.7587197233948326,
+    "tumor_min_fpk": 219.695,
+    "normal_max_nTPM": 13.5,
+    "a_name": "GPC3",
+    "b_name": "TM4SF5"
+   },
+   {
+    "a": "ENSG00000108602",
+    "b": "ENSG00000161031",
+    "cancer": "LIHC",
+    "gated_window": 3.922165032650556,
+    "gain": 6.439508506033407,
+    "tumor_min_fpk": 42.963,
+    "normal_max_nTPM": 1.9,
+    "a_name": "ALDH3A1",
+    "b_name": "PGLYRP2"
+   },
+   {
+    "a": "ENSG00000110245",
+    "b": "ENSG00000147257",
+    "cancer": "LIHC",
+    "gated_window": 3.8756678956207917,
+    "gain": 2.706458479648621,
+    "tumor_min_fpk": 269.091,
+    "normal_max_nTPM": 17.4,
+    "a_name": "APOC3",
+    "b_name": "GPC3"
+   },
+   {
+    "a": "ENSG00000147257",
+    "b": "ENSG00000138115",
+    "cancer": "LIHC",
+    "gated_window": 3.784503982929566,
+    "gain": 2.6152945669573953,
+    "tumor_min_fpk": 102.35,
+    "normal_max_nTPM": 6.5,
+    "a_name": "GPC3",
+    "b_name": "CYP2C8"
+   },
+   {
+    "a": "ENSG00000161944",
+    "b": "ENSG00000108602",
+    "cancer": "LIHC",
+    "gated_window": 3.758403515840817,
+    "gain": 5.689596765397164,
+    "tumor_min_fpk": 45.012,
+    "normal_max_nTPM": 2.4,
+    "a_name": "ASGR2",
+    "b_name": "ALDH3A1"
+   },
+   {
+    "a": "ENSG00000147257",
+    "b": "ENSG00000248144",
+    "cancer": "LIHC",
+    "gated_window": 3.5879258006541024,
+    "gain": 2.4187163846819315,
+    "tumor_min_fpk": 238.291,
+    "normal_max_nTPM": 18.9,
+    "a_name": "GPC3",
+    "b_name": "ADH1C"
+   },
+   {
+    "a": "ENSG00000108602",
+    "b": "ENSG00000204128",
+    "cancer": "LIHC",
+    "gated_window": 3.4105915942476512,
+    "gain": 2.2995602818589074,
+    "tumor_min_fpk": 40.472,
+    "normal_max_nTPM": 2.9,
+    "a_name": "ALDH3A1",
+    "b_name": "C2orf72"
+   }
+  ],
+  "OV": [
+   {
+    "a": "ENSG00000165215",
+    "b": "ENSG00000102854",
+    "cancer": "OV",
+    "gated_window": 4.9171427753723265,
+    "gain": 2.628589433121414,
+    "tumor_min_fpk": 343.439,
+    "normal_max_nTPM": 10.4,
+    "a_name": "CLDN3",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000102854",
+    "b": "ENSG00000169035",
+    "cancer": "OV",
+    "gated_window": 4.156091398982048,
+    "gain": 1.867538056731136,
+    "tumor_min_fpk": 139.843,
+    "normal_max_nTPM": 6.9,
+    "a_name": "MSLN",
+    "b_name": "KLK7"
+   },
+   {
+    "a": "ENSG00000102854",
+    "b": "ENSG00000178531",
+    "cancer": "OV",
+    "gated_window": 3.8629162619699344,
+    "gain": 1.574362919719022,
+    "tumor_min_fpk": 138.677,
+    "normal_max_nTPM": 8.6,
+    "a_name": "MSLN",
+    "b_name": "CTXN1"
+   },
+   {
+    "a": "ENSG00000157765",
+    "b": "ENSG00000175063",
+    "cancer": "OV",
+    "gated_window": 3.7267960666422737,
+    "gain": 3.660513533728333,
+    "tumor_min_fpk": 81.086,
+    "normal_max_nTPM": 5.2,
+    "a_name": "SLC34A2",
+    "b_name": "UBE2C"
+   },
+   {
+    "a": "ENSG00000157765",
+    "b": "ENSG00000178531",
+    "cancer": "OV",
+    "gated_window": 3.4936824523042156,
+    "gain": 5.415201329042535,
+    "tumor_min_fpk": 138.677,
+    "normal_max_nTPM": 11.4,
+    "a_name": "SLC34A2",
+    "b_name": "CTXN1"
+   },
+   {
+    "a": "ENSG00000184292",
+    "b": "ENSG00000178531",
+    "cancer": "OV",
+    "gated_window": 3.4936824523042156,
+    "gain": 5.764764601597335,
+    "tumor_min_fpk": 138.677,
+    "normal_max_nTPM": 11.4,
+    "a_name": "TACSTD2",
+    "b_name": "CTXN1"
+   },
+   {
+    "a": "ENSG00000169035",
+    "b": "ENSG00000178531",
+    "cancer": "OV",
+    "gated_window": 3.4936824523042156,
+    "gain": 2.894897211140458,
+    "tumor_min_fpk": 138.677,
+    "normal_max_nTPM": 11.4,
+    "a_name": "KLK7",
+    "b_name": "CTXN1"
+   },
+   {
+    "a": "ENSG00000165215",
+    "b": "ENSG00000169035",
+    "cancer": "OV",
+    "gated_window": 3.4711874603869854,
+    "gain": 2.42515722631121,
+    "tumor_min_fpk": 139.843,
+    "normal_max_nTPM": 11.7,
+    "a_name": "CLDN3",
+    "b_name": "KLK7"
+   },
+   {
+    "a": "ENSG00000157765",
+    "b": "ENSG00000169035",
+    "cancer": "OV",
+    "gated_window": 3.4711874603869854,
+    "gain": 2.8724022192232277,
+    "tumor_min_fpk": 139.843,
+    "normal_max_nTPM": 11.7,
+    "a_name": "SLC34A2",
+    "b_name": "KLK7"
+   },
+   {
+    "a": "ENSG00000119888",
+    "b": "ENSG00000169035",
+    "cancer": "OV",
+    "gated_window": 3.4711874603869854,
+    "gain": 2.8724022192232277,
+    "tumor_min_fpk": 139.843,
+    "normal_max_nTPM": 11.7,
+    "a_name": "EPCAM",
+    "b_name": "KLK7"
+   },
+   {
+    "a": "ENSG00000175063",
+    "b": "ENSG00000134258",
+    "cancer": "OV",
+    "gated_window": 3.4610558742644013,
+    "gain": 2.7100577207026895,
+    "tumor_min_fpk": 49.657,
+    "normal_max_nTPM": 3.6,
+    "a_name": "UBE2C",
+    "b_name": "VTCN1"
+   },
+   {
+    "a": "ENSG00000124102",
+    "b": "ENSG00000134258",
+    "cancer": "OV",
+    "gated_window": 3.4610558742644013,
+    "gain": 2.7100577207026895,
+    "tumor_min_fpk": 49.657,
+    "normal_max_nTPM": 3.6,
+    "a_name": "PI3",
+    "b_name": "VTCN1"
+   },
+   {
+    "a": "ENSG00000157765",
+    "b": "ENSG00000150551",
+    "cancer": "OV",
+    "gated_window": 3.136965104247179,
+    "gain": 3.6027957938084745,
+    "tumor_min_fpk": 57.938,
+    "normal_max_nTPM": 5.7,
+    "a_name": "SLC34A2",
+    "b_name": "LYPD1"
+   },
+   {
+    "a": "ENSG00000184292",
+    "b": "ENSG00000150551",
+    "cancer": "OV",
+    "gated_window": 3.136965104247179,
+    "gain": 3.6027957938084745,
+    "tumor_min_fpk": 57.938,
+    "normal_max_nTPM": 5.7,
+    "a_name": "TACSTD2",
+    "b_name": "LYPD1"
+   },
+   {
+    "a": "ENSG00000102854",
+    "b": "ENSG00000117394",
+    "cancer": "OV",
+    "gated_window": 3.0867616170061742,
+    "gain": 0.7982082747552619,
+    "tumor_min_fpk": 77.162,
+    "normal_max_nTPM": 8.2,
+    "a_name": "MSLN",
+    "b_name": "SLC2A1"
+   }
+  ],
+  "LUAD": [
+   {
+    "a": "ENSG00000157765",
+    "b": "ENSG00000105388",
+    "cancer": "LUAD",
+    "gated_window": 2.987741102176731,
+    "gain": 3.6945780142361357,
+    "tumor_min_fpk": 239.349,
+    "normal_max_nTPM": 29.3,
+    "a_name": "SLC34A2",
+    "b_name": "CEACAM5"
+   },
+   {
+    "a": "ENSG00000102854",
+    "b": "ENSG00000165215",
+    "cancer": "LUAD",
+    "gated_window": 2.8601089929380192,
+    "gain": 1.3502963739606217,
+    "tumor_min_fpk": 81.772,
+    "normal_max_nTPM": 10.4,
+    "a_name": "MSLN",
+    "b_name": "CLDN3"
+   },
+   {
+    "a": "ENSG00000105388",
+    "b": "ENSG00000102854",
+    "cancer": "LUAD",
+    "gated_window": 2.728118082790602,
+    "gain": 1.2183054638132047,
+    "tumor_min_fpk": 199.765,
+    "normal_max_nTPM": 29.3,
+    "a_name": "CEACAM5",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000157765",
+    "b": "ENSG00000198074",
+    "cancer": "LUAD",
+    "gated_window": 2.0273625643712774,
+    "gain": 2.7341994764306823,
+    "tumor_min_fpk": 51.588,
+    "normal_max_nTPM": 11.9,
+    "a_name": "SLC34A2",
+    "b_name": "AKR1B10"
+   },
+   {
+    "a": "ENSG00000102854",
+    "b": "ENSG00000198074",
+    "cancer": "LUAD",
+    "gated_window": 1.940557736834005,
+    "gain": 0.4307451178566075,
+    "tumor_min_fpk": 51.588,
+    "normal_max_nTPM": 12.7,
+    "a_name": "MSLN",
+    "b_name": "AKR1B10"
+   },
+   {
+    "a": "ENSG00000157765",
+    "b": "ENSG00000146072",
+    "cancer": "LUAD",
+    "gated_window": 1.813100034161045,
+    "gain": 2.51993694622045,
+    "tumor_min_fpk": 60.143,
+    "normal_max_nTPM": 16.4,
+    "a_name": "SLC34A2",
+    "b_name": "TNFRSF21"
+   },
+   {
+    "a": "ENSG00000102854",
+    "b": "ENSG00000146072",
+    "cancer": "LUAD",
+    "gated_window": 1.813100034161045,
+    "gain": 0.30328741518364755,
+    "tumor_min_fpk": 60.143,
+    "normal_max_nTPM": 16.4,
+    "a_name": "MSLN",
+    "b_name": "TNFRSF21"
+   },
+   {
+    "a": "ENSG00000105388",
+    "b": "ENSG00000090339",
+    "cancer": "LUAD",
+    "gated_window": 1.661746590092159,
+    "gain": 2.8168463710349014,
+    "tumor_min_fpk": 94.869,
+    "normal_max_nTPM": 29.3,
+    "a_name": "CEACAM5",
+    "b_name": "ICAM1"
+   },
+   {
+    "a": "ENSG00000102854",
+    "b": "ENSG00000105699",
+    "cancer": "LUAD",
+    "gated_window": 1.6555197515955307,
+    "gain": 0.14570713261813317,
+    "tumor_min_fpk": 93.511,
+    "normal_max_nTPM": 29.0,
+    "a_name": "MSLN",
+    "b_name": "LSR"
+   },
+   {
+    "a": "ENSG00000157765",
+    "b": "ENSG00000105699",
+    "cancer": "LUAD",
+    "gated_window": 1.5223946683561707,
+    "gain": 2.111761975884174,
+    "tumor_min_fpk": 93.511,
+    "normal_max_nTPM": 31.9,
+    "a_name": "SLC34A2",
+    "b_name": "LSR"
+   },
+   {
+    "a": "ENSG00000102854",
+    "b": "ENSG00000168528",
+    "cancer": "LUAD",
+    "gated_window": 1.519674821111865,
+    "gain": 0.009862202134467424,
+    "tumor_min_fpk": 59.786,
+    "normal_max_nTPM": 20.2,
+    "a_name": "MSLN",
+    "b_name": "SERINC2"
+   },
+   {
+    "a": "ENSG00000197956",
+    "b": "ENSG00000102854",
+    "cancer": "LUAD",
+    "gated_window": 1.5098126189773975,
+    "gain": 0.0,
+    "tumor_min_fpk": 199.765,
+    "normal_max_nTPM": 69.5,
+    "a_name": "S100A6",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000166710",
+    "b": "ENSG00000102854",
+    "cancer": "LUAD",
+    "gated_window": 1.5098126189773975,
+    "gain": 0.0,
+    "tumor_min_fpk": 199.765,
+    "normal_max_nTPM": 69.5,
+    "a_name": "B2M",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000111640",
+    "b": "ENSG00000102854",
+    "cancer": "LUAD",
+    "gated_window": 1.5098126189773975,
+    "gain": 0.0,
+    "tumor_min_fpk": 199.765,
+    "normal_max_nTPM": 69.5,
+    "a_name": "GAPDH",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000239951",
+    "b": "ENSG00000102854",
+    "cancer": "LUAD",
+    "gated_window": 1.5098126189773975,
+    "gain": 0.0,
+    "tumor_min_fpk": 199.765,
+    "normal_max_nTPM": 69.5,
+    "a_name": "IGKV3-20",
+    "b_name": "MSLN"
+   }
+  ],
+  "COAD": [
+   {
+    "a": "ENSG00000015413",
+    "b": "ENSG00000007306",
+    "cancer": "COAD",
+    "gated_window": 4.309885570987769,
+    "gain": 6.6011719998266125,
+    "tumor_min_fpk": 62.468,
+    "normal_max_nTPM": 2.2,
+    "a_name": "DPEP1",
+    "b_name": "CEACAM7"
+   },
+   {
+    "a": "ENSG00000007306",
+    "b": "ENSG00000165376",
+    "cancer": "COAD",
+    "gated_window": 4.212861116592904,
+    "gain": 5.646558710154547,
+    "tumor_min_fpk": 58.34,
+    "normal_max_nTPM": 2.2,
+    "a_name": "CEACAM7",
+    "b_name": "CLDN2"
+   },
+   {
+    "a": "ENSG00000079112",
+    "b": "ENSG00000117394",
+    "cancer": "COAD",
+    "gated_window": 3.107809143937295,
+    "gain": 2.9575647336796034,
+    "tumor_min_fpk": 58.483,
+    "normal_max_nTPM": 5.9,
+    "a_name": "CDH17",
+    "b_name": "SLC2A1"
+   },
+   {
+    "a": "ENSG00000171747",
+    "b": "ENSG00000117394",
+    "cancer": "COAD",
+    "gated_window": 2.6927716446584515,
+    "gain": 2.54252723440076,
+    "tumor_min_fpk": 58.483,
+    "normal_max_nTPM": 8.2,
+    "a_name": "LGALS4",
+    "b_name": "SLC2A1"
+   },
+   {
+    "a": "ENSG00000099812",
+    "b": "ENSG00000117394",
+    "cancer": "COAD",
+    "gated_window": 2.6464779923845163,
+    "gain": 2.4962335821268247,
+    "tumor_min_fpk": 58.483,
+    "normal_max_nTPM": 8.5,
+    "a_name": "MISP",
+    "b_name": "SLC2A1"
+   },
+   {
+    "a": "ENSG00000275395",
+    "b": "ENSG00000117394",
+    "cancer": "COAD",
+    "gated_window": 2.309443005106946,
+    "gain": 2.1591985948492542,
+    "tumor_min_fpk": 58.483,
+    "normal_max_nTPM": 11.0,
+    "a_name": "FCGBP",
+    "b_name": "SLC2A1"
+   },
+   {
+    "a": "ENSG00000119888",
+    "b": "ENSG00000117394",
+    "cancer": "COAD",
+    "gated_window": 2.0068802350865145,
+    "gain": 1.8566358248288228,
+    "tumor_min_fpk": 58.483,
+    "normal_max_nTPM": 13.8,
+    "a_name": "EPCAM",
+    "b_name": "SLC2A1"
+   },
+   {
+    "a": "ENSG00000165215",
+    "b": "ENSG00000117394",
+    "cancer": "COAD",
+    "gated_window": 2.0068802350865145,
+    "gain": 1.5120140609723283,
+    "tumor_min_fpk": 58.483,
+    "normal_max_nTPM": 13.8,
+    "a_name": "CLDN3",
+    "b_name": "SLC2A1"
+   },
+   {
+    "a": "ENSG00000015413",
+    "b": "ENSG00000117394",
+    "cancer": "COAD",
+    "gated_window": 2.0068802350865145,
+    "gain": 1.8566358248288228,
+    "tumor_min_fpk": 58.483,
+    "normal_max_nTPM": 13.8,
+    "a_name": "DPEP1",
+    "b_name": "SLC2A1"
+   },
+   {
+    "a": "ENSG00000046604",
+    "b": "ENSG00000117394",
+    "cancer": "COAD",
+    "gated_window": 2.0068802350865145,
+    "gain": 1.8566358248288228,
+    "tumor_min_fpk": 58.483,
+    "normal_max_nTPM": 13.8,
+    "a_name": "DSG2",
+    "b_name": "SLC2A1"
+   },
+   {
+    "a": "ENSG00000176532",
+    "b": "ENSG00000117394",
+    "cancer": "COAD",
+    "gated_window": 2.0068802350865145,
+    "gain": 1.8566358248288228,
+    "tumor_min_fpk": 58.483,
+    "normal_max_nTPM": 13.8,
+    "a_name": "PRR15",
+    "b_name": "SLC2A1"
+   },
+   {
+    "a": "ENSG00000117394",
+    "b": "ENSG00000165376",
+    "cancer": "COAD",
+    "gated_window": 2.003407750963955,
+    "gain": 1.8531633407062635,
+    "tumor_min_fpk": 58.34,
+    "normal_max_nTPM": 13.8,
+    "a_name": "SLC2A1",
+    "b_name": "CLDN2"
+   },
+   {
+    "a": "ENSG00000117394",
+    "b": "ENSG00000127831",
+    "cancer": "COAD",
+    "gated_window": 1.9209627523310147,
+    "gain": 1.770718342073323,
+    "tumor_min_fpk": 55.044,
+    "normal_max_nTPM": 13.8,
+    "a_name": "SLC2A1",
+    "b_name": "VIL1"
+   },
+   {
+    "a": "ENSG00000015413",
+    "b": "ENSG00000175063",
+    "cancer": "COAD",
+    "gated_window": 1.86324327076706,
+    "gain": 1.8936106554080228,
+    "tumor_min_fpk": 75.767,
+    "normal_max_nTPM": 20.1,
+    "a_name": "DPEP1",
+    "b_name": "UBE2C"
+   },
+   {
+    "a": "ENSG00000015413",
+    "b": "ENSG00000013588",
+    "cancer": "COAD",
+    "gated_window": 1.5880973491971693,
+    "gain": 3.2063379861147423,
+    "tumor_min_fpk": 63.039,
+    "normal_max_nTPM": 20.3,
+    "a_name": "DPEP1",
+    "b_name": "GPRC5A"
+   }
+  ],
+  "SKCM": [
+   {
+    "a": "ENSG00000080166",
+    "b": "ENSG00000185686",
+    "cancer": "SKCM",
+    "gated_window": 6.650036217967352,
+    "gain": 0.7381787338611474,
+    "tumor_min_fpk": 139.601,
+    "normal_max_nTPM": 0.4,
+    "a_name": "DCT",
+    "b_name": "PRAME"
+   },
+   {
+    "a": "ENSG00000178372",
+    "b": "ENSG00000080166",
+    "cancer": "SKCM",
+    "gated_window": 6.442372200804984,
+    "gain": 0.5305147166987796,
+    "tumor_min_fpk": 155.538,
+    "normal_max_nTPM": 0.8,
+    "a_name": "CALML5",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000178372",
+    "b": "ENSG00000185686",
+    "cancer": "SKCM",
+    "gated_window": 6.369928298774616,
+    "gain": 1.436099114806673,
+    "tumor_min_fpk": 139.601,
+    "normal_max_nTPM": 0.7,
+    "a_name": "CALML5",
+    "b_name": "PRAME"
+   },
+   {
+    "a": "ENSG00000080166",
+    "b": "ENSG00000239951",
+    "cancer": "SKCM",
+    "gated_window": 6.188275630266831,
+    "gain": 0.2764181461606263,
+    "tumor_min_fpk": 130.259,
+    "normal_max_nTPM": 0.8,
+    "a_name": "DCT",
+    "b_name": "IGKV3-20"
+   },
+   {
+    "a": "ENSG00000111640",
+    "b": "ENSG00000080166",
+    "cancer": "SKCM",
+    "gated_window": 5.911857484106204,
+    "gain": 0.0,
+    "tumor_min_fpk": 155.538,
+    "normal_max_nTPM": 1.6,
+    "a_name": "GAPDH",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000197956",
+    "b": "ENSG00000080166",
+    "cancer": "SKCM",
+    "gated_window": 5.911857484106204,
+    "gain": 0.0,
+    "tumor_min_fpk": 155.538,
+    "normal_max_nTPM": 1.6,
+    "a_name": "S100A6",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000163220",
+    "b": "ENSG00000080166",
+    "cancer": "SKCM",
+    "gated_window": 5.911857484106204,
+    "gain": 0.0,
+    "tumor_min_fpk": 155.538,
+    "normal_max_nTPM": 1.6,
+    "a_name": "S100A9",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000206503",
+    "b": "ENSG00000080166",
+    "cancer": "SKCM",
+    "gated_window": 5.911857484106204,
+    "gain": 0.0,
+    "tumor_min_fpk": 155.538,
+    "normal_max_nTPM": 1.6,
+    "a_name": "HLA-A",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000189058",
+    "b": "ENSG00000080166",
+    "cancer": "SKCM",
+    "gated_window": 5.911857484106204,
+    "gain": 0.0,
+    "tumor_min_fpk": 155.538,
+    "normal_max_nTPM": 1.6,
+    "a_name": "APOD",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000167658",
+    "b": "ENSG00000080166",
+    "cancer": "SKCM",
+    "gated_window": 5.911857484106204,
+    "gain": 0.0,
+    "tumor_min_fpk": 155.538,
+    "normal_max_nTPM": 1.6,
+    "a_name": "EEF2",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000166710",
+    "b": "ENSG00000080166",
+    "cancer": "SKCM",
+    "gated_window": 5.911857484106204,
+    "gain": 0.0,
+    "tumor_min_fpk": 155.538,
+    "normal_max_nTPM": 1.6,
+    "a_name": "B2M",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000106211",
+    "b": "ENSG00000080166",
+    "cancer": "SKCM",
+    "gated_window": 5.911857484106204,
+    "gain": 0.0,
+    "tumor_min_fpk": 155.538,
+    "normal_max_nTPM": 1.6,
+    "a_name": "HSPB1",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000124102",
+    "b": "ENSG00000080166",
+    "cancer": "SKCM",
+    "gated_window": 5.911857484106204,
+    "gain": 0.0,
+    "tumor_min_fpk": 155.538,
+    "normal_max_nTPM": 1.6,
+    "a_name": "PI3",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000074800",
+    "b": "ENSG00000080166",
+    "cancer": "SKCM",
+    "gated_window": 5.911857484106204,
+    "gain": 0.0,
+    "tumor_min_fpk": 155.538,
+    "normal_max_nTPM": 1.6,
+    "a_name": "ENO1",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000204592",
+    "b": "ENSG00000080166",
+    "cancer": "SKCM",
+    "gated_window": 5.911857484106204,
+    "gain": 0.0,
+    "tumor_min_fpk": 155.538,
+    "normal_max_nTPM": 1.6,
+    "a_name": "HLA-E",
+    "b_name": "DCT"
+   }
+  ],
+  "STAD": [
+   {
+    "a": "ENSG00000066405",
+    "b": "ENSG00000079112",
+    "cancer": "STAD",
+    "gated_window": 4.0392674398600565,
+    "gain": 5.9521348780243395,
+    "tumor_min_fpk": 54.901,
+    "normal_max_nTPM": 2.4,
+    "a_name": "CLDN18",
+    "b_name": "CDH17"
+   },
+   {
+    "a": "ENSG00000184292",
+    "b": "ENSG00000079112",
+    "cancer": "STAD",
+    "gated_window": 4.0392674398600565,
+    "gain": 6.279405744916754,
+    "tumor_min_fpk": 54.901,
+    "normal_max_nTPM": 2.4,
+    "a_name": "TACSTD2",
+    "b_name": "CDH17"
+   },
+   {
+    "a": "ENSG00000165215",
+    "b": "ENSG00000167653",
+    "cancer": "STAD",
+    "gated_window": 3.7899596993114986,
+    "gain": 4.769365835362182,
+    "tumor_min_fpk": 117.957,
+    "normal_max_nTPM": 7.6,
+    "a_name": "CLDN3",
+    "b_name": "PSCA"
+   },
+   {
+    "a": "ENSG00000167653",
+    "b": "ENSG00000166825",
+    "cancer": "STAD",
+    "gated_window": 3.6551176058600485,
+    "gain": 7.767958698026947,
+    "tumor_min_fpk": 109.862,
+    "normal_max_nTPM": 7.8,
+    "a_name": "PSCA",
+    "b_name": "ANPEP"
+   },
+   {
+    "a": "ENSG00000066405",
+    "b": "ENSG00000165215",
+    "cancer": "STAD",
+    "gated_window": 3.5141333369068777,
+    "gain": 4.493539472957561,
+    "tumor_min_fpk": 129.246,
+    "normal_max_nTPM": 10.4,
+    "a_name": "CLDN18",
+    "b_name": "CLDN3"
+   },
+   {
+    "a": "ENSG00000102837",
+    "b": "ENSG00000066405",
+    "cancer": "STAD",
+    "gated_window": 3.4999956898802242,
+    "gain": 4.297381525649261,
+    "tumor_min_fpk": 186.807,
+    "normal_max_nTPM": 15.6,
+    "a_name": "OLFM4",
+    "b_name": "CLDN18"
+   },
+   {
+    "a": "ENSG00000102837",
+    "b": "ENSG00000167653",
+    "cancer": "STAD",
+    "gated_window": 2.8411850226666715,
+    "gain": 3.638570858435708,
+    "tumor_min_fpk": 117.957,
+    "normal_max_nTPM": 15.6,
+    "a_name": "OLFM4",
+    "b_name": "PSCA"
+   },
+   {
+    "a": "ENSG00000167653",
+    "b": "ENSG00000079112",
+    "cancer": "STAD",
+    "gated_window": 2.7004655264082973,
+    "gain": 4.940603831464994,
+    "tumor_min_fpk": 54.901,
+    "normal_max_nTPM": 7.6,
+    "a_name": "PSCA",
+    "b_name": "CDH17"
+   },
+   {
+    "a": "ENSG00000124102",
+    "b": "ENSG00000066405",
+    "cancer": "STAD",
+    "gated_window": 2.5263069669960716,
+    "gain": 4.4391744051603546,
+    "tumor_min_fpk": 186.807,
+    "normal_max_nTPM": 31.6,
+    "a_name": "PI3",
+    "b_name": "CLDN18"
+   },
+   {
+    "a": "ENSG00000079112",
+    "b": "ENSG00000102854",
+    "cancer": "STAD",
+    "gated_window": 2.446669787307012,
+    "gain": 2.876516946565,
+    "tumor_min_fpk": 51.335,
+    "normal_max_nTPM": 8.6,
+    "a_name": "CDH17",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000165215",
+    "b": "ENSG00000102854",
+    "cancer": "STAD",
+    "gated_window": 2.1987422738634264,
+    "gain": 2.628589433121414,
+    "tumor_min_fpk": 51.335,
+    "normal_max_nTPM": 10.4,
+    "a_name": "CLDN3",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000066405",
+    "b": "ENSG00000175063",
+    "cancer": "STAD",
+    "gated_window": 2.1526453183435037,
+    "gain": 2.5166777611546816,
+    "tumor_min_fpk": 59.916,
+    "normal_max_nTPM": 12.7,
+    "a_name": "CLDN18",
+    "b_name": "UBE2C"
+   },
+   {
+    "a": "ENSG00000102837",
+    "b": "ENSG00000102854",
+    "cancer": "STAD",
+    "gated_window": 1.9336002050676417,
+    "gain": 2.3634473643256295,
+    "tumor_min_fpk": 51.335,
+    "normal_max_nTPM": 12.7,
+    "a_name": "OLFM4",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000171747",
+    "b": "ENSG00000102854",
+    "cancer": "STAD",
+    "gated_window": 1.9336002050676417,
+    "gain": 2.3634473643256295,
+    "tumor_min_fpk": 51.335,
+    "normal_max_nTPM": 12.7,
+    "a_name": "LGALS4",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000167653",
+    "b": "ENSG00000102854",
+    "cancer": "STAD",
+    "gated_window": 1.9336002050676417,
+    "gain": 2.3634473643256295,
+    "tumor_min_fpk": 51.335,
+    "normal_max_nTPM": 12.7,
+    "a_name": "PSCA",
+    "b_name": "MSLN"
+   }
+  ],
+  "KIRC": [
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000166825",
+    "cancer": "KIRC",
+    "gated_window": 2.788465147642154,
+    "gain": 3.8198347098615955,
+    "tumor_min_fpk": 97.107,
+    "normal_max_nTPM": 13.2,
+    "a_name": "CA9",
+    "b_name": "ANPEP"
+   },
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000162692",
+    "cancer": "KIRC",
+    "gated_window": 2.7835544372026515,
+    "gain": 3.814923999422093,
+    "tumor_min_fpk": 102.282,
+    "normal_max_nTPM": 14.0,
+    "a_name": "CA9",
+    "b_name": "VCAM1"
+   },
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000128567",
+    "cancer": "KIRC",
+    "gated_window": 2.7632660373373703,
+    "gain": 3.683619553635359,
+    "tumor_min_fpk": 48.562,
+    "normal_max_nTPM": 6.3,
+    "a_name": "CA9",
+    "b_name": "PODXL"
+   },
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000100292",
+    "cancer": "KIRC",
+    "gated_window": 2.682916423262796,
+    "gain": 3.7142859854822374,
+    "tumor_min_fpk": 129.357,
+    "normal_max_nTPM": 19.3,
+    "a_name": "CA9",
+    "b_name": "HMOX1"
+   },
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000165376",
+    "cancer": "KIRC",
+    "gated_window": 2.523190853881893,
+    "gain": 3.496811590649866,
+    "tumor_min_fpk": 80.629,
+    "normal_max_nTPM": 13.2,
+    "a_name": "CA9",
+    "b_name": "CLDN2"
+   },
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000117394",
+    "cancer": "KIRC",
+    "gated_window": 2.4596782120984377,
+    "gain": 2.195724470874368,
+    "tumor_min_fpk": 63.361,
+    "normal_max_nTPM": 10.7,
+    "a_name": "CA9",
+    "b_name": "SLC2A1"
+   },
+   {
+    "a": "ENSG00000162692",
+    "b": "ENSG00000117394",
+    "cancer": "KIRC",
+    "gated_window": 2.1205895660528924,
+    "gain": 1.8566358248288228,
+    "tumor_min_fpk": 63.361,
+    "normal_max_nTPM": 13.8,
+    "a_name": "VCAM1",
+    "b_name": "SLC2A1"
+   },
+   {
+    "a": "ENSG00000165376",
+    "b": "ENSG00000117394",
+    "cancer": "KIRC",
+    "gated_window": 2.1205895660528924,
+    "gain": 1.8566358248288228,
+    "tumor_min_fpk": 63.361,
+    "normal_max_nTPM": 13.8,
+    "a_name": "CLDN2",
+    "b_name": "SLC2A1"
+   },
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000102755",
+    "cancer": "KIRC",
+    "gated_window": 1.9989424652655798,
+    "gain": 2.0874628412503395,
+    "tumor_min_fpk": 45.366,
+    "normal_max_nTPM": 10.6,
+    "a_name": "CA9",
+    "b_name": "FLT1"
+   },
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000153071",
+    "cancer": "KIRC",
+    "gated_window": 1.8915096181020017,
+    "gain": 2.922879180321443,
+    "tumor_min_fpk": 62.816,
+    "normal_max_nTPM": 16.2,
+    "a_name": "CA9",
+    "b_name": "DAB2"
+   },
+   {
+    "a": "ENSG00000117394",
+    "b": "ENSG00000153071",
+    "cancer": "KIRC",
+    "gated_window": 1.8915096181020017,
+    "gain": 1.6275558768779321,
+    "tumor_min_fpk": 62.816,
+    "normal_max_nTPM": 16.2,
+    "a_name": "SLC2A1",
+    "b_name": "DAB2"
+   },
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000188157",
+    "cancer": "KIRC",
+    "gated_window": 1.8027249880650182,
+    "gain": 1.6422064525556324,
+    "tumor_min_fpk": 47.843,
+    "normal_max_nTPM": 13.0,
+    "a_name": "CA9",
+    "b_name": "AGRN"
+   },
+   {
+    "a": "ENSG00000024422",
+    "b": "ENSG00000165376",
+    "cancer": "KIRC",
+    "gated_window": 1.7187416629996992,
+    "gain": 2.0123067839725772,
+    "tumor_min_fpk": 80.629,
+    "normal_max_nTPM": 23.8,
+    "a_name": "EHD2",
+    "b_name": "CLDN2"
+   },
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000125810",
+    "cancer": "KIRC",
+    "gated_window": 1.7038431492438342,
+    "gain": 2.1631358357796735,
+    "tumor_min_fpk": 45.259,
+    "normal_max_nTPM": 13.2,
+    "a_name": "CA9",
+    "b_name": "CD93"
+   },
+   {
+    "a": "ENSG00000117394",
+    "b": "ENSG00000105976",
+    "cancer": "KIRC",
+    "gated_window": 1.6680455071545843,
+    "gain": 1.4040917659305148,
+    "tumor_min_fpk": 46.032,
+    "normal_max_nTPM": 13.8,
+    "a_name": "SLC2A1",
+    "b_name": "MET"
+   }
+  ]
+ }
+}
