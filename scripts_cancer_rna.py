@@ -1,23 +1,29 @@
-"""Stream-aggregate 1GB HPA rna_cancer_sample -> per (gene, cancer) mean nTPM."""
-import zipfile, csv
+"""Stream-aggregate HPA v23 rna_cancer_sample (7 GB TSV inside zip) into
+per (gene, cancer) mean FPKM. Fast split-based parser with progress logging."""
+import io, zipfile
 from collections import defaultdict
 
 acc = defaultdict(lambda: [0.0, 0])
+n = 0
 with zipfile.ZipFile("data/rna_cancer_sample.tsv.zip") as z:
-    name = next(n for n in z.namelist() if n.endswith(".tsv"))
+    name = next(x for x in z.namelist() if x.endswith(".tsv"))
     with z.open(name) as fh:
-        rdr = csv.DictReader((l.decode("utf-8", "replace") for l in fh), delimiter="\t")
-        cols = rdr.fieldnames
+        f = io.TextIOWrapper(fh, encoding="utf-8", errors="replace")
+        cols = f.readline().rstrip("\n").split("\t")
         print("columns:", cols, flush=True)
-        for row in rdr:
+        gi, ci, vi = cols.index("Gene"), cols.index("Cancer"), cols.index("FPKM")
+        for line in f:
+            p = line.split("\t")
             try:
-                tpm = float(row.get("FPKM") or 0)
-            except ValueError:
+                v = float(p[vi])
+            except (ValueError, IndexError):
                 continue
-            key = (row["Gene"], row["Cancer"])
-            e = acc[key]; e[0] += tpm; e[1] += 1
+            e = acc[(p[gi], p[ci].strip())]; e[0] += v; e[1] += 1
+            n += 1
+            if n % 10_000_000 == 0:
+                print("rows", n, flush=True)
 with open("data/cancer_rna_mean.tsv", "w") as out:
-    out.write("Gene\tCancer\tmean_nTPM\tn_samples\n")
-    for (g, c), (s, n) in sorted(acc.items()):
-        out.write(f"{g}\t{c}\t{s/n:.3f}\t{n}\n")
-print("gene-cancer rows:", len(acc))
+    out.write("Gene\tCancer\tmean_FPKM\tn_samples\n")
+    for (g, c), (s, k) in sorted(acc.items()):
+        out.write(f"{g}\t{c}\t{s/k:.3f}\t{k}\n")
+print("done rows", n, "gene-cancer", len(acc), flush=True)
