@@ -48,13 +48,16 @@ def test_single_window_math():
 
 
 def test_and_gate_uses_weaker_antigen():
-    t, n = _toy()
-    # G2 alone is toxic (high normal); pairing with G3 (low normal) gates it
-    pairs = and_gate_pairs(t, n, {"G1", "G2", "G3"}, "PAAD", min_tumor=1.0, top=5)
-    gate = next(p for p in pairs if {p["a"], p["b"]} == {"G2", "G3"})
-    expect = np.log2(6) - np.log2(1.5)  # min tumor=5, max-min normal=max(.5,.2)
+    # G2 toxic in liver, G3 toxic in lung: both bad singles, safe gate.
+    tumor = pd.DataFrame({"PAAD": {"G2": 50.0, "G3": 60.0}})
+    normal = pd.DataFrame({"liver": {"G2": 100.0, "G3": 0.2},
+                           "lung": {"G2": 0.5, "G3": 90.0}})
+    pairs = and_gate_pairs(tumor, normal, {"G2", "G3"}, "PAAD", min_tumor=1.0, top=5)
+    gate = pairs[0]
+    expect = np.log2(51) - np.log2(1.5)  # min tumor 50; max over tissues of min normal
     assert abs(gate["gated_window"] - expect) < 1e-9
-    assert gate["gain"] > 0
+    best_single = max(np.log2(51) - np.log2(101), np.log2(61) - np.log2(91))
+    assert gate["gain"] > 0 and abs(gate["gated_window"] - best_single - gate["gain"]) < 1e-9
 
 
 def test_surface_union():
