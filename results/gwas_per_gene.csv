@@ -1,0 +1,206 @@
+gene,group,n_assoc,n_sig,n_sig_snps,n_sig_cancer,cancer_traits
+ABCB5,background,31,20,16,1,acute myeloid leukemia
+ADH1A,gated,39,33,14,1,glioma pathogenesis-related protein 1 measurement
+ADH1B,gated,437,415,28,16,"carcinoma of esophagus; esophageal cancer; head and neck cancer; hypopharyngeal carcinoma; oral cavity cancer; oral cavity cancer, human papilloma virus infection; oropharynx cancer; pharynx cancer; upper aerodigestive tract neoplasm"
+ADH1C,gated,154,118,77,0,
+AFM,gated,15,14,12,2,prostate carcinoma
+AIF1,background,65,58,20,2,cancer; non-Hodgkin lymphoma
+AKR1B10,gated,29,26,14,0,
+ALK,background,80,28,24,3,gastric carcinoma; glioma pathogenesis-related protein 1 measurement; squamous cell carcinoma
+ANPEP,gated,66,63,32,0,
+APOC3,gated,505,504,37,0,
+APOD,gated,16,12,8,0,
+AQP1,gated,48,43,18,0,
+AQP4,gated,1,1,1,0,
+ASGR2,gated,119,111,41,0,
+ATP1B2,gated,153,148,30,1,esophageal squamous cell carcinoma
+ATP6V1B1,gated,14,13,7,0,
+ATP7A,background,1,1,1,0,
+B2M,gated,0,0,0,0,
+BOC,background,75,67,40,9,"benign colon neoplasm; colorectal cancer; colorectal cancer, colorectal adenoma"
+C1QBP,background,3,3,3,0,
+CA12,gated,36,30,15,0,
+CA9,gated,12,11,7,0,
+CD19,references,13,13,5,0,
+CD24,gated,4,2,2,0,
+CD63,gated,1,0,0,0,
+CD74,gated,5,3,2,0,
+CDC42EP1,gated,25,20,15,0,
+CDC50A,background,0,0,0,0,
+CDC50B,background,0,0,0,0,
+CDH12,background,79,38,30,4,"acute myeloid leukemia; metastasis measurement, colorectal cancer"
+CDH17,gated,49,37,31,0,
+CEACAM5,gated,17,14,12,0,
+CEACAM6,gated,16,15,13,0,
+CHIC1,background,1,1,1,0,
+CKB,gated,33,29,13,1,basal cell carcinoma
+CLCNKB,background,35,33,16,1,prostate carcinoma
+CLDN18,gated,10,6,5,0,
+CLDN2,gated,4,4,3,0,
+CLDN3,gated,30,28,9,1,colorectal cancer
+CLDN4,gated,10,8,8,0,
+CLDN6,gated,0,0,0,0,
+CLSTN1,background,10,6,6,0,
+CLSTN3,background,24,21,16,0,
+CLTRN,gated,2,1,1,0,
+CNNM2,background,233,221,107,0,
+CT83,background,0,0,0,0,
+CTTN,background,14,6,5,0,
+CX3CR1,background,88,79,8,0,
+CYP2C9,gated,113,108,57,0,
+CYS1,background,20,20,10,0,
+DCHS1,background,22,19,15,0,
+DCT,gated,63,58,14,0,
+DLGAP1,background,116,50,40,1,colorectal cancer
+DNER,gated,121,65,49,1,"Her2-receptor negative breast cancer, estrogen-receptor positive breast cancer, survival time, progesterone-receptor positive breast cancer, response to antineoplastic agent, breast carcinoma"
+DOCK4,background,72,46,27,0,
+DPEP1,gated,191,179,62,3,cancer; melanoma; non-melanoma skin carcinoma
+EEF1A1,gated,5,4,4,0,
+EEF2,gated,3,3,3,0,
+EGFR,gated,192,168,57,21,"age at onset, glioblastoma; breast cancer; central nervous system cancer; central nervous system cancer, glioblastoma; central nervous system cancer, glioma; glioblastoma; glioma"
+EMCN,background,126,48,37,1,glioma pathogenesis-related protein 1 measurement
+ENPP3,gated,50,42,27,0,
+EPCAM,gated,14,7,7,0,
+ERBB2,references,33,33,20,0,
+ERRFI1,background,7,4,3,0,
+ERVMER34-1,background,0,0,0,0,
+FABP3,gated,12,10,8,0,
+FFAR1,background,2,1,1,0,
+FOLR1,references,44,39,8,0,
+FRMPD2,background,45,37,22,1,glioma pathogenesis-related protein 1 measurement
+GAP43,gated,81,57,37,0,
+GAPDH,gated,4,4,4,0,
+GJA5,background,82,74,41,0,
+GJB1,gated,9,7,3,4,prostate carcinoma
+GJB2,background,5,5,4,0,
+GNA11,background,22,20,12,1,glioma pathogenesis-related protein 1 measurement
+GP2,gated,62,53,32,0,
+GP6,background,379,375,18,0,
+GPC4,background,0,0,0,0,
+GPM6A,gated,96,63,41,1,cancer antigen 125 measurement
+GPM6B,gated,15,14,8,0,
+GPR15,background,22,11,8,0,
+HJV,gated,8,6,5,0,
+HLA-A,gated,109,104,66,2,skin cancer
+HLA-B,gated,1590,1519,664,32,"basal cell carcinoma; cancer; cervical carcinoma; cheek mucosa cancer; colorectal cancer; cutaneous melanoma; diffuse large B-cell lymphoma; gingival cancer; human papilloma virus infection, oropharynx cancer; keratinocyte carcinoma; level of T-cell leukemia/lymphoma protein 1A in blood; liver neoplasm; lung cancer; lung carcinoma; lymphoid neoplasm; marginal zone lymphoma; nasopharyngeal neoplasm; non-melanoma skin carcinoma; oral cavity cancer; oral cavity neoplasm; prostate cancer; skin cancer; skin neoplasm; small cell lung carcinoma"
+HLA-C,gated,677,632,287,7,basal cell carcinoma; gastric cancer; gastric carcinoma; lung carcinoma; lymphoid neoplasm; prostate carcinoma
+HLA-DRA,gated,594,536,229,13,Hodgkins lymphoma; basal cell carcinoma; lung adenocarcinoma; lung carcinoma; malignant T-cell-amplified sequence 1 measurement; neuroblastoma suppressor of tumorigenicity 1 measurement; non-Hodgkin lymphoma; prostate carcinoma; upper aerodigestive tract neoplasm
+HLA-DRB1,gated,2027,1925,708,38,"B-cell chronic lymphocytic leukemia; Hodgkins lymphoma; basal cell carcinoma; cancer; cervical cancer; cervical carcinoma; cheek mucosa cancer; colorectal cancer; colorectal cancer, colorectal adenoma; cutaneous melanoma; diffuse large B-cell lymphoma; extranodal nasal NK/T cell lymphoma; keratinocyte carcinoma; level of B-cell CLL/lymphoma 7 protein family member B in blood; lung carcinoma; lymphatic system cancer; lymphoid neoplasm; lymphoma; nasopharyngeal neoplasm; non-Hodgkin lymphoma; non-melanoma skin carcinoma; oropharynx cancer; skin cancer; skin neoplasm; squamous cell carcinoma; upper aerodigestive tract neoplasm"
+HLA-DRB5,gated,535,508,329,7,cancer; cervical cancer; lung cancer; malignant T-cell-amplified sequence 1 measurement; neoplasm of mature B-cells
+HMOX1,gated,17,12,10,0,
+HSP90AB1,gated,21,18,8,0,
+HSPB1,gated,32,27,17,0,
+HTR2B,background,1,1,1,0,
+IFITM3,gated,33,33,16,0,
+IGKV1-12,background,0,0,0,0,
+IGKV2-28,background,0,0,0,0,
+IGKV6D-41,background,4,4,4,0,
+IGLV1-40,background,0,0,0,0,
+IGLV11-55,background,51,15,11,0,
+ITM2C,background,23,23,7,0,
+JAML,background,49,49,14,1,lung carcinoma
+JUP,gated,36,29,20,1,"carcinoma of esophagus, squamous cell carcinoma"
+KIR2DL1,background,2,2,1,0,
+KLK7,gated,47,44,29,0,
+KLRG1,background,74,70,17,0,
+KRAS,background,136,111,12,0,
+KRT1,gated,2,2,2,0,
+LAT,background,21,20,13,1,gastric cancer
+LGALS4,gated,7,7,4,0,
+LGR5,background,10,7,6,0,
+LPCAT1,gated,12,6,5,0,
+LY6E,gated,5,3,3,0,
+MAL,background,6,3,1,0,
+MC1R,background,161,156,22,43,"basal cell carcinoma; cutaneous melanoma; cutaneous squamous cell carcinoma; drug use measurement, skin cancer; family history of cancer; keratinocyte carcinoma; melanoma; neoplasm; skin cancer; skin neoplasm; squamous cell carcinoma"
+MICA,background,350,334,158,15,"Hodgkins lymphoma; basal cell carcinoma; cervical cancer; cervical carcinoma; cervical carcinoma, cervical intraepithelial neoplasia grade 2/3; cutaneous squamous cell carcinoma; keratinocyte carcinoma; non-melanoma skin carcinoma; skin cancer"
+MINPP1,background,24,12,12,0,
+MISP,gated,3,1,1,0,
+MLC1,gated,9,7,7,0,
+MMP16,background,61,46,30,2,acute myeloid leukemia
+MSLN,gated,32,30,20,3,cancer antigen 125 measurement
+MUC13,gated,9,7,7,0,
+MYMK,background,109,106,56,1,major salivary gland cancer
+NLGN3,background,5,4,2,2,prostate carcinoma
+NMB,gated,9,8,5,0,
+NOD1,background,32,31,10,0,
+NOS3,background,168,165,19,0,
+NOX1,gated,1,0,0,0,
+OLFM4,gated,108,84,59,1,nasopharyngeal neoplasm
+OR10G7,background,1,0,0,0,
+OR12D2,background,4,4,3,0,
+OR13C2,background,1,1,1,0,
+OR2A14,background,0,0,0,0,
+OR2I1P,gated,0,0,0,0,
+OR2T11,background,1,0,0,0,
+OR3A1,background,0,0,0,0,
+OR4A47,background,0,0,0,0,
+OR52E4,background,3,2,1,0,
+OR52P1,background,0,0,0,0,
+OR5P2,background,4,1,1,0,
+OR8B12,background,1,0,0,0,
+OR8D4,background,2,0,0,0,
+P2RY14,background,17,13,7,0,
+PACSIN2,background,90,85,61,0,
+PCDHA10,background,18,16,11,0,
+PCDHB15,background,1,1,1,0,
+PCDHB18P,background,4,3,2,0,
+PCDHB5,background,5,5,5,0,
+PCDHGB1,background,26,22,16,1,glioma pathogenesis-related protein 1 measurement
+PCNA,positive_controls,3,3,3,0,
+PDPN,gated,11,8,6,0,
+PERP,gated,20,11,7,0,
+PI3,gated,19,17,14,0,
+PIGR,gated,25,23,16,3,clear cell renal carcinoma; renal carcinoma; renal cell carcinoma
+PLA2G2A,gated,36,34,18,0,
+PLP1,gated,0,0,0,0,
+POLR2A,positive_controls,118,108,59,1,central nervous system cancer
+PRAME,gated,5,5,3,0,
+PRICKLE3,background,3,3,1,0,
+PRSS21,background,4,3,2,1,glioma pathogenesis-related protein 1 measurement
+PRX,background,7,5,5,0,
+PSCA,gated,111,104,48,30,"cervical carcinoma, exocrine pancreatic carcinoma, prostate carcinoma, hepatocellular carcinoma, non-Hodgkin lymphoma, biliary tract cancer, ovarian cancer, lung cancer, breast carcinoma, colorectal cancer, esophageal cancer, endometrial cancer, gastric cancer; gastric cancer; gastric carcinoma; malignant urinary system neoplasm; urinary bladder cancer; urinary bladder carcinoma"
+PSMA1,positive_controls,55,51,24,0,
+PTPRZ1,gated,19,12,10,1,ovarian carcinoma
+RAPSN,background,173,167,37,1,"prostate carcinoma, type 2 diabetes mellitus"
+RPS3,positive_controls,9,5,5,0,
+S100A6,gated,12,10,8,1,glioma pathogenesis-related protein 1 measurement
+S100A9,gated,35,34,11,0,
+S100P,gated,6,4,4,0,
+S1PR3,background,10,6,4,0,
+S1PR5,background,34,29,24,0,
+SCNN1A,gated,21,16,10,0,
+SEPTIN2,background,38,36,11,2,B-cell chronic lymphocytic leukemia; prostate carcinoma
+SLC15A1,background,21,9,6,0,
+SLC17A3,gated,188,183,70,2,"estrogen-receptor positive breast cancer, schizophrenia; schizophrenia, breast carcinoma"
+SLC1A3,gated,49,42,16,2,acute myeloid leukemia
+SLC22A8,background,8,3,3,0,
+SLC2A2,gated,202,192,55,0,
+SLC34A2,gated,6,3,1,0,
+SLC39A6,gated,1,1,1,1,"carcinoma of esophagus, survival time, squamous cell carcinoma"
+SLC5A9,background,20,17,12,1,glioma pathogenesis-related protein 1 measurement
+SLC6A19,background,60,56,15,2,renal carcinoma; renal cell carcinoma
+SLCO2B1,background,23,3,3,0,
+SPINT1,gated,29,28,10,0,
+SPP1,gated,62,55,34,0,
+SSTR3,background,1,0,0,0,
+TACSTD2,gated,22,18,18,0,
+TAS2R16,background,14,8,8,0,
+TBC1D3L,background,0,0,0,0,
+TGM1,background,12,11,9,0,
+THBS2,gated,55,49,29,0,
+TLR4,background,167,147,76,0,
+TM4SF4,gated,77,74,39,0,
+TM4SF5,gated,96,95,23,0,
+TNFRSF17,references,6,5,3,0,
+TRBV12-4,background,0,0,0,0,
+TRBV7-1,background,1,1,1,0,
+TRBV7-4,background,1,0,0,0,
+TSPAN8,gated,105,87,67,2,colorectal cancer
+TTYH2,background,7,2,2,0,
+TULP3,background,13,12,6,0,
+UBE2C,gated,7,5,5,0,
+UNC93A,background,27,23,12,0,
+VCAM1,gated,63,57,35,0,
+VIM,gated,28,26,12,0,
+VLDLR,background,139,130,15,0,
+VNN1,background,30,27,23,0,

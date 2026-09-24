@@ -1,0 +1,123 @@
+{
+ "tool": "GWAS Catalog full ontology-annotated associations (ftp.ebi.ac.uk releases/latest)",
+ "n_genes_total": 205,
+ "n_assoc_rows": 1192604,
+ "sig_threshold": "p<=5e-8 (PVALUE_MLOG>=7.301)",
+ "gates": {
+  "G1_psca_sig_cancer": {
+   "pass": true,
+   "detail": {
+    "n_sig_cancer": 30,
+    "traits": [
+     "cervical carcinoma, exocrine pancreatic carcinoma, prostate carcinoma, hepatocellular carcinoma, non-Hodgkin lymphoma, biliary tract cancer, ovarian cancer, lung cancer, breast carcinoma, colorectal cancer, esophageal cancer, endometrial cancer, gastric cancer",
+     "gastric cancer",
+     "gastric carcinoma",
+     "malignant urinary system neoplasm",
+     "urinary bladder cancer",
+     "urinary bladder carcinoma"
+    ]
+   }
+  },
+  "G2_catalog_rows_ge_400k": {
+   "pass": true,
+   "n_rows": 1192604
+  },
+  "G3_egfr_sig_cancer": {
+   "pass": true,
+   "detail": {
+    "n_assoc": 192,
+    "n_sig": 168,
+    "n_sig_cancer": 21
+   }
+  }
+ },
+ "all_gates_pass": true,
+ "H1_any_sig": {
+  "gated": 93,
+  "gated_n": 99,
+  "bg": 78,
+  "bg_n": 98,
+  "fisher_or": 3.9743589743589745,
+  "fisher_p": 0.003135674241623344
+ },
+ "H2_cancer_sig": {
+  "gated": 28,
+  "gated_n": 99,
+  "bg": 23,
+  "bg_n": 98,
+  "fisher_or": 1.2859767299448868,
+  "fisher_p": 0.5159026018762888
+ },
+ "H3_burden": {
+  "gated_median": 20,
+  "bg_median": 7.5,
+  "mw_p": 0.001428455256646991
+ },
+ "and_gate_antigens": {
+  "CA9": {
+   "n_assoc": 12,
+   "n_sig": 11,
+   "n_sig_cancer": 0,
+   "n_sig_snps": 7,
+   "cancer_traits": []
+  },
+  "CA12": {
+   "n_assoc": 36,
+   "n_sig": 30,
+   "n_sig_cancer": 0,
+   "n_sig_snps": 15,
+   "cancer_traits": []
+  },
+  "CLDN18": {
+   "n_assoc": 10,
+   "n_sig": 6,
+   "n_sig_cancer": 0,
+   "n_sig_snps": 5,
+   "cancer_traits": []
+  },
+  "CLDN6": {
+   "n_assoc": 0,
+   "n_sig": 0,
+   "n_sig_cancer": 0,
+   "n_sig_snps": 0,
+   "cancer_traits": []
+  },
+  "MSLN": {
+   "n_assoc": 32,
+   "n_sig": 30,
+   "n_sig_cancer": 3,
+   "n_sig_snps": 20,
+   "cancer_traits": [
+    "cancer antigen 125 measurement"
+   ]
+  },
+  "PSCA": {
+   "n_assoc": 111,
+   "n_sig": 104,
+   "n_sig_cancer": 30,
+   "n_sig_snps": 48,
+   "cancer_traits": [
+    "cervical carcinoma, exocrine pancreatic carcinoma, prostate carcinoma, hepatocellular carcinoma, non-Hodgkin lymphoma, biliary tract cancer, ovarian cancer, lung cancer, breast carcinoma, colorectal cancer, esophageal cancer, endometrial cancer, gastric cancer",
+    "gastric cancer",
+    "gastric carcinoma",
+    "malignant urinary system neoplasm",
+    "urinary bladder cancer",
+    "urinary bladder carcinoma"
+   ]
+  },
+  "SLC39A6": {
+   "n_assoc": 1,
+   "n_sig": 1,
+   "n_sig_cancer": 1,
+   "n_sig_snps": 1,
+   "cancer_traits": [
+    "carcinoma of esophagus, survival time, squamous cell carcinoma"
+   ]
+  }
+ },
+ "egfr_sentinel": {
+  "n_assoc": 192,
+  "n_sig": 168,
+  "n_sig_cancer": 21
+ }
+}

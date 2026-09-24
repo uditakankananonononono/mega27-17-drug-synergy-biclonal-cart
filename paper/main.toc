@@ -57,12 +57,16 @@
 \contentsline {paragraph}{Antigen-pair co-complex test.}{23}{}%
 \contentsline {paragraph}{Detection and degree bias.}{23}{}%
 \contentsline {paragraph}{Cross-resource concordance.}{23}{}%
+\contentsline {subsection}{\numberline {7.7}GWAS Catalog: germline association signal at antigen loci}{24}{}%
+\contentsline {paragraph}{Calibration gate.}{24}{}%
+\contentsline {paragraph}{Any-trait and cancer-trait carriage.}{24}{}%
+\contentsline {paragraph}{AND-gate antigens.}{24}{}%
 \contentsline {section}{\numberline {8}Shipped tool}{24}{}%
-\contentsline {section}{\numberline {9}Falsification paths}{24}{}%
-\contentsline {section}{\numberline {10}Mathematical derivations}{25}{}%
-\contentsline {subsection}{\numberline {10.1}Bliss independence and the ALMANAC synergy score}{25}{}%
-\contentsline {subsection}{\numberline {10.2}Embedding model and why pair-held-out is the honest split}{25}{}%
-\contentsline {subsection}{\numberline {10.3}AUROC as a Mann--Whitney probability}{25}{}%
-\contentsline {subsection}{\numberline {10.4}FANM: estimator, sampling error, and interval}{26}{}%
-\contentsline {subsection}{\numberline {10.5}Streaming percentiles as order statistics}{26}{}%
-\contentsline {subsection}{\numberline {10.6}AND-gate gain is bounded by the weaker single}{26}{}%
+\contentsline {section}{\numberline {9}Falsification paths}{25}{}%
+\contentsline {section}{\numberline {10}Mathematical derivations}{26}{}%
+\contentsline {subsection}{\numberline {10.1}Bliss independence and the ALMANAC synergy score}{26}{}%
+\contentsline {subsection}{\numberline {10.2}Embedding model and why pair-held-out is the honest split}{26}{}%
+\contentsline {subsection}{\numberline {10.3}AUROC as a Mann--Whitney probability}{26}{}%
+\contentsline {subsection}{\numberline {10.4}FANM: estimator, sampling error, and interval}{27}{}%
+\contentsline {subsection}{\numberline {10.5}Streaming percentiles as order statistics}{27}{}%
+\contentsline {subsection}{\numberline {10.6}AND-gate gain is bounded by the weaker single}{27}{}%
