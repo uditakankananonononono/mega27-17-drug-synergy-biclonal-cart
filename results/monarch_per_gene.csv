@@ -1,0 +1,206 @@
+gene,group,hgnc_id,resolved,causal_total,correlated_total,pheno_total,n_cancer_causal,causal_labels
+ADH1A,gated,HGNC:249,True,0,0,0,0,
+ADH1B,gated,HGNC:250,True,0,2,0,0,
+ADH1C,gated,HGNC:251,True,0,2,0,0,
+AFM,gated,HGNC:316,True,0,0,0,0,
+AKR1B10,gated,HGNC:382,True,0,0,0,0,
+ANPEP,gated,HGNC:500,True,0,0,0,0,
+APOC3,gated,HGNC:610,True,1,1,3,0,apolipoprotein c-III deficiency
+APOD,gated,HGNC:612,True,0,0,0,0,
+AQP1,gated,HGNC:633,True,2,0,0,0,"obsolete blood group, colton system; obsolete blood group, colton system"
+AQP4,gated,HGNC:637,True,1,0,17,0,"megalencephalic leukoencephalopathy with subcortical cysts 4, remitting"
+ASGR2,gated,HGNC:743,True,0,0,0,0,
+ATP1B2,gated,HGNC:805,True,0,0,0,0,
+ATP6V1B1,gated,HGNC:853,True,1,1,33,0,"renal tubular acidosis, distal, 2, with progressive sensorineural hearing loss"
+B2M,gated,HGNC:914,True,2,2,30,0,"amyloidosis, hereditary systemic 6; hypoproteinemia, hypercatabolic"
+CA12,gated,HGNC:1371,True,1,1,8,0,isolated hyperchlorhidrosis
+CA9,gated,HGNC:1383,True,0,0,0,0,
+CD24,gated,HGNC:1645,True,0,0,0,0,
+CD63,gated,HGNC:1692,True,0,0,0,0,
+CD74,gated,HGNC:1697,True,0,0,0,0,
+CDC42EP1,gated,HGNC:17014,True,0,0,0,0,
+CDH17,gated,HGNC:1756,True,0,0,0,0,
+CEACAM5,gated,HGNC:1817,True,0,0,0,0,
+CEACAM6,gated,HGNC:1818,True,0,1,0,0,
+CKB,gated,HGNC:1991,True,0,0,0,0,
+CLDN18,gated,HGNC:2039,True,0,0,0,0,
+CLDN2,gated,HGNC:2041,True,1,0,5,0,"azoospermia, obstructive, with nephrolithiasis"
+CLDN3,gated,HGNC:2045,True,0,0,0,0,
+CLDN4,gated,HGNC:2046,True,0,0,0,0,
+CLDN6,gated,HGNC:2048,True,0,0,0,0,
+CLTRN,gated,HGNC:29437,True,0,1,0,0,
+CYP2C9,gated,HGNC:2623,True,1,0,2,0,coumarin resistance
+DCT,gated,HGNC:2709,True,1,1,10,0,oculocutaneous albinism type 8
+DNER,gated,HGNC:24456,True,0,0,0,0,
+DPEP1,gated,HGNC:3002,True,0,0,0,0,
+EEF1A1,gated,HGNC:3189,True,0,0,0,0,
+EEF2,gated,HGNC:3214,True,1,1,12,0,spinocerebellar ataxia type 26
+EGFR,gated,HGNC:3236,True,3,3,21,2,"lung cancer; inflammatory skin and bowel disease, neonatal, 2; lung cancer"
+ENPP3,gated,HGNC:3358,True,0,0,0,0,
+EPCAM,gated,HGNC:11529,True,2,2,17,0,congenital diarrhea 5 with tufting enteropathy; Lynch syndrome 8
+FABP3,gated,HGNC:3557,True,0,0,0,0,
+GAP43,gated,HGNC:4140,True,0,0,0,0,
+GAPDH,gated,HGNC:4141,True,0,0,0,0,
+GJB1,gated,HGNC:4283,True,1,2,38,0,Charcot-Marie-Tooth disease X-linked dominant 1
+GP2,gated,HGNC:4441,True,0,0,0,0,
+GPM6A,gated,HGNC:4460,True,0,0,0,0,
+GPM6B,gated,HGNC:4461,True,0,0,0,0,
+HJV,gated,HGNC:4887,True,1,2,18,0,hemochromatosis type 2A
+HLA-A,gated,HGNC:4931,True,0,2,0,0,
+HLA-B,gated,HGNC:4932,True,0,10,0,0,
+HLA-C,gated,HGNC:4933,True,0,3,0,0,
+HLA-DRA,gated,HGNC:4947,True,0,1,0,0,
+HLA-DRB1,gated,HGNC:4948,True,0,16,0,0,
+HLA-DRB5,gated,HGNC:4953,True,0,0,0,0,
+HMOX1,gated,HGNC:5013,True,1,3,24,0,heme oxygenase 1 deficiency
+HSP90AB1,gated,HGNC:5258,True,0,0,0,0,
+HSPB1,gated,HGNC:5246,True,2,2,30,0,"neuronopathy, distal hereditary motor, type 2B; Charcot-Marie-Tooth disease axonal type 2F"
+IFITM3,gated,HGNC:5414,True,0,1,0,0,
+JUP,gated,HGNC:6207,True,2,5,43,0,arrhythmogenic right ventricular dysplasia 12; Naxos disease
+KLK7,gated,HGNC:6368,True,0,0,0,0,
+KRT1,gated,HGNC:6412,True,6,8,39,0,"keratosis palmoplantaris striata 3; palmoplantar keratoderma, epidermolytic, 2; ichthyosis hystrix of Curth-Macklin; ichthyosis, annular epidermolytic, 2; diffuse nonepidermolytic palmoplantar keratoderma; epidermolytic hyperkeratosis 1"
+LGALS4,gated,HGNC:6565,True,0,0,0,0,
+LPCAT1,gated,HGNC:25718,True,0,0,0,0,
+LY6E,gated,HGNC:6727,True,0,0,0,0,
+MISP,gated,HGNC:27000,True,0,0,0,0,
+MLC1,gated,HGNC:17082,True,1,1,11,0,megalencephalic leukoencephalopathy with subcortical cysts 1
+MSLN,gated,HGNC:7371,True,0,0,0,0,
+MUC13,gated,HGNC:7511,True,0,0,0,0,
+NMB,gated,HGNC:7842,True,0,0,0,0,
+NOX1,gated,HGNC:7889,True,0,0,0,0,
+OLFM4,gated,HGNC:17190,True,0,0,0,0,
+OR2I1P,gated,,False,,,,,
+PDPN,gated,HGNC:29602,True,0,1,0,0,
+PERP,gated,HGNC:17637,True,2,1,19,0,Olmsted syndrome 2; erythrokeratodermia variabilis et progressiva 7
+PI3,gated,HGNC:8947,True,0,0,0,0,
+PIGR,gated,HGNC:8968,True,0,0,0,0,
+PLA2G2A,gated,HGNC:9031,True,0,1,0,0,
+PLP1,gated,HGNC:9086,True,2,7,72,0,hereditary spastic paraplegia 2; Pelizaeus-Merzbacher spectrum disorder
+PRAME,gated,HGNC:9336,True,0,0,0,0,
+PSCA,gated,HGNC:9500,True,0,0,0,0,
+PTPRZ1,gated,HGNC:9685,True,0,0,0,0,
+S100A6,gated,HGNC:10496,True,0,0,0,0,
+S100A9,gated,HGNC:10499,True,0,0,0,0,
+S100P,gated,HGNC:10504,True,0,0,0,0,
+SCNN1A,gated,HGNC:10599,True,3,4,30,0,"Liddle syndrome 3; bronchiectasis with or without elevated sweat chloride 2; pseudohypoaldosteronism, type IB1, autosomal recessive"
+SLC17A3,gated,HGNC:10931,True,1,1,0,0,"obsolete uric acid concentration, serum, quantitative trait locus 4"
+SLC1A3,gated,HGNC:10941,True,1,2,22,0,episodic ataxia type 6
+SLC2A2,gated,HGNC:11006,True,1,2,37,0,glycogen storage disease due to GLUT2 deficiency
+SLC34A2,gated,HGNC:11020,True,1,1,8,0,pulmonary alveolar microlithiasis
+SLC39A6,gated,HGNC:18607,True,0,0,0,0,
+SPINT1,gated,HGNC:11246,True,0,0,0,0,
+SPP1,gated,HGNC:11255,True,0,2,0,0,
+TACSTD2,gated,HGNC:11530,True,1,1,8,0,gelatinous drop-like corneal dystrophy
+THBS2,gated,HGNC:11786,True,1,1,19,0,"Ehlers-Danlos syndrome, classic-like, 3"
+TM4SF4,gated,HGNC:11856,True,0,0,0,0,
+TM4SF5,gated,HGNC:11857,True,0,0,0,0,
+TSPAN8,gated,HGNC:11855,True,0,0,0,0,
+UBE2C,gated,HGNC:15937,True,0,0,0,0,
+VCAM1,gated,HGNC:12663,True,0,0,0,0,
+VIM,gated,HGNC:12692,True,1,2,5,0,cataract 30
+ABCB5,background,HGNC:46,True,0,0,0,0,
+AIF1,background,HGNC:352,True,0,0,0,0,
+ALK,background,HGNC:427,True,0,9,0,0,
+ATP7A,background,HGNC:869,True,3,4,88,0,Menkes disease; X-linked distal spinal muscular atrophy type 3; occipital horn syndrome
+BOC,background,HGNC:17173,True,0,0,0,0,
+C1QBP,background,HGNC:1243,True,1,0,31,0,combined oxidative phosphorylation deficiency 33
+CDC50A,background,HGNC:16667,True,0,0,0,0,
+CDC50B,background,HGNC:27254,True,0,0,0,0,
+CDH12,background,HGNC:1751,True,0,0,0,0,
+CHIC1,background,HGNC:1934,True,0,0,0,0,
+CLCNKB,background,HGNC:2027,True,2,3,49,0,Bartter disease type 3; Bartter disease type 4B
+CLSTN1,background,HGNC:17447,True,0,0,0,0,
+CLSTN3,background,HGNC:18371,True,0,0,0,0,
+CNNM2,background,HGNC:103,True,2,1,22,0,"renal hypomagnesemia 6; hypomagnesemia, seizures, and intellectual disability 1"
+CT83,background,HGNC:33494,True,0,0,0,0,
+CTTN,background,HGNC:3338,True,0,0,0,0,
+CX3CR1,background,HGNC:2558,True,0,3,0,0,
+CYS1,background,HGNC:18525,True,0,0,0,0,
+DCHS1,background,HGNC:13681,True,2,2,60,0,"van Maldergem syndrome 1; mitral valve prolapse, myxomatous 2"
+DLGAP1,background,HGNC:2905,True,0,0,0,0,
+DOCK4,background,HGNC:19192,True,0,0,0,0,
+EMCN,background,HGNC:16041,True,0,0,0,0,
+ERRFI1,background,HGNC:18185,True,0,0,0,0,
+ERVMER34-1,background,HGNC:42970,True,0,0,0,0,
+FFAR1,background,HGNC:4498,True,0,0,0,0,
+FRMPD2,background,HGNC:28572,True,0,0,0,0,
+GJA5,background,HGNC:4279,True,2,2,112,0,"atrial fibrillation, familial, 11; atrial standstill 1"
+GJB2,background,HGNC:4284,True,8,7,68,0,"nonsyndromic genetic hearing loss; autosomal recessive nonsyndromic hearing loss 1A; keratoderma hereditarium mutilans; Bart-Pumphrey syndrome; autosomal dominant nonsyndromic hearing loss 3A; palmoplantar keratoderma-deafness syndrome; ichthyosis, hystrix-like, with hearing loss; autosomal dominant keratitis-ichthyosis-hearing loss syndrome"
+GNA11,background,HGNC:4379,True,2,7,19,0,autosomal dominant hypocalcemia 2; familial hypocalciuric hypercalcemia 2
+GP6,background,HGNC:14388,True,1,1,10,0,platelet-type bleeding disorder 11
+GPC4,background,HGNC:4452,True,1,2,26,0,Keipert syndrome
+GPR15,background,HGNC:4469,True,0,0,0,0,
+HTR2B,background,HGNC:5294,True,0,0,0,0,
+IGKV1-12,background,HGNC:5730,True,0,0,0,0,
+IGKV2-28,background,HGNC:5783,True,0,0,0,0,
+IGKV6D-41,background,HGNC:5838,True,0,0,0,0,
+IGLV1-40,background,HGNC:5877,True,0,0,0,0,
+IGLV11-55,background,HGNC:5886,True,0,0,0,0,
+ITM2C,background,HGNC:6175,True,0,0,0,0,
+JAML,background,HGNC:19084,True,0,0,0,0,
+KIR2DL1,background,HGNC:6329,True,0,0,0,0,
+KLRG1,background,HGNC:6380,True,0,0,0,0,
+KRAS,background,HGNC:6407,True,14,11,294,6,Noonan syndrome; cardiofaciocutaneous syndrome; RASopathy; lung cancer; Toriello-Lacassie-Droste syndrome; familial pancreatic carcinoma; linear nevus sebaceous syndrome; urinary bladder cancer; hereditary breast carcinoma; gastric cancer; acute myeloid leukemia; Noonan syndrome 3
+LAT,background,HGNC:18874,True,1,1,27,0,severe combined immunodeficiency due to LAT deficiency
+LGR5,background,HGNC:4504,True,0,0,0,0,
+MAL,background,HGNC:6817,True,1,1,13,0,"leukodystrophy, hypomyelinating, 28"
+MC1R,background,HGNC:6929,True,2,5,0,0,"obsolete skin/hair/eye pigmentation, variation in, 2; obsolete skin/hair/eye pigmentation, variation in, 2"
+MICA,background,HGNC:7090,True,0,0,0,0,
+MINPP1,background,HGNC:7102,True,1,3,27,0,"pontocerebellar hypoplasia, type 16"
+MMP16,background,HGNC:7162,True,0,0,0,0,
+MYMK,background,HGNC:33778,True,1,1,62,0,Carey-Fineman-Ziter syndrome 1
+NLGN3,background,HGNC:14289,True,0,1,15,0,
+NOD1,background,HGNC:16390,True,0,0,0,0,
+NOS3,background,HGNC:7876,True,1,0,30,0,Moyamoya disease 8
+OR10G7,background,HGNC:14842,True,0,0,0,0,
+OR12D2,background,HGNC:8178,True,0,0,0,0,
+OR13C2,background,HGNC:14701,True,0,0,0,0,
+OR2A14,background,HGNC:15084,True,0,0,0,0,
+OR2T11,background,HGNC:19574,True,0,0,0,0,
+OR3A1,background,HGNC:8282,True,0,0,0,0,
+OR4A47,background,HGNC:31266,True,0,0,0,0,
+OR52E4,background,HGNC:15213,True,0,0,0,0,
+OR52P1,background,HGNC:15232,True,0,0,0,0,
+OR5P2,background,HGNC:14783,True,0,0,0,0,
+OR8B12,background,HGNC:15307,True,0,0,0,0,
+OR8D4,background,HGNC:14840,True,0,0,0,0,
+P2RY14,background,HGNC:16442,True,0,0,0,0,
+PACSIN2,background,HGNC:8571,True,0,0,0,0,
+PCDHA10,background,HGNC:8664,True,0,0,0,0,
+PCDHB15,background,HGNC:8686,True,0,0,0,0,
+PCDHB18P,background,HGNC:14548,True,0,0,0,0,
+PCDHB5,background,HGNC:8690,True,0,0,0,0,
+PCDHGB1,background,HGNC:8708,True,0,0,0,0,
+PRICKLE3,background,HGNC:6645,True,0,1,0,0,
+PRSS21,background,HGNC:9485,True,0,0,0,0,
+PRX,background,HGNC:13797,True,2,2,62,0,Charcot-Marie-Tooth disease type 3; Charcot-Marie-Tooth disease type 4F
+RAPSN,background,HGNC:9863,True,2,3,43,0,congenital myasthenic syndrome 11; fetal akinesia deformation sequence 2
+S1PR3,background,HGNC:3167,True,0,0,0,0,
+S1PR5,background,HGNC:14299,True,0,0,0,0,
+SEPTIN2,background,HGNC:7729,True,0,0,0,0,
+SLC15A1,background,HGNC:10920,True,0,0,0,0,
+SLC22A8,background,HGNC:10972,True,0,0,0,0,
+SLC5A9,background,HGNC:22146,True,0,0,0,0,
+SLC6A19,background,HGNC:27960,True,1,2,19,0,Hartnup disease
+SLCO2B1,background,HGNC:10962,True,0,0,0,0,
+SSTR3,background,HGNC:11332,True,0,0,0,0,
+TAS2R16,background,HGNC:14921,True,0,1,0,0,
+TBC1D3L,background,HGNC:51246,True,0,0,0,0,
+TGM1,background,HGNC:11777,True,1,5,17,0,autosomal recessive congenital ichthyosis 1
+TLR4,background,HGNC:11850,True,0,1,0,0,
+TRBV12-4,background,HGNC:12186,True,0,0,0,0,
+TRBV7-1,background,HGNC:12235,True,0,0,0,0,
+TRBV7-4,background,HGNC:12238,True,0,0,0,0,
+TTYH2,background,HGNC:13877,True,0,0,0,0,
+TULP3,background,HGNC:12425,True,1,0,21,0,hepatorenocardiac degenerative fibrosis
+UNC93A,background,HGNC:12570,True,0,0,0,0,
+VLDLR,background,HGNC:12698,True,1,1,33,0,"cerebellar ataxia, intellectual disability, and dysequilibrium syndrome 1"
+VNN1,background,HGNC:12705,True,0,0,0,0,
+CD19,references,HGNC:1633,True,1,0,42,0,"immunodeficiency, common variable, 3"
+ERBB2,references,HGNC:3430,True,5,4,26,3,"gastric cancer; ovarian cancer; lung cancer; glioma susceptibility 1; visceral neuropathy, familial, 2, autosomal recessive"
+FOLR1,references,HGNC:3791,True,1,1,5,0,neurodegenerative syndrome due to cerebral folate transport deficiency
+TNFRSF17,references,HGNC:11913,True,0,0,0,0,
+POLR2A,positive_controls,HGNC:9187,True,1,0,35,0,neurodevelopmental disorder with hypotonia and variable intellectual and behavioral abnormalities
+RPS3,positive_controls,HGNC:10420,True,0,0,0,0,
+PCNA,positive_controls,HGNC:8729,True,1,1,24,0,ataxia-telangiectasia-like disorder 2
+PSMA1,positive_controls,HGNC:9530,True,0,0,0,0,

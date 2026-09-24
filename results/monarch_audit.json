@@ -1,0 +1,123 @@
+{
+ "source": "Monarch Initiative v3 API (api.monarchinitiative.org/v3/api/association; biolink:CausalGeneToDiseaseAssociation, CorrelatedGeneToDiseaseAssociation, GeneToPhenotypicFeatureAssociation)",
+ "n_genes_total": 205,
+ "n_resolved": 204,
+ "gates": {
+  "G1_coverage_ge_180": {
+   "pass": true,
+   "resolved": 204,
+   "note": "pre-registered"
+  },
+  "G2_cd19_causal_ge_1": {
+   "pass": true,
+   "cd19_causal": 1,
+   "note": "pre-registered; OMIM CVID3 expected"
+  },
+  "G3_cd19_pheno_ge_10": {
+   "pass": true,
+   "cd19_pheno": 42,
+   "note": "pre-registered; probe observed 42"
+  }
+ },
+ "all_gates_pass": true,
+ "H1_causal_carriage": {
+  "gated": 29,
+  "gated_n": 98,
+  "bg": 23,
+  "bg_n": 98,
+  "fisher_or": 1.3705103969754253,
+  "fisher_p": 0.4187147992848698
+ },
+ "H2_pheno_breadth": {
+  "gated_median": 0.0,
+  "bg_median": 0.0,
+  "mw_p": 0.8564906181923505
+ },
+ "H3_correlated_carriage": {
+  "gated": 38,
+  "gated_n": 98,
+  "bg": 26,
+  "bg_n": 98,
+  "fisher_or": 1.7538461538461538,
+  "fisher_p": 0.09345097392755275
+ },
+ "H4_cancer_causal_carriage": {
+  "gated": 1,
+  "gated_n": 98,
+  "bg": 1,
+  "bg_n": 98,
+  "fisher_or": 1.0,
+  "fisher_p": 1.0
+ },
+ "and_gate_antigens": {
+  "CA9": {
+   "causal_total": 0,
+   "causal_labels": [],
+   "correlated_total": 0,
+   "pheno_total": 0,
+   "cancer_causal_labels": []
+  },
+  "CA12": {
+   "causal_total": 1,
+   "causal_labels": [
+    "isolated hyperchlorhidrosis"
+   ],
+   "correlated_total": 1,
+   "pheno_total": 8,
+   "cancer_causal_labels": []
+  },
+  "CLDN18": {
+   "causal_total": 0,
+   "causal_labels": [],
+   "correlated_total": 0,
+   "pheno_total": 0,
+   "cancer_causal_labels": []
+  },
+  "CLDN6": {
+   "causal_total": 0,
+   "causal_labels": [],
+   "correlated_total": 0,
+   "pheno_total": 0,
+   "cancer_causal_labels": []
+  },
+  "MSLN": {
+   "causal_total": 0,
+   "causal_labels": [],
+   "correlated_total": 0,
+   "pheno_total": 0,
+   "cancer_causal_labels": []
+  },
+  "PSCA": {
+   "causal_total": 0,
+   "causal_labels": [],
+   "correlated_total": 0,
+   "pheno_total": 0,
+   "cancer_causal_labels": []
+  },
+  "SLC39A6": {
+   "causal_total": 0,
+   "causal_labels": [],
+   "correlated_total": 0,
+   "pheno_total": 0,
+   "cancer_causal_labels": []
+  }
+ },
+ "reference_genes": {
+  "CD19": {
+   "causal": 1,
+   "pheno": 42
+  },
+  "ERBB2": {
+   "causal": 5,
+   "pheno": 26
+  },
+  "FOLR1": {
+   "causal": 1,
+   "pheno": 5
+  },
+  "TNFRSF17": {
+   "causal": 0,
+   "pheno": 0
+  }
+ }
+}
