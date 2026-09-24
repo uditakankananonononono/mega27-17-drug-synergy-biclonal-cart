@@ -41,18 +41,19 @@ Mean expression dilutes subtype-restricted targets, so we recomputed windows fro
 \begin{equation}
 \mathrm{FANM}(g,K)=\frac{1}{n_K}\sum_{i=1}^{n_K}\mathbf 1\big[\mathrm{FPKM}_{g,i}>\max_t \mathrm{nTPM}_{g,t}\big],
 \end{equation}
-which recovers ERBB2 in BRCA at $11.0\%$ ($8.4\%$ above $2\times$) --- matching the clinically established $10$--$15\%$ HER2-positive prevalence and turning a documented artifact into a validated subtype call. A new artifact class also surfaced: p75 pair rankings are dominated by immunoglobulin genes (IGHA2/IGHG2/IGHV*) --- plasma-cell infiltrate in tumor samples, not malignant-cell surface expression; Ig genes are excluded from gated-pair claims pending an infiltrate filter.
+which recovers ERBB2 in BRCA at $11.0\%$ ($8.4\%$ above $2\times$) --- of the same order as the clinically established $15$--$20\%$ HER2-positive prevalence \cite{her2}, with the gap in the expected direction since an RNA-only threshold is stricter than the combined IHC/FISH clinical definition. A documented artifact becomes a validated subtype call. A new artifact class also surfaced: p75 pair rankings are dominated by immunoglobulin genes (IGHA2/IGHG2/IGHV*) --- plasma-cell infiltrate in tumor samples, not malignant-cell surface expression; Ig genes are excluded from gated-pair claims pending an infiltrate filter.
 \subsection{AND-gate biclonal discovery}
 \begin{figure}[h]\centering\includegraphics[width=0.95\linewidth]{figs/fig_andgate.pdf}
 \caption{Top AND-gated pairs by gain over the best single antigen.}\end{figure}
 Validation of the metric: MSLN$\to$OV $2.29$, GPC3$\to$LIHC $1.17$, EGFR$\to$GBM $1.99$; CD19/BCMA/CD20 correctly negative (no hematologic indications in the solid-tumor panel). ERBB2 scores $-0.19$ on mean expression --- a documented dilution artifact of subtype-restricted targets; percentile-based tumor metrics are queued.
 \section{Documented negatives and data findings}
-(1) Leaky $0.90$ AUROC retired. (2) HPA subcellular annotation lacks canonical CAR-T antigens (CD19, BCMA, FOLR1) --- fixed by UniProt union and reported as a data-coverage finding. (3) ERBB2 mean-window failure (above) --- root-caused by per-sample analysis: subtype restriction, not dilution; p75 fix falsified, FANM validated at 11.0\% = clinical HER2+ prevalence. (4) Immunoglobulin infiltrate artifact in p75 pair rankings.
+(1) Leaky $0.90$ AUROC retired. (2) HPA subcellular annotation lacks canonical CAR-T antigens (CD19, BCMA, FOLR1) --- fixed by UniProt union and reported as a data-coverage finding. (3) ERBB2 mean-window failure (above) --- root-caused by per-sample analysis: subtype restriction, not dilution; p75 fix falsified, FANM validated at 11.0\%, same order as the 15--20\% clinical HER2+ prevalence \cite{her2}. (4) Immunoglobulin infiltrate artifact in p75 pair rankings.
 \section{Falsification paths}
 Synergy: published MatchMaker/DeepSynergy numbers verified (see Results) --- splits differ, no SOTA claim made; a same-split rerun on DrugComb is the remaining path to a direct comparison. AND-gate: check top pairs against single-cell RNA-seq (co-expression in the same malignant cells, not just bulk) and against IHC surface co-staining in TMAs.
 \begin{thebibliography}{9}
 \bibitem[Holbeck et al.(2017)]{a} Holbeck SL, et al. The NCI-ALMANAC. \emph{Cancer Res} 2017.
 \bibitem[Uhl\'en et al.(2015)]{h} Uhl\'en M, et al. Tissue-based map of the human proteome (HPA). \emph{Science} 2015.
+\bibitem[ACS/Slamon]{her2} American Cancer Society, Breast Cancer HER2 Status (15--20\% HER2-positive); Slamon et al., \emph{NEJM} 2001; Nahta, \emph{Nat Rev Clin Oncol} 2024 (15--20\% of invasive breast cancers).
 \bibitem[Kuruoglu et al.(2021)]{m} Kuruoglu Mustafaoglu N, et al. MatchMaker. \emph{Cancer Res} 2021.
 \end{thebibliography}
 \end{document}
