@@ -46,6 +46,28 @@ which recovers ERBB2 in BRCA at $11.0\%$ ($8.4\%$ above $2\times$) --- of the sa
 \begin{figure}[h]\centering\includegraphics[width=0.95\linewidth]{figs/fig_andgate.pdf}
 \caption{Top AND-gated pairs by gain over the best single antigen.}\end{figure}
 Validation of the metric: MSLN$\to$OV $2.29$, GPC3$\to$LIHC $1.17$, EGFR$\to$GBM $1.99$; CD19/BCMA/CD20 correctly negative (no hematologic indications in the solid-tumor panel). ERBB2 scores $-0.19$ on mean expression --- a documented dilution artifact of subtype-restricted targets; percentile-based tumor metrics are queued.
+\begin{table}[h]\centering\small
+\begin{tabular}{llccc}\hline\hline
+Cancer & top Ig-filtered pair & gated window & gain over best single & pairs ranked\\\hline
+BRCA & HLA-DRA--SLC39A6 & 3.58 & 0.40 & 15\\
+COAD & DPEP1--NOX1 & 5.50 & 4.43 & 15\\
+GBM & GAP43--EGFR & 3.75 & 1.42 & 15\\
+KIRC & CA9--SLC17A3 & 5.56 & 6.18 & 15\\
+LIHC & APOC3--OR2I1P & 6.48 & 0.38 & 15\\
+LUAD & SLC34A2--SPP1 & 4.15 & 4.33 & 15\\
+OV & KLK7--CLDN6 & 5.85 & 0.23 & 15\\
+PAAD & SPP1--PSCA & 3.76 & 6.52 & 15\\
+SKCM & PRAME--DCT & 6.86 & 0.89 & 15\\
+STAD & CLDN18--CLDN3 & 4.09 & 4.49 & 15\\\hline\hline
+\end{tabular}
+\caption{Top AND-gated biclonal pair per cancer after the immunoglobulin-locus
+filter (145 genes removed), from \texttt{results/andgate\_p75\_igfiltered.json}.
+Gated window: fraction of tumors co-expressing both antigens above the p75
+window vs normal ceiling; gain: improvement over the best single antigen in
+that cancer. Established antigens surface after filtering: PSCA/SPP1 in PAAD,
+CLDN18 pairs in STAD, MSLN pairs in OV/PAAD/LUAD, CA9/CA12 in KIRC, CLDN6 in
+OV.}
+\label{tab:andgate}\end{table}
 \subsection{Mechanism annotation via ChEMBL assay accessions}
 All 104 ALMANAC NSC codes were resolved through PubChem PUG synonyms to ChEMBL
 molecules (90 resolved; 70 with usable assay bioactivities), and assay-level
