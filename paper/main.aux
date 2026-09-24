@@ -35,11 +35,22 @@
 \newlabel{fig:cptac}{{4}{10}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.9}Tumor-versus-adjacent window within the organ (FireBrowse/TCGA): only CA9 clears the noise floor}{10}{}\protected@file@percent }
 \newlabel{sec:window}{{5.9}{10}}
-\bibcite{rdkit}{Landrum(2026)}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Tumor minus adjacent-normal expression (log$_2$ RSEM, housekeeping-adjusted) per antigen, median across cohorts with min--max whiskers. Grey band: the normalization noise floor (residual housekeeping spread, $\pm 1.6$ log$_2$). Only CA9 clears it.}}{11}{}\protected@file@percent }
 \newlabel{fig:window}{{5}{11}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Shipped tool}{11}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7}Falsification paths}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.10}Quantitative engagement audit: DrugCentral (third orthogonal null)}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.11}Measurement- and perturbation-layer visibility: LINCS L1000 via iLINCS (fourth invisibility axis; connectivity pilot negative)}{11}{}\protected@file@percent }
+\newlabel{sec:ilincs}{{5.11}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces DrugCentral engagement audit. Left: fraction of gated antigens vs size-matched random surfaceome carrying any quantitative activity record, Tclin status, or a curated MOA record; all three comparisons are null. Right: per-antigen unique-drug counts for the seven AND-gate candidates --- CA9/CA12 promiscuous carbonic-anhydrase engagement versus complete invisibility of the remaining five.}}{12}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Left: gated versus background coverage in the L1000 landmark panel and CGS knockdown library. Right: compound-connectivity distributions to the CA12, SLC39A6 and ERBB2 knockdown consensuses across 198 GDSC compounds.}}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Epitope-structure audit: three AND-gate antigens have no experimental structure (AlphaFold DB + RCSB PDB)}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Positive control (3 of 4 pass).}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Result.}{13}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Structural evidence for the seven AND-gate antigens: UniProt topology, ectodomain length, median AlphaFold pLDDT, experimental coverage, antibody co-structures in the PDB.}}{14}{}\protected@file@percent }
+\newlabel{tab:epitope}{{2}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces A: experimental ectodomain coverage per gene (bars = medians). B: antibody co-structures for the AND-gate antigens. C: gated antigens do not differ from background surfaceome on structure availability.}}{14}{}\protected@file@percent }
+\newlabel{fig:epitope}{{8}{14}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Shipped tool}{14}{}\protected@file@percent }
+\bibcite{rdkit}{Landrum(2026)}
 \bibcite{statsmodels}{Seabold and Perktold(2010)}
 \bibcite{string}{Szklarczyk et al.(2023)}
 \bibcite{opentargets}{Ochoa et al.(2023)}
@@ -49,11 +60,12 @@
 \bibcite{h}{Uhl\'en et al.(2015)}
 \bibcite{her2}{ACS/Slamon}
 \bibcite{m}{Kuruoglu et al.(2021)}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Mathematical derivations}{12}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Bliss independence and the ALMANAC synergy score}{12}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Embedding model and why pair-held-out is the honest split}{13}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}AUROC as a Mann--Whitney probability}{13}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}FANM: estimator, sampling error, and interval}{13}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.5}Streaming percentiles as order statistics}{13}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.6}AND-gate gain is bounded by the weaker single}{14}{}\protected@file@percent }
-\gdef \@abspage@last{14}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Falsification paths}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {9}Mathematical derivations}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Bliss independence and the ALMANAC synergy score}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}Embedding model and why pair-held-out is the honest split}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}AUROC as a Mann--Whitney probability}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.4}FANM: estimator, sampling error, and interval}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.5}Streaming percentiles as order statistics}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.6}AND-gate gain is bounded by the weaker single}{17}{}\protected@file@percent }
+\gdef \@abspage@last{17}

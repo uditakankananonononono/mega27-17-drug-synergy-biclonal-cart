@@ -1,0 +1,174 @@
+{
+ "n_genes": 201,
+ "n_unannotated": 82,
+ "groups": {
+  "gated": {
+   "n": 54,
+   "ecto_len_median": 223.5,
+   "mean_plddt_median": 86.64994208598941,
+   "exp_cov_median": 0.6424071618037135,
+   "frac_has_structure": 0.6296296296296297,
+   "frac_has_ab_structure": 0.2962962962962963,
+   "ab_structures_total": 73
+  },
+  "background": {
+   "n": 61,
+   "ecto_len_median": 157.0,
+   "mean_plddt_median": 83.94577319587627,
+   "exp_cov_median": 0.0,
+   "frac_has_structure": 0.4426229508196721,
+   "frac_has_ab_structure": 0.21311475409836064,
+   "ab_structures_total": 38
+  },
+  "reference": {
+   "n": 4,
+   "ecto_len_median": 241.0,
+   "mean_plddt_median": 84.49395767195767,
+   "exp_cov_median": 1.0,
+   "frac_has_structure": 1.0,
+   "frac_has_ab_structure": 0.75,
+   "ab_structures_total": 34
+  }
+ },
+ "gated_vs_background": {
+  "ecto_len": {
+   "gated_median": 223.5,
+   "bg_median": 157.0,
+   "auroc_gated_vs_bg": 0.5129022465088039,
+   "p": 0.8139151965541996
+  },
+  "mean_plddt_ecto": {
+   "gated_median": 86.64994208598941,
+   "bg_median": 83.94577319587627,
+   "auroc_gated_vs_bg": 0.6195856873822976,
+   "p": 0.028734735016313843
+  },
+  "exp_cov_ecto": {
+   "gated_median": 0.6424071618037135,
+   "bg_median": 0.0,
+   "auroc_gated_vs_bg": 0.5916818457802064,
+   "p": 0.0694003445545735
+  },
+  "n_ab_structures": {
+   "gated_median": 0.0,
+   "bg_median": 0.0,
+   "auroc_gated_vs_bg": 0.5434122647237402,
+   "p": 0.2948649333632918
+  },
+  "has_structure": {
+   "table": [
+    [
+     34,
+     31
+    ],
+    [
+     20,
+     34
+    ]
+   ],
+   "or": 1.864516129032258,
+   "p": 0.101244974386584
+  },
+  "has_ab_structure": {
+   "table": [
+    [
+     49,
+     16
+    ],
+    [
+     38,
+     16
+    ]
+   ],
+   "or": 1.2894736842105263,
+   "p": 0.6783407627711662
+  }
+ },
+ "reference_controls": [
+  {
+   "gene": "CD19",
+   "has_ab_structure": 1,
+   "n_ab_structures": 3
+  },
+  {
+   "gene": "ERBB2",
+   "has_ab_structure": 1,
+   "n_ab_structures": 24
+  },
+  {
+   "gene": "FOLR1",
+   "has_ab_structure": 0,
+   "n_ab_structures": 0
+  },
+  {
+   "gene": "TNFRSF17",
+   "has_ab_structure": 1,
+   "n_ab_structures": 7
+  }
+ ],
+ "and_gate": [
+  {
+   "gene": "CA12",
+   "topology": "single-pass",
+   "ecto_len": 277,
+   "mean_plddt_ecto": 94.72415162454872,
+   "exp_cov_ecto": 0.9494584837545126,
+   "n_pdb_ecto": 40,
+   "n_ab_structures": 1
+  },
+  {
+   "gene": "CA9",
+   "topology": "single-pass",
+   "ecto_len": 377,
+   "mean_plddt_ecto": 79.70371352785146,
+   "exp_cov_ecto": 0.7029177718832891,
+   "n_pdb_ecto": 29,
+   "n_ab_structures": 0
+  },
+  {
+   "gene": "CLDN18",
+   "topology": "multi-pass",
+   "ecto_len": 84,
+   "mean_plddt_ecto": 72.15214285714286,
+   "exp_cov_ecto": 0.0,
+   "n_pdb_ecto": 0,
+   "n_ab_structures": 0
+  },
+  {
+   "gene": "CLDN6",
+   "topology": "multi-pass",
+   "ecto_len": 76,
+   "mean_plddt_ecto": 82.71934210526315,
+   "exp_cov_ecto": 0.0,
+   "n_pdb_ecto": 0,
+   "n_ab_structures": 0
+  },
+  {
+   "gene": "MSLN",
+   "topology": "GPI",
+   "ecto_len": 303,
+   "mean_plddt_ecto": 86.539801980198,
+   "exp_cov_ecto": 1.0,
+   "n_pdb_ecto": 9,
+   "n_ab_structures": 5
+  },
+  {
+   "gene": "PSCA",
+   "topology": "GPI",
+   "ecto_len": 72,
+   "mean_plddt_ecto": 93.82986111111111,
+   "exp_cov_ecto": 1.0,
+   "n_pdb_ecto": 1,
+   "n_ab_structures": 0
+  },
+  {
+   "gene": "SLC39A6",
+   "topology": "multi-pass",
+   "ecto_len": 362,
+   "mean_plddt_ecto": 51.038618784530385,
+   "exp_cov_ecto": 0.0,
+   "n_pdb_ecto": 0,
+   "n_ab_structures": 0
+  }
+ ]
+}
