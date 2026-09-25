@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.8.14)  25 SEP 2026 05:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.8.14)  25 SEP 2026 06:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -319,7 +319,8 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 \openout3 = `main.toc'.
 
  [2]
-<figs/fig_synergy.pdf, id=14, 390.25798pt x 173.448pt>
+[3]
+<figs/fig_synergy.pdf, id=17, 390.25798pt x 173.448pt>
 File: figs/fig_synergy.pdf Graphic file (type pdf)
 <use figs/fig_synergy.pdf>
 Package pdftex.def Info: figs/fig_synergy.pdf  used on input line 35.
@@ -328,15 +329,15 @@ Package pdftex.def Info: figs/fig_synergy.pdf  used on input line 35.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3]
+[4]
 Overfull \hbox (0.63905pt too wide) in paragraph at lines 43--45
 \OT1/ptm/m/n/10.95 resid-ual in-fil-trate class per-sists by in-spec-tion: HLA 
 pairs in BRCA (HLA-DRA/HLA-B/HLA-C$\OMS/ztmcm/m/n/10.95 ^^B$\OT1/ptm/m/n/10.95 
 SLC39A6,
  []
 
-[4 <./figs/fig_synergy.pdf>]
-<figs/fig_andgate.pdf, id=70, 361.35pt x 202.356pt>
+[5 <./figs/fig_synergy.pdf>]
+<figs/fig_andgate.pdf, id=73, 361.35pt x 202.356pt>
 File: figs/fig_andgate.pdf Graphic file (type pdf)
 <use figs/fig_andgate.pdf>
 Package pdftex.def Info: figs/fig_andgate.pdf  used on input line 46.
@@ -352,14 +353,14 @@ Overfull \hbox (96.26501pt too wide) in paragraph at lines 72--84
 n.json\OT1/ptm/m/n/10.95 ).
  []
 
-[5 <./figs/fig_andgate.pdf>]
+[6 <./figs/fig_andgate.pdf>]
 Overfull \hbox (3.13742pt too wide) in paragraph at lines 109--124
 \OT1/ptm/m/n/10.95 The gated tar-gets were an-no-tated against DGIdb v5 (GraphQ
 L API, \OT1/cmtt/m/n/10.95 results/dgidb[]interactions.json\OT1/ptm/m/n/10.95 )
 
  []
 
-[6]
+[7]
 Overfull \hbox (5.06389pt too wide) in paragraph at lines 127--146
 \OT1/ptm/m/n/10.95 ALMANAC drugs were mapped to the Ge-nomics of Drug Sen-si-ti
 v-ity in Can-cer (GDSC) screened-compounds
@@ -391,20 +392,20 @@ Overfull \hbox (12.51074pt too wide) in paragraph at lines 166--167
 get names gave 65 STRING pro-teins and 288 medium-confidence
  []
 
-[7]
+[8]
 Overfull \hbox (5.38223pt too wide) in paragraph at lines 169--170
 \OT1/ptm/m/n/10.95 Tan-i-moto sim-i-lar-ity were com-puted with RD-Kit [[]] (\O
 T1/cmtt/m/n/10.95 scripts[]structural[]similarity.py\OT1/ptm/m/n/10.95 ,
  []
 
-<figs/fig_depmap_dependency.pdf, id=135, 650.43pt x 245.718pt>
+<figs/fig_depmap_dependency.pdf, id=138, 650.43pt x 245.718pt>
 File: figs/fig_depmap_dependency.pdf Graphic file (type pdf)
 <use figs/fig_depmap_dependency.pdf>
 Package pdftex.def Info: figs/fig_depmap_dependency.pdf  used on input line 206
 .
 (pdftex.def)             Requested size: 460.35791pt x 173.91733pt.
-[8]
-<figs/fig_cptac_protein.pdf, id=139, 520.34402pt x 224.037pt>
+[9]
+<figs/fig_cptac_protein.pdf, id=142, 520.34402pt x 224.037pt>
 File: figs/fig_cptac_protein.pdf Graphic file (type pdf)
 <use figs/fig_cptac_protein.pdf>
 Package pdftex.def Info: figs/fig_cptac_protein.pdf  used on input line 253.
@@ -415,8 +416,8 @@ Overfull \hbox (6.27003pt too wide) in paragraph at lines 242--258
 y-where (ASGR2, CLDN6, CYP2C9, PERP, TM4SF5)
  []
 
-[9 <./figs/fig_depmap_dependency.pdf>]
-<figs/fig_firebrowse_window.pdf, id=206, 621.52202pt x 245.718pt>
+[10 <./figs/fig_depmap_dependency.pdf>]
+<figs/fig_firebrowse_window.pdf, id=209, 621.52202pt x 245.718pt>
 File: figs/fig_firebrowse_window.pdf Graphic file (type pdf)
 <use figs/fig_firebrowse_window.pdf>
 Package pdftex.def Info: figs/fig_firebrowse_window.pdf  used on input line 284
@@ -426,8 +427,8 @@ Package pdftex.def Info: figs/fig_firebrowse_window.pdf  used on input line 284
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./drugcentral_sec.tex [10 <./figs/fig_cptac_protein.pdf>]
-<figs/fig_drugcentral.pdf, id=262, 686.565pt x 260.17201pt>
+(./drugcentral_sec.tex [11 <./figs/fig_cptac_protein.pdf>]
+<figs/fig_drugcentral.pdf, id=265, 686.565pt x 260.17201pt>
 File: figs/fig_drugcentral.pdf Graphic file (type pdf)
 <use figs/fig_drugcentral.pdf>
 Package pdftex.def Info: figs/fig_drugcentral.pdf  used on input line 32.
@@ -436,8 +437,8 @@ Package pdftex.def Info: figs/fig_drugcentral.pdf  used on input line 32.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./ilincs_sec.tex [11 <./figs/fig_firebrowse_window.pdf>]
-<figs/fig_ilincs.pdf, id=328, 686.565pt x 260.17201pt>
+) (./ilincs_sec.tex [12 <./figs/fig_firebrowse_window.pdf>]
+<figs/fig_ilincs.pdf, id=331, 686.565pt x 260.17201pt>
 File: figs/fig_ilincs.pdf Graphic file (type pdf)
 <use figs/fig_ilincs.pdf>
 Package pdftex.def Info: figs/fig_ilincs.pdf  used on input line 44.
@@ -446,7 +447,7 @@ Package pdftex.def Info: figs/fig_ilincs.pdf  used on input line 44.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./epitope_sec.tex [12 <./figs/fig_drugcentral.pdf>]
+) (./epitope_sec.tex [13 <./figs/fig_drugcentral.pdf>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
 
@@ -459,14 +460,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--42
 []\OT1/ptm/m/n/9 ab co-
  []
 
-[13 <./figs/fig_ilincs.pdf>]
-<figs/fig_epitope.pdf, id=453, 758.835pt x 231.26399pt>
+[14 <./figs/fig_ilincs.pdf>]
+<figs/fig_epitope.pdf, id=456, 758.835pt x 231.26399pt>
 File: figs/fig_epitope.pdf Graphic file (type pdf)
 <use figs/fig_epitope.pdf>
 Package pdftex.def Info: figs/fig_epitope.pdf  used on input line 53.
 (pdftex.def)             Requested size: 469.75502pt x 143.16692pt.
-) (./constraint_sec.tex [14 <./figs/fig_epitope.pdf>]
-<figs/constraint_escape.pdf, id=512, 448.07399pt x 317.98799pt>
+) (./constraint_sec.tex [15 <./figs/fig_epitope.pdf>]
+<figs/constraint_escape.pdf, id=515, 448.07399pt x 317.98799pt>
 File: figs/constraint_escape.pdf Graphic file (type pdf)
 <use figs/constraint_escape.pdf>
 Package pdftex.def Info: figs/constraint_escape.pdf  used on input line 18.
@@ -477,82 +478,89 @@ Overfull \hbox (6.65239pt too wide) in paragraph at lines 1--1
 -ing of the gated sur-faceome 
  []
 
-[15 <./figs/constraint_escape.pdf>]
-<clintrials_fig.pdf, id=580, 520.34402pt x 231.26399pt>
+[16 <./figs/constraint_escape.pdf>]
+<clintrials_fig.pdf, id=583, 520.34402pt x 231.26399pt>
 File: clintrials_fig.pdf Graphic file (type pdf)
 <use clintrials_fig.pdf>
 Package pdftex.def Info: clintrials_fig.pdf  used on input line 87.
 (pdftex.def)             Requested size: 469.75502pt x 208.792pt.
-) (./glygen_sec.tex [16] [17]
-<glygen_fig.pdf, id=587, 650.43pt x 245.718pt>
+) (./glygen_sec.tex [17] [18]
+<glygen_fig.pdf, id=590, 650.43pt x 245.718pt>
 File: glygen_fig.pdf Graphic file (type pdf)
 <use glygen_fig.pdf>
 Package pdftex.def Info: glygen_fig.pdf  used on input line 49.
 (pdftex.def)             Requested size: 469.75502pt x 177.46797pt.
 )
-(./hpa_sec.tex [18 <./clintrials_fig.pdf>]
-<hpa_fig.pdf, id=652, 621.52202pt x 245.718pt>
+(./hpa_sec.tex [19 <./clintrials_fig.pdf>]
+<hpa_fig.pdf, id=656, 621.52202pt x 245.718pt>
 File: hpa_fig.pdf Graphic file (type pdf)
 <use hpa_fig.pdf>
 Package pdftex.def Info: hpa_fig.pdf  used on input line 78.
 (pdftex.def)             Requested size: 469.75502pt x 185.72029pt.
-) (./intact_sec.tex [19 <./glygen_fig.pdf>] [20 <./hpa_fig.pdf>]
-<intact_fig.pdf, id=764, 664.88402pt x 260.17201pt>
+) (./intact_sec.tex [20 <./glygen_fig.pdf>] [21 <./hpa_fig.pdf>]
+<intact_fig.pdf, id=768, 664.88402pt x 260.17201pt>
 File: intact_fig.pdf Graphic file (type pdf)
 <use intact_fig.pdf>
 Package pdftex.def Info: intact_fig.pdf  used on input line 41.
 (pdftex.def)             Requested size: 469.75502pt x 183.81827pt.
-) (./pharos_sec.tex [21 <./intact_fig.pdf>]
-<pharos_fig.pdf, id=819, 664.88402pt x 245.718pt>
+) (./pharos_sec.tex [22 <./intact_fig.pdf>]
+<pharos_fig.pdf, id=822, 664.88402pt x 245.718pt>
 File: pharos_fig.pdf Graphic file (type pdf)
 <use pharos_fig.pdf>
 Package pdftex.def Info: pharos_fig.pdf  used on input line 36.
 (pdftex.def)             Requested size: 469.75502pt x 173.60614pt.
 )
-(./bioplex_sec.tex [22 <./pharos_fig.pdf>]
-<bioplex_fig.pdf, id=875, 664.88402pt x 245.718pt>
+(./bioplex_sec.tex [23 <./pharos_fig.pdf>]
+<bioplex_fig.pdf, id=878, 664.88402pt x 245.718pt>
 File: bioplex_fig.pdf Graphic file (type pdf)
 <use bioplex_fig.pdf>
 Package pdftex.def Info: bioplex_fig.pdf  used on input line 44.
 (pdftex.def)             Requested size: 469.75502pt x 173.60614pt.
-) (./gwas_sec.tex [23 <./bioplex_fig.pdf>]
-<gwas_fig.pdf, id=935, 664.88402pt x 245.718pt>
+) (./gwas_sec.tex [24 <./bioplex_fig.pdf>]
+<gwas_fig.pdf, id=938, 664.88402pt x 245.718pt>
 File: gwas_fig.pdf Graphic file (type pdf)
 <use gwas_fig.pdf>
 Package pdftex.def Info: gwas_fig.pdf  used on input line 28.
 (pdftex.def)             Requested size: 469.75502pt x 173.60614pt.
-) (./targetscan_sec.tex [24]
-<targetscan_fig.pdf, id=939, 664.88402pt x 245.718pt>
+) (./targetscan_sec.tex [25]
+<targetscan_fig.pdf, id=943, 664.88402pt x 245.718pt>
 File: targetscan_fig.pdf Graphic file (type pdf)
 <use targetscan_fig.pdf>
 Package pdftex.def Info: targetscan_fig.pdf  used on input line 33.
 (pdftex.def)             Requested size: 469.75502pt x 173.60614pt.
-) (./monarch_sec.tex [25 <./gwas_fig.pdf>]
-<monarch_fig.pdf, id=993, 664.88402pt x 245.718pt>
+) (./monarch_sec.tex [26 <./gwas_fig.pdf>]
+<monarch_fig.pdf, id=996, 664.88402pt x 245.718pt>
 File: monarch_fig.pdf Graphic file (type pdf)
 <use monarch_fig.pdf>
 Package pdftex.def Info: monarch_fig.pdf  used on input line 31.
 (pdftex.def)             Requested size: 469.75502pt x 173.60614pt.
 )
-(./harmonizome_sec.tex [26 <./targetscan_fig.pdf>]
-<harmonizome_fig.pdf, id=1049, 758.835pt x 245.718pt>
+(./harmonizome_sec.tex [27 <./targetscan_fig.pdf>]
+<harmonizome_fig.pdf, id=1052, 758.835pt x 245.718pt>
 File: harmonizome_fig.pdf Graphic file (type pdf)
 <use harmonizome_fig.pdf>
 Package pdftex.def Info: harmonizome_fig.pdf  used on input line 43.
 (pdftex.def)             Requested size: 469.75502pt x 152.11487pt.
-) [27 <./monarch_fig.pdf>]
-[28 <./harmonizome_fig.pdf>] (./derivations.tex
+) (./proteomicsdb_sec.tex
+[28 <./monarch_fig.pdf>]
+<proteomicsdb_fig.pdf, id=1107, 664.88402pt x 245.718pt>
+File: proteomicsdb_fig.pdf Graphic file (type pdf)
+<use proteomicsdb_fig.pdf>
+Package pdftex.def Info: proteomicsdb_fig.pdf  used on input line 34.
+(pdftex.def)             Requested size: 469.75502pt x 173.60614pt.
+) [29 <./harmonizome_fig.pdf>] [30 <./proteomicsdb_fig.pdf>] (./derivations.tex
+
 Overfull \hbox (0.93571pt too wide) in paragraph at lines 2--4
 \OT1/ptm/m/n/10.95 All quan-ti-ties be-low are com-puted in the com-mit-ted pip
 elines; no-ta-tion matches \OT1/cmtt/m/n/10.95 src/cart/rna[]window.py
  []
 
-[29]) [30] (./main.aux) ) 
+[31]) [32] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 3619 strings out of 480247
- 55149 string characters out of 5896151
- 346513 words of memory out of 5000000
- 21440 multiletter control sequences out of 15000+600000
+ 3634 strings out of 480247
+ 55518 string characters out of 5896151
+ 347537 words of memory out of 5000000
+ 21451 multiletter control sequences out of 15000+600000
  525142 words of font info for 147 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,11n,62p,1502b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -568,10 +576,10 @@ e1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/us
 yr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (30 pages, 548800 bytes).
+Output written on main.pdf (32 pages, 567910 bytes).
 PDF statistics:
- 1216 PDF objects out of 1440 (max. 8388607)
- 200 compressed objects within 2 object streams
+ 1273 PDF objects out of 1440 (max. 8388607)
+ 210 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

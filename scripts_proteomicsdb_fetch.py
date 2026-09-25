@@ -122,7 +122,7 @@ def fetch_gene(sym):
             ex = expression_rows(pid)
             if ex is None:
                 return "err"
-            rec["expression"] = [[x["SAMPLE_ID"], float(x["EXPRESSION"]),
+            rec["expression"] = [[x["SAMPLE_ID"], (float(x["EXPRESSION"]) if x["EXPRESSION"] is not None else None),
                                   x["CALCULATION_METHOD"], x["PEPTIDES"]] for x in ex]
         if not ids:
             rec["_error"] = "not_in_proteomicsdb"

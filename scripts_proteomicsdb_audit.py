@@ -134,3 +134,30 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# ---- Follow-up control H3 (declared after H1 came out reversed) ----
+# Explanation under test: background contains many proteins MS rarely sees
+# (IG/TCR segments, olfactory receptors, small secreted proteins), so a gated
+# excess may be pure detectability. H3 compares normal-tissue breadth only
+# among genes detected in >= 1 sample (two-sided MW); a remaining gated excess
+# means the reversal is not just detectability.
+def h3():
+    rows = list(csv.DictReader(open(os.path.join(BASE, "results", "proteomicsdb_per_gene.csv"))))
+    det = [r for r in rows if r["detected_any"] == "True"]
+    a = [int(r["n_normal_tissues"]) for r in det if r["group"] == "gated"]
+    b = [int(r["n_normal_tissues"]) for r in det if r["group"] == "background"]
+    p = float(mannwhitneyu(a, b, alternative="two-sided").pvalue)
+    return {"hypothesis": "H3 among detected genes, gated vs background normal-tissue "
+                          "breadth (two-sided MW)",
+            "median_gated": median(a), "median_background": median(b),
+            "n_gated": len(a), "n_background": len(b), "p": p,
+            "gated_excess_survives": p < 0.05 and median(a) > median(b)}
+
+
+if __name__ == "__main__":
+    _p = os.path.join(BASE, "results", "proteomicsdb_audit.json")
+    _o = json.load(open(_p))
+    _o["H3_detected_only"] = h3()
+    json.dump(_o, open(_p, "w"), indent=1)
+    print(json.dumps(_o["H3_detected_only"]))

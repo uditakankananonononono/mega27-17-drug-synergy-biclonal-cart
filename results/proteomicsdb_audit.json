@@ -1,0 +1,108 @@
+{
+ "source": "ProteomicsDB api_v2 OData (proteomicsdb.org)",
+ "n_genes_total": 205,
+ "calibration_gates": {
+  "G1_mapped": {
+   "obs": 196,
+   "threshold": 180,
+   "pass": true
+  },
+  "G2_CD19_blineage": {
+   "obs": 344,
+   "threshold": 1,
+   "pass": true
+  },
+  "G3_posctrl_normal_tissues": {
+   "obs": {
+    "POLR2A": 37,
+    "RPS3": 45,
+    "PCNA": 46,
+    "PSMA1": 44
+   },
+   "threshold": 10,
+   "pass": true
+  }
+ },
+ "all_gates_pass": true,
+ "n_normal_tissue_whitelist": 75,
+ "H1_normal_breadth": {
+  "alternative": "less",
+  "median_gated": 20.0,
+  "median_background": 5.0,
+  "n_gated": 98,
+  "n_background": 90,
+  "p": 0.9999999970163205,
+  "verdict": "FALSIFIED"
+ },
+ "H2_detected_any": {
+  "table_gated_bg_detected_not": [
+   [
+    97,
+    1
+   ],
+   [
+    74,
+    16
+   ]
+  ],
+  "fisher_or": 20.972972972972972,
+  "fisher_p": 4.3464267442622026e-05
+ },
+ "antigens": {
+  "CA9": {
+   "n_samples_detected": 596,
+   "n_normal_tissues": 7,
+   "normal_tissues": "cardia;duodenum;gall bladder;ovary;pancreatic islet;small intestine;stomach"
+  },
+  "CA12": {
+   "n_samples_detected": 709,
+   "n_normal_tissues": 27,
+   "normal_tissues": "brain;breast;colon;esophagus;gall bladder;kidney;liver;lung;oral epithelium;ovary;oviduct;pancreas;pancreatic islet;placenta;prostate gland;rectum;salivary gland;seminal vesicle;smooth muscle;spleen;stomach;testis;thyroid gland;tonsil;urinary bladder;uterine endometrium;vermiform appendix"
+  },
+  "CLDN18": {
+   "n_samples_detected": 78,
+   "n_normal_tissues": 6,
+   "normal_tissues": "cardia;duodenum;gall bladder;lung;small intestine;stomach"
+  },
+  "CLDN6": {
+   "n_samples_detected": 237,
+   "n_normal_tissues": 1,
+   "normal_tissues": "heart"
+  },
+  "MSLN": {
+   "n_samples_detected": 728,
+   "n_normal_tissues": 19,
+   "normal_tissues": "adipose tissue;breast;colon;duodenum;gall bladder;lung;ovary;oviduct;placenta;prostate gland;rectum;small intestine;smooth muscle;stomach;testis;tonsil;urinary bladder;uterine endometrium;vermiform appendix"
+  },
+  "PSCA": {
+   "n_samples_detected": 296,
+   "n_normal_tissues": 6,
+   "normal_tissues": "cardia;placenta;prostate gland;salivary gland;stomach;urinary bladder"
+  },
+  "SLC39A6": {
+   "n_samples_detected": 1155,
+   "n_normal_tissues": 15,
+   "normal_tissues": "brain;kidney;lung;ovary;oviduct;pancreas;placenta;prefrontal cortex;prostate gland;retina;salivary gland;testis;thyroid gland;tonsil;urinary bladder"
+  }
+ },
+ "unmapped": [
+  "IGKV1-12",
+  "IGKV2-28",
+  "IGKV6D-41",
+  "IGLV11-55",
+  "OR2I1P",
+  "TBC1D3L",
+  "TRBV12-4",
+  "TRBV7-1",
+  "TRBV7-4"
+ ],
+ "H3_detected_only": {
+  "hypothesis": "H3 among detected genes, gated vs background normal-tissue breadth (two-sided MW)",
+  "median_gated": 21,
+  "median_background": 7.5,
+  "n_gated": 97,
+  "n_background": 74,
+  "p": 8.147135178837755e-06,
+  "gated_excess_survives": true
+ }
+}

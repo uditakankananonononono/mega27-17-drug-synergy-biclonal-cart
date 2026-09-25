@@ -1,85 +1,90 @@
-\contentsline {section}{\numberline {1}Introduction}{3}{}%
-\contentsline {section}{\numberline {2}Data}{3}{}%
-\contentsline {section}{\numberline {3}Methods}{3}{}%
-\contentsline {subsection}{\numberline {3.1}Synergy model}{3}{}%
-\contentsline {subsection}{\numberline {3.2}RNA window and AND gate}{3}{}%
-\contentsline {section}{\numberline {4}Results}{3}{}%
-\contentsline {subsection}{\numberline {4.1}Synergy (pair-held-out)}{3}{}%
-\contentsline {subsection}{\numberline {4.2}Comparison to published baselines (verified)}{3}{}%
-\contentsline {subsection}{\numberline {4.3}Percentile and subtype metrics (p75 fix falsified, fraction metric validated)}{4}{}%
-\contentsline {subsection}{\numberline {4.4}AND-gate biclonal discovery}{5}{}%
-\contentsline {subsection}{\numberline {4.5}Mechanism annotation via ChEMBL assay accessions}{5}{}%
-\contentsline {section}{\numberline {5}Documented negatives and data findings}{6}{}%
-\contentsline {subsection}{\numberline {5.1}Off-tumor safety check: GTEx normal-tissue expression}{6}{}%
-\contentsline {subsection}{\numberline {5.2}Druggability annotation: DGIdb v5}{6}{}%
-\contentsline {subsection}{\numberline {5.3}Pathway-level synergy structure: GDSC release 8.5}{7}{}%
-\contentsline {subsection}{\numberline {5.4}Tractability audit: Open Targets Platform}{7}{}%
-\contentsline {subsection}{\numberline {5.5}Protein-network proximity of drug targets: STRING (null)}{7}{}%
-\contentsline {subsection}{\numberline {5.6}Chemical-structure similarity vs synergy: RDKit (confounded, null after control)}{8}{}%
-\contentsline {subsection}{\numberline {5.7}CRISPR dependency audit: DepMap 24Q4 (null for essentiality; escape risk confirmed)}{8}{}%
-\contentsline {subsection}{\numberline {5.8}Protein-level audit: CPTAC via cBioPortal (gate holds at protein, with five RNA-only exceptions)}{9}{}%
-\contentsline {subsection}{\numberline {5.9}Tumor-versus-adjacent window within the organ (FireBrowse/TCGA): only CA9 clears the noise floor}{10}{}%
-\contentsline {subsection}{\numberline {5.10}Quantitative engagement audit: DrugCentral (third orthogonal null)}{11}{}%
-\contentsline {subsection}{\numberline {5.11}Measurement- and perturbation-layer visibility: LINCS L1000 via iLINCS (fourth invisibility axis; connectivity pilot negative)}{11}{}%
-\contentsline {section}{\numberline {6}Epitope-structure audit: three AND-gate antigens have no experimental structure (AlphaFold DB + RCSB PDB)}{13}{}%
-\contentsline {paragraph}{Positive control (3 of 4 pass).}{13}{}%
-\contentsline {paragraph}{Result.}{13}{}%
-\contentsline {section}{\numberline {7}Antigen-escape constraint audit (gnomAD v4, HGNC, Reactome)}{14}{}%
-\contentsline {paragraph}{Calibration gate passes.}{14}{}%
-\contentsline {paragraph}{Gate-wide null on all three escape-cost axes.}{14}{}%
-\contentsline {paragraph}{Every measurable AND-gate antigen is free to lose.}{15}{}%
-\contentsline {paragraph}{Negative results preserved.}{15}{}%
-\contentsline {subsection}{\numberline {7.1}Clinical-development landscape: curation-corrected trial mining of the gated surfaceome}{16}{}%
-\contentsline {paragraph}{Calibration.}{16}{}%
-\contentsline {paragraph}{Acronym noise is half the raw signal.}{16}{}%
-\contentsline {paragraph}{What development the gated set does carry.}{16}{}%
-\contentsline {paragraph}{The AND-gate antigens.}{16}{}%
-\contentsline {subsection}{\numberline {7.2}Glycan shielding of the AND-gate antigens and the gated surfaceome}{17}{}%
+\contentsline {section}{\numberline {1}Introduction}{4}{}%
+\contentsline {section}{\numberline {2}Data}{4}{}%
+\contentsline {section}{\numberline {3}Methods}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Synergy model}{4}{}%
+\contentsline {subsection}{\numberline {3.2}RNA window and AND gate}{4}{}%
+\contentsline {section}{\numberline {4}Results}{4}{}%
+\contentsline {subsection}{\numberline {4.1}Synergy (pair-held-out)}{4}{}%
+\contentsline {subsection}{\numberline {4.2}Comparison to published baselines (verified)}{4}{}%
+\contentsline {subsection}{\numberline {4.3}Percentile and subtype metrics (p75 fix falsified, fraction metric validated)}{5}{}%
+\contentsline {subsection}{\numberline {4.4}AND-gate biclonal discovery}{6}{}%
+\contentsline {subsection}{\numberline {4.5}Mechanism annotation via ChEMBL assay accessions}{6}{}%
+\contentsline {section}{\numberline {5}Documented negatives and data findings}{7}{}%
+\contentsline {subsection}{\numberline {5.1}Off-tumor safety check: GTEx normal-tissue expression}{7}{}%
+\contentsline {subsection}{\numberline {5.2}Druggability annotation: DGIdb v5}{7}{}%
+\contentsline {subsection}{\numberline {5.3}Pathway-level synergy structure: GDSC release 8.5}{8}{}%
+\contentsline {subsection}{\numberline {5.4}Tractability audit: Open Targets Platform}{8}{}%
+\contentsline {subsection}{\numberline {5.5}Protein-network proximity of drug targets: STRING (null)}{8}{}%
+\contentsline {subsection}{\numberline {5.6}Chemical-structure similarity vs synergy: RDKit (confounded, null after control)}{9}{}%
+\contentsline {subsection}{\numberline {5.7}CRISPR dependency audit: DepMap 24Q4 (null for essentiality; escape risk confirmed)}{9}{}%
+\contentsline {subsection}{\numberline {5.8}Protein-level audit: CPTAC via cBioPortal (gate holds at protein, with five RNA-only exceptions)}{10}{}%
+\contentsline {subsection}{\numberline {5.9}Tumor-versus-adjacent window within the organ (FireBrowse/TCGA): only CA9 clears the noise floor}{11}{}%
+\contentsline {subsection}{\numberline {5.10}Quantitative engagement audit: DrugCentral (third orthogonal null)}{12}{}%
+\contentsline {subsection}{\numberline {5.11}Measurement- and perturbation-layer visibility: LINCS L1000 via iLINCS (fourth invisibility axis; connectivity pilot negative)}{12}{}%
+\contentsline {section}{\numberline {6}Epitope-structure audit: three AND-gate antigens have no experimental structure (AlphaFold DB + RCSB PDB)}{14}{}%
+\contentsline {paragraph}{Positive control (3 of 4 pass).}{14}{}%
+\contentsline {paragraph}{Result.}{14}{}%
+\contentsline {section}{\numberline {7}Antigen-escape constraint audit (gnomAD v4, HGNC, Reactome)}{15}{}%
+\contentsline {paragraph}{Calibration gate passes.}{15}{}%
+\contentsline {paragraph}{Gate-wide null on all three escape-cost axes.}{15}{}%
+\contentsline {paragraph}{Every measurable AND-gate antigen is free to lose.}{16}{}%
+\contentsline {paragraph}{Negative results preserved.}{16}{}%
+\contentsline {subsection}{\numberline {7.1}Clinical-development landscape: curation-corrected trial mining of the gated surfaceome}{17}{}%
 \contentsline {paragraph}{Calibration.}{17}{}%
-\contentsline {paragraph}{Gated antigens are more glycosylated, partly by topology composition.}{17}{}%
-\contentsline {paragraph}{Per-antigen shield table.}{17}{}%
-\contentsline {subsection}{\numberline {7.3}Human Protein Atlas membrane annotation: surface exposure of gated antigens}{18}{}%
-\contentsline {paragraph}{Calibration gate.}{18}{}%
-\contentsline {paragraph}{Membrane prediction does not enrich the gated set (null).}{18}{}%
-\contentsline {paragraph}{The experimental IF tier is sparse and study-biased.}{19}{}%
-\contentsline {subsection}{\numberline {7.4}IntAct curated physical interactions: do gated antigens co-complex?}{20}{}%
-\contentsline {paragraph}{Calibration gate.}{20}{}%
-\contentsline {paragraph}{Antigen-pair co-complex test.}{20}{}%
-\contentsline {paragraph}{Interaction degree: study-bias audit.}{21}{}%
-\contentsline {paragraph}{Per-antigen interaction context.}{21}{}%
-\contentsline {subsection}{\numberline {7.5}Pharos/TCRD target illumination: how druggable is the gated surfaceome?}{21}{}%
+\contentsline {paragraph}{Acronym noise is half the raw signal.}{17}{}%
+\contentsline {paragraph}{What development the gated set does carry.}{17}{}%
+\contentsline {paragraph}{The AND-gate antigens.}{17}{}%
+\contentsline {subsection}{\numberline {7.2}Glycan shielding of the AND-gate antigens and the gated surfaceome}{18}{}%
+\contentsline {paragraph}{Calibration.}{18}{}%
+\contentsline {paragraph}{Gated antigens are more glycosylated, partly by topology composition.}{18}{}%
+\contentsline {paragraph}{Per-antigen shield table.}{18}{}%
+\contentsline {subsection}{\numberline {7.3}Human Protein Atlas membrane annotation: surface exposure of gated antigens}{19}{}%
+\contentsline {paragraph}{Calibration gate.}{19}{}%
+\contentsline {paragraph}{Membrane prediction does not enrich the gated set (null).}{19}{}%
+\contentsline {paragraph}{The experimental IF tier is sparse and study-biased.}{20}{}%
+\contentsline {subsection}{\numberline {7.4}IntAct curated physical interactions: do gated antigens co-complex?}{21}{}%
 \contentsline {paragraph}{Calibration gate.}{21}{}%
-\contentsline {paragraph}{Illumination of gated versus background.}{22}{}%
-\contentsline {paragraph}{Cross-source Tclin concordance.}{22}{}%
-\contentsline {paragraph}{AND-gate antigens.}{22}{}%
-\contentsline {subsection}{\numberline {7.6}BioPlex systematic AP-MS: co-complex check against the IntAct null}{22}{}%
-\contentsline {paragraph}{Calibration gate.}{23}{}%
-\contentsline {paragraph}{Antigen-pair co-complex test.}{23}{}%
-\contentsline {paragraph}{Detection and degree bias.}{23}{}%
-\contentsline {paragraph}{Cross-resource concordance.}{23}{}%
-\contentsline {subsection}{\numberline {7.7}GWAS Catalog: germline association signal at antigen loci}{24}{}%
+\contentsline {paragraph}{Antigen-pair co-complex test.}{21}{}%
+\contentsline {paragraph}{Interaction degree: study-bias audit.}{22}{}%
+\contentsline {paragraph}{Per-antigen interaction context.}{22}{}%
+\contentsline {subsection}{\numberline {7.5}Pharos/TCRD target illumination: how druggable is the gated surfaceome?}{22}{}%
+\contentsline {paragraph}{Calibration gate.}{22}{}%
+\contentsline {paragraph}{Illumination of gated versus background.}{23}{}%
+\contentsline {paragraph}{Cross-source Tclin concordance.}{23}{}%
+\contentsline {paragraph}{AND-gate antigens.}{23}{}%
+\contentsline {subsection}{\numberline {7.6}BioPlex systematic AP-MS: co-complex check against the IntAct null}{23}{}%
 \contentsline {paragraph}{Calibration gate.}{24}{}%
-\contentsline {paragraph}{Any-trait and cancer-trait carriage.}{24}{}%
-\contentsline {paragraph}{AND-gate antigens.}{24}{}%
-\contentsline {subsection}{\numberline {7.8}TargetScan: post-transcriptional repression burden of antigen 3'UTRs}{24}{}%
-\contentsline {paragraph}{Calibration gate.}{24}{}%
-\contentsline {paragraph}{Burden gated versus background.}{25}{}%
-\contentsline {paragraph}{AND-gate antigens.}{25}{}%
-\contentsline {subsection}{\numberline {7.9}Monarch Initiative: Mendelian-disease causality and phenotypic breadth}{25}{}%
+\contentsline {paragraph}{Antigen-pair co-complex test.}{24}{}%
+\contentsline {paragraph}{Detection and degree bias.}{24}{}%
+\contentsline {paragraph}{Cross-resource concordance.}{24}{}%
+\contentsline {subsection}{\numberline {7.7}GWAS Catalog: germline association signal at antigen loci}{25}{}%
 \contentsline {paragraph}{Calibration gate.}{25}{}%
-\contentsline {paragraph}{Causality gated versus background.}{26}{}%
+\contentsline {paragraph}{Any-trait and cancer-trait carriage.}{25}{}%
+\contentsline {paragraph}{AND-gate antigens.}{25}{}%
+\contentsline {subsection}{\numberline {7.8}TargetScan: post-transcriptional repression burden of antigen 3'UTRs}{25}{}%
+\contentsline {paragraph}{Calibration gate.}{25}{}%
+\contentsline {paragraph}{Burden gated versus background.}{26}{}%
 \contentsline {paragraph}{AND-gate antigens.}{26}{}%
-\contentsline {subsection}{\numberline {7.10}Harmonizome: curated versus systematic annotation density}{26}{}%
+\contentsline {subsection}{\numberline {7.9}Monarch Initiative: Mendelian-disease causality and phenotypic breadth}{26}{}%
 \contentsline {paragraph}{Calibration gate.}{26}{}%
-\contentsline {paragraph}{Hypothesis H1 (falsified).}{26}{}%
-\contentsline {paragraph}{Control H2 (falsified, effect shrinks).}{27}{}%
+\contentsline {paragraph}{Causality gated versus background.}{27}{}%
 \contentsline {paragraph}{AND-gate antigens.}{27}{}%
-\contentsline {section}{\numberline {8}Shipped tool}{27}{}%
-\contentsline {section}{\numberline {9}Falsification paths}{28}{}%
-\contentsline {section}{\numberline {10}Mathematical derivations}{29}{}%
-\contentsline {subsection}{\numberline {10.1}Bliss independence and the ALMANAC synergy score}{29}{}%
-\contentsline {subsection}{\numberline {10.2}Embedding model and why pair-held-out is the honest split}{29}{}%
-\contentsline {subsection}{\numberline {10.3}AUROC as a Mann--Whitney probability}{30}{}%
-\contentsline {subsection}{\numberline {10.4}FANM: estimator, sampling error, and interval}{30}{}%
-\contentsline {subsection}{\numberline {10.5}Streaming percentiles as order statistics}{30}{}%
-\contentsline {subsection}{\numberline {10.6}AND-gate gain is bounded by the weaker single}{30}{}%
+\contentsline {subsection}{\numberline {7.10}Harmonizome: curated versus systematic annotation density}{27}{}%
+\contentsline {paragraph}{Calibration gate.}{27}{}%
+\contentsline {paragraph}{Hypothesis H1 (falsified).}{27}{}%
+\contentsline {paragraph}{Control H2 (falsified, effect shrinks).}{28}{}%
+\contentsline {paragraph}{AND-gate antigens.}{28}{}%
+\contentsline {subsection}{\numberline {7.11}ProteomicsDB: protein-level detection in normal tissues}{28}{}%
+\contentsline {paragraph}{Calibration gate.}{29}{}%
+\contentsline {paragraph}{Hypothesis H1 (falsified, reversed).}{29}{}%
+\contentsline {paragraph}{Control H3.}{29}{}%
+\contentsline {paragraph}{AND-gate antigens.}{29}{}%
+\contentsline {section}{\numberline {8}Shipped tool}{29}{}%
+\contentsline {section}{\numberline {9}Falsification paths}{30}{}%
+\contentsline {section}{\numberline {10}Mathematical derivations}{31}{}%
+\contentsline {subsection}{\numberline {10.1}Bliss independence and the ALMANAC synergy score}{31}{}%
+\contentsline {subsection}{\numberline {10.2}Embedding model and why pair-held-out is the honest split}{31}{}%
+\contentsline {subsection}{\numberline {10.3}AUROC as a Mann--Whitney probability}{32}{}%
+\contentsline {subsection}{\numberline {10.4}FANM: estimator, sampling error, and interval}{32}{}%
+\contentsline {subsection}{\numberline {10.5}Streaming percentiles as order statistics}{32}{}%
+\contentsline {subsection}{\numberline {10.6}AND-gate gain is bounded by the weaker single}{32}{}%
