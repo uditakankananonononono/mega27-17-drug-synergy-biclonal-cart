@@ -1,0 +1,87 @@
+{
+ "source": "EBI Expression Atlas E-MTAB-513 (Illumina Body Map 2.0, 16 tissues)",
+ "n_genes_total": 205,
+ "calibration_gates": {
+  "G1_matched": {
+   "obs": 205,
+   "threshold": 180,
+   "pass": true
+  },
+  "G2_CD19_lymph_node_tpm": {
+   "obs": 70.0,
+   "threshold": 10,
+   "pass": true
+  },
+  "G3_posctrl_tau_lt_0.5": {
+   "obs": {
+    "POLR2A": 0.21603981179762885,
+    "RPS3": 0.2198031047918029,
+    "PCNA": 0.21132336707759694,
+    "PSMA1": 0.08984877349221013
+   },
+   "threshold": 0.5,
+   "pass": true
+  }
+ },
+ "all_gates_pass": true,
+ "H1_tau": {
+  "alternative": "greater",
+  "median_gated": 0.645789895109634,
+  "median_background": 0.7057336974559455,
+  "n_gated": 99,
+  "n_background": 95,
+  "p": 0.9359955284045853,
+  "verdict": "FALSIFIED"
+ },
+ "H2_cross_platform": {
+  "n_pairs": 196,
+  "spearman_rho": 0.6675212329913957,
+  "p": 1.2087106861161647e-26,
+  "verdict": "CONFIRMED"
+ },
+ "antigens": {
+  "CA9": {
+   "tau": 0.7837178082010623,
+   "n_tissues_tpm1": 6,
+   "max_tissue": "testis",
+   "max_tpm": 14.0
+  },
+  "CA12": {
+   "tau": 0.7195045108388425,
+   "n_tissues_tpm1": 12,
+   "max_tissue": "kidney",
+   "max_tpm": 275.0
+  },
+  "CLDN18": {
+   "tau": 0.9282208878337335,
+   "n_tissues_tpm1": 5,
+   "max_tissue": "lung",
+   "max_tpm": 371.0
+  },
+  "CLDN6": {
+   "tau": 0.9354132132629441,
+   "n_tissues_tpm1": 1,
+   "max_tissue": "thyroid",
+   "max_tpm": 2.0
+  },
+  "MSLN": {
+   "tau": 0.809429491515803,
+   "n_tissues_tpm1": 7,
+   "max_tissue": "lung",
+   "max_tpm": 232.0
+  },
+  "PSCA": {
+   "tau": 0.8920032939918097,
+   "n_tissues_tpm1": 5,
+   "max_tissue": "prostate",
+   "max_tpm": 64.0
+  },
+  "SLC39A6": {
+   "tau": 0.25595000181028316,
+   "n_tissues_tpm1": 16,
+   "max_tissue": "ovary",
+   "max_tpm": 259.0
+  }
+ },
+ "unmatched": []
+}
