@@ -1,0 +1,137 @@
+{
+ "source": "Harmonizome API 1.0 (maayanlab.cloud/Harmonizome)",
+ "calibration_gates": {
+  "G1_resolved": {
+   "obs": 203,
+   "threshold": 180,
+   "pass": true
+  },
+  "G2_CD19_total": {
+   "obs": 11116,
+   "threshold": 1000,
+   "pass": true
+  },
+  "G3_posctrl_resolved_ge1000": {
+   "obs": {
+    "POLR2A": 15561,
+    "RPS3": 24798,
+    "PCNA": 26109,
+    "PSMA1": 8825
+   },
+   "threshold": 1000,
+   "pass": true
+  }
+ },
+ "all_gates_pass": true,
+ "hypothesis": "H1a gated>background curated (one-sided p<0.05) AND H1b systematic no difference (two-sided p>=0.05)",
+ "tests": {
+  "curated": {
+   "alternative": "greater",
+   "median_gated": 2510.5,
+   "median_background": 1060,
+   "n_gated": 98,
+   "n_background": 97,
+   "p": 6.274851549079576e-10
+  },
+  "systematic": {
+   "alternative": "two-sided",
+   "median_gated": 6548.5,
+   "median_background": 3735,
+   "n_gated": 98,
+   "n_background": 97,
+   "p": 1.874943634508226e-10
+  },
+  "n_datasets_curated": {
+   "alternative": "greater",
+   "median_gated": 45.0,
+   "median_background": 39,
+   "n_gated": 98,
+   "n_background": 97,
+   "p": 1.5119716993518747e-06
+  },
+  "n_datasets_systematic": {
+   "alternative": "two-sided",
+   "median_gated": 70.0,
+   "median_background": 63,
+   "n_gated": 98,
+   "n_background": 97,
+   "p": 3.2356308470371858e-06
+  },
+  "curated_frac": {
+   "alternative": "two-sided",
+   "median_gated": 0.28679573083416243,
+   "median_background": 0.19941887138706224,
+   "n_gated": 98,
+   "n_background": 97,
+   "p": 0.0010754647501648432
+  },
+  "n_associations": {
+   "alternative": "two-sided",
+   "median_gated": 9560.5,
+   "median_background": 5084,
+   "n_gated": 98,
+   "n_background": 97,
+   "p": 2.9228445294274724e-11
+  }
+ },
+ "H1a": true,
+ "H1b": false,
+ "verdict": "FALSIFIED (H1b systematic differs)",
+ "dataset_classes": {
+  "curated": 78,
+  "systematic": 97,
+  "unclassified": 2
+ },
+ "unclassified_datasets": [
+  "MSigDB Cancer Gene Co-expression Modules",
+  "MiRTarBase microRNA Targets"
+ ],
+ "antigens": {
+  "CA9": {
+   "n_associations": 9429,
+   "curated": 3872,
+   "systematic": 5555,
+   "curated_frac": 0.41073512252042005
+  },
+  "CA12": {
+   "n_associations": 15580,
+   "curated": 1813,
+   "systematic": 13761,
+   "curated_frac": 0.11641196866572492
+  },
+  "CLDN18": {
+   "n_associations": 4424,
+   "curated": 1173,
+   "systematic": 3251,
+   "curated_frac": 0.26514466546112114
+  },
+  "CLDN6": {
+   "n_associations": 4298,
+   "curated": 1071,
+   "systematic": 3227,
+   "curated_frac": 0.249185667752443
+  },
+  "MSLN": {
+   "n_associations": 9439,
+   "curated": 2233,
+   "systematic": 7205,
+   "curated_frac": 0.2365967365967366
+  },
+  "PSCA": {
+   "n_associations": 7742,
+   "curated": 1529,
+   "systematic": 6213,
+   "curated_frac": 0.1974941875484371
+  },
+  "SLC39A6": {
+   "n_associations": 9342,
+   "curated": 1098,
+   "systematic": 8242,
+   "curated_frac": 0.11755888650963597
+  }
+ },
+ "unresolved": [
+  "GAPDH",
+  "TRBV12-4"
+ ]
+}
