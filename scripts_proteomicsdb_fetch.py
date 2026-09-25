@@ -74,6 +74,34 @@ def fetch_samples(page=2000, n_total=None):
     json.dump(rows, open(p, "w"))
 
 
+def expression_rows(pid, page=1500):
+    """All ProteinExpression rows for one protein; large proteins are paged in
+    parallel (the service takes ~20 s per ~1,000 rows)."""
+    try:
+        n = int(urllib.request.urlopen("%s/ProteinExpression/$count?%s" % (
+            API, urllib.parse.urlencode({"$filter": "PROTEIN_ID eq %d" % pid})),
+            timeout=60).read())
+    except Exception:
+        return None
+    skips = list(range(0, max(n, 1), page))
+
+    def one(skip):
+        return get("ProteinExpression", {"$filter": "PROTEIN_ID eq %d" % pid,
+                                         "$select": "SAMPLE_ID,EXPRESSION,CALCULATION_METHOD,PEPTIDES",
+                                         "$orderby": "SAMPLE_ID,CALCULATION_METHOD",
+                                         "$top": page, "$skip": skip})
+    with ThreadPoolExecutor(min(len(skips), 12)) as ex:
+        pages = list(ex.map(one, skips))
+    rows = []
+    for r in pages:
+        if isinstance(r, dict):
+            return None
+        rows += r
+    if len(rows) != n:
+        return None
+    return rows
+
+
 def fetch_gene(sym):
     p = os.path.join(GDIR, sym + ".json")
     if os.path.exists(p):
@@ -91,9 +119,8 @@ def fetch_gene(sym):
         rec["protein_ids"] = ids
         rec["expression"] = []
         for pid in ids[:1]:
-            ex = get("ProteinExpression", {"$filter": "PROTEIN_ID eq %d" % pid,
-                                           "$select": "SAMPLE_ID,EXPRESSION,CALCULATION_METHOD,PEPTIDES"})
-            if isinstance(ex, dict):
+            ex = expression_rows(pid)
+            if ex is None:
                 return "err"
             rec["expression"] = [[x["SAMPLE_ID"], float(x["EXPRESSION"]),
                                   x["CALCULATION_METHOD"], x["PEPTIDES"]] for x in ex]
@@ -103,7 +130,7 @@ def fetch_gene(sym):
     return "ok"
 
 
-def main(budget_s=90, workers=32):
+def main(budget_s=90, workers=3):
     os.makedirs(GDIR, exist_ok=True)
     if "--samples" in sys.argv:
         fetch_samples()
