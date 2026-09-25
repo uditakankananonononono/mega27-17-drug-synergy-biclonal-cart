@@ -79,12 +79,17 @@
 \contentsline {paragraph}{Hypothesis H1 (falsified, reversed).}{29}{}%
 \contentsline {paragraph}{Control H3.}{29}{}%
 \contentsline {paragraph}{AND-gate antigens.}{29}{}%
-\contentsline {section}{\numberline {8}Shipped tool}{29}{}%
-\contentsline {section}{\numberline {9}Falsification paths}{30}{}%
-\contentsline {section}{\numberline {10}Mathematical derivations}{31}{}%
-\contentsline {subsection}{\numberline {10.1}Bliss independence and the ALMANAC synergy score}{31}{}%
-\contentsline {subsection}{\numberline {10.2}Embedding model and why pair-held-out is the honest split}{31}{}%
-\contentsline {subsection}{\numberline {10.3}AUROC as a Mann--Whitney probability}{32}{}%
-\contentsline {subsection}{\numberline {10.4}FANM: estimator, sampling error, and interval}{32}{}%
-\contentsline {subsection}{\numberline {10.5}Streaming percentiles as order statistics}{32}{}%
-\contentsline {subsection}{\numberline {10.6}AND-gate gain is bounded by the weaker single}{32}{}%
+\contentsline {subsection}{\numberline {7.12}Expression Atlas: independent RNA-seq tissue specificity}{29}{}%
+\contentsline {paragraph}{Calibration gate.}{30}{}%
+\contentsline {paragraph}{H1: RNA-level tissue specificity.}{30}{}%
+\contentsline {paragraph}{H2: cross-platform concordance.}{30}{}%
+\contentsline {paragraph}{Antigen level.}{30}{}%
+\contentsline {section}{\numberline {8}Shipped tool}{31}{}%
+\contentsline {section}{\numberline {9}Falsification paths}{31}{}%
+\contentsline {section}{\numberline {10}Mathematical derivations}{32}{}%
+\contentsline {subsection}{\numberline {10.1}Bliss independence and the ALMANAC synergy score}{32}{}%
+\contentsline {subsection}{\numberline {10.2}Embedding model and why pair-held-out is the honest split}{33}{}%
+\contentsline {subsection}{\numberline {10.3}AUROC as a Mann--Whitney probability}{33}{}%
+\contentsline {subsection}{\numberline {10.4}FANM: estimator, sampling error, and interval}{33}{}%
+\contentsline {subsection}{\numberline {10.5}Streaming percentiles as order statistics}{33}{}%
+\contentsline {subsection}{\numberline {10.6}AND-gate gain is bounded by the weaker single}{34}{}%
