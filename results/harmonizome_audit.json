@@ -133,5 +133,59 @@
  "unresolved": [
   "GAPDH",
   "TRBV12-4"
- ]
+ ],
+ "H2_control": {
+  "hypothesis": "H2 non-expression systematic: no gated-vs-background difference (two-sided p>=0.05)",
+  "nonexpression": {
+   "median_gated": 1177.0,
+   "median_background": 930,
+   "p": 0.016527718583292828
+  },
+  "expression": {
+   "median_gated": 5260.5,
+   "median_background": 2571,
+   "p": 2.524885873334226e-12
+  },
+  "n_nonexpression_datasets": 37,
+  "nonexpression_datasets": [
+   "Achilles Cell Line Gene Essentiality Profiles",
+   "CCLE Cell Line Gene CNV Profiles",
+   "CCLE Cell Line Gene Mutation Profiles",
+   "CM4AI U2OS Cell Map Protein Localization Assemblies",
+   "COMPARTMENTS Experimental Protein Localization Evidence Scores",
+   "COMPARTMENTS Experimental Protein Localization Evidence Scores 2025",
+   "COSMIC Cell Line Gene CNV Profiles",
+   "COSMIC Cell Line Gene Mutation Profiles",
+   "ChEA Transcription Factor Binding Site Profiles",
+   "ChEA Transcription Factor Targets",
+   "ChEA Transcription Factor Targets 2022",
+   "DISEASES Experimental Gene-Disease Association Evidence Scores",
+   "DISEASES Experimental Gene-Disease Association Evidence Scores 2025",
+   "DepMap CRISPR Gene Dependency",
+   "ENCODE Histone Modification Site Profiles",
+   "ENCODE Transcription Factor Binding Site Profiles",
+   "ENCODE Transcription Factor Targets",
+   "GTEx eQTL",
+   "GTEx eQTL 2025",
+   "IMPC Knockout Mouse Phenotypes",
+   "InterPro Predicted Protein Domain Annotations",
+   "JASPAR Predicted Human Transcription Factor Targets 2025",
+   "JASPAR Predicted Mouse Transcription Factor Targets 2025",
+   "JASPAR Predicted Transcription Factor Targets",
+   "Kinase Library Serine Threonine Kinome Atlas",
+   "Kinase Library Tyrosine Kinome Atlas",
+   "Klijn et al., Nat. Biotechnol., 2015 Cell Line Gene CNV Profiles",
+   "Klijn et al., Nat. Biotechnol., 2015 Cell Line Gene Mutation Profiles",
+   "LINCS Kinativ Kinase Inhibitor Bioactivity Profiles",
+   "LINCS KinomeScan Kinase Inhibitor Targets",
+   "LOCATE Predicted Protein Localization Annotations",
+   "MotifMap Predicted Transcription Factor Targets",
+   "Roadmap Epigenomics Cell and Tissue DNA Methylation Profiles",
+   "Roadmap Epigenomics Histone Modification Site Profiles",
+   "Rummagene Transcription Factor Associations 2026",
+   "TargetScan Predicted Conserved microRNA Targets",
+   "TargetScan Predicted Nonconserved microRNA Targets"
+  ],
+  "verdict": "FALSIFIED"
+ }
 }

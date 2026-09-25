@@ -154,3 +154,67 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# ---- Follow-up control H2 (declared after H1 falsified, before looking at it) ----
+# Explanation under test: systematic Harmonizome associations are dominated by
+# thresholded expression z-scores, and gated genes were selected for
+# tumour-restricted (high-variance) expression, so they collect extreme calls.
+# H2: restricted to NON-expression systematic datasets (CNV, mutation,
+# dependency, TF binding, predicted targets, kinase/phospho, localisation maps),
+# gated vs background shows NO difference (two-sided MW p >= 0.05).
+EXPRESSION_KEYS = ["Expression", "Signatures", "Perturb", "L1000", "CMAP", "Tabula",
+                   "BioGPS", "Allen Brain", "GTEx Tissue", "HPA ", "HPM ", "Proteomics",
+                   "Roadmap Epigenomics Cell and Tissue Gene", "Azimuth", "Tahoe",
+                   "Sci-Plex", "KnockTF", "RummaGEO", "Carcinogenome", "ESCAPE", "MoTrPAC"]
+
+
+def is_expression(ds):
+    return classify(ds) == "systematic" and any(k in ds for k in EXPRESSION_KEYS)
+
+
+def h2(groups):
+    vals = {"gated": [], "background": []}
+    expr = {"gated": [], "background": []}
+    names = set()
+    for g, grp in groups.items():
+        if grp not in vals:
+            continue
+        p = os.path.join(GDIR, g + ".json")
+        if not os.path.exists(p):
+            continue
+        rec = json.load(open(p))
+        if "_error" in rec or not rec.get("n_associations"):
+            continue
+        ne = ex = 0
+        for ds, (up, dn) in rec["per_dataset"].items():
+            if classify(ds) != "systematic":
+                continue
+            if is_expression(ds):
+                ex += up + dn
+            else:
+                ne += up + dn
+                names.add(ds)
+        vals[grp].append(ne)
+        expr[grp].append(ex)
+    p_ne = mw(vals["gated"], vals["background"], "two-sided")
+    p_ex = mw(expr["gated"], expr["background"], "two-sided")
+    return {"hypothesis": "H2 non-expression systematic: no gated-vs-background "
+                          "difference (two-sided p>=0.05)",
+            "nonexpression": {"median_gated": median(vals["gated"]),
+                              "median_background": median(vals["background"]),
+                              "p": p_ne},
+            "expression": {"median_gated": median(expr["gated"]),
+                           "median_background": median(expr["background"]),
+                           "p": p_ex},
+            "n_nonexpression_datasets": len(names),
+            "nonexpression_datasets": sorted(names),
+            "verdict": "CONFIRMED" if p_ne is not None and p_ne >= 0.05 else "FALSIFIED"}
+
+
+if __name__ == "__main__" and os.environ.get("HARMONIZOME_H2", "1") == "1":
+    _p = os.path.join(BASE, "results", "harmonizome_audit.json")
+    _o = json.load(open(_p))
+    _o["H2_control"] = h2(gene_set())
+    json.dump(_o, open(_p, "w"), indent=1)
+    print(json.dumps({k: v for k, v in _o["H2_control"].items() if k != "nonexpression_datasets"}))
