@@ -3615,5 +3615,141 @@
     "skipped": "gene absent"
    }
   }
+ },
+ "LIHC_GSE140228_10X": {
+  "dataset": "LIHC_GSE140228_10X",
+  "cancer": "LIHC",
+  "n_cells": 61690,
+  "n_malignant": 0,
+  "n_normal_source": 12603,
+  "tme_reference_only": true,
+  "genes_present": [
+   "CA9",
+   "CA12",
+   "CLDN3",
+   "MSLN",
+   "PSCA",
+   "SPP1",
+   "EGFR",
+   "GAP43",
+   "SLC34A2",
+   "SLC17A3",
+   "DPEP1",
+   "APOC3",
+   "PRAME",
+   "DCT",
+   "SLC39A6",
+   "HLA-DRA",
+   "TACSTD2",
+   "GPC3",
+   "EPCAM",
+   "ERBB2"
+  ],
+  "genes_absent": [
+   "CLDN18",
+   "CLDN6",
+   "KLK7",
+   "CLTRN",
+   "NOX1",
+   "OR2I1P",
+   "FOLR1",
+   "CEACAM5"
+  ],
+  "detection_rates": {
+   "CA9": 0.000518722645485492,
+   "CA12": 0.0002917814880855892,
+   "CLDN3": 0.0013940671097422597,
+   "MSLN": 0.0022369914086561842,
+   "PSCA": 0.00027557140541416763,
+   "SPP1": 0.01097422596855244,
+   "EGFR": 0.0005997730588426001,
+   "GAP43": 0.0001945209920570595,
+   "SLC34A2": 0.0001945209920570595,
+   "SLC17A3": 0.0013292267790565731,
+   "DPEP1": 0.005171016372183498,
+   "APOC3": 0.008672394229210569,
+   "PRAME": 0.00017831090938563786,
+   "DCT": 0.00043767223212838385,
+   "SLC39A6": 0.06790403631058518,
+   "HLA-DRA": 0.4513211217377209,
+   "TACSTD2": 0.0051385962068406545,
+   "GPC3": 0.0016047981844707407,
+   "EPCAM": 0.002107310747284811,
+   "ERBB2": 0.005608688604311882
+  },
+  "pairs": {
+   "CA9-CLDN18": {
+    "skipped": "gene absent"
+   },
+   "CA9-MSLN": {
+    "leakage_only": true,
+    "leak_nonmal_A": 0.000518722645485492,
+    "leak_nonmal_B": 0.0022369914086561842,
+    "leak_nonmal_AND": 0.00030799157075701085
+   },
+   "CLDN6-MSLN": {
+    "skipped": "gene absent"
+   },
+   "PSCA-CA9": {
+    "leakage_only": true,
+    "leak_nonmal_A": 0.00027557140541416763,
+    "leak_nonmal_B": 0.000518722645485492,
+    "leak_nonmal_AND": 0.0
+   },
+   "CA9-SLC17A3": {
+    "leakage_only": true,
+    "leak_nonmal_A": 0.000518722645485492,
+    "leak_nonmal_B": 0.0013292267790565731,
+    "leak_nonmal_AND": 0.0
+   },
+   "CA9-CA12": {
+    "leakage_only": true,
+    "leak_nonmal_A": 0.000518722645485492,
+    "leak_nonmal_B": 0.0002917814880855892,
+    "leak_nonmal_AND": 3.242016534284325e-05
+   },
+   "CLDN18-CLDN3": {
+    "skipped": "gene absent"
+   },
+   "SPP1-PSCA": {
+    "leakage_only": true,
+    "leak_nonmal_A": 0.01097422596855244,
+    "leak_nonmal_B": 0.00027557140541416763,
+    "leak_nonmal_AND": 1.6210082671421625e-05
+   },
+   "KLK7-CLDN6": {
+    "skipped": "gene absent"
+   },
+   "SLC34A2-SPP1": {
+    "leakage_only": true,
+    "leak_nonmal_A": 0.0001945209920570595,
+    "leak_nonmal_B": 0.01097422596855244,
+    "leak_nonmal_AND": 1.6210082671421625e-05
+   },
+   "GAP43-EGFR": {
+    "leakage_only": true,
+    "leak_nonmal_A": 0.0001945209920570595,
+    "leak_nonmal_B": 0.0005997730588426001,
+    "leak_nonmal_AND": 4.8630248014264874e-05
+   },
+   "DPEP1-NOX1": {
+    "skipped": "gene absent"
+   },
+   "APOC3-OR2I1P": {
+    "skipped": "gene absent"
+   },
+   "HLA-DRA-SLC39A6": {
+    "leakage_only": true,
+    "leak_nonmal_A": 0.4513211217377209,
+    "leak_nonmal_B": 0.06790403631058518,
+    "leak_nonmal_AND": 0.040103744529097096
+   },
+   "PRAME-DCT": {
+    "leakage_only": true,
+    "leak_nonmal_A": 0.00017831090938563786,
+    "leak_nonmal_B": 0.00043767223212838385,
+    "leak_nonmal_AND": 0.0
+   }
+  }
  }
 }
