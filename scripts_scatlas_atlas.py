@@ -114,6 +114,7 @@ def analyze(cancer, ds, rng):
     det = {g: float((col[g] > 0).mean()) for g in present}
     rec = {"dataset": ds, "cancer": cancer, "n_cells": int(keep.sum()),
            "n_malignant": int(mal.sum()), "n_normal_source": int(norm.sum()),
+           "tme_reference_only": bool(mal.sum() == 0),
            "genes_present": present,
            "genes_absent": [g for g in GENES if g not in gidx],
            "detection_rates": det, "pairs": {}}
@@ -128,6 +129,12 @@ def analyze(cancer, ds, rng):
         key = f"{a}-{b}"
         if a not in col or b not in col:
             rec["pairs"][key] = {"skipped": "gene absent"}; continue
+        if mal.sum() == 0:
+            ma = col[a] > 0; mb = col[b] > 0
+            rec["pairs"][key] = {"leakage_only": True,
+                "leak_nonmal_A": float(ma.mean()), "leak_nonmal_B": float(mb.mean()),
+                "leak_nonmal_AND": float((ma & mb).mean())}
+            continue
         pa = {}
         for thr in ["detected", "above_med", "top25"]:
             ma, mb = thr_masks(col[a])[thr], thr_masks(col[b])[thr]
