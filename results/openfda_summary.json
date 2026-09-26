@@ -1,0 +1,6 @@
+{
+  "n_drugs": 70,
+  "n_with_fda_label": 66,
+  "n_boxed_warning": 39,
+  "note": "unfound = investigational/never-FDA-labeled - recorded"
+}

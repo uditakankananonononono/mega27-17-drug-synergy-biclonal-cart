@@ -1,0 +1,10 @@
+cell_line,cellosaurus_accession,category,problematic
+A375,CVCL_A1VP,Cancer cell line,False
+A549,CVCL_YJ75,Cancer cell line,False
+HA1E,CVCL_VU89,Transformed cell line,False
+HCC515,CVCL_S839,Transformed cell line,False
+HEPG2,CVCL_C5RN,Cancer cell line,False
+HT29,CVCL_A8EZ,Hybridoma,False
+MCF7,CVCL_B5PF,Cancer cell line,False
+PC3,CVCL_C8XA,Cancer cell line,False
+VCAP,CVCL_2235,Cancer cell line,False

@@ -22,14 +22,30 @@ def get(url):
 
 def mygene(symbol):
     q = urllib.parse.quote(f"symbol:{symbol}")
-    d = json.loads(get(f"https://mygene.info/v3/query?q={q}&species=human&fields=ensembl.gene,symbol&size=1"))
+    d = json.loads(get(f"https://mygene.info/v3/query?q={q}&species=human&fields=ensembl.gene,symbol,type_of_gene&size=5"))
     hits = d.get("hits", [])
     if not hits:
         return ""
-    ens = hits[0].get("ensembl", {})
-    if isinstance(ens, list):
-        ens = ens[0] if ens else {}
-    return ens.get("gene", "")
+    def ens_list(h):
+        ens = h.get("ensembl", {})
+        if isinstance(ens, dict):
+            ens = [ens]
+        return [e.get("gene", "") for e in ens if e.get("gene")]
+    # Prefer exact-symbol protein-coding hits: MyGene's first ensembl entry can
+    # be a readthrough/novel locus (e.g. ENSG0000028xxxx) that HPA does not
+    # carry. Return ALL candidate ids in preference order; the caller tries
+    # each against HPA and keeps the first that resolves.
+    exact_pc = [h for h in hits if h.get("symbol") == symbol and h.get("type_of_gene") == "protein-coding"]
+    exact = [h for h in hits if h.get("symbol") == symbol]
+    out = []
+    for pool in (exact_pc, exact, hits):
+        for h in pool:
+            out.extend(ens_list(h))
+    seen, uniq = set(), []
+    for e in out:
+        if e not in seen:
+            seen.add(e); uniq.append(e)
+    return uniq
 
 
 def main():
@@ -39,15 +55,16 @@ def main():
     outdir.mkdir(parents=True, exist_ok=True)
     from concurrent.futures import ThreadPoolExecutor
     def one(g):
-        ens = mygene(g)
+        ens = ""
         got = False
-        if ens:
+        for cand in mygene(g):
             try:
-                tsv = get(f"https://www.proteinatlas.org/{ens}.tsv").decode()
+                tsv = get(f"https://www.proteinatlas.org/{cand}.tsv").decode()
                 (outdir / f"{g}.tsv").write_text(tsv)
-                got = True
+                ens, got = cand, True
+                break
             except Exception:
-                pass
+                continue
         return {"symbol": g, "ensembl_gene": ens}, got
     with ThreadPoolExecutor(max_workers=8) as ex:
         out = list(ex.map(one, sorted(need)))

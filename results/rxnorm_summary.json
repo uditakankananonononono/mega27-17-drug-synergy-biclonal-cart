@@ -1,0 +1,6 @@
+{
+  "n_drugs": 621,
+  "n_rxcui_matched": 112,
+  "frac_matched": 0.1804,
+  "note": "unmatched are mostly investigational codes (AZD/BI/BX series) without RxNorm entries - recorded, not forced"
+}
