@@ -1,0 +1,1746 @@
+{
+ "filter": "Ig-locus name filter (^(IGH|IGK|IGL|JCHAIN)) - plasma-cell infiltrate exclusion",
+ "n_filtered": 145,
+ "filtered_gene_names": [
+  "IGHA1",
+  "IGHA2",
+  "IGHD",
+  "IGHD1-1",
+  "IGHE",
+  "IGHG1",
+  "IGHG2",
+  "IGHG3",
+  "IGHG4",
+  "IGHJ1",
+  "IGHM",
+  "IGHV1-18",
+  "IGHV1-2",
+  "IGHV1-24",
+  "IGHV1-3",
+  "IGHV1-45",
+  "IGHV1-46",
+  "IGHV1-58",
+  "IGHV1-69",
+  "IGHV1-69D",
+  "IGHV2-26",
+  "IGHV2-5",
+  "IGHV2-70",
+  "IGHV2-70D",
+  "IGHV3-11",
+  "IGHV3-13",
+  "IGHV3-15",
+  "IGHV3-16",
+  "IGHV3-20",
+  "IGHV3-21",
+  "IGHV3-23",
+  "IGHV3-30",
+  "IGHV3-33",
+  "IGHV3-35",
+  "IGHV3-38",
+  "IGHV3-43",
+  "IGHV3-48",
+  "IGHV3-49",
+  "IGHV3-53",
+  "IGHV3-64",
+  "IGHV3-66",
+  "IGHV3-7",
+  "IGHV3-72",
+  "IGHV3-73",
+  "IGHV3-74",
+  "IGHV4-28",
+  "IGHV4-31",
+  "IGHV4-34",
+  "IGHV4-39",
+  "IGHV4-4",
+  "IGHV4-59",
+  "IGHV4-61",
+  "IGHV5-51",
+  "IGHV6-1",
+  "IGHV7-81",
+  "IGHV8-51-1",
+  "IGKC",
+  "IGKJ1",
+  "IGKV1-12",
+  "IGKV1-16",
+  "IGKV1-17",
+  "IGKV1-27",
+  "IGKV1-33",
+  "IGKV1-37",
+  "IGKV1-39",
+  "IGKV1-5",
+  "IGKV1-6",
+  "IGKV1-8",
+  "IGKV1-9",
+  "IGKV1D-12",
+  "IGKV1D-13",
+  "IGKV1D-16",
+  "IGKV1D-17",
+  "IGKV1D-33",
+  "IGKV1D-37",
+  "IGKV1D-39",
+  "IGKV1D-42",
+  "IGKV1D-43",
+  "IGKV1D-8",
+  "IGKV2-24",
+  "IGKV2-28",
+  "IGKV2-30",
+  "IGKV2-40",
+  "IGKV2D-24",
+  "IGKV2D-26",
+  "IGKV2D-28",
+  "IGKV2D-29",
+  "IGKV2D-30",
+  "IGKV2D-40",
+  "IGKV3-11",
+  "IGKV3-15",
+  "IGKV3-20",
+  "IGKV3-7",
+  "IGKV3D-11",
+  "IGKV3D-15",
+  "IGKV3D-20",
+  "IGKV3D-7",
+  "IGKV3OR2-268",
+  "IGKV4-1",
+  "IGKV5-2",
+  "IGKV6-21",
+  "IGKV6D-21",
+  "IGKV6D-41",
+  "IGLC1",
+  "IGLC2",
+  "IGLC3",
+  "IGLC7",
+  "IGLJ1",
+  "IGLV1-36",
+  "IGLV1-40",
+  "IGLV1-44",
+  "IGLV1-47",
+  "IGLV1-50",
+  "IGLV1-51",
+  "IGLV10-54",
+  "IGLV11-55",
+  "IGLV2-11",
+  "IGLV2-14",
+  "IGLV2-18",
+  "IGLV2-23",
+  "IGLV2-33",
+  "IGLV2-8",
+  "IGLV3-1",
+  "IGLV3-10",
+  "IGLV3-12",
+  "IGLV3-16",
+  "IGLV3-19",
+  "IGLV3-21",
+  "IGLV3-22",
+  "IGLV3-25",
+  "IGLV3-27",
+  "IGLV3-32",
+  "IGLV3-9",
+  "IGLV4-3",
+  "IGLV4-60",
+  "IGLV4-69",
+  "IGLV5-37",
+  "IGLV5-45",
+  "IGLV5-48",
+  "IGLV5-52",
+  "IGLV6-57",
+  "IGLV7-43",
+  "IGLV7-46",
+  "IGLV8-61",
+  "IGLV9-49"
+ ],
+ "metric": "p75 per-sample tumor FPKM vs normal max nTPM",
+ "delta": {
+  "PAAD": {
+   "ig_pairs_in_top15_before": 11,
+   "top3_before": [
+    [
+     "SPP1",
+     "IGHA2",
+     4.23
+    ],
+    [
+     "IGHG2",
+     "TACSTD2",
+     3.94
+    ],
+    [
+     "IGHA2",
+     "TACSTD2",
+     3.88
+    ]
+   ],
+   "top3_after": [
+    [
+     "SPP1",
+     "PSCA",
+     3.76
+    ],
+    [
+     "TM4SF4",
+     "THBS2",
+     3.75
+    ],
+    [
+     "OLFM4",
+     "MSLN",
+     3.74
+    ]
+   ]
+  },
+  "BRCA": {
+   "ig_pairs_in_top15_before": 7,
+   "top3_before": [
+    [
+     "IGHG2",
+     "TACSTD2",
+     3.7
+    ],
+    [
+     "SLC39A6",
+     "IGHG2",
+     3.65
+    ],
+    [
+     "HLA-DRA",
+     "SLC39A6",
+     3.58
+    ]
+   ],
+   "top3_after": [
+    [
+     "HLA-DRA",
+     "SLC39A6",
+     3.58
+    ],
+    [
+     "HLA-B",
+     "SLC39A6",
+     3.58
+    ],
+    [
+     "HLA-C",
+     "SLC39A6",
+     3.58
+    ]
+   ]
+  },
+  "GBM": {
+   "ig_pairs_in_top15_before": 0,
+   "top3_before": [
+    [
+     "GAP43",
+     "EGFR",
+     3.75
+    ],
+    [
+     "ATP1B2",
+     "EGFR",
+     3.75
+    ],
+    [
+     "SLC1A3",
+     "EGFR",
+     3.75
+    ]
+   ],
+   "top3_after": [
+    [
+     "GAP43",
+     "EGFR",
+     3.75
+    ],
+    [
+     "ATP1B2",
+     "EGFR",
+     3.75
+    ],
+    [
+     "SLC1A3",
+     "EGFR",
+     3.75
+    ]
+   ]
+  },
+  "LIHC": {
+   "ig_pairs_in_top15_before": 0,
+   "top3_before": [
+    [
+     "APOC3",
+     "OR2I1P",
+     6.48
+    ],
+    [
+     "ADH1C",
+     "OR2I1P",
+     6.48
+    ],
+    [
+     "TM4SF4",
+     "OR2I1P",
+     6.48
+    ]
+   ],
+   "top3_after": [
+    [
+     "APOC3",
+     "OR2I1P",
+     6.48
+    ],
+    [
+     "ADH1C",
+     "OR2I1P",
+     6.48
+    ],
+    [
+     "TM4SF4",
+     "OR2I1P",
+     6.48
+    ]
+   ]
+  },
+  "OV": {
+   "ig_pairs_in_top15_before": 7,
+   "top3_before": [
+    [
+     "KLK7",
+     "CLDN6",
+     5.85
+    ],
+    [
+     "CLDN3",
+     "CLDN6",
+     5.69
+    ],
+    [
+     "IGKC",
+     "CLDN6",
+     5.69
+    ]
+   ],
+   "top3_after": [
+    [
+     "KLK7",
+     "CLDN6",
+     5.85
+    ],
+    [
+     "CLDN3",
+     "CLDN6",
+     5.69
+    ],
+    [
+     "MSLN",
+     "CLDN6",
+     5.69
+    ]
+   ]
+  },
+  "LUAD": {
+   "ig_pairs_in_top15_before": 15,
+   "top3_before": [
+    [
+     "IGHA2",
+     "IGHV1-18",
+     6.97
+    ],
+    [
+     "IGHA2",
+     "IGHV5-51",
+     6.87
+    ],
+    [
+     "IGHA2",
+     "IGHV3-21",
+     6.53
+    ]
+   ],
+   "top3_after": [
+    [
+     "SLC34A2",
+     "SPP1",
+     4.15
+    ],
+    [
+     "SLC34A2",
+     "S100P",
+     3.7
+    ],
+    [
+     "MSLN",
+     "S100P",
+     3.7
+    ]
+   ]
+  },
+  "COAD": {
+   "ig_pairs_in_top15_before": 14,
+   "top3_before": [
+    [
+     "DPEP1",
+     "NOX1",
+     5.5
+    ],
+    [
+     "CEACAM6",
+     "IGHA2",
+     4.66
+    ],
+    [
+     "CEACAM5",
+     "IGHG2",
+     3.94
+    ]
+   ],
+   "top3_after": [
+    [
+     "DPEP1",
+     "NOX1",
+     5.5
+    ],
+    [
+     "S100P",
+     "DPEP1",
+     2.58
+    ],
+    [
+     "CEACAM6",
+     "DPEP1",
+     2.55
+    ]
+   ]
+  },
+  "SKCM": {
+   "ig_pairs_in_top15_before": 6,
+   "top3_before": [
+    [
+     "IGHG2",
+     "DCT",
+     6.96
+    ],
+    [
+     "PRAME",
+     "DCT",
+     6.86
+    ],
+    [
+     "IGKC",
+     "DCT",
+     6.49
+    ]
+   ],
+   "top3_after": [
+    [
+     "PRAME",
+     "DCT",
+     6.86
+    ],
+    [
+     "PI3",
+     "PRAME",
+     6.28
+    ],
+    [
+     "PRAME",
+     "KRT1",
+     5.97
+    ]
+   ]
+  },
+  "STAD": {
+   "ig_pairs_in_top15_before": 15,
+   "top3_before": [
+    [
+     "IGHA2",
+     "IGHV1-18",
+     6.2
+    ],
+    [
+     "IGHA2",
+     "IGHV3-21",
+     6.15
+    ],
+    [
+     "CEACAM5",
+     "IGHV3-21",
+     6.08
+    ]
+   ],
+   "top3_after": [
+    [
+     "CLDN18",
+     "CLDN3",
+     4.09
+    ],
+    [
+     "OLFM4",
+     "CLDN18",
+     3.95
+    ],
+    [
+     "CLDN18",
+     "PLA2G2A",
+     3.69
+    ]
+   ]
+  },
+  "KIRC": {
+   "ig_pairs_in_top15_before": 5,
+   "top3_before": [
+    [
+     "CA9",
+     "SLC17A3",
+     5.56
+    ],
+    [
+     "IGHG2",
+     "SLC17A3",
+     4.53
+    ],
+    [
+     "CA9",
+     "CA12",
+     3.8
+    ]
+   ],
+   "top3_after": [
+    [
+     "CA9",
+     "SLC17A3",
+     5.56
+    ],
+    [
+     "CA9",
+     "CA12",
+     3.8
+    ],
+    [
+     "CA9",
+     "CLTRN",
+     3.6
+    ]
+   ]
+  }
+ },
+ "and_gate_pairs_p75_igfiltered": {
+  "PAAD": [
+   {
+    "a": "ENSG00000118785",
+    "b": "ENSG00000167653",
+    "gated_window": 3.7561205438339313,
+    "gain": 6.516106150453172,
+    "a_name": "SPP1",
+    "b_name": "PSCA"
+   },
+   {
+    "a": "ENSG00000169903",
+    "b": "ENSG00000186340",
+    "gated_window": 3.746796719106833,
+    "gain": 2.1276332797258743,
+    "a_name": "TM4SF4",
+    "b_name": "THBS2"
+   },
+   {
+    "a": "ENSG00000102837",
+    "b": "ENSG00000102854",
+    "gated_window": 3.7418574522769164,
+    "gain": 2.3634473643256295,
+    "a_name": "OLFM4",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000171747",
+    "b": "ENSG00000102854",
+    "gated_window": 3.7418574522769164,
+    "gain": 2.3634473643256295,
+    "a_name": "LGALS4",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000102854",
+    "b": "ENSG00000169903",
+    "gated_window": 3.7125943747570784,
+    "gain": 2.3341842868057916,
+    "a_name": "MSLN",
+    "b_name": "TM4SF4"
+   },
+   {
+    "a": "ENSG00000186340",
+    "b": "ENSG00000169347",
+    "gated_window": 3.689498495904638,
+    "gain": 2.0703350565236796,
+    "a_name": "THBS2",
+    "b_name": "GP2"
+   },
+   {
+    "a": "ENSG00000163993",
+    "b": "ENSG00000102854",
+    "gated_window": 3.5919620217938575,
+    "gain": 2.2135519338425707,
+    "a_name": "S100P",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000086548",
+    "b": "ENSG00000118785",
+    "gated_window": 3.538922562227354,
+    "gain": 2.3460753069679665,
+    "a_name": "CEACAM6",
+    "b_name": "SPP1"
+   },
+   {
+    "a": "ENSG00000102854",
+    "b": "ENSG00000167653",
+    "gated_window": 3.516069456000977,
+    "gain": 2.13765936804969,
+    "a_name": "MSLN",
+    "b_name": "PSCA"
+   },
+   {
+    "a": "ENSG00000167653",
+    "b": "ENSG00000186340",
+    "gated_window": 3.413372985381641,
+    "gain": 1.7942095460006824,
+    "a_name": "PSCA",
+    "b_name": "THBS2"
+   },
+   {
+    "a": "ENSG00000118785",
+    "b": "ENSG00000102854",
+    "gated_window": 3.2399766930503153,
+    "gain": 1.8615666050990285,
+    "a_name": "SPP1",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000102837",
+    "b": "ENSG00000167653",
+    "gated_window": 3.2390621076145782,
+    "gain": 4.144884276276634,
+    "a_name": "OLFM4",
+    "b_name": "PSCA"
+   },
+   {
+    "a": "ENSG00000102854",
+    "b": "ENSG00000169347",
+    "gated_window": 3.235322602718836,
+    "gain": 1.8569125147675494,
+    "a_name": "MSLN",
+    "b_name": "GP2"
+   },
+   {
+    "a": "ENSG00000102837",
+    "b": "ENSG00000066405",
+    "gated_window": 3.064747049350002,
+    "gain": 3.9705692180120575,
+    "a_name": "OLFM4",
+    "b_name": "CLDN18"
+   },
+   {
+    "a": "ENSG00000086548",
+    "b": "ENSG00000169347",
+    "gated_window": 3.0024378075647453,
+    "gain": 1.809590552305358,
+    "a_name": "CEACAM6",
+    "b_name": "GP2"
+   }
+  ],
+  "BRCA": [
+   {
+    "a": "ENSG00000204287",
+    "b": "ENSG00000141424",
+    "gated_window": 3.5844484891310904,
+    "gain": 0.40344952500363274,
+    "a_name": "HLA-DRA",
+    "b_name": "SLC39A6"
+   },
+   {
+    "a": "ENSG00000234745",
+    "b": "ENSG00000141424",
+    "gated_window": 3.5844484891310904,
+    "gain": 0.40344952500363274,
+    "a_name": "HLA-B",
+    "b_name": "SLC39A6"
+   },
+   {
+    "a": "ENSG00000204525",
+    "b": "ENSG00000141424",
+    "gated_window": 3.5844484891310904,
+    "gain": 0.40344952500363274,
+    "a_name": "HLA-C",
+    "b_name": "SLC39A6"
+   },
+   {
+    "a": "ENSG00000197956",
+    "b": "ENSG00000141424",
+    "gated_window": 3.5844484891310904,
+    "gain": 0.40344952500363274,
+    "a_name": "S100A6",
+    "b_name": "SLC39A6"
+   },
+   {
+    "a": "ENSG00000141424",
+    "b": "ENSG00000106211",
+    "gated_window": 3.529466995238594,
+    "gain": 0.34846803111113633,
+    "a_name": "SLC39A6",
+    "b_name": "HSPB1"
+   },
+   {
+    "a": "ENSG00000141424",
+    "b": "ENSG00000206503",
+    "gated_window": 3.521272904883614,
+    "gain": 0.34027394075615636,
+    "a_name": "SLC39A6",
+    "b_name": "HLA-A"
+   },
+   {
+    "a": "ENSG00000141424",
+    "b": "ENSG00000272398",
+    "gated_window": 3.433893294514923,
+    "gain": 0.25289433038746534,
+    "a_name": "SLC39A6",
+    "b_name": "CD24"
+   },
+   {
+    "a": "ENSG00000141424",
+    "b": "ENSG00000196126",
+    "gated_window": 3.3993918799192793,
+    "gain": 0.21839291579182163,
+    "a_name": "SLC39A6",
+    "b_name": "HLA-DRB1"
+   },
+   {
+    "a": "ENSG00000156508",
+    "b": "ENSG00000141424",
+    "gated_window": 3.1809989641274576,
+    "gain": 0.0,
+    "a_name": "EEF1A1",
+    "b_name": "SLC39A6"
+   },
+   {
+    "a": "ENSG00000111640",
+    "b": "ENSG00000141424",
+    "gated_window": 3.1809989641274576,
+    "gain": 0.0,
+    "a_name": "GAPDH",
+    "b_name": "SLC39A6"
+   },
+   {
+    "a": "ENSG00000166710",
+    "b": "ENSG00000141424",
+    "gated_window": 3.1809989641274576,
+    "gain": 0.0,
+    "a_name": "B2M",
+    "b_name": "SLC39A6"
+   },
+   {
+    "a": "ENSG00000019582",
+    "b": "ENSG00000141424",
+    "gated_window": 3.1809989641274576,
+    "gain": 0.0,
+    "a_name": "CD74",
+    "b_name": "SLC39A6"
+   },
+   {
+    "a": "ENSG00000167658",
+    "b": "ENSG00000141424",
+    "gated_window": 3.1809989641274576,
+    "gain": 0.0,
+    "a_name": "EEF2",
+    "b_name": "SLC39A6"
+   },
+   {
+    "a": "ENSG00000096384",
+    "b": "ENSG00000141424",
+    "gated_window": 3.1809989641274576,
+    "gain": 0.0,
+    "a_name": "HSP90AB1",
+    "b_name": "SLC39A6"
+   },
+   {
+    "a": "ENSG00000141424",
+    "b": "ENSG00000142089",
+    "gated_window": 3.1526682232095045,
+    "gain": -0.02833074091795318,
+    "a_name": "SLC39A6",
+    "b_name": "IFITM3"
+   }
+  ],
+  "GBM": [
+   {
+    "a": "ENSG00000172020",
+    "b": "ENSG00000146648",
+    "gated_window": 3.748230717561549,
+    "gain": 1.4150374992788435,
+    "a_name": "GAP43",
+    "b_name": "EGFR"
+   },
+   {
+    "a": "ENSG00000129244",
+    "b": "ENSG00000146648",
+    "gated_window": 3.748230717561549,
+    "gain": 1.4150374992788435,
+    "a_name": "ATP1B2",
+    "b_name": "EGFR"
+   },
+   {
+    "a": "ENSG00000079215",
+    "b": "ENSG00000146648",
+    "gated_window": 3.748230717561549,
+    "gain": 1.4150374992788435,
+    "a_name": "SLC1A3",
+    "b_name": "EGFR"
+   },
+   {
+    "a": "ENSG00000106278",
+    "b": "ENSG00000146648",
+    "gated_window": 3.748230717561549,
+    "gain": 1.4150374992788435,
+    "a_name": "PTPRZ1",
+    "b_name": "EGFR"
+   },
+   {
+    "a": "ENSG00000123560",
+    "b": "ENSG00000146648",
+    "gated_window": 3.748230717561549,
+    "gain": 1.4150374992788435,
+    "a_name": "PLP1",
+    "b_name": "EGFR"
+   },
+   {
+    "a": "ENSG00000146648",
+    "b": "ENSG00000100427",
+    "gated_window": 3.6441406746066014,
+    "gain": 1.310947456323896,
+    "a_name": "EGFR",
+    "b_name": "MLC1"
+   },
+   {
+    "a": "ENSG00000171885",
+    "b": "ENSG00000146648",
+    "gated_window": 3.4926714322899017,
+    "gain": 1.1594782140071964,
+    "a_name": "AQP4",
+    "b_name": "EGFR"
+   },
+   {
+    "a": "ENSG00000046653",
+    "b": "ENSG00000146648",
+    "gated_window": 3.4926714322899017,
+    "gain": 1.1594782140071964,
+    "a_name": "GPM6B",
+    "b_name": "EGFR"
+   },
+   {
+    "a": "ENSG00000146648",
+    "b": "ENSG00000150625",
+    "gated_window": 3.2468196743033206,
+    "gain": 0.9136264560206153,
+    "a_name": "EGFR",
+    "b_name": "GPM6A"
+   },
+   {
+    "a": "ENSG00000172020",
+    "b": "ENSG00000162493",
+    "gated_window": 3.0911163504525567,
+    "gain": 1.475338009546658,
+    "a_name": "GAP43",
+    "b_name": "PDPN"
+   },
+   {
+    "a": "ENSG00000100427",
+    "b": "ENSG00000162493",
+    "gated_window": 3.0911163504525567,
+    "gain": 1.475338009546658,
+    "a_name": "MLC1",
+    "b_name": "PDPN"
+   },
+   {
+    "a": "ENSG00000197696",
+    "b": "ENSG00000162493",
+    "gated_window": 3.0911163504525567,
+    "gain": 1.475338009546658,
+    "a_name": "NMB",
+    "b_name": "PDPN"
+   },
+   {
+    "a": "ENSG00000146648",
+    "b": "ENSG00000187957",
+    "gated_window": 2.9901724939006953,
+    "gain": 0.65697927561799,
+    "a_name": "EGFR",
+    "b_name": "DNER"
+   },
+   {
+    "a": "ENSG00000240583",
+    "b": "ENSG00000146648",
+    "gated_window": 2.9202541848878587,
+    "gain": 0.5870609666051534,
+    "a_name": "AQP1",
+    "b_name": "EGFR"
+   },
+   {
+    "a": "ENSG00000166165",
+    "b": "ENSG00000146648",
+    "gated_window": 2.9202541848878587,
+    "gain": 0.5870609666051534,
+    "a_name": "CKB",
+    "b_name": "EGFR"
+   }
+  ],
+  "LIHC": [
+   {
+    "a": "ENSG00000110245",
+    "b": "ENSG00000237988",
+    "gated_window": 6.483562678951164,
+    "gain": 0.37851162325373,
+    "a_name": "APOC3",
+    "b_name": "OR2I1P"
+   },
+   {
+    "a": "ENSG00000248144",
+    "b": "ENSG00000237988",
+    "gated_window": 6.483562678951164,
+    "gain": 0.37851162325373,
+    "a_name": "ADH1C",
+    "b_name": "OR2I1P"
+   },
+   {
+    "a": "ENSG00000169903",
+    "b": "ENSG00000237988",
+    "gated_window": 6.483562678951164,
+    "gain": 0.37851162325373,
+    "a_name": "TM4SF4",
+    "b_name": "OR2I1P"
+   },
+   {
+    "a": "ENSG00000161944",
+    "b": "ENSG00000237988",
+    "gated_window": 6.483562678951164,
+    "gain": 0.37851162325373,
+    "a_name": "ASGR2",
+    "b_name": "OR2I1P"
+   },
+   {
+    "a": "ENSG00000142484",
+    "b": "ENSG00000237988",
+    "gated_window": 6.483562678951164,
+    "gain": 0.37851162325373,
+    "a_name": "TM4SF5",
+    "b_name": "OR2I1P"
+   },
+   {
+    "a": "ENSG00000187758",
+    "b": "ENSG00000237988",
+    "gated_window": 6.483562678951164,
+    "gain": 0.37851162325373,
+    "a_name": "ADH1A",
+    "b_name": "OR2I1P"
+   },
+   {
+    "a": "ENSG00000169562",
+    "b": "ENSG00000237988",
+    "gated_window": 6.483562678951164,
+    "gain": 0.37851162325373,
+    "a_name": "GJB1",
+    "b_name": "OR2I1P"
+   },
+   {
+    "a": "ENSG00000138109",
+    "b": "ENSG00000237988",
+    "gated_window": 6.483562678951164,
+    "gain": 0.37851162325373,
+    "a_name": "CYP2C9",
+    "b_name": "OR2I1P"
+   },
+   {
+    "a": "ENSG00000163581",
+    "b": "ENSG00000237988",
+    "gated_window": 6.483562678951164,
+    "gain": 0.37851162325373,
+    "a_name": "SLC2A2",
+    "b_name": "OR2I1P"
+   },
+   {
+    "a": "ENSG00000166825",
+    "b": "ENSG00000237988",
+    "gated_window": 6.483562678951164,
+    "gain": 0.37851162325373,
+    "a_name": "ANPEP",
+    "b_name": "OR2I1P"
+   },
+   {
+    "a": "ENSG00000168509",
+    "b": "ENSG00000237988",
+    "gated_window": 6.483562678951164,
+    "gain": 0.37851162325373,
+    "a_name": "HJV",
+    "b_name": "OR2I1P"
+   },
+   {
+    "a": "ENSG00000237988",
+    "b": "ENSG00000079557",
+    "gated_window": 6.451369387405856,
+    "gain": 0.34631833170842263,
+    "a_name": "OR2I1P",
+    "b_name": "AFM"
+   },
+   {
+    "a": "ENSG00000198074",
+    "b": "ENSG00000237988",
+    "gated_window": 6.346059155201229,
+    "gain": 0.24100809950379531,
+    "a_name": "AKR1B10",
+    "b_name": "OR2I1P"
+   },
+   {
+    "a": "ENSG00000196616",
+    "b": "ENSG00000237988",
+    "gated_window": 6.346059155201229,
+    "gain": 0.24100809950379531,
+    "a_name": "ADH1B",
+    "b_name": "OR2I1P"
+   },
+   {
+    "a": "ENSG00000188257",
+    "b": "ENSG00000237988",
+    "gated_window": 6.346059155201229,
+    "gain": 0.24100809950379531,
+    "a_name": "PLA2G2A",
+    "b_name": "OR2I1P"
+   }
+  ],
+  "OV": [
+   {
+    "a": "ENSG00000169035",
+    "b": "ENSG00000184697",
+    "gated_window": 5.850405280314425,
+    "gain": 0.23446525363702264,
+    "a_name": "KLK7",
+    "b_name": "CLDN6"
+   },
+   {
+    "a": "ENSG00000165215",
+    "b": "ENSG00000184697",
+    "gated_window": 5.68994060812118,
+    "gain": 0.07400058144377741,
+    "a_name": "CLDN3",
+    "b_name": "CLDN6"
+   },
+   {
+    "a": "ENSG00000102854",
+    "b": "ENSG00000184697",
+    "gated_window": 5.68994060812118,
+    "gain": 0.07400058144377741,
+    "a_name": "MSLN",
+    "b_name": "CLDN6"
+   },
+   {
+    "a": "ENSG00000157765",
+    "b": "ENSG00000184697",
+    "gated_window": 5.68994060812118,
+    "gain": 0.07400058144377741,
+    "a_name": "SLC34A2",
+    "b_name": "CLDN6"
+   },
+   {
+    "a": "ENSG00000184292",
+    "b": "ENSG00000184697",
+    "gated_window": 5.68994060812118,
+    "gain": 0.07400058144377741,
+    "a_name": "TACSTD2",
+    "b_name": "CLDN6"
+   },
+   {
+    "a": "ENSG00000189143",
+    "b": "ENSG00000184697",
+    "gated_window": 5.68994060812118,
+    "gain": 0.07400058144377741,
+    "a_name": "CLDN4",
+    "b_name": "CLDN6"
+   },
+   {
+    "a": "ENSG00000116039",
+    "b": "ENSG00000184697",
+    "gated_window": 5.68994060812118,
+    "gain": 0.07400058144377741,
+    "a_name": "ATP6V1B1",
+    "b_name": "CLDN6"
+   },
+   {
+    "a": "ENSG00000166145",
+    "b": "ENSG00000184697",
+    "gated_window": 5.68994060812118,
+    "gain": 0.07400058144377741,
+    "a_name": "SPINT1",
+    "b_name": "CLDN6"
+   },
+   {
+    "a": "ENSG00000175063",
+    "b": "ENSG00000184697",
+    "gated_window": 5.68994060812118,
+    "gain": 0.07400058144377741,
+    "a_name": "UBE2C",
+    "b_name": "CLDN6"
+   },
+   {
+    "a": "ENSG00000111319",
+    "b": "ENSG00000184697",
+    "gated_window": 5.68994060812118,
+    "gain": 0.07400058144377741,
+    "a_name": "SCNN1A",
+    "b_name": "CLDN6"
+   },
+   {
+    "a": "ENSG00000111640",
+    "b": "ENSG00000184697",
+    "gated_window": 5.615940026677403,
+    "gain": 0.0,
+    "a_name": "GAPDH",
+    "b_name": "CLDN6"
+   },
+   {
+    "a": "ENSG00000019582",
+    "b": "ENSG00000184697",
+    "gated_window": 5.615940026677403,
+    "gain": 0.0,
+    "a_name": "CD74",
+    "b_name": "CLDN6"
+   },
+   {
+    "a": "ENSG00000142089",
+    "b": "ENSG00000184697",
+    "gated_window": 5.615940026677403,
+    "gain": 0.0,
+    "a_name": "IFITM3",
+    "b_name": "CLDN6"
+   },
+   {
+    "a": "ENSG00000156508",
+    "b": "ENSG00000184697",
+    "gated_window": 5.615940026677403,
+    "gain": 0.0,
+    "a_name": "EEF1A1",
+    "b_name": "CLDN6"
+   },
+   {
+    "a": "ENSG00000106211",
+    "b": "ENSG00000184697",
+    "gated_window": 5.615940026677403,
+    "gain": 0.0,
+    "a_name": "HSPB1",
+    "b_name": "CLDN6"
+   }
+  ],
+  "LUAD": [
+   {
+    "a": "ENSG00000157765",
+    "b": "ENSG00000118785",
+    "gated_window": 4.146461968298276,
+    "gain": 4.325722832782089,
+    "a_name": "SLC34A2",
+    "b_name": "SPP1"
+   },
+   {
+    "a": "ENSG00000157765",
+    "b": "ENSG00000163993",
+    "gated_window": 3.6979521017221244,
+    "gain": 3.877212966205938,
+    "a_name": "SLC34A2",
+    "b_name": "S100P"
+   },
+   {
+    "a": "ENSG00000102854",
+    "b": "ENSG00000163993",
+    "gated_window": 3.6979521017221244,
+    "gain": 2.0797392760216913,
+    "a_name": "MSLN",
+    "b_name": "S100P"
+   },
+   {
+    "a": "ENSG00000118785",
+    "b": "ENSG00000102854",
+    "gated_window": 3.4797794307994616,
+    "gain": 1.8615666050990285,
+    "a_name": "SPP1",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000102854",
+    "b": "ENSG00000165215",
+    "gated_window": 3.246950732745992,
+    "gain": 1.6287379070455588,
+    "a_name": "MSLN",
+    "b_name": "CLDN3"
+   },
+   {
+    "a": "ENSG00000157765",
+    "b": "ENSG00000105388",
+    "gated_window": 3.227905361187978,
+    "gain": 3.4071662256717916,
+    "a_name": "SLC34A2",
+    "b_name": "CEACAM5"
+   },
+   {
+    "a": "ENSG00000153395",
+    "b": "ENSG00000165215",
+    "gated_window": 3.1850229836027903,
+    "gain": 1.6500333354193213,
+    "a_name": "LPCAT1",
+    "b_name": "CLDN3"
+   },
+   {
+    "a": "ENSG00000118785",
+    "b": "ENSG00000153395",
+    "gated_window": 3.0797350488282236,
+    "gain": 1.5447454006447545,
+    "a_name": "SPP1",
+    "b_name": "LPCAT1"
+   },
+   {
+    "a": "ENSG00000086548",
+    "b": "ENSG00000118785",
+    "gated_window": 2.9552119219303847,
+    "gain": 1.2621763472185012,
+    "a_name": "CEACAM6",
+    "b_name": "SPP1"
+   },
+   {
+    "a": "ENSG00000105388",
+    "b": "ENSG00000102854",
+    "gated_window": 2.836518289513638,
+    "gain": 1.2183054638132047,
+    "a_name": "CEACAM5",
+    "b_name": "MSLN"
+   },
+   {
+    "a": "ENSG00000118785",
+    "b": "ENSG00000105388",
+    "gated_window": 2.679916456105911,
+    "gain": 4.423004425538512,
+    "a_name": "SPP1",
+    "b_name": "CEACAM5"
+   },
+   {
+    "a": "ENSG00000105388",
+    "b": "ENSG00000153395",
+    "gated_window": 2.4364739075424,
+    "gain": 0.9014842593589307,
+    "a_name": "CEACAM5",
+    "b_name": "LPCAT1"
+   },
+   {
+    "a": "ENSG00000118785",
+    "b": "ENSG00000198502",
+    "gated_window": 2.3025872878057383,
+    "gain": 2.392943728428228,
+    "a_name": "SPP1",
+    "b_name": "HLA-DRB5"
+   },
+   {
+    "a": "ENSG00000163993",
+    "b": "ENSG00000153395",
+    "gated_window": 2.2575831248425393,
+    "gain": 0.7225934766590703,
+    "a_name": "S100P",
+    "b_name": "LPCAT1"
+   },
+   {
+    "a": "ENSG00000118785",
+    "b": "ENSG00000163993",
+    "gated_window": 2.1547167266106912,
+    "gain": 5.256898198154207,
+    "a_name": "SPP1",
+    "b_name": "S100P"
+   }
+  ],
+  "COAD": [
+   {
+    "a": "ENSG00000015413",
+    "b": "ENSG00000007952",
+    "gated_window": 5.49761236561836,
+    "gain": 4.425021587851465,
+    "a_name": "DPEP1",
+    "b_name": "NOX1"
+   },
+   {
+    "a": "ENSG00000163993",
+    "b": "ENSG00000015413",
+    "gated_window": 2.58285403732651,
+    "gain": 4.3506733035906535,
+    "a_name": "S100P",
+    "b_name": "DPEP1"
+   },
+   {
+    "a": "ENSG00000086548",
+    "b": "ENSG00000015413",
+    "gated_window": 2.547376141971794,
+    "gain": 1.3024800731173336,
+    "a_name": "CEACAM6",
+    "b_name": "DPEP1"
+   },
+   {
+    "a": "ENSG00000162896",
+    "b": "ENSG00000086548",
+    "gated_window": 1.7983691658087713,
+    "gain": 0.5534730969543107,
+    "a_name": "PIGR",
+    "b_name": "CEACAM6"
+   },
+   {
+    "a": "ENSG00000102837",
+    "b": "ENSG00000086548",
+    "gated_window": 1.7983691658087713,
+    "gain": 0.5534730969543107,
+    "a_name": "OLFM4",
+    "b_name": "CEACAM6"
+   },
+   {
+    "a": "ENSG00000105388",
+    "b": "ENSG00000086548",
+    "gated_window": 1.7915478999527572,
+    "gain": 0.5466518310982966,
+    "a_name": "CEACAM5",
+    "b_name": "CEACAM6"
+   },
+   {
+    "a": "ENSG00000124102",
+    "b": "ENSG00000015413",
+    "gated_window": 1.778066950490076,
+    "gain": 3.5458862167542193,
+    "a_name": "PI3",
+    "b_name": "DPEP1"
+   },
+   {
+    "a": "ENSG00000086548",
+    "b": "ENSG00000119888",
+    "gated_window": 1.6399396325659685,
+    "gain": 0.39504356371150795,
+    "a_name": "CEACAM6",
+    "b_name": "EPCAM"
+   },
+   {
+    "a": "ENSG00000086548",
+    "b": "ENSG00000171747",
+    "gated_window": 1.6192294685748214,
+    "gain": 0.37433339972036084,
+    "a_name": "CEACAM6",
+    "b_name": "LGALS4"
+   },
+   {
+    "a": "ENSG00000112378",
+    "b": "ENSG00000007952",
+    "gated_window": 1.5871639505966524,
+    "gain": 0.514573172829758,
+    "a_name": "PERP",
+    "b_name": "NOX1"
+   },
+   {
+    "a": "ENSG00000102837",
+    "b": "ENSG00000112378",
+    "gated_window": 1.497090465061663,
+    "gain": 2.129426280210086,
+    "a_name": "OLFM4",
+    "b_name": "PERP"
+   },
+   {
+    "a": "ENSG00000165215",
+    "b": "ENSG00000112378",
+    "gated_window": 1.497090465061663,
+    "gain": 0.7900610730015023,
+    "a_name": "CLDN3",
+    "b_name": "PERP"
+   },
+   {
+    "a": "ENSG00000173702",
+    "b": "ENSG00000112378",
+    "gated_window": 1.497090465061663,
+    "gain": 2.5399386078360617,
+    "a_name": "MUC13",
+    "b_name": "PERP"
+   },
+   {
+    "a": "ENSG00000079112",
+    "b": "ENSG00000112378",
+    "gated_window": 1.497090465061663,
+    "gain": 1.885423756514415,
+    "a_name": "CDH17",
+    "b_name": "PERP"
+   },
+   {
+    "a": "ENSG00000099812",
+    "b": "ENSG00000112378",
+    "gated_window": 1.497090465061663,
+    "gain": 1.7544684045655456,
+    "a_name": "MISP",
+    "b_name": "PERP"
+   }
+  ],
+  "SKCM": [
+   {
+    "a": "ENSG00000185686",
+    "b": "ENSG00000080166",
+    "gated_window": 6.856715416949227,
+    "gain": 0.893084796083488,
+    "a_name": "PRAME",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000124102",
+    "b": "ENSG00000185686",
+    "gated_window": 6.279483181857425,
+    "gain": 0.8797057662822878,
+    "a_name": "PI3",
+    "b_name": "PRAME"
+   },
+   {
+    "a": "ENSG00000185686",
+    "b": "ENSG00000167768",
+    "gated_window": 5.969638779300328,
+    "gain": 0.5698613637251908,
+    "a_name": "PRAME",
+    "b_name": "KRT1"
+   },
+   {
+    "a": "ENSG00000111640",
+    "b": "ENSG00000080166",
+    "gated_window": 5.963630620865739,
+    "gain": 0.0,
+    "a_name": "GAPDH",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000197956",
+    "b": "ENSG00000080166",
+    "gated_window": 5.963630620865739,
+    "gain": 0.0,
+    "a_name": "S100A6",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000206503",
+    "b": "ENSG00000080166",
+    "gated_window": 5.963630620865739,
+    "gain": 0.0,
+    "a_name": "HLA-A",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000135404",
+    "b": "ENSG00000080166",
+    "gated_window": 5.963630620865739,
+    "gain": 0.0,
+    "a_name": "CD63",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000026025",
+    "b": "ENSG00000080166",
+    "gated_window": 5.963630620865739,
+    "gain": 0.0,
+    "a_name": "VIM",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000189058",
+    "b": "ENSG00000080166",
+    "gated_window": 5.963630620865739,
+    "gain": 0.0,
+    "a_name": "APOD",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000234745",
+    "b": "ENSG00000080166",
+    "gated_window": 5.963630620865739,
+    "gain": 0.0,
+    "a_name": "HLA-B",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000167658",
+    "b": "ENSG00000080166",
+    "gated_window": 5.963630620865739,
+    "gain": 0.0,
+    "a_name": "EEF2",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000163220",
+    "b": "ENSG00000080166",
+    "gated_window": 5.963630620865739,
+    "gain": 0.0,
+    "a_name": "S100A9",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000096384",
+    "b": "ENSG00000080166",
+    "gated_window": 5.963630620865739,
+    "gain": 0.0,
+    "a_name": "HSP90AB1",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000166710",
+    "b": "ENSG00000080166",
+    "gated_window": 5.963630620865739,
+    "gain": 0.0,
+    "a_name": "B2M",
+    "b_name": "DCT"
+   },
+   {
+    "a": "ENSG00000019582",
+    "b": "ENSG00000080166",
+    "gated_window": 5.963630620865739,
+    "gain": 0.0,
+    "a_name": "CD74",
+    "b_name": "DCT"
+   }
+  ],
+  "STAD": [
+   {
+    "a": "ENSG00000066405",
+    "b": "ENSG00000165215",
+    "gated_window": 4.089207090084025,
+    "gain": 4.493539472957561,
+    "a_name": "CLDN18",
+    "b_name": "CLDN3"
+   },
+   {
+    "a": "ENSG00000102837",
+    "b": "ENSG00000066405",
+    "gated_window": 3.946743823213171,
+    "gain": 4.938836947185771,
+    "a_name": "OLFM4",
+    "b_name": "CLDN18"
+   },
+   {
+    "a": "ENSG00000066405",
+    "b": "ENSG00000188257",
+    "gated_window": 3.686746667330045,
+    "gain": 5.152865972161381,
+    "a_name": "CLDN18",
+    "b_name": "PLA2G2A"
+   },
+   {
+    "a": "ENSG00000124102",
+    "b": "ENSG00000066405",
+    "gated_window": 2.9730551003290184,
+    "gain": 4.4391744051603546,
+    "a_name": "PI3",
+    "b_name": "CLDN18"
+   },
+   {
+    "a": "ENSG00000066405",
+    "b": "ENSG00000173702",
+    "gated_window": 2.5706164368194955,
+    "gain": 3.7921377136077847,
+    "a_name": "CLDN18",
+    "b_name": "MUC13"
+   },
+   {
+    "a": "ENSG00000188257",
+    "b": "ENSG00000184292",
+    "gated_window": 2.354085374898304,
+    "gain": 5.3647253101713135,
+    "a_name": "PLA2G2A",
+    "b_name": "TACSTD2"
+   },
+   {
+    "a": "ENSG00000066405",
+    "b": "ENSG00000099812",
+    "gated_window": 2.2539136513016107,
+    "gain": 3.04420647611947,
+    "a_name": "CLDN18",
+    "b_name": "MISP"
+   },
+   {
+    "a": "ENSG00000099812",
+    "b": "ENSG00000184292",
+    "gated_window": 2.1337554200187485,
+    "gain": 2.924048244836608,
+    "a_name": "MISP",
+    "b_name": "TACSTD2"
+   },
+   {
+    "a": "ENSG00000173702",
+    "b": "ENSG00000128283",
+    "gated_window": 1.869327884157924,
+    "gain": 1.8632442234157578,
+    "a_name": "MUC13",
+    "b_name": "CDC42EP1"
+   },
+   {
+    "a": "ENSG00000127324",
+    "b": "ENSG00000160932",
+    "gated_window": 1.5767426949340164,
+    "gain": 2.9362773704063123,
+    "a_name": "TSPAN8",
+    "b_name": "LY6E"
+   },
+   {
+    "a": "ENSG00000171747",
+    "b": "ENSG00000160932",
+    "gated_window": 1.574903695270235,
+    "gain": 2.934438370742531,
+    "a_name": "LGALS4",
+    "b_name": "LY6E"
+   },
+   {
+    "a": "ENSG00000173702",
+    "b": "ENSG00000184292",
+    "gated_window": 1.5303360145900315,
+    "gain": 2.751857291378321,
+    "a_name": "MUC13",
+    "b_name": "TACSTD2"
+   },
+   {
+    "a": "ENSG00000160932",
+    "b": "ENSG00000173702",
+    "gated_window": 1.4235121427872848,
+    "gain": 2.645033419575574,
+    "a_name": "LY6E",
+    "b_name": "MUC13"
+   },
+   {
+    "a": "ENSG00000196126",
+    "b": "ENSG00000124102",
+    "gated_window": 1.379731025910952,
+    "gain": 1.9662245501927957,
+    "a_name": "HLA-DRB1",
+    "b_name": "PI3"
+   },
+   {
+    "a": "ENSG00000066405",
+    "b": "ENSG00000173801",
+    "gated_window": 1.3594156236253667,
+    "gain": 2.825534928456703,
+    "a_name": "CLDN18",
+    "b_name": "JUP"
+   }
+  ],
+  "KIRC": [
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000124564",
+    "gated_window": 5.561669465461748,
+    "gain": 6.179004295353174,
+    "a_name": "CA9",
+    "b_name": "SLC17A3"
+   },
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000074410",
+    "gated_window": 3.7970533404421314,
+    "gain": 4.464762473993071,
+    "a_name": "CA9",
+    "b_name": "CA12"
+   },
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000147003",
+    "gated_window": 3.595431637540609,
+    "gain": 4.263140771091548,
+    "a_name": "CA9",
+    "b_name": "CLTRN"
+   },
+   {
+    "a": "ENSG00000118785",
+    "b": "ENSG00000107159",
+    "gated_window": 3.3440931680664248,
+    "gain": 4.011802301617364,
+    "a_name": "SPP1",
+    "b_name": "CA9"
+   },
+   {
+    "a": "ENSG00000147003",
+    "b": "ENSG00000154269",
+    "gated_window": 3.2944084383634213,
+    "gain": 2.046435572990285,
+    "a_name": "CLTRN",
+    "b_name": "ENPP3"
+   },
+   {
+    "a": "ENSG00000074410",
+    "b": "ENSG00000154269",
+    "gated_window": 3.2944084383634213,
+    "gain": 2.046435572990285,
+    "a_name": "CA12",
+    "b_name": "ENPP3"
+   },
+   {
+    "a": "ENSG00000154269",
+    "b": "ENSG00000124564",
+    "gated_window": 3.279634097697899,
+    "gain": 2.0316612323247623,
+    "a_name": "ENPP3",
+    "b_name": "SLC17A3"
+   },
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000162692",
+    "gated_window": 3.242687860955259,
+    "gain": 3.9103969945061987,
+    "a_name": "CA9",
+    "b_name": "VCAM1"
+   },
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000166825",
+    "gated_window": 3.1700435278560386,
+    "gain": 3.837752661406978,
+    "a_name": "CA9",
+    "b_name": "ANPEP"
+   },
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000165376",
+    "gated_window": 3.1303389618537008,
+    "gain": 3.496811590649866,
+    "a_name": "CA9",
+    "b_name": "CLDN2"
+   },
+   {
+    "a": "ENSG00000154269",
+    "b": "ENSG00000121769",
+    "gated_window": 3.032118150260993,
+    "gain": 1.7841452848878565,
+    "a_name": "ENPP3",
+    "b_name": "FABP3"
+   },
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000100292",
+    "gated_window": 3.018979435253054,
+    "gain": 3.6866885688039934,
+    "a_name": "CA9",
+    "b_name": "HMOX1"
+   },
+   {
+    "a": "ENSG00000107159",
+    "b": "ENSG00000154269",
+    "gated_window": 2.886128305259886,
+    "gain": 1.6381554398867495,
+    "a_name": "CA9",
+    "b_name": "ENPP3"
+   },
+   {
+    "a": "ENSG00000118785",
+    "b": "ENSG00000154269",
+    "gated_window": 2.807056734268687,
+    "gain": 1.5590838688955504,
+    "a_name": "SPP1",
+    "b_name": "ENPP3"
+   },
+   {
+    "a": "ENSG00000162692",
+    "b": "ENSG00000154269",
+    "gated_window": 2.807056734268687,
+    "gain": 1.5590838688955504,
+    "a_name": "VCAM1",
+    "b_name": "ENPP3"
+   }
+  ]
+ }
+}
