@@ -123,7 +123,13 @@ def analyze(cancer, ds, rng):
     rng.shuffle(pool)
     pool = pool[:4000]
     pidx = [gidx[g] for g in pool]
-    PB = np.asarray(M[:, pidx].todense()) > 0           # cells x pool
+    # chunked densify: full-block todense OOMs on big datasets (LIHC 61k cells:
+    # 61690x4000 float64 = 2GB). 500-col chunks peak at ~250MB.
+    _parts = []
+    for _i in range(0, len(pidx), 500):
+        _parts.append(np.asarray(M[:, pidx[_i:_i+500]].todense()) > 0)
+    PB = np.hstack(_parts)                              # cells x pool (bool)
+    del _parts
     pdr = PB.mean(axis=0)
     for a, b in PAIRS:
         key = f"{a}-{b}"
