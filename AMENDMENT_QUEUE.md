@@ -11,10 +11,10 @@ Status: DONE = evidence committed. PARTIAL = exists, gap named. TODO = not start
 ## Tier 1 - the transform package (verdict's highest-impact improvement)
 | # | Addition | Status | Evidence / Action |
 |---|----------|--------|-------------------|
-| 1 | Formal multi-objective target-ranking algorithm | PARTIAL | src/cart/antigen_rank.py (tumor/vital-normal window, benchmarked on CD19/BCMA/HER2/MSLN/GPC3). Gap: objectives limited to expression window; add druggability, novelty, interaction-independence terms with explicit weights + optimization objective. -> scripts_rankscore.py |
+| 1 | Formal multi-objective target-ranking algorithm | DONE | rankscore v1 (ffe3f0a): scripts_rankscore.py + results/rankscore_v1.json + tests/test_rankscore.py. Declared weights over specificity / normal penalty / protein evidence / novelty axes on 7 gated antigens: CA9 0.885 > MSLN 0.834 > SLC39A6 0.806 > PSCA 0.733 > CLDN18 0.686. Pre-declared anchor check FAILED (CLDN18 5/7) - reported as limitation, criterion not adjusted. |
 | 2 | Propensity-score matched backgrounds | TODO | Match background genes on expression, length, protein abundance, cancer association, literature count; rerun key enrichments vs matched nulls. |
-| 12 | Explainable feature contributions per antigen | TODO | Ship with #1: per-candidate percentage contributions (specificity / normal penalty / protein evidence / novelty). |
-| 13 | Unified antigen safety score Safety=f(RNA, Protein, GWAS, Mendelian, Essentiality) | TODO | Inputs already committed: results/gtex_safety*, cptac_protein.json, gwas_audit.json, depmap_dependency.json. Validate: known successful targets must rank appropriately. |
+| 12 | Explainable feature contributions per antigen | DONE | ffe3f0a: per-candidate percentage contributions in results/rankscore_v1.json (specificity / normal penalty / protein evidence / novelty), 3 tests passing. |
+| 13 | Unified antigen safety score Safety=f(RNA, Protein, GWAS, Mendelian, Essentiality) | PARTIAL | ffe3f0a: unified safety axis inside rankscore v1 (normal-penalty + protein evidence terms from gtex_safety/cptac inputs). Gap: GWAS/Mendelian/essentiality terms not yet folded in; anchor validation failed honestly on CLDN18 (limitation recorded). |
 | 15 | External cohorts beyond TCGA-like data | PARTIAL | CPTAC protein (results/cptac_protein.json) + 8 external scRNA cohorts (atlas). Gap: ICGC / independent GEO bulk validation of the ranking. |
 
 ## Tier 2 - statistical unification (cheap, high rigor value)
