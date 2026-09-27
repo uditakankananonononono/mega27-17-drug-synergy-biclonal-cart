@@ -1,0 +1,224 @@
+{
+ "design": "Amendment-queue Tier-1 (#1 + #12 + #13): multi-objective antigen ranking with",
+ "weights": {
+  "tumor_signal": 0.3,
+  "normal_safety": 0.25,
+  "protein_breadth": 0.15,
+  "tractability": 0.15,
+  "nonessentiality": 0.15
+ },
+ "panel_size": 7,
+ "ranking": [
+  "CA9",
+  "MSLN",
+  "SLC39A6",
+  "PSCA",
+  "CLDN18",
+  "CLDN6",
+  "CA12"
+ ],
+ "rows": {
+  "CLDN18": {
+   "score": 0.6856,
+   "components": {
+    "tumor_signal": 0.9039,
+    "normal_safety": 0.1147,
+    "protein_breadth": 0.5714,
+    "tractability": 1.0,
+    "nonessentiality": 1.0
+   },
+   "contributions": {
+    "tumor_signal": 0.2712,
+    "normal_safety": 0.0287,
+    "protein_breadth": 0.0857,
+    "tractability": 0.15,
+    "nonessentiality": 0.15
+   },
+   "raw": {
+    "tumor_p75_max_nTPM": 254.9743,
+    "gtex_vital_max_tpm": 140.5,
+    "gtex_overall_max_tpm": 391.2,
+    "vital_flag": "vital_in_top",
+    "cptac_studies_detected": 4,
+    "cptac_median_log2": -2.255,
+    "strict_trials": 0,
+    "novelty_axis": 1.0
+   }
+  },
+  "MSLN": {
+   "score": 0.8338,
+   "components": {
+    "tumor_signal": 1.0,
+    "normal_safety": 0.5068,
+    "protein_breadth": 0.7143,
+    "tractability": 1.0,
+    "nonessentiality": 1.0
+   },
+   "contributions": {
+    "tumor_signal": 0.3,
+    "normal_safety": 0.1267,
+    "protein_breadth": 0.1071,
+    "tractability": 0.15,
+    "nonessentiality": 0.15
+   },
+   "raw": {
+    "tumor_p75_max_nTPM": 460.4645,
+    "gtex_vital_max_tpm": 78.275,
+    "gtex_overall_max_tpm": 84.78,
+    "vital_flag": "vital_in_top",
+    "cptac_studies_detected": 5,
+    "cptac_median_log2": 0.0464,
+    "strict_trials": 41,
+    "novelty_axis": 0.0
+   }
+  },
+  "CA9": {
+   "score": 0.8851,
+   "components": {
+    "tumor_signal": 0.8444,
+    "normal_safety": 0.7272,
+    "protein_breadth": 1.0,
+    "tractability": 1.0,
+    "nonessentiality": 1.0
+   },
+   "contributions": {
+    "tumor_signal": 0.2533,
+    "normal_safety": 0.1818,
+    "protein_breadth": 0.15,
+    "tractability": 0.15,
+    "nonessentiality": 0.15
+   },
+   "raw": {
+    "tumor_p75_max_nTPM": 176.70940000000002,
+    "gtex_vital_max_tpm": 43.3,
+    "gtex_overall_max_tpm": 481.0,
+    "vital_flag": "vital_in_top",
+    "cptac_studies_detected": 7,
+    "cptac_median_log2": 0.121,
+    "strict_trials": 7,
+    "novelty_axis": 0.8293
+   }
+  },
+  "CA12": {
+   "score": 0.5362,
+   "components": {
+    "tumor_signal": 0.7872,
+    "normal_safety": 0.0,
+    "protein_breadth": 1.0,
+    "tractability": 0.0,
+    "nonessentiality": 1.0
+   },
+   "contributions": {
+    "tumor_signal": 0.2362,
+    "normal_safety": 0.0,
+    "protein_breadth": 0.15,
+    "tractability": 0.0,
+    "nonessentiality": 0.15
+   },
+   "raw": {
+    "tumor_p75_max_nTPM": 124.1035,
+    "gtex_vital_max_tpm": 158.7,
+    "gtex_overall_max_tpm": 158.7,
+    "vital_flag": "vital_in_top",
+    "cptac_studies_detected": 7,
+    "cptac_median_log2": -0.0355,
+    "strict_trials": 0,
+    "novelty_axis": 1.0
+   }
+  },
+  "CLDN6": {
+   "score": 0.6437,
+   "components": {
+    "tumor_signal": 0.7476,
+    "normal_safety": 0.9918,
+    "protein_breadth": 0.1429,
+    "tractability": 0.0,
+    "nonessentiality": 1.0
+   },
+   "contributions": {
+    "tumor_signal": 0.2243,
+    "normal_safety": 0.248,
+    "protein_breadth": 0.0214,
+    "tractability": 0.0,
+    "nonessentiality": 0.15
+   },
+   "raw": {
+    "tumor_p75_max_nTPM": 97.0836,
+    "gtex_vital_max_tpm": 1.294,
+    "gtex_overall_max_tpm": 1.294,
+    "vital_flag": "vital_in_top",
+    "cptac_studies_detected": 1,
+    "cptac_median_log2": -0.161,
+    "strict_trials": 3,
+    "novelty_axis": 0.9268
+   }
+  },
+  "PSCA": {
+   "score": 0.7329,
+   "components": {
+    "tumor_signal": 0.824,
+    "normal_safety": 1.0,
+    "protein_breadth": 0.5714,
+    "tractability": 0.0,
+    "nonessentiality": 1.0
+   },
+   "contributions": {
+    "tumor_signal": 0.2472,
+    "normal_safety": 0.25,
+    "protein_breadth": 0.0857,
+    "tractability": 0.0,
+    "nonessentiality": 0.15
+   },
+   "raw": {
+    "tumor_p75_max_nTPM": 155.7339,
+    "gtex_vital_max_tpm": 0.0,
+    "gtex_overall_max_tpm": 1261.0,
+    "vital_flag": "vital_below_top6_upper_bound",
+    "cptac_studies_detected": 4,
+    "cptac_median_log2": 1.61,
+    "strict_trials": 5,
+    "novelty_axis": 0.878
+   }
+  },
+  "SLC39A6": {
+   "score": 0.8059,
+   "components": {
+    "tumor_signal": 0.9958,
+    "normal_safety": 1.0,
+    "protein_breadth": 0.7143,
+    "tractability": 0.0,
+    "nonessentiality": 1.0
+   },
+   "contributions": {
+    "tumor_signal": 0.2987,
+    "normal_safety": 0.25,
+    "protein_breadth": 0.1071,
+    "tractability": 0.0,
+    "nonessentiality": 0.15
+   },
+   "raw": {
+    "tumor_p75_max_nTPM": 448.8397,
+    "gtex_vital_max_tpm": 0.0,
+    "gtex_overall_max_tpm": 76.72999999999999,
+    "vital_flag": "vital_below_top6_upper_bound",
+    "cptac_studies_detected": 5,
+    "cptac_median_log2": 0.2132,
+    "strict_trials": 0,
+    "novelty_axis": 1.0
+   }
+  }
+ },
+ "validation": {
+  "clinically_targeted_anchors": {
+   "MSLN": 2,
+   "CLDN18": 5,
+   "PSCA": 4
+  },
+  "anchors_in_top_half": false
+ },
+ "limitations": [
+  "nonessentiality from DepMap top-dependencies list only (absence != measured non-essentiality)",
+  "vital tissue max is an upper bound when no vital tissue appears in GTEx top-6",
+  "CPTAC detection = presence in committed rows, not a detection-limit model"
+ ]
+}
