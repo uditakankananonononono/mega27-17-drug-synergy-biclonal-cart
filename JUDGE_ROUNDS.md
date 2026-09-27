@@ -355,3 +355,17 @@ negative, not hidden.
 Status: critique received and logged; amendment locked; implementation begins
 next (dataset acquisition). Round counts toward the 10 only when the arm is
 implemented and its first verified numbers exist.
+
+---
+
+## RULE CHANGE - 2026-09-27 10:00:07 IST (user, WhatsApp, verbatim)
+
+"NOT 10 ROUNDS OF CHATGPT CHECK JUST ONE WHICH I PROVIDE OK?"
+(relayed by main agent, wamid.HBgMOTE4MTM0MDk4NTcxFQIAEhgWM0VCMDJCMTZGRTVEMkQwMTFBQzc4MQA=)
+
+The counted ChatGPT judge requirement is now ONE round per project, provided
+by the user through the courier route. History above is preserved unchanged.
+Gate ledger status for this lane: **1 of 1 - requirement met** (round 1
+counted; round-2 staged prompt remains valid and will count only if she
+provides the verdict). Supplementary Gemini/LLM consults remain supplementary,
+logged, never counted.
