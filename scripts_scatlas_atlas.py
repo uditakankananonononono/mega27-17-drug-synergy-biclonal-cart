@@ -67,12 +67,17 @@ def load_matrix(h5path):
     f = h5py.File(h5path, "r")
     g = f["matrix"]
     dec = lambda a: [x.decode() if isinstance(x, bytes) else str(x) for x in a]
-    M = sparse.csc_matrix((g["data"][:], g["indices"][:], g["indptr"][:]),
-                          shape=tuple(g["shape"][:]))  # 10x stores CSC (genes x cells)
     barcodes = dec(g["barcodes"][:]); genes = dec(g["features"]["name"][:])
+    shp = tuple(g["shape"][:])  # 10x: (genes, cells), CSC with per-cell indptr
+    # CSC(genes x cells) arrays ARE CSR(cells x genes) when indptr is per-cell:
+    # build CSR directly, no second copy + transpose (OOM fix for 142M-nnz sets).
+    if g["indptr"].shape[0] == shp[1] + 1:
+        M = sparse.csr_matrix((g["data"][:], g["indices"][:], g["indptr"][:]),
+                              shape=(shp[1], shp[0]))
+    else:
+        M = sparse.csr_matrix((g["data"][:], g["indices"][:], g["indptr"][:]),
+                              shape=shp)
     f.close()
-    if M.shape[0] != len(barcodes):
-        M = M.T.tocsr()
     assert M.shape[0] == len(barcodes) and M.shape[1] == len(genes)
     return genes, barcodes, M
 
@@ -98,19 +103,86 @@ def sep(m, mal, nonmal, norm):
         r["sep_normsrc"] = cov / (leak_n + 0.001)
     return r
 
+def load_matrix_restricted(h5path, wanted):
+    """Stream 10x h5, keep only nonzeros whose gene column is `wanted`.
+
+    Two passes over the CSC arrays in cell-block chunks; peak memory ~400MB
+    regardless of total nnz (2GB-box fix for 142M-nnz datasets). Returns
+    (barcodes, csr cells x genes) with identical values to a full load."""
+    f = h5py.File(h5path, "r")
+    g = f["matrix"]
+    dec = lambda a: [x.decode() if isinstance(x, bytes) else str(x) for x in a]
+    barcodes = dec(g["barcodes"][:])
+    ncells = len(barcodes)
+    ngenes = int(g["shape"][0])
+    indptr = g["indptr"][:]
+    BLOCK = 5000
+    counts = np.zeros(ncells, np.int64)
+    for c0 in range(0, ncells, BLOCK):
+        c1 = min(c0 + BLOCK, ncells)
+        s, e = int(indptr[c0]), int(indptr[c1])
+        if e == s:
+            continue
+        m = wanted[g["indices"][s:e]]
+        offs = indptr[c0:c1 + 1] - s
+        cnt = np.add.reduceat(m, offs[:-1])
+        cnt[np.diff(offs) == 0] = 0  # reduceat quirk: empty cells reuse a value
+        counts[c0:c1] = cnt
+    out_indptr = np.zeros(ncells + 1, np.int64)
+    np.cumsum(counts, out=out_indptr[1:])
+    total = int(out_indptr[-1])
+    out_indices = np.empty(total, np.int32)
+    out_data = np.empty(total, np.float32)
+    for c0 in range(0, ncells, BLOCK):
+        c1 = min(c0 + BLOCK, ncells)
+        s, e = int(indptr[c0]), int(indptr[c1])
+        if e == s:
+            continue
+        idx = g["indices"][s:e]
+        m = wanted[idx]
+        pos = np.flatnonzero(m)
+        if pos.size == 0:
+            continue
+        offs = indptr[c0:c1 + 1] - s
+        cell = np.searchsorted(offs, pos, side="right") - 1
+        mcum = np.cumsum(m)
+        # rank within cell = (#wanted before pos) - (#wanted before cell start)
+        start_cnt = np.where(offs[cell] > 0, mcum[np.maximum(offs[cell] - 1, 0)], 0)
+        rank = mcum[pos] - 1 - start_cnt
+        dest = out_indptr[c0 + cell] + rank
+        out_indices[dest] = idx[pos]
+        out_data[dest] = g["data"][s:e][pos]
+    f.close()
+    M = sparse.csr_matrix((out_data, out_indices, out_indptr),
+                          shape=(ncells, ngenes))
+    return barcodes, M
+
+
 def analyze(cancer, ds, rng):
     d = os.path.join(ATLAS_DIR, cancer)
-    genes, cells, M = load_matrix(os.path.join(d, f"{ds}_expression.h5"))
+    h5path = os.path.join(d, f"{ds}_expression.h5")
+    # gene names first (cheap), then stream only the columns we need
+    _f = h5py.File(h5path, "r")
+    genes = [x.decode() if isinstance(x, bytes) else str(x)
+             for x in _f["matrix"]["features"]["name"][:]]
+    _f.close()
+    gidx = {g: i for i, g in enumerate(genes)}
+    present = [g for g in GENES if g in gidx]
+    pool = [g for g in genes if g not in PAIR_GENES]
+    rng.shuffle(pool)
+    pool = pool[:4000]
+    pidx = [gidx[g] for g in pool]
+    wanted = np.zeros(len(genes), bool)
+    wanted[[gidx[g] for g in present] + pidx] = True
+    cells, M = load_matrix_restricted(h5path, wanted)
     meta = load_meta(os.path.join(d, f"{ds}_CellMetainfo_table.tsv"))
     flags = np.array([meta.get(c) for c in cells], dtype=object)
     keep = np.array([f is not None for f in flags])
-    M = M[keep]
+    # no M[keep] slice (full copy OOMs on 142M-nnz sets); mask downstream instead
     mal = np.array([bool(f[0]) for f in flags[keep]])
     norm = np.array([bool(f[1]) for f in flags[keep]])
     nonmal = ~mal
-    gidx = {g: i for i, g in enumerate(genes)}
-    present = [g for g in GENES if g in gidx]
-    col = {g: np.asarray(M[:, gidx[g]].todense()).ravel() for g in present}
+    col = {g: np.asarray(M[:, gidx[g]].todense()).ravel()[keep] for g in present}
     det = {g: float((col[g] > 0).mean()) for g in present}
     rec = {"dataset": ds, "cancer": cancer, "n_cells": int(keep.sum()),
            "n_malignant": int(mal.sum()), "n_normal_source": int(norm.sum()),
@@ -118,16 +190,11 @@ def analyze(cancer, ds, rng):
            "genes_present": present,
            "genes_absent": [g for g in GENES if g not in gidx],
            "detection_rates": det, "pairs": {}}
-    # binarize once; pool = dense bool matrix of non-pair genes (sampled order)
-    pool = [g for g in genes if g not in PAIR_GENES]
-    rng.shuffle(pool)
-    pool = pool[:4000]
-    pidx = [gidx[g] for g in pool]
     # chunked densify: full-block todense OOMs on big datasets (LIHC 61k cells:
     # 61690x4000 float64 = 2GB). 500-col chunks peak at ~250MB.
     _parts = []
     for _i in range(0, len(pidx), 500):
-        _parts.append(np.asarray(M[:, pidx[_i:_i+500]].todense()) > 0)
+        _parts.append((np.asarray(M[:, pidx[_i:_i+500]].todense()) > 0)[keep])
     PB = np.hstack(_parts)                              # cells x pool (bool)
     del _parts
     pdr = PB.mean(axis=0)
