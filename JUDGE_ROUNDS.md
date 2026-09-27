@@ -374,3 +374,5 @@ count. The round-2 staged prompt (judge_prompts/round2_staged.md) is the
 courier route for this lane's ONE round; it counts when her verdict returns
 with wamid provenance. Supplementary Gemini/LLM consults remain
 supplementary, logged, never counted.
+
+JUDGE GATE MET - 2026-09-27 12:41 IST (ChatGPT route per user ruling 12:13:19 'CHATGPT' + 12:13:23 'MAKE IT QUICK THOUGH', phone_messages wamid-verified; DeepSeek route walled per 12:04:59 directive fallback). Verdict: ChatGPT (her account, free tier), conversation https://chatgpt.com/c/6ab8bdde-c768-83e8-9da6-31cc1f95c142, paper pasted in 3 parts (89,560 chars), verbatim response archived in JUDGE_VERDICT_CHATGPT_20260927.md (11,367 chars, 20 weaknesses + 20 additions, computational-only). Amendment queue LOCKED from this verdict; execution next.
