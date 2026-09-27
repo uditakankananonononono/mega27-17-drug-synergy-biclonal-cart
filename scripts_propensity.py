@@ -32,11 +32,15 @@ with gzip.open("data/propensity/gtex_v8_median_tpm.gct.gz", "rt") as f:
     header = f.readline().rstrip("\n").split("\t")
     tissues = header[2:]
     expr = {}
+    ensg_of_sym, sym_of_ensg = {}, {}
     for line in f:
         p = line.rstrip("\n").split("\t")
+        ensg = p[0].split(".")[0]
         sym = p[1]
         v = np.array([float(x) for x in p[2:]], dtype=np.float32)
-        expr[sym] = v
+        expr[ensg] = v
+        sym_of_ensg[ensg] = sym
+        ensg_of_sym.setdefault(sym, ensg)
 print(f"GTEx genes {len(expr)}; tissues {len(tissues)}")
 
 # ---- HPA proteinatlas.tsv: protein class + cancer prognostics ----
@@ -48,7 +52,7 @@ with zipfile.ZipFile("data/propensity/proteinatlas.tsv.zip") as z:
         i_class = cols.index("Protein class")
         prog_idx = [i for i, c in enumerate(cols) if c.startswith("Cancer prognostics -")]
         for row in rd:
-            sym = row[1]
+            sym = row[0]  # "Gene" column is the Ensembl gene ID
             hpa_class[sym] = row[i_class]
             vals = [row[i] for i in prog_idx]
             fav = sum(1 for v in vals if "favourable" in v and "unfavourable" not in v)
@@ -82,8 +86,13 @@ if todo:
 print(f"lengths {len(lengths)}")
 
 # ---- covariate matrix over the matched universe ----
-universe = sorted(set(expr) & set(hpa_class) & set(lengths))
-exclude = set(gated) | {r["gene"] for r in prows if r["group"] in ("references", "positive_controls")}
+lengths_ensg = {}
+for sym, L in lengths.items():
+    e = ensg_of_sym.get(sym)
+    if e: lengths_ensg[e] = L
+universe = sorted(set(expr) & set(hpa_class) & set(lengths_ensg))
+gated_ensg = [ensg_of_sym[g] for g in gated if g in ensg_of_sym]
+exclude = set(gated_ensg) | {ensg_of_sym[r["gene"]] for r in prows if r["group"] in ("references", "positive_controls") and r["gene"] in ensg_of_sym}
 pool = [g for g in universe if g not in exclude]
 def feats(g):
     v = expr[g]
@@ -94,8 +103,9 @@ def feats(g):
 FN = ["expr_log1p_mean", "expr_breadth_tpm1", "gene_len_log10", "is_membrane", "is_secreted",
       "prog_favourable_n", "prog_unfavourable_n"]
 Xp = np.array([feats(g) for g in pool])
-Xc = np.array([feats(g) for g in gated if g in set(universe)])
-gated_in = [g for g in gated if g in set(universe)]
+uset = set(universe)
+gated_in = [e for e in gated_ensg if e in uset]
+Xc = np.array([feats(e) for e in gated_in])
 mu, sd = Xp.mean(0), Xp.std(0); sd[sd == 0] = 1.0
 Zp, Zc = (Xp - mu) / sd, (Xc - mu) / sd
 print(f"pool {len(pool)}; candidates with full covariates {len(gated_in)}/{len(gated)}")
@@ -107,6 +117,7 @@ for i in range(len(gated_in)):
     match_idx.append(np.argsort(d)[:K])
 match_idx = np.array(match_idx)  # (n_cand, K)
 matched_genes = sorted({pool[j] for row in match_idx for j in row})
+matched_syms = [sym_of_ensg.get(e, e) for e in matched_genes]
 
 # ---- Pharos stats for matched controls (per-gene GraphQL, checkpointed cache) ----
 API = "https://pharos-api.ncats.io/graphql"
@@ -139,9 +150,9 @@ def pharos_stats(sym):
         return None
 
 stats = ["publication_count", "generif_count", "gwas_total", "ppi_total", "n_drugs"]
-cand_stats = {r["gene"]: {s: float(r[s]) for s in stats} for r in prows if r["group"] == "gated"}
+cand_stats = {ensg_of_sym[r["gene"]]: {s: float(r[s]) for s in stats} for r in prows if r["group"] == "gated" and r["gene"] in ensg_of_sym}
 ctrl_stats = {}
-todo = [g for g in matched_genes if g not in ctrl_stats]
+todo = matched_syms
 print(f"fetching pharos stats for {len(todo)} matched controls")
 for i, g in enumerate(todo):
     st = pharos_stats(g)
@@ -155,7 +166,7 @@ out = {"seed": SEED, "k": K, "n_redraw": N_REDRAW, "features": FN, "n_pool": len
        "n_unique_matched_controls": len(matched_genes),
        "n_matched_with_pharos": len(ctrl_stats),
        "covariate_gap": "literature count not usable as a MATCH covariate genome-wide (Pharos per-gene API only); it is instead one of the tested annotation outcomes - stated honestly per verdict intent (annotation-bias exposure).",
-       "matched_controls": matched_genes}
+       "matched_controls": matched_syms}
 bal = {}
 mset = sorted({i for row in match_idx for i in row})
 for j, name in enumerate(FN):
