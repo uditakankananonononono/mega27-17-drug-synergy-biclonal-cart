@@ -1,0 +1,83 @@
+{
+ "version": "1.0",
+ "declared": "2026-09-28",
+ "context": "Amendment-queue Tier-2 #5: pre-specified primary endpoints BEFORE the unified 10k-permutation empirical-p rerun (#4). Additive stats file - no PREREG/PREREG-2 gate edits. Declared from committed audit structures only.",
+ "multiple_testing": {
+  "family": "all primary endpoints below (one per audit battery)",
+  "method": "Benjamini-Hochberg FDR at q=0.05",
+  "secondary": "all H2 stats per audit - reported unadjusted with BH as sensitivity"
+ },
+ "primary_endpoints": [
+  {
+   "audit": "bioplex",
+   "endpoint": "H1_per_network presence_fisher (293T)",
+   "metric": "gated vs background network presence, Fisher OR",
+   "test": "permutation of group labels on per-gene table",
+   "direction": "two-sided"
+  },
+  {
+   "audit": "expression_atlas",
+   "endpoint": "H1_tau",
+   "metric": "median tau gated vs background",
+   "test": "label-permutation of median difference",
+   "direction": "greater"
+  },
+  {
+   "audit": "gwas",
+   "endpoint": "H1_any_sig",
+   "metric": "any-significant-association carriage, Fisher OR",
+   "test": "label-permutation of carriage-rate difference",
+   "direction": "two-sided"
+  },
+  {
+   "audit": "harmonizome",
+   "endpoint": "H2_control nonexpression",
+   "metric": "median nonexpression count gated vs background",
+   "test": "label-permutation of median difference",
+   "direction": "two-sided"
+  },
+  {
+   "audit": "intact",
+   "endpoint": "H1_pairwise_antigen_complex",
+   "metric": "antigen-pair edge fraction vs degree-matched null",
+   "test": "existing degree-matched permutation (20k) reused; unified empirical p recomputed at 10k for consistency",
+   "direction": "greater"
+  },
+  {
+   "audit": "monarch",
+   "endpoint": "H1_causal_carriage",
+   "metric": "causal-phenotype carriage, Fisher OR",
+   "test": "label-permutation of carriage-rate difference",
+   "direction": "two-sided"
+  },
+  {
+   "audit": "pharos",
+   "endpoint": "H1_tclin",
+   "metric": "Tclin carriage, Fisher OR",
+   "test": "label-permutation of carriage-rate difference",
+   "direction": "two-sided"
+  },
+  {
+   "audit": "proteomicsdb",
+   "endpoint": "H1_normal_breadth",
+   "metric": "median normal-tissue breadth gated vs background",
+   "test": "label-permutation of median difference",
+   "direction": "less"
+  },
+  {
+   "audit": "targetscan",
+   "endpoint": "H1_any_site",
+   "metric": "miRNA-site carriage, Fisher OR",
+   "test": "label-permutation of carriage-rate difference",
+   "direction": "two-sided"
+  }
+ ],
+ "audits_without_declared_primary": [
+  "clintrials",
+  "constraint",
+  "epitope",
+  "glygen",
+  "hpa"
+ ],
+ "notes": "Audits without a declared primary have calibration/curation structures rather than gated-vs-background hypothesis stats; they enter the FDR family only via their gates as secondary. Propensity-matched-null results (Tier-1 #2) are a separate, already-completed family and are not pooled with these."
+}
