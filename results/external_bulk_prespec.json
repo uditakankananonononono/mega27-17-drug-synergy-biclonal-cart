@@ -1,0 +1,69 @@
+{
+ "item": "AMENDMENT_QUEUE Tier-1 #15 - independent GEO bulk validation of rankscore panel",
+ "locked_at": "2026-09-28T23:38+05:30",
+ "locked_before": "any probe-level analysis; only series metadata (titles, platforms, sample counts) inspected",
+ "panel": [
+  "CA9",
+  "MSLN",
+  "SLC39A6",
+  "PSCA",
+  "CLDN18",
+  "CLDN6",
+  "CA12"
+ ],
+ "datasets": {
+  "GSE53757": {
+   "indication": "ccRCC vs matched normal kidney",
+   "platform": "GPL570",
+   "antigens": [
+    "CA9",
+    "CA12"
+   ],
+   "n": 145
+  },
+  "GSE62165": {
+   "indication": "PDAC",
+   "platform": "GPL13667",
+   "antigens": [
+    "MSLN"
+   ],
+   "n": 132
+  },
+  "GSE42568": {
+   "indication": "breast (17 normal, 104 tumor)",
+   "platform": "GPL570",
+   "antigens": [
+    "SLC39A6"
+   ],
+   "n": 122
+  },
+  "GSE46602": {
+   "indication": "prostate (14 benign, 36 cancer)",
+   "platform": "GPL570",
+   "antigens": [
+    "PSCA"
+   ],
+   "n": 51
+  },
+  "GSE13861": {
+   "indication": "gastric",
+   "platform": "GPL6884",
+   "antigens": [
+    "CLDN18"
+   ],
+   "n": 91
+  },
+  "GSE26712": {
+   "indication": "ovarian (10 normal HOSE, 185 tumor)",
+   "platform": "GPL96",
+   "antigens": [
+    "CLDN6"
+   ],
+   "n": 196
+  }
+ },
+ "primary_endpoint": "per-antigen tumor-vs-normal enrichment: median tumor > median normal, one-sided Wilcoxon p < 0.05 after BH across the 7 tests; PASS if >= 6/7 antigens enrich in their expected indication",
+ "secondary_endpoint": "Spearman between external tumor-expression ranking (per-antigen median tumor expression in its home cohort, probes collapsed to max-median probe per gene) and rankscore tumor_signal component ordering; reported as measured, no threshold",
+ "honesty": "probe->symbol mapping via each platform's GEO annotation file; multi-probe genes collapsed by max-median probe BEFORE any tumor/normal comparison; failures reported per antigen, not dropped",
+ "not_in_scope": "validates tumor-signal direction only; cannot validate safety/tractability components"
+}
