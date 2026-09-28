@@ -1,0 +1,134 @@
+{
+ "prespec": "results/external_bulk_prespec.json",
+ "per_antigen": {
+  "CA9": {
+   "gse": "GSE53757",
+   "platform": "GPL570",
+   "probe": "205199_at",
+   "n_tumor": 72,
+   "n_normal": 72,
+   "median_tumor": 11.626771920310887,
+   "median_normal": 6.70912419895236,
+   "p_one_sided": 7.114114291732897e-24,
+   "n_probes_mapped": 1,
+   "q_bh": 4.979880004213028e-23,
+   "enriched": true
+  },
+  "CA12": {
+   "gse": "GSE53757",
+   "platform": "GPL570",
+   "probe": "203963_at",
+   "n_tumor": 72,
+   "n_normal": 72,
+   "median_tumor": 13.872396984889424,
+   "median_normal": 14.607633942769521,
+   "p_one_sided": 0.99999999738154,
+   "n_probes_mapped": 7,
+   "q_bh": 0.99999999738154,
+   "enriched": false
+  },
+  "MSLN": {
+   "gse": "GSE62165",
+   "platform": "GPL13667",
+   "probe": "11719544_a_at",
+   "n_tumor": 118,
+   "n_normal": 13,
+   "median_tumor": 6.977283708311925,
+   "median_normal": 4.86616508209477,
+   "p_one_sided": 7.939326390330665e-07,
+   "n_probes_mapped": 1,
+   "q_bh": 2.7787642366157327e-06,
+   "enriched": true
+  },
+  "SLC39A6": {
+   "gse": "GSE42568",
+   "platform": "GPL570",
+   "probe": "202088_at",
+   "n_tumor": 104,
+   "n_normal": 17,
+   "median_tumor": 12.66992997,
+   "median_normal": 10.88796951,
+   "p_one_sided": 4.16811171111899e-05,
+   "n_probes_mapped": 4,
+   "q_bh": 7.294195494458233e-05,
+   "enriched": true
+  },
+  "PSCA": {
+   "gse": "GSE46602",
+   "platform": "GPL570",
+   "probe": "205319_at",
+   "n_tumor": 36,
+   "n_normal": 14,
+   "median_tumor": 5.3037635000000005,
+   "median_normal": 4.8885725,
+   "p_one_sided": 0.36884827812368504,
+   "n_probes_mapped": 1,
+   "q_bh": 0.5163875893731591,
+   "enriched": false
+  },
+  "CLDN18": {
+   "gse": "GSE13861",
+   "platform": "GPL6884",
+   "probe": "ILMN_1696284",
+   "n_tumor": 65,
+   "n_normal": 19,
+   "median_tumor": 12.385248,
+   "median_normal": 14.102495,
+   "p_one_sided": 0.9999996297762512,
+   "n_probes_mapped": 4,
+   "q_bh": 0.99999999738154,
+   "enriched": false
+  },
+  "CLDN6": {
+   "gse": "GSE26712",
+   "platform": "GPL96",
+   "probe": "208474_at",
+   "n_tumor": 185,
+   "n_normal": 10,
+   "median_tumor": 6.497917652,
+   "median_normal": 5.691333294,
+   "p_one_sided": 4.0737646021984945e-06,
+   "n_probes_mapped": 1,
+   "q_bh": 9.505450738463155e-06,
+   "enriched": true
+  }
+ },
+ "primary_endpoint": {
+  "rule": ">=6/7 enriched at BH<0.05",
+  "n_enriched": 4,
+  "n_tested": 7,
+  "PASS": false
+ },
+ "secondary_endpoint": {
+  "genes": [
+   "CA9",
+   "MSLN",
+   "SLC39A6",
+   "PSCA",
+   "CLDN18",
+   "CLDN6",
+   "CA12"
+  ],
+  "external_tumor_medians": [
+   11.626771920310887,
+   6.977283708311925,
+   12.66992997,
+   5.3037635000000005,
+   12.385248,
+   6.497917652,
+   13.872396984889424
+  ],
+  "rankscore_tumor_signal_raw": [
+   176.70940000000002,
+   460.4645,
+   448.8397,
+   155.7339,
+   254.9743,
+   97.0836,
+   124.1035
+  ],
+  "spearman_rho": 0.1785714285714286,
+  "p": 0.7016579425162729,
+  "note": "reported as measured, no threshold (prespec)"
+ }
+}
