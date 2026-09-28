@@ -1,0 +1,134 @@
+{
+ "design": "equal-weight mean of 4 min-max-normalized safety terms; additive; v1 untouched",
+ "terms": {
+  "CA9": {
+   "normal_safety_v1": 0.7272,
+   "essentiality": 0.4480696426591844,
+   "mendelian": 1.0,
+   "gwas": 0.8942307692307693
+  },
+  "MSLN": {
+   "normal_safety_v1": 0.5068,
+   "essentiality": 0.16184746946205625,
+   "mendelian": 1.0,
+   "gwas": 0.7115384615384616
+  },
+  "SLC39A6": {
+   "normal_safety_v1": 1.0,
+   "essentiality": 0.0,
+   "mendelian": 1.0,
+   "gwas": 0.9903846153846154
+  },
+  "PSCA": {
+   "normal_safety_v1": 1.0,
+   "essentiality": 0.16734254690782221,
+   "mendelian": 1.0,
+   "gwas": 0.0
+  },
+  "CLDN18": {
+   "normal_safety_v1": 0.1147,
+   "essentiality": 0.11008035562406263,
+   "mendelian": 1.0,
+   "gwas": 0.9423076923076923
+  },
+  "CLDN6": {
+   "normal_safety_v1": 0.9918,
+   "essentiality": 1.0,
+   "mendelian": 1.0,
+   "gwas": 1.0
+  },
+  "CA12": {
+   "normal_safety_v1": 0.0,
+   "essentiality": 0.626170283088848,
+   "mendelian": 0.0,
+   "gwas": 0.7115384615384616
+  }
+ },
+ "safety_v2": {
+  "CA9": 0.7673751029724885,
+  "MSLN": 0.5950464827501295,
+  "SLC39A6": 0.7475961538461539,
+  "PSCA": 0.5418356367269556,
+  "CLDN18": 0.5417720119829388,
+  "CLDN6": 0.99795,
+  "CA12": 0.3344271861568274
+ },
+ "raw_inputs": {
+  "depmap_median_chronos": {
+   "CA9": -0.02291359938343095,
+   "MSLN": 0.06944234988610334,
+   "SLC39A6": 0.12166603511661625,
+   "PSCA": 0.06766924094718199,
+   "CLDN18": 0.08614616037726035,
+   "CLDN6": -0.2010062031586711,
+   "CA12": -0.08038173166913265
+  },
+  "monarch_causal_total": {
+   "CA9": 0,
+   "MSLN": 0,
+   "SLC39A6": 0,
+   "PSCA": 0,
+   "CLDN18": 0,
+   "CLDN6": 0,
+   "CA12": 1
+  },
+  "gwas_n_sig": {
+   "CA9": 11,
+   "MSLN": 30,
+   "SLC39A6": 1,
+   "PSCA": 104,
+   "CLDN18": 6,
+   "CLDN6": 0,
+   "CA12": 30
+  }
+ },
+ "safety_ranking_v2": [
+  "CLDN6",
+  "CA9",
+  "SLC39A6",
+  "MSLN",
+  "PSCA",
+  "CLDN18",
+  "CA12"
+ ],
+ "safety_ranking_v1": [
+  "SLC39A6",
+  "PSCA",
+  "CLDN6",
+  "CA9",
+  "MSLN",
+  "CLDN18",
+  "CA12"
+ ],
+ "spearman_v1_vs_v2": 0.6071428571428572,
+ "consistency_check_geo15": {
+  "CA9": {
+   "safety_v2_rank": 2,
+   "geo_enriched": true
+  },
+  "MSLN": {
+   "safety_v2_rank": 4,
+   "geo_enriched": true
+  },
+  "SLC39A6": {
+   "safety_v2_rank": 3,
+   "geo_enriched": true
+  },
+  "PSCA": {
+   "safety_v2_rank": 5,
+   "geo_enriched": false
+  },
+  "CLDN18": {
+   "safety_v2_rank": 6,
+   "geo_enriched": false
+  },
+  "CLDN6": {
+   "safety_v2_rank": 1,
+   "geo_enriched": true
+  },
+  "CA12": {
+   "safety_v2_rank": 7,
+   "geo_enriched": false
+  }
+ }
+}
