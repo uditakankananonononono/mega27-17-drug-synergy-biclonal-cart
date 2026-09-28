@@ -1,0 +1,93 @@
+{
+ "design": "1,000 Dirichlet draws, concentration = locked weights x 200, seed 20260929; one-at-a-time zero-out renormalized",
+ "locked_weights": {
+  "tumor_signal": 0.3,
+  "normal_safety": 0.25,
+  "protein_breadth": 0.15,
+  "tractability": 0.15,
+  "nonessentiality": 0.15
+ },
+ "locked_ranking": [
+  "CA9",
+  "MSLN",
+  "SLC39A6",
+  "PSCA",
+  "CLDN18",
+  "CLDN6",
+  "CA12"
+ ],
+ "spearman_vs_locked": {
+  "median": 1.0,
+  "iqr": [
+   0.9642857142857145,
+   1.0
+  ],
+  "min": 0.8571428571428573
+ },
+ "p_ca9_stays_first": 1.0,
+ "p_top3_set_holds": 0.997,
+ "p_top5_set_holds": 0.835,
+ "zero_out_sensitivity": {
+  "tumor_signal": {
+   "new_ranking": [
+    "CA9",
+    "MSLN",
+    "SLC39A6",
+    "PSCA",
+    "CLDN6",
+    "CLDN18",
+    "CA12"
+   ],
+   "podium_changed": false
+  },
+  "normal_safety": {
+   "new_ranking": [
+    "MSLN",
+    "CA9",
+    "CLDN18",
+    "SLC39A6",
+    "CA12",
+    "PSCA",
+    "CLDN6"
+   ],
+   "podium_changed": true
+  },
+  "protein_breadth": {
+   "new_ranking": [
+    "CA9",
+    "MSLN",
+    "SLC39A6",
+    "PSCA",
+    "CLDN6",
+    "CLDN18",
+    "CA12"
+   ],
+   "podium_changed": false
+  },
+  "tractability": {
+   "new_ranking": [
+    "SLC39A6",
+    "CA9",
+    "PSCA",
+    "MSLN",
+    "CLDN6",
+    "CA12",
+    "CLDN18"
+   ],
+   "podium_changed": true
+  },
+  "nonessentiality": {
+   "new_ranking": [
+    "CA9",
+    "MSLN",
+    "SLC39A6",
+    "PSCA",
+    "CLDN18",
+    "CLDN6",
+    "CA12"
+   ],
+   "podium_changed": false
+  }
+ },
+ "boundary": "robustness of the ranking WITHIN the locked 7-gene panel; displacement by non-panel candidates needs the full candidate component matrix - logged as remaining #17 gap"
+}
