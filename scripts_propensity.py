@@ -52,18 +52,19 @@ with zipfile.ZipFile("data/propensity/proteinatlas.tsv.zip") as z:
         i_class = cols.index("Protein class")
         prog_idx = [i for i, c in enumerate(cols) if c.startswith("Cancer prognostics -")]
         for row in rd:
-            sym = row[0]  # "Gene" column is the Ensembl gene ID
+            sym = row[2]  # "Ensembl" column = ENSG id ("Gene" col is the symbol)
             hpa_class[sym] = row[i_class]
             vals = [row[i] for i in prog_idx]
-            fav = sum(1 for v in vals if "favourable" in v and "unfavourable" not in v)
-            unfav = sum(1 for v in vals if "unfavourable" in v)
+            fav = sum(1 for v in vals if "favorable" in v and "unfavorable" not in v)
+            unfav = sum(1 for v in vals if "unfavorable" in v)
             hpa_prog[sym] = (fav, unfav)
 print(f"HPA genes {len(hpa_class)}")
 
 # ---- gene length via MyGene batch (cached) ----
 CACHE = "data/propensity/mygene_lengths.json"
 lengths = json.load(open(CACHE)) if os.path.exists(CACHE) else {}
-todo = [g for g in expr if g not in lengths]
+todo = [sym_of_ensg[g] for g in (set(expr) & set(hpa_class))
+        if sym_of_ensg.get(g) and sym_of_ensg[g] not in lengths]
 if todo:
     import urllib.request
     B = 1000
@@ -98,7 +99,7 @@ def feats(g):
     v = expr[g]
     pc = hpa_class[g].lower()
     fav, unfav = hpa_prog.get(g, (0, 0))
-    return [np.log1p(v.mean()), (v >= 1).mean(), np.log10(lengths[g]),
+    return [np.log1p(v.mean()), (v >= 1).mean(), np.log10(lengths_ensg[g]),
             float("membrane" in pc), float("secreted" in pc), float(fav), float(unfav)]
 FN = ["expr_log1p_mean", "expr_breadth_tpm1", "gene_len_log10", "is_membrane", "is_secreted",
       "prog_favourable_n", "prog_unfavourable_n"]
