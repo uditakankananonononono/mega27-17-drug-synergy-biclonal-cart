@@ -20,8 +20,8 @@ Status: DONE = evidence committed. PARTIAL = exists, gap named. TODO = not start
 ## Tier 2 - statistical unification (cheap, high rigor value)
 | # | Addition | Status | Evidence / Action |
 |---|----------|--------|-------------------|
-| 4 | Permutation-based null testing, 10k perms, empirical p | PARTIAL | scAtlas null-pctl = 1.0 on all pairs (results/scatlas_per_dataset.json). Gap: unified 10k-permutation empirical-p across the enrichment audits. |
-| 5 | FDR-controlled global statistics + pre-specified primary endpoints | TODO | Apply BH across all audit batteries; declare primary endpoints in a pre-spec file before reruns (no PREREG gate edits - additive stats file). |
+| 4 | Permutation-based null testing, 10k perms, empirical p | DONE | results/unified_permutation_p.json (53c7719 prespec + this rerun, 10k label perms, seed 20260928): 2/9 primary endpoints FDR-significant - gwas H1_any_sig (p=0.0033, q=0.0099) and harmonizome nonexpression (p=1e-4, q=4.5e-4); 7 ns. scAtlas null-pctl = 1.0 stands. |
+| 5 | FDR-controlled global statistics + pre-specified primary endpoints | DONE | results/stats_prespec.json (9 primary endpoints + BH family declared BEFORE rerun, additive file, no PREREG edits) + results/unified_permutation_p.json (BH q=0.05 applied: 2/9 significant). |
 | 17 | Robustness analysis (threshold/cohort/cutoff sweeps) | PARTIAL | p75/p90 windows (results/rna_window_percentile.json, firebrowse_window.json). Gap: systematic sweep table across all headline claims. |
 
 ## Tier 3 - the bias-correction core (technical basis of the #20 reframe)

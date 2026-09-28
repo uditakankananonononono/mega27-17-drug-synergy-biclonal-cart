@@ -1,0 +1,91 @@
+{
+ "n_perm": 10000,
+ "seed": 20260928,
+ "family": "9 pre-specified primary endpoints (results/stats_prespec.json)",
+ "fdr_method": "BH q=0.05",
+ "n_significant": 3,
+ "endpoints": [
+  {
+   "audit": "bioplex",
+   "endpoint": "H1_per_network presence (293T)",
+   "observed_stat": 0.2884972170686457,
+   "null_median": 0.004225932797361387,
+   "empirical_p": 9.999000099990002e-05,
+   "bh_q": 0.0004499550044995501,
+   "fdr_significant_q05": true
+  },
+  {
+   "audit": "expression_atlas",
+   "endpoint": "H1_tau",
+   "observed_stat": -0.05994380234631147,
+   "null_median": 0.011941376446748753,
+   "empirical_p": 0.7135286471352865,
+   "bh_q": 0.9173939748882256,
+   "fdr_significant_q05": false
+  },
+  {
+   "audit": "gwas",
+   "endpoint": "H1_any_sig",
+   "observed_stat": 0.14347557204700068,
+   "null_median": 0.0013399299113585617,
+   "empirical_p": 0.0032996700329967,
+   "bh_q": 0.0098990100989901,
+   "fdr_significant_q05": true
+  },
+  {
+   "audit": "harmonizome",
+   "endpoint": "H2_control nonexpression (systematic)",
+   "observed_stat": 2813.5,
+   "null_median": -66.5,
+   "empirical_p": 9.999000099990002e-05,
+   "bh_q": 0.0004499550044995501,
+   "fdr_significant_q05": true
+  },
+  {
+   "audit": "intact",
+   "endpoint": "H1_pairwise_antigen_complex",
+   "observed_stat": 0.0,
+   "null_median": null,
+   "empirical_p": 1.0,
+   "provenance": "existing degree-matched 20,000-draw null from intact_audit.json (>= 10k; pair-level design, not a gene-label permutation)",
+   "bh_q": 1.0,
+   "fdr_significant_q05": false
+  },
+  {
+   "audit": "monarch",
+   "endpoint": "H1_causal_carriage",
+   "observed_stat": 0.05823541537827251,
+   "null_median": -0.0026798598227169568,
+   "empirical_p": 0.4183581641835816,
+   "bh_q": 0.753044695530447,
+   "fdr_significant_q05": false
+  },
+  {
+   "audit": "pharos",
+   "endpoint": "H1_tclin",
+   "observed_stat": 0.02947845804988662,
+   "null_median": 0.009173366316223452,
+   "empirical_p": 0.6302369763023697,
+   "bh_q": 0.9173939748882256,
+   "fdr_significant_q05": false
+  },
+  {
+   "audit": "proteomicsdb",
+   "endpoint": "H1_normal_breadth",
+   "observed_stat": 15.0,
+   "null_median": -0.5,
+   "empirical_p": 1.0,
+   "bh_q": 1.0,
+   "fdr_significant_q05": false
+  },
+  {
+   "audit": "targetscan",
+   "endpoint": "H1_any_site",
+   "observed_stat": 0.11636775922490206,
+   "null_median": -0.005462791177076931,
+   "empirical_p": 0.11678832116788321,
+   "bh_q": 0.26277372262773724,
+   "fdr_significant_q05": false
+  }
+ ]
+}
