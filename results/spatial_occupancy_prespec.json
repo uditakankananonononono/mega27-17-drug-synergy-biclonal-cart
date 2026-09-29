@@ -1,0 +1,21 @@
+{
+  "item": "Tier-4 #10 spatial transcriptomics validation of pairs",
+  "declared_before_run": "2026-09-29",
+  "seed": 20260929,
+  "question": "For candidate AND-gate antigen pairs, do the two antigens occupy the SAME regions (AND-gate spatially addressable) or segregate into separate compartments (gate spatially useless)?",
+  "data": "Lane B (mega27-17s-spatial-morphoscan) HER2ST breast sections, features_cache raw counts (68 section files, spots x genes csr), cross-lane asset use per queue item ('coordinate with lane-17s assets where lawful' - both public repos, same owner). Gene identity via ENSG mapped from the committed GTEx v8 GCT (authoritative; two hand-recalled IDs were wrong and corrected from this source: SLC17A3 ENSG00000124564, PSCA ENSG00000167653).",
+  "context_caveat": "breast tissue, not the pairs' native cancer context (CA9 pairs nominated on kidney axis); occupancy LOGIC is tissue-agnostic but low-expression sections limit power - declared, sections qualify per-gene (>=10 positive spots), pairs analyzed on sections where BOTH genes qualify",
+  "pairs": {
+    "primary": ["CA9xENPP3", "CA9xSLC17A3"],
+    "secondary": ["MSLNxCA9", "MSLNxPSCA"],
+    "positive_controls": ["ERBB2xTACSTD2", "ERBB2xMUC1", "SLC39A6xCA12"]
+  },
+  "statistic": "Jaccard index of positive spot sets (count>0) per pair per section",
+  "null": "1,000 toroidal coordinate shifts of one gene's expression map per section (cKDTree nearest-spot reassignment; preserves each map's spatial autocorrelation, breaks co-localization), empirical p per section",
+  "endpoints": [
+    "per pair: n qualifying sections, median observed Jaccard, median null Jaccard, fraction of sections with empirical p<0.05 in each direction",
+    "pre-declared verdict per pair: CO-OCCUPANCY if >=60% of qualifying sections show observed above null p<0.05 AND median observed > median null; SEGREGATION if >=60% show observed below null p<0.05 AND median observed < median null; otherwise INDETERMINATE (reported as such)",
+    "positive controls must return CO-OCCUPANCY or the method is reported as failed, pair verdicts withheld"
+  ],
+  "known_gaps": "spot-level count>0 is a lenient positivity call (Visium-style capture, no segmentation); results are region-occupancy statements, not single-cell co-expression (that is Tier-1 #9 scAtlas territory); CLDN18 has 0 qualifying sections (max 4 positive spots) - excluded from pairs, declared"
+}
