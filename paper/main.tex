@@ -225,6 +225,32 @@ $-62.5$) are listed in the committed result: their normal-tissue breadth is
 undercounted, which is safety-relevant for exactly the genes a gate would
 exclude.
 
+\begin{table}[t]\centering\footnotesize
+\caption{Most under-detected antigens in normal-tissue proteomics
+(detectability expectation model, CV pseudo-$R^2=0.537$). Negative residuals
+mean normal-tissue breadth is \emph{undercounted} relative to expectation ---
+these genes are riskier than the raw breadth numbers suggest, and a
+normal-breadth safety gate treats them over-optimistically.}\label{tab:underdetected}
+\begin{tabular}{llrrr}
+\toprule
+Gene & Group & Observed breadth & Expected & Residual \\
+\midrule
+EEF1A1 & gated & 18.0 & 80.5 & $-62.5$ \\
+MAL & background & 0.0 & 25.9 & $-25.9$ \\
+CD24 & gated & 0.0 & 25.0 & $-25.0$ \\
+ERRFI1 & background & 5.0 & 29.2 & $-24.2$ \\
+SPP1 & gated & 12.0 & 34.0 & $-22.0$ \\
+LY6E & gated & 1.0 & 18.5 & $-17.5$ \\
+NMB & gated & 3.0 & 18.0 & $-15.0$ \\
+EMCN & background & 10.0 & 24.4 & $-14.4$ \\
+MICA & background & 1.0 & 15.3 & $-14.3$ \\
+NOD1 & background & 1.0 & 15.2 & $-14.2$ \\
+GP2 & gated & 10.0 & 23.9 & $-13.9$ \\
+TULP3 & background & 8.0 & 21.9 & $-13.9$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 \subsection{RNA-to-protein translation is cancer-dependent, and MSLN is an outlier}
 Per-cancer robust fits of protein on log-RNA across paired CPTAC tumors show
 translation signal is weak in four of five evaluable cancers
@@ -241,6 +267,23 @@ vs $0.224$ prevalence baseline (ECE $0.017$) for subcellular annotation and
 Brier $0.125$ vs $0.165$ (ECE $0.032$) for membrane annotation. Per the
 pre-registered consequence rule, the inverse-probability weights stand as
 computed.
+
+\begin{table}[t]\centering\footnotesize
+\caption{Bias-aware audit summary. Each row is a pre-registered model with its
+frozen consequence rule; "outcome" records what the audit did to the claim it
+checked.}\label{tab:biasaudit}
+\begin{tabular}{lll}
+\toprule
+Audit & Headline number & Outcome for the claim \\
+\midrule
+Annotation-bias correction & publications $+23.1$ survive; GWAS/PPI confounded & literature excess partly real \\
+Observability model & AUC $0.784$/$0.788$; IPW retains 90\%/86\% & contrasts survive reweighting \\
+Detectability model & pseudo-$R^2=0.537$; 44\% of gap explained & falsified breadth gap is real \\
+Translation model & $R^2$ $-0.07$--$0.09$ (4/5 cancers); PAAD $0.35$ & RNA-to-protein is cancer-dependent \\
+Calibration & ECE $0.017$/$0.032$ & IPW weights stand as computed \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \subsection{A causal map of the evidence chain, with its circularity points named}
 \texttt{docs/CAUSAL\_GRAPH.md} records the five-stage evidence chain and
