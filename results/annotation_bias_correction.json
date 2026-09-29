@@ -1,0 +1,2758 @@
+{
+ "seed": 20260929,
+ "prespec": "results/annotation_bias_prespec.json",
+ "features": [
+  "expr_log1p_mean",
+  "expr_breadth_tpm1",
+  "gene_len_log10",
+  "is_membrane",
+  "is_secreted",
+  "prog_favourable_n",
+  "prog_unfavourable_n"
+ ],
+ "n_controls_train": 831,
+ "n_candidates": 96,
+ "controls_dropped_no_covariates": 0,
+ "candidates_dropped_no_covariates": 3,
+ "per_outcome": {
+  "publication_count": {
+   "cv_poisson_deviance_mean": 202.0502043454872,
+   "cv_pseudo_r2_mean": 0.13926219060074987,
+   "candidate_expected_median": 90.06723505264273,
+   "candidate_observed_median": 118.0,
+   "median_corrected_enrichment": 23.136494824286284,
+   "fraction_observed_gt_expected": 0.5625,
+   "control_observed_median": 43.0
+  },
+  "generif_count": {
+   "cv_poisson_deviance_mean": 174.67065625610385,
+   "cv_pseudo_r2_mean": 0.1358321159851196,
+   "candidate_expected_median": 58.902157112476836,
+   "candidate_observed_median": 74.5,
+   "median_corrected_enrichment": 7.627491141786198,
+   "fraction_observed_gt_expected": 0.5208333333333334,
+   "control_observed_median": 20.0
+  },
+  "gwas_total": {
+   "cv_poisson_deviance_mean": 6.529928656919618,
+   "cv_pseudo_r2_mean": 0.11639955749359085,
+   "candidate_expected_median": 3.5169367567762895,
+   "candidate_observed_median": 2.0,
+   "median_corrected_enrichment": -1.2723076359117649,
+   "fraction_observed_gt_expected": 0.40625,
+   "control_observed_median": 1.0
+  },
+  "ppi_total": {
+   "cv_poisson_deviance_mean": 173.3618565496857,
+   "cv_pseudo_r2_mean": 0.23212407355857242,
+   "candidate_expected_median": 277.0652083645077,
+   "candidate_observed_median": 231.0,
+   "median_corrected_enrichment": -33.21574903334775,
+   "fraction_observed_gt_expected": 0.4583333333333333,
+   "control_observed_median": 182.0
+  },
+  "n_drugs": {
+   "cv_poisson_deviance_mean": 357.39029922459787,
+   "cv_pseudo_r2_mean": -0.051067476711147995,
+   "candidate_expected_median": 43.54039569397402,
+   "candidate_observed_median": 0.0,
+   "median_corrected_enrichment": -42.81560617385726,
+   "fraction_observed_gt_expected": 0.0,
+   "control_observed_median": 0.0
+  }
+ },
+ "per_candidate": [
+  {
+   "gene": "ADH1A",
+   "publication_count": {
+    "observed": 52.0,
+    "expected": 54.52138428736918,
+    "corrected": -2.5213842873691803
+   },
+   "generif_count": {
+    "observed": 21.0,
+    "expected": 35.76766546842121,
+    "corrected": -14.767665468421207
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 3.8570205922652288,
+    "corrected": -3.8570205922652288
+   },
+   "ppi_total": {
+    "observed": 212.0,
+    "expected": 199.29639453375313,
+    "corrected": 12.70360546624687
+   },
+   "n_drugs": {
+    "observed": 1.0,
+    "expected": 40.80233136469823,
+    "corrected": -39.80233136469823
+   }
+  },
+  {
+   "gene": "ADH1B",
+   "publication_count": {
+    "observed": 410.0,
+    "expected": 143.83273743684342,
+    "corrected": 266.16726256315656
+   },
+   "generif_count": {
+    "observed": 261.0,
+    "expected": 91.13909247475128,
+    "corrected": 169.8609075252487
+   },
+   "gwas_total": {
+    "observed": 30.0,
+    "expected": 3.912497685922723,
+    "corrected": 26.087502314077277
+   },
+   "ppi_total": {
+    "observed": 201.0,
+    "expected": 544.4084940974856,
+    "corrected": -343.4084940974856
+   },
+   "n_drugs": {
+    "observed": 1.0,
+    "expected": 14.727641081349915,
+    "corrected": -13.727641081349915
+   }
+  },
+  {
+   "gene": "ADH1C",
+   "publication_count": {
+    "observed": 229.0,
+    "expected": 75.3274445729907,
+    "corrected": 153.67255542700929
+   },
+   "generif_count": {
+    "observed": 117.0,
+    "expected": 48.247061039050514,
+    "corrected": 68.75293896094948
+   },
+   "gwas_total": {
+    "observed": 12.0,
+    "expected": 5.1094469541287575,
+    "corrected": 6.8905530458712425
+   },
+   "ppi_total": {
+    "observed": 172.0,
+    "expected": 257.5313163435391,
+    "corrected": -85.53131634353912
+   },
+   "n_drugs": {
+    "observed": 1.0,
+    "expected": 31.602468792430457,
+    "corrected": -30.602468792430457
+   }
+  },
+  {
+   "gene": "AFM",
+   "publication_count": {
+    "observed": 44.0,
+    "expected": 216.63119564779154,
+    "corrected": -172.63119564779154
+   },
+   "generif_count": {
+    "observed": 22.0,
+    "expected": 160.7782416109802,
+    "corrected": -138.7782416109802
+   },
+   "gwas_total": {
+    "observed": 3.0,
+    "expected": 5.481906695348859,
+    "corrected": -2.481906695348859
+   },
+   "ppi_total": {
+    "observed": 101.0,
+    "expected": 217.0067154913566,
+    "corrected": -116.0067154913566
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 50.07220424044807,
+    "corrected": -50.07220424044807
+   }
+  },
+  {
+   "gene": "AKR1B10",
+   "publication_count": {
+    "observed": 126.0,
+    "expected": 211.1866370225627,
+    "corrected": -85.1866370225627
+   },
+   "generif_count": {
+    "observed": 111.0,
+    "expected": 162.19857873926745,
+    "corrected": -51.19857873926745
+   },
+   "gwas_total": {
+    "observed": 5.0,
+    "expected": 2.818563443298717,
+    "corrected": 2.181436556701283
+   },
+   "ppi_total": {
+    "observed": 187.0,
+    "expected": 288.78109663664605,
+    "corrected": -101.78109663664605
+   },
+   "n_drugs": {
+    "observed": 3.0,
+    "expected": 60.77830401996872,
+    "corrected": -57.77830401996872
+   }
+  },
+  {
+   "gene": "ANPEP",
+   "publication_count": {
+    "observed": 158.0,
+    "expected": 89.9967492387687,
+    "corrected": 68.0032507612313
+   },
+   "generif_count": {
+    "observed": 113.0,
+    "expected": 58.80877203571863,
+    "corrected": 54.19122796428137
+   },
+   "gwas_total": {
+    "observed": 4.0,
+    "expected": 3.5872004557942687,
+    "corrected": 0.4127995442057313
+   },
+   "ppi_total": {
+    "observed": 347.0,
+    "expected": 295.0206991040319,
+    "corrected": 51.979300895968095
+   },
+   "n_drugs": {
+    "observed": 1.0,
+    "expected": 41.640457493872546,
+    "corrected": -40.640457493872546
+   }
+  },
+  {
+   "gene": "APOC3",
+   "publication_count": {
+    "observed": 447.0,
+    "expected": 286.64740882874474,
+    "corrected": 160.35259117125526
+   },
+   "generif_count": {
+    "observed": 270.0,
+    "expected": 201.7074102765792,
+    "corrected": 68.2925897234208
+   },
+   "gwas_total": {
+    "observed": 7.0,
+    "expected": 3.6243366683453826,
+    "corrected": 3.3756633316546174
+   },
+   "ppi_total": {
+    "observed": 387.0,
+    "expected": 384.3366375579104,
+    "corrected": 2.6633624420895785
+   },
+   "n_drugs": {
+    "observed": 1.0,
+    "expected": 22.254561204664633,
+    "corrected": -21.254561204664633
+   }
+  },
+  {
+   "gene": "APOD",
+   "publication_count": {
+    "observed": 104.0,
+    "expected": 278.256701721942,
+    "corrected": -174.25670172194202
+   },
+   "generif_count": {
+    "observed": 59.0,
+    "expected": 186.0939111714792,
+    "corrected": -127.09391117147919
+   },
+   "gwas_total": {
+    "observed": 2.0,
+    "expected": 3.5035525793930153,
+    "corrected": -1.5035525793930153
+   },
+   "ppi_total": {
+    "observed": 219.0,
+    "expected": 425.418030530857,
+    "corrected": -206.41803053085698
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 20.04883904246267,
+    "corrected": -20.04883904246267
+   }
+  },
+  {
+   "gene": "AQP1",
+   "publication_count": {
+    "observed": 361.0,
+    "expected": 156.79051813193814,
+    "corrected": 204.20948186806186
+   },
+   "generif_count": {
+    "observed": 244.0,
+    "expected": 101.37587705063464,
+    "corrected": 142.62412294936536
+   },
+   "gwas_total": {
+    "observed": 3.0,
+    "expected": 3.654944813189263,
+    "corrected": -0.654944813189263
+   },
+   "ppi_total": {
+    "observed": 192.0,
+    "expected": 487.0075282474207,
+    "corrected": -295.0075282474207
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 22.37453126845669,
+    "corrected": -22.37453126845669
+   }
+  },
+  {
+   "gene": "AQP4",
+   "publication_count": {
+    "observed": 357.0,
+    "expected": 61.264188904317905,
+    "corrected": 295.7358110956821
+   },
+   "generif_count": {
+    "observed": 301.0,
+    "expected": 40.893848370771856,
+    "corrected": 260.1061516292281
+   },
+   "gwas_total": {
+    "observed": 15.0,
+    "expected": 3.585155318156425,
+    "corrected": 11.414844681843576
+   },
+   "ppi_total": {
+    "observed": 380.0,
+    "expected": 185.9552805955494,
+    "corrected": 194.0447194044506
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 58.597464852211274,
+    "corrected": -58.597464852211274
+   }
+  },
+  {
+   "gene": "ASGR2",
+   "publication_count": {
+    "observed": 40.0,
+    "expected": 70.20829576132927,
+    "corrected": -30.208295761329268
+   },
+   "generif_count": {
+    "observed": 11.0,
+    "expected": 47.22677826522256,
+    "corrected": -36.22677826522256
+   },
+   "gwas_total": {
+    "observed": 6.0,
+    "expected": 3.946991195710572,
+    "corrected": 2.053008804289428
+   },
+   "ppi_total": {
+    "observed": 108.0,
+    "expected": 201.40373661665495,
+    "corrected": -93.40373661665495
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 53.54418987119708,
+    "corrected": -53.54418987119708
+   }
+  },
+  {
+   "gene": "ATP1B2",
+   "publication_count": {
+    "observed": 46.0,
+    "expected": 110.45473125403032,
+    "corrected": -64.45473125403032
+   },
+   "generif_count": {
+    "observed": 13.0,
+    "expected": 72.88467263442132,
+    "corrected": -59.88467263442132
+   },
+   "gwas_total": {
+    "observed": 6.0,
+    "expected": 3.399926322145693,
+    "corrected": 2.600073677854307
+   },
+   "ppi_total": {
+    "observed": 212.0,
+    "expected": 337.9283556221279,
+    "corrected": -125.92835562212792
+   },
+   "n_drugs": {
+    "observed": 3.0,
+    "expected": 35.161476178541356,
+    "corrected": -32.161476178541356
+   }
+  },
+  {
+   "gene": "ATP6V1B1",
+   "publication_count": {
+    "observed": 73.0,
+    "expected": 49.3131515398719,
+    "corrected": 23.686848460128097
+   },
+   "generif_count": {
+    "observed": 31.0,
+    "expected": 31.958806972452894,
+    "corrected": -0.9588069724528943
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 4.155476186502519,
+    "corrected": -3.1554761865025194
+   },
+   "ppi_total": {
+    "observed": 216.0,
+    "expected": 182.58323463709866,
+    "corrected": 33.416765362901344
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 46.71294925956565,
+    "corrected": -46.71294925956565
+   }
+  },
+  {
+   "gene": "B2M",
+   "publication_count": {
+    "observed": 421.0,
+    "expected": 318.8581051078167,
+    "corrected": 102.1418948921833
+   },
+   "generif_count": {
+    "observed": 313.0,
+    "expected": 213.39076120281044,
+    "corrected": 99.60923879718956
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 3.231668739587385,
+    "corrected": -3.231668739587385
+   },
+   "ppi_total": {
+    "observed": 1075.0,
+    "expected": 484.1222739387092,
+    "corrected": 590.8777260612908
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 16.862472070196546,
+    "corrected": -16.862472070196546
+   }
+  },
+  {
+   "gene": "CA12",
+   "publication_count": {
+    "observed": 61.0,
+    "expected": 92.51269039750498,
+    "corrected": -31.512690397504983
+   },
+   "generif_count": {
+    "observed": 40.0,
+    "expected": 62.503462803399735,
+    "corrected": -22.503462803399735
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 3.778528335594747,
+    "corrected": -2.778528335594747
+   },
+   "ppi_total": {
+    "observed": 91.0,
+    "expected": 291.8467237390734,
+    "corrected": -200.8467237390734
+   },
+   "n_drugs": {
+    "observed": 20.0,
+    "expected": 53.010802741462605,
+    "corrected": -33.010802741462605
+   }
+  },
+  {
+   "gene": "CA9",
+   "publication_count": {
+    "observed": 355.0,
+    "expected": 87.08499147861411,
+    "corrected": 267.91500852138586
+   },
+   "generif_count": {
+    "observed": 326.0,
+    "expected": 63.03906108713518,
+    "corrected": 262.96093891286483
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 2.0106205394131242,
+    "corrected": -1.0106205394131242
+   },
+   "ppi_total": {
+    "observed": 230.0,
+    "expected": 306.92035398148823,
+    "corrected": -76.92035398148823
+   },
+   "n_drugs": {
+    "observed": 20.0,
+    "expected": 69.29276401191127,
+    "corrected": -49.292764011911274
+   }
+  },
+  {
+   "gene": "CD24",
+   "publication_count": {
+    "observed": 314.0,
+    "expected": 89.17824942360893,
+    "corrected": 224.82175057639108
+   },
+   "generif_count": {
+    "observed": 282.0,
+    "expected": 58.01734087994108,
+    "corrected": 223.9826591200589
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 2.358450349437722,
+    "corrected": -1.3584503494377218
+   },
+   "ppi_total": {
+    "observed": 371.0,
+    "expected": 408.8993065687177,
+    "corrected": -37.89930656871769
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 24.0975023931334,
+    "corrected": -24.0975023931334
+   }
+  },
+  {
+   "gene": "CD63",
+   "publication_count": {
+    "observed": 166.0,
+    "expected": 118.53897801661499,
+    "corrected": 47.46102198338501
+   },
+   "generif_count": {
+    "observed": 100.0,
+    "expected": 78.19650922862674,
+    "corrected": 21.803490771373262
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 2.109909528875718,
+    "corrected": -2.109909528875718
+   },
+   "ppi_total": {
+    "observed": 438.0,
+    "expected": 501.8246414123669,
+    "corrected": -63.82464141236687
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 30.113190883468004,
+    "corrected": -30.113190883468004
+   }
+  },
+  {
+   "gene": "CD74",
+   "publication_count": {
+    "observed": 177.0,
+    "expected": 323.86629354534904,
+    "corrected": -146.86629354534904
+   },
+   "generif_count": {
+    "observed": 132.0,
+    "expected": 224.210403604341,
+    "corrected": -92.210403604341
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 3.4218175619494153,
+    "corrected": -2.4218175619494153
+   },
+   "ppi_total": {
+    "observed": 551.0,
+    "expected": 381.2534413444542,
+    "corrected": 169.7465586555458
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 30.531240958313187,
+    "corrected": -30.531240958313187
+   }
+  },
+  {
+   "gene": "CDC42EP1",
+   "publication_count": {
+    "observed": 24.0,
+    "expected": 64.37441673741509,
+    "corrected": -40.37441673741509
+   },
+   "generif_count": {
+    "observed": 3.0,
+    "expected": 40.01360080741608,
+    "corrected": -37.01360080741608
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 3.4350807313032945,
+    "corrected": -2.4350807313032945
+   },
+   "ppi_total": {
+    "observed": 28.0,
+    "expected": 272.46154949841105,
+    "corrected": -244.46154949841105
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 27.64616318974937,
+    "corrected": -27.64616318974937
+   }
+  },
+  {
+   "gene": "CDH17",
+   "publication_count": {
+    "observed": 67.0,
+    "expected": 64.74122575665541,
+    "corrected": 2.2587742433445896
+   },
+   "generif_count": {
+    "observed": 55.0,
+    "expected": 44.106352190728884,
+    "corrected": 10.893647809271116
+   },
+   "gwas_total": {
+    "observed": 2.0,
+    "expected": 4.299211029985768,
+    "corrected": -2.299211029985768
+   },
+   "ppi_total": {
+    "observed": 372.0,
+    "expected": 198.7008522238961,
+    "corrected": 173.2991477761039
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 67.80530461897534,
+    "corrected": -67.80530461897534
+   }
+  },
+  {
+   "gene": "CEACAM5",
+   "publication_count": {
+    "observed": 282.0,
+    "expected": 64.6913224147283,
+    "corrected": 217.3086775852717
+   },
+   "generif_count": {
+    "observed": 244.0,
+    "expected": 43.749418342998965,
+    "corrected": 200.25058165700102
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 3.1563719059407,
+    "corrected": -2.1563719059407
+   },
+   "ppi_total": {
+    "observed": 356.0,
+    "expected": 217.4969863393619,
+    "corrected": 138.5030136606381
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 57.730635961749165,
+    "corrected": -57.730635961749165
+   }
+  },
+  {
+   "gene": "CEACAM6",
+   "publication_count": {
+    "observed": 122.0,
+    "expected": 60.47961879298051,
+    "corrected": 61.52038120701949
+   },
+   "generif_count": {
+    "observed": 80.0,
+    "expected": 39.85583966370841,
+    "corrected": 40.14416033629159
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 3.493397378973685,
+    "corrected": -3.493397378973685
+   },
+   "ppi_total": {
+    "observed": 162.0,
+    "expected": 199.2497444314604,
+    "corrected": -37.249744431460414
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 52.69049480288563,
+    "corrected": -52.69049480288563
+   }
+  },
+  {
+   "gene": "CKB",
+   "publication_count": {
+    "observed": 85.0,
+    "expected": 100.74444176141888,
+    "corrected": -15.744441761418884
+   },
+   "generif_count": {
+    "observed": 41.0,
+    "expected": 61.455422361991275,
+    "corrected": -20.455422361991275
+   },
+   "gwas_total": {
+    "observed": 7.0,
+    "expected": 2.7122028645211413,
+    "corrected": 4.287797135478859
+   },
+   "ppi_total": {
+    "observed": 151.0,
+    "expected": 455.1961283405837,
+    "corrected": -304.1961283405837
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 13.913536299957231,
+    "corrected": -13.913536299957231
+   }
+  },
+  {
+   "gene": "CLDN18",
+   "publication_count": {
+    "observed": 61.0,
+    "expected": 59.50872377704891,
+    "corrected": 1.4912762229510932
+   },
+   "generif_count": {
+    "observed": 48.0,
+    "expected": 39.46649284312502,
+    "corrected": 8.533507156874983
+   },
+   "gwas_total": {
+    "observed": 2.0,
+    "expected": 3.8862350115533153,
+    "corrected": -1.8862350115533153
+   },
+   "ppi_total": {
+    "observed": 123.0,
+    "expected": 189.36826235918096,
+    "corrected": -66.36826235918096
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 56.86571228188145,
+    "corrected": -56.86571228188145
+   }
+  },
+  {
+   "gene": "CLDN2",
+   "publication_count": {
+    "observed": 117.0,
+    "expected": 81.04117745302494,
+    "corrected": 35.95882254697506
+   },
+   "generif_count": {
+    "observed": 92.0,
+    "expected": 56.600886266530964,
+    "corrected": 35.399113733469036
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 4.665772909529273,
+    "corrected": -3.665772909529273
+   },
+   "ppi_total": {
+    "observed": 138.0,
+    "expected": 207.5908647448028,
+    "corrected": -69.59086474480279
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 66.56821145748809,
+    "corrected": -66.56821145748809
+   }
+  },
+  {
+   "gene": "CLDN3",
+   "publication_count": {
+    "observed": 113.0,
+    "expected": 82.77301310734454,
+    "corrected": 30.22698689265546
+   },
+   "generif_count": {
+    "observed": 87.0,
+    "expected": 55.96620306223259,
+    "corrected": 31.033796937767413
+   },
+   "gwas_total": {
+    "observed": 3.0,
+    "expected": 2.723152024053783,
+    "corrected": 0.2768479759462168
+   },
+   "ppi_total": {
+    "observed": 144.0,
+    "expected": 239.9877245159508,
+    "corrected": -95.98772451595079
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 41.175278572354394,
+    "corrected": -41.175278572354394
+   }
+  },
+  {
+   "gene": "CLDN4",
+   "publication_count": {
+    "observed": 172.0,
+    "expected": 91.33318871043397,
+    "corrected": 80.66681128956603
+   },
+   "generif_count": {
+    "observed": 144.0,
+    "expected": 61.34083883500247,
+    "corrected": 82.65916116499753
+   },
+   "gwas_total": {
+    "observed": 2.0,
+    "expected": 3.9701125283553167,
+    "corrected": -1.9701125283553167
+   },
+   "ppi_total": {
+    "observed": 252.0,
+    "expected": 273.436781316491,
+    "corrected": -21.43678131649102
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 45.87863385343948,
+    "corrected": -45.87863385343948
+   }
+  },
+  {
+   "gene": "CLDN6",
+   "publication_count": {
+    "observed": 83.0,
+    "expected": 35.127797361324895,
+    "corrected": 47.872202638675105
+   },
+   "generif_count": {
+    "observed": 54.0,
+    "expected": 24.561571277763377,
+    "corrected": 29.438428722236623
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 3.0112911381737724,
+    "corrected": -3.0112911381737724
+   },
+   "ppi_total": {
+    "observed": 100.0,
+    "expected": 101.9347943126547,
+    "corrected": -1.9347943126547023
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 121.25197951935772,
+    "corrected": -121.25197951935772
+   }
+  },
+  {
+   "gene": "CYP2C9",
+   "publication_count": {
+    "observed": 958.0,
+    "expected": 88.63651852433254,
+    "corrected": 869.3634814756674
+   },
+   "generif_count": {
+    "observed": 573.0,
+    "expected": 60.051510247870006,
+    "corrected": 512.94848975213
+   },
+   "gwas_total": {
+    "observed": 8.0,
+    "expected": 4.09402737092679,
+    "corrected": 3.9059726290732097
+   },
+   "ppi_total": {
+    "observed": 330.0,
+    "expected": 322.74668400335395,
+    "corrected": 7.253315996646052
+   },
+   "n_drugs": {
+    "observed": 25.0,
+    "expected": 34.832656137791545,
+    "corrected": -9.832656137791545
+   }
+  },
+  {
+   "gene": "DCT",
+   "publication_count": {
+    "observed": 64.0,
+    "expected": 47.03963217120482,
+    "corrected": 16.960367828795178
+   },
+   "generif_count": {
+    "observed": 27.0,
+    "expected": 31.999295950039393,
+    "corrected": -4.999295950039393
+   },
+   "gwas_total": {
+    "observed": 7.0,
+    "expected": 4.37084909636182,
+    "corrected": 2.6291509036381804
+   },
+   "ppi_total": {
+    "observed": 183.0,
+    "expected": 133.65427979773156,
+    "corrected": 49.34572020226844
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 91.2009605673199,
+    "corrected": -91.2009605673199
+   }
+  },
+  {
+   "gene": "DNER",
+   "publication_count": {
+    "observed": 35.0,
+    "expected": 104.11340874098718,
+    "corrected": -69.11340874098718
+   },
+   "generif_count": {
+    "observed": 23.0,
+    "expected": 70.94747811873843,
+    "corrected": -47.94747811873843
+   },
+   "gwas_total": {
+    "observed": 9.0,
+    "expected": 4.383080655366357,
+    "corrected": 4.616919344633643
+   },
+   "ppi_total": {
+    "observed": 106.0,
+    "expected": 340.80389926071655,
+    "corrected": -234.80389926071655
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 54.96721750997951,
+    "corrected": -54.96721750997951
+   }
+  },
+  {
+   "gene": "DPEP1",
+   "publication_count": {
+    "observed": 41.0,
+    "expected": 63.149834495667236,
+    "corrected": -22.149834495667236
+   },
+   "generif_count": {
+    "observed": 15.0,
+    "expected": 40.763245159320654,
+    "corrected": -25.763245159320654
+   },
+   "gwas_total": {
+    "observed": 15.0,
+    "expected": 4.114155869291536,
+    "corrected": 10.885844130708463
+   },
+   "ppi_total": {
+    "observed": 189.0,
+    "expected": 237.0013220414057,
+    "corrected": -48.0013220414057
+   },
+   "n_drugs": {
+    "observed": 1.0,
+    "expected": 33.07635228318571,
+    "corrected": -32.07635228318571
+   }
+  },
+  {
+   "gene": "EEF1A1",
+   "publication_count": {
+    "observed": 204.0,
+    "expected": 169.83270160204066,
+    "corrected": 34.16729839795934
+   },
+   "generif_count": {
+    "observed": 114.0,
+    "expected": 101.71705433148462,
+    "corrected": 12.282945668515381
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 3.5566826018971147,
+    "corrected": -2.5566826018971147
+   },
+   "ppi_total": {
+    "observed": 1038.0,
+    "expected": 808.7549799858729,
+    "corrected": 229.24502001412714
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 8.66083755853714,
+    "corrected": -8.66083755853714
+   }
+  },
+  {
+   "gene": "EEF2",
+   "publication_count": {
+    "observed": 85.0,
+    "expected": 125.83538617913345,
+    "corrected": -40.83538617913345
+   },
+   "generif_count": {
+    "observed": 40.0,
+    "expected": 75.15891144064126,
+    "corrected": -35.15891144064126
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 3.1507899216327337,
+    "corrected": -3.1507899216327337
+   },
+   "ppi_total": {
+    "observed": 1271.0,
+    "expected": 583.8873112466696,
+    "corrected": 687.1126887533304
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 10.328886439790402,
+    "corrected": -10.328886439790402
+   }
+  },
+  {
+   "gene": "EGFR",
+   "publication_count": {
+    "observed": 6235.0,
+    "expected": 263.94196377166,
+    "corrected": 5971.05803622834
+   },
+   "generif_count": {
+    "observed": 5676.0,
+    "expected": 194.86019083779667,
+    "corrected": 5481.139809162203
+   },
+   "gwas_total": {
+    "observed": 9.0,
+    "expected": 6.195337639279371,
+    "corrected": 2.804662360720629
+   },
+   "ppi_total": {
+    "observed": 2767.0,
+    "expected": 234.70316514048898,
+    "corrected": 2532.296834859511
+   },
+   "n_drugs": {
+    "observed": 26.0,
+    "expected": 78.68278724282798,
+    "corrected": -52.682787242827985
+   }
+  },
+  {
+   "gene": "ENPP3",
+   "publication_count": {
+    "observed": 37.0,
+    "expected": 158.66630977513915,
+    "corrected": -121.66630977513915
+   },
+   "generif_count": {
+    "observed": 23.0,
+    "expected": 117.4943460418192,
+    "corrected": -94.4943460418192
+   },
+   "gwas_total": {
+    "observed": 5.0,
+    "expected": 7.020983891680898,
+    "corrected": -2.020983891680898
+   },
+   "ppi_total": {
+    "observed": 410.0,
+    "expected": 154.04991790475842,
+    "corrected": 255.95008209524158
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 81.1648468014143,
+    "corrected": -81.1648468014143
+   }
+  },
+  {
+   "gene": "EPCAM",
+   "publication_count": {
+    "observed": 337.0,
+    "expected": 78.83683285867501,
+    "corrected": 258.163167141325
+   },
+   "generif_count": {
+    "observed": 313.0,
+    "expected": 50.99871157123445,
+    "corrected": 262.0012884287655
+   },
+   "gwas_total": {
+    "observed": 3.0,
+    "expected": 4.304534223018132,
+    "corrected": -1.3045342230181323
+   },
+   "ppi_total": {
+    "observed": 418.0,
+    "expected": 243.78540345289625,
+    "corrected": 174.21459654710375
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 43.24942414092014,
+    "corrected": -43.24942414092014
+   }
+  },
+  {
+   "gene": "FABP3",
+   "publication_count": {
+    "observed": 153.0,
+    "expected": 90.61911653726767,
+    "corrected": 62.38088346273233
+   },
+   "generif_count": {
+    "observed": 113.0,
+    "expected": 57.02127129195135,
+    "corrected": 55.97872870804865
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 3.2490218793540437,
+    "corrected": -2.2490218793540437
+   },
+   "ppi_total": {
+    "observed": 178.0,
+    "expected": 390.5525282121905,
+    "corrected": -212.5525282121905
+   },
+   "n_drugs": {
+    "observed": 2.0,
+    "expected": 21.687374201930233,
+    "corrected": -19.687374201930233
+   }
+  },
+  {
+   "gene": "GAP43",
+   "publication_count": {
+    "observed": 79.0,
+    "expected": 75.94033430679757,
+    "corrected": 3.059665693202433
+   },
+   "generif_count": {
+    "observed": 41.0,
+    "expected": 47.18046060962416,
+    "corrected": -6.180460609624163
+   },
+   "gwas_total": {
+    "observed": 10.0,
+    "expected": 4.732927659171555,
+    "corrected": 5.267072340828445
+   },
+   "ppi_total": {
+    "observed": 417.0,
+    "expected": 311.30783844835156,
+    "corrected": 105.69216155164844
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 23.855246441292994,
+    "corrected": -23.855246441292994
+   }
+  },
+  {
+   "gene": "GAPDH",
+   "publication_count": {
+    "observed": 311.0,
+    "expected": 150.1303951196089,
+    "corrected": 160.8696048803911
+   },
+   "generif_count": {
+    "observed": 167.0,
+    "expected": 98.8851040615491,
+    "corrected": 68.1148959384509
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 1.361410261141631,
+    "corrected": -1.361410261141631
+   },
+   "ppi_total": {
+    "observed": 3196.0,
+    "expected": 932.1614568757257,
+    "corrected": 2263.838543124274
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 15.023323761210666,
+    "corrected": -15.023323761210666
+   }
+  },
+  {
+   "gene": "GJB1",
+   "publication_count": {
+    "observed": 232.0,
+    "expected": 71.51243480957379,
+    "corrected": 160.4875651904262
+   },
+   "generif_count": {
+    "observed": 148.0,
+    "expected": 47.650748515332985,
+    "corrected": 100.34925148466701
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 3.7692650652238724,
+    "corrected": -3.7692650652238724
+   },
+   "ppi_total": {
+    "observed": 151.0,
+    "expected": 207.86891727198213,
+    "corrected": -56.86891727198213
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 51.802925400689,
+    "corrected": -51.802925400689
+   }
+  },
+  {
+   "gene": "GP2",
+   "publication_count": {
+    "observed": 38.0,
+    "expected": 271.37911337862545,
+    "corrected": -233.37911337862545
+   },
+   "generif_count": {
+    "observed": 18.0,
+    "expected": 191.34020353287107,
+    "corrected": -173.34020353287107
+   },
+   "gwas_total": {
+    "observed": 4.0,
+    "expected": 3.4714863870013364,
+    "corrected": 0.5285136129986636
+   },
+   "ppi_total": {
+    "observed": 218.0,
+    "expected": 329.0757934501452,
+    "corrected": -111.07579345014523
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 35.48687888322121,
+    "corrected": -35.48687888322121
+   }
+  },
+  {
+   "gene": "GPM6A",
+   "publication_count": {
+    "observed": 52.0,
+    "expected": 101.74969439674493,
+    "corrected": -49.74969439674493
+   },
+   "generif_count": {
+    "observed": 31.0,
+    "expected": 64.50269999317705,
+    "corrected": -33.502699993177046
+   },
+   "gwas_total": {
+    "observed": 15.0,
+    "expected": 6.39784860270431,
+    "corrected": 8.602151397295689
+   },
+   "ppi_total": {
+    "observed": 185.0,
+    "expected": 303.1266009162104,
+    "corrected": -118.1266009162104
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 34.742330324856894,
+    "corrected": -34.742330324856894
+   }
+  },
+  {
+   "gene": "GPM6B",
+   "publication_count": {
+    "observed": 27.0,
+    "expected": 110.88887650909173,
+    "corrected": -83.88887650909173
+   },
+   "generif_count": {
+    "observed": 11.0,
+    "expected": 70.25053976867713,
+    "corrected": -59.25053976867713
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 5.968092522550773,
+    "corrected": -4.968092522550773
+   },
+   "ppi_total": {
+    "observed": 101.0,
+    "expected": 319.4917328280906,
+    "corrected": -218.49173282809062
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 32.82100588267312,
+    "corrected": -32.82100588267312
+   }
+  },
+  {
+   "gene": "HLA-A",
+   "publication_count": {
+    "observed": 0.0,
+    "expected": 120.22799298281394,
+    "corrected": -120.22799298281394
+   },
+   "generif_count": {
+    "observed": 0.0,
+    "expected": 72.6627729202553,
+    "corrected": -72.6627729202553
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 4.329173351364791,
+    "corrected": -4.329173351364791
+   },
+   "ppi_total": {
+    "observed": 669.0,
+    "expected": 455.7698752971387,
+    "corrected": 213.2301247028613
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 19.448258985042287,
+    "corrected": -19.448258985042287
+   }
+  },
+  {
+   "gene": "HLA-B",
+   "publication_count": {
+    "observed": 0.0,
+    "expected": 128.4980116924758,
+    "corrected": -128.4980116924758
+   },
+   "generif_count": {
+    "observed": 0.0,
+    "expected": 77.01027255338873,
+    "corrected": -77.01027255338873
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 3.9637567385987635,
+    "corrected": -3.9637567385987635
+   },
+   "ppi_total": {
+    "observed": 545.0,
+    "expected": 511.27655640525785,
+    "corrected": 33.72344359474215
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 16.52634069562602,
+    "corrected": -16.52634069562602
+   }
+  },
+  {
+   "gene": "HLA-C",
+   "publication_count": {
+    "observed": 0.0,
+    "expected": 88.1874949758403,
+    "corrected": -88.1874949758403
+   },
+   "generif_count": {
+    "observed": 0.0,
+    "expected": 54.476877179830694,
+    "corrected": -54.476877179830694
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 2.1827012884482775,
+    "corrected": -2.1827012884482775
+   },
+   "ppi_total": {
+    "observed": 590.0,
+    "expected": 372.3016598717425,
+    "corrected": 217.69834012825748
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 22.630906499573918,
+    "corrected": -22.630906499573918
+   }
+  },
+  {
+   "gene": "HLA-DRA",
+   "publication_count": {
+    "observed": 227.0,
+    "expected": 93.051460646901,
+    "corrected": 133.948539353099
+   },
+   "generif_count": {
+    "observed": 78.0,
+    "expected": 58.27476621400876,
+    "corrected": 19.725233785991243
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 2.6469392676853434,
+    "corrected": -2.6469392676853434
+   },
+   "ppi_total": {
+    "observed": 915.0,
+    "expected": 349.494009157752,
+    "corrected": 565.505990842248
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 25.511988457223406,
+    "corrected": -25.511988457223406
+   }
+  },
+  {
+   "gene": "HLA-DRB1",
+   "publication_count": {
+    "observed": 0.0,
+    "expected": 90.13772086651674,
+    "corrected": -90.13772086651674
+   },
+   "generif_count": {
+    "observed": 0.0,
+    "expected": 56.01277528095469,
+    "corrected": -56.01277528095469
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 3.577274940476599,
+    "corrected": -3.577274940476599
+   },
+   "ppi_total": {
+    "observed": 777.0,
+    "expected": 329.9335671654286,
+    "corrected": 447.0664328345714
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 28.61727433087059,
+    "corrected": -28.61727433087059
+   }
+  },
+  {
+   "gene": "HLA-DRB5",
+   "publication_count": {
+    "observed": 165.0,
+    "expected": 64.86011925971887,
+    "corrected": 100.13988074028113
+   },
+   "generif_count": {
+    "observed": 30.0,
+    "expected": 41.66286609255448,
+    "corrected": -11.66286609255448
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 3.2351683209582007,
+    "corrected": -3.2351683209582007
+   },
+   "ppi_total": {
+    "observed": 642.0,
+    "expected": 219.98333350454539,
+    "corrected": 422.0166664954546
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 47.5643633666196,
+    "corrected": -47.5643633666196
+   }
+  },
+  {
+   "gene": "HMOX1",
+   "publication_count": {
+    "observed": 1155.0,
+    "expected": 80.90741556108485,
+    "corrected": 1074.092584438915
+   },
+   "generif_count": {
+    "observed": 1068.0,
+    "expected": 53.26037601229066,
+    "corrected": 1014.7396239877094
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 3.1282192418559713,
+    "corrected": -2.1282192418559713
+   },
+   "ppi_total": {
+    "observed": 704.0,
+    "expected": 266.65528178759706,
+    "corrected": 437.34471821240294
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 46.6004570075129,
+    "corrected": -46.6004570075129
+   }
+  },
+  {
+   "gene": "HSP90AB1",
+   "publication_count": {
+    "observed": 218.0,
+    "expected": 157.41170619974926,
+    "corrected": 60.58829380025074
+   },
+   "generif_count": {
+    "observed": 90.0,
+    "expected": 102.23096914175825,
+    "corrected": -12.230969141758251
+   },
+   "gwas_total": {
+    "observed": 5.0,
+    "expected": 2.128140611418579,
+    "corrected": 2.871859388581421
+   },
+   "ppi_total": {
+    "observed": 1111.0,
+    "expected": 831.4932282282087,
+    "corrected": 279.50677177179125
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 15.037449577342866,
+    "corrected": -15.037449577342866
+   }
+  },
+  {
+   "gene": "HSPB1",
+   "publication_count": {
+    "observed": 558.0,
+    "expected": 110.72272816424992,
+    "corrected": 447.27727183575007
+   },
+   "generif_count": {
+    "observed": 470.0,
+    "expected": 70.75348752045885,
+    "corrected": 399.24651247954114
+   },
+   "gwas_total": {
+    "observed": 5.0,
+    "expected": 1.5982360537985856,
+    "corrected": 3.4017639462014144
+   },
+   "ppi_total": {
+    "observed": 558.0,
+    "expected": 635.543770032487,
+    "corrected": -77.54377003248703
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 16.10731970972348,
+    "corrected": -16.10731970972348
+   }
+  },
+  {
+   "gene": "IFITM3",
+   "publication_count": {
+    "observed": 157.0,
+    "expected": 116.42118794814671,
+    "corrected": 40.57881205185329
+   },
+   "generif_count": {
+    "observed": 136.0,
+    "expected": 72.4018711722414,
+    "corrected": 63.5981288277586
+   },
+   "gwas_total": {
+    "observed": 3.0,
+    "expected": 2.7304385665808053,
+    "corrected": 0.2695614334191947
+   },
+   "ppi_total": {
+    "observed": 296.0,
+    "expected": 485.41381056185514,
+    "corrected": -189.41381056185514
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 20.8619106463858,
+    "corrected": -20.8619106463858
+   }
+  },
+  {
+   "gene": "JUP",
+   "publication_count": {
+    "observed": 182.0,
+    "expected": 110.37222352978362,
+    "corrected": 71.62777647021638
+   },
+   "generif_count": {
+    "observed": 93.0,
+    "expected": 69.38173023255156,
+    "corrected": 23.61826976744844
+   },
+   "gwas_total": {
+    "observed": 6.0,
+    "expected": 4.275547616959819,
+    "corrected": 1.7244523830401812
+   },
+   "ppi_total": {
+    "observed": 489.0,
+    "expected": 432.129012471156,
+    "corrected": 56.87098752884401
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 20.065514608548444,
+    "corrected": -20.065514608548444
+   }
+  },
+  {
+   "gene": "KLK7",
+   "publication_count": {
+    "observed": 82.0,
+    "expected": 184.47221691961937,
+    "corrected": -102.47221691961937
+   },
+   "generif_count": {
+    "observed": 64.0,
+    "expected": 137.23383908019332,
+    "corrected": -73.23383908019332
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 3.3831362566647503,
+    "corrected": -2.3831362566647503
+   },
+   "ppi_total": {
+    "observed": 122.0,
+    "expected": 226.76712112984956,
+    "corrected": -104.76712112984956
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 54.914814214162284,
+    "corrected": -54.914814214162284
+   }
+  },
+  {
+   "gene": "KRT1",
+   "publication_count": {
+    "observed": 124.0,
+    "expected": 83.04428745813924,
+    "corrected": 40.95571254186076
+   },
+   "generif_count": {
+    "observed": 56.0,
+    "expected": 50.154598789783854,
+    "corrected": 5.845401210216146
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 2.5246211361651074,
+    "corrected": -2.5246211361651074
+   },
+   "ppi_total": {
+    "observed": 202.0,
+    "expected": 420.4784797668235,
+    "corrected": -218.4784797668235
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 14.912263174506306,
+    "corrected": -14.912263174506306
+   }
+  },
+  {
+   "gene": "LGALS4",
+   "publication_count": {
+    "observed": 53.0,
+    "expected": 58.89193590136118,
+    "corrected": -5.89193590136118
+   },
+   "generif_count": {
+    "observed": 45.0,
+    "expected": 37.22756046931403,
+    "corrected": 7.772439530685972
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 3.215167532511406,
+    "corrected": -2.215167532511406
+   },
+   "ppi_total": {
+    "observed": 366.0,
+    "expected": 249.18691743508015,
+    "corrected": 116.81308256491985
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 30.124234668154294,
+    "corrected": -30.124234668154294
+   }
+  },
+  {
+   "gene": "LPCAT1",
+   "publication_count": {
+    "observed": 58.0,
+    "expected": 89.03264400690945,
+    "corrected": -31.03264400690945
+   },
+   "generif_count": {
+    "observed": 45.0,
+    "expected": 60.947548979697395,
+    "corrected": -15.947548979697395
+   },
+   "gwas_total": {
+    "observed": 4.0,
+    "expected": 3.2484527615092147,
+    "corrected": 0.7515472384907853
+   },
+   "ppi_total": {
+    "observed": 337.0,
+    "expected": 301.24418551313846,
+    "corrected": 35.75581448686154
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 62.44751638276753,
+    "corrected": -62.44751638276753
+   }
+  },
+  {
+   "gene": "LY6E",
+   "publication_count": {
+    "observed": 36.0,
+    "expected": 77.63122272957462,
+    "corrected": -41.63122272957462
+   },
+   "generif_count": {
+    "observed": 17.0,
+    "expected": 50.37743318366005,
+    "corrected": -33.37743318366005
+   },
+   "gwas_total": {
+    "observed": 4.0,
+    "expected": 2.6954773573387514,
+    "corrected": 1.3045226426612486
+   },
+   "ppi_total": {
+    "observed": 246.0,
+    "expected": 284.90942189956417,
+    "corrected": -38.909421899564165
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 41.46984053205773,
+    "corrected": -41.46984053205773
+   }
+  },
+  {
+   "gene": "MISP",
+   "publication_count": {
+    "observed": 14.0,
+    "expected": 51.544580679060786,
+    "corrected": -37.544580679060786
+   },
+   "generif_count": {
+    "observed": 7.0,
+    "expected": 34.44582514531497,
+    "corrected": -27.44582514531497
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 3.2440128891709894,
+    "corrected": -3.2440128891709894
+   },
+   "ppi_total": {
+    "observed": 94.0,
+    "expected": 203.03764506104045,
+    "corrected": -109.03764506104045
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 48.29976207319774,
+    "corrected": -48.29976207319774
+   }
+  },
+  {
+   "gene": "MLC1",
+   "publication_count": {
+    "observed": 76.0,
+    "expected": 66.97753771227123,
+    "corrected": 9.022462287728771
+   },
+   "generif_count": {
+    "observed": 51.0,
+    "expected": 43.517457247113576,
+    "corrected": 7.482542752886424
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 3.590513376999262,
+    "corrected": -2.590513376999262
+   },
+   "ppi_total": {
+    "observed": 88.0,
+    "expected": 225.3308441890636,
+    "corrected": -137.3308441890636
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 45.52699456418426,
+    "corrected": -45.52699456418426
+   }
+  },
+  {
+   "gene": "MSLN",
+   "publication_count": {
+    "observed": 165.0,
+    "expected": 53.16156160163057,
+    "corrected": 111.83843839836943
+   },
+   "generif_count": {
+    "observed": 147.0,
+    "expected": 36.06456755408033,
+    "corrected": 110.93543244591967
+   },
+   "gwas_total": {
+    "observed": 3.0,
+    "expected": 3.2967612376404136,
+    "corrected": -0.2967612376404136
+   },
+   "ppi_total": {
+    "observed": 469.0,
+    "expected": 158.48433208115856,
+    "corrected": 310.5156679188415
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 70.68596046721048,
+    "corrected": -70.68596046721048
+   }
+  },
+  {
+   "gene": "MUC13",
+   "publication_count": {
+    "observed": 35.0,
+    "expected": 238.15739626352917,
+    "corrected": -203.15739626352917
+   },
+   "generif_count": {
+    "observed": 29.0,
+    "expected": 183.71678014151914,
+    "corrected": -154.71678014151914
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 5.053141710707165,
+    "corrected": -5.053141710707165
+   },
+   "ppi_total": {
+    "observed": 198.0,
+    "expected": 206.10276168533792,
+    "corrected": -8.102761685337924
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 86.75987658901326,
+    "corrected": -86.75987658901326
+   }
+  },
+  {
+   "gene": "NMB",
+   "publication_count": {
+    "observed": 32.0,
+    "expected": 184.68389763193525,
+    "corrected": -152.68389763193525
+   },
+   "generif_count": {
+    "observed": 13.0,
+    "expected": 139.5993054463098,
+    "corrected": -126.59930544630981
+   },
+   "gwas_total": {
+    "observed": 2.0,
+    "expected": 3.0691999131280023,
+    "corrected": -1.0691999131280023
+   },
+   "ppi_total": {
+    "observed": 390.0,
+    "expected": 222.6702912964914,
+    "corrected": 167.3297087035086
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 71.71596025761333,
+    "corrected": -71.71596025761333
+   }
+  },
+  {
+   "gene": "NOX1",
+   "publication_count": {
+    "observed": 207.0,
+    "expected": 44.133913319712015,
+    "corrected": 162.866086680288
+   },
+   "generif_count": {
+    "observed": 190.0,
+    "expected": 30.262919280919917,
+    "corrected": 159.7370807190801
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 4.134098057522226,
+    "corrected": -4.134098057522226
+   },
+   "ppi_total": {
+    "observed": 212.0,
+    "expected": 125.19302798300673,
+    "corrected": 86.80697201699327
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 97.89988607934285,
+    "corrected": -97.89988607934285
+   }
+  },
+  {
+   "gene": "OLFM4",
+   "publication_count": {
+    "observed": 89.0,
+    "expected": 178.54621281850518,
+    "corrected": -89.54621281850518
+   },
+   "generif_count": {
+    "observed": 67.0,
+    "expected": 127.6176333173865,
+    "corrected": -60.617633317386506
+   },
+   "gwas_total": {
+    "observed": 18.0,
+    "expected": 4.261993543249888,
+    "corrected": 13.738006456750112
+   },
+   "ppi_total": {
+    "observed": 320.0,
+    "expected": 226.4136015757093,
+    "corrected": 93.5863984242907
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 45.073532648562335,
+    "corrected": -45.073532648562335
+   }
+  },
+  {
+   "gene": "PDPN",
+   "publication_count": {
+    "observed": 253.0,
+    "expected": 69.96362728165818,
+    "corrected": 183.03637271834182
+   },
+   "generif_count": {
+    "observed": 235.0,
+    "expected": 47.641620019773164,
+    "corrected": 187.35837998022683
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 3.261155182539294,
+    "corrected": -2.261155182539294
+   },
+   "ppi_total": {
+    "observed": 194.0,
+    "expected": 226.715923969304,
+    "corrected": -32.71592396930399
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 71.73674189045558,
+    "corrected": -71.73674189045558
+   }
+  },
+  {
+   "gene": "PERP",
+   "publication_count": {
+    "observed": 44.0,
+    "expected": 133.10549434014473,
+    "corrected": -89.10549434014473
+   },
+   "generif_count": {
+    "observed": 25.0,
+    "expected": 90.05990880227868,
+    "corrected": -65.05990880227868
+   },
+   "gwas_total": {
+    "observed": 3.0,
+    "expected": 2.836843124346954,
+    "corrected": 0.16315687565304593
+   },
+   "ppi_total": {
+    "observed": 120.0,
+    "expected": 516.8053612538416,
+    "corrected": -396.8053612538416
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 38.06454377166113,
+    "corrected": -38.06454377166113
+   }
+  },
+  {
+   "gene": "PI3",
+   "publication_count": {
+    "observed": 99.0,
+    "expected": 184.4922483919959,
+    "corrected": -85.4922483919959
+   },
+   "generif_count": {
+    "observed": 71.0,
+    "expected": 138.42708352082076,
+    "corrected": -67.42708352082076
+   },
+   "gwas_total": {
+    "observed": 3.0,
+    "expected": 1.9838438244946324,
+    "corrected": 1.0161561755053676
+   },
+   "ppi_total": {
+    "observed": 594.0,
+    "expected": 278.21436642069494,
+    "corrected": 315.78563357930506
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 48.053604046023956,
+    "corrected": -48.053604046023956
+   }
+  },
+  {
+   "gene": "PIGR",
+   "publication_count": {
+    "observed": 106.0,
+    "expected": 404.6076191257808,
+    "corrected": -298.6076191257808
+   },
+   "generif_count": {
+    "observed": 57.0,
+    "expected": 306.99089940770045,
+    "corrected": -249.99089940770045
+   },
+   "gwas_total": {
+    "observed": 2.0,
+    "expected": 3.739467498485258,
+    "corrected": -1.7394674984852578
+   },
+   "ppi_total": {
+    "observed": 272.0,
+    "expected": 406.26677256626795,
+    "corrected": -134.26677256626795
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 43.83136724702791,
+    "corrected": -43.83136724702791
+   }
+  },
+  {
+   "gene": "PLA2G2A",
+   "publication_count": {
+    "observed": 227.0,
+    "expected": 319.60879761108475,
+    "corrected": -92.60879761108475
+   },
+   "generif_count": {
+    "observed": 175.0,
+    "expected": 243.75679677073657,
+    "corrected": -68.75679677073657
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 2.073368799269275,
+    "corrected": -1.073368799269275
+   },
+   "ppi_total": {
+    "observed": 232.0,
+    "expected": 488.05337398169627,
+    "corrected": -256.05337398169627
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 37.644693830780184,
+    "corrected": -37.644693830780184
+   }
+  },
+  {
+   "gene": "PLP1",
+   "publication_count": {
+    "observed": 173.0,
+    "expected": 97.7701062555399,
+    "corrected": 75.2298937444601
+   },
+   "generif_count": {
+    "observed": 82.0,
+    "expected": 60.46693902031091,
+    "corrected": 21.53306097968909
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 3.772302378555749,
+    "corrected": -3.772302378555749
+   },
+   "ppi_total": {
+    "observed": 275.0,
+    "expected": 362.62808375378285,
+    "corrected": -87.62808375378285
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 25.37307772939928,
+    "corrected": -25.37307772939928
+   }
+  },
+  {
+   "gene": "PRAME",
+   "publication_count": {
+    "observed": 136.0,
+    "expected": 52.41223129538752,
+    "corrected": 83.58776870461247
+   },
+   "generif_count": {
+    "observed": 119.0,
+    "expected": 36.16139024773004,
+    "corrected": 82.83860975226996
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 2.7481895824832834,
+    "corrected": -2.7481895824832834
+   },
+   "ppi_total": {
+    "observed": 178.0,
+    "expected": 211.7155740973915,
+    "corrected": -33.71557409739151
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 55.358189029395035,
+    "corrected": -55.358189029395035
+   }
+  },
+  {
+   "gene": "PSCA",
+   "publication_count": {
+    "observed": 136.0,
+    "expected": 84.9036705054142,
+    "corrected": 51.0963294945858
+   },
+   "generif_count": {
+    "observed": 112.0,
+    "expected": 58.99554218923504,
+    "corrected": 53.00445781076496
+   },
+   "gwas_total": {
+    "observed": 9.0,
+    "expected": 2.1922370775738504,
+    "corrected": 6.80776292242615
+   },
+   "ppi_total": {
+    "observed": 378.0,
+    "expected": 323.9918285110549,
+    "corrected": 54.008171488945095
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 51.46287896797337,
+    "corrected": -51.46287896797337
+   }
+  },
+  {
+   "gene": "PTPRZ1",
+   "publication_count": {
+    "observed": 77.0,
+    "expected": 265.73379167041327,
+    "corrected": -188.73379167041327
+   },
+   "generif_count": {
+    "observed": 54.0,
+    "expected": 194.9945613081373,
+    "corrected": -140.9945613081373
+   },
+   "gwas_total": {
+    "observed": 2.0,
+    "expected": 7.357126007947062,
+    "corrected": -5.357126007947062
+   },
+   "ppi_total": {
+    "observed": 226.0,
+    "expected": 217.43530651533536,
+    "corrected": 8.564693484664645
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 70.46851972805689,
+    "corrected": -70.46851972805689
+   }
+  },
+  {
+   "gene": "S100A6",
+   "publication_count": {
+    "observed": 142.0,
+    "expected": 95.16560349508099,
+    "corrected": 46.83439650491901
+   },
+   "generif_count": {
+    "observed": 103.0,
+    "expected": 58.139873664761865,
+    "corrected": 44.860126335238135
+   },
+   "gwas_total": {
+    "observed": 0.0,
+    "expected": 2.06200731842229,
+    "corrected": -2.06200731842229
+   },
+   "ppi_total": {
+    "observed": 158.0,
+    "expected": 515.6812512327913,
+    "corrected": -357.6812512327913
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 13.999713353039056,
+    "corrected": -13.999713353039056
+   }
+  },
+  {
+   "gene": "S100A9",
+   "publication_count": {
+    "observed": 578.0,
+    "expected": 370.9247925061555,
+    "corrected": 207.07520749384452
+   },
+   "generif_count": {
+    "observed": 519.0,
+    "expected": 262.46996464284115,
+    "corrected": 256.53003535715885
+   },
+   "gwas_total": {
+    "observed": 5.0,
+    "expected": 1.7859408994452473,
+    "corrected": 3.2140591005547527
+   },
+   "ppi_total": {
+    "observed": 300.0,
+    "expected": 688.9429993148057,
+    "corrected": -388.94299931480566
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 18.984163109713293,
+    "corrected": -18.984163109713293
+   }
+  },
+  {
+   "gene": "S100P",
+   "publication_count": {
+    "observed": 139.0,
+    "expected": 57.11052401794583,
+    "corrected": 81.88947598205417
+   },
+   "generif_count": {
+    "observed": 107.0,
+    "expected": 38.515745299078525,
+    "corrected": 68.48425470092147
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 2.084806320625476,
+    "corrected": -1.0848063206254759
+   },
+   "ppi_total": {
+    "observed": 50.0,
+    "expected": 255.599495615716,
+    "corrected": -205.599495615716
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 42.38178820679438,
+    "corrected": -42.38178820679438
+   }
+  },
+  {
+   "gene": "SCNN1A",
+   "publication_count": {
+    "observed": 196.0,
+    "expected": 78.42543170379197,
+    "corrected": 117.57456829620803
+   },
+   "generif_count": {
+    "observed": 138.0,
+    "expected": 53.16928851950362,
+    "corrected": 84.83071148049638
+   },
+   "gwas_total": {
+    "observed": 2.0,
+    "expected": 3.1751075921730036,
+    "corrected": -1.1751075921730036
+   },
+   "ppi_total": {
+    "observed": 222.0,
+    "expected": 268.03373212998974,
+    "corrected": -46.033732129989744
+   },
+   "n_drugs": {
+    "observed": 2.0,
+    "expected": 56.49365836025952,
+    "corrected": -54.49365836025952
+   }
+  },
+  {
+   "gene": "SLC17A3",
+   "publication_count": {
+    "observed": 24.0,
+    "expected": 60.89799152530266,
+    "corrected": -36.89799152530266
+   },
+   "generif_count": {
+    "observed": 14.0,
+    "expected": 41.872517457122655,
+    "corrected": -27.872517457122655
+   },
+   "gwas_total": {
+    "observed": 13.0,
+    "expected": 5.204763077472213,
+    "corrected": 7.795236922527787
+   },
+   "ppi_total": {
+    "observed": 98.0,
+    "expected": 153.74887191026696,
+    "corrected": -55.748871910266956
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 78.92047336491707,
+    "corrected": -78.92047336491707
+   }
+  },
+  {
+   "gene": "SLC1A3",
+   "publication_count": {
+    "observed": 119.0,
+    "expected": 78.45155903514538,
+    "corrected": 40.54844096485462
+   },
+   "generif_count": {
+    "observed": 86.0,
+    "expected": 49.73308876143439,
+    "corrected": 36.26691123856561
+   },
+   "gwas_total": {
+    "observed": 4.0,
+    "expected": 4.613183156527115,
+    "corrected": -0.6131831565271151
+   },
+   "ppi_total": {
+    "observed": 270.0,
+    "expected": 254.40405224549133,
+    "corrected": 15.595947754508671
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 41.60613090552055,
+    "corrected": -41.60613090552055
+   }
+  },
+  {
+   "gene": "SLC2A2",
+   "publication_count": {
+    "observed": 107.0,
+    "expected": 64.75861615774427,
+    "corrected": 42.24138384225573
+   },
+   "generif_count": {
+    "observed": 71.0,
+    "expected": 44.14278706738105,
+    "corrected": 26.85721293261895
+   },
+   "gwas_total": {
+    "observed": 13.0,
+    "expected": 4.657716517554972,
+    "corrected": 8.342283482445028
+   },
+   "ppi_total": {
+    "observed": 372.0,
+    "expected": 172.44401932205815,
+    "corrected": 199.55598067794185
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 66.89572895842883,
+    "corrected": -66.89572895842883
+   }
+  },
+  {
+   "gene": "SLC34A2",
+   "publication_count": {
+    "observed": 56.0,
+    "expected": 74.09200091510945,
+    "corrected": -18.092000915109452
+   },
+   "generif_count": {
+    "observed": 42.0,
+    "expected": 49.55206857678077,
+    "corrected": -7.552068576780769
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 4.486729296413535,
+    "corrected": -3.486729296413535
+   },
+   "ppi_total": {
+    "observed": 127.0,
+    "expected": 207.5833997896851,
+    "corrected": -80.5833997896851
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 52.813763221169616,
+    "corrected": -52.813763221169616
+   }
+  },
+  {
+   "gene": "SLC39A6",
+   "publication_count": {
+    "observed": 46.0,
+    "expected": 61.620659927630676,
+    "corrected": -15.620659927630676
+   },
+   "generif_count": {
+    "observed": 36.0,
+    "expected": 39.850002257901565,
+    "corrected": -3.850002257901565
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 3.6175095115935485,
+    "corrected": -2.6175095115935485
+   },
+   "ppi_total": {
+    "observed": 104.0,
+    "expected": 198.60190362536628,
+    "corrected": -94.60190362536628
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 55.325059502067184,
+    "corrected": -55.325059502067184
+   }
+  },
+  {
+   "gene": "SPINT1",
+   "publication_count": {
+    "observed": 84.0,
+    "expected": 263.83217031166674,
+    "corrected": -179.83217031166674
+   },
+   "generif_count": {
+    "observed": 62.0,
+    "expected": 200.32756971219302,
+    "corrected": -138.32756971219302
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 3.3020815183719194,
+    "corrected": -2.3020815183719194
+   },
+   "ppi_total": {
+    "observed": 119.0,
+    "expected": 275.91605030832045,
+    "corrected": -156.91605030832045
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 71.41125171789571,
+    "corrected": -71.41125171789571
+   }
+  },
+  {
+   "gene": "SPP1",
+   "publication_count": {
+    "observed": 1163.0,
+    "expected": 309.3769612534751,
+    "corrected": 853.6230387465249
+   },
+   "generif_count": {
+    "observed": 1069.0,
+    "expected": 231.38933484433323,
+    "corrected": 837.6106651556668
+   },
+   "gwas_total": {
+    "observed": 10.0,
+    "expected": 2.0934231309849887,
+    "corrected": 7.906576869015011
+   },
+   "ppi_total": {
+    "observed": 879.0,
+    "expected": 499.35045478126057,
+    "corrected": 379.64954521873943
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 36.90217127103879,
+    "corrected": -36.90217127103879
+   }
+  },
+  {
+   "gene": "TACSTD2",
+   "publication_count": {
+    "observed": 149.0,
+    "expected": 70.04517511309236,
+    "corrected": 78.95482488690764
+   },
+   "generif_count": {
+    "observed": 127.0,
+    "expected": 45.428149404064676,
+    "corrected": 81.57185059593533
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 2.240081048805397,
+    "corrected": -1.240081048805397
+   },
+   "ppi_total": {
+    "observed": 97.0,
+    "expected": 254.34497783062432,
+    "corrected": -157.34497783062432
+   },
+   "n_drugs": {
+    "observed": 1.0,
+    "expected": 36.82677677108867,
+    "corrected": -35.82677677108867
+   }
+  },
+  {
+   "gene": "THBS2",
+   "publication_count": {
+    "observed": 136.0,
+    "expected": 269.47054861692976,
+    "corrected": -133.47054861692976
+   },
+   "generif_count": {
+    "observed": 106.0,
+    "expected": 196.77939560686013,
+    "corrected": -90.77939560686013
+   },
+   "gwas_total": {
+    "observed": 7.0,
+    "expected": 4.081875226695242,
+    "corrected": 2.9181247733047577
+   },
+   "ppi_total": {
+    "observed": 352.0,
+    "expected": 337.06020202791404,
+    "corrected": 14.939797972085955
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 43.836729287427076,
+    "corrected": -43.836729287427076
+   }
+  },
+  {
+   "gene": "TM4SF4",
+   "publication_count": {
+    "observed": 19.0,
+    "expected": 48.13872325078832,
+    "corrected": -29.138723250788317
+   },
+   "generif_count": {
+    "observed": 8.0,
+    "expected": 32.66153239735578,
+    "corrected": -24.661532397355778
+   },
+   "gwas_total": {
+    "observed": 5.0,
+    "expected": 3.987998248097553,
+    "corrected": 1.0120017519024471
+   },
+   "ppi_total": {
+    "observed": 154.0,
+    "expected": 141.88145041088399,
+    "corrected": 12.118549589116014
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 82.94901627657622,
+    "corrected": -82.94901627657622
+   }
+  },
+  {
+   "gene": "TM4SF5",
+   "publication_count": {
+    "observed": 43.0,
+    "expected": 52.81274342030342,
+    "corrected": -9.81274342030342
+   },
+   "generif_count": {
+    "observed": 30.0,
+    "expected": 35.998546426892716,
+    "corrected": -5.998546426892716
+   },
+   "gwas_total": {
+    "observed": 5.0,
+    "expected": 3.5303209341595636,
+    "corrected": 1.4696790658404364
+   },
+   "ppi_total": {
+    "observed": 62.0,
+    "expected": 154.3303726288756,
+    "corrected": -92.33037262887561
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 73.47494326127283,
+    "corrected": -73.47494326127283
+   }
+  },
+  {
+   "gene": "TSPAN8",
+   "publication_count": {
+    "observed": 85.0,
+    "expected": 89.21912739465152,
+    "corrected": -4.219127394651522
+   },
+   "generif_count": {
+    "observed": 52.0,
+    "expected": 57.28312838212184,
+    "corrected": -5.283128382121838
+   },
+   "gwas_total": {
+    "observed": 7.0,
+    "expected": 6.44939152130394,
+    "corrected": 0.5506084786960601
+   },
+   "ppi_total": {
+    "observed": 144.0,
+    "expected": 253.7554429927544,
+    "corrected": -109.75544299275441
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 43.90477001318478,
+    "corrected": -43.90477001318478
+   }
+  },
+  {
+   "gene": "UBE2C",
+   "publication_count": {
+    "observed": 133.0,
+    "expected": 110.41385881155553,
+    "corrected": 22.586141188444472
+   },
+   "generif_count": {
+    "observed": 101.0,
+    "expected": 89.0343609523708,
+    "corrected": 11.965639047629196
+   },
+   "gwas_total": {
+    "observed": 1.0,
+    "expected": 0.9288770191216456,
+    "corrected": 0.07112298087835445
+   },
+   "ppi_total": {
+    "observed": 1173.0,
+    "expected": 594.5487487112048,
+    "corrected": 578.4512512887952
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 75.79530445958879,
+    "corrected": -75.79530445958879
+   }
+  },
+  {
+   "gene": "VCAM1",
+   "publication_count": {
+    "observed": 588.0,
+    "expected": 218.45028775932388,
+    "corrected": 369.5497122406761
+   },
+   "generif_count": {
+    "observed": 483.0,
+    "expected": 161.45330362022872,
+    "corrected": 321.5466963797713
+   },
+   "gwas_total": {
+    "observed": 5.0,
+    "expected": 4.817361082417466,
+    "corrected": 0.18263891758253425
+   },
+   "ppi_total": {
+    "observed": 1058.0,
+    "expected": 189.4903513957197,
+    "corrected": 868.5096486042803
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 79.85668501441809,
+    "corrected": -79.85668501441809
+   }
+  },
+  {
+   "gene": "VIM",
+   "publication_count": {
+    "observed": 544.0,
+    "expected": 87.770560335654,
+    "corrected": 456.229439664346
+   },
+   "generif_count": {
+    "observed": 435.0,
+    "expected": 52.60510422811958,
+    "corrected": 382.39489577188044
+   },
+   "gwas_total": {
+    "observed": 3.0,
+    "expected": 2.79161703359906,
+    "corrected": 0.20838296640094
+   },
+   "ppi_total": {
+    "observed": 513.0,
+    "expected": 437.3558302563456,
+    "corrected": 75.6441697436544
+   },
+   "n_drugs": {
+    "observed": 0.0,
+    "expected": 14.513032678062253,
+    "corrected": -14.513032678062253
+   }
+  }
+ ],
+ "endpoint_verdicts": {
+  "publication_count": "residual over-annotation survives covariate correction - annotation bias on axes outside the 7 matched features (literature-covariate gap from #2), reported as measured",
+  "generif_count": "residual over-annotation survives covariate correction - annotation bias on axes outside the 7 matched features (literature-covariate gap from #2), reported as measured"
+ }
+}

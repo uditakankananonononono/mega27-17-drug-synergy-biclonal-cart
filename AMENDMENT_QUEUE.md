@@ -27,7 +27,7 @@ Status: DONE = evidence committed. PARTIAL = exists, gap named. TODO = not start
 ## Tier 3 - the bias-correction core (technical basis of the #20 reframe)
 | # | Addition | Status | Evidence / Action |
 |---|----------|--------|-------------------|
-| 3 | Annotation-bias correction model (observed - expected annotation) | TODO | Train expected-annotation-density model; report corrected enrichment. |
+| 3 | Annotation-bias correction model (observed - expected annotation) | DONE | prespec 52fecf8 + scripts_annotation_bias.py + results/annotation_bias_correction.json (Poisson expectation on 831 matched controls, 7 locked features, CV-reported): literature over-annotation PARTIALLY survives correction - publications +23.1 median (56% O>E), GeneRIFs +7.6 (52%) = residual bias on axes outside the matched features (the #2 literature-covariate gap), per pre-declared rule; GWAS (-1.3) and PPI (-33.2) gaps were confounded by matched features (corrected <0); n_drugs model uninformative on CV (pseudoR2 -0.051) - reported as uninformative, not tuned. |
 | 6 | Missingness model for databases | TODO | P(observation) = f(expression, popularity, assay coverage, protein properties); test conclusion survival. |
 | 7 | Protein detectability prediction | TODO | MS detectability from peptide/abundance/sequence features; observed vs expected breadth. |
 | 8 | RNA->protein translation model | PARTIAL | CPTAC paired data committed (results/cptac_protein.json). Gap: fitted translation model + outlier antigens with unusual RNA/protein behavior. |
