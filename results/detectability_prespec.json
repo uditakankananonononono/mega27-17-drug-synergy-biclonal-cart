@@ -1,0 +1,17 @@
+{
+  "item": "Tier-3 #7 protein detectability prediction",
+  "declared_before_run": "2026-09-29",
+  "seed": 20260929,
+  "question": "Is MS protein-detection breadth predictable from gene properties? If yes, normal-tissue breadth contrasts (H1 in the ProteomicsDB audit: gated median 20 vs background 5 tissues, FALSIFIED toward gated MORE detected) may be detectability artifacts rather than biology.",
+  "universe": "196 study genes with mapped UniProt in results/proteomicsdb_per_gene.csv (205-gene study set; raw per-sample caches wiped - breadth outcome taken from the committed CSV)",
+  "outcome": "n_normal_tissues (0-75 whitelist) per gene",
+  "features": ["expr_log1p_mean", "expr_breadth_tpm1", "gene_len_log10", "is_membrane", "is_secreted", "prog_favourable_n", "prog_unfavourable_n"],
+  "features_note": "the 7 locked propensity features; RNA abundance + tissue breadth proxy protein abundance, gene length proxies peptide count (protein sequences not available locally - named gap)",
+  "model": "PoissonRegressor (log link, alpha=1.0), 5-fold CV (seed 20260929); CV deviance + pseudo-R2 reported; uninformative model (pseudo-R2 <= 0) reported as uninformative, not tuned",
+  "endpoints": [
+    "CV fit quality of the detectability model",
+    "observed vs expected breadth per group: median observed and median expected n_normal_tissues for gated vs background; pre-declared reading: if the expected-group-gap explains >= 50% of the observed-group-gap direction, the H1 breadth contrast is substantially a detectability expectation artifact; if the observed gap exceeds expectation, residual real breadth difference remains",
+    "candidate antigens with the largest negative observed-minus-expected residuals (under-detected relative to properties -> normal breadth likely undercounted = safety-relevant list)"
+  ],
+  "known_gaps": "n=196 with 7 features is thin - point estimates reported with that caveat, no tuning; sequence-derived features (tryptic peptide count, hydrophobicity, protein length) unavailable locally - gene length is the proxy; breadth outcome is from the committed audit CSV, not recomputed from raw (wiped)."
+}
