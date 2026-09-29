@@ -40,6 +40,45 @@ nulls as much a deliverable as the positives: they define where expression
 stops being enough, which is exactly the region where AND-gating matters.
 \section{Data}
 NCI-ALMANAC combination screen (311{,}466 rows; SCORE$\ge50$ synergistic, prevalence 2.9--3.2\%). Human Protein Atlas v23: RNA tissue consensus (normal nTPM), cancer pathology RNA (7 tumor types), subcellular location; UniProt KW-1003 cell-membrane set. Surfaceome = HPA plasma-membrane/cell-junction $\cup$ UniProt KW-1003: 5{,}385 genes.
+\subsection{The 205-gene audit corpus}
+The validation work in this paper runs on a fixed corpus of 205 genes: 99
+gated candidates (surfaceome members nominated by the AND-gate machinery), 98
+background genes matched to the candidates on expression level and breadth,
+gene length, membrane/secreted flags, and prognostic annotation counts, 4
+positive controls with established clinical programs (CD19, ERBB2, BCMA,
+FOLR1-class), and 4 reference essential genes (POLR2A, RPS3, PCNA, PSMA1) that
+must score negative on any pursuit label. The corpus is frozen; every audit
+below reports against it, and every pre-registered analysis names it.
+
+\subsection{Clinical-trial labels: harvest, calibration, and curation}
+Trial evidence comes from the ClinicalTrials.gov v2 API under three
+pre-registered query tiers per gene --- strict (the gene symbol in
+intervention names), strict-oncology (adding an oncology condition filter),
+and broad (symbol plus a modality term), with curated alias queries for
+eleven genes whose drug names dominate (e.g.\ HER2 for ERBB2, CAIX/girentuximab
+for CA9) --- covering 7{,}118 unique NCT records. Two calibration gates were
+locked before use: CD19 must recover a large verified program (it does: 407
+verified trials), and the four reference essentials must sum to zero verified
+pursuit (they do). Every gene with any strict-oncology hit was then
+title-inspected by hand (43 genes): acronym collisions and biomarker-only
+trials were zeroed (22 genes), leaving 20 genes labeled genuinely pursued and
+one mixed. The curation file is committed row by row; the label set is what
+the Tier-4 benchmark and catalog comparator evaluate against.
+
+\subsection{Resource versions and provenance}
+Every external resource is pinned and fetched by a committed script with byte
+counts: Human Protein Atlas v23 (normal tissue consensus nTPM, cancer
+pathology RNA, subcellular location; the 1{,}233{,}429{,}065-byte
+\texttt{rna\_cancer\_sample.tsv.zip} is served only from the versioned host
+\texttt{v23.proteinatlas.org} --- the unversioned host and the v25 redirect
+both 404, a provenance finding recorded in the committed download recipe),
+GTEx v8 median TPM (the authoritative ENSG$\leftrightarrow$symbol map for
+this study), DepMap 24Q4 (Chronos), CPTAC proteomics via cBioPortal (7
+studies), Open Targets Platform tractability, gnomAD constraint, Pharos,
+BioPlex, DrugCentral, GDSC release 8.5, and the NCI-ALMANAC combination
+screen. Where a resource changed between fetch and publication (the HPA
+retirement above), the paper reports the version actually used.
+
 \section{Methods}
 \subsection{Synergy model}
 Drug embeddings are learned end-to-end; pair $(a,b)$ in cell line $c$:
