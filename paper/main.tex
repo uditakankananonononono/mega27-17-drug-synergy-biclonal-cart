@@ -1,8 +1,14 @@
 \documentclass[11pt]{article}
-\usepackage{fontspec}
-\setmainfont{Times New Roman}[Path=/home/sandbox/fonts/,Extension=.TTF,UprightFont=Times,BoldFont=Timesbd,ItalicFont=Timesi,BoldItalicFont=Timesbi]
+\IfFileExists{fontspec.sty}{%
+  \usepackage{fontspec}
+  \IfFileExists{/home/sandbox/fonts/Times.TTF}{%
+    \setmainfont{Times New Roman}[Path=/home/sandbox/fonts/,Extension=.TTF,UprightFont=Times,BoldFont=Timesbd,ItalicFont=Timesi,BoldItalicFont=Timesbi]%
+  }{\setmainfont{TeX Gyre Termes}}%
+}{%
+  \usepackage{tgtermes}% Times-clone fallback when fontspec/custom fonts are unavailable (sandbox wipes)
+}
 \usepackage[margin=1in]{geometry}
-\usepackage{graphicx,amsmath,amssymb,url}
+\usepackage{graphicx,amsmath,amssymb,url,booktabs}
 \setlength{\parskip}{4pt}\setlength{\parindent}{0pt}
 \title{Drug-synergy prediction under honest pair-held-out evaluation, and AND-gated biclonal CAR-T target discovery from tissue-resolved RNA windows}
 \author{}
@@ -306,6 +312,8 @@ spread, $\pm1.6$ log$_2$). Only CA9 clears it.}
 \input{harmonizome_sec}
 \input{proteomicsdb_sec}
 \input{eatlas_sec}
+
+\input{external_validation_sec}
 
 \section{Shipped tool}
 \texttt{pip install .} provides the \texttt{cart-target-rank} command-line tool

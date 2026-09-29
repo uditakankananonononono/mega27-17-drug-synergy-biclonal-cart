@@ -1,0 +1,94 @@
+\section{External validation and robustness of the ranking (Phase 3)}
+\label{sec:external}
+
+The ranking shipped above was built entirely from reference datasets (TCGA, GTEx,
+HPA, DepMap, Open Targets). This section reports three post-lock audits that ask
+whether the ranking survives contact with data it never saw, whether its safety
+term is stable to a defensible re-weighting, and whether the composite score is
+stable to perturbation of its locked weights. All criteria below were
+pre-specified in committed files before the corresponding analysis ran
+(\texttt{results/external\_bulk\_prespec.json}, then the analysis scripts and
+outputs); no threshold was adjusted after the fact.
+
+\subsection{Independent bulk tumor-versus-normal validation (GEO)}
+Seven antigens from the locked candidate set were tested on independent GEO bulk
+series with paired tumor and normal samples, one pre-specified series per
+indication and one pre-specified probe per antigen (Table~\ref{tab:geo}). The
+locked primary endpoint --- at least 6 of 7 antigens enriched in tumor at
+Benjamini--Hochberg $q < 0.05$ --- \textbf{failed as measured}: 4 of 7 enriched
+(CA9 $q = 5.0\times10^{-23}$, MSLN $q = 2.8\times10^{-6}$, SLC39A6
+$q = 7.3\times10^{-5}$, CLDN6 $q = 9.5\times10^{-6}$), and CA12, PSCA, CLDN18 did
+not enrich. The pre-specified secondary endpoint, rank concordance between the
+external tumor medians and the rankscore tumor-signal term, was
+Spearman $\rho = 0.179$ ($p = 0.70$), not significant, reported with no threshold
+per the pre-specification.
+
+\begin{table}[h]\centering\footnotesize
+\caption{Independent GEO bulk validation, one series per indication, one
+pre-specified probe per antigen. $q$ is Benjamini--Hochberg across the seven
+tests. Medians are log-scale expression as distributed by each
+series.}\label{tab:geo}
+\begin{tabular}{llllrrrrl}
+\toprule
+Antigen & Series & Platform & Probe & $n_T$ & $n_N$ & Median $T$ & Median $N$ & Enriched \\
+\midrule
+CA9 & GSE53757 & GPL570 & 205199\_at & 72 & 72 & 11.63 & 6.71 & yes ($q=5.0{\times}10^{-23}$) \\
+MSLN & GSE62165 & GPL13667 & 11719544\_a\_at & 118 & 13 & 6.98 & 4.87 & yes ($q=2.8{\times}10^{-6}$) \\
+SLC39A6 & GSE42568 & GPL570 & 202088\_at & 104 & 17 & 12.67 & 10.89 & yes ($q=7.3{\times}10^{-5}$) \\
+CLDN6 & GSE26712 & GPL96 & 208474\_at & 185 & 10 & 6.50 & 4.54 & yes ($q=9.5{\times}10^{-6}$) \\
+PSCA & GSE46602 & GPL570 & 205319\_at & 36 & 14 & 5.30 & --- & no ($q=0.52$) \\
+CA12 & GSE53757 & GPL570 & 203963\_at & 72 & 72 & 13.87 & 14.61 & no ($q\approx1$) \\
+CLDN18 & GSE13861 & GPL6884 & ILMN\_1696284 & 65 & 19 & 12.39 & --- & no ($q\approx1$) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The steering read, not a reframing: the two clearest non-enrichments are
+informative in the direction of safety. CA12 median expression is \emph{higher}
+in normal kidney than in tumor (14.61 vs 13.87), and CLDN18 shows no
+tumor-over-normal window in gastric tissue --- exactly the two antigens the
+safety models already rank at the bottom on both versions of the safety score
+(below). A ranking component and an independent dataset pointing the same way is
+stronger evidence than either alone; the primary endpoint's failure stands as
+measured, and its information is used, not hidden.
+
+\subsection{Safety model v2: equal-weight additive re-score}
+The v1 safety term was a hand-weighted composite. Version 2 replaces it with an
+equal-weight mean of the four min-max-normalized safety terms (normal-tissue
+safety, essentiality, Mendelian-disease freedom, GWAS-burden freedom), computed
+additively with v1 untouched. The v2 ordering is CLDN6 (0.998) $>$ CA9 (0.767)
+$>$ SLC39A6 (0.748) $>$ MSLN (0.595) $>$ PSCA (0.542) $\approx$ CLDN18 (0.542)
+$>$ CA12 (0.334), versus the v1 ordering SLC39A6 $>$ PSCA $>$ CLDN6 $>$ CA9 $>$
+MSLN $>$ CLDN18 $>$ CA12; the two versions correlate at Spearman 0.607. The
+cross-analysis coherence is the substantive point: CA12 and CLDN18 are bottom-two
+on \emph{both} safety versions and are the two clearest GEO non-enrichments;
+CLDN6 is best-or-near-best on all four safety terms and enriched externally.
+
+\subsection{Weight-perturbation robustness of the locked ranking}
+The locked five-term rankscore weights (tumor signal 0.30, normal safety 0.25,
+protein breadth 0.15, tractability 0.15, non-essentiality 0.15) were perturbed
+with 1{,}000 Dirichlet draws (concentration $=$ locked weights $\times$ 200, seed
+20260929). The perturbed rankings agree with the locked ranking at median
+Spearman 1.0 (IQR [0.964, 1.0], minimum 0.857); CA9 stays first in 100\% of
+draws, the top-3 set holds in 99.7\%, and the top-5 set in 83.5\%. One-at-a-time
+zero-out sensitivity: only zeroing normal safety or tractability changes the
+podium; zeroing tumor signal, protein breadth, or non-essentiality leaves the
+top three intact. The headline ranking is therefore a property of the evidence,
+not of the exact weight vector.
+
+\subsection{Field convergence: the CA9 AND-gate axis in 2026}
+A 2026 preclinical construct, LNK001, pairs CAIX (CA9) with ENPP3 in a stringent
+AND-gate dual-antigen CAR for clear-cell renal cell carcinoma --- independent
+field validation of the axis this ranking puts first. Our committed bulk AND-gate
+metric (\texttt{results/andgate\_p75\_igfiltered.json}, KIRC) ranks
+CA9$\times$ENPP3 twelfth of fifteen pairs (gated window 2.886, gain 1.638); we
+report that as measured. The mechanistic case for the gate is visible in our own
+committed data: CA9's normal-tissue liability is concentrated in stomach (481
+TPM, GTEx) and cerebellum (41--43 TPM), and ENPP3 is at or below 0.1 TPM in
+stomach and 2.8 TPM in cerebellum, so a CA9 AND ENPP3 gate closes both windows
+in bulk. From the same committed output we nominate CA9$\times$SLC17A3 as the
+bulk-stronger KIRC pair (window 5.562, gain 6.179), with the caveat that
+SLC17A3's normal kidney-cortex expression (33.6 TPM) limits its protection to
+non-kidney tissue. The discriminating measurement --- single-cell co-occupancy
+of the two antigens on the same malignant cells --- is queued as Tier-4 work;
+bulk windows cannot settle it.
