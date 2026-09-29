@@ -1,0 +1,166 @@
+\section{AND-gate pair lists, all cancers}
+{\sloppy The complete top-15 Ig-filtered AND-gate rankings behind Table~\ref{tab:andgate}, from \path{results/andgate_p75_top15_full.json} (full-list dump of the committed \path{scripts_andgate_igfilter.py} computation; immunoglobulin-locus genes excluded as plasma-cell infiltrate). Gated window: per-sample minimum tumor FPKM of the two antigens vs the maximum over normal tissues of the per-tissue minimum, log$_2$ ratio; gain: gated window minus the best single-antigen window. A pair is actionable only when gain $>0$; pairs with negative gain co-occur but add no selectivity over the better single, and are listed so the ranking is fully inspectable.\par}
+\begin{longtable}{llrr}\hline\hline
+Cancer & pair & gated window & gain\\\hline
+\endfirsthead\hline\hline Cancer & pair & gated window & gain\\\hline\endhead
+\multicolumn{4}{l}{\textbf{PAAD}}\\\hline
+ & SPP1$\times$PSCA & 3.76 & +6.52\\
+ & TM4SF4$\times$THBS2 & 3.75 & +2.13\\
+ & OLFM4$\times$MSLN & 3.74 & +2.36\\
+ & LGALS4$\times$MSLN & 3.74 & +2.36\\
+ & MSLN$\times$TM4SF4 & 3.71 & +2.33\\
+ & THBS2$\times$GP2 & 3.69 & +2.07\\
+ & S100P$\times$MSLN & 3.59 & +2.21\\
+ & CEACAM6$\times$SPP1 & 3.54 & +2.35\\
+ & MSLN$\times$PSCA & 3.52 & +2.14\\
+ & PSCA$\times$THBS2 & 3.41 & +1.79\\
+ & SPP1$\times$MSLN & 3.24 & +1.86\\
+ & OLFM4$\times$PSCA & 3.24 & +4.14\\
+ & MSLN$\times$GP2 & 3.24 & +1.86\\
+ & OLFM4$\times$CLDN18 & 3.06 & +3.97\\
+ & CEACAM6$\times$GP2 & 3.00 & +1.81\\
+\multicolumn{4}{l}{\textbf{BRCA}}\\\hline
+ & HLA-DRA$\times$SLC39A6 & 3.58 & +0.40\\
+ & HLA-B$\times$SLC39A6 & 3.58 & +0.40\\
+ & HLA-C$\times$SLC39A6 & 3.58 & +0.40\\
+ & S100A6$\times$SLC39A6 & 3.58 & +0.40\\
+ & SLC39A6$\times$HSPB1 & 3.53 & +0.35\\
+ & SLC39A6$\times$HLA-A & 3.52 & +0.34\\
+ & SLC39A6$\times$CD24 & 3.43 & +0.25\\
+ & SLC39A6$\times$HLA-DRB1 & 3.40 & +0.22\\
+ & EEF1A1$\times$SLC39A6 & 3.18 & +0.00\\
+ & GAPDH$\times$SLC39A6 & 3.18 & +0.00\\
+ & B2M$\times$SLC39A6 & 3.18 & +0.00\\
+ & CD74$\times$SLC39A6 & 3.18 & +0.00\\
+ & EEF2$\times$SLC39A6 & 3.18 & +0.00\\
+ & HSP90AB1$\times$SLC39A6 & 3.18 & +0.00\\
+ & SLC39A6$\times$IFITM3 & 3.15 & -0.03\\
+\multicolumn{4}{l}{\textbf{GBM}}\\\hline
+ & GAP43$\times$EGFR & 3.75 & +1.42\\
+ & ATP1B2$\times$EGFR & 3.75 & +1.42\\
+ & SLC1A3$\times$EGFR & 3.75 & +1.42\\
+ & PTPRZ1$\times$EGFR & 3.75 & +1.42\\
+ & PLP1$\times$EGFR & 3.75 & +1.42\\
+ & EGFR$\times$MLC1 & 3.64 & +1.31\\
+ & AQP4$\times$EGFR & 3.49 & +1.16\\
+ & GPM6B$\times$EGFR & 3.49 & +1.16\\
+ & EGFR$\times$GPM6A & 3.25 & +0.91\\
+ & GAP43$\times$PDPN & 3.09 & +1.48\\
+ & MLC1$\times$PDPN & 3.09 & +1.48\\
+ & NMB$\times$PDPN & 3.09 & +1.48\\
+ & EGFR$\times$DNER & 2.99 & +0.66\\
+ & AQP1$\times$EGFR & 2.92 & +0.59\\
+ & CKB$\times$EGFR & 2.92 & +0.59\\
+\multicolumn{4}{l}{\textbf{LIHC}}\\\hline
+ & APOC3$\times$OR2I1P & 6.48 & +0.38\\
+ & ADH1C$\times$OR2I1P & 6.48 & +0.38\\
+ & TM4SF4$\times$OR2I1P & 6.48 & +0.38\\
+ & ASGR2$\times$OR2I1P & 6.48 & +0.38\\
+ & TM4SF5$\times$OR2I1P & 6.48 & +0.38\\
+ & ADH1A$\times$OR2I1P & 6.48 & +0.38\\
+ & GJB1$\times$OR2I1P & 6.48 & +0.38\\
+ & CYP2C9$\times$OR2I1P & 6.48 & +0.38\\
+ & SLC2A2$\times$OR2I1P & 6.48 & +0.38\\
+ & ANPEP$\times$OR2I1P & 6.48 & +0.38\\
+ & HJV$\times$OR2I1P & 6.48 & +0.38\\
+ & OR2I1P$\times$AFM & 6.45 & +0.35\\
+ & AKR1B10$\times$OR2I1P & 6.35 & +0.24\\
+ & ADH1B$\times$OR2I1P & 6.35 & +0.24\\
+ & PLA2G2A$\times$OR2I1P & 6.35 & +0.24\\
+\multicolumn{4}{l}{\textbf{OV}}\\\hline
+ & KLK7$\times$CLDN6 & 5.85 & +0.23\\
+ & CLDN3$\times$CLDN6 & 5.69 & +0.07\\
+ & MSLN$\times$CLDN6 & 5.69 & +0.07\\
+ & SLC34A2$\times$CLDN6 & 5.69 & +0.07\\
+ & TACSTD2$\times$CLDN6 & 5.69 & +0.07\\
+ & CLDN4$\times$CLDN6 & 5.69 & +0.07\\
+ & ATP6V1B1$\times$CLDN6 & 5.69 & +0.07\\
+ & SPINT1$\times$CLDN6 & 5.69 & +0.07\\
+ & UBE2C$\times$CLDN6 & 5.69 & +0.07\\
+ & SCNN1A$\times$CLDN6 & 5.69 & +0.07\\
+ & GAPDH$\times$CLDN6 & 5.62 & +0.00\\
+ & CD74$\times$CLDN6 & 5.62 & +0.00\\
+ & IFITM3$\times$CLDN6 & 5.62 & +0.00\\
+ & EEF1A1$\times$CLDN6 & 5.62 & +0.00\\
+ & HSPB1$\times$CLDN6 & 5.62 & +0.00\\
+\multicolumn{4}{l}{\textbf{LUAD}}\\\hline
+ & SLC34A2$\times$SPP1 & 4.15 & +4.33\\
+ & SLC34A2$\times$S100P & 3.70 & +3.88\\
+ & MSLN$\times$S100P & 3.70 & +2.08\\
+ & SPP1$\times$MSLN & 3.48 & +1.86\\
+ & MSLN$\times$CLDN3 & 3.25 & +1.63\\
+ & SLC34A2$\times$CEACAM5 & 3.23 & +3.41\\
+ & LPCAT1$\times$CLDN3 & 3.19 & +1.65\\
+ & SPP1$\times$LPCAT1 & 3.08 & +1.54\\
+ & CEACAM6$\times$SPP1 & 2.96 & +1.26\\
+ & CEACAM5$\times$MSLN & 2.84 & +1.22\\
+ & SPP1$\times$CEACAM5 & 2.68 & +4.42\\
+ & CEACAM5$\times$LPCAT1 & 2.44 & +0.90\\
+ & SPP1$\times$HLA-DRB5 & 2.30 & +2.39\\
+ & S100P$\times$LPCAT1 & 2.26 & +0.72\\
+ & SPP1$\times$S100P & 2.15 & +5.26\\
+\multicolumn{4}{l}{\textbf{COAD}}\\\hline
+ & DPEP1$\times$NOX1 & 5.50 & +4.43\\
+ & S100P$\times$DPEP1 & 2.58 & +4.35\\
+ & CEACAM6$\times$DPEP1 & 2.55 & +1.30\\
+ & PIGR$\times$CEACAM6 & 1.80 & +0.55\\
+ & OLFM4$\times$CEACAM6 & 1.80 & +0.55\\
+ & CEACAM5$\times$CEACAM6 & 1.79 & +0.55\\
+ & PI3$\times$DPEP1 & 1.78 & +3.55\\
+ & CEACAM6$\times$EPCAM & 1.64 & +0.40\\
+ & CEACAM6$\times$LGALS4 & 1.62 & +0.37\\
+ & PERP$\times$NOX1 & 1.59 & +0.51\\
+ & OLFM4$\times$PERP & 1.50 & +2.13\\
+ & CLDN3$\times$PERP & 1.50 & +0.79\\
+ & MUC13$\times$PERP & 1.50 & +2.54\\
+ & CDH17$\times$PERP & 1.50 & +1.89\\
+ & MISP$\times$PERP & 1.50 & +1.75\\
+\multicolumn{4}{l}{\textbf{SKCM}}\\\hline
+ & PRAME$\times$DCT & 6.86 & +0.89\\
+ & PI3$\times$PRAME & 6.28 & +0.88\\
+ & PRAME$\times$KRT1 & 5.97 & +0.57\\
+ & GAPDH$\times$DCT & 5.96 & +0.00\\
+ & S100A6$\times$DCT & 5.96 & +0.00\\
+ & HLA-A$\times$DCT & 5.96 & +0.00\\
+ & CD63$\times$DCT & 5.96 & +0.00\\
+ & VIM$\times$DCT & 5.96 & +0.00\\
+ & APOD$\times$DCT & 5.96 & +0.00\\
+ & HLA-B$\times$DCT & 5.96 & +0.00\\
+ & EEF2$\times$DCT & 5.96 & +0.00\\
+ & S100A9$\times$DCT & 5.96 & +0.00\\
+ & HSP90AB1$\times$DCT & 5.96 & +0.00\\
+ & B2M$\times$DCT & 5.96 & +0.00\\
+ & CD74$\times$DCT & 5.96 & +0.00\\
+\multicolumn{4}{l}{\textbf{STAD}}\\\hline
+ & CLDN18$\times$CLDN3 & 4.09 & +4.49\\
+ & OLFM4$\times$CLDN18 & 3.95 & +4.94\\
+ & CLDN18$\times$PLA2G2A & 3.69 & +5.15\\
+ & PI3$\times$CLDN18 & 2.97 & +4.44\\
+ & CLDN18$\times$MUC13 & 2.57 & +3.79\\
+ & PLA2G2A$\times$TACSTD2 & 2.35 & +5.36\\
+ & CLDN18$\times$MISP & 2.25 & +3.04\\
+ & MISP$\times$TACSTD2 & 2.13 & +2.92\\
+ & MUC13$\times$CDC42EP1 & 1.87 & +1.86\\
+ & TSPAN8$\times$LY6E & 1.58 & +2.94\\
+ & LGALS4$\times$LY6E & 1.57 & +2.93\\
+ & MUC13$\times$TACSTD2 & 1.53 & +2.75\\
+ & LY6E$\times$MUC13 & 1.42 & +2.65\\
+ & HLA-DRB1$\times$PI3 & 1.38 & +1.97\\
+ & CLDN18$\times$JUP & 1.36 & +2.83\\
+\multicolumn{4}{l}{\textbf{KIRC}}\\\hline
+ & CA9$\times$SLC17A3 & 5.56 & +6.18\\
+ & CA9$\times$CA12 & 3.80 & +4.46\\
+ & CA9$\times$CLTRN & 3.60 & +4.26\\
+ & SPP1$\times$CA9 & 3.34 & +4.01\\
+ & CLTRN$\times$ENPP3 & 3.29 & +2.05\\
+ & CA12$\times$ENPP3 & 3.29 & +2.05\\
+ & ENPP3$\times$SLC17A3 & 3.28 & +2.03\\
+ & CA9$\times$VCAM1 & 3.24 & +3.91\\
+ & CA9$\times$ANPEP & 3.17 & +3.84\\
+ & CA9$\times$CLDN2 & 3.13 & +3.50\\
+ & ENPP3$\times$FABP3 & 3.03 & +1.78\\
+ & CA9$\times$HMOX1 & 3.02 & +3.69\\
+ & CA9$\times$ENPP3 & 2.89 & +1.64\\
+ & SPP1$\times$ENPP3 & 2.81 & +1.56\\
+ & VCAM1$\times$ENPP3 & 2.81 & +1.56\\
+\hline\hline\caption{Full top-15 AND-gate pair lists per cancer (Ig-filtered).}\label{tab:andgatefull}\end{longtable}
