@@ -1,0 +1,28 @@
+{
+ "prespec": "results/blinded_failure_prespec.json",
+ "seed": 20260929,
+ "n_genes": 41,
+ "n_inactive": 11,
+ "n_active": 30,
+ "excluded_gt2_missing_axes": [
+  "PCNA",
+  "PSMA1"
+ ],
+ "primary": {
+  "auroc_rankscore": 0.5757575757575758,
+  "auroc_expression_only": 0.6,
+  "auroc_diff": -0.024242424242424176,
+  "diff_ci95": [
+   -0.2068965517241379,
+   0.15750189393939398
+  ],
+  "verdict": "NOT DEMONSTRATED"
+ },
+ "per_axis_auroc_descriptive": {
+  "tumor_signal": 0.6,
+  "normal_safety": 0.3212121212121212,
+  "protein_breadth": 0.6349206349206349,
+  "tractability": 0.5707070707070707,
+  "nonessentiality": 0.5
+ }
+}
