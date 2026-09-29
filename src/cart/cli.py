@@ -1,5 +1,12 @@
 """cart-target-rank - rank CAR-T target candidates by tumor-vs-normal window.
 
+--report mode: joins the live ranking axes with the committed per-gene audit
+corpus (results/*.csv: Pharos TDL/novelty/drugs, BioPlex interactome presence,
+ClinicalTrials CAR-T status, gnomAD constraint, DrugCentral engagement) for the
+188-gene study corpus. Genes outside the corpus get live ranking axes only plus
+an explicit boundary note - the full battery requires the fetch scripts
+(scripts_*.py, documented in docs/TOOLS.md). No network access in report mode.
+
 For each gene symbol: surface membership (HPA subcellular + UniProt KW-1003),
 normal vital-tissue max nTPM, and per-sample tumor stats streamed from the HPA
 per-sample TCGA file: FANM (fraction above normal max), p75, mean - the metrics
@@ -79,6 +86,39 @@ def rank_genes(symbols, cancer, data_dir="data", vital_only=True):
     return rows
 
 
+REPORT_SOURCES = {
+    "pharos": ("pharos_per_gene.csv", ["tdl", "novelty", "n_drugs", "n_ligands",
+                                       "publication_count", "gwas_total", "ppi_total"]),
+    "bioplex": ("bioplex_per_gene.csv", ["293T_present", "293T_degree", "HCT116_present", "HCT116_degree"]),
+    "clintrials": ("clintrials_per_gene.csv", ["strict_total", "strict_onc_total", "strict_onc_active",
+                                               "verdict", "n_nct_union"]),
+    "constraint": ("constraint_per_gene.csv", ["loeuf", "pli", "mis_z", "depmap_median",
+                                               "depmap_frac_dep", "escape_quadr"]),
+    "drugcentral": ("drugcentral_engagement_rows.csv", ["n_drugs", "tdl", "moa", "drug_names"]),
+}
+
+BOUNDARY_NOTE = ("outside the 188-gene study corpus - live ranking axes only; "
+                 "full battery needs scripts_*.py fetch runs (docs/TOOLS.md); "
+                 "CPTAC protein, DepMap matrix and DailyMed label tables are "
+                 "study-level artifacts not joined by this tool")
+
+
+def load_report_corpus(results_dir):
+    corpus = {}
+    for src, (fn, cols) in REPORT_SOURCES.items():
+        path = pathlib.Path(results_dir) / fn
+        if not path.exists():
+            continue
+        with open(path) as fh:
+            for row in csv.DictReader(fh):
+                gene = row.get("gene")
+                if not gene:
+                    continue
+                entry = corpus.setdefault(gene, {})
+                entry[src] = {c: row[c] for c in cols if c in row and row[c] != ""}
+    return corpus
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(prog="cart-target-rank",
         description="Rank CAR-T targets: surface membership + FANM/percentile tumor-vs-normal stats.")
@@ -87,9 +127,22 @@ def main(argv=None):
     p.add_argument("--data-dir", default="data")
     p.add_argument("--all-tissues", action="store_true", help="use all normal tissues, not just vital")
     p.add_argument("--json", help="write results JSON here")
+    p.add_argument("--report", action="store_true",
+                   help="join committed per-gene audit corpus (results/*.csv); no network")
+    p.add_argument("--results-dir", default="results")
     a = p.parse_args(argv)
     rows = rank_genes(a.genes, a.cancer, a.data_dir, vital_only=not a.all_tissues)
     out = {"tool": "cart-target-rank", "cancer": a.cancer, "genes": rows}
+    if a.report:
+        corpus = load_report_corpus(a.results_dir)
+        for sym in a.genes:
+            if sym in corpus:
+                rows[sym]["audit"] = corpus[sym]
+                rows[sym]["corpus"] = "188-gene study corpus"
+            else:
+                rows[sym]["audit"] = {}
+                rows[sym]["corpus"] = BOUNDARY_NOTE
+        out["report_sources"] = {s: spec[0] for s, spec in REPORT_SOURCES.items()}
     if a.json:
         json.dump(out, open(a.json, "w"), indent=1)
     print(json.dumps(out, indent=1))
