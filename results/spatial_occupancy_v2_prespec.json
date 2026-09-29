@@ -1,0 +1,14 @@
+{
+  "item": "Tier-4 #10 v2: pooled section-level occupancy test",
+  "declared_before_v2_computation": "2026-09-29",
+  "lineage_disclosure": "v2 is designed AFTER observing v1 (results/spatial_occupancy.json, commit 87eb0cb): v1's pre-declared per-section power bar (>=60% of sections at empirical p<0.05) failed on all 3 positive controls despite direction consistency (obs above null in all 7 pairs, segregation ~0%). This v2 prespec fixes NEW pooled endpoints and the SAME control gate BEFORE any v2 computation. v1 per-section numbers (observed Jaccard, per-section null medians, per-section empirical p-values under seed 20260929) are reused VERBATIM - no null recomputation, no new randomness. v1's failure remains on record unadjusted.",
+  "design_rationale": "v1 required MOST sections to be individually significant; sections have 300-700 spots, so per-section tests are underpowered even for true co-occupancy. Standard practice for repeated spatial sections is a pooled section-level test. v2 endpoints:",
+  "endpoints_v2": [
+    "per pair: paired Wilcoxon signed-rank test of (observed Jaccard - per-section null median) across qualifying sections vs 0, two-sided p",
+    "per pair: Fisher combined p of the v1 per-section empirical co-occupancy p-values",
+    "per pair: median effect (observed - null median) with 95% CI by 10,000 section-level bootstrap resamples",
+    "verdict per pair: CO-OCCUPANCY requires Wilcoxon p<0.05 AND Fisher p<0.05 AND median effect > 0 AND the same 3 positive controls ALL pass this same rule (control gate, unchanged in structure from v1); otherwise verdict WITHHELD or INDETERMINATE per the rule, reported as such",
+    "pairs with < 8 qualifying sections are declared UNDERPOWERED and excluded from verdicts (affects CA9xENPP3 n=4: reported descriptively only)"
+  ],
+  "non_goals": "no change to positivity call (count>0), null design, seed, pair list, or qualifying rule from v1; v2 changes ONLY the pooling of v1's per-section outputs"
+}
