@@ -88,6 +88,70 @@ share a top target vs 16.5\% of non-synergistic pairs ($\chi^2$ $p=0.21$,
 2{,}319 fully annotated pairs). Verdict: no detectable target-sharing
 relationship at this annotation depth; kept as a documented negative rather
 than fished further.
+\subsection{Spatial co-occupancy of candidate antigen pairs (cross-lane)}
+The AND-gate concept assumes the two antigens of a pair are present on the
+\emph{same} tumor cells, not merely in the same tumor. We tested this directly
+on spatial transcriptomics from the companion morphology study (HER2-positive
+breast sections, public HER2ST cohort, same owner), measuring whether
+co-expression of a pair within a section exceeds a spatially shifted null
+(1{,}000 coordinate shifts per section, seed fixed before computation).
+
+The methodological lineage is part of the result and is reported in full. The
+first pre-registered test required at least 60\% of a pair's sections to reach
+per-section significance; that power bar failed on all three positive-control
+pairs (ERBB2$\times$TACSTD2, ERBB2$\times$MUC1, SLC39A6$\times$CA12) despite
+uniform direction, so per the pre-specification all pair verdicts were withheld
+and the failure committed unadjusted. Sections carry only 300--700 spots, so
+per-section tests are underpowered even for true co-occupancy; a second,
+pooled design was then pre-registered \emph{before any new computation},
+keeping the same control gate and reusing the v1 per-section nulls verbatim.
+
+Under the pooled pre-registered endpoints (paired Wilcoxon across sections,
+Fisher combination of the v1 per-section empirical p-values, and a 10{,}000-draw
+bootstrap CI on the median effect), all three positive controls pass the gate
+and two candidate pairs show significant co-occupancy: MSLN$\times$CA9 across
+13 qualifying sections (median effect $+0.016$, 95\% CI $[0.004, 0.023]$;
+Wilcoxon $p=0.010$, Fisher $p=0.0013$) and MSLN$\times$PSCA across 17 sections
+(median effect $+0.008$, 95\% CI $[0.001, 0.013]$; Wilcoxon $p=0.023$, Fisher
+$p=0.0054$). The primary pair CA9$\times$ENPP3 has only four qualifying
+sections and is declared underpowered per the pre-registered $n<8$ rule; its
+point estimate is reported descriptively and no verdict is drawn. These are,
+to our knowledge, the first direct spatial co-occupancy measurements for these
+specific biclonal CAR antigen pairs, and they support the shared-cell
+assumption behind the MSLN-gated designs.
+
+\subsection{Clinical-pursuit validation of the ranking battery}
+We asked whether the multi-axis ranking battery (tumor signal, normal-tissue
+safety, protein breadth, tractability, non-essentiality, frozen weights fixed
+before any label access) discriminates clinically pursued antigens from
+unpursued ones in a 205-gene corpus (99 gated candidates, 98 matched background,
+8 controls), using curated ClinicalTrials.gov verdicts as labels that were
+never an input to the ranking.
+
+The pre-registered primary comparison is a measured null and is reported as
+such: the five-axis score reaches AUROC $0.606$ against $0.609$ for a
+tumor-expression-only ranker (difference $-0.003$, 10{,}000-draw bootstrap 95\%
+CI $[-0.092, 0.089]$), and the sensitivity rule agrees. A pre-registered pivot
+endpoint --- discriminating discontinued from active programs among the 41
+evaluable pursued antigens, the outcome the safety axes actually encode --- is
+also null (AUROC $0.576$ vs $0.600$, CI $[-0.207, 0.158]$). Both nulls are
+locked; no weights were adjusted after seeing them.
+
+The same pre-specification carried a secondary endpoint that is strongly
+positive: a published independent catalog of solid-tumor CAR-T antigen targets
+(23 antigens extracted from a 2026 review by a deterministic, committed rule)
+lands inside our corpus 10 times, and 9 of those 10 are exactly the genes our
+pipeline labels genuinely pursued --- against 11 of 195 for the rest of the
+corpus (Fisher one-sided $p=1.1\times10^{-9}$, odds ratio $150$). The clinical
+label set on which the battery is evaluated therefore recovers the field's
+published antigen consensus with high precision, even though the battery's
+ranking does not beat raw expression at predicting those labels. A temporal
+audit (trial start dates, cutoff 2022-12-31) shows the label set is stable:
+18 of 20 pursued antigens were already pursued before 2023, leaving too few
+new pursuits (2) for the pre-registered prospective-transfer test, which is
+declared underpowered rather than tuned. The field, in effect, finished
+pursuing this corpus years ago; novelty must come from outside it.
+
 \section{Documented negatives and data findings}
 (1) Leaky $0.90$ AUROC retired. (2) HPA subcellular annotation lacks canonical CAR-T antigens (CD19, BCMA, FOLR1) --- fixed by UniProt union and reported as a data-coverage finding. (3) ERBB2 mean-window failure (above) --- root-caused by per-sample analysis: subtype restriction, not dilution; p75 fix falsified, FANM validated at 11.0\%, same order as the 15--20\% clinical HER2+ prevalence \cite{her2}. (4) Immunoglobulin infiltrate artifact in p75 pair rankings.
 \subsection{Off-tumor safety check: GTEx normal-tissue expression}
