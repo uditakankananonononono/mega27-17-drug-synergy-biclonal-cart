@@ -232,6 +232,34 @@ snapshot-presence missingness in trial labels). The residual risks that could
 not be closed with public data are enumerated there and carried into the
 limitations.
 
+\subsection{Pair dossier: CA9$\times$ENPP3 against the 2026 field}
+The steering rule for this project is to confront our rankings with the newest
+published constructs, and the CA9 axis got exactly that in 2026: LNK001, a
+stringent CAIX/ENPP3 dual-antigen AND-gate CAR for clear-cell renal cell
+carcinoma, is an independent construct on our top-ranked axis --- CA9 (=CAIX)
+is rankscore \#1 (0.885) and ENPP3 sits in our gated set. The committed
+dossier (\texttt{docs/CA9\_ENPP3\_DEEP\_DIVE.md}) reads both directions
+honestly. In our bulk KIRC window metric, CA9$\times$ENPP3 is mid-table
+(gated window 2.886, gain 1.638; 12th of 15 reported pairs), and we report
+that as measured; the mechanistic case for the gate, however, reproduces
+independently in our data: CA9's single-target liability is its normal
+expression in stomach (481 TPM) and cerebellum (41--43 TPM), and ENPP3 is
+$\le 0.1$ TPM in stomach and $\le 2.8$ in cerebellum, so requiring both
+antigens closes exactly the normal windows that make CA9 dangerous alone ---
+the same rationale the field used, arrived at from our own committed GTEx
+profiles. ENPP3's own profile is clean where it matters (no cancer GWAS hits,
+no Mendelian disease associations, mildly essential-leaning at median Chronos
+$-0.081$ across 1{,}178 models, vital-organ TPM at or below 2.4). Our data also
+nominates a bulk-stronger alternative the field has not built: CA9$\times$SLC17A3
+(gated window 5.562, gain 6.179), with the explicit caveat that SLC17A3's
+normal kidney-cortex expression (33.6 TPM) means the gate protects non-kidney
+tissue only --- the relevant trade inside a renal indication --- and that bulk
+windows measure cohort co-occurrence, not single-cell co-occupancy. Settling
+that distinction is exactly what the spatial analysis of the previous
+subsection measures, where CA9$\times$ENPP3 is declared underpowered on
+current sections and CA9$\times$SLC17A3 has no qualifying section at all ---
+the honest gap that defines the next dataset requirement.
+
 \section{Documented negatives and data findings}
 (1) Leaky $0.90$ AUROC retired. (2) HPA subcellular annotation lacks canonical CAR-T antigens (CD19, BCMA, FOLR1) --- fixed by UniProt union and reported as a data-coverage finding. (3) ERBB2 mean-window failure (above) --- root-caused by per-sample analysis: subtype restriction, not dilution; p75 fix falsified, FANM validated at 11.0\%, same order as the 15--20\% clinical HER2+ prevalence \cite{her2}. (4) Immunoglobulin infiltrate artifact in p75 pair rankings.
 \subsection{Off-tumor safety check: GTEx normal-tissue expression}
