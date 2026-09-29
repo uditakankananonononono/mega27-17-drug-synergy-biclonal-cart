@@ -210,6 +210,41 @@ declared underpowered rather than tuned. The field, in effect, finished
 pursuing this corpus years ago; novelty must come from outside it.
 
 \begin{table}[t]\centering\footnotesize
+\caption{The curated clinical-pursuit label set: all 21 corpus genes with
+genuine (20) or mixed (1) target-directed oncology programs after hand
+curation (strict-oncology tier plus curated aliases; counts are total/active
+trials). Every other corpus gene is label-negative; 22 acronym-collision and
+biomarker-only genes were zeroed during curation.}\label{tab:pursued}
+\begin{tabular}{llrr}
+\toprule
+Gene & Corpus class & Trials (total/active) & Verdict \\
+\midrule
+CD19 & reference & 407 / 191 & genuine \\
+EGFR & gated & 148 / 53 & genuine \\
+ERBB2 & reference & 145 / 55 & genuine \\
+MSLN & gated & 41 / 15 & genuine \\
+KRAS & background & 34 / 20 & genuine \\
+HLA-A & gated & 25 / 6 & genuine \\
+ALK & background & 16 / 6 & genuine \\
+TACSTD2 & gated & 16 / 14 & genuine \\
+PCNA & positive control & 11 / 5 & mixed \\
+EPCAM & gated & 10 / 2 & genuine \\
+FOLR1 & reference & 10 / 6 & genuine \\
+CA9 & gated & 7 / 1 & genuine \\
+CEACAM5 & gated & 7 / 0 & genuine \\
+CDH17 & gated & 5 / 2 & genuine \\
+PSCA & gated & 5 / 4 & genuine \\
+CD24 & gated & 4 / 0 & genuine \\
+PRAME & gated & 4 / 1 & genuine \\
+CLDN6 & gated & 3 / 2 & genuine \\
+CT83 & background & 2 / 1 & genuine \\
+TLR4 & background & 2 / 0 & genuine \\
+MICA & background & 1 / 1 & genuine \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]\centering\footnotesize
 \caption{Clinical-pursuit benchmark (Tier-4 \#11/\#11b, pre-registered). The
 five-axis battery does not beat tumor expression alone on either clinical
 outcome surface; the independent published-catalog recovery is strongly
@@ -680,6 +715,56 @@ rather than a confident-looking empty report. Three additional hermetic tests
 cover report mode, including a fixed fixture, bringing the suite to fourteen.
 \section{Falsification paths}
 Synergy: published MatchMaker/DeepSynergy numbers verified (see Results) --- splits differ, no SOTA claim made; a same-split rerun on DrugComb is the remaining path to a direct comparison. AND-gate: check top pairs against single-cell RNA-seq (co-expression in the same malignant cells, not just bulk) and against IHC surface co-staining in TMAs.
+\section{Discussion}
+This paper started as two projects and became three. The synergy model's
+contribution is protocol honesty: the pair-held-out split retires an
+inflated number and replaces it with a harder, lower, real one, and the first
+published NCI-ALMANAC reference point for that split. The AND-gate search
+shows a defined surfaceome plus a per-sample window metric recovers the
+field's known targets and nominates pairs the field has not built, with the
+2026 LNK001 construct arriving as independent validation of the top-ranked
+axis after our ranking was locked. The third contribution is the one we would
+most like to see copied: treat observability as a measurable nuisance. Every
+contrast in this paper that could be checked against an expectation model was
+checked, and the paper says plainly which contrasts survived, which were
+confounded, and which models were uninformative.
+
+The locked nulls deserve their reading. The five-axis battery not beating
+tumor expression alone at predicting clinical pursuit is not a verdict that
+the axes are wrong; it is a measurement that the field's pursuit decisions
+are expression-driven, so expression is the null model any discovery score
+must beat to claim usefulness. The battery not predicting discontinuation
+either, at $n=41$, says the safety axes do not yet carry that signal at
+corpus scale --- or that pursuit failure is driven by biology (efficacy,
+trial execution) outside expression-based features. Both readings push the
+same direction: future value lives in the pairs the field has \emph{not}
+pursued, where no expression-only null exists, and in spatial evidence,
+where the two positive co-occupancy results already sit.
+
+\section{Reproducibility}
+Every number in this paper traces to a committed artifact: pre-registration
+files before each analysis, scripts at the commit that ran them, result JSONs
+with seeds, and download recipes with URLs and byte sizes for every external
+resource (including the HPA v23 retired-path recipe). The two heavy
+computations were executed on sharded public-runner jobs with seeded per-fold
+configs byte-identical to the sequential scripts, with per-fold checkpoints
+committed; the merge and audit steps are local and deterministic. The shipped
+tool reproduces the two reference antigens through its own code path, and its
+test suite is hermetic. The repositories are public.
+
+\section{Conclusion}
+Under the only leakage-free protocol for combination screens, drug-embedding
+synergy prediction reaches AUROC $0.846$ on unseen pairs. Over a defined
+surfaceome, per-sample tumor/normal windows recover every established CAR-T
+target class tested and nominate AND-gated pairs with quantified gains,
+two of which now carry direct spatial co-occupancy support. And a
+pre-registered audit program shows which parts of the evidence base survive
+their own observability: the literature excess partly does, the GWAS and
+interaction gaps do not, the falsified normal-breadth direction is real, and
+the clinical label set recovers an independent published catalog at odds
+ratio $150$ while the ranking battery honestly does not beat expression
+alone. Both halves of that sentence are the result.
+
 \begin{thebibliography}{9}
 \bibitem[Landrum(2026)]{rdkit} Landrum G. RDKit: open-source cheminformatics, release 2026.03.
 \bibitem[Seabold and Perktold(2010)]{statsmodels} Seabold S, Perktold J. statsmodels: econometric and statistical modeling with Python. \emph{Proc SciPy} 2010.
