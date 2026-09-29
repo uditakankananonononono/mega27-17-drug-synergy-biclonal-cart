@@ -1,0 +1,31 @@
+{
+ "prespec": "results/temporal_validation_prespec.json",
+ "cutoff": "2022-12-31",
+ "snapshot_method": "reconstructed from trial start dates in current API records (limitation in prespec)",
+ "E1_label_stability": {
+  "n_genes_evaluated": 176,
+  "pursued_any_snapshot": 20,
+  "pursued_pre_cutoff": 18,
+  "frac_pursued_already_pre": 0.9,
+  "newly_pursued_post_cutoff": 2,
+  "newly_by_class": {
+   "gated": 1,
+   "background": 1
+  },
+  "newly_genes": [
+   "CA12",
+   "MICA"
+  ]
+ },
+ "E2_prospective_transfer": {
+  "n_genes": 156,
+  "n_newly_pursued": 2,
+  "verdict": "UNDERPOWERED per prespec gate (<8 newly pursued)"
+ },
+ "E3_precutoff_labels_descriptive": {
+  "n_genes": 174,
+  "n_pos": 16,
+  "auroc_rankscore": 0.6317246835443038,
+  "auroc_expression_only": 0.6700949367088608
+ }
+}

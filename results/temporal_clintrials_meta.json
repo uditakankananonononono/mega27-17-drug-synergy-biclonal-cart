@@ -1,0 +1,21 @@
+{
+ "fetched_at": "2026-09-29T10:42:37Z",
+ "api": "https://clinicaltrials.gov/api/v2/studies",
+ "fields": "NCTId,BriefTitle,OverallStatus,Phase,StartDate",
+ "n_genes": 205,
+ "n_rows": 988,
+ "alias_tier_merged": [
+  "CA12",
+  "CA9",
+  "CD19",
+  "CLDN18",
+  "CLDN6",
+  "ERBB2",
+  "FOLR1",
+  "MSLN",
+  "PSCA",
+  "SLC39A6",
+  "TNFRSF17"
+ ],
+ "n_rows_with_alias": 3622
+}
