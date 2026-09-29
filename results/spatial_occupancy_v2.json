@@ -1,0 +1,80 @@
+{
+ "prespec": "results/spatial_occupancy_v2_prespec.json",
+ "source": "results/spatial_occupancy.json (v1, verbatim per-section reuse)",
+ "pairs": {
+  "MSLNxCA9": {
+   "class": "secondary",
+   "n_sections": 13,
+   "median_effect": 0.016272479319865807,
+   "effect_ci95": [
+    0.003686635944700461,
+    0.022902727740607302
+   ],
+   "wilcoxon_p": 0.010498046875,
+   "fisher_p": 0.0013042807273660635,
+   "verdict": "CO-OCCUPANCY"
+  },
+  "ERBB2xTACSTD2": {
+   "class": "positive_controls",
+   "n_sections": 68,
+   "median_effect": 0.033113439561939274,
+   "effect_ci95": [
+    0.022592736195180256,
+    0.05318770995888736
+   ],
+   "wilcoxon_p": 2.863052059102901e-09,
+   "fisher_p": 1.0564417521993539e-27,
+   "verdict": "CO-OCCUPANCY"
+  },
+  "ERBB2xMUC1": {
+   "class": "positive_controls",
+   "n_sections": 66,
+   "median_effect": 0.009025291777099043,
+   "effect_ci95": [
+    0.004155791142257836,
+    0.014142215173142986
+   ],
+   "wilcoxon_p": 1.4907236392923514e-06,
+   "fisher_p": 1.739100227830731e-19,
+   "verdict": "CO-OCCUPANCY"
+  },
+  "MSLNxPSCA": {
+   "class": "secondary",
+   "n_sections": 17,
+   "median_effect": 0.00804289544235924,
+   "effect_ci95": [
+    0.0009261831990367703,
+    0.013206162876008804
+   ],
+   "wilcoxon_p": 0.023223876953125,
+   "fisher_p": 0.0054345100283406545,
+   "verdict": "CO-OCCUPANCY"
+  },
+  "SLC39A6xCA12": {
+   "class": "positive_controls",
+   "n_sections": 58,
+   "median_effect": 0.051617938947659536,
+   "effect_ci95": [
+    0.0325404573569094,
+    0.0683621933621934
+   ],
+   "wilcoxon_p": 3.3228191787533974e-10,
+   "fisher_p": 1.345925891406644e-32,
+   "verdict": "CO-OCCUPANCY"
+  },
+  "CA9xENPP3": {
+   "class": "primary",
+   "n_sections": 4,
+   "median_effect": -0.0005010609452637226,
+   "verdict": "UNDERPOWERED (n<8 per v2 prespec) - descriptive only"
+  }
+ },
+ "method_check": {
+  "controls": {
+   "ERBB2xTACSTD2": true,
+   "ERBB2xMUC1": true,
+   "SLC39A6xCA12": true
+  },
+  "status": "METHOD OK - verdicts stand"
+ }
+}
