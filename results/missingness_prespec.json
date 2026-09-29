@@ -1,0 +1,21 @@
+{
+  "item": "Tier-3 #6 missingness model for databases",
+  "declared_before_run": "2026-09-29",
+  "seed": 20260929,
+  "question": "Is a gene's presence in annotation databases predictable from its measurable properties (expression, length, protein class)? If yes, enrichment conclusions drawn from annotated subsets are vulnerable to selection-on-observability; test whether headline conclusions survive inverse-probability weighting.",
+  "universe": "the 18,399-gene propensity pool from Tier-1 #2 (genes with GTEx median TPM + HPA protein class + MyGene length), rebuilt deterministically from committed sources",
+  "missingness_outcomes": {
+    "in_hpa_protein": "gene present in HPA proteinatlas.tsv (20,163 genes) - protein-level annotation exists",
+    "has_subcellular": "gene present in data/subcellular_location.tsv (13,148 genes) - subcellular localization annotated",
+    "has_uniprot_membrane": "gene present in data/uniprot_cellmembrane.tsv (4,124 genes) - membrane annotation exists",
+    "gtex_expressed": "GTEx v8 median TPM >= 1 in at least 25% of tissues - reliably RNA-detectable"
+  },
+  "model": "logistic regression (L2, sklearn LogisticRegression max_iter=2000) per outcome on the 7 locked propensity features, 5-fold CV AUC (KFold shuffle seed 20260929) reported per outcome; a model with CV AUC <= 0.6 is reported as weakly informative",
+  "endpoints": [
+    "CV AUC per missingness outcome (is observability predictable at all?)",
+    "candidate vs pool P(observation): median predicted observability of the 96 gated candidates vs pool median, per outcome - quantifies selection-on-observability",
+    "conclusion survival: candidate-vs-matched-control contrasts (publication_count, generif_count medians from #2/#3) recomputed with inverse-probability-of-observation weights (IPW, weights trimmed at 1st/99th percentile); pre-declared survival rule: conclusion survives if the IPW contrast keeps the sign of the unweighted contrast and retains >= 50% of its magnitude"
+  ],
+  "interpretation_rule": "if observability is predictable (AUC > 0.6) AND candidates sit far above pool median P(obs), selection-on-observability is real and reported as a structural limitation; the IPW survival numbers then state how much of each headline contrast is robust to it. All directions reported as measured.",
+  "known_gap": "database presence is measured on locally committed snapshots; a gene absent from a snapshot may be absent for curation reasons unrelated to its properties. Pharos per-gene outcomes remain non-genome-wide (gap from #2/#3)."
+}
