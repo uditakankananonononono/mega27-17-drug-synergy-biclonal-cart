@@ -1,0 +1,412 @@
+{
+ "item": "Tier-1 #17 cross-candidate displacement (leave-one-axis-out, frozen weights)",
+ "weights": {
+  "tumor_signal": 0.3,
+  "normal_safety": 0.25,
+  "protein_breadth": 0.15,
+  "tractability": 0.15,
+  "nonessentiality": 0.15
+ },
+ "n_scored": 199,
+ "top20_displacement": [
+  {
+   "gene": "VIM",
+   "rank_locked": 1,
+   "no_tumor_signal": 4,
+   "d_tumor_signal": 3,
+   "no_normal_safety": 4,
+   "d_normal_safety": 3,
+   "no_protein_breadth": 2,
+   "d_protein_breadth": 1,
+   "no_tractability": 1,
+   "d_tractability": 0,
+   "no_nonessentiality": 2,
+   "d_nonessentiality": 1
+  },
+  {
+   "gene": "PIGR",
+   "rank_locked": 2,
+   "no_tumor_signal": 13,
+   "d_tumor_signal": 11,
+   "no_normal_safety": 3,
+   "d_normal_safety": 1,
+   "no_protein_breadth": 3,
+   "d_protein_breadth": 1,
+   "no_tractability": 3,
+   "d_tractability": 1,
+   "no_nonessentiality": 3,
+   "d_nonessentiality": 1
+  },
+  {
+   "gene": "CEACAM5",
+   "rank_locked": 3,
+   "no_tumor_signal": 18,
+   "d_tumor_signal": 15,
+   "no_normal_safety": 7,
+   "d_normal_safety": 4,
+   "no_protein_breadth": 1,
+   "d_protein_breadth": -2,
+   "no_tractability": 7,
+   "d_tractability": 4,
+   "no_nonessentiality": 4,
+   "d_nonessentiality": 1
+  },
+  {
+   "gene": "S100P",
+   "rank_locked": 4,
+   "no_tumor_signal": 4,
+   "d_tumor_signal": 0,
+   "no_normal_safety": 10,
+   "d_normal_safety": 6,
+   "no_protein_breadth": 6,
+   "d_protein_breadth": 2,
+   "no_tractability": 15,
+   "d_tractability": 11,
+   "no_nonessentiality": 5,
+   "d_nonessentiality": 1
+  },
+  {
+   "gene": "HLA-DRB1",
+   "rank_locked": 5,
+   "no_tumor_signal": 22,
+   "d_tumor_signal": 17,
+   "no_normal_safety": 5,
+   "d_normal_safety": 0,
+   "no_protein_breadth": 7,
+   "d_protein_breadth": 2,
+   "no_tractability": 16,
+   "d_tractability": 11,
+   "no_nonessentiality": 6,
+   "d_nonessentiality": 1
+  },
+  {
+   "gene": "EPCAM",
+   "rank_locked": 6,
+   "no_tumor_signal": 20,
+   "d_tumor_signal": 14,
+   "no_normal_safety": 9,
+   "d_normal_safety": 3,
+   "no_protein_breadth": 4,
+   "d_protein_breadth": -2,
+   "no_tractability": 17,
+   "d_tractability": 11,
+   "no_nonessentiality": 7,
+   "d_nonessentiality": 1
+  },
+  {
+   "gene": "HLA-DRB5",
+   "rank_locked": 7,
+   "no_tumor_signal": 17,
+   "d_tumor_signal": 10,
+   "no_normal_safety": 8,
+   "d_normal_safety": 1,
+   "no_protein_breadth": 10,
+   "d_protein_breadth": 3,
+   "no_tractability": 18,
+   "d_tractability": 11,
+   "no_nonessentiality": 8,
+   "d_nonessentiality": 1
+  },
+  {
+   "gene": "CD74",
+   "rank_locked": 8,
+   "no_tumor_signal": 31,
+   "d_tumor_signal": 23,
+   "no_normal_safety": 1,
+   "d_normal_safety": -7,
+   "no_protein_breadth": 12,
+   "d_protein_breadth": 4,
+   "no_tractability": 22,
+   "d_tractability": 14,
+   "no_nonessentiality": 9,
+   "d_nonessentiality": 1
+  },
+  {
+   "gene": "S100A9",
+   "rank_locked": 9,
+   "no_tumor_signal": 25,
+   "d_tumor_signal": 16,
+   "no_normal_safety": 6,
+   "d_normal_safety": -3,
+   "no_protein_breadth": 13,
+   "d_protein_breadth": 4,
+   "no_tractability": 23,
+   "d_tractability": 14,
+   "no_nonessentiality": 10,
+   "d_nonessentiality": 1
+  },
+  {
+   "gene": "CA9",
+   "rank_locked": 10,
+   "no_tumor_signal": 11,
+   "d_tumor_signal": 1,
+   "no_normal_safety": 12,
+   "d_normal_safety": 2,
+   "no_protein_breadth": 15,
+   "d_protein_breadth": 5,
+   "no_tractability": 26,
+   "d_tractability": 16,
+   "no_nonessentiality": 11,
+   "d_nonessentiality": 1
+  },
+  {
+   "gene": "MSLN",
+   "rank_locked": 11,
+   "no_tumor_signal": 24,
+   "d_tumor_signal": 13,
+   "no_normal_safety": 13,
+   "d_normal_safety": 2,
+   "no_protein_breadth": 5,
+   "d_protein_breadth": -6,
+   "no_tractability": 36,
+   "d_tractability": 25,
+   "no_nonessentiality": 12,
+   "d_nonessentiality": 1
+  },
+  {
+   "gene": "C1QBP",
+   "rank_locked": 12,
+   "no_tumor_signal": 4,
+   "d_tumor_signal": -8,
+   "no_normal_safety": 14,
+   "d_normal_safety": 2,
+   "no_protein_breadth": 20,
+   "d_protein_breadth": 8,
+   "no_tractability": 41,
+   "d_tractability": 29,
+   "no_nonessentiality": 13,
+   "d_nonessentiality": 1
+  },
+  {
+   "gene": "ITM2C",
+   "rank_locked": 13,
+   "no_tumor_signal": 30,
+   "d_tumor_signal": 17,
+   "no_normal_safety": 11,
+   "d_normal_safety": -2,
+   "no_protein_breadth": 8,
+   "d_protein_breadth": -5,
+   "no_tractability": 46,
+   "d_tractability": 33,
+   "no_nonessentiality": 14,
+   "d_nonessentiality": 1
+  },
+  {
+   "gene": "CLTRN",
+   "rank_locked": 14,
+   "no_tumor_signal": 12,
+   "d_tumor_signal": -2,
+   "no_normal_safety": 18,
+   "d_normal_safety": 4,
+   "no_protein_breadth": 17,
+   "d_protein_breadth": 3,
+   "no_tractability": 58,
+   "d_tractability": 44,
+   "no_nonessentiality": 16,
+   "d_nonessentiality": 2
+  },
+  {
+   "gene": "SEPTIN2",
+   "rank_locked": 15,
+   "no_tumor_signal": 21,
+   "d_tumor_signal": 6,
+   "no_normal_safety": 16,
+   "d_normal_safety": 1,
+   "no_protein_breadth": 19,
+   "d_protein_breadth": 4,
+   "no_tractability": 57,
+   "d_tractability": 42,
+   "no_nonessentiality": 15,
+   "d_nonessentiality": 0
+  },
+  {
+   "gene": "AIF1",
+   "rank_locked": 16,
+   "no_tumor_signal": 14,
+   "d_tumor_signal": -2,
+   "no_normal_safety": 17,
+   "d_normal_safety": 1,
+   "no_protein_breadth": 23,
+   "d_protein_breadth": 7,
+   "no_tractability": 65,
+   "d_tractability": 49,
+   "no_nonessentiality": 17,
+   "d_nonessentiality": 1
+  },
+  {
+   "gene": "FOLR1",
+   "rank_locked": 17,
+   "no_tumor_signal": 26,
+   "d_tumor_signal": 9,
+   "no_normal_safety": 21,
+   "d_normal_safety": 4,
+   "no_protein_breadth": 16,
+   "d_protein_breadth": -1,
+   "no_tractability": 44,
+   "d_tractability": 27,
+   "no_nonessentiality": 18,
+   "d_nonessentiality": 1
+  },
+  {
+   "gene": "SPP1",
+   "rank_locked": 18,
+   "no_tumor_signal": 41,
+   "d_tumor_signal": 23,
+   "no_normal_safety": 2,
+   "d_normal_safety": -16,
+   "no_protein_breadth": 22,
+   "d_protein_breadth": 4,
+   "no_tractability": 69,
+   "d_tractability": 51,
+   "no_nonessentiality": 19,
+   "d_nonessentiality": 1
+  },
+  {
+   "gene": "CLDN18",
+   "rank_locked": 19,
+   "no_tumor_signal": 28,
+   "d_tumor_signal": 9,
+   "no_normal_safety": 20,
+   "d_normal_safety": 1,
+   "no_protein_breadth": 11,
+   "d_protein_breadth": -8,
+   "no_tractability": 71,
+   "d_tractability": 52,
+   "no_nonessentiality": 20,
+   "d_nonessentiality": 1
+  },
+  {
+   "gene": "GJB1",
+   "rank_locked": 20,
+   "no_tumor_signal": 29,
+   "d_tumor_signal": 9,
+   "no_normal_safety": 22,
+   "d_normal_safety": 2,
+   "no_protein_breadth": 14,
+   "d_protein_breadth": -6,
+   "no_tractability": 79,
+   "d_tractability": 59,
+   "no_nonessentiality": 22,
+   "d_nonessentiality": 2
+  }
+ ],
+ "podium_leave_one_out": {
+  "no_tumor_signal": {
+   "top3": [
+    "C1QBP",
+    "S100P",
+    "VIM"
+   ],
+   "podium_holds": false
+  },
+  "no_normal_safety": {
+   "top3": [
+    "CD74",
+    "PIGR",
+    "SPP1"
+   ],
+   "podium_holds": false
+  },
+  "no_protein_breadth": {
+   "top3": [
+    "CEACAM5",
+    "PIGR",
+    "VIM"
+   ],
+   "podium_holds": true
+  },
+  "no_tractability": {
+   "top3": [
+    "APOD",
+    "PIGR",
+    "VIM"
+   ],
+   "podium_holds": false
+  },
+  "no_nonessentiality": {
+   "top3": [
+    "EEF1A1",
+    "PIGR",
+    "VIM"
+   ],
+   "podium_holds": false
+  }
+ },
+ "largest_displacements": [
+  {
+   "gene": "OR2T11",
+   "axis_dropped": "tumor_signal",
+   "delta": -136
+  },
+  {
+   "gene": "PLP1",
+   "axis_dropped": "normal_safety",
+   "delta": -117
+  },
+  {
+   "gene": "APOC3",
+   "axis_dropped": "normal_safety",
+   "delta": -111
+  },
+  {
+   "gene": "GAPDH",
+   "axis_dropped": "tumor_signal",
+   "delta": 106
+  },
+  {
+   "gene": "S100A6",
+   "axis_dropped": "tumor_signal",
+   "delta": 101
+  },
+  {
+   "gene": "CD19",
+   "axis_dropped": "tumor_signal",
+   "delta": -100
+  },
+  {
+   "gene": "HLA-B",
+   "axis_dropped": "tumor_signal",
+   "delta": 98
+  },
+  {
+   "gene": "IFITM3",
+   "axis_dropped": "tumor_signal",
+   "delta": 96
+  },
+  {
+   "gene": "TAS2R16",
+   "axis_dropped": "tumor_signal",
+   "delta": -96
+  },
+  {
+   "gene": "OR10G7",
+   "axis_dropped": "tumor_signal",
+   "delta": -94
+  },
+  {
+   "gene": "OR4A47",
+   "axis_dropped": "tumor_signal",
+   "delta": -94
+  },
+  {
+   "gene": "OR52E4",
+   "axis_dropped": "tumor_signal",
+   "delta": -94
+  },
+  {
+   "gene": "OR5P2",
+   "axis_dropped": "tumor_signal",
+   "delta": -94
+  },
+  {
+   "gene": "CD24",
+   "axis_dropped": "tumor_signal",
+   "delta": 93
+  },
+  {
+   "gene": "OR8D4",
+   "axis_dropped": "tumor_signal",
+   "delta": -92
+  }
+ ]
+}
