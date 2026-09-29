@@ -15,11 +15,29 @@
 \date{September 2026}
 \begin{document}\maketitle
 \begin{abstract}
-Two deliverables. (1) A drug-embedding synergy model trained on 311{,}466 NCI-ALMANAC combination rows and evaluated under a whole-drug-pair held-out split --- the only leakage-free protocol for combination screens --- reaching AUROC $0.846$ (synergy threshold SCORE$\ge50$, prevalence 3.15\%), RMSE $14.50$ vs $16.39$ global-mean, Pearson $0.467$ and Spearman $0.383$ over 62{,}260 held-out rows spanning 1{,}071 unseen pairs. We explicitly retire a leaky random-split AUROC of $0.90$. (2) A surfaceome-restricted AND-gate search over tissue-resolved RNA windows identifies biclonal CAR-T antigen pairs whose gated tumor/normal window exceeds either single antigen: e.g.\ STAD PSCA$\times$ANPEP (gain $+7.77$), PAAD LGALS4$\times$S100A2 (window $3.78$, gain $+6.34$), LIHC GPC3$\times$ASGR2 (gain $+3.67$). Known single-antigen targets validate the window metric (MSLN$\to$OV $2.29$, GPC3$\to$LIHC $1.17$, EGFR$\to$GBM $1.99$); hematologic antigens correctly score negative on solid tumors.
+Three deliverables. (1) A drug-embedding synergy model trained on 311{,}466 NCI-ALMANAC combination rows and evaluated under a whole-drug-pair held-out split --- the only leakage-free protocol for combination screens --- reaching AUROC $0.846$ (synergy threshold SCORE$\ge50$, prevalence 3.15\%), RMSE $14.50$ vs $16.39$ global-mean, Pearson $0.467$ and Spearman $0.383$ over 62{,}260 held-out rows spanning 1{,}071 unseen pairs. We explicitly retire a leaky random-split AUROC of $0.90$. (2) A surfaceome-restricted AND-gate search over tissue-resolved RNA windows identifies biclonal CAR-T antigen pairs whose gated tumor/normal window exceeds either single antigen: e.g.\ STAD PSCA$\times$ANPEP (gain $+7.77$), PAAD LGALS4$\times$S100A2 (window $3.78$, gain $+6.34$), LIHC GPC3$\times$ASGR2 (gain $+3.67$). Known single-antigen targets validate the window metric (MSLN$\to$OV $2.29$, GPC3$\to$LIHC $1.17$, EGFR$\to$GBM $1.99$). (3) A bias-aware validation program for the ranking itself --- the main methodological contribution. Because every public resource over-annotates well-studied genes, we model the observation process directly: annotation-bias correction on 831 matched controls separates real literature excess ($+23.1$ publications median) from confounded gaps (GWAS, interactions); observability models (CV AUC $0.784$--$0.788$) show selection is membrane-specific and inverse-probability reweighting retains 86--90\% of the literature contrasts; a detectability model proves the falsified normal-breadth direction is not a measurement artifact (only 44\% of the gap is explained by expectation); and the probability models are calibrated enough to weight by (ECE $\le 0.032$). Against clinical labels never used in training, a published solid-tumor CAR-T antigen catalog is recovered at odds ratio $150$ ($p=1.1\times10^{-9}$), while the five-axis battery honestly fails to beat tumor expression alone at predicting pursuit or discontinuation --- both nulls locked. Spatial transcriptomics adds direct single-cell-level evidence: MSLN$\times$CA9 and MSLN$\times$PSCA co-occupy breast tumor sections beyond shifted-null expectation ($p=0.010$/$0.0013$ and $p=0.023$/$0.0054$), the first co-occupancy measurements for these pairs. The 2026 LNK001 CAIX/ENPP3 construct independently validates our top-ranked AND-gate axis; our data reproduces its mechanistic rationale and nominates a bulk-stronger unbuilt alternative.
 \end{abstract}
 \tableofcontents\newpage
 \section{Introduction}
 Combination-therapy ML is plagued by split leakage: random row splits place the same drug pair in train and test, inflating AUROC. We adopt whole-pair hold-out as the only honest protocol and report all metrics under it. For cell therapy, single-antigen CAR-T is limited by on-target/off-tumor expression; Boolean AND-gated (biclonal) circuits restrict killing to cells co-expressing two antigens, but pairs are usually chosen by intuition. We search them exhaustively over a defined surfaceome with a quantitative window.
+
+The third thread is about the rankings themselves. A target-discovery ranking
+is only as good as the evidence it aggregates, and every public evidence source
+is biased toward well-studied genes: annotation, proteomic detection, and even
+trial registration all correlate with observability. Most discovery papers
+report raw contrasts and stop. This paper instead treats observability as a
+measurable nuisance process: we fit pre-registered models of annotation
+expectation, database presence, proteomic detectability, RNA-to-protein
+translation, and calibration, each with a frozen consequence rule, and we
+report which of our own findings survive the correction. We then validate
+against labels the ranking never saw --- curated clinical-trial verdicts, an
+independent published antigen catalog, temporal stability of the label set,
+and spatial co-occupancy in tumor sections. The result is deliberately
+two-sided: strong external concordance where it exists (catalog recovery at
+odds ratio $150$; two spatial co-occupancy positives), and locked, quantified
+nulls where the battery adds nothing over expression alone. We consider the
+nulls as much a deliverable as the positives: they define where expression
+stops being enough, which is exactly the region where AND-gating matters.
 \section{Data}
 NCI-ALMANAC combination screen (311{,}466 rows; SCORE$\ge50$ synergistic, prevalence 2.9--3.2\%). Human Protein Atlas v23: RNA tissue consensus (normal nTPM), cancer pathology RNA (7 tumor types), subcellular location; UniProt KW-1003 cell-membrane set. Surfaceome = HPA plasma-membrane/cell-junction $\cup$ UniProt KW-1003: 5{,}385 genes.
 \section{Methods}
