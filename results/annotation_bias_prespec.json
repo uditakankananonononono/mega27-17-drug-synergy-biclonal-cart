@@ -1,0 +1,18 @@
+{
+  "item": "Tier-3 #3 annotation-bias correction model",
+  "declared_before_run": "2026-09-29",
+  "seed": 20260929,
+  "model": "Poisson regression (log link, sklearn PoissonRegressor alpha=1.0, deterministic solver), one per outcome",
+  "features": ["expr_log1p_mean", "expr_breadth_tpm1", "gene_len_log10", "is_membrane", "is_secreted", "prog_favourable_n", "prog_unfavourable_n"],
+  "features_note": "the 7 locked propensity features from Tier-1 #2 (results/propensity_matched_null.json); covariate table rebuilt deterministically from the same committed source files",
+  "training_set": "831 unique matched controls (data/propensity/matched_pharos_stats.json) - the reference class for genes covariate-equivalent to candidates",
+  "outcomes": ["publication_count", "generif_count", "gwas_total", "ppi_total", "n_drugs"],
+  "fit_quality": "5-fold CV Poisson deviance + pseudo-R2 (KFold shuffle, seed 20260929), reported per outcome; a model that cannot beat the intercept-mean baseline on CV is reported as uninformative, not tuned post-hoc",
+  "primary_endpoints": [
+    "median corrected enrichment (observed - expected) across gated candidates for publication_count and generif_count",
+    "fraction of gated candidates with observed > expected, all 5 outcomes"
+  ],
+  "secondary": "same quantities for gwas_total, ppi_total, n_drugs; per-candidate corrected values in full",
+  "interpretation_rule": "if median corrected enrichment > 0 and fraction O>E > 0.5 for a literature outcome, residual over-annotation survives covariate correction: pre-declared reading is annotation bias on axes NOT in the 7 features (the literature-covariate gap named in #2), reported as measured. If corrected enrichment ~ 0, the raw gap was confounded by the matched features. Either direction is reported as measured; neither is adjusted post-hoc.",
+  "known_gap": "outcome counts are not available genome-wide (Pharos per-gene API gap named in #2); the expectation model is trained on the 831-gene matched reference class, which is the correct reference for candidates but limits extrapolation claims"
+}
