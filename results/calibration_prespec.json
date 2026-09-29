@@ -1,0 +1,11 @@
+{
+  "item": "Tier-3 #16 calibration analysis",
+  "declared_before_run": "2026-09-29",
+  "seed": 20260929,
+  "scope": "the Lane A probability-emitting models built this session: the #6 missingness logistic models (has_subcellular, has_uniprot_membrane) over the 18,399-gene pool. Other Lane A 'models' (rankscore weights, propensity matching) do not emit probabilities - declared out of scope with that reason.",
+  "method": "5-fold CV out-of-fold predicted probabilities (KFold shuffle seed 20260929); per model: Brier score, ECE (10 equal-width bins), reliability table (bin mean predicted vs empirical frequency + count); CV AUC restated for context",
+  "endpoints": [
+    "Brier + ECE per model, with the base-rate (prevalence) Brier as the null reference - pre-declared reading: a model is usefully calibrated if Brier < prevalence Brier AND ECE < 0.05; miscalibration direction (over/under-confidence by region) named from the reliability table",
+    "if ECE >= 0.05, the P(observation) values used for #6 IPW weights are flagged as miscalibrated and the IPW survival numbers are read as approximate - consequence stated, no post-hoc recalibration applied in this item"
+  ]
+}
