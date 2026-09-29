@@ -1,0 +1,37 @@
+{
+ "prespec": "results/blinded_benchmark_prespec.json (+amendment)",
+ "seed": 20260929,
+ "primary": {
+  "n_genes": 199,
+  "n_pos": 20,
+  "auroc_rankscore": 0.6061452513966481,
+  "auroc_expression_only": 0.6089385474860335,
+  "auroc_diff": -0.0027932960893853886,
+  "diff_ci95": [
+   -0.09173344914708002,
+   0.08888188608776845
+  ],
+  "verdict": "NOT DEMONSTRATED"
+ },
+ "sensitivity_excl_ambiguous": {
+  "n_genes": 178,
+  "n_pos": 20,
+  "auroc_rankscore": 0.6268987341772152,
+  "auroc_expression_only": 0.6354430379746835,
+  "auroc_diff": -0.008544303797468289,
+  "diff_ci95": [
+   -0.10010987488121638,
+   0.08068498982661006
+  ],
+  "verdict": "NOT DEMONSTRATED"
+ },
+ "excluded_gt2_missing_axes": [
+  "PCDHB18P",
+  "OR2I1P",
+  "PCNA",
+  "POLR2A",
+  "PSMA1",
+  "RPS3"
+ ],
+ "n_positives_total": 20
+}
