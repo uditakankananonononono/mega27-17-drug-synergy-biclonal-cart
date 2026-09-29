@@ -1,0 +1,1432 @@
+{
+ "seed": 20260929,
+ "prespec": "results/detectability_prespec.json",
+ "features": [
+  "expr_log1p_mean",
+  "expr_breadth_tpm1",
+  "gene_len_log10",
+  "is_membrane",
+  "is_secreted",
+  "prog_favourable_n",
+  "prog_unfavourable_n"
+ ],
+ "n_genes": 188,
+ "dropped_no_covariates": 8,
+ "cv_poisson_deviance_mean": 7.502475424652438,
+ "cv_pseudo_r2_mean": 0.5369610713782063,
+ "group_medians": {
+  "gated_observed": 22.5,
+  "gated_expected": 17.711128158127867,
+  "background_observed": 5.0,
+  "background_expected": 10.07215200974437
+ },
+ "observed_gap": 17.5,
+ "expected_gap": 7.638976148383497,
+ "gap_fraction_explained": 0.43651292276477127,
+ "h1_reading": "observed breadth gap exceeds detectability expectation - residual real difference",
+ "most_underdetected": [
+  {
+   "gene": "EEF1A1",
+   "group": "gated",
+   "observed": 18.0,
+   "expected": 80.45999981766785,
+   "residual": -62.45999981766785
+  },
+  {
+   "gene": "MAL",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 25.89525672685033,
+   "residual": -25.89525672685033
+  },
+  {
+   "gene": "CD24",
+   "group": "gated",
+   "observed": 0.0,
+   "expected": 24.998959395754035,
+   "residual": -24.998959395754035
+  },
+  {
+   "gene": "ERRFI1",
+   "group": "background",
+   "observed": 5.0,
+   "expected": 29.216646921332142,
+   "residual": -24.216646921332142
+  },
+  {
+   "gene": "SPP1",
+   "group": "gated",
+   "observed": 12.0,
+   "expected": 33.97083821725126,
+   "residual": -21.970838217251263
+  },
+  {
+   "gene": "LY6E",
+   "group": "gated",
+   "observed": 1.0,
+   "expected": 18.468337150040398,
+   "residual": -17.468337150040398
+  },
+  {
+   "gene": "NMB",
+   "group": "gated",
+   "observed": 3.0,
+   "expected": 17.99683888287472,
+   "residual": -14.99683888287472
+  },
+  {
+   "gene": "EMCN",
+   "group": "background",
+   "observed": 10.0,
+   "expected": 24.364415473133505,
+   "residual": -14.364415473133505
+  },
+  {
+   "gene": "MICA",
+   "group": "background",
+   "observed": 1.0,
+   "expected": 15.346058020926298,
+   "residual": -14.346058020926298
+  },
+  {
+   "gene": "NOD1",
+   "group": "background",
+   "observed": 1.0,
+   "expected": 15.200062140928791,
+   "residual": -14.200062140928791
+  },
+  {
+   "gene": "GP2",
+   "group": "gated",
+   "observed": 10.0,
+   "expected": 23.934117916092667,
+   "residual": -13.934117916092667
+  },
+  {
+   "gene": "TULP3",
+   "group": "background",
+   "observed": 8.0,
+   "expected": 21.885121019542215,
+   "residual": -13.885121019542215
+  }
+ ],
+ "per_gene_residuals": [
+  {
+   "gene": "ADH1A",
+   "group": "gated",
+   "observed": 12.0,
+   "expected": 10.85737800660387,
+   "residual": 1.14262199339613
+  },
+  {
+   "gene": "ADH1B",
+   "group": "gated",
+   "observed": 39.0,
+   "expected": 45.99582213037104,
+   "residual": -6.995822130371039
+  },
+  {
+   "gene": "ADH1C",
+   "group": "gated",
+   "observed": 29.0,
+   "expected": 20.103864108527343,
+   "residual": 8.896135891472657
+  },
+  {
+   "gene": "AFM",
+   "group": "gated",
+   "observed": 43.0,
+   "expected": 15.833612432928449,
+   "residual": 27.166387567071553
+  },
+  {
+   "gene": "AKR1B10",
+   "group": "gated",
+   "observed": 29.0,
+   "expected": 15.31657640604816,
+   "residual": 13.68342359395184
+  },
+  {
+   "gene": "ANPEP",
+   "group": "gated",
+   "observed": 43.0,
+   "expected": 19.872341896031898,
+   "residual": 23.127658103968102
+  },
+  {
+   "gene": "APOC3",
+   "group": "gated",
+   "observed": 45.0,
+   "expected": 29.649804957172293,
+   "residual": 15.350195042827707
+  },
+  {
+   "gene": "APOD",
+   "group": "gated",
+   "observed": 45.0,
+   "expected": 52.17165206871029,
+   "residual": -7.171652068710287
+  },
+  {
+   "gene": "AQP1",
+   "group": "gated",
+   "observed": 29.0,
+   "expected": 38.652707946158635,
+   "residual": -9.652707946158635
+  },
+  {
+   "gene": "AQP4",
+   "group": "gated",
+   "observed": 6.0,
+   "expected": 9.510449158605729,
+   "residual": -3.510449158605729
+  },
+  {
+   "gene": "ASGR2",
+   "group": "gated",
+   "observed": 14.0,
+   "expected": 9.811119019939673,
+   "residual": 4.188880980060327
+  },
+  {
+   "gene": "ATP1B2",
+   "group": "gated",
+   "observed": 17.0,
+   "expected": 23.680382802423207,
+   "residual": -6.680382802423207
+  },
+  {
+   "gene": "ATP6V1B1",
+   "group": "gated",
+   "observed": 7.0,
+   "expected": 11.660158934912094,
+   "residual": -4.6601589349120935
+  },
+  {
+   "gene": "B2M",
+   "group": "gated",
+   "observed": 47.0,
+   "expected": 60.42165910966373,
+   "residual": -13.421659109663729
+  },
+  {
+   "gene": "CA12",
+   "group": "gated",
+   "observed": 27.0,
+   "expected": 16.452862111063478,
+   "residual": 10.547137888936522
+  },
+  {
+   "gene": "CA9",
+   "group": "gated",
+   "observed": 7.0,
+   "expected": 10.110230343613647,
+   "residual": -3.1102303436136474
+  },
+  {
+   "gene": "CD24",
+   "group": "gated",
+   "observed": 0.0,
+   "expected": 24.998959395754035,
+   "residual": -24.998959395754035
+  },
+  {
+   "gene": "CD63",
+   "group": "gated",
+   "observed": 44.0,
+   "expected": 27.57949908715422,
+   "residual": 16.42050091284578
+  },
+  {
+   "gene": "CD74",
+   "group": "gated",
+   "observed": 43.0,
+   "expected": 40.623172630981756,
+   "residual": 2.376827369018244
+  },
+  {
+   "gene": "CDC42EP1",
+   "group": "gated",
+   "observed": 32.0,
+   "expected": 23.134443979134023,
+   "residual": 8.865556020865977
+  },
+  {
+   "gene": "CDH17",
+   "group": "gated",
+   "observed": 16.0,
+   "expected": 8.07124251256979,
+   "residual": 7.928757487430209
+  },
+  {
+   "gene": "CEACAM5",
+   "group": "gated",
+   "observed": 12.0,
+   "expected": 8.91893053103709,
+   "residual": 3.0810694689629106
+  },
+  {
+   "gene": "CEACAM6",
+   "group": "gated",
+   "observed": 17.0,
+   "expected": 9.684846242225547,
+   "residual": 7.315153757774453
+  },
+  {
+   "gene": "CKB",
+   "group": "gated",
+   "observed": 45.0,
+   "expected": 42.172780448154796,
+   "residual": 2.8272195518452037
+  },
+  {
+   "gene": "CLDN18",
+   "group": "gated",
+   "observed": 6.0,
+   "expected": 8.721500422298085,
+   "residual": -2.721500422298085
+  },
+  {
+   "gene": "CLDN2",
+   "group": "gated",
+   "observed": 7.0,
+   "expected": 9.14374272998603,
+   "residual": -2.1437427299860303
+  },
+  {
+   "gene": "CLDN3",
+   "group": "gated",
+   "observed": 21.0,
+   "expected": 12.455349573186904,
+   "residual": 8.544650426813096
+  },
+  {
+   "gene": "CLDN4",
+   "group": "gated",
+   "observed": 12.0,
+   "expected": 14.587903123362173,
+   "residual": -2.5879031233621728
+  },
+  {
+   "gene": "CLDN6",
+   "group": "gated",
+   "observed": 1.0,
+   "expected": 3.7391742066939986,
+   "residual": -2.7391742066939986
+  },
+  {
+   "gene": "CYP2C9",
+   "group": "gated",
+   "observed": 5.0,
+   "expected": 15.273192105617442,
+   "residual": -10.273192105617442
+  },
+  {
+   "gene": "DCT",
+   "group": "gated",
+   "observed": 0.0,
+   "expected": 5.990534746903871,
+   "residual": -5.990534746903871
+  },
+  {
+   "gene": "DNER",
+   "group": "gated",
+   "observed": 5.0,
+   "expected": 17.13821840503601,
+   "residual": -12.13821840503601
+  },
+  {
+   "gene": "DPEP1",
+   "group": "gated",
+   "observed": 24.0,
+   "expected": 14.151455680303673,
+   "residual": 9.848544319696327
+  },
+  {
+   "gene": "EEF1A1",
+   "group": "gated",
+   "observed": 18.0,
+   "expected": 80.45999981766785,
+   "residual": -62.45999981766785
+  },
+  {
+   "gene": "EEF2",
+   "group": "gated",
+   "observed": 48.0,
+   "expected": 59.22363315002449,
+   "residual": -11.22363315002449
+  },
+  {
+   "gene": "EGFR",
+   "group": "gated",
+   "observed": 41.0,
+   "expected": 22.113482416337863,
+   "residual": 18.886517583662137
+  },
+  {
+   "gene": "ENPP3",
+   "group": "gated",
+   "observed": 16.0,
+   "expected": 12.475574522198514,
+   "residual": 3.5244254778014863
+  },
+  {
+   "gene": "EPCAM",
+   "group": "gated",
+   "observed": 33.0,
+   "expected": 16.348926424839703,
+   "residual": 16.651073575160297
+  },
+  {
+   "gene": "FABP3",
+   "group": "gated",
+   "observed": 43.0,
+   "expected": 31.41185896481045,
+   "residual": 11.588141035189551
+  },
+  {
+   "gene": "GAP43",
+   "group": "gated",
+   "observed": 36.0,
+   "expected": 22.511795915704557,
+   "residual": 13.488204084295443
+  },
+  {
+   "gene": "GAPDH",
+   "group": "gated",
+   "observed": 48.0,
+   "expected": 47.30217901643595,
+   "residual": 0.6978209835640499
+  },
+  {
+   "gene": "GJB1",
+   "group": "gated",
+   "observed": 10.0,
+   "expected": 11.726429339090341,
+   "residual": -1.7264293390903411
+  },
+  {
+   "gene": "GP2",
+   "group": "gated",
+   "observed": 10.0,
+   "expected": 23.934117916092667,
+   "residual": -13.934117916092667
+  },
+  {
+   "gene": "GPM6A",
+   "group": "gated",
+   "observed": 25.0,
+   "expected": 23.101284687191537,
+   "residual": 1.8987153128084628
+  },
+  {
+   "gene": "GPM6B",
+   "group": "gated",
+   "observed": 19.0,
+   "expected": 28.336134708626492,
+   "residual": -9.336134708626492
+  },
+  {
+   "gene": "HLA-A",
+   "group": "gated",
+   "observed": 42.0,
+   "expected": 41.263627135996735,
+   "residual": 0.7363728640032647
+  },
+  {
+   "gene": "HLA-B",
+   "group": "gated",
+   "observed": 40.0,
+   "expected": 46.63287092378413,
+   "residual": -6.632870923784132
+  },
+  {
+   "gene": "HLA-C",
+   "group": "gated",
+   "observed": 38.0,
+   "expected": 27.68907470780055,
+   "residual": 10.31092529219945
+  },
+  {
+   "gene": "HLA-DRA",
+   "group": "gated",
+   "observed": 42.0,
+   "expected": 26.856081374905813,
+   "residual": 15.143918625094187
+  },
+  {
+   "gene": "HLA-DRB1",
+   "group": "gated",
+   "observed": 30.0,
+   "expected": 26.333285653460884,
+   "residual": 3.6667143465391163
+  },
+  {
+   "gene": "HLA-DRB5",
+   "group": "gated",
+   "observed": 15.0,
+   "expected": 15.63360190787444,
+   "residual": -0.6336019078744393
+  },
+  {
+   "gene": "HMOX1",
+   "group": "gated",
+   "observed": 38.0,
+   "expected": 17.676074061715333,
+   "residual": 20.323925938284667
+  },
+  {
+   "gene": "HSP90AB1",
+   "group": "gated",
+   "observed": 47.0,
+   "expected": 51.42163161034258,
+   "residual": -4.42163161034258
+  },
+  {
+   "gene": "HSPB1",
+   "group": "gated",
+   "observed": 47.0,
+   "expected": 38.96283286422956,
+   "residual": 8.037167135770439
+  },
+  {
+   "gene": "IFITM3",
+   "group": "gated",
+   "observed": 26.0,
+   "expected": 35.7088866845269,
+   "residual": -9.708886684526902
+  },
+  {
+   "gene": "JUP",
+   "group": "gated",
+   "observed": 44.0,
+   "expected": 38.69563563987067,
+   "residual": 5.304364360129327
+  },
+  {
+   "gene": "KLK7",
+   "group": "gated",
+   "observed": 6.0,
+   "expected": 15.309166251163093,
+   "residual": -9.309166251163093
+  },
+  {
+   "gene": "KRT1",
+   "group": "gated",
+   "observed": 48.0,
+   "expected": 34.57858564029263,
+   "residual": 13.42141435970737
+  },
+  {
+   "gene": "LGALS4",
+   "group": "gated",
+   "observed": 25.0,
+   "expected": 16.945450116189953,
+   "residual": 8.054549883810047
+  },
+  {
+   "gene": "LPCAT1",
+   "group": "gated",
+   "observed": 40.0,
+   "expected": 16.161080086645114,
+   "residual": 23.838919913354886
+  },
+  {
+   "gene": "LY6E",
+   "group": "gated",
+   "observed": 1.0,
+   "expected": 18.468337150040398,
+   "residual": -17.468337150040398
+  },
+  {
+   "gene": "MISP",
+   "group": "gated",
+   "observed": 17.0,
+   "expected": 9.601768061756703,
+   "residual": 7.398231938243297
+  },
+  {
+   "gene": "MLC1",
+   "group": "gated",
+   "observed": 5.0,
+   "expected": 12.332034108442516,
+   "residual": -7.332034108442516
+  },
+  {
+   "gene": "MSLN",
+   "group": "gated",
+   "observed": 19.0,
+   "expected": 7.250343338479452,
+   "residual": 11.749656661520548
+  },
+  {
+   "gene": "MUC13",
+   "group": "gated",
+   "observed": 13.0,
+   "expected": 11.6773680754732,
+   "residual": 1.3226319245267995
+  },
+  {
+   "gene": "NMB",
+   "group": "gated",
+   "observed": 3.0,
+   "expected": 17.99683888287472,
+   "residual": -14.99683888287472
+  },
+  {
+   "gene": "NOX1",
+   "group": "gated",
+   "observed": 2.0,
+   "expected": 5.210709591995344,
+   "residual": -3.210709591995344
+  },
+  {
+   "gene": "OLFM4",
+   "group": "gated",
+   "observed": 31.0,
+   "expected": 17.390411126328523,
+   "residual": 13.609588873671477
+  },
+  {
+   "gene": "PDPN",
+   "group": "gated",
+   "observed": 7.0,
+   "expected": 12.3957633279539,
+   "residual": -5.395763327953899
+  },
+  {
+   "gene": "PERP",
+   "group": "gated",
+   "observed": 17.0,
+   "expected": 26.76843598445153,
+   "residual": -9.768435984451528
+  },
+  {
+   "gene": "PI3",
+   "group": "gated",
+   "observed": 6.0,
+   "expected": 15.155450555579122,
+   "residual": -9.155450555579122
+  },
+  {
+   "gene": "PIGR",
+   "group": "gated",
+   "observed": 37.0,
+   "expected": 24.8908977706314,
+   "residual": 12.109102229368599
+  },
+  {
+   "gene": "PLA2G2A",
+   "group": "gated",
+   "observed": 28.0,
+   "expected": 28.529142487799486,
+   "residual": -0.5291424877994864
+  },
+  {
+   "gene": "PLP1",
+   "group": "gated",
+   "observed": 26.0,
+   "expected": 28.0353473192232,
+   "residual": -2.035347319223199
+  },
+  {
+   "gene": "PRAME",
+   "group": "gated",
+   "observed": 2.0,
+   "expected": 7.938402577112909,
+   "residual": -5.938402577112909
+  },
+  {
+   "gene": "PSCA",
+   "group": "gated",
+   "observed": 6.0,
+   "expected": 11.374185225863195,
+   "residual": -5.3741852258631955
+  },
+  {
+   "gene": "PTPRZ1",
+   "group": "gated",
+   "observed": 14.0,
+   "expected": 19.861114778275756,
+   "residual": -5.8611147782757556
+  },
+  {
+   "gene": "S100A6",
+   "group": "gated",
+   "observed": 48.0,
+   "expected": 40.59844889359505,
+   "residual": 7.401551106404952
+  },
+  {
+   "gene": "S100A9",
+   "group": "gated",
+   "observed": 46.0,
+   "expected": 56.64685362215062,
+   "residual": -10.646853622150623
+  },
+  {
+   "gene": "S100P",
+   "group": "gated",
+   "observed": 36.0,
+   "expected": 11.576040496848085,
+   "residual": 24.423959503151913
+  },
+  {
+   "gene": "SCNN1A",
+   "group": "gated",
+   "observed": 10.0,
+   "expected": 12.683399799089424,
+   "residual": -2.6833997990894236
+  },
+  {
+   "gene": "SLC17A3",
+   "group": "gated",
+   "observed": 1.0,
+   "expected": 7.065801801548631,
+   "residual": -6.065801801548631
+  },
+  {
+   "gene": "SLC1A3",
+   "group": "gated",
+   "observed": 18.0,
+   "expected": 19.650133094345865,
+   "residual": -1.6501330943458647
+  },
+  {
+   "gene": "SLC2A2",
+   "group": "gated",
+   "observed": 11.0,
+   "expected": 8.018282797276004,
+   "residual": 2.9817172027239955
+  },
+  {
+   "gene": "SLC34A2",
+   "group": "gated",
+   "observed": 13.0,
+   "expected": 10.97347701147326,
+   "residual": 2.0265229885267395
+  },
+  {
+   "gene": "SLC39A6",
+   "group": "gated",
+   "observed": 15.0,
+   "expected": 14.256271885785655,
+   "residual": 0.7437281142143455
+  },
+  {
+   "gene": "SPINT1",
+   "group": "gated",
+   "observed": 26.0,
+   "expected": 18.449791539148016,
+   "residual": 7.550208460851984
+  },
+  {
+   "gene": "SPP1",
+   "group": "gated",
+   "observed": 12.0,
+   "expected": 33.97083821725126,
+   "residual": -21.970838217251263
+  },
+  {
+   "gene": "TACSTD2",
+   "group": "gated",
+   "observed": 24.0,
+   "expected": 14.794962814381975,
+   "residual": 9.205037185618025
+  },
+  {
+   "gene": "THBS2",
+   "group": "gated",
+   "observed": 31.0,
+   "expected": 31.332441451295605,
+   "residual": -0.33244145129560465
+  },
+  {
+   "gene": "TM4SF4",
+   "group": "gated",
+   "observed": 3.0,
+   "expected": 6.145494370580238,
+   "residual": -3.145494370580238
+  },
+  {
+   "gene": "TM4SF5",
+   "group": "gated",
+   "observed": 1.0,
+   "expected": 6.6718204492687105,
+   "residual": -5.6718204492687105
+  },
+  {
+   "gene": "TSPAN8",
+   "group": "gated",
+   "observed": 30.0,
+   "expected": 19.117755188698702,
+   "residual": 10.882244811301298
+  },
+  {
+   "gene": "UBE2C",
+   "group": "gated",
+   "observed": 15.0,
+   "expected": 10.10072848765468,
+   "residual": 4.8992715123453205
+  },
+  {
+   "gene": "VCAM1",
+   "group": "gated",
+   "observed": 34.0,
+   "expected": 17.7461822545404,
+   "residual": 16.2538177454596
+  },
+  {
+   "gene": "VIM",
+   "group": "gated",
+   "observed": 48.0,
+   "expected": 39.98222201610741,
+   "residual": 8.017777983892593
+  },
+  {
+   "gene": "ABCB5",
+   "group": "background",
+   "observed": 2.0,
+   "expected": 5.412300701947308,
+   "residual": -3.4123007019473084
+  },
+  {
+   "gene": "AIF1",
+   "group": "background",
+   "observed": 41.0,
+   "expected": 16.913857757001193,
+   "residual": 24.086142242998807
+  },
+  {
+   "gene": "ALK",
+   "group": "background",
+   "observed": 1.0,
+   "expected": 7.134255668555467,
+   "residual": -6.134255668555467
+  },
+  {
+   "gene": "ATP7A",
+   "group": "background",
+   "observed": 33.0,
+   "expected": 11.772852807034393,
+   "residual": 21.227147192965607
+  },
+  {
+   "gene": "BOC",
+   "group": "background",
+   "observed": 11.0,
+   "expected": 18.256001380641756,
+   "residual": -7.256001380641756
+  },
+  {
+   "gene": "C1QBP",
+   "group": "background",
+   "observed": 45.0,
+   "expected": 33.86222060808293,
+   "residual": 11.137779391917071
+  },
+  {
+   "gene": "CDH12",
+   "group": "background",
+   "observed": 4.0,
+   "expected": 7.286648387076876,
+   "residual": -3.286648387076876
+  },
+  {
+   "gene": "CHIC1",
+   "group": "background",
+   "observed": 1.0,
+   "expected": 13.644040204932578,
+   "residual": -12.644040204932578
+  },
+  {
+   "gene": "CLCNKB",
+   "group": "background",
+   "observed": 5.0,
+   "expected": 8.662859239085321,
+   "residual": -3.6628592390853214
+  },
+  {
+   "gene": "CLSTN1",
+   "group": "background",
+   "observed": 34.0,
+   "expected": 26.818150958673513,
+   "residual": 7.181849041326487
+  },
+  {
+   "gene": "CLSTN3",
+   "group": "background",
+   "observed": 10.0,
+   "expected": 19.509144697415508,
+   "residual": -9.509144697415508
+  },
+  {
+   "gene": "CNNM2",
+   "group": "background",
+   "observed": 24.0,
+   "expected": 14.593175412432151,
+   "residual": 9.406824587567849
+  },
+  {
+   "gene": "CT83",
+   "group": "background",
+   "observed": 1.0,
+   "expected": 5.57877249440133,
+   "residual": -4.57877249440133
+  },
+  {
+   "gene": "CTTN",
+   "group": "background",
+   "observed": 44.0,
+   "expected": 32.94893710327598,
+   "residual": 11.05106289672402
+  },
+  {
+   "gene": "CX3CR1",
+   "group": "background",
+   "observed": 5.0,
+   "expected": 6.7008100892539915,
+   "residual": -1.7008100892539915
+  },
+  {
+   "gene": "CYS1",
+   "group": "background",
+   "observed": 8.0,
+   "expected": 17.168320291822386,
+   "residual": -9.168320291822386
+  },
+  {
+   "gene": "DCHS1",
+   "group": "background",
+   "observed": 31.0,
+   "expected": 16.925303638645495,
+   "residual": 14.074696361354505
+  },
+  {
+   "gene": "DLGAP1",
+   "group": "background",
+   "observed": 6.0,
+   "expected": 15.818340289694401,
+   "residual": -9.818340289694401
+  },
+  {
+   "gene": "DOCK4",
+   "group": "background",
+   "observed": 34.0,
+   "expected": 21.969572088165386,
+   "residual": 12.030427911834614
+  },
+  {
+   "gene": "EMCN",
+   "group": "background",
+   "observed": 10.0,
+   "expected": 24.364415473133505,
+   "residual": -14.364415473133505
+  },
+  {
+   "gene": "ERRFI1",
+   "group": "background",
+   "observed": 5.0,
+   "expected": 29.216646921332142,
+   "residual": -24.216646921332142
+  },
+  {
+   "gene": "ERVMER34-1",
+   "group": "background",
+   "observed": 2.0,
+   "expected": 5.779437211190495,
+   "residual": -3.779437211190495
+  },
+  {
+   "gene": "FFAR1",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 4.084206596006487,
+   "residual": -4.084206596006487
+  },
+  {
+   "gene": "FRMPD2",
+   "group": "background",
+   "observed": 1.0,
+   "expected": 7.500887410313238,
+   "residual": -6.500887410313238
+  },
+  {
+   "gene": "GJA5",
+   "group": "background",
+   "observed": 7.0,
+   "expected": 11.394614199172365,
+   "residual": -4.394614199172365
+  },
+  {
+   "gene": "GJB2",
+   "group": "background",
+   "observed": 6.0,
+   "expected": 12.221952192449516,
+   "residual": -6.221952192449516
+  },
+  {
+   "gene": "GNA11",
+   "group": "background",
+   "observed": 44.0,
+   "expected": 26.75943175984798,
+   "residual": 17.24056824015202
+  },
+  {
+   "gene": "GP6",
+   "group": "background",
+   "observed": 8.0,
+   "expected": 5.319442199109838,
+   "residual": 2.6805578008901616
+  },
+  {
+   "gene": "GPC4",
+   "group": "background",
+   "observed": 39.0,
+   "expected": 18.40219215686234,
+   "residual": 20.59780784313766
+  },
+  {
+   "gene": "GPR15",
+   "group": "background",
+   "observed": 2.0,
+   "expected": 6.372344083777361,
+   "residual": -4.372344083777361
+  },
+  {
+   "gene": "HTR2B",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 7.889510607423871,
+   "residual": -7.889510607423871
+  },
+  {
+   "gene": "IGLV1-40",
+   "group": "background",
+   "observed": 7.0,
+   "expected": 16.926985906822075,
+   "residual": -9.926985906822075
+  },
+  {
+   "gene": "ITM2C",
+   "group": "background",
+   "observed": 31.0,
+   "expected": 26.324430790825094,
+   "residual": 4.675569209174906
+  },
+  {
+   "gene": "JAML",
+   "group": "background",
+   "observed": 9.0,
+   "expected": 13.850992582488463,
+   "residual": -4.8509925824884625
+  },
+  {
+   "gene": "KIR2DL1",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 4.213061021154599,
+   "residual": -4.213061021154599
+  },
+  {
+   "gene": "KLRG1",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 9.399483426351928,
+   "residual": -9.399483426351928
+  },
+  {
+   "gene": "KRAS",
+   "group": "background",
+   "observed": 39.0,
+   "expected": 21.952821199631696,
+   "residual": 17.047178800368304
+  },
+  {
+   "gene": "LAT",
+   "group": "background",
+   "observed": 5.0,
+   "expected": 16.356234053674314,
+   "residual": -11.356234053674314
+  },
+  {
+   "gene": "LGR5",
+   "group": "background",
+   "observed": 5.0,
+   "expected": 9.966409883343077,
+   "residual": -4.966409883343077
+  },
+  {
+   "gene": "MAL",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 25.89525672685033,
+   "residual": -25.89525672685033
+  },
+  {
+   "gene": "MC1R",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 9.527070067640198,
+   "residual": -9.527070067640198
+  },
+  {
+   "gene": "MICA",
+   "group": "background",
+   "observed": 1.0,
+   "expected": 15.346058020926298,
+   "residual": -14.346058020926298
+  },
+  {
+   "gene": "MINPP1",
+   "group": "background",
+   "observed": 32.0,
+   "expected": 21.695759733118265,
+   "residual": 10.304240266881735
+  },
+  {
+   "gene": "MMP16",
+   "group": "background",
+   "observed": 20.0,
+   "expected": 10.967697949510235,
+   "residual": 9.032302050489765
+  },
+  {
+   "gene": "NLGN3",
+   "group": "background",
+   "observed": 10.0,
+   "expected": 10.653930227814334,
+   "residual": -0.6539302278143335
+  },
+  {
+   "gene": "NOD1",
+   "group": "background",
+   "observed": 1.0,
+   "expected": 15.200062140928791,
+   "residual": -14.200062140928791
+  },
+  {
+   "gene": "NOS3",
+   "group": "background",
+   "observed": 31.0,
+   "expected": 17.65721143787368,
+   "residual": 13.34278856212632
+  },
+  {
+   "gene": "OR10G7",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 3.523559643737901,
+   "residual": -3.523559643737901
+  },
+  {
+   "gene": "OR12D2",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 3.214945550739244,
+   "residual": -3.214945550739244
+  },
+  {
+   "gene": "OR13C2",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 2.9111429897713395,
+   "residual": -2.9111429897713395
+  },
+  {
+   "gene": "OR2A14",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 3.708902477911907,
+   "residual": -3.708902477911907
+  },
+  {
+   "gene": "OR2T11",
+   "group": "background",
+   "observed": 1.0,
+   "expected": 3.854893073564386,
+   "residual": -2.854893073564386
+  },
+  {
+   "gene": "OR3A1",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 3.6738328812558385,
+   "residual": -3.6738328812558385
+  },
+  {
+   "gene": "OR4A47",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 2.8839843014065045,
+   "residual": -2.8839843014065045
+  },
+  {
+   "gene": "OR52E4",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 3.6064407221827777,
+   "residual": -3.6064407221827777
+  },
+  {
+   "gene": "OR5P2",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 2.945229551132621,
+   "residual": -2.945229551132621
+  },
+  {
+   "gene": "OR8B12",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 3.569116045881014,
+   "residual": -3.569116045881014
+  },
+  {
+   "gene": "OR8D4",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 3.6444682707904974,
+   "residual": -3.6444682707904974
+  },
+  {
+   "gene": "P2RY14",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 9.73402418094374,
+   "residual": -9.73402418094374
+  },
+  {
+   "gene": "PACSIN2",
+   "group": "background",
+   "observed": 43.0,
+   "expected": 36.374585108117365,
+   "residual": 6.6254148918826345
+  },
+  {
+   "gene": "PCDHA10",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 7.876694417120403,
+   "residual": -7.876694417120403
+  },
+  {
+   "gene": "PCDHB15",
+   "group": "background",
+   "observed": 5.0,
+   "expected": 9.250359171204883,
+   "residual": -4.250359171204883
+  },
+  {
+   "gene": "PCDHB5",
+   "group": "background",
+   "observed": 7.0,
+   "expected": 6.193338908238287,
+   "residual": 0.806661091761713
+  },
+  {
+   "gene": "PCDHGB1",
+   "group": "background",
+   "observed": 1.0,
+   "expected": 6.964671764102254,
+   "residual": -5.964671764102254
+  },
+  {
+   "gene": "PRICKLE3",
+   "group": "background",
+   "observed": 9.0,
+   "expected": 13.167553391072811,
+   "residual": -4.167553391072811
+  },
+  {
+   "gene": "PRSS21",
+   "group": "background",
+   "observed": 3.0,
+   "expected": 7.708293408807921,
+   "residual": -4.708293408807921
+  },
+  {
+   "gene": "PRX",
+   "group": "background",
+   "observed": 20.0,
+   "expected": 21.527425748517217,
+   "residual": -1.5274257485172171
+  },
+  {
+   "gene": "RAPSN",
+   "group": "background",
+   "observed": 3.0,
+   "expected": 6.73691154348357,
+   "residual": -3.7369115434835702
+  },
+  {
+   "gene": "S1PR3",
+   "group": "background",
+   "observed": 8.0,
+   "expected": 12.296338070013961,
+   "residual": -4.296338070013961
+  },
+  {
+   "gene": "S1PR5",
+   "group": "background",
+   "observed": 3.0,
+   "expected": 6.634090059583858,
+   "residual": -3.6340900595838583
+  },
+  {
+   "gene": "SLC15A1",
+   "group": "background",
+   "observed": 8.0,
+   "expected": 7.529356360848481,
+   "residual": 0.4706436391515192
+  },
+  {
+   "gene": "SLC22A8",
+   "group": "background",
+   "observed": 2.0,
+   "expected": 6.749229822999096,
+   "residual": -4.749229822999096
+  },
+  {
+   "gene": "SLC5A9",
+   "group": "background",
+   "observed": 5.0,
+   "expected": 7.481544531120807,
+   "residual": -2.4815445311208073
+  },
+  {
+   "gene": "SLC6A19",
+   "group": "background",
+   "observed": 7.0,
+   "expected": 7.1260726047996155,
+   "residual": -0.12607260479961546
+  },
+  {
+   "gene": "SLCO2B1",
+   "group": "background",
+   "observed": 31.0,
+   "expected": 17.710820581779444,
+   "residual": 13.289179418220556
+  },
+  {
+   "gene": "SSTR3",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 5.1339583508703415,
+   "residual": -5.1339583508703415
+  },
+  {
+   "gene": "TAS2R16",
+   "group": "background",
+   "observed": 0.0,
+   "expected": 2.9079309507906985,
+   "residual": -2.9079309507906985
+  },
+  {
+   "gene": "TGM1",
+   "group": "background",
+   "observed": 11.0,
+   "expected": 14.998541172560943,
+   "residual": -3.9985411725609428
+  },
+  {
+   "gene": "TLR4",
+   "group": "background",
+   "observed": 11.0,
+   "expected": 11.688198094817825,
+   "residual": -0.6881980948178246
+  },
+  {
+   "gene": "TTYH2",
+   "group": "background",
+   "observed": 11.0,
+   "expected": 12.956118906217688,
+   "residual": -1.9561189062176876
+  },
+  {
+   "gene": "TULP3",
+   "group": "background",
+   "observed": 8.0,
+   "expected": 21.885121019542215,
+   "residual": -13.885121019542215
+  },
+  {
+   "gene": "UNC93A",
+   "group": "background",
+   "observed": 1.0,
+   "expected": 5.4306743172195135,
+   "residual": -4.4306743172195135
+  },
+  {
+   "gene": "VLDLR",
+   "group": "background",
+   "observed": 24.0,
+   "expected": 12.66538419695042,
+   "residual": 11.33461580304958
+  },
+  {
+   "gene": "VNN1",
+   "group": "background",
+   "observed": 18.0,
+   "expected": 10.177894136145662,
+   "residual": 7.822105863854338
+  },
+  {
+   "gene": "CD19",
+   "group": "references",
+   "observed": 7.0,
+   "expected": 9.576168866198373,
+   "residual": -2.5761688661983726
+  },
+  {
+   "gene": "ERBB2",
+   "group": "references",
+   "observed": 27.0,
+   "expected": 19.21089793647286,
+   "residual": 7.789102063527139
+  },
+  {
+   "gene": "FOLR1",
+   "group": "references",
+   "observed": 10.0,
+   "expected": 9.730425821898606,
+   "residual": 0.2695741781013936
+  },
+  {
+   "gene": "TNFRSF17",
+   "group": "references",
+   "observed": 3.0,
+   "expected": 6.471702897238745,
+   "residual": -3.471702897238745
+  },
+  {
+   "gene": "POLR2A",
+   "group": "positive_controls",
+   "observed": 37.0,
+   "expected": 25.247162974273795,
+   "residual": 11.752837025726205
+  },
+  {
+   "gene": "RPS3",
+   "group": "positive_controls",
+   "observed": 45.0,
+   "expected": 48.739989287155744,
+   "residual": -3.739989287155744
+  },
+  {
+   "gene": "PCNA",
+   "group": "positive_controls",
+   "observed": 46.0,
+   "expected": 28.053235200826432,
+   "residual": 17.946764799173568
+  },
+  {
+   "gene": "PSMA1",
+   "group": "positive_controls",
+   "observed": 44.0,
+   "expected": 34.358877838812866,
+   "residual": 9.641122161187134
+  }
+ ],
+ "thin_n_caveat": "n~196 with 7 features; point estimates with that caveat, no tuning. Sequence-derived features unavailable (gene length proxy). Breadth from committed CSV, raw wiped."
+}
