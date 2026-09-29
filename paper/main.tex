@@ -152,6 +152,86 @@ new pursuits (2) for the pre-registered prospective-transfer test, which is
 declared underpowered rather than tuned. The field, in effect, finished
 pursuing this corpus years ago; novelty must come from outside it.
 
+\section{Bias-aware evidence auditing}
+Every public database this study touches over-represents well-studied genes, so
+raw annotation contrasts between candidate and background genes are confounded
+by observability itself. Rather than drop those contrasts, we modeled the
+observation process directly and asked which findings survive. Each model below
+was pre-registered (frozen features, frozen consequence rules) before fitting;
+every prespec and result JSON is committed.
+
+\subsection{Annotation-bias correction: what survives an expectation model}
+A Poisson expectation model on seven locked features (expression level and
+breadth, gene length, membrane/secreted flags, prognostic annotation counts),
+trained on 831 matched controls, predicts how much literature, GeneRIF, GWAS,
+protein-interaction, and drug annotation a gene \emph{should} have. Correcting
+candidates against that expectation splits the naive contrasts: the literature
+excess is partly real (median corrected enrichment $+23.1$ publications, 56\%
+of candidates above expectation; GeneRIFs $+7.6$, 52\%), while the GWAS
+($-1.3$ corrected) and protein-interaction ($-33.2$ corrected) gaps were
+confounded by the matched features and do not survive. The drug-count model is
+uninformative on cross-validation (pseudo-$R^2=-0.051$) and is declared
+uninformative rather than tuned. The surviving residual bias sits on axes
+outside the matched features --- a stated limitation, and the reason the
+temporal and observability analyses below matter.
+
+\subsection{Observability is predictable --- and selection on it is membrane-specific}
+Logistic models on the same locked features predict whether a gene has any
+subcellular-location annotation (CV AUC $0.784$) or a UniProt membrane
+annotation (CV AUC $0.788$) across an 18{,}399-gene pool. Candidates are
+four times more likely than pool genes to carry membrane annotation
+($\hat{P}=0.426$ vs $0.102$) --- consistent with a membrane-targeting research
+program --- but are \emph{less} observable than the pool on general annotation
+($0.624$ vs $0.763$), so the selection is specific, not generic
+well-studiedness. Inverse-probability reweighting leaves the literature
+contrasts standing: the publication gap retains 90\% of its magnitude
+($+70\to+63$) and the GeneRIF gap 86\% ($+51\to+44$), both above the
+pre-registered survival rule. Two honesty notes are carried in the committed
+artifact: the GTEx-expression observability model achieves AUC 1.0 by
+construction (its outcome is a deterministic function of the same vector two
+features derive from) and is excluded from inference, and one pre-registered
+outcome (HPA protein presence) was unmodelable because it was a universe
+inclusion criterion --- a declared prespec deviation.
+
+\subsection{Protein detectability: expectation explains less than half the gap}
+Normal-tissue proteomic breadth is itself subject to detection limits. A
+detectability model (same features, Poisson outcome, CV pseudo-$R^2=0.537$ on
+188 genes) shows the expectation explains only 44\% of the observed
+breadth gap between gated and background genes (observed 22.5 vs 5.0;
+expected 17.7 vs 10.1). Per the pre-registered rule, the falsified
+normal-breadth hypothesis (gated genes broader, not narrower, in normal
+tissue) is therefore not a detectability artifact --- the residual difference
+is real. The twelve most under-detected antigens (led by EEF1A1, residual
+$-62.5$) are listed in the committed result: their normal-tissue breadth is
+undercounted, which is safety-relevant for exactly the genes a gate would
+exclude.
+
+\subsection{RNA-to-protein translation is cancer-dependent, and MSLN is an outlier}
+Per-cancer robust fits of protein on log-RNA across paired CPTAC tumors show
+translation signal is weak in four of five evaluable cancers
+($R^2=-0.07$ to $0.09$) and moderate only in pancreatic cancer ($R^2=0.35$)
+--- RNA-to-protein inference is cancer-dependent, not universal, consistent
+with the aggregate rank-correlation audit. Two gated antigens are flagged as
+outliers in the direction that matters for gating: MSLN (median residual
+$-1.40$) and PLP1 ($-0.92$) both show protein lower than their RNA predicts,
+consistent with MSLN's known membrane shedding.
+
+\subsection{The probability models are calibrated enough to weight by}
+Both observability models are usefully calibrated out-of-fold: Brier $0.167$
+vs $0.224$ prevalence baseline (ECE $0.017$) for subcellular annotation and
+Brier $0.125$ vs $0.165$ (ECE $0.032$) for membrane annotation. Per the
+pre-registered consequence rule, the inverse-probability weights stand as
+computed.
+
+\subsection{A causal map of the evidence chain, with its circularity points named}
+\texttt{docs/CAUSAL\_GRAPH.md} records the five-stage evidence chain and
+seven named circularity points, each anchored to a measured quantity in this
+paper (residual literature bias after correction, the GTEx construction
+circularity above, cross-cohort pairings in the RNA--protein fits, and
+snapshot-presence missingness in trial labels). The residual risks that could
+not be closed with public data are enumerated there and carried into the
+limitations.
+
 \section{Documented negatives and data findings}
 (1) Leaky $0.90$ AUROC retired. (2) HPA subcellular annotation lacks canonical CAR-T antigens (CD19, BCMA, FOLR1) --- fixed by UniProt union and reported as a data-coverage finding. (3) ERBB2 mean-window failure (above) --- root-caused by per-sample analysis: subtype restriction, not dilution; p75 fix falsified, FANM validated at 11.0\%, same order as the 15--20\% clinical HER2+ prevalence \cite{her2}. (4) Immunoglobulin infiltrate artifact in p75 pair rankings.
 \subsection{Off-tumor safety check: GTEx normal-tissue expression}
