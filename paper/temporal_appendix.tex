@@ -1,0 +1,55 @@
+\section{Temporal-validation corpus (Tier-4 \#14)}
+All tables derive from the committed per-trial ledger \texttt{results/temporal\_clintrials\_trials.csv} (3622 rows, 47 genes) and the per-gene label file \texttt{results/clintrials\_per\_gene.csv}.
+\subsection{Corpus composition}
+Status and phase mixes of the 3{,}622 deduplicated oncology trial records (strict plus alias tiers, 2026-09 API snapshot):
+\begin{table}[h]\centering\small
+\caption{Trial-corpus composition. Rows with no parseable start date (2861) are excluded only from the era breakdown, not from pursuit labels.}\label{tab:trialcorpus}
+\begin{tabular}{lr@{\hspace{2em}}lr}\hline\hline
+\multicolumn{2}{l}{Status} & \multicolumn{2}{l}{Phase}\\\hline
+Recruiting & 1013 & Phase1 & 1633\\
+Completed & 871 & Phase2 & 937\\
+Unknown & 626 & Early Phase1 & 300\\
+Not Yet Recruiting & 366 & Phase3 & 277\\
+Active Not Recruiting & 331 & Phase4 & 47\\
+Terminated & 265 & &\\
+Withdrawn & 109 & &\\
+Suspended & 20 & &\\
+Enrolling By Invitation & 15 & &\\
+No Longer Available & 5 & &\\
+Available & 1 & &\\
+\hline\end{tabular}\end{table}
+\subsection{Era distribution of the dated subset}
+Of 3622 records, 761 (21\%) carry a parseable start date (1996--2027); the era split below is what the pre/post-2023 snapshot reconstruction rests on:
+\begin{table}[h]\centering\small\caption{Dated trials by era.}\label{tab:trialera}
+\begin{tabular}{lr}\hline\hline Era & trials\\\hline
+1996-2010 & 298\\
+2011-2016 & 279\\
+2017-2020 & 37\\
+2021-2022 & 19\\
+2023-2027 & 128\\
+\hline\end{tabular}\end{table}
+\subsection{Pursued antigens and first-trial year}
+The 20 antigens pursued in any snapshot, with the first dated trial in our ledger; all but CA12 and MICA were already pursued before the 2023 cutoff (E1 label stability 18/20). Genes marked \emph{new} are the two post-cutoff pursuits that left E2 underpowered.
+\begin{table}[h]\centering\small\caption{Pursued antigens (any snapshot) by first dated trial in the ledger.}\label{tab:pursuedyears}
+\begin{tabular}{lllrl}\hline\hline Gene & class & verdict & trials & first dated trial\\\hline
+CD19 & reference & genuine & 1186 & 1996\\
+ERBB2 & reference & genuine & 1114 & 1996\\
+CEACAM5 & gated & genuine & 123 & 1998\\
+EGFR & gated & genuine & 1117 & 1999\\
+MSLN & gated & genuine & 136 & 2000\\
+FOLR1 & reference & genuine & 76 & 2002\\
+HLA-A & gated & genuine & 1022 & 2002\\
+CA9 & gated & genuine & 26 & 2003\\
+EPCAM & gated & genuine & 55 & 2004\\
+PRAME & gated & genuine & 18 & 2007\\
+CDH17 & gated & genuine & 35 & 2011\\
+ALK & background & genuine & 204 & 2013\\
+KRAS & background & genuine & 747 & 2014\\
+CLDN6 & gated & genuine & 17 & 2025\\
+TACSTD2 & gated & genuine & 149 & 2026\\
+CD24 & gated & genuine & 20 & ---\\
+CT83 & background & genuine & 2 & ---\\
+MICA (new) & background & genuine & 20 & ---\\
+PSCA & gated & genuine & 14 & ---\\
+TLR4 & background & genuine & 36 & ---\\
+\hline\end{tabular}\end{table}
