@@ -1,0 +1,46 @@
+{
+ "catalog_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12374352/fullTextXML",
+ "catalog_size_mapped": 23,
+ "catalog_in_corpus": 10,
+ "catalog_not_in_corpus": [
+  "ANTXR1",
+  "CD44",
+  "FOLH1",
+  "GPC3",
+  "GUCY2C",
+  "IL13RA2",
+  "KDR",
+  "L1CAM",
+  "MET",
+  "MUC1",
+  "MUC16",
+  "PHOX2B",
+  "SLAMF7"
+ ],
+ "excluded_non_gene": [
+  "ERBB family",
+  "GD2",
+  "Glycoforms of antigens",
+  "NKG2D"
+ ],
+ "table": {
+  "catalog_genuine": 9,
+  "catalog_not_genuine": 1,
+  "noncatalog_genuine": 11,
+  "noncatalog_not_genuine": 184
+ },
+ "fisher_one_sided_p": 1.081476828718167e-09,
+ "odds_ratio": 150.54545454545453,
+ "catalog_gene_verdicts": {
+  "CA9": "genuine",
+  "CDH17": "genuine",
+  "CEACAM5": "genuine",
+  "CLDN18": "silent",
+  "EGFR": "genuine",
+  "EPCAM": "genuine",
+  "ERBB2": "genuine",
+  "FOLR1": "genuine",
+  "MSLN": "genuine",
+  "PSCA": "genuine"
+ }
+}
