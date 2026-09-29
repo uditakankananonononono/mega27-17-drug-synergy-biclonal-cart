@@ -1,0 +1,17 @@
+{
+ "id": "tier4_14_temporal_validation",
+ "created": "2026-09-29",
+ "constraint": "No archived DB snapshots exist in the corpus (queue #14 TODO-CONSTRAINED). Feasible scoped design: the temporal snapshot is reconstructed from trial START DATES in current ClinicalTrials.gov API v2 records. Limitation declared: records reflect current registry content with historical start dates; trials withdrawn-and-purged since are not recoverable.",
+ "cutoff": "2022-12-31 (declared before any fetch; gives ~3.75y post-cutoff window at fetch date 2026-09-29)",
+ "population": "205-gene corpus; curated collision/biomarker genes excluded at GENE level via committed results/clintrials_curation.csv (curation is a gene-level property, applied to both snapshots); mixed-verdict genes excluded per the #11 sensitivity rule.",
+ "endpoints": {
+  "E1_label_stability": "among currently pursued genes (strict_onc_total >= 1), fraction already pursued pre-cutoff; newly pursued genes post-cutoff split by class (gated vs background). Descriptive.",
+  "E2_prospective_transfer_PRIMARY": "frozen rankscore and expression-only (#11 weights, no trial inputs) vs label = gene FIRST pursued post-cutoff, among genes not pursued pre-cutoff. AUROC difference + 10k bootstrap 95% CI (seed 20260929), verdict rule identical to #11 prespec.",
+  "E3_descriptive": "#11 benchmark AUROCs recomputed on pre-cutoff-only labels."
+ },
+ "gate": "E2 requires >= 8 newly pursued genes; otherwise declared underpowered and reported as such.",
+ "data": "strict_onc tier re-fetched (cache lost to sandbox wipe; was never committed - data/ gitignored). This run commits the derived per-trial artifact results/temporal_clintrials_trials.csv (gene, nct, start, status, phase) so the analysis is replayable without re-fetch. API: https://clinicaltrials.gov/api/v2/studies, fetch date recorded in output.",
+ "analysis": [
+  "scripts_temporal_validation.py (committed before results)"
+ ]
+}
