@@ -1,0 +1,57 @@
+{
+ "seed": 20260929,
+ "prespec": "results/missingness_prespec.json",
+ "features": [
+  "expr_log1p_mean",
+  "expr_breadth_tpm1",
+  "gene_len_log10",
+  "is_membrane",
+  "is_secreted",
+  "prog_favourable_n",
+  "prog_unfavourable_n"
+ ],
+ "n_pool": 18399,
+ "n_candidates": 96,
+ "deviation_from_prespec": "in_hpa_protein outcome dropped: HPA presence was a universe inclusion criterion in #2, so it is constant on this universe and unmodelable; 3 outcomes modeled. Snapshot-curation caveat per prespec gap clause stands.",
+ "per_outcome": {
+  "has_subcellular": {
+   "base_rate_pool": 0.6628077612913745,
+   "cv_auc_mean": 0.7840331700382125,
+   "candidate_pobs_median": 0.6244944770063154,
+   "pool_pobs_median": 0.7631838666688248,
+   "candidate_pobs_p10": 0.3055499353015951
+  },
+  "has_uniprot_membrane": {
+   "base_rate_pool": 0.207728680906571,
+   "cv_auc_mean": 0.7882863161575357,
+   "candidate_pobs_median": 0.4260860192085668,
+   "pool_pobs_median": 0.10244063034581748,
+   "candidate_pobs_p10": 0.0791893839917036
+  },
+  "gtex_expressed": {
+   "base_rate_pool": 0.7519973911625631,
+   "cv_auc_mean": 0.9999879550503545,
+   "candidate_pobs_median": 0.9999999897102806,
+   "pool_pobs_median": 0.9999999999998785,
+   "candidate_pobs_p10": 0.0034470791940347167
+  }
+ },
+ "ipw_conclusion_survival": {
+  "publication_count": {
+   "unweighted_median_contrast": 70.0,
+   "ipw_median_contrast": 63.0,
+   "sign_kept": true,
+   "magnitude_ratio": 0.9,
+   "survives_prespec_rule": true
+  },
+  "generif_count": {
+   "unweighted_median_contrast": 51.0,
+   "ipw_median_contrast": 44.0,
+   "sign_kept": true,
+   "magnitude_ratio": 0.8627450980392157,
+   "survives_prespec_rule": true
+  }
+ },
+ "ipw_note": "weights = 1/P(has_subcellular) as general observability proxy, trimmed at pool 1st/99th weight percentiles; survival rule from prespec (sign kept AND >=50% magnitude)",
+ "circularity_note": "gtex_expressed CV AUC 1.000 is construction, not discovery: the outcome is a deterministic function of the same GTEx vector two features derive from. It is reported for completeness and excluded from interpretation."
+}
