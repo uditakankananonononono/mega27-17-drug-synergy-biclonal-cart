@@ -1,0 +1,26 @@
+\subsection{Cross-candidate displacement: leave-one-axis-out ranks}
+{\sloppy The robustness sweep perturbs weights around the locked point; the complementary question is which axis each candidate's position \emph{depends} on. Dropping one axis at a time (remaining frozen weights renormalized) and re-ranking all 199 scored genes gives the displacement table below, from \path{results/rankscore_displacement.json} (pre-declared generator \path{src/tools/rankscore_displacement.py}). Read per row: the locked corpus rank, then the rank when each axis is removed. The corpus-level top-3 (PIGR, S100P, VIM - distinct from the 7-gene panel podium whose stability the sweep measures) survives only the removal of protein breadth; every other single axis changes it. The largest swings corpus-wide are named: OR2T11 falls 136 places without tumor\_signal, PLP1 117 without normal\_safety, GAPDH rises 106 without tumor\_signal. The corpus ranking is thus axis-sensitive by construction - exactly the annotation-bias dependence the validation program quantifies, and consistent with the locked Tier-4 null: the battery does not beat raw expression at predicting clinical pursuit, so no podium here should be read as more than the weighted evidence summary it is.\par}
+\begin{longtable}{lrrrrrr}\hline\hline
+gene & locked & no tum & no saf & no brd & no trc & no ess\\\hline
+\endfirsthead\hline\hline gene & locked & no tum & no saf & no brd & no trc & no ess\\\hline\endhead
+VIM & 1 & 4 & 4 & 2 & 1 & 2\\
+PIGR & 2 & 13 & 3 & 3 & 3 & 3\\
+CEACAM5 & 3 & 18 & 7 & 1 & 7 & 4\\
+S100P & 4 & 4 & 10 & 6 & 15 & 5\\
+HLA-DRB1 & 5 & 22 & 5 & 7 & 16 & 6\\
+EPCAM & 6 & 20 & 9 & 4 & 17 & 7\\
+HLA-DRB5 & 7 & 17 & 8 & 10 & 18 & 8\\
+CD74 & 8 & 31 & 1 & 12 & 22 & 9\\
+S100A9 & 9 & 25 & 6 & 13 & 23 & 10\\
+CA9 & 10 & 11 & 12 & 15 & 26 & 11\\
+MSLN & 11 & 24 & 13 & 5 & 36 & 12\\
+C1QBP & 12 & 4 & 14 & 20 & 41 & 13\\
+ITM2C & 13 & 30 & 11 & 8 & 46 & 14\\
+CLTRN & 14 & 12 & 18 & 17 & 58 & 16\\
+SEPTIN2 & 15 & 21 & 16 & 19 & 57 & 15\\
+AIF1 & 16 & 14 & 17 & 23 & 65 & 17\\
+FOLR1 & 17 & 26 & 21 & 16 & 44 & 18\\
+SPP1 & 18 & 41 & 2 & 22 & 69 & 19\\
+CLDN18 & 19 & 28 & 20 & 11 & 71 & 20\\
+GJB1 & 20 & 29 & 22 & 14 & 79 & 22\\
+\hline\hline\caption{Top-20 genes by locked corpus rank, and their leave-one-axis-out ranks.}\label{tab:displacement}\end{longtable}
