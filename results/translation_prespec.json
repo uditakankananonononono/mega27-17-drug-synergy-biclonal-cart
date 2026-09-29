@@ -1,0 +1,15 @@
+{
+  "item": "Tier-3 #8 RNA->protein translation model (closes the PARTIAL gap)",
+  "declared_before_run": "2026-09-29",
+  "seed": 20260929,
+  "gap_closed": "cptac_protein.json committed detection/abundance audits + cross-gene Spearman concordance, but no FITTED translation model and no per-antigen outlier analysis",
+  "data": "HPA pathology.tsv tumor RNA mean (FPKM) x CPTAC protein median (log2, results/cptac_protein_rows.csv) per gene per cancer, 7 CPTAC studies (BRCA/COAD/GBM/LUAD/LUSC/PAAD/UCEC); all local, no re-fetch",
+  "model": "per-cancer Huber regression protein_median ~ log1p(rna_mean) across the study gene set (robust fit so outliers do not bend the baseline); R2 reported per cancer",
+  "endpoints": [
+    "per-cancer model R2 + n genes",
+    "per-gene residual (observed protein - fitted expectation) per cancer; cross-cancer consistency: antigens with same-sign residuals in >= 3 of 7 cancers and |median residual| in the top decile = unusual translation behavior, listed with direction",
+    "gated-antigen outliers flagged: positive residual = protein higher than RNA predicts (long protein half-life / RNA undercount); negative = protein lower (instability / secretion / detection gap) - directions reported as measured"
+  ],
+  "interpretation_rule": "outliers are descriptive translation-behavior flags, not errors; safety reading limited to naming antigens whose protein exposure would be underestimated from RNA alone (consistent positive outliers). Tumor-tissue context declared (no normal-tissue claim).",
+  "known_gaps": "RNA is HPA tumor mean (bulk, study-level) not the same CPTAC samples - a cross-cohort pairing, declared; protein is CPTAC tumor only."
+}
