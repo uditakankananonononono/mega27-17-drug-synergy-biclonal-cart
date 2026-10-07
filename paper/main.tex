@@ -469,16 +469,16 @@ shifted null; under a spot-depth-stratified null (P6-SO2, text above) neither MS
 survives and the control gate fails. The three positive
 controls gate the method; CA9$\times$ENPP3 is declared underpowered by the
 pre-registered $n<8$ rule.}\label{tab:occupancy}
-\begin{tabular}{llrlll}
+\begin{tabular}{llrlll@{\hspace{6pt}}l}
 \toprule
-Pair & Class & Sections & Median effect [95\% CI] & Wilcoxon / Fisher $p$ & Verdict \\
+Pair & Class & Sect. & Median effect [95\% CI] & Wilcoxon / Fisher $p$ & Verdict (shifted null) & Depth null (P6-SO2) \\
 \midrule
-ERBB2$\times$TACSTD2 & control & 68 & $+0.033$ $[0.023, 0.053]$ & $2.9{\times}10^{-9}$ / $1.1{\times}10^{-27}$ & CO-OCCUPANCY \\
-ERBB2$\times$MUC1 & control & 66 & $+0.009$ $[0.004, 0.014]$ & $1.5{\times}10^{-6}$ / $1.7{\times}10^{-19}$ & CO-OCCUPANCY \\
-SLC39A6$\times$CA12 & control & 58 & $+0.052$ $[0.033, 0.068]$ & $3.3{\times}10^{-10}$ / $1.3{\times}10^{-32}$ & CO-OCCUPANCY \\
-MSLN$\times$CA9 & secondary & 13 & $+0.016$ $[0.004, 0.023]$ & $0.010$ / $0.0013$ & CO-OCCUPANCY \\
-MSLN$\times$PSCA & secondary & 17 & $+0.008$ $[0.001, 0.013]$ & $0.023$ / $0.0054$ & CO-OCCUPANCY \\
-CA9$\times$ENPP3 & primary & 4 & $-0.001$ (descriptive) & --- & UNDERPOWERED \\
+ERBB2$\times$TACSTD2 & control & 68 & $+0.033$ $[0.023, 0.053]$ & $2.9{\times}10^{-9}$ / $1.1{\times}10^{-27}$ & CO-OCCUPANCY & pass ($+0.004$) \\
+ERBB2$\times$MUC1 & control & 66 & $+0.009$ $[0.004, 0.014]$ & $1.5{\times}10^{-6}$ / $1.7{\times}10^{-19}$ & CO-OCCUPANCY & FAIL ($0.0$) \\
+SLC39A6$\times$CA12 & control & 58 & $+0.052$ $[0.033, 0.068]$ & $3.3{\times}10^{-10}$ / $1.3{\times}10^{-32}$ & CO-OCCUPANCY & pass ($+0.010$) \\
+MSLN$\times$CA9 & secondary & 13 & $+0.016$ $[0.004, 0.023]$ & $0.010$ / $0.0013$ & CO-OCCUPANCY & NOT SURVIVE ($0.0$) \\
+MSLN$\times$PSCA & secondary & 17 & $+0.008$ $[0.001, 0.013]$ & $0.023$ / $0.0054$ & CO-OCCUPANCY & NOT SURVIVE ($0.0$) \\
+CA9$\times$ENPP3 & primary & 4 & $-0.001$ (descriptive) & --- & UNDERPOWERED & not run \\
 \bottomrule
 \end{tabular}
 \end{table}
