@@ -16,7 +16,7 @@
 \date{September 2026}
 \begin{document}\maketitle
 \begin{abstract}
-Three deliverables. (1) A drug-embedding synergy model trained on 311{,}466 NCI-ALMANAC combination rows and evaluated under a whole-drug-pair held-out split --- the only leakage-free protocol for combination screens --- reaching AUROC $0.846$ (synergy threshold SCORE$\ge50$, prevalence 3.15\%), RMSE $14.50$ vs $16.39$ global-mean, Pearson $0.467$ and Spearman $0.383$ over 62{,}260 held-out rows spanning 1{,}071 unseen pairs. We explicitly retire a leaky random-split AUROC of $0.90$. (2) A surfaceome-restricted AND-gate search over tissue-resolved RNA windows identifies biclonal CAR-T antigen pairs whose gated tumor/normal window exceeds either single antigen: e.g.\ STAD PSCA$\times$ANPEP (gain $+7.77$), PAAD LGALS4$\times$S100A2 (window $3.78$, gain $+6.34$), LIHC GPC3$\times$ASGR2 (gain $+3.67$). Known single-antigen targets validate the window metric (MSLN$\to$OV $2.29$, GPC3$\to$LIHC $1.17$, EGFR$\to$GBM $1.99$). (3) A bias-aware validation program for the ranking itself --- the main methodological contribution. Because every public resource over-annotates well-studied genes, we model the observation process directly: annotation-bias correction on 831 matched controls separates real literature excess ($+23.1$ publications median) from confounded gaps (GWAS, interactions); observability models (CV AUC $0.784$--$0.788$) show selection is membrane-specific and inverse-probability reweighting retains 86--90\% of the literature contrasts; a detectability model proves the falsified normal-breadth direction is not a measurement artifact (only 44\% of the gap is explained by expectation); and the probability models are calibrated enough to weight by (ECE $\le 0.032$). Against clinical labels never used in training, a published solid-tumor CAR-T antigen catalog is recovered at odds ratio $150$ ($p=1.1\times10^{-9}$), while the five-axis battery honestly fails to beat tumor expression alone at predicting pursuit or discontinuation --- both nulls locked. Spatial transcriptomics adds direct single-cell-level evidence: MSLN$\times$CA9 and MSLN$\times$PSCA co-occupy breast tumor sections beyond shifted-null expectation ($p=0.010$/$0.0013$ and $p=0.023$/$0.0054$), the first co-occupancy measurements for these pairs. The 2026 LNK001 CAIX/ENPP3 construct independently validates our top-ranked AND-gate axis; our data reproduces its mechanistic rationale and nominates a bulk-stronger unbuilt alternative.
+Three deliverables. (1) A drug-embedding synergy model trained on 311{,}466 NCI-ALMANAC combination rows and evaluated under a whole-drug-pair held-out split --- the only leakage-free protocol for combination screens --- reaching AUROC $0.846$ (synergy threshold SCORE$\ge50$, prevalence 3.15\%), RMSE $14.50$ vs $16.39$ global-mean, Pearson $0.467$ and Spearman $0.383$ over 62{,}260 held-out rows spanning 1{,}071 unseen pairs. We explicitly retire a leaky random-split AUROC of $0.90$. (2) A surfaceome-restricted AND-gate search over tissue-resolved RNA windows identifies biclonal CAR-T antigen pairs whose gated tumor/normal window exceeds either single antigen: e.g.\ STAD PSCA$\times$ANPEP (gain $+7.77$), PAAD LGALS4$\times$S100A2 (window $3.78$, gain $+6.34$), LIHC GPC3$\times$ASGR2 (gain $+3.67$). Known single-antigen targets validate the window metric (MSLN$\to$OV $2.29$, GPC3$\to$LIHC $1.17$, EGFR$\to$GBM $1.99$). (3) A bias-aware validation program for the ranking itself --- the main methodological contribution. Because every public resource over-annotates well-studied genes, we model the observation process directly: annotation-bias correction on 831 matched controls separates real literature excess ($+23.1$ publications median) from confounded gaps (GWAS, interactions); observability models (CV AUC $0.784$--$0.788$) show selection is membrane-specific and inverse-probability reweighting retains 86--90\% of the literature contrasts; a detectability model proves the falsified normal-breadth direction is not a measurement artifact (only 44\% of the gap is explained by expectation); and the probability models are calibrated enough to weight by (ECE $\le 0.032$). Against clinical labels never used in training, a published solid-tumor CAR-T antigen catalog is recovered at odds ratio $150$ ($p=1.1\times10^{-9}$), and the recovery survives a publication-count-matched permutation control ($p=5\times10^{-5}$, the permutation floor), while the five-axis battery honestly fails to beat tumor expression alone at predicting pursuit or discontinuation --- both nulls locked. Spatial transcriptomics adds direct single-cell-level evidence: MSLN$\times$CA9 and MSLN$\times$PSCA co-occupy breast tumor sections beyond shifted-null expectation ($p=0.010$/$0.0013$ and $p=0.023$/$0.0054$), the first co-occupancy measurements for these pairs. The 2026 LNK001 CAIX/ENPP3 construct independently validates our top-ranked AND-gate axis; our data reproduces its mechanistic rationale and nominates a bulk-stronger unbuilt alternative.
 \end{abstract}
 \tableofcontents\newpage
 \section{Introduction}
@@ -263,6 +263,29 @@ Temporal label stability & \multicolumn{2}{l}{18/20 pursued before 2023} & stabl
 \bottomrule
 \end{tabular}
 \end{table}
+
+\paragraph{Annotation-depth control on the catalog recovery (P4-CC1).}
+The catalog result carries an obvious worry: catalog antigens are heavily studied
+(median publication count $223.5$ against $65$ for the rest of the corpus), and
+the ``genuine'' label is derived from ClinicalTrials.gov activity, which plausibly
+scales with how well studied a gene is. A pre-registered control (prespec locked
+at commit eab3281, script committed before the run) therefore permuted catalog
+membership within quintiles of log publication count, so that catalog genes are
+compared only with genes of comparable annotation depth. Of the 205 corpus genes,
+202 were retained; three immunoglobulin and T-cell receptor segment genes
+(IGKV6D-41, IGLV11-55, TRBV7-1) have no usable Pharos record and were excluded.
+Nine of the 10 catalog genes are genuine; the publication-stratified null has mean
+$1.78$, 95th percentile $4$ and maximum $8$ over 20{,}000 permutations
+(seed 20261007), giving $p=5\times10^{-5}$, which is the resolution floor of the
+permutation count. The Mantel--Haenszel odds ratio is $290$ (descriptive).
+Stratifying on GeneRIF count instead, a pre-declared secondary, gives the same
+observed count against a null mean of $1.95$ and the same $p$. The locked gate
+(survives if $p<0.05$) is met. Limits: the adjustment is for annotation depth only,
+with no control for cancer type or antigen age; it uses a single published catalog
+and the same 205-gene corpus, so it is a robustness check and not an independent
+replication; and with 10 catalog genes the design has limited power, so a null
+would have meant unresolved rather than refuted. Results:
+\texttt{results/catalog\_annotation\_adjusted.json}.
 
 \section{Bias-aware evidence auditing}
 Every public database this study touches over-represents well-studied genes, so
@@ -767,29 +790,6 @@ interaction gaps do not, the falsified normal-breadth direction is real, and
 the clinical label set recovers an independent published catalog at odds
 ratio $150$ while the ranking battery honestly does not beat expression
 alone. Both halves of that sentence are the result.
-
-\paragraph{Annotation-depth control on the catalog recovery (P4-CC1).}
-The catalog result carries an obvious worry: catalog antigens are heavily studied
-(median publication count $223.5$ against $65$ for the rest of the corpus), and
-the ``genuine'' label is derived from ClinicalTrials.gov activity, which plausibly
-scales with how well studied a gene is. A pre-registered control (prespec locked
-at commit eab3281, script committed before the run) therefore permuted catalog
-membership within quintiles of log publication count, so that catalog genes are
-compared only with genes of comparable annotation depth. Of the 205 corpus genes,
-202 were retained; three immunoglobulin and T-cell receptor segment genes
-(IGKV6D-41, IGLV11-55, TRBV7-1) have no usable Pharos record and were excluded.
-Nine of the 10 catalog genes are genuine; the publication-stratified null has mean
-$1.78$, 95th percentile $4$ and maximum $8$ over 20{,}000 permutations
-(seed 20261007), giving $p=5\times10^{-5}$, which is the resolution floor of the
-permutation count. The Mantel--Haenszel odds ratio is $290$ (descriptive).
-Stratifying on GeneRIF count instead, a pre-declared secondary, gives the same
-observed count against a null mean of $1.95$ and the same $p$. The locked gate
-(survives if $p<0.05$) is met. Limits: the adjustment is for annotation depth only,
-with no control for cancer type or antigen age; it uses a single published catalog
-and the same 205-gene corpus, so it is a robustness check and not an independent
-replication; and with 10 catalog genes the design has limited power, so a null
-would have meant unresolved rather than refuted. Results:
-\texttt{results/catalog\_annotation\_adjusted.json}.
 
 \begin{thebibliography}{9}
 \bibitem[Landrum(2026)]{rdkit} Landrum G. RDKit: open-source cheminformatics, release 2026.03.
