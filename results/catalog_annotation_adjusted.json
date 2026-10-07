@@ -1,0 +1,25 @@
+{
+ "prespec": "results/catalog_annotation_adjusted_prespec.json",
+ "seed": 20261007,
+ "n_perm": 20000,
+ "excluded_genes": [
+  "IGKV6D-41",
+  "IGLV11-55",
+  "TRBV7-1"
+ ],
+ "n_retained": 202,
+ "n_catalog_retained": 10,
+ "observed_catalog_genuine": 9,
+ "stratified_null_mean": 1.78195,
+ "stratified_null_p95": 4.0,
+ "stratified_null_max": 8,
+ "p_publication_strata": 4.999750012499375e-05,
+ "mh_or_publication_strata": 290.2195121951219,
+ "secondary_p_generif_strata": 4.999750012499375e-05,
+ "secondary_observed_generif": 9,
+ "secondary_null_mean_generif": 1.95365,
+ "pubcount_median_catalog": 223.5,
+ "pubcount_median_noncatalog": 65.0,
+ "unstratified_fisher_reference": "see results/catalog_comparator.json",
+ "verdict": "SURVIVES"
+}
