@@ -16,7 +16,7 @@
 \date{September 2026}
 \begin{document}\maketitle
 \begin{abstract}
-Three deliverables. (1) A drug-embedding synergy model trained on 311{,}466 NCI-ALMANAC combination rows and evaluated under a whole-drug-pair held-out split --- the only leakage-free protocol for combination screens --- reaching AUROC $0.846$ (synergy threshold SCORE$\ge50$, prevalence 3.15\%), RMSE $14.50$ vs $16.39$ global-mean, Pearson $0.467$ and Spearman $0.383$ over 62{,}260 held-out rows spanning 1{,}071 unseen pairs. We explicitly retire a leaky random-split AUROC of $0.90$. (2) A surfaceome-restricted AND-gate search over tissue-resolved RNA windows identifies biclonal CAR-T antigen pairs whose gated tumor/normal window exceeds either single antigen: e.g.\ STAD PSCA$\times$ANPEP (gain $+7.77$), PAAD LGALS4$\times$S100A2 (window $3.78$, gain $+6.34$), LIHC GPC3$\times$ASGR2 (gain $+3.67$). Known single-antigen targets validate the window metric (MSLN$\to$OV $2.29$, GPC3$\to$LIHC $1.17$, EGFR$\to$GBM $1.99$). (3) A bias-aware validation program for the ranking itself --- the main methodological contribution. Because every public resource over-annotates well-studied genes, we model the observation process directly: annotation-bias correction on 831 matched controls separates real literature excess ($+23.1$ publications median) from confounded gaps (GWAS, interactions); observability models (CV AUC $0.784$--$0.788$) show selection is membrane-specific and inverse-probability reweighting retains 86--90\% of the literature contrasts; a detectability model proves the falsified normal-breadth direction is not a measurement artifact (only 44\% of the gap is explained by expectation); and the probability models are calibrated enough to weight by (ECE $\le 0.032$). Against clinical labels never used in training, a published solid-tumor CAR-T antigen catalog is recovered at odds ratio $150$ ($p=1.1\times10^{-9}$), and the recovery survives a publication-count-matched permutation control ($p=5\times10^{-5}$, the permutation floor), while the five-axis battery honestly fails to beat tumor expression alone at predicting pursuit or discontinuation --- both nulls locked. Spatial transcriptomics adds direct single-cell-level evidence: MSLN$\times$CA9 and MSLN$\times$PSCA co-occupy breast tumor sections beyond shifted-null expectation ($p=0.010$/$0.0013$ and $p=0.023$/$0.0054$), the first co-occupancy measurements for these pairs. The 2026 LNK001 CAIX/ENPP3 construct independently validates our top-ranked AND-gate axis; our data reproduces its mechanistic rationale and nominates a bulk-stronger unbuilt alternative.
+Three deliverables. (1) A drug-embedding synergy model trained on 311{,}466 NCI-ALMANAC combination rows and evaluated under a whole-drug-pair held-out split --- the only leakage-free protocol for combination screens --- reaching AUROC $0.846$ (synergy threshold SCORE$\ge50$, prevalence 3.15\%), RMSE $14.50$ vs $16.39$ global-mean, Pearson $0.467$ and Spearman $0.383$ over 62{,}260 held-out rows spanning 1{,}071 unseen pairs. We explicitly retire a leaky random-split AUROC of $0.90$. (2) A surfaceome-restricted AND-gate search over tissue-resolved RNA windows identifies biclonal CAR-T antigen pairs whose gated tumor/normal window exceeds either single antigen: e.g.\ STAD PSCA$\times$ANPEP (gain $+7.77$), PAAD LGALS4$\times$S100A2 (window $3.78$, gain $+6.34$), LIHC GPC3$\times$ASGR2 (gain $+3.67$). Known single-antigen targets validate the window metric (MSLN$\to$OV $2.29$, GPC3$\to$LIHC $1.17$, EGFR$\to$GBM $1.99$). (3) A bias-aware validation program for the ranking itself --- the main methodological contribution. Because every public resource over-annotates well-studied genes, we model the observation process directly: annotation-bias correction on 831 matched controls separates real literature excess ($+23.1$ publications median) from confounded gaps (GWAS, interactions); observability models (CV AUC $0.784$--$0.788$) show selection is membrane-specific and inverse-probability reweighting retains 86--90\% of the literature contrasts; a detectability model proves the falsified normal-breadth direction is not a measurement artifact (only 44\% of the gap is explained by expectation); and the probability models are calibrated enough to weight by (ECE $\le 0.032$). Against clinical labels never used in training, a published solid-tumor CAR-T antigen catalog is recovered at odds ratio $150$ ($p=1.1\times10^{-9}$), and the recovery survives a publication-count-matched permutation control ($p=5\times10^{-5}$, the permutation floor), while the five-axis battery honestly fails to beat tumor expression alone at predicting pursuit or discontinuation --- both nulls locked. Spatial transcriptomics adds direct single-cell-level evidence: MSLN$\times$CA9 and MSLN$\times$PSCA co-occupy breast tumor sections beyond shifted-null expectation ($p=0.010$/$0.0013$ and $p=0.023$/$0.0054$; against a shifted null only, not robust to a spot-depth control), the first co-occupancy measurements for these pairs. The 2026 LNK001 CAIX/ENPP3 construct independently validates our top-ranked AND-gate axis; our data reproduces its mechanistic rationale and nominates a bulk-stronger unbuilt alternative.
 \end{abstract}
 \tableofcontents\newpage
 \section{Introduction}
@@ -35,7 +35,7 @@ against labels the ranking never saw --- curated clinical-trial verdicts, an
 independent published antigen catalog, temporal stability of the label set,
 and spatial co-occupancy in tumor sections. The result is deliberately
 two-sided: strong external concordance where it exists (catalog recovery at
-odds ratio $150$; two spatial co-occupancy positives), and locked, quantified
+odds ratio $150$; two spatial co-occupancy positives against a shifted null, which a spot-depth control does not support), and locked, quantified
 nulls where the battery adds nothing over expression alone. We consider the
 nulls as much a deliverable as the positives: they define where expression
 stops being enough, which is exactly the region where AND-gating matters.
@@ -175,8 +175,31 @@ $p=0.0054$). The primary pair CA9$\times$ENPP3 has only four qualifying
 sections and is declared underpowered per the pre-registered $n<8$ rule; its
 point estimate is reported descriptively and no verdict is drawn. These are,
 to our knowledge, the first direct spatial co-occupancy measurements for these
-specific biclonal CAR antigen pairs, and they support the shared-cell
-assumption behind the MSLN-gated designs.
+specific biclonal CAR antigen pairs. Against the shifted null they are consistent
+with the shared-cell assumption behind the MSLN-gated designs; the depth control
+below weakens that reading.
+
+\paragraph{Spot-depth control (P6-SO2): a measured negative.}
+Positivity here is count $>0$, which rises with total UMI per spot, so two genes can
+appear to co-occupy simply because both are detected in deep spots. The shifted null
+keeps each gene's own intensity map but was not designed to remove this. P6-SO2
+(prespec commit b3326a0; script committed before the run) permuted gene-2
+positivity within five quantile bins of per-spot total counts (1{,}000 draws per
+section, seed 20261008), with the same pooled endpoints and the same control gate as
+above. It was designed after the pooled result was known, so it is a robustness
+check, not an independent test. Neither target pair survives: MSLN$\times$CA9
+(13 sections) has median effect $0.0$ (Wilcoxon $p=0.25$, Fisher $p=0.52$) and
+MSLN$\times$PSCA (17 sections) median effect $0.0$ (Wilcoxon $p=0.24$, Fisher
+$p=0.52$). The control gate also fails under this null: ERBB2$\times$MUC1 has median
+effect $0.0$ (Wilcoxon $p=0.11$, Fisher $p=0.61$), while ERBB2$\times$TACSTD2
+($+0.0035$) and SLC39A6$\times$CA12 ($+0.0103$) still pass but at a fraction of
+their shifted-null effects ($+0.033$ and $+0.052$). Most of the pooled co-occupancy
+signal is therefore accounted for by spot depth, and the metric itself is
+depth-sensitive. Limits: within-bin permutation ignores spatial autocorrelation and
+is anti-conservative as a spatial null, so this is a depth control only; there is no
+tumor-purity or cell-type control; the sections are the same HER2-positive sections.
+The shifted-null results above are unchanged and remain true as stated. Results:
+\texttt{results/spatial\_occupancy\_depth.json}.
 
 \subsection{Clinical-pursuit validation of the ranking battery}
 We asked whether the multi-axis ranking battery (tumor signal, normal-tissue
@@ -441,7 +464,9 @@ the honest gap that defines the next dataset requirement.
 \begin{table}[t]\centering\footnotesize
 \caption{Spatial co-occupancy verdicts (pooled pre-registered endpoints,
 Tier-4 \#10 v2). Effect = observed Jaccard minus per-section shifted-null
-median; CI from 10{,}000 section-level bootstrap draws. The three positive
+median; CI from 10{,}000 section-level bootstrap draws. All verdicts are against the
+shifted null; under a spot-depth-stratified null (P6-SO2, text above) neither MSLN pair
+survives and the control gate fails. The three positive
 controls gate the method; CA9$\times$ENPP3 is declared underpowered by the
 pre-registered $n<8$ rule.}\label{tab:occupancy}
 \begin{tabular}{llrlll}
@@ -765,7 +790,7 @@ corpus scale --- or that pursuit failure is driven by biology (efficacy,
 trial execution) outside expression-based features. Both readings push the
 same direction: future value lives in the pairs the field has \emph{not}
 pursued, where no expression-only null exists, and in spatial evidence,
-where the two positive co-occupancy results already sit.
+where the two co-occupancy results sit (positive against a shifted null, not supported under a spot-depth control).
 
 \section{Reproducibility}
 Every number in this paper traces to a committed artifact: pre-registration
@@ -783,7 +808,7 @@ Under the only leakage-free protocol for combination screens, drug-embedding
 synergy prediction reaches AUROC $0.846$ on unseen pairs. Over a defined
 surfaceome, per-sample tumor/normal windows recover every established CAR-T
 target class tested and nominate AND-gated pairs with quantified gains,
-two of which now carry direct spatial co-occupancy support. And a
+two of which carry spatial co-occupancy support against a shifted null that a spot-depth control does not reproduce. And a
 pre-registered audit program shows which parts of the evidence base survive
 their own observability: the literature excess partly does, the GWAS and
 interaction gaps do not, the falsified normal-breadth direction is real, and
