@@ -1,0 +1,43 @@
+name: Render Lane A paper PDF
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/render_paper.yml'
+      - 'paper/main.tex'
+permissions:
+  contents: write
+concurrency:
+  group: render-paper
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install TeX (xelatex + packages used by main.tex)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq texlive-xetex texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-science latexmk
+      - name: Render (xelatex, 3 passes)
+        working-directory: paper
+        run: |
+          xelatex -interaction=nonstopmode -halt-on-error main.tex
+          xelatex -interaction=nonstopmode -halt-on-error main.tex
+          xelatex -interaction=nonstopmode -halt-on-error main.tex
+          pdfinfo main.pdf | grep Pages
+      - uses: actions/upload-artifact@v4
+        with:
+          name: main-pdf
+          path: paper/main.pdf
+      - name: Commit rendered PDF
+        run: |
+          set -x
+          git config user.name 'github-actions'
+          git config user.email 'actions@users.noreply.github.com'
+          git add -f paper/main.pdf
+          git status --short
+          if git diff --cached --quiet; then echo "PDF unchanged"; exit 0; fi
+          git commit -m 'CI: render paper/main.pdf from main.tex (xelatex)'
+          git push origin HEAD:main
