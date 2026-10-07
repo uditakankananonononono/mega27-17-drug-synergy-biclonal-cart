@@ -1,0 +1,26 @@
+{
+ "id": "P4-CC1",
+ "date": "2026-10-07",
+ "status": "LOCKED before any outcome computation; script and results follow in later commits",
+ "finding_under_test": "Published-catalog comparator (results/catalog_comparator.json, c01f963/4c3dad1): 9/10 in-corpus catalog antigens are clinically 'genuine' vs 11/195 outside the catalog, Fisher one-sided p=1.1e-9, OR=150.5.",
+ "weakness": "Catalog antigens are heavily studied, and the 'genuine' verdict derives from ClinicalTrials.gov activity, which plausibly scales with how well studied a gene is. The enrichment may partly reflect annotation depth rather than anything the catalog adds. Lane A's own annotation-bias program (#2/#3) shows the corpus is over-annotated on literature metrics.",
+ "question": "Does catalog membership still predict a 'genuine' verdict among corpus genes of comparable annotation depth?",
+ "data": "results/clintrials_per_gene.csv (verdict) joined to results/pharos_per_gene.csv (publication_count, generif_count) on gene, 205 corpus genes; catalog membership = the 10 in-corpus catalog genes from catalog_comparator.json. Genes with missing/non-ok Pharos status (3) are excluded and listed in the output.",
+ "design": {
+  "strata": "quintiles of log1p(publication_count) over the retained genes (pandas qcut, duplicates dropped)",
+  "statistic": "number of catalog genes with verdict == 'genuine' (observed 9 before any stratification; recomputed on retained genes)",
+  "null": "within each stratum, permute the catalog label among genes; 20000 permutations; seed 20261007; one-sided empirical p = (1+#null>=obs)/(1+20000)",
+  "secondary_descriptive": ["Mantel-Haenszel common OR with continuity-free zero-cell handling reported as 'undefined' when any margin is zero", "same permutation test stratified instead on log1p(generif_count) quintiles", "catalog vs non-catalog publication_count medians"]
+ },
+ "gates_locked": {
+  "SURVIVES": "stratified permutation p < 0.05 on publication_count strata",
+  "WEAKENED": "0.05 <= p < 0.20",
+  "EXPLAINED_BY_ANNOTATION": "p >= 0.20"
+ },
+ "rules": [
+  "No change to strata, test, seed, or gates after outcomes are seen.",
+  "No variant strata sweeps; generif strata are a pre-declared secondary, not a rescue.",
+  "All outcomes reported as measured; free CPU only; PREREG gates and existing stats files untouched."
+ ],
+ "limitations_declared": "Adjustment is for annotation depth only; other confounders (cancer type, antigen age) are not modeled. 10 catalog genes limit power; a null result would mean unresolved, not refuted. The catalog is a single review (PMC12374352)."
+}
