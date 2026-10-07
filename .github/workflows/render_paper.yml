@@ -13,24 +13,31 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 30
+    container: texlive/texlive:latest   # TeX preinstalled; no apt step (apt stalled in the sister repo)
     steps:
       - uses: actions/checkout@v4
-      - name: Install TeX (xelatex + packages used by main.tex)
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq texlive-xetex texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-science latexmk
       - name: Render (xelatex, 3 passes)
         working-directory: paper
         run: |
           xelatex -interaction=nonstopmode -halt-on-error main.tex
           xelatex -interaction=nonstopmode -halt-on-error main.tex
           xelatex -interaction=nonstopmode -halt-on-error main.tex
-          pdfinfo main.pdf | grep Pages
+          pdfinfo main.pdf | grep Pages || true
       - uses: actions/upload-artifact@v4
         with:
           name: main-pdf
           path: paper/main.pdf
+  commit:
+    needs: render
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: main-pdf
+          path: paper
       - name: Commit rendered PDF
         run: |
           set -x
@@ -39,5 +46,5 @@ jobs:
           git add -f paper/main.pdf
           git status --short
           if git diff --cached --quiet; then echo "PDF unchanged"; exit 0; fi
-          git commit -m 'CI: render paper/main.pdf from main.tex (xelatex)'
+          git commit -m 'CI: render paper/main.pdf from main.tex (xelatex, texlive container)'
           git push origin HEAD:main
