@@ -1,0 +1,9 @@
+{"id":"P6-SO2","date":"2026-10-08",
+"lineage":"Robustness check on the v2 pooled co-occupancy result (results/spatial_occupancy_v2.json, MSLNxCA9 and MSLNxPSCA). The v1/v2 shifted-null verdicts are unchanged and stay on record. Designed after seeing v2 outcomes, so it is a robustness check, not an independent test.",
+"question":"Is the observed co-occupancy explained by spot sequencing depth? Positivity is count>0, which rises with total UMI per spot; two genes can look co-occupying simply because both are detected in deep spots.",
+"data":"Lane B features_cache counts_sparse, px, genes (same 68 sections, same ENSG map, same MIN_POS=10 and positivity rule as scripts_spatial_occupancy.py). Per-spot depth = row sum of counts_sparse.",
+"null":"Depth-stratified permutation: spots are split into 5 quantile bins of total counts within each section; for each of 1000 draws, gene2 positivity is permuted within bins (gene1 fixed). Jaccard recomputed. seed 20261008. Per-section empirical p_co=(#null>=obs+1)/(1001), effect = observed Jaccard - null median.",
+"endpoints":"Same as v2: paired Wilcoxon (two-sided) of effect vs 0 across qualifying sections, Fisher combination of per-section p_co, median effect with 95% bootstrap CI (10000 section resamples).",
+"gate":"A target pair (MSLNxCA9, MSLNxPSCA) SURVIVES if Wilcoxon p<0.05 AND Fisher p<0.05 AND median effect>0, AND all three positive controls (ERBB2xTACSTD2, ERBB2xMUC1, SLC39A6xCA12) pass the same rule. Otherwise the pair does NOT survive the depth control and is reported as such, alongside the v2 result.",
+"limits_declared":"Within-bin permutation ignores spatial autocorrelation, so it is anti-conservative as a spatial null by itself; it is a depth control and complements, not replaces, the shifted null. Depth is a proxy for technical confounding only; no tumor-purity or cell-type control. HER2-positive cohort, same sections as v1/v2.",
+"not_done":"No outcome computed when this file was written."}
